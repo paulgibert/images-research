@@ -1,1 +1,1 @@
-# mages-research
+# images-research
