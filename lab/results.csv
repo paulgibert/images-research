@@ -1,0 +1,7 @@
+,image-name,chainguard-critical,chainguard-high,chainguard-medium,chainguard-low,chainguard-negligible,chainguard-unknown,chainguard-img-sz,rapidfort-critical,rapidfort-high,rapidfort-medium,rapidfort-low,rapidfort-negligible,rapidfort-unknown,rapidfort-img-sz,docker-critical,docker-high,docker-medium,docker-low,docker-negligible,docker-unknown,docker-img-sz,alpine-critical,alpine-high,alpine-medium,alpine-low,alpine-negligible,alpine-unknown,alpine-img-sz
+0,mariadb,0.0,0.0,0.0,0.0,0.0,0.0,265413581.0,0,4,6,1,18,0,96746138,0,1,14,18,3,0,403869740,0.0,2.0,0.0,0.0,0.0,0.0,258561366.0
+0,postgres,0.0,0.0,0.0,0.0,0.0,0.0,101686336.0,0,12,17,2,42,0,87450806,0,6,24,4,99,2,416910058,0.0,0.0,1.0,0.0,0.0,0.0,238875483.0
+0,redis,0.0,0.0,0.0,0.0,0.0,0.0,20905697.0,0,1,0,0,0,0,26911795,3,15,38,6,128,7,137671995,2.0,0.0,0.0,1.0,0.0,0.0,37768940.0
+0,nginx,0.0,0.0,0.0,0.0,0.0,0.0,20649976.0,0,3,8,6,30,1,22294248,0,6,27,4,71,4,186614527,2.0,0.0,0.0,1.0,0.0,0.0,37768940.0
+0,grafana,,,,,,,,3,26,22,0,0,0,87199840,0,6,5,3,0,0,1525526227,,,,,,,
+0,envoy,0.0,0.0,0.0,0.0,0.0,0.0,72991929.0,0,3,2,1,16,0,71771767,1,10,17,7,61,2,147911648,,,,,,,

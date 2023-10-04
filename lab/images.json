@@ -1,0 +1,52 @@
+{
+    "repos": {
+        "chainguard": "cgr.dev/chainguard",
+        "rapidfort": "docker.io/rapidfort",
+        "docker": "docker.io"
+    },
+
+    "images": [
+        {
+            "name": "mariadb",
+            "chainguard-latest": "mariadb",
+            "rapidfort-latest": "mariadb",
+            "docker-latest": "mariadb",
+            "alpine-full-name": "docker.io/yobasystems/alpine-mariadb:latest"
+        },
+        {
+            "name": "postgres",
+            "chainguard-latest": "postgres",
+            "rapidfort-latest": "postgresql-official",
+            "docker-latest": "postgres",
+            "alpine-full-name": "docker.io/postgres:alpine"
+        },
+        {
+            "name": "redis",
+            "chainguard-latest": "redis",
+            "rapidfort-latest": "redis",
+            "docker-latest": "redis",
+            "alpine-full-name": "docker.io/redis:alpine"
+        },
+        {
+            "name": "nginx",
+            "chainguard-latest": "nginx",
+            "rapidfort-latest": "nginx",
+            "docker-latest": "nginx",
+            "alpine-full-name": "docker.io/redis:alpine"
+        },
+        {
+            "name": "grafana",
+            "chainguard-latest": "grafana",
+            "rapidfort-latest": "oncall",
+            "docker-latest": "grafana/oncall",
+            "alpine-full-name": ""
+        },
+        {
+            "name": "envoy",
+            "chainguard-latest": "envoy",
+            "rapidfort-latest": "envoy",
+            "docker-latest": "bitnami/envoy",
+            "alpine-full-name": ""
+        }
+    ]
+}
