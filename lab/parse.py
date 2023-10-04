@@ -63,7 +63,9 @@ def parse_registry_name(filename: str) -> str:
     if names[-2] == "alpine":
         return "alpine"
     if len(names) == 3:
-        return "docker"
+        return "other"
+    if names[1] not in ["chainguard", "rapidfort"]:
+        return "other"
     return names[1]
     
 
