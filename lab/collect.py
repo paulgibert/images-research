@@ -2,7 +2,6 @@ from typing import Dict
 import os
 import json
 import pandas as pd
-import time
 
 
 IMAGES_PATH = "images.json"
@@ -115,6 +114,7 @@ def main():
     df.to_csv(DATA_OUT_PATH)
 
     os.system(f"rm -rf {TMP_DIR}")
+
 
 if __name__ == "__main__":
     main()
