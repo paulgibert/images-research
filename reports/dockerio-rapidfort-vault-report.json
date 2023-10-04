@@ -1,0 +1,2897 @@
+{
+ "matches": [
+  {
+   "vulnerability": {
+    "id": "CVE-2022-48174",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-48174",
+    "namespace": "nvd:cpe",
+    "severity": "Critical",
+    "urls": [
+     "https://bugs.busybox.net/show_bug.cgi?id=15216"
+    ],
+    "description": "There is a stack overflow vulnerability in ash.c:6030 in busybox before 1.35. In the environment of Internet of Vehicles, this vulnerability can be executed from command to arbitrary code execution.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 9.8,
+       "exploitabilityScore": 3.9,
+       "impactScore": 5.9
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:busybox:busybox:1.33.1-r8:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "busybox",
+       "version": "1.33.1-r8"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2022-48174",
+      "versionConstraint": "< 1.35.0 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:busybox:busybox:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "c54a1791c2865cae",
+    "name": "busybox",
+    "version": "1.33.1-r8",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:9afb558de8e297fad19313e48054eb42d144c57834a447975f800bff37e1c5bf"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-2.0-only"
+    ],
+    "cpes": [
+     "cpe:2.3:a:busybox:busybox:1.33.1-r8:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/busybox@1.33.1-r8?arch=x86_64&distro=alpine-3.14.8",
+    "upstreams": [
+     {
+      "name": "busybox"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-232p-vwff-86mp",
+    "dataSource": "https://github.com/advisories/GHSA-232p-vwff-86mp",
+    "namespace": "github:language:go",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-232p-vwff-86mp"
+    ],
+    "description": "Docker Swarm encrypted overlay network may be unauthenticated",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:N/A:L",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 2.2,
+       "impactScore": 4.7
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "20.10.24"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-28840",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-28840",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/moby/libnetwork/security/advisories/GHSA-gvm4-2qqg-m333",
+      "https://github.com/moby/moby/issues/43382",
+      "https://github.com/moby/moby/pull/45118",
+      "https://github.com/moby/moby/security/advisories/GHSA-232p-vwff-86mp",
+      "https://github.com/moby/moby/security/advisories/GHSA-33pg-m6jh-5237",
+      "https://github.com/moby/moby/security/advisories/GHSA-6wrf-mxfj-pf5p",
+      "https://github.com/moby/moby/security/advisories/GHSA-vwm3-crmr-xfxw",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/LYZOKMMVX4SIEHPJW3SJUQGMO5YZCPHC/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/XNF4OLYZRQE75EB5TW5N42FSXHBXGWFE/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ZTE4ITXXPIWZEQ4HYQCB6N6GZIMWXDAI/"
+     ],
+     "description": "Moby is an open source container framework developed by Docker Inc. that is distributed as Docker, Mirantis Container Runtime, and various other downstream projects/products. The Moby daemon component (`dockerd`), which is developed as moby/moby, is commonly referred to as *Docker*.\n\nSwarm Mode, which is compiled in and delivered by default in dockerd and is thus present in most major Moby downstreams, is a simple, built-in container orchestrator that is implemented through a combination of SwarmKit and supporting network code.\n\nThe overlay network driver is a core feature of Swarm Mode, providing isolated virtual LANs that allow communication between containers and services across the cluster. This driver is an implementation/user of VXLAN, which encapsulates link-layer (Ethernet) frames in UDP datagrams that tag the frame with a VXLAN Network ID (VNI) that identifies the originating overlay network. In addition, the overlay network driver supports an optional, off-by-default encrypted mode, which is especially useful when VXLAN packets traverses an untrusted network between nodes.\n\nEncrypted overlay networks function by encapsulating the VXLAN datagrams through the use of the IPsec Encapsulating Security Payload protocol in Transport mode. By deploying IPSec encapsulation, encrypted overlay networks gain the additional properties of source authentication through cryptographic proof, data integrity through check-summing, and confidentiality through encryption.\n\nWhen setting an endpoint up on an encrypted overlay network, Moby installs three iptables (Linux kernel firewall) rules that enforce both incoming and outgoing IPSec. These rules rely on the u32 iptables extension provided by the xt_u32 kernel module to directly filter on a VXLAN packet's VNI field, so that IPSec guarantees can be enforced on encrypted overlay networks without interfering with other overlay networks or other users of VXLAN.\n\nTwo iptables rules serve to filter incoming VXLAN datagrams with a VNI that corresponds to an encrypted network and discards unencrypted datagrams. The rules are appended to the end of the INPUT filter chain, following any rules that have been previously set by the system administrator. Administrator-set rules take precedence over the rules Moby sets to discard unencrypted VXLAN datagrams, which can potentially admit unencrypted datagrams that should have been discarded.\n\nThe injection of arbitrary Ethernet frames can enable a Denial of Service attack. A sophisticated attacker may be able to establish a UDP or TCP connection by way of the container’s outbound gateway that would otherwise be blocked by a stateful firewall, or carry out other escalations beyond simple injection by smuggling packets into the overlay network.\n\nPatches are available in Moby releases 23.0.3 and 20.10.24. As Mirantis Container Runtime's 20.10 releases are numbered differently, users of that platform should update to 20.10.16.\n\nSome workarounds are available. Close the VXLAN port (by default, UDP port 4789) to incoming traffic at the Internet boundary to prevent all VXLAN packet injection, and/or ensure that the `xt_u32` kernel module is available on all nodes of the Swarm cluster.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:N/I:H/A:H",
+       "metrics": {
+        "baseScore": 8.7,
+        "exploitabilityScore": 2.2,
+        "impactScore": 5.8
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:N/A:L",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 2.2,
+        "impactScore": 4.7
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/docker/docker",
+       "version": "v20.10.18+incompatible"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=1.12.0,<20.10.24 (unknown)",
+      "vulnerabilityID": "GHSA-232p-vwff-86mp"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "fd0426ab2d269d65",
+    "name": "github.com/docker/docker",
+    "version": "v20.10.18+incompatible",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/bin/vault",
+      "layerID": "sha256:9afb558de8e297fad19313e48054eb42d144c57834a447975f800bff37e1c5bf"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:docker:docker:v20.10.18+incompatible:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/docker/docker@v20.10.18+incompatible",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.19.1",
+     "architecture": "amd64",
+     "h1Digest": "h1:SN84VYXTBNGn92T/QwIRPlum9zfemfitN7pbsp26WSc=",
+     "mainModule": "github.com/hashicorp/vault"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-6wrf-mxfj-pf5p",
+    "dataSource": "https://github.com/advisories/GHSA-6wrf-mxfj-pf5p",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-6wrf-mxfj-pf5p"
+    ],
+    "description": "Docker Swarm encrypted overlay network with a single endpoint is unauthenticated",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:N/I:H/A:N",
+      "metrics": {
+       "baseScore": 6.8,
+       "exploitabilityScore": 2.2,
+       "impactScore": 4
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "20.10.24"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-28842",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-28842",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://github.com/moby/libnetwork/security/advisories/GHSA-gvm4-2qqg-m333",
+      "https://github.com/moby/moby/security/advisories/GHSA-232p-vwff-86mp",
+      "https://github.com/moby/moby/security/advisories/GHSA-33pg-m6jh-5237",
+      "https://github.com/moby/moby/security/advisories/GHSA-6wrf-mxfj-pf5p",
+      "https://github.com/moby/moby/security/advisories/GHSA-vwm3-crmr-xfxw",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/LYZOKMMVX4SIEHPJW3SJUQGMO5YZCPHC/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/XNF4OLYZRQE75EB5TW5N42FSXHBXGWFE/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ZTE4ITXXPIWZEQ4HYQCB6N6GZIMWXDAI/"
+     ],
+     "description": "Moby) is an open source container framework developed by Docker Inc. that is distributed as Docker, Mirantis Container Runtime, and various other downstream projects/products. The Moby daemon component (`dockerd`), which is developed as moby/moby is commonly referred to as *Docker*.\n\nSwarm Mode, which is compiled in and delivered by default in `dockerd` and is thus present in most major Moby downstreams, is a simple, built-in container orchestrator that is implemented through a combination of SwarmKit and supporting network code.\n\nThe `overlay` network driver is a core feature of Swarm Mode, providing isolated virtual LANs that allow communication between containers and services across the cluster. This driver is an implementation/user of VXLAN, which encapsulates link-layer (Ethernet) frames in UDP datagrams that tag the frame with the VXLAN metadata, including a VXLAN Network ID (VNI) that identifies the originating overlay network. In addition, the overlay network driver supports an optional, off-by-default encrypted mode, which is especially useful when VXLAN packets traverses an untrusted network between nodes.\n\nEncrypted overlay networks function by encapsulating the VXLAN datagrams through the use of the IPsec Encapsulating Security Payload protocol in Transport mode. By deploying IPSec encapsulation, encrypted overlay networks gain the additional properties of source authentication through cryptographic proof, data integrity through check-summing, and confidentiality through encryption.\n\nWhen setting an endpoint up on an encrypted overlay network, Moby installs three iptables (Linux kernel firewall) rules that enforce both incoming and outgoing IPSec. These rules rely on the `u32` iptables extension provided by the `xt_u32` kernel module to directly filter on a VXLAN packet's VNI field, so that IPSec guarantees can be enforced on encrypted overlay networks without interfering with other overlay networks or other users of VXLAN.\n\nThe `overlay` driver dynamically and lazily defines the kernel configuration for the VXLAN network on each node as containers are attached and detached. Routes and encryption parameters are only defined for destination nodes that participate in the network. The iptables rules that prevent encrypted overlay networks from accepting unencrypted packets are not created until a peer is available with which to communicate.\n\nEncrypted overlay networks silently accept cleartext VXLAN datagrams that are tagged with the VNI of an encrypted overlay network. As a result, it is possible to inject arbitrary Ethernet frames into the encrypted overlay network by encapsulating them in VXLAN datagrams. The implications of this can be quite dire, and GHSA-vwm3-crmr-xfxw should be referenced for a deeper exploration.\n\nPatches are available in Moby releases 23.0.3, and 20.10.24. As Mirantis Container Runtime's 20.10 releases are numbered differently, users of that platform should update to 20.10.16.\n\nSome workarounds are available. In multi-node clusters, deploy a global ‘pause’ container for each encrypted overlay network, on every node. For a single-node cluster, do not use overlay networks of any sort. Bridge networks provide the same connectivity on a single node and have no multi-node features. The Swarm ingress feature is implemented using an overlay network, but can be disabled by publishing ports in `host` mode instead of `ingress` mode (allowing the use of an external load balancer), and removing the `ingress` network. If encrypted overlay networks are in exclusive use, block UDP port 4789 from traffic that has not been validated by IPSec.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:N/I:H/A:N",
+       "metrics": {
+        "baseScore": 6.8,
+        "exploitabilityScore": 2.2,
+        "impactScore": 4
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:N/I:H/A:N",
+       "metrics": {
+        "baseScore": 6.8,
+        "exploitabilityScore": 2.2,
+        "impactScore": 4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/docker/docker",
+       "version": "v20.10.18+incompatible"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=1.12.0,<20.10.24 (unknown)",
+      "vulnerabilityID": "GHSA-6wrf-mxfj-pf5p"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "fd0426ab2d269d65",
+    "name": "github.com/docker/docker",
+    "version": "v20.10.18+incompatible",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/bin/vault",
+      "layerID": "sha256:9afb558de8e297fad19313e48054eb42d144c57834a447975f800bff37e1c5bf"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:docker:docker:v20.10.18+incompatible:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/docker/docker@v20.10.18+incompatible",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.19.1",
+     "architecture": "amd64",
+     "h1Digest": "h1:SN84VYXTBNGn92T/QwIRPlum9zfemfitN7pbsp26WSc=",
+     "mainModule": "github.com/hashicorp/vault"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-33pg-m6jh-5237",
+    "dataSource": "https://github.com/advisories/GHSA-33pg-m6jh-5237",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-33pg-m6jh-5237"
+    ],
+    "description": "Docker Swarm encrypted overlay network traffic may be unencrypted",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:N/A:N",
+      "metrics": {
+       "baseScore": 6.8,
+       "exploitabilityScore": 2.2,
+       "impactScore": 4
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "20.10.24"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-28841",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-28841",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://github.com/moby/libnetwork/blob/d9fae4c73daf76c3b0f77e14b45b8bf612ba764d/drivers/overlay/encryption.go#L205-L207",
+      "https://github.com/moby/libnetwork/security/advisories/GHSA-gvm4-2qqg-m333",
+      "https://github.com/moby/moby/issues/43382",
+      "https://github.com/moby/moby/pull/45118",
+      "https://github.com/moby/moby/security/advisories/GHSA-232p-vwff-86mp",
+      "https://github.com/moby/moby/security/advisories/GHSA-33pg-m6jh-5237",
+      "https://github.com/moby/moby/security/advisories/GHSA-6wrf-mxfj-pf5p",
+      "https://github.com/moby/moby/security/advisories/GHSA-vwm3-crmr-xfxw",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/LYZOKMMVX4SIEHPJW3SJUQGMO5YZCPHC/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/XNF4OLYZRQE75EB5TW5N42FSXHBXGWFE/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ZTE4ITXXPIWZEQ4HYQCB6N6GZIMWXDAI/"
+     ],
+     "description": "Moby is an open source container framework developed by Docker Inc. that is distributed as Docker, Mirantis Container Runtime, and various other downstream projects/products. The Moby daemon component (`dockerd`), which is developed as moby/moby is commonly referred to as *Docker*.\n\nSwarm Mode, which is compiled in and delivered by default in `dockerd` and is thus present in most major Moby downstreams, is a simple, built-in container orchestrator that is implemented through a combination of SwarmKit and supporting network code.\n\nThe `overlay` network driver is a core feature of Swarm Mode, providing isolated virtual LANs that allow communication between containers and services across the cluster. This driver is an implementation/user of VXLAN, which encapsulates link-layer (Ethernet) frames in UDP datagrams that tag the frame with the VXLAN metadata, including a VXLAN Network ID (VNI) that identifies the originating overlay network. In addition, the overlay network driver supports an optional, off-by-default encrypted mode, which is especially useful when VXLAN packets traverses an untrusted network between nodes.\n\nEncrypted overlay networks function by encapsulating the VXLAN datagrams through the use of the IPsec Encapsulating Security Payload protocol in Transport mode. By deploying IPSec encapsulation, encrypted overlay networks gain the additional properties of source authentication through cryptographic proof, data integrity through check-summing, and confidentiality through encryption.\n\nWhen setting an endpoint up on an encrypted overlay network, Moby installs three iptables (Linux kernel firewall) rules that enforce both incoming and outgoing IPSec. These rules rely on the `u32` iptables extension provided by the `xt_u32` kernel module to directly filter on a VXLAN packet's VNI field, so that IPSec guarantees can be enforced on encrypted overlay networks without interfering with other overlay networks or other users of VXLAN.\n\nAn iptables rule designates outgoing VXLAN datagrams with a VNI that corresponds to an encrypted overlay network for IPsec encapsulation.\n\nEncrypted overlay networks on affected platforms silently transmit unencrypted data. As a result, `overlay` networks may appear to be functional, passing traffic as expected, but without any of the expected confidentiality or data integrity guarantees.\n\nIt is possible for an attacker sitting in a trusted position on the network to read all of the application traffic that is moving across the overlay network, resulting in unexpected secrets or user data disclosure. Thus, because many database protocols, internal APIs, etc. are not protected by a second layer of encryption, a user may use Swarm encrypted overlay networks to provide confidentiality, which due to this vulnerability this is no longer guaranteed.\n\nPatches are available in Moby releases 23.0.3, and 20.10.24. As Mirantis Container Runtime's 20.10 releases are numbered differently, users of that platform should update to 20.10.16.\n\nSome workarounds are available. Close the VXLAN port (by default, UDP port 4789) to outgoing traffic at the Internet boundary in order to prevent unintentionally leaking unencrypted traffic over the Internet, and/or ensure that the `xt_u32` kernel module is available on all nodes of the Swarm cluster.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:N/A:N",
+       "metrics": {
+        "baseScore": 6.8,
+        "exploitabilityScore": 2.2,
+        "impactScore": 4
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:N/A:N",
+       "metrics": {
+        "baseScore": 6.8,
+        "exploitabilityScore": 2.2,
+        "impactScore": 4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/docker/docker",
+       "version": "v20.10.18+incompatible"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=1.12.0,<20.10.24 (unknown)",
+      "vulnerabilityID": "GHSA-33pg-m6jh-5237"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "fd0426ab2d269d65",
+    "name": "github.com/docker/docker",
+    "version": "v20.10.18+incompatible",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/bin/vault",
+      "layerID": "sha256:9afb558de8e297fad19313e48054eb42d144c57834a447975f800bff37e1c5bf"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:docker:docker:v20.10.18+incompatible:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/docker/docker@v20.10.18+incompatible",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.19.1",
+     "architecture": "amd64",
+     "h1Digest": "h1:SN84VYXTBNGn92T/QwIRPlum9zfemfitN7pbsp26WSc=",
+     "mainModule": "github.com/hashicorp/vault"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-wmg5-g953-qqfw",
+    "dataSource": "https://github.com/advisories/GHSA-wmg5-g953-qqfw",
+    "namespace": "github:language:go",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-wmg5-g953-qqfw"
+    ],
+    "description": "Hashicorp Vault Fails to Verify if Approle SecretID Belongs to Role During a Destroy Operation",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:H",
+      "metrics": {
+       "baseScore": 8.1,
+       "exploitabilityScore": 2.8,
+       "impactScore": 5.2
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "1.12.4"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-24999",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-24999",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://discuss.hashicorp.com/t/hcsec-2023-07-vault-fails-to-verify-if-approle-secretid-belongs-to-role-during-a-destroy-operation/51305",
+      "https://security.netapp.com/advisory/ntap-20230505-0001/"
+     ],
+     "description": "HashiCorp Vault and Vault Enterprise’s approle auth method allowed any authenticated user with access to an approle destroy endpoint to destroy the secret ID of any other role by providing the secret ID accessor. This vulnerability is fixed in Vault 1.13.0, 1.12.4, 1.11.8, 1.10.11 and above.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:H",
+       "metrics": {
+        "baseScore": 8.1,
+        "exploitabilityScore": 2.8,
+        "impactScore": 5.2
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security@hashicorp.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 4.4,
+        "exploitabilityScore": 0.7,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/hashicorp/vault",
+       "version": "v1.12.0"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=1.12.0,<1.12.4 (unknown)",
+      "vulnerabilityID": "GHSA-wmg5-g953-qqfw"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "76e36f11ea54d7bd",
+    "name": "github.com/hashicorp/vault",
+    "version": "v1.12.0",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/bin/vault",
+      "layerID": "sha256:9afb558de8e297fad19313e48054eb42d144c57834a447975f800bff37e1c5bf"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:hashicorp:vault:v1.12.0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/hashicorp/vault@v1.12.0",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goBuildSettings": {
+      "-compiler": "gc",
+      "-ldflags": " -X github.com/hashicorp/vault/sdk/version.Version=1.12.0 -X github.com/hashicorp/vault/sdk/version.GitCommit=558abfa75702b5dab4c98e86b802fb9aef43b0eb -X github.com/hashicorp/vault/sdk/version.BuildDate=2022-10-10T18:14:33Z",
+      "-tags": "ui",
+      "CGO_ENABLED": "0",
+      "GOAMD64": "v1",
+      "GOARCH": "amd64",
+      "GOOS": "linux",
+      "vcs": "git",
+      "vcs.modified": "true",
+      "vcs.revision": "558abfa75702b5dab4c98e86b802fb9aef43b0eb",
+      "vcs.time": "2022-10-10T22:14:33Z"
+     },
+     "goCompiledVersion": "go1.19.1",
+     "architecture": "amd64",
+     "mainModule": "github.com/hashicorp/vault"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-86c6-3g63-5w64",
+    "dataSource": "https://github.com/advisories/GHSA-86c6-3g63-5w64",
+    "namespace": "github:language:go",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-86c6-3g63-5w64"
+    ],
+    "description": "Hashicorp Vault Incorrect Permission Assignment for Critical Resource vulnerability",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:R/S:C/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 7.6,
+       "exploitabilityScore": 1,
+       "impactScore": 6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "1.13.0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-5077",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-5077",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://discuss.hashicorp.com/t/hcsec-2023-30-vault-s-google-cloud-secrets-engine-removed-existing-iam-conditions-when-creating-updating-rolesets/58654"
+     ],
+     "description": "The Vault and Vault Enterprise (\"Vault\") Google Cloud secrets engine did not preserve existing Google Cloud IAM Conditions upon creating or updating rolesets. Fixed in Vault 1.13.0.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security@hashicorp.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:R/S:C/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 7.6,
+        "exploitabilityScore": 1,
+        "impactScore": 6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/hashicorp/vault",
+       "version": "v1.12.0"
+      }
+     },
+     "found": {
+      "versionConstraint": "<1.13.0 (unknown)",
+      "vulnerabilityID": "GHSA-86c6-3g63-5w64"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "76e36f11ea54d7bd",
+    "name": "github.com/hashicorp/vault",
+    "version": "v1.12.0",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/bin/vault",
+      "layerID": "sha256:9afb558de8e297fad19313e48054eb42d144c57834a447975f800bff37e1c5bf"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:hashicorp:vault:v1.12.0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/hashicorp/vault@v1.12.0",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goBuildSettings": {
+      "-compiler": "gc",
+      "-ldflags": " -X github.com/hashicorp/vault/sdk/version.Version=1.12.0 -X github.com/hashicorp/vault/sdk/version.GitCommit=558abfa75702b5dab4c98e86b802fb9aef43b0eb -X github.com/hashicorp/vault/sdk/version.BuildDate=2022-10-10T18:14:33Z",
+      "-tags": "ui",
+      "CGO_ENABLED": "0",
+      "GOAMD64": "v1",
+      "GOARCH": "amd64",
+      "GOOS": "linux",
+      "vcs": "git",
+      "vcs.modified": "true",
+      "vcs.revision": "558abfa75702b5dab4c98e86b802fb9aef43b0eb",
+      "vcs.time": "2022-10-10T22:14:33Z"
+     },
+     "goCompiledVersion": "go1.19.1",
+     "architecture": "amd64",
+     "mainModule": "github.com/hashicorp/vault"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-5077",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-5077",
+    "namespace": "nvd:cpe",
+    "severity": "High",
+    "urls": [
+     "https://discuss.hashicorp.com/t/hcsec-2023-30-vault-s-google-cloud-secrets-engine-removed-existing-iam-conditions-when-creating-updating-rolesets/58654"
+    ],
+    "description": "The Vault and Vault Enterprise (\"Vault\") Google Cloud secrets engine did not preserve existing Google Cloud IAM Conditions upon creating or updating rolesets. Fixed in Vault 1.13.0.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "source": "security@hashicorp.com",
+      "type": "Secondary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:R/S:C/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 7.6,
+       "exploitabilityScore": 1,
+       "impactScore": 6
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:hashicorp:vault:v1.12.0:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "github.com/hashicorp/vault",
+       "version": "v1.12.0"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2023-5077",
+      "versionConstraint": ">= 0.10.0, < 1.13.0 || >= 0.10.0, < 1.13.0 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:hashicorp:vault:*:*:*:*:-:*:*:*",
+       "cpe:2.3:a:hashicorp:vault:*:*:*:*:enterprise:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "76e36f11ea54d7bd",
+    "name": "github.com/hashicorp/vault",
+    "version": "v1.12.0",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/bin/vault",
+      "layerID": "sha256:9afb558de8e297fad19313e48054eb42d144c57834a447975f800bff37e1c5bf"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:hashicorp:vault:v1.12.0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/hashicorp/vault@v1.12.0",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goBuildSettings": {
+      "-compiler": "gc",
+      "-ldflags": " -X github.com/hashicorp/vault/sdk/version.Version=1.12.0 -X github.com/hashicorp/vault/sdk/version.GitCommit=558abfa75702b5dab4c98e86b802fb9aef43b0eb -X github.com/hashicorp/vault/sdk/version.BuildDate=2022-10-10T18:14:33Z",
+      "-tags": "ui",
+      "CGO_ENABLED": "0",
+      "GOAMD64": "v1",
+      "GOARCH": "amd64",
+      "GOOS": "linux",
+      "vcs": "git",
+      "vcs.modified": "true",
+      "vcs.revision": "558abfa75702b5dab4c98e86b802fb9aef43b0eb",
+      "vcs.time": "2022-10-10T22:14:33Z"
+     },
+     "goCompiledVersion": "go1.19.1",
+     "architecture": "amd64",
+     "mainModule": "github.com/hashicorp/vault"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-24999",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-24999",
+    "namespace": "nvd:cpe",
+    "severity": "High",
+    "urls": [
+     "https://discuss.hashicorp.com/t/hcsec-2023-07-vault-fails-to-verify-if-approle-secretid-belongs-to-role-during-a-destroy-operation/51305",
+     "https://security.netapp.com/advisory/ntap-20230505-0001/"
+    ],
+    "description": "HashiCorp Vault and Vault Enterprise’s approle auth method allowed any authenticated user with access to an approle destroy endpoint to destroy the secret ID of any other role by providing the secret ID accessor. This vulnerability is fixed in Vault 1.13.0, 1.12.4, 1.11.8, 1.10.11 and above.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:H",
+      "metrics": {
+       "baseScore": 8.1,
+       "exploitabilityScore": 2.8,
+       "impactScore": 5.2
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "source": "security@hashicorp.com",
+      "type": "Secondary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 4.4,
+       "exploitabilityScore": 0.7,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:hashicorp:vault:v1.12.0:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "github.com/hashicorp/vault",
+       "version": "v1.12.0"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2023-24999",
+      "versionConstraint": "< 1.10.11 || < 1.10.11 || >= 1.11.0, < 1.11.8 || >= 1.11.0, < 1.11.8 || >= 1.12.0, < 1.12.4 || >= 1.12.0, < 1.12.4 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:hashicorp:vault:*:*:*:*:-:*:*:*",
+       "cpe:2.3:a:hashicorp:vault:*:*:*:*:enterprise:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "76e36f11ea54d7bd",
+    "name": "github.com/hashicorp/vault",
+    "version": "v1.12.0",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/bin/vault",
+      "layerID": "sha256:9afb558de8e297fad19313e48054eb42d144c57834a447975f800bff37e1c5bf"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:hashicorp:vault:v1.12.0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/hashicorp/vault@v1.12.0",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goBuildSettings": {
+      "-compiler": "gc",
+      "-ldflags": " -X github.com/hashicorp/vault/sdk/version.Version=1.12.0 -X github.com/hashicorp/vault/sdk/version.GitCommit=558abfa75702b5dab4c98e86b802fb9aef43b0eb -X github.com/hashicorp/vault/sdk/version.BuildDate=2022-10-10T18:14:33Z",
+      "-tags": "ui",
+      "CGO_ENABLED": "0",
+      "GOAMD64": "v1",
+      "GOARCH": "amd64",
+      "GOOS": "linux",
+      "vcs": "git",
+      "vcs.modified": "true",
+      "vcs.revision": "558abfa75702b5dab4c98e86b802fb9aef43b0eb",
+      "vcs.time": "2022-10-10T22:14:33Z"
+     },
+     "goCompiledVersion": "go1.19.1",
+     "architecture": "amd64",
+     "mainModule": "github.com/hashicorp/vault"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-vq4h-9ghm-qmrr",
+    "dataSource": "https://github.com/advisories/GHSA-vq4h-9ghm-qmrr",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-vq4h-9ghm-qmrr"
+    ],
+    "description": "HashiCorp Vault's implementation of Shamir's secret sharing vulnerable to cache-timing attacks",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:N/A:N",
+      "metrics": {
+       "baseScore": 4.7,
+       "exploitabilityScore": 1,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "1.12.5"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-25000",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-25000",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://discuss.hashicorp.com/t/hcsec-2023-10-vault-vulnerable-to-cache-timing-attacks-during-seal-and-unseal-operations/52078",
+      "https://security.netapp.com/advisory/ntap-20230526-0008/"
+     ],
+     "description": "HashiCorp Vault's implementation of Shamir's secret sharing used precomputed table lookups, and was vulnerable to cache-timing attacks. An attacker with access to, and the ability to observe a large number of unseal operations on the host through a side channel may reduce the search space of a brute force effort to recover the Shamir shares. Fixed in Vault 1.13.1, 1.12.5, and 1.11.9.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:N/A:N",
+       "metrics": {
+        "baseScore": 4.7,
+        "exploitabilityScore": 1,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security@hashicorp.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:H/PR:H/UI:R/S:C/C:H/I:N/A:N",
+       "metrics": {
+        "baseScore": 5,
+        "exploitabilityScore": 0.6,
+        "impactScore": 4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/hashicorp/vault",
+       "version": "v1.12.0"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=1.12.0,<1.12.5 (unknown)",
+      "vulnerabilityID": "GHSA-vq4h-9ghm-qmrr"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "76e36f11ea54d7bd",
+    "name": "github.com/hashicorp/vault",
+    "version": "v1.12.0",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/bin/vault",
+      "layerID": "sha256:9afb558de8e297fad19313e48054eb42d144c57834a447975f800bff37e1c5bf"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:hashicorp:vault:v1.12.0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/hashicorp/vault@v1.12.0",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goBuildSettings": {
+      "-compiler": "gc",
+      "-ldflags": " -X github.com/hashicorp/vault/sdk/version.Version=1.12.0 -X github.com/hashicorp/vault/sdk/version.GitCommit=558abfa75702b5dab4c98e86b802fb9aef43b0eb -X github.com/hashicorp/vault/sdk/version.BuildDate=2022-10-10T18:14:33Z",
+      "-tags": "ui",
+      "CGO_ENABLED": "0",
+      "GOAMD64": "v1",
+      "GOARCH": "amd64",
+      "GOOS": "linux",
+      "vcs": "git",
+      "vcs.modified": "true",
+      "vcs.revision": "558abfa75702b5dab4c98e86b802fb9aef43b0eb",
+      "vcs.time": "2022-10-10T22:14:33Z"
+     },
+     "goCompiledVersion": "go1.19.1",
+     "architecture": "amd64",
+     "mainModule": "github.com/hashicorp/vault"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-v84f-6r39-cpfc",
+    "dataSource": "https://github.com/advisories/GHSA-v84f-6r39-cpfc",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-v84f-6r39-cpfc"
+    ],
+    "description": "HashiCorp Vault Improper Input Validation vulnerability",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:N",
+      "metrics": {
+       "baseScore": 6.8,
+       "exploitabilityScore": 1.6,
+       "impactScore": 5.2
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "1.12.11"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-4680",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-4680",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://discuss.hashicorp.com/t/hcsec-2023-28-vault-s-transit-secrets-engine-allowed-nonce-specified-without-convergent-encryption/58249"
+     ],
+     "description": "HashiCorp Vault and Vault Enterprise transit secrets engine allowed authorized users to specify arbitrary nonces, even with convergent encryption disabled. The encrypt endpoint, in combination with an offline attack, could be used to decrypt arbitrary ciphertext and potentially derive the authentication subkey when using transit secrets engine without convergent encryption. Introduced in 1.6.0 and fixed in 1.14.3, 1.13.7, and 1.12.11.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:N",
+       "metrics": {
+        "baseScore": 6.8,
+        "exploitabilityScore": 1.6,
+        "impactScore": 5.2
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security@hashicorp.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:N",
+       "metrics": {
+        "baseScore": 6.8,
+        "exploitabilityScore": 1.6,
+        "impactScore": 5.2
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/hashicorp/vault",
+       "version": "v1.12.0"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=1.6.0,<1.12.11 (unknown)",
+      "vulnerabilityID": "GHSA-v84f-6r39-cpfc"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "76e36f11ea54d7bd",
+    "name": "github.com/hashicorp/vault",
+    "version": "v1.12.0",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/bin/vault",
+      "layerID": "sha256:9afb558de8e297fad19313e48054eb42d144c57834a447975f800bff37e1c5bf"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:hashicorp:vault:v1.12.0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/hashicorp/vault@v1.12.0",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goBuildSettings": {
+      "-compiler": "gc",
+      "-ldflags": " -X github.com/hashicorp/vault/sdk/version.Version=1.12.0 -X github.com/hashicorp/vault/sdk/version.GitCommit=558abfa75702b5dab4c98e86b802fb9aef43b0eb -X github.com/hashicorp/vault/sdk/version.BuildDate=2022-10-10T18:14:33Z",
+      "-tags": "ui",
+      "CGO_ENABLED": "0",
+      "GOAMD64": "v1",
+      "GOARCH": "amd64",
+      "GOOS": "linux",
+      "vcs": "git",
+      "vcs.modified": "true",
+      "vcs.revision": "558abfa75702b5dab4c98e86b802fb9aef43b0eb",
+      "vcs.time": "2022-10-10T22:14:33Z"
+     },
+     "goCompiledVersion": "go1.19.1",
+     "architecture": "amd64",
+     "mainModule": "github.com/hashicorp/vault"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-v3hp-mcj5-pg39",
+    "dataSource": "https://github.com/advisories/GHSA-v3hp-mcj5-pg39",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-v3hp-mcj5-pg39"
+    ],
+    "description": "HashiCorp Vault’s Microsoft SQL Database Storage Backend Vulnerable to SQL Injection Via Configuration File",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 6.7,
+       "exploitabilityScore": 0.8,
+       "impactScore": 5.9
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "1.12.5"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-0620",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-0620",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://discuss.hashicorp.com/t/hcsec-2023-12-vault-s-microsoft-sql-database-storage-backend-vulnerable-to-sql-injection-via-configuration-file/52080/1",
+      "https://security.netapp.com/advisory/ntap-20230526-0008/"
+     ],
+     "description": "HashiCorp Vault and Vault Enterprise versions 0.8.0 through 1.13.1 are vulnerable to an SQL injection attack when configuring the Microsoft SQL (MSSQL) Database Storage Backend. When configuring the MSSQL plugin through the local, certain parameters are not sanitized when passed to the user-provided MSSQL database. An attacker may modify these parameters to execute a malicious SQL command.\n\nThis issue is fixed in versions 1.13.1, 1.12.5, and 1.11.9.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 6.7,
+        "exploitabilityScore": 0.8,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security@hashicorp.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:R/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 6.5,
+        "exploitabilityScore": 0.6,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/hashicorp/vault",
+       "version": "v1.12.0"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=1.12.0,<1.12.5 (unknown)",
+      "vulnerabilityID": "GHSA-v3hp-mcj5-pg39"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "76e36f11ea54d7bd",
+    "name": "github.com/hashicorp/vault",
+    "version": "v1.12.0",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/bin/vault",
+      "layerID": "sha256:9afb558de8e297fad19313e48054eb42d144c57834a447975f800bff37e1c5bf"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:hashicorp:vault:v1.12.0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/hashicorp/vault@v1.12.0",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goBuildSettings": {
+      "-compiler": "gc",
+      "-ldflags": " -X github.com/hashicorp/vault/sdk/version.Version=1.12.0 -X github.com/hashicorp/vault/sdk/version.GitCommit=558abfa75702b5dab4c98e86b802fb9aef43b0eb -X github.com/hashicorp/vault/sdk/version.BuildDate=2022-10-10T18:14:33Z",
+      "-tags": "ui",
+      "CGO_ENABLED": "0",
+      "GOAMD64": "v1",
+      "GOARCH": "amd64",
+      "GOOS": "linux",
+      "vcs": "git",
+      "vcs.modified": "true",
+      "vcs.revision": "558abfa75702b5dab4c98e86b802fb9aef43b0eb",
+      "vcs.time": "2022-10-10T22:14:33Z"
+     },
+     "goCompiledVersion": "go1.19.1",
+     "architecture": "amd64",
+     "mainModule": "github.com/hashicorp/vault"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-hwc3-3qh6-r4gg",
+    "dataSource": "https://github.com/advisories/GHSA-hwc3-3qh6-r4gg",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-hwc3-3qh6-r4gg"
+    ],
+    "description": "HashiCorp Vault's PKI mount vulnerable to denial of service",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L",
+      "metrics": {
+       "baseScore": 6.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 2.5
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "1.12.5"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-0665",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-0665",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://discuss.hashicorp.com/t/hcsec-2023-11-vault-s-pki-issuer-endpoint-did-not-correctly-authorize-access-to-issuer-metadata/52079/1",
+      "https://security.netapp.com/advisory/ntap-20230526-0008/"
+     ],
+     "description": "HashiCorp Vault's PKI mount issuer endpoints did not correctly authorize access to remove an issuer or modify issuer metadata, potentially resulting in denial of service of the PKI mount. This bug did not affect public or private key material, trust chains or certificate issuance. Fixed in Vault 1.13.1, 1.12.5, and 1.11.9.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L",
+       "metrics": {
+        "baseScore": 6.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 2.5
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security@hashicorp.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L",
+       "metrics": {
+        "baseScore": 6.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 2.5
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/hashicorp/vault",
+       "version": "v1.12.0"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=1.12.0,<1.12.5 (unknown)",
+      "vulnerabilityID": "GHSA-hwc3-3qh6-r4gg"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "76e36f11ea54d7bd",
+    "name": "github.com/hashicorp/vault",
+    "version": "v1.12.0",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/bin/vault",
+      "layerID": "sha256:9afb558de8e297fad19313e48054eb42d144c57834a447975f800bff37e1c5bf"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:hashicorp:vault:v1.12.0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/hashicorp/vault@v1.12.0",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goBuildSettings": {
+      "-compiler": "gc",
+      "-ldflags": " -X github.com/hashicorp/vault/sdk/version.Version=1.12.0 -X github.com/hashicorp/vault/sdk/version.GitCommit=558abfa75702b5dab4c98e86b802fb9aef43b0eb -X github.com/hashicorp/vault/sdk/version.BuildDate=2022-10-10T18:14:33Z",
+      "-tags": "ui",
+      "CGO_ENABLED": "0",
+      "GOAMD64": "v1",
+      "GOARCH": "amd64",
+      "GOOS": "linux",
+      "vcs": "git",
+      "vcs.modified": "true",
+      "vcs.revision": "558abfa75702b5dab4c98e86b802fb9aef43b0eb",
+      "vcs.time": "2022-10-10T22:14:33Z"
+     },
+     "goCompiledVersion": "go1.19.1",
+     "architecture": "amd64",
+     "mainModule": "github.com/hashicorp/vault"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-gq98-53rq-qr5h",
+    "dataSource": "https://github.com/advisories/GHSA-gq98-53rq-qr5h",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-gq98-53rq-qr5h"
+    ],
+    "description": "Hashicorp Vault vulnerable to Cross-site Scripting",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N",
+      "metrics": {
+       "baseScore": 4.3,
+       "exploitabilityScore": 2.8,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "1.12.7"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-2121",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-2121",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://discuss.hashicorp.com/t/hcsec-2023-17-vault-s-kv-diff-viewer-allowed-html-injection/54814"
+     ],
+     "description": "Vault and Vault Enterprise's (Vault) key-value v2 (kv-v2) diff viewer allowed HTML injection into the Vault web UI through key values. This vulnerability, CVE-2023-2121, is fixed in Vault 1.14.0, 1.13.3, 1.12.7, and 1.11.11.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+       "metrics": {
+        "baseScore": 5.4,
+        "exploitabilityScore": 2.3,
+        "impactScore": 2.7
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security@hashicorp.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N",
+       "metrics": {
+        "baseScore": 4.3,
+        "exploitabilityScore": 2.8,
+        "impactScore": 1.4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/hashicorp/vault",
+       "version": "v1.12.0"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=1.12.0,<1.12.7 (unknown)",
+      "vulnerabilityID": "GHSA-gq98-53rq-qr5h"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "76e36f11ea54d7bd",
+    "name": "github.com/hashicorp/vault",
+    "version": "v1.12.0",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/bin/vault",
+      "layerID": "sha256:9afb558de8e297fad19313e48054eb42d144c57834a447975f800bff37e1c5bf"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:hashicorp:vault:v1.12.0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/hashicorp/vault@v1.12.0",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goBuildSettings": {
+      "-compiler": "gc",
+      "-ldflags": " -X github.com/hashicorp/vault/sdk/version.Version=1.12.0 -X github.com/hashicorp/vault/sdk/version.GitCommit=558abfa75702b5dab4c98e86b802fb9aef43b0eb -X github.com/hashicorp/vault/sdk/version.BuildDate=2022-10-10T18:14:33Z",
+      "-tags": "ui",
+      "CGO_ENABLED": "0",
+      "GOAMD64": "v1",
+      "GOARCH": "amd64",
+      "GOOS": "linux",
+      "vcs": "git",
+      "vcs.modified": "true",
+      "vcs.revision": "558abfa75702b5dab4c98e86b802fb9aef43b0eb",
+      "vcs.time": "2022-10-10T22:14:33Z"
+     },
+     "goCompiledVersion": "go1.19.1",
+     "architecture": "amd64",
+     "mainModule": "github.com/hashicorp/vault"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-9v3w-w2jh-4hff",
+    "dataSource": "https://github.com/advisories/GHSA-9v3w-w2jh-4hff",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-9v3w-w2jh-4hff"
+    ],
+    "description": "HashiCorp Vault and Vault Enterprise vulnerable to user enumeration",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+      "metrics": {
+       "baseScore": 5.3,
+       "exploitabilityScore": 3.9,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "1.13.5"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-3462",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-3462",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://discuss.hashicorp.com/t/hcsec-2023-24-vaults-ldap-auth-method-allows-for-user-enumeration/56714"
+     ],
+     "description": "HashiCorp's Vault and Vault Enterprise are vulnerable to user enumeration when using the LDAP auth method. An attacker may submit requests of existent and non-existent LDAP users and observe the response from Vault to check if the account is valid on the LDAP server. This vulnerability is fixed in Vault 1.14.1 and 1.13.5.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+       "metrics": {
+        "baseScore": 5.3,
+        "exploitabilityScore": 3.9,
+        "impactScore": 1.4
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security@hashicorp.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+       "metrics": {
+        "baseScore": 5.3,
+        "exploitabilityScore": 3.9,
+        "impactScore": 1.4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/hashicorp/vault",
+       "version": "v1.12.0"
+      }
+     },
+     "found": {
+      "versionConstraint": "<1.13.5 (unknown)",
+      "vulnerabilityID": "GHSA-9v3w-w2jh-4hff"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "76e36f11ea54d7bd",
+    "name": "github.com/hashicorp/vault",
+    "version": "v1.12.0",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/bin/vault",
+      "layerID": "sha256:9afb558de8e297fad19313e48054eb42d144c57834a447975f800bff37e1c5bf"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:hashicorp:vault:v1.12.0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/hashicorp/vault@v1.12.0",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goBuildSettings": {
+      "-compiler": "gc",
+      "-ldflags": " -X github.com/hashicorp/vault/sdk/version.Version=1.12.0 -X github.com/hashicorp/vault/sdk/version.GitCommit=558abfa75702b5dab4c98e86b802fb9aef43b0eb -X github.com/hashicorp/vault/sdk/version.BuildDate=2022-10-10T18:14:33Z",
+      "-tags": "ui",
+      "CGO_ENABLED": "0",
+      "GOAMD64": "v1",
+      "GOARCH": "amd64",
+      "GOOS": "linux",
+      "vcs": "git",
+      "vcs.modified": "true",
+      "vcs.revision": "558abfa75702b5dab4c98e86b802fb9aef43b0eb",
+      "vcs.time": "2022-10-10T22:14:33Z"
+     },
+     "goCompiledVersion": "go1.19.1",
+     "architecture": "amd64",
+     "mainModule": "github.com/hashicorp/vault"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-4680",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-4680",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://discuss.hashicorp.com/t/hcsec-2023-28-vault-s-transit-secrets-engine-allowed-nonce-specified-without-convergent-encryption/58249"
+    ],
+    "description": "HashiCorp Vault and Vault Enterprise transit secrets engine allowed authorized users to specify arbitrary nonces, even with convergent encryption disabled. The encrypt endpoint, in combination with an offline attack, could be used to decrypt arbitrary ciphertext and potentially derive the authentication subkey when using transit secrets engine without convergent encryption. Introduced in 1.6.0 and fixed in 1.14.3, 1.13.7, and 1.12.11.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:N",
+      "metrics": {
+       "baseScore": 6.8,
+       "exploitabilityScore": 1.6,
+       "impactScore": 5.2
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "source": "security@hashicorp.com",
+      "type": "Secondary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:N",
+      "metrics": {
+       "baseScore": 6.8,
+       "exploitabilityScore": 1.6,
+       "impactScore": 5.2
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:hashicorp:vault:v1.12.0:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "github.com/hashicorp/vault",
+       "version": "v1.12.0"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2023-4680",
+      "versionConstraint": ">= 1.6.0, < 1.12.11 || >= 1.6.0, < 1.12.11 || >= 1.13.0, < 1.13.7 || >= 1.13.0, < 1.13.7 || >= 1.14.0, < 1.14.3 || >= 1.14.0, < 1.14.3 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:hashicorp:vault:*:*:*:*:*:*:*:*",
+       "cpe:2.3:a:hashicorp:vault:*:*:*:*:enterprise:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "76e36f11ea54d7bd",
+    "name": "github.com/hashicorp/vault",
+    "version": "v1.12.0",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/bin/vault",
+      "layerID": "sha256:9afb558de8e297fad19313e48054eb42d144c57834a447975f800bff37e1c5bf"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:hashicorp:vault:v1.12.0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/hashicorp/vault@v1.12.0",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goBuildSettings": {
+      "-compiler": "gc",
+      "-ldflags": " -X github.com/hashicorp/vault/sdk/version.Version=1.12.0 -X github.com/hashicorp/vault/sdk/version.GitCommit=558abfa75702b5dab4c98e86b802fb9aef43b0eb -X github.com/hashicorp/vault/sdk/version.BuildDate=2022-10-10T18:14:33Z",
+      "-tags": "ui",
+      "CGO_ENABLED": "0",
+      "GOAMD64": "v1",
+      "GOARCH": "amd64",
+      "GOOS": "linux",
+      "vcs": "git",
+      "vcs.modified": "true",
+      "vcs.revision": "558abfa75702b5dab4c98e86b802fb9aef43b0eb",
+      "vcs.time": "2022-10-10T22:14:33Z"
+     },
+     "goCompiledVersion": "go1.19.1",
+     "architecture": "amd64",
+     "mainModule": "github.com/hashicorp/vault"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-3775",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-3775",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://discuss.hashicorp.com/t/hcsec-2023-29-vault-enterprise-s-sentinel-rgp-policies-allowed-for-cross-namespace-denial-of-service/58653"
+    ],
+    "description": "A Vault Enterprise Sentinel Role Governing Policy created by an operator to restrict access to resources in one namespace can be applied to requests outside in another non-descendant namespace, potentially resulting in denial of service. Fixed in Vault Enterprise 1.15.0, 1.14.4, 1.13.8.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 4.9,
+       "exploitabilityScore": 1.2,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "source": "security@hashicorp.com",
+      "type": "Secondary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:R/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 4.2,
+       "exploitabilityScore": 0.5,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:hashicorp:vault:v1.12.0:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "github.com/hashicorp/vault",
+       "version": "v1.12.0"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2023-3775",
+      "versionConstraint": ">= 0.11.0, < 1.13.8 || >= 1.14.0, < 1.14.4 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:hashicorp:vault:*:*:*:*:enterprise:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "76e36f11ea54d7bd",
+    "name": "github.com/hashicorp/vault",
+    "version": "v1.12.0",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/bin/vault",
+      "layerID": "sha256:9afb558de8e297fad19313e48054eb42d144c57834a447975f800bff37e1c5bf"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:hashicorp:vault:v1.12.0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/hashicorp/vault@v1.12.0",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goBuildSettings": {
+      "-compiler": "gc",
+      "-ldflags": " -X github.com/hashicorp/vault/sdk/version.Version=1.12.0 -X github.com/hashicorp/vault/sdk/version.GitCommit=558abfa75702b5dab4c98e86b802fb9aef43b0eb -X github.com/hashicorp/vault/sdk/version.BuildDate=2022-10-10T18:14:33Z",
+      "-tags": "ui",
+      "CGO_ENABLED": "0",
+      "GOAMD64": "v1",
+      "GOARCH": "amd64",
+      "GOOS": "linux",
+      "vcs": "git",
+      "vcs.modified": "true",
+      "vcs.revision": "558abfa75702b5dab4c98e86b802fb9aef43b0eb",
+      "vcs.time": "2022-10-10T22:14:33Z"
+     },
+     "goCompiledVersion": "go1.19.1",
+     "architecture": "amd64",
+     "mainModule": "github.com/hashicorp/vault"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-25000",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-25000",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://discuss.hashicorp.com/t/hcsec-2023-10-vault-vulnerable-to-cache-timing-attacks-during-seal-and-unseal-operations/52078",
+     "https://security.netapp.com/advisory/ntap-20230526-0008/"
+    ],
+    "description": "HashiCorp Vault's implementation of Shamir's secret sharing used precomputed table lookups, and was vulnerable to cache-timing attacks. An attacker with access to, and the ability to observe a large number of unseal operations on the host through a side channel may reduce the search space of a brute force effort to recover the Shamir shares. Fixed in Vault 1.13.1, 1.12.5, and 1.11.9.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:N/A:N",
+      "metrics": {
+       "baseScore": 4.7,
+       "exploitabilityScore": 1,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "source": "security@hashicorp.com",
+      "type": "Secondary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:H/PR:H/UI:R/S:C/C:H/I:N/A:N",
+      "metrics": {
+       "baseScore": 5,
+       "exploitabilityScore": 0.6,
+       "impactScore": 4
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:hashicorp:vault:v1.12.0:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "github.com/hashicorp/vault",
+       "version": "v1.12.0"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2023-25000",
+      "versionConstraint": "< 1.11.9 || < 1.11.9 || >= 1.12.0, < 1.12.5 || >= 1.12.0, < 1.12.5 || >= 1.13.0, < 1.13.1 || >= 1.13.0, < 1.13.1 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:hashicorp:vault:*:*:*:*:-:*:*:*",
+       "cpe:2.3:a:hashicorp:vault:*:*:*:*:enterprise:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "76e36f11ea54d7bd",
+    "name": "github.com/hashicorp/vault",
+    "version": "v1.12.0",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/bin/vault",
+      "layerID": "sha256:9afb558de8e297fad19313e48054eb42d144c57834a447975f800bff37e1c5bf"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:hashicorp:vault:v1.12.0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/hashicorp/vault@v1.12.0",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goBuildSettings": {
+      "-compiler": "gc",
+      "-ldflags": " -X github.com/hashicorp/vault/sdk/version.Version=1.12.0 -X github.com/hashicorp/vault/sdk/version.GitCommit=558abfa75702b5dab4c98e86b802fb9aef43b0eb -X github.com/hashicorp/vault/sdk/version.BuildDate=2022-10-10T18:14:33Z",
+      "-tags": "ui",
+      "CGO_ENABLED": "0",
+      "GOAMD64": "v1",
+      "GOARCH": "amd64",
+      "GOOS": "linux",
+      "vcs": "git",
+      "vcs.modified": "true",
+      "vcs.revision": "558abfa75702b5dab4c98e86b802fb9aef43b0eb",
+      "vcs.time": "2022-10-10T22:14:33Z"
+     },
+     "goCompiledVersion": "go1.19.1",
+     "architecture": "amd64",
+     "mainModule": "github.com/hashicorp/vault"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-2121",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-2121",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://discuss.hashicorp.com/t/hcsec-2023-17-vault-s-kv-diff-viewer-allowed-html-injection/54814"
+    ],
+    "description": "Vault and Vault Enterprise's (Vault) key-value v2 (kv-v2) diff viewer allowed HTML injection into the Vault web UI through key values. This vulnerability, CVE-2023-2121, is fixed in Vault 1.14.0, 1.13.3, 1.12.7, and 1.11.11.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+      "metrics": {
+       "baseScore": 5.4,
+       "exploitabilityScore": 2.3,
+       "impactScore": 2.7
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "source": "security@hashicorp.com",
+      "type": "Secondary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N",
+      "metrics": {
+       "baseScore": 4.3,
+       "exploitabilityScore": 2.8,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:hashicorp:vault:v1.12.0:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "github.com/hashicorp/vault",
+       "version": "v1.12.0"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2023-2121",
+      "versionConstraint": "< 1.11.11 || < 1.11.11 || >= 1.12.0, < 1.12.7 || >= 1.12.0, < 1.12.7 || >= 1.13.0, < 1.13.3 || >= 1.13.0, < 1.13.3 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:hashicorp:vault:*:*:*:*:-:*:*:*",
+       "cpe:2.3:a:hashicorp:vault:*:*:*:*:enterprise:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "76e36f11ea54d7bd",
+    "name": "github.com/hashicorp/vault",
+    "version": "v1.12.0",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/bin/vault",
+      "layerID": "sha256:9afb558de8e297fad19313e48054eb42d144c57834a447975f800bff37e1c5bf"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:hashicorp:vault:v1.12.0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/hashicorp/vault@v1.12.0",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goBuildSettings": {
+      "-compiler": "gc",
+      "-ldflags": " -X github.com/hashicorp/vault/sdk/version.Version=1.12.0 -X github.com/hashicorp/vault/sdk/version.GitCommit=558abfa75702b5dab4c98e86b802fb9aef43b0eb -X github.com/hashicorp/vault/sdk/version.BuildDate=2022-10-10T18:14:33Z",
+      "-tags": "ui",
+      "CGO_ENABLED": "0",
+      "GOAMD64": "v1",
+      "GOARCH": "amd64",
+      "GOOS": "linux",
+      "vcs": "git",
+      "vcs.modified": "true",
+      "vcs.revision": "558abfa75702b5dab4c98e86b802fb9aef43b0eb",
+      "vcs.time": "2022-10-10T22:14:33Z"
+     },
+     "goCompiledVersion": "go1.19.1",
+     "architecture": "amd64",
+     "mainModule": "github.com/hashicorp/vault"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-0665",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-0665",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://discuss.hashicorp.com/t/hcsec-2023-11-vault-s-pki-issuer-endpoint-did-not-correctly-authorize-access-to-issuer-metadata/52079/1",
+     "https://security.netapp.com/advisory/ntap-20230526-0008/"
+    ],
+    "description": "HashiCorp Vault's PKI mount issuer endpoints did not correctly authorize access to remove an issuer or modify issuer metadata, potentially resulting in denial of service of the PKI mount. This bug did not affect public or private key material, trust chains or certificate issuance. Fixed in Vault 1.13.1, 1.12.5, and 1.11.9.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L",
+      "metrics": {
+       "baseScore": 6.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 2.5
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "source": "security@hashicorp.com",
+      "type": "Secondary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L",
+      "metrics": {
+       "baseScore": 6.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 2.5
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:hashicorp:vault:v1.12.0:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "github.com/hashicorp/vault",
+       "version": "v1.12.0"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2023-0665",
+      "versionConstraint": "< 1.11.9 || < 1.11.9 || >= 1.12.0, < 1.12.5 || >= 1.12.0, < 1.12.5 || >= 1.13.0, < 1.13.1 || >= 1.13.0, < 1.13.1 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:hashicorp:vault:*:*:*:*:-:*:*:*",
+       "cpe:2.3:a:hashicorp:vault:*:*:*:*:enterprise:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "76e36f11ea54d7bd",
+    "name": "github.com/hashicorp/vault",
+    "version": "v1.12.0",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/bin/vault",
+      "layerID": "sha256:9afb558de8e297fad19313e48054eb42d144c57834a447975f800bff37e1c5bf"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:hashicorp:vault:v1.12.0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/hashicorp/vault@v1.12.0",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goBuildSettings": {
+      "-compiler": "gc",
+      "-ldflags": " -X github.com/hashicorp/vault/sdk/version.Version=1.12.0 -X github.com/hashicorp/vault/sdk/version.GitCommit=558abfa75702b5dab4c98e86b802fb9aef43b0eb -X github.com/hashicorp/vault/sdk/version.BuildDate=2022-10-10T18:14:33Z",
+      "-tags": "ui",
+      "CGO_ENABLED": "0",
+      "GOAMD64": "v1",
+      "GOARCH": "amd64",
+      "GOOS": "linux",
+      "vcs": "git",
+      "vcs.modified": "true",
+      "vcs.revision": "558abfa75702b5dab4c98e86b802fb9aef43b0eb",
+      "vcs.time": "2022-10-10T22:14:33Z"
+     },
+     "goCompiledVersion": "go1.19.1",
+     "architecture": "amd64",
+     "mainModule": "github.com/hashicorp/vault"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-0620",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-0620",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://discuss.hashicorp.com/t/hcsec-2023-12-vault-s-microsoft-sql-database-storage-backend-vulnerable-to-sql-injection-via-configuration-file/52080/1",
+     "https://security.netapp.com/advisory/ntap-20230526-0008/"
+    ],
+    "description": "HashiCorp Vault and Vault Enterprise versions 0.8.0 through 1.13.1 are vulnerable to an SQL injection attack when configuring the Microsoft SQL (MSSQL) Database Storage Backend. When configuring the MSSQL plugin through the local, certain parameters are not sanitized when passed to the user-provided MSSQL database. An attacker may modify these parameters to execute a malicious SQL command.\n\nThis issue is fixed in versions 1.13.1, 1.12.5, and 1.11.9.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 6.7,
+       "exploitabilityScore": 0.8,
+       "impactScore": 5.9
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "source": "security@hashicorp.com",
+      "type": "Secondary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:R/S:U/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 6.5,
+       "exploitabilityScore": 0.6,
+       "impactScore": 5.9
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:hashicorp:vault:v1.12.0:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "github.com/hashicorp/vault",
+       "version": "v1.12.0"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2023-0620",
+      "versionConstraint": "< 1.11.9 || < 1.11.9 || >= 1.12.0, < 1.12.5 || >= 1.12.0, < 1.12.5 || >= 1.13.0, < 1.13.1 || >= 1.13.0, < 1.13.1 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:hashicorp:vault:*:*:*:*:-:*:*:*",
+       "cpe:2.3:a:hashicorp:vault:*:*:*:*:enterprise:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "76e36f11ea54d7bd",
+    "name": "github.com/hashicorp/vault",
+    "version": "v1.12.0",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/bin/vault",
+      "layerID": "sha256:9afb558de8e297fad19313e48054eb42d144c57834a447975f800bff37e1c5bf"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:hashicorp:vault:v1.12.0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/hashicorp/vault@v1.12.0",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goBuildSettings": {
+      "-compiler": "gc",
+      "-ldflags": " -X github.com/hashicorp/vault/sdk/version.Version=1.12.0 -X github.com/hashicorp/vault/sdk/version.GitCommit=558abfa75702b5dab4c98e86b802fb9aef43b0eb -X github.com/hashicorp/vault/sdk/version.BuildDate=2022-10-10T18:14:33Z",
+      "-tags": "ui",
+      "CGO_ENABLED": "0",
+      "GOAMD64": "v1",
+      "GOARCH": "amd64",
+      "GOOS": "linux",
+      "vcs": "git",
+      "vcs.modified": "true",
+      "vcs.revision": "558abfa75702b5dab4c98e86b802fb9aef43b0eb",
+      "vcs.time": "2022-10-10T22:14:33Z"
+     },
+     "goCompiledVersion": "go1.19.1",
+     "architecture": "amd64",
+     "mainModule": "github.com/hashicorp/vault"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-fwv2-65wh-2w8c",
+    "dataSource": "https://github.com/advisories/GHSA-fwv2-65wh-2w8c",
+    "namespace": "github:language:go",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-fwv2-65wh-2w8c"
+    ],
+    "description": "Snowflake Golang Driver vulnerable to Command Injection",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:N",
+      "metrics": {
+       "baseScore": 7.3,
+       "exploitabilityScore": 2.1,
+       "impactScore": 5.2
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "1.6.19"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-34231",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-34231",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/snowflakedb/gosnowflake/commit/e11a2a555f1b9f7adc1f01fb7b5e7f38fbbb2a1c",
+      "https://github.com/snowflakedb/gosnowflake/pull/757",
+      "https://github.com/snowflakedb/gosnowflake/security/advisories/GHSA-fwv2-65wh-2w8c"
+     ],
+     "description": "gosnowflake is th Snowflake Golang driver. Prior to version 1.6.19, a command injection vulnerability exists in the Snowflake Golang driver via single sign-on (SSO) browser URL authentication. In order to exploit the potential for command injection, an attacker would need to be successful in (1) establishing a malicious resource and (2) redirecting users to utilize the resource. The attacker could set up a malicious, publicly accessible server which responds to the SSO URL with an attack payload. If the attacker then tricked a user into visiting the maliciously crafted connection URL, the user’s local machine would render the malicious payload, leading to a remote code execution. This attack scenario can be mitigated through URL whitelisting as well as common anti-phishing resources. A patch is available in version 1.6.19.",
+     "cvss": [
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.0",
+       "vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:N",
+       "metrics": {
+        "baseScore": 7.3,
+        "exploitabilityScore": 2.1,
+        "impactScore": 5.2
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 8.8,
+        "exploitabilityScore": 2.8,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/snowflakedb/gosnowflake",
+       "version": "v1.6.3"
+      }
+     },
+     "found": {
+      "versionConstraint": "<1.6.19 (unknown)",
+      "vulnerabilityID": "GHSA-fwv2-65wh-2w8c"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "a31be058798b8022",
+    "name": "github.com/snowflakedb/gosnowflake",
+    "version": "v1.6.3",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/bin/vault",
+      "layerID": "sha256:9afb558de8e297fad19313e48054eb42d144c57834a447975f800bff37e1c5bf"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:snowflakedb:gosnowflake:v1.6.3:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/snowflakedb/gosnowflake@v1.6.3",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.19.1",
+     "architecture": "amd64",
+     "h1Digest": "h1:EJDdDi74YbYt1ty164ge3fMZ0eVZ6KA7b1zmAa/wnRo=",
+     "mainModule": "github.com/hashicorp/vault"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-vvpx-j8f3-3w6h",
+    "dataSource": "https://github.com/advisories/GHSA-vvpx-j8f3-3w6h",
+    "namespace": "github:language:go",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-vvpx-j8f3-3w6h"
+    ],
+    "description": "Uncontrolled Resource Consumption",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "0.7.0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-41723",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-41723",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://go.dev/cl/468135",
+      "https://go.dev/cl/468295",
+      "https://go.dev/issue/57855",
+      "https://groups.google.com/g/golang-announce/c/V0aBFqaFs_E",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/4MA5XS5DAOJ5PKKNG5TUXKPQOFHT5VBC/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RGW7GE2Z32ZT47UFAQFDRQE33B7Q7LMT/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RLBQ3A7ROLEQXQLXFDLNJ7MYPKG5GULE/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/XX3IMUTZKRQ73PBZM4E2JP4BKYH4C6XE/",
+      "https://pkg.go.dev/vuln/GO-2023-1571"
+     ],
+     "description": "A maliciously crafted HTTP/2 stream could cause excessive CPU consumption in the HPACK decoder, sufficient to cause a denial of service from a small number of small requests.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "golang.org/x/net",
+       "version": "v0.0.0-20220909164309-bea034e7d591"
+      }
+     },
+     "found": {
+      "versionConstraint": "<0.7.0 (unknown)",
+      "vulnerabilityID": "GHSA-vvpx-j8f3-3w6h"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "7457f06cb4839562",
+    "name": "golang.org/x/net",
+    "version": "v0.0.0-20220909164309-bea034e7d591",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/bin/vault",
+      "layerID": "sha256:9afb558de8e297fad19313e48054eb42d144c57834a447975f800bff37e1c5bf"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:golang:x/net:v0.0.0-20220909164309-bea034e7d591:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/golang.org/x/net@v0.0.0-20220909164309-bea034e7d591",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.19.1",
+     "architecture": "amd64",
+     "h1Digest": "h1:D0B/7al0LLrVC8aWF4+oxpv/m8bc7ViFfVS8/gXGdqI=",
+     "mainModule": "github.com/hashicorp/vault"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-fxg5-wq6x-vr4w",
+    "dataSource": "https://github.com/advisories/GHSA-fxg5-wq6x-vr4w",
+    "namespace": "github:language:go",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-fxg5-wq6x-vr4w"
+    ],
+    "description": "golang.org/x/net/http2/h2c vulnerable to request smuggling attack",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "0.1.1-0.20221104162952-702349b0e862"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-41721",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-41721",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://go.dev/cl/447396",
+      "https://go.dev/issue/56352",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/X3H3EWQXM2XL5AGBX6UL443JEJ3GQXJN/",
+      "https://pkg.go.dev/vuln/GO-2023-1495"
+     ],
+     "description": "A request smuggling attack is possible when using MaxBytesHandler. When using MaxBytesHandler, the body of an HTTP request is not fully consumed. When the server attempts to read HTTP2 frames from the connection, it will instead be reading the body of the HTTP request, which could be attacker-manipulated to represent arbitrary HTTP2 requests.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "golang.org/x/net",
+       "version": "v0.0.0-20220909164309-bea034e7d591"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=0.0.0-20220524220425-1d687d428aca,<0.1.1-0.20221104162952-702349b0e862 (unknown)",
+      "vulnerabilityID": "GHSA-fxg5-wq6x-vr4w"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "7457f06cb4839562",
+    "name": "golang.org/x/net",
+    "version": "v0.0.0-20220909164309-bea034e7d591",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/bin/vault",
+      "layerID": "sha256:9afb558de8e297fad19313e48054eb42d144c57834a447975f800bff37e1c5bf"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:golang:x/net:v0.0.0-20220909164309-bea034e7d591:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/golang.org/x/net@v0.0.0-20220909164309-bea034e7d591",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.19.1",
+     "architecture": "amd64",
+     "h1Digest": "h1:D0B/7al0LLrVC8aWF4+oxpv/m8bc7ViFfVS8/gXGdqI=",
+     "mainModule": "github.com/hashicorp/vault"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-69ch-w2m2-3vjp",
+    "dataSource": "https://github.com/advisories/GHSA-69ch-w2m2-3vjp",
+    "namespace": "github:language:go",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-69ch-w2m2-3vjp"
+    ],
+    "description": "golang.org/x/text/language Denial of service via crafted Accept-Language header",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "0.3.8"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-32149",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-32149",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://go.dev/cl/442235",
+      "https://go.dev/issue/56152",
+      "https://groups.google.com/g/golang-announce/c/-hjNw559_tE/m/KlGTfid5CAAJ",
+      "https://pkg.go.dev/vuln/GO-2022-1059"
+     ],
+     "description": "An attacker may cause a denial of service by crafting an Accept-Language header which ParseAcceptLanguage will take significant time to parse.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "golang.org/x/text",
+       "version": "v0.3.7"
+      }
+     },
+     "found": {
+      "versionConstraint": "<0.3.8 (unknown)",
+      "vulnerabilityID": "GHSA-69ch-w2m2-3vjp"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "1a94d64c84dede90",
+    "name": "golang.org/x/text",
+    "version": "v0.3.7",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/bin/vault",
+      "layerID": "sha256:9afb558de8e297fad19313e48054eb42d144c57834a447975f800bff37e1c5bf"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:golang:x/text:v0.3.7:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/golang.org/x/text@v0.3.7",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.19.1",
+     "architecture": "amd64",
+     "h1Digest": "h1:olpwvP2KacW1ZWvsR7uQhoyTYvKAupfQrRGBFM352Gk=",
+     "mainModule": "github.com/hashicorp/vault"
+    }
+   }
+  }
+ ],
+ "source": {
+  "type": "image",
+  "target": {
+   "userInput": "docker.io/rapidfort/vault",
+   "imageID": "sha256:a3aa5029f778d857e3553e4b9a493f0ae67e1a9ac1a7e35d7131504a4d42fda1",
+   "manifestDigest": "sha256:9e8731e4700c7469ddb5c912e295f10b5c9213b32c1841acaa77dba8ac44fd3c",
+   "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+   "tags": [
+    "rapidfort/vault:latest"
+   ],
+   "imageSize": 215275792,
+   "layers": [
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:9afb558de8e297fad19313e48054eb42d144c57834a447975f800bff37e1c5bf",
+     "size": 215275792
+    }
+   ],
+   "manifest": "eyJzY2hlbWFWZXJzaW9uIjoyLCJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmRpc3RyaWJ1dGlvbi5tYW5pZmVzdC52Mitqc29uIiwiY29uZmlnIjp7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuY29udGFpbmVyLmltYWdlLnYxK2pzb24iLCJzaXplIjozNTE0LCJkaWdlc3QiOiJzaGEyNTY6YTNhYTUwMjlmNzc4ZDg1N2UzNTUzZTRiOWE0OTNmMGFlNjdlMWE5YWMxYTdlMzVkNzEzMTUwNGE0ZDQyZmRhMSJ9LCJsYXllcnMiOlt7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjoyMTU2Nzc5NTIsImRpZ2VzdCI6InNoYTI1Njo5YWZiNTU4ZGU4ZTI5N2ZhZDE5MzEzZTQ4MDU0ZWI0MmQxNDRjNTc4MzRhNDQ3OTc1ZjgwMGJmZjM3ZTFjNWJmIn1dfQ==",
+   "config": "eyJhcmNoaXRlY3R1cmUiOiJhbWQ2NCIsImNvbmZpZyI6eyJIb3N0bmFtZSI6IiIsIkRvbWFpbm5hbWUiOiIiLCJVc2VyIjoiIiwiQXR0YWNoU3RkaW4iOmZhbHNlLCJBdHRhY2hTdGRvdXQiOmZhbHNlLCJBdHRhY2hTdGRlcnIiOmZhbHNlLCJFeHBvc2VkUG9ydHMiOnsiODIwMC90Y3AiOnt9fSwiVHR5IjpmYWxzZSwiT3BlblN0ZGluIjpmYWxzZSwiU3RkaW5PbmNlIjpmYWxzZSwiRW52IjpbIlBBVEg9L3Vzci9sb2NhbC9zYmluOi91c3IvbG9jYWwvYmluOi91c3Ivc2JpbjovdXNyL2Jpbjovc2JpbjovYmluIl0sIkNtZCI6WyJzZXJ2ZXIiLCItZGV2Il0sIkFyZ3NFc2NhcGVkIjp0cnVlLCJJbWFnZSI6InNoYTI1Njo5ZWE5YjE3OTEzMmI2NzgzZTJiM2U1NTEzY2FkNTQxOTIxYjdlZjAwYzQxYmI5Y2FlMGYwYTUxY2IzYmFiMWZiIiwiVm9sdW1lcyI6eyIvdmF1bHQvZmlsZSI6e30sIi92YXVsdC9sb2dzIjp7fX0sIldvcmtpbmdEaXIiOiIvIiwiRW50cnlwb2ludCI6WyJkb2NrZXItZW50cnlwb2ludC5zaCJdLCJPbkJ1aWxkIjpudWxsLCJMYWJlbHMiOnsib3JpZ19pbWFnZV9kaWdlc3QiOiJzaGEyNTY6YzhhNDBkM2QwMjU1Y2NhM2E2NDgxOTQxN2E0ZTZkZWIxMWVlMmZmZmYwODQ5NGQ3ZmRkZjY0NGExOWU3MDNjMyIsInJmLmE4ZGNjYTMzLTYwMGQtNDViNC1hOTlhLWVkYWFhYTlmZGRjMyI6ImRvY2tlci5pby9saWJyYXJ5L3ZhdWx0OjEuMTIuMCIsInJmX2ltYWdlX2d1aWQuMTEzYjZjMjItY2Q5NC00YmUwLWIxNTAtMzg1NjQ1OWE5NTRhIjoiMTEzYjZjMjItY2Q5NC00YmUwLWIxNTAtMzg1NjQ1OWE5NTRhIn19LCJjb250YWluZXIiOiIzNDVmYjNlMWU3YmUyOTU3NzZlMDA2ZWY0NGRlZjViY2Q2ZmRlMTJkMTk1MzYyY2Y4MjY4MjY0YmRiYjM0MzNiIiwiY29udGFpbmVyX2NvbmZpZyI6eyJIb3N0bmFtZSI6IjM0NWZiM2UxZTdiZSIsIkRvbWFpbm5hbWUiOiIiLCJVc2VyIjoiIiwiQXR0YWNoU3RkaW4iOmZhbHNlLCJBdHRhY2hTdGRvdXQiOmZhbHNlLCJBdHRhY2hTdGRlcnIiOmZhbHNlLCJFeHBvc2VkUG9ydHMiOnsiODIwMC90Y3AiOnt9fSwiVHR5IjpmYWxzZSwiT3BlblN0ZGluIjpmYWxzZSwiU3RkaW5PbmNlIjpmYWxzZSwiRW52IjpbIlBBVEg9L3Vzci9sb2NhbC9zYmluOi91c3IvbG9jYWwvYmluOi91c3Ivc2JpbjovdXNyL2Jpbjovc2JpbjovYmluIl0sIkNtZCI6WyIvYmluL3NoIiwiLWMiLCIjKG5vcCkgIiwiTEFCRUwgb3JpZ19pbWFnZV9kaWdlc3Q9c2hhMjU2OmM4YTQwZDNkMDI1NWNjYTNhNjQ4MTk0MTdhNGU2ZGViMTFlZTJmZmZmMDg0OTRkN2ZkZGY2NDRhMTllNzAzYzMiXSwiQXJnc0VzY2FwZWQiOnRydWUsIkltYWdlIjoic2hhMjU2OjllYTliMTc5MTMyYjY3ODNlMmIzZTU1MTNjYWQ1NDE5MjFiN2VmMDBjNDFiYjljYWUwZjBhNTFjYjNiYWIxZmIiLCJWb2x1bWVzIjp7Ii92YXVsdC9maWxlIjp7fSwiL3ZhdWx0L2xvZ3MiOnt9fSwiV29ya2luZ0RpciI6Ii8iLCJFbnRyeXBvaW50IjpbImRvY2tlci1lbnRyeXBvaW50LnNoIl0sIk9uQnVpbGQiOm51bGwsIkxhYmVscyI6eyJvcmlnX2ltYWdlX2RpZ2VzdCI6InNoYTI1NjpjOGE0MGQzZDAyNTVjY2EzYTY0ODE5NDE3YTRlNmRlYjExZWUyZmZmZjA4NDk0ZDdmZGRmNjQ0YTE5ZTcwM2MzIiwicmYuYThkY2NhMzMtNjAwZC00NWI0LWE5OWEtZWRhYWFhOWZkZGMzIjoiZG9ja2VyLmlvL2xpYnJhcnkvdmF1bHQ6MS4xMi4wIiwicmZfaW1hZ2VfZ3VpZC4xMTNiNmMyMi1jZDk0LTRiZTAtYjE1MC0zODU2NDU5YTk1NGEiOiIxMTNiNmMyMi1jZDk0LTRiZTAtYjE1MC0zODU2NDU5YTk1NGEifX0sImNyZWF0ZWQiOiIyMDIzLTAyLTE1VDE4OjA0OjI5LjIxNjU3NTM3NFoiLCJkb2NrZXJfdmVyc2lvbiI6IjIwLjEwLjIyK2F6dXJlLTEiLCJoaXN0b3J5IjpbeyJjcmVhdGVkIjoiMjAyMy0wMi0xNVQxODowMzo1MC4zMzI5NjYzMTdaIiwiY3JlYXRlZF9ieSI6IkFERCBkb2NrZXIuaW8tbGlicmFyeS12YXVsdF8xLjEyLjAucmZoYXJkZW5lZC5kaXIudGFyIC8gIyBidWlsZGtpdCIsImNvbW1lbnQiOiJidWlsZGtpdC5kb2NrZXJmaWxlLnYwIn0seyJjcmVhdGVkIjoiMjAyMy0wMi0xNVQxODowMzo1MC4zMzI5NjYzMTdaIiwiY3JlYXRlZF9ieSI6IkxBQkVMIHJmLmE4ZGNjYTMzLTYwMGQtNDViNC1hOTlhLWVkYWFhYTlmZGRjMz1kb2NrZXIuaW8vbGlicmFyeS92YXVsdDoxLjEyLjAiLCJjb21tZW50IjoiYnVpbGRraXQuZG9ja2VyZmlsZS52MCIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDIzLTAyLTE1VDE4OjAzOjUwLjMzMjk2NjMxN1oiLCJjcmVhdGVkX2J5IjoiRU5WIFBBVEg9L3Vzci9sb2NhbC9zYmluOi91c3IvbG9jYWwvYmluOi91c3Ivc2JpbjovdXNyL2Jpbjovc2JpbjovYmluIiwiY29tbWVudCI6ImJ1aWxka2l0LmRvY2tlcmZpbGUudjAiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyMy0wMi0xNVQxODowMzo1MC4zMzI5NjYzMTdaIiwiY3JlYXRlZF9ieSI6IkVYUE9TRSBtYXBbODIwMC90Y3A6e31dIiwiY29tbWVudCI6ImJ1aWxka2l0LmRvY2tlcmZpbGUudjAiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyMy0wMi0xNVQxODowMzo1MC4zMzI5NjYzMTdaIiwiY3JlYXRlZF9ieSI6IlZPTFVNRSBbL3ZhdWx0L2ZpbGUgL3ZhdWx0L2xvZ3NdIiwiY29tbWVudCI6ImJ1aWxka2l0LmRvY2tlcmZpbGUudjAiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyMy0wMi0xNVQxODowMzo1MC4zMzI5NjYzMTdaIiwiY3JlYXRlZF9ieSI6IkVOVFJZUE9JTlQgW1wiZG9ja2VyLWVudHJ5cG9pbnQuc2hcIl0iLCJjb21tZW50IjoiYnVpbGRraXQuZG9ja2VyZmlsZS52MCIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDIzLTAyLTE1VDE4OjAzOjUwLjMzMjk2NjMxN1oiLCJjcmVhdGVkX2J5IjoiQ01EIFtcInNlcnZlclwiIFwiLWRldlwiXSIsImNvbW1lbnQiOiJidWlsZGtpdC5kb2NrZXJmaWxlLnYwIiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjMtMDItMTVUMTg6MDQ6MTQuMzIzNTQzNzcyWiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSAgTEFCRUwgb3JpZ19pbWFnZV9kaWdlc3Q9c2hhMjU2OmM4YTQwZDNkMDI1NWNjYTNhNjQ4MTk0MTdhNGU2ZGViMTFlZTJmZmZmMDg0OTRkN2ZkZGY2NDRhMTllNzAzYzMiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyMy0wMi0xNVQxODowNDoyOS4yMTY1NzUzNzRaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApICBMQUJFTCBvcmlnX2ltYWdlX2RpZ2VzdD1zaGEyNTY6YzhhNDBkM2QwMjU1Y2NhM2E2NDgxOTQxN2E0ZTZkZWIxMWVlMmZmZmYwODQ5NGQ3ZmRkZjY0NGExOWU3MDNjMyIsImVtcHR5X2xheWVyIjp0cnVlfV0sIm9zIjoibGludXgiLCJyb290ZnMiOnsidHlwZSI6ImxheWVycyIsImRpZmZfaWRzIjpbInNoYTI1Njo5YWZiNTU4ZGU4ZTI5N2ZhZDE5MzEzZTQ4MDU0ZWI0MmQxNDRjNTc4MzRhNDQ3OTc1ZjgwMGJmZjM3ZTFjNWJmIl19fQ==",
+   "repoDigests": [
+    "rapidfort/vault@sha256:80bccbf78c5d2855650feca91f4feec8d13665da7cd33cd84ae88045c70a4fc1"
+   ],
+   "architecture": "amd64",
+   "os": "linux"
+  }
+ },
+ "distro": {
+  "name": "alpine",
+  "version": "3.14.8",
+  "idLike": []
+ },
+ "descriptor": {
+  "name": "",
+  "version": "",
+  "configuration": {
+   "output": [
+    "json"
+   ],
+   "file": "",
+   "distro": "",
+   "add-cpes-if-none": false,
+   "output-template-file": "",
+   "check-for-app-update": true,
+   "only-fixed": false,
+   "only-notfixed": false,
+   "platform": "",
+   "search": {
+    "scope": "Squashed",
+    "unindexed-archives": false,
+    "indexed-archives": true
+   },
+   "ignore": null,
+   "exclude": [],
+   "db": {
+    "cache-dir": "/home/anon/.cache/grype/db",
+    "update-url": "https://toolbox-data.anchore.io/grype/databases/listing.json",
+    "ca-cert": "",
+    "auto-update": true,
+    "validate-by-hash-on-start": false,
+    "validate-age": true,
+    "max-allowed-built-age": 432000000000000
+   },
+   "externalSources": {
+    "enable": false,
+    "maven": {
+     "searchUpstreamBySha1": true,
+     "baseUrl": "https://search.maven.org/solrsearch/select"
+    }
+   },
+   "match": {
+    "java": {
+     "using-cpes": true
+    },
+    "dotnet": {
+     "using-cpes": true
+    },
+    "golang": {
+     "using-cpes": true
+    },
+    "javascript": {
+     "using-cpes": true
+    },
+    "python": {
+     "using-cpes": true
+    },
+    "ruby": {
+     "using-cpes": true
+    },
+    "stock": {
+     "using-cpes": true
+    }
+   },
+   "fail-on-severity": "",
+   "registry": {
+    "insecure-skip-tls-verify": false,
+    "insecure-use-http": false,
+    "auth": null,
+    "ca-cert": ""
+   },
+   "show-suppressed": false,
+   "by-cve": false,
+   "name": "",
+   "default-image-pull-source": "",
+   "vex-documents": [],
+   "vex-add": []
+  },
+  "db": {
+   "built": "2023-10-04T01:25:27Z",
+   "schemaVersion": 5,
+   "location": "/home/anon/.cache/grype/db/5",
+   "checksum": "sha256:b35ff3e4b7007f155864dec000bd4673437a934b6673184437d9c846645a695c",
+   "error": null
+  },
+  "timestamp": "2023-10-04T10:11:24.026338276-04:00"
+ }
+}

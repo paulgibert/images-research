@@ -1,0 +1,119 @@
+{
+ "matches": [],
+ "source": {
+  "type": "image",
+  "target": {
+   "userInput": "docker.io/rapidfort/redis-official",
+   "imageID": "sha256:97e90bac1c66e72636b486b9831028332de31de142c46a8e2f306a77fc702b42",
+   "manifestDigest": "sha256:2f2230daab61e701e3535e850ac37c89330e04e60cc7e4dc79710974f4026714",
+   "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+   "tags": [
+    "rapidfort/redis-official:latest"
+   ],
+   "imageSize": 24248720,
+   "layers": [
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:a8cc9f101a6bbdfacbfe48156d2504cd328a8a28f8f70f76eac54540c4de235f",
+     "size": 24248720
+    }
+   ],
+   "manifest": "eyJzY2hlbWFWZXJzaW9uIjoyLCJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmRpc3RyaWJ1dGlvbi5tYW5pZmVzdC52Mitqc29uIiwiY29uZmlnIjp7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuY29udGFpbmVyLmltYWdlLnYxK2pzb24iLCJzaXplIjo0NTExLCJkaWdlc3QiOiJzaGEyNTY6OTdlOTBiYWMxYzY2ZTcyNjM2YjQ4NmI5ODMxMDI4MzMyZGUzMWRlMTQyYzQ2YThlMmYzMDZhNzdmYzcwMmI0MiJ9LCJsYXllcnMiOlt7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjoyNDUxMDk3NiwiZGlnZXN0Ijoic2hhMjU2OmE4Y2M5ZjEwMWE2YmJkZmFjYmZlNDgxNTZkMjUwNGNkMzI4YThhMjhmOGY3MGY3NmVhYzU0NTQwYzRkZTIzNWYifV19",
+   "config": "eyJhcmNoaXRlY3R1cmUiOiJhbWQ2NCIsImNvbmZpZyI6eyJIb3N0bmFtZSI6IiIsIkRvbWFpbm5hbWUiOiIiLCJVc2VyIjoiIiwiQXR0YWNoU3RkaW4iOmZhbHNlLCJBdHRhY2hTdGRvdXQiOmZhbHNlLCJBdHRhY2hTdGRlcnIiOmZhbHNlLCJFeHBvc2VkUG9ydHMiOnsiNjM3OS90Y3AiOnt9fSwiVHR5IjpmYWxzZSwiT3BlblN0ZGluIjpmYWxzZSwiU3RkaW5PbmNlIjpmYWxzZSwiRW52IjpbIlBBVEg9L3Vzci9sb2NhbC9zYmluOi91c3IvbG9jYWwvYmluOi91c3Ivc2JpbjovdXNyL2Jpbjovc2JpbjovYmluIiwiUkVESVNfVkVSU0lPTj02LjAuMjAiLCJSRURJU19ET1dOTE9BRF9VUkw9aHR0cDovL2Rvd25sb2FkLnJlZGlzLmlvL3JlbGVhc2VzL3JlZGlzLTYuMC4yMC50YXIuZ3oiLCJSRURJU19ET1dOTE9BRF9TSEE9MTczZDRjNWY0NGI1ZDcxODZkYTk2YzRhZGM1Y2IyMGU4MDE4YjUwZWMzYThkZmUwZDE5MWRiYmFiNTM5NTJmMCJdLCJDbWQiOlsicmVkaXMtc2VydmVyIl0sIkltYWdlIjoic2hhMjU2OjY1ODk2YzY4MjlkYTgyYjc1NTRhZTI0ZjgzZWU4YmYwYWM1M2U1ZWU2Y2RlMGVjYWU1NzI5NjkyNGEyZGZiMjgiLCJWb2x1bWVzIjp7Ii9kYXRhIjp7fX0sIldvcmtpbmdEaXIiOiIvZGF0YSIsIkVudHJ5cG9pbnQiOlsiZG9ja2VyLWVudHJ5cG9pbnQuc2giXSwiT25CdWlsZCI6bnVsbCwiTGFiZWxzIjp7ImlvLmJ1aWxkYWgudmVyc2lvbiI6IjEuMjkuMCIsIm9yaWdfaW1hZ2VfZGlnZXN0Ijoic2hhMjU2OjcxMDBlODA4ZjRiOTYwNTM5YTlmNDViYTNkYjE4ZWJkYjM2ZjAzYTlkMGVmNGYxMjAwOTEyMmE2NzI0YmRhM2EiLCJyZi5jNmE0NWViNy05NmQ3LTQwZTEtYjZiMS1jMzIzOWEyZTRmMDgiOiJkb2NrZXIuaW8vbGlicmFyeS9yZWRpczo2LjAuMjAtYWxwaW5lMy4xOCIsInJmX2ltYWdlX2d1aWQuZGRmNTU2ZWYtNTJjYS00YzM1LWFjMjUtMjM2MzYzMzkxZGIwIjoiZGRmNTU2ZWYtNTJjYS00YzM1LWFjMjUtMjM2MzYzMzkxZGIwIn19LCJjb250YWluZXIiOiJjMDY4NDhjZWRkNzNkMjVlZWE0YWMyNTg1Yjg0MTg3NjlkODM3MzU3YzJlYjg1ZjIxM2M3OTJhYmNiYzQzNThlIiwiY29udGFpbmVyX2NvbmZpZyI6eyJIb3N0bmFtZSI6ImMwNjg0OGNlZGQ3MyIsIkRvbWFpbm5hbWUiOiIiLCJVc2VyIjoiIiwiQXR0YWNoU3RkaW4iOmZhbHNlLCJBdHRhY2hTdGRvdXQiOmZhbHNlLCJBdHRhY2hTdGRlcnIiOmZhbHNlLCJFeHBvc2VkUG9ydHMiOnsiNjM3OS90Y3AiOnt9fSwiVHR5IjpmYWxzZSwiT3BlblN0ZGluIjpmYWxzZSwiU3RkaW5PbmNlIjpmYWxzZSwiRW52IjpbIlBBVEg9L3Vzci9sb2NhbC9zYmluOi91c3IvbG9jYWwvYmluOi91c3Ivc2JpbjovdXNyL2Jpbjovc2JpbjovYmluIiwiUkVESVNfVkVSU0lPTj02LjAuMjAiLCJSRURJU19ET1dOTE9BRF9VUkw9aHR0cDovL2Rvd25sb2FkLnJlZGlzLmlvL3JlbGVhc2VzL3JlZGlzLTYuMC4yMC50YXIuZ3oiLCJSRURJU19ET1dOTE9BRF9TSEE9MTczZDRjNWY0NGI1ZDcxODZkYTk2YzRhZGM1Y2IyMGU4MDE4YjUwZWMzYThkZmUwZDE5MWRiYmFiNTM5NTJmMCJdLCJDbWQiOlsiL2Jpbi9zaCIsIi1jIiwiIyhub3ApICIsIkxBQkVMIG9yaWdfaW1hZ2VfZGlnZXN0PXNoYTI1Njo3MTAwZTgwOGY0Yjk2MDUzOWE5ZjQ1YmEzZGIxOGViZGIzNmYwM2E5ZDBlZjRmMTIwMDkxMjJhNjcyNGJkYTNhIl0sIkltYWdlIjoic2hhMjU2OjY1ODk2YzY4MjlkYTgyYjc1NTRhZTI0ZjgzZWU4YmYwYWM1M2U1ZWU2Y2RlMGVjYWU1NzI5NjkyNGEyZGZiMjgiLCJWb2x1bWVzIjp7Ii9kYXRhIjp7fX0sIldvcmtpbmdEaXIiOiIvZGF0YSIsIkVudHJ5cG9pbnQiOlsiZG9ja2VyLWVudHJ5cG9pbnQuc2giXSwiT25CdWlsZCI6bnVsbCwiTGFiZWxzIjp7ImlvLmJ1aWxkYWgudmVyc2lvbiI6IjEuMjkuMCIsIm9yaWdfaW1hZ2VfZGlnZXN0Ijoic2hhMjU2OjcxMDBlODA4ZjRiOTYwNTM5YTlmNDViYTNkYjE4ZWJkYjM2ZjAzYTlkMGVmNGYxMjAwOTEyMmE2NzI0YmRhM2EiLCJyZi5jNmE0NWViNy05NmQ3LTQwZTEtYjZiMS1jMzIzOWEyZTRmMDgiOiJkb2NrZXIuaW8vbGlicmFyeS9yZWRpczo2LjAuMjAtYWxwaW5lMy4xOCIsInJmX2ltYWdlX2d1aWQuZGRmNTU2ZWYtNTJjYS00YzM1LWFjMjUtMjM2MzYzMzkxZGIwIjoiZGRmNTU2ZWYtNTJjYS00YzM1LWFjMjUtMjM2MzYzMzkxZGIwIn19LCJjcmVhdGVkIjoiMjAyMy0xMC0wNFQwMjozNjoxMi4zOTUzNTU5OTVaIiwiZG9ja2VyX3ZlcnNpb24iOiIyNC4wLjYiLCJoaXN0b3J5IjpbeyJjcmVhdGVkIjoiMjAyMy0xMC0wNFQwMjozNjowMS4zNDgwMjUxMzdaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApIEFERCBmaWxlOjQ1MTc1NWY1N2Y2NjViODllYTYyODg2NDMxYzY4ODMwYjg0MDliMDcyN2JkOGM0OTE4MzVkNjcyNzNkMGQyODMgaW4gLyAifSx7ImNyZWF0ZWQiOiIyMDIzLTEwLTA0VDAyOjM2OjAxLjU3NzYwOTgwMVoiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgTEFCRUwgXCJyZi5jNmE0NWViNy05NmQ3LTQwZTEtYjZiMS1jMzIzOWEyZTRmMDhcIj1cImRvY2tlci5pby9saWJyYXJ5L3JlZGlzOjYuMC4yMC1hbHBpbmUzLjE4XCIiLCJjb21tZW50IjoiRlJPTSA2NzA4NjFkZjhiY2EiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyMy0xMC0wNFQwMjozNjowMS42MTAzMTI3NTdaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApIEVOViBQQVRIPVwiL3Vzci9sb2NhbC9zYmluOi91c3IvbG9jYWwvYmluOi91c3Ivc2JpbjovdXNyL2Jpbjovc2JpbjovYmluXCIgUkVESVNfVkVSU0lPTj1cIjYuMC4yMFwiIFJFRElTX0RPV05MT0FEX1VSTD1cImh0dHA6Ly9kb3dubG9hZC5yZWRpcy5pby9yZWxlYXNlcy9yZWRpcy02LjAuMjAudGFyLmd6XCIgUkVESVNfRE9XTkxPQURfU0hBPVwiMTczZDRjNWY0NGI1ZDcxODZkYTk2YzRhZGM1Y2IyMGU4MDE4YjUwZWMzYThkZmUwZDE5MWRiYmFiNTM5NTJmMFwiICIsImNvbW1lbnQiOiJGUk9NIDAzYzU1MzRiMjAxOSIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDIzLTEwLTA0VDAyOjM2OjAxLjY3NjcyNjg5M1oiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgRVhQT1NFICA2Mzc5L3RjcCIsImNvbW1lbnQiOiJGUk9NIDFhNGU4ZTQ1NTU1MiIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDIzLTEwLTA0VDAyOjM2OjAxLjcwODU4MzY2MloiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgVk9MVU1FIFtcIi9kYXRhXCJdIiwiY29tbWVudCI6IkZST00gNmQxYjU2ZWNhMDMyIiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjMtMTAtMDRUMDI6MzY6MDEuNzcxODk4NjQzWiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSBXT1JLRElSIC9kYXRhIiwiY29tbWVudCI6IkZST00gODMyMjgzMTAwZjllIiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjMtMTAtMDRUMDI6MzY6MDEuODMwMjUzMTU4WiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSBFTlRSWVBPSU5UIFtcImRvY2tlci1lbnRyeXBvaW50LnNoXCJdIiwiY29tbWVudCI6IkZST00gMWU5Yzk4MTVjZDg5IiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjMtMTAtMDRUMDI6MzY6MDEuODg4MTM0ODM1WiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSBDTUQgW1wicmVkaXMtc2VydmVyXCJdIiwiY29tbWVudCI6IkZST00gZGRmMGFiZTQ0MjUwIiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjMtMTAtMDRUMDI6MzY6MDIuMDE5OTE5NzMzWiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSBMQUJFTCBcInJmX2ltYWdlX2d1aWQuZGRmNTU2ZWYtNTJjYS00YzM1LWFjMjUtMjM2MzYzMzkxZGIwXCI9XCJkZGY1NTZlZi01MmNhLTRjMzUtYWMyNS0yMzYzNjMzOTFkYjBcIiIsImNvbW1lbnQiOiJGUk9NIGNhZjg0NDc0MDM1OCIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDIzLTEwLTA0VDAyOjM2OjA3LjU3OTUwMDk1NVoiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgIExBQkVMIG9yaWdfaW1hZ2VfZGlnZXN0PXNoYTI1Njo3MTAwZTgwOGY0Yjk2MDUzOWE5ZjQ1YmEzZGIxOGViZGIzNmYwM2E5ZDBlZjRmMTIwMDkxMjJhNjcyNGJkYTNhIiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjMtMTAtMDRUMDI6MzY6MTIuMzk1MzU1OTk1WiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSAgTEFCRUwgb3JpZ19pbWFnZV9kaWdlc3Q9c2hhMjU2OjcxMDBlODA4ZjRiOTYwNTM5YTlmNDViYTNkYjE4ZWJkYjM2ZjAzYTlkMGVmNGYxMjAwOTEyMmE2NzI0YmRhM2EiLCJlbXB0eV9sYXllciI6dHJ1ZX1dLCJvcyI6ImxpbnV4Iiwicm9vdGZzIjp7InR5cGUiOiJsYXllcnMiLCJkaWZmX2lkcyI6WyJzaGEyNTY6YThjYzlmMTAxYTZiYmRmYWNiZmU0ODE1NmQyNTA0Y2QzMjhhOGEyOGY4ZjcwZjc2ZWFjNTQ1NDBjNGRlMjM1ZiJdfX0=",
+   "repoDigests": [
+    "rapidfort/redis-official@sha256:1692d176d56db446312d2a6d018e130003d70a705acf0a091198714e37842d05"
+   ],
+   "architecture": "amd64",
+   "os": "linux"
+  }
+ },
+ "distro": {
+  "name": "alpine",
+  "version": "3.18.4",
+  "idLike": []
+ },
+ "descriptor": {
+  "name": "",
+  "version": "",
+  "configuration": {
+   "output": [
+    "json"
+   ],
+   "file": "",
+   "distro": "",
+   "add-cpes-if-none": false,
+   "output-template-file": "",
+   "check-for-app-update": true,
+   "only-fixed": false,
+   "only-notfixed": false,
+   "platform": "",
+   "search": {
+    "scope": "Squashed",
+    "unindexed-archives": false,
+    "indexed-archives": true
+   },
+   "ignore": null,
+   "exclude": [],
+   "db": {
+    "cache-dir": "/home/anon/.cache/grype/db",
+    "update-url": "https://toolbox-data.anchore.io/grype/databases/listing.json",
+    "ca-cert": "",
+    "auto-update": true,
+    "validate-by-hash-on-start": false,
+    "validate-age": true,
+    "max-allowed-built-age": 432000000000000
+   },
+   "externalSources": {
+    "enable": false,
+    "maven": {
+     "searchUpstreamBySha1": true,
+     "baseUrl": "https://search.maven.org/solrsearch/select"
+    }
+   },
+   "match": {
+    "java": {
+     "using-cpes": true
+    },
+    "dotnet": {
+     "using-cpes": true
+    },
+    "golang": {
+     "using-cpes": true
+    },
+    "javascript": {
+     "using-cpes": true
+    },
+    "python": {
+     "using-cpes": true
+    },
+    "ruby": {
+     "using-cpes": true
+    },
+    "stock": {
+     "using-cpes": true
+    }
+   },
+   "fail-on-severity": "",
+   "registry": {
+    "insecure-skip-tls-verify": false,
+    "insecure-use-http": false,
+    "auth": null,
+    "ca-cert": ""
+   },
+   "show-suppressed": false,
+   "by-cve": false,
+   "name": "",
+   "default-image-pull-source": "",
+   "vex-documents": [],
+   "vex-add": []
+  },
+  "db": {
+   "built": "2023-10-04T01:25:27Z",
+   "schemaVersion": 5,
+   "location": "/home/anon/.cache/grype/db/5",
+   "checksum": "sha256:b35ff3e4b7007f155864dec000bd4673437a934b6673184437d9c846645a695c",
+   "error": null
+  },
+  "timestamp": "2023-10-04T10:01:40.456826427-04:00"
+ }
+}

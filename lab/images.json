@@ -1,5 +1,5 @@
 {
-    "repos": {
+    "registries": {
         "chainguard": "cgr.dev/chainguard",
         "rapidfort": "docker.io/rapidfort",
         "docker": "docker.io"
@@ -14,7 +14,7 @@
             "alpine-full-name": "docker.io/yobasystems/alpine-mariadb:latest"
         },
         {
-            "name": "postgres",
+            "name": "postgres-official",
             "chainguard-latest": "postgres",
             "rapidfort-latest": "postgresql-official",
             "docker-latest": "postgres",
@@ -24,6 +24,13 @@
             "name": "redis",
             "chainguard-latest": "redis",
             "rapidfort-latest": "redis",
+            "docker-latest": "bitnami/redis",
+            "alpine-full-name": "docker.io/redis:alpine"
+        },
+        {
+            "name": "redis-official",
+            "chainguard-latest": "redis",
+            "rapidfort-latest": "redis-official",
             "docker-latest": "redis",
             "alpine-full-name": "docker.io/redis:alpine"
         },
@@ -31,8 +38,15 @@
             "name": "nginx",
             "chainguard-latest": "nginx",
             "rapidfort-latest": "nginx",
+            "docker-latest": "bitnami/nginx",
+            "alpine-full-name": ""
+        },
+        {
+            "name": "nginx-official",
+            "chainguard-latest": "nginx",
+            "rapidfort-latest": "nginx-official",
             "docker-latest": "nginx",
-            "alpine-full-name": "docker.io/redis:alpine"
+            "alpine-full-name": ""
         },
         {
             "name": "grafana",
@@ -46,6 +60,13 @@
             "chainguard-latest": "envoy",
             "rapidfort-latest": "envoy",
             "docker-latest": "bitnami/envoy",
+            "alpine-full-name": ""
+        },
+        {
+            "name": "envoy-official",
+            "chainguard-latest": "envoy",
+            "rapidfort-latest": "envoy-official",
+            "docker-latest": "envoy",
             "alpine-full-name": ""
         },
         {
@@ -64,7 +85,21 @@
             "alpine-full-name": ""
         },
         {
+            "name": "fluentd-official",
+            "chainguard-latest": "fluentd",
+            "rapidfort-latest": "fluentd-official",
+            "docker-latest": "fluentd",
+            "alpine-full-name": ""
+        },
+        {
             "name": "haproxy",
+            "chainguard-latest": "haproxy",
+            "rapidfort-latest": "haproxy",
+            "docker-latest": "bitnami/haproxy",
+            "alpine-full-name": "docker.io/haproxy:alpine"
+        },
+        {
+            "name": "haproxy-official",
             "chainguard-latest": "haproxy",
             "rapidfort-latest": "haproxy-official",
             "docker-latest": "haproxy",
@@ -88,7 +123,14 @@
             "name": "zookeper",
             "chainguard-latest": "zookeeper",
             "rapidfort-latest": "zookeeper",
-            "docker-latest": "bitnami/fluentd",
+            "docker-latest": "bitnami/zookeeper",
+            "alpine-full-name": ""
+        },
+        {
+            "name": "zookeper-official",
+            "chainguard-latest": "zookeeper",
+            "rapidfort-latest": "zookeeper-official",
+            "docker-latest": "zookeeper",
             "alpine-full-name": ""
         },
         {
@@ -104,6 +146,69 @@
             "rapidfort-latest": "nats",
             "docker-latest": "bitnami/nats",
             "alpine-full-name": "docker.io/nats:alpine"
+        },
+        {
+            "name": "nats-official",
+            "chainguard-latest": "nats",
+            "rapidfort-latest": "nats-official",
+            "docker-latest": "nats",
+            "alpine-full-name": "docker.io/nats:alpine"
+        },
+        {
+            "name": "prometheus",
+            "chainguard-latest": "prometheus",
+            "rapidfort-latest": "prometheus",
+            "docker-latest": "bitnami/prometheus",
+            "alpine-full-name": ""
+        },
+        {
+            "name": "memcached",
+            "chainguard-latest": "memcached",
+            "rapidfort-latest": "memcached",
+            "docker-latest": "bitnami/memcached",
+            "alpine-full-name": "docker.io/memchached:alpine"
+        },
+        {
+            "name": "memcached-official",
+            "chainguard-latest": "memcached",
+            "rapidfort-latest": "memcached-official",
+            "docker-latest": "memcached",
+            "alpine-full-name": "docker.io/memchached:alpine"
+        },
+        {
+            "name": "cassandra-official",
+            "chainguard-latest": "cassandra",
+            "rapidfort-latest": "cassandra-official",
+            "docker-latest": "cassandra",
+            "alpine-full-name": ""
+        },
+        {
+            "name": "curl",
+            "chainguard-latest": "curl",
+            "rapidfort-latest": "curl",
+            "docker-latest": "curlimages/curl",
+            "alpine-full-name": ""
+        },
+        {
+            "name": "traefik",
+            "chainguard-latest": "traefik",
+            "rapidfort-latest": "traefik",
+            "docker-latest": "traefik",
+            "alpine-full-name": "docker.io/traefik:alpine"
+        },
+        {
+            "name": "vault",
+            "chainguard-latest": "vault",
+            "rapidfort-latest": "vault",
+            "docker-latest": "hashicorp/vault",
+            "alpine-full-name": ""
+        },
+        {
+            "name": "telegraf",
+            "chainguard-latest": "telegraf",
+            "rapidfort-latest": "telegraf",
+            "docker-latest": "bitnami/telegraf",
+            "alpine-full-name": "docker.io/telegraf:alpine"
         }
     ]
 }
