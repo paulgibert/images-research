@@ -111,7 +111,7 @@ def main():
         
             df = pd.concat([df, pd.DataFrame(row, index=[0])], axis=0)
 
-    df.to_csv(DATA_OUT_PATH)
+    df.to_csv(DATA_OUT_PATH, index=False)
 
     os.system(f"rm -rf {TMP_DIR}")
 

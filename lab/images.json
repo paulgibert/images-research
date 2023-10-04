@@ -47,6 +47,63 @@
             "rapidfort-latest": "envoy",
             "docker-latest": "bitnami/envoy",
             "alpine-full-name": ""
+        },
+        {
+            "name": "etcd",
+            "chainguard-latest": "etcd",
+            "rapidfort-latest": "etcd",
+            "docker-latest": "bitnami/etcd",
+            "alpine-full-name": ""
+
+        },
+        {
+            "name": "fluentd",
+            "chainguard-latest": "fluentd",
+            "rapidfort-latest": "fluentd",
+            "docker-latest": "bitnami/fluentd",
+            "alpine-full-name": ""
+        },
+        {
+            "name": "haproxy",
+            "chainguard-latest": "haproxy",
+            "rapidfort-latest": "haproxy-official",
+            "docker-latest": "haproxy",
+            "alpine-full-name": "docker.io/haproxy:alpine"
+        },
+        {
+            "name": "influxdb",
+            "chainguard-latest": "influxdb",
+            "rapidfort-latest": "influxdb",
+            "docker-latest": "bitnami/influxdb",
+            "alpine-full-name": "docker.io/influxdb:alpine"
+        },
+        {
+            "name": "rabbitmq",
+            "chainguard-latest": "rabbitmq",
+            "rapidfort-latest": "rabbitmq",
+            "docker-latest": "bitnami/rabbitmq",
+            "alpine-full-name": "docker.io/rabbitmq:alpine"
+        },
+        {
+            "name": "zookeper",
+            "chainguard-latest": "zookeeper",
+            "rapidfort-latest": "zookeeper",
+            "docker-latest": "bitnami/fluentd",
+            "alpine-full-name": ""
+        },
+        {
+            "name": "consul",
+            "chainguard-latest": "consul",
+            "rapidfort-latest": "consul",
+            "docker-latest": "bitnami/consul",
+            "alpine-full-name": ""
+        },
+        {
+            "name": "nats",
+            "chainguard-latest": "nats",
+            "rapidfort-latest": "nats",
+            "docker-latest": "bitnami/nats",
+            "alpine-full-name": "docker.io/nats:alpine"
         }
     ]
 }

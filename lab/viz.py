@@ -77,21 +77,21 @@ def _plot_image_vulnerabilties_by_registry(ax: Axes, registry: str, index: int, 
     
     bar_x = np.arange(len(get_image_names(df)))
     n_registries = len(get_registry_names(df))
-    n_severity_levels = counts.shape[0]
+    n_severity_levels = counts.shape[1]
     
     bar_width, offset = get_bar_width(n_registries, index)
 
     alphas = np.linspace(1 / n_severity_levels, 1, n_severity_levels)
 
     # Manually plot the first severity level of each images
-    ax.bar(bar_x + offset, counts[0], bar_width,
+    ax.bar(bar_x + offset, counts[:,0], bar_width,
            color=color, alpha=alphas[0])
     
     # Iteratively plot the remaining severity levels
     for i in range(1, n_severity_levels):
-        bottom = np.sum(counts[0:i], axis=0)
+        bottom = np.sum(counts[:, 0:i], axis=1)
         label = registry if i == n_severity_levels - 1 else None
-        ax.bar(bar_x + offset, counts[i], bar_width,
+        ax.bar(bar_x + offset, counts[:,i], bar_width,
                bottom=bottom, color=color,
                alpha=alphas[i],
                label=label)
@@ -178,7 +178,9 @@ def plot_image_size_by_registry(df,
 
 
 def main():
+    # TODO: Figure out how to handle NA values
     df = pd.read_csv(RESULTS_PATH)
+
     plot_image_vulnerabilities_by_registry(df)
     plot_image_size_by_registry(df)
 
