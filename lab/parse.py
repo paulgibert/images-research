@@ -50,24 +50,27 @@ def add_row(row_data: Dict, df: pd.DataFrame) -> pd.DataFrame:
 
 def parse_image_name(filename: str) -> str:
     names = filename.split("-")
-    reg = parse_registry_name(filename)
-    if reg == "docker":
-        return names[1]
-    if reg == "alpine":
+    if "chainguard" in names:
+        return names[2]
+    if "rapidfort" in names:
+        if "official" in names:
+            return "-".join(names[2:4])
+        return names[2]
+    if "alpine" in names:
         return names[-3]
-    return names[2]
+    return names[-2]
 
 
 def parse_registry_name(filename: str) -> str:
     names = filename.split("-")
-    if names[-2] == "alpine":
+    if "chainguard" in names:
+        return "chainguard"
+    if "rapidfort" in names:
+        return "rapidfort"
+    if "alpine" in names:
         return "alpine"
-    if len(names) == 3:
-        return "other"
-    if names[1] not in ["chainguard", "rapidfort"]:
-        return "other"
-    return names[1]
-    
+    return "other"
+
 
 def parse_image_size(source: Dict) -> int:
     return source["target"]["imageSize"]
