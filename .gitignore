@@ -1,4 +1,4 @@
 env
-out
+lab/data/*
 figures
 *__pycache__*
