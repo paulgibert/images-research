@@ -1,2 +1,0 @@
-[31m1 error occurred:
-	* failed to catalog: unable to load image: unable to use DockerDaemon source: pull failed: Error response from daemon: pull access denied for envoy, repository does not exist or may require 'docker login': denied: requested access to the resource is denied[0m

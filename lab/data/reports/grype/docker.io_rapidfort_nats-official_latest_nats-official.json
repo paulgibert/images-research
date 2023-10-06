@@ -1,0 +1,119 @@
+{
+ "matches": [],
+ "source": {
+  "type": "image",
+  "target": {
+   "userInput": "docker.io/rapidfort/nats-official:latest",
+   "imageID": "sha256:2f64f1fe6c4ce552e307268bcd8e715858bb92c98047bfbfa2faf2545f2d42d3",
+   "manifestDigest": "sha256:78c59d30ba773a3c6fe2c5d08ee906841c3b9303507be1b9f78d137c6c71fa59",
+   "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+   "tags": [
+    "rapidfort/nats-official:latest"
+   ],
+   "imageSize": 13193459,
+   "layers": [
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:e730054d70cd9c279a0b7ad2204a64f0e5c77a0d1aef7ce8f9fe18bf70593228",
+     "size": 13193459
+    }
+   ],
+   "manifest": "eyJzY2hlbWFWZXJzaW9uIjoyLCJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmRpc3RyaWJ1dGlvbi5tYW5pZmVzdC52Mitqc29uIiwiY29uZmlnIjp7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuY29udGFpbmVyLmltYWdlLnYxK2pzb24iLCJzaXplIjozNjkyLCJkaWdlc3QiOiJzaGEyNTY6MmY2NGYxZmU2YzRjZTU1MmUzMDcyNjhiY2Q4ZTcxNTg1OGJiOTJjOTgwNDdiZmJmYTJmYWYyNTQ1ZjJkNDJkMyJ9LCJsYXllcnMiOlt7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjoxMzE5NjI4OCwiZGlnZXN0Ijoic2hhMjU2OmU3MzAwNTRkNzBjZDljMjc5YTBiN2FkMjIwNGE2NGYwZTVjNzdhMGQxYWVmN2NlOGY5ZmUxOGJmNzA1OTMyMjgifV19",
+   "config": "eyJhcmNoaXRlY3R1cmUiOiJhbWQ2NCIsImNvbmZpZyI6eyJIb3N0bmFtZSI6IiIsIkRvbWFpbm5hbWUiOiIiLCJVc2VyIjoiIiwiQXR0YWNoU3RkaW4iOmZhbHNlLCJBdHRhY2hTdGRvdXQiOmZhbHNlLCJBdHRhY2hTdGRlcnIiOmZhbHNlLCJFeHBvc2VkUG9ydHMiOnsiNDIyMi90Y3AiOnt9LCI2MjIyL3RjcCI6e30sIjgyMjIvdGNwIjp7fX0sIlR0eSI6ZmFsc2UsIk9wZW5TdGRpbiI6ZmFsc2UsIlN0ZGluT25jZSI6ZmFsc2UsIkVudiI6WyJQQVRIPS91c3IvbG9jYWwvc2JpbjovdXNyL2xvY2FsL2JpbjovdXNyL3NiaW46L3Vzci9iaW46L3NiaW46L2JpbjovIl0sIkNtZCI6WyItLWNvbmZpZyIsIm5hdHMtc2VydmVyLmNvbmYiXSwiSW1hZ2UiOiJzaGEyNTY6YmVhOTg4NTMzZGFiZjNlYzFjMDdkZmNhMDE1MTEyMDE2NTBjYTQzZWVhMTllNjRiMzAxNWIxYmIyY2MzMmU3YiIsIlZvbHVtZXMiOm51bGwsIldvcmtpbmdEaXIiOiIiLCJFbnRyeXBvaW50IjpbIi9uYXRzLXNlcnZlciJdLCJPbkJ1aWxkIjpudWxsLCJMYWJlbHMiOnsiaW8uYnVpbGRhaC52ZXJzaW9uIjoiMS4yOS4wIiwib3JpZ19pbWFnZV9kaWdlc3QiOiJzaGEyNTY6MmYzOWRjYWRjMmRhOTgyYWU5NmVjYTVlOTJkZjlmZTEwNDg3ODExYzhlNWYxZTljMzQ4MTM5MTZiMjJmMDliMiIsInJmLjk1MGE0Y2E0LTliOGMtNGIzZi1hZmUxLTEzYTUxNjNlYTE5NyI6ImRvY2tlci5pby9saWJyYXJ5L25hdHM6Mi45LjIyIiwicmZfaW1hZ2VfZ3VpZC5lMDg0YzhlZS00MDMyLTRhN2MtYWQzOC04ZDMxMDU2N2U2MGEiOiJlMDg0YzhlZS00MDMyLTRhN2MtYWQzOC04ZDMxMDU2N2U2MGEifX0sImNvbnRhaW5lciI6IjA0YTE4ZTlhNDY3Yzg0YTUzNTg5MzVlZjkyOTM3MGYzZmEwZjAxYTNiYzRhYzkwOTIwNzdhNGZiNWM4MjI5YzciLCJjb250YWluZXJfY29uZmlnIjp7Ikhvc3RuYW1lIjoiMDRhMThlOWE0NjdjIiwiRG9tYWlubmFtZSI6IiIsIlVzZXIiOiIiLCJBdHRhY2hTdGRpbiI6ZmFsc2UsIkF0dGFjaFN0ZG91dCI6ZmFsc2UsIkF0dGFjaFN0ZGVyciI6ZmFsc2UsIkV4cG9zZWRQb3J0cyI6eyI0MjIyL3RjcCI6e30sIjYyMjIvdGNwIjp7fSwiODIyMi90Y3AiOnt9fSwiVHR5IjpmYWxzZSwiT3BlblN0ZGluIjpmYWxzZSwiU3RkaW5PbmNlIjpmYWxzZSwiRW52IjpbIlBBVEg9L3Vzci9sb2NhbC9zYmluOi91c3IvbG9jYWwvYmluOi91c3Ivc2JpbjovdXNyL2Jpbjovc2JpbjovYmluOi8iXSwiQ21kIjpbIi9iaW4vc2giLCItYyIsIiMobm9wKSAiLCJMQUJFTCBvcmlnX2ltYWdlX2RpZ2VzdD1zaGEyNTY6MmYzOWRjYWRjMmRhOTgyYWU5NmVjYTVlOTJkZjlmZTEwNDg3ODExYzhlNWYxZTljMzQ4MTM5MTZiMjJmMDliMiJdLCJJbWFnZSI6InNoYTI1NjpiZWE5ODg1MzNkYWJmM2VjMWMwN2RmY2EwMTUxMTIwMTY1MGNhNDNlZWExOWU2NGIzMDE1YjFiYjJjYzMyZTdiIiwiVm9sdW1lcyI6bnVsbCwiV29ya2luZ0RpciI6IiIsIkVudHJ5cG9pbnQiOlsiL25hdHMtc2VydmVyIl0sIk9uQnVpbGQiOm51bGwsIkxhYmVscyI6eyJpby5idWlsZGFoLnZlcnNpb24iOiIxLjI5LjAiLCJvcmlnX2ltYWdlX2RpZ2VzdCI6InNoYTI1NjoyZjM5ZGNhZGMyZGE5ODJhZTk2ZWNhNWU5MmRmOWZlMTA0ODc4MTFjOGU1ZjFlOWMzNDgxMzkxNmIyMmYwOWIyIiwicmYuOTUwYTRjYTQtOWI4Yy00YjNmLWFmZTEtMTNhNTE2M2VhMTk3IjoiZG9ja2VyLmlvL2xpYnJhcnkvbmF0czoyLjkuMjIiLCJyZl9pbWFnZV9ndWlkLmUwODRjOGVlLTQwMzItNGE3Yy1hZDM4LThkMzEwNTY3ZTYwYSI6ImUwODRjOGVlLTQwMzItNGE3Yy1hZDM4LThkMzEwNTY3ZTYwYSJ9fSwiY3JlYXRlZCI6IjIwMjMtMDktMTNUMDU6MzE6MTQuOTYwODQ1MjE1WiIsImRvY2tlcl92ZXJzaW9uIjoiMjQuMC41IiwiaGlzdG9yeSI6W3siY3JlYXRlZCI6IjIwMjMtMDktMTNUMDU6MzE6MDUuNDM0MDE0MzgyWiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSBBREQgZmlsZTpmOTdhMGIxOGMxMzEzMDI2NmU5NTA3N2Q2ZWM3ZDc0MDJhMmMwODBkMTcxNDdjNmM5NDc2ZDY0NDQxMWMzMTUwIGluIC8gIn0seyJjcmVhdGVkIjoiMjAyMy0wOS0xM1QwNTozMTowNS41ODUxNDQ5OTVaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApIExBQkVMIFwicmYuOTUwYTRjYTQtOWI4Yy00YjNmLWFmZTEtMTNhNTE2M2VhMTk3XCI9XCJkb2NrZXIuaW8vbGlicmFyeS9uYXRzOjIuOS4yMlwiIiwiY29tbWVudCI6IkZST00gN2M5MmQwYTYwNDdjIiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjMtMDktMTNUMDU6MzE6MDUuNjE5MjA2MzM0WiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSBFTlYgUEFUSD1cIi91c3IvbG9jYWwvc2JpbjovdXNyL2xvY2FsL2JpbjovdXNyL3NiaW46L3Vzci9iaW46L3NiaW46L2JpbjovXCIgIiwiY29tbWVudCI6IkZST00gNjZhNjNhMzI3NzY3IiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjMtMDktMTNUMDU6MzE6MDUuNjQ5MTQ3ODFaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApIEVYUE9TRSAgNDIyMi90Y3AgNjIyMi90Y3AgODIyMi90Y3AiLCJjb21tZW50IjoiRlJPTSA5OGUwMmNjZjg2YWIiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyMy0wOS0xM1QwNTozMTowNS42ODI0OTQwNjRaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApIEVOVFJZUE9JTlQgW1wiL25hdHMtc2VydmVyXCJdIiwiY29tbWVudCI6IkZST00gZmFlZjZmMTAwMTQ3IiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjMtMDktMTNUMDU6MzE6MDUuNzEzODI0ODY3WiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSBDTUQgW1wiLS1jb25maWdcIiwgXCJuYXRzLXNlcnZlci5jb25mXCJdIiwiY29tbWVudCI6IkZST00gOGIxZDZkYWZhNTM5IiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjMtMDktMTNUMDU6MzE6MDUuODEyNjY1NjQ3WiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSBMQUJFTCBcInJmX2ltYWdlX2d1aWQuZTA4NGM4ZWUtNDAzMi00YTdjLWFkMzgtOGQzMTA1NjdlNjBhXCI9XCJlMDg0YzhlZS00MDMyLTRhN2MtYWQzOC04ZDMxMDU2N2U2MGFcIiIsImNvbW1lbnQiOiJGUk9NIDg3ODA0ZGQ5MGFkNCIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDIzLTA5LTEzVDA1OjMxOjExLjU0MjUyMTE1N1oiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgIExBQkVMIG9yaWdfaW1hZ2VfZGlnZXN0PXNoYTI1NjoyZjM5ZGNhZGMyZGE5ODJhZTk2ZWNhNWU5MmRmOWZlMTA0ODc4MTFjOGU1ZjFlOWMzNDgxMzkxNmIyMmYwOWIyIiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjMtMDktMTNUMDU6MzE6MTQuOTYwODQ1MjE1WiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSAgTEFCRUwgb3JpZ19pbWFnZV9kaWdlc3Q9c2hhMjU2OjJmMzlkY2FkYzJkYTk4MmFlOTZlY2E1ZTkyZGY5ZmUxMDQ4NzgxMWM4ZTVmMWU5YzM0ODEzOTE2YjIyZjA5YjIiLCJlbXB0eV9sYXllciI6dHJ1ZX1dLCJvcyI6ImxpbnV4Iiwicm9vdGZzIjp7InR5cGUiOiJsYXllcnMiLCJkaWZmX2lkcyI6WyJzaGEyNTY6ZTczMDA1NGQ3MGNkOWMyNzlhMGI3YWQyMjA0YTY0ZjBlNWM3N2EwZDFhZWY3Y2U4ZjlmZTE4YmY3MDU5MzIyOCJdfX0=",
+   "repoDigests": [
+    "rapidfort/nats-official@sha256:0e6a499b84e2890a30bb019cf1439e98e68989d6d9af6fa81e544d39ad194970"
+   ],
+   "architecture": "amd64",
+   "os": "linux"
+  }
+ },
+ "distro": {
+  "name": "",
+  "version": "",
+  "idLike": null
+ },
+ "descriptor": {
+  "name": "",
+  "version": "",
+  "configuration": {
+   "output": [
+    "json"
+   ],
+   "file": "",
+   "distro": "",
+   "add-cpes-if-none": false,
+   "output-template-file": "",
+   "check-for-app-update": true,
+   "only-fixed": false,
+   "only-notfixed": false,
+   "platform": "",
+   "search": {
+    "scope": "Squashed",
+    "unindexed-archives": false,
+    "indexed-archives": true
+   },
+   "ignore": null,
+   "exclude": [],
+   "db": {
+    "cache-dir": "/home/anon/.cache/grype/db",
+    "update-url": "https://toolbox-data.anchore.io/grype/databases/listing.json",
+    "ca-cert": "",
+    "auto-update": true,
+    "validate-by-hash-on-start": false,
+    "validate-age": true,
+    "max-allowed-built-age": 432000000000000
+   },
+   "externalSources": {
+    "enable": false,
+    "maven": {
+     "searchUpstreamBySha1": true,
+     "baseUrl": "https://search.maven.org/solrsearch/select"
+    }
+   },
+   "match": {
+    "java": {
+     "using-cpes": true
+    },
+    "dotnet": {
+     "using-cpes": true
+    },
+    "golang": {
+     "using-cpes": true
+    },
+    "javascript": {
+     "using-cpes": true
+    },
+    "python": {
+     "using-cpes": true
+    },
+    "ruby": {
+     "using-cpes": true
+    },
+    "stock": {
+     "using-cpes": true
+    }
+   },
+   "fail-on-severity": "",
+   "registry": {
+    "insecure-skip-tls-verify": false,
+    "insecure-use-http": false,
+    "auth": null,
+    "ca-cert": ""
+   },
+   "show-suppressed": false,
+   "by-cve": false,
+   "name": "",
+   "default-image-pull-source": "",
+   "vex-documents": [],
+   "vex-add": []
+  },
+  "db": {
+   "built": "2023-10-05T01:24:28Z",
+   "schemaVersion": 5,
+   "location": "/home/anon/.cache/grype/db/5",
+   "checksum": "sha256:0aa4480307da25db6ef6dfb3c3fbeee0ca495c184f8a1314964dfb80ce57a17e",
+   "error": null
+  },
+  "timestamp": "2023-10-05T22:44:57.929640015-04:00"
+ }
+}

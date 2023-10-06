@@ -1,0 +1,3232 @@
+{
+ "artifacts": [
+  {
+   "id": "da6da7fb79b3c88f",
+   "name": "ca-certificates-bundle",
+   "version": "20230506-r0",
+   "type": "apk",
+   "foundBy": "apkdb-cataloger",
+   "locations": [
+    {
+     "path": "/lib/apk/db/installed",
+     "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [
+    {
+     "value": "MPL-2.0 AND MIT",
+     "spdxExpression": "MPL-2.0 AND MIT",
+     "type": "declared",
+     "urls": [],
+     "locations": [
+      {
+       "path": "/lib/apk/db/installed",
+       "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837",
+       "annotations": {
+        "evidence": "primary"
+       }
+      }
+     ]
+    }
+   ],
+   "language": "",
+   "cpes": [
+    "cpe:2.3:a:ca-certificates-bundle:ca-certificates-bundle:20230506-r0:*:*:*:*:*:*:*",
+    "cpe:2.3:a:ca-certificates-bundle:ca_certificates_bundle:20230506-r0:*:*:*:*:*:*:*",
+    "cpe:2.3:a:ca_certificates_bundle:ca-certificates-bundle:20230506-r0:*:*:*:*:*:*:*",
+    "cpe:2.3:a:ca_certificates_bundle:ca_certificates_bundle:20230506-r0:*:*:*:*:*:*:*",
+    "cpe:2.3:a:ca-certificates:ca-certificates-bundle:20230506-r0:*:*:*:*:*:*:*",
+    "cpe:2.3:a:ca-certificates:ca_certificates_bundle:20230506-r0:*:*:*:*:*:*:*",
+    "cpe:2.3:a:ca_certificates:ca-certificates-bundle:20230506-r0:*:*:*:*:*:*:*",
+    "cpe:2.3:a:ca_certificates:ca_certificates_bundle:20230506-r0:*:*:*:*:*:*:*",
+    "cpe:2.3:a:ca:ca-certificates-bundle:20230506-r0:*:*:*:*:*:*:*",
+    "cpe:2.3:a:ca:ca_certificates_bundle:20230506-r0:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:apk/wolfi/ca-certificates-bundle@20230506-r0?arch=x86_64&upstream=ca-certificates&distro=wolfi-20230201",
+   "metadataType": "ApkMetadata",
+   "metadata": {
+    "package": "ca-certificates-bundle",
+    "originPackage": "ca-certificates",
+    "maintainer": "",
+    "version": "20230506-r0",
+    "architecture": "x86_64",
+    "url": "",
+    "description": "",
+    "size": 125959,
+    "installedSize": 249591,
+    "pullDependencies": [],
+    "provides": [],
+    "pullChecksum": "Q1/YGo3iUSdyF2/rk3tKR6MhtUEzg=",
+    "gitCommitOfApkPort": "dce7a013970cd5196c6b65093e3f67c6027cadd9",
+    "files": [
+     {
+      "path": "/etc"
+     },
+     {
+      "path": "/etc/ssl"
+     },
+     {
+      "path": "/etc/ssl/cert.pem",
+      "ownerUid": "0",
+      "ownerGid": "0",
+      "permissions": "0777",
+      "digest": {
+       "algorithm": "'Q1'+base64(sha1)",
+       "value": "Q1Nj6gTBdkZpTFW/obJGdpfvK0StA="
+      }
+     },
+     {
+      "path": "/etc/ssl/certs"
+     },
+     {
+      "path": "/etc/ssl/certs/ca-certificates.crt",
+      "digest": {
+       "algorithm": "'Q1'+base64(sha1)",
+       "value": "Q1sTKzEqQsi+XWMgaa7MZ5e2KfEmQ="
+      }
+     },
+     {
+      "path": "/var"
+     },
+     {
+      "path": "/var/lib"
+     },
+     {
+      "path": "/var/lib/db"
+     },
+     {
+      "path": "/var/lib/db/sbom"
+     },
+     {
+      "path": "/var/lib/db/sbom/ca-certificates-bundle-20230506-r0.spdx.json",
+      "digest": {
+       "algorithm": "'Q1'+base64(sha1)",
+       "value": "Q1UatTj5bC5JpYEGld40DlaxfIKH4="
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "84513f8d74e62541",
+   "name": "ca-certificates-bundle",
+   "version": "20230506-r0",
+   "type": "apk",
+   "foundBy": "sbom-cataloger",
+   "locations": [
+    {
+     "path": "/var/lib/db/sbom/ca-certificates-bundle-20230506-r0.spdx.json",
+     "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [
+    {
+     "value": "MPL-2.0 AND MIT",
+     "spdxExpression": "MPL-2.0 AND MIT",
+     "type": "declared",
+     "urls": [],
+     "locations": []
+    }
+   ],
+   "language": "",
+   "cpes": [
+    "cpe:2.3:a:ca-certificates-bundle:ca-certificates-bundle:20230506-r0:*:*:*:*:*:*:*",
+    "cpe:2.3:a:ca-certificates-bundle:ca_certificates_bundle:20230506-r0:*:*:*:*:*:*:*",
+    "cpe:2.3:a:ca_certificates_bundle:ca-certificates-bundle:20230506-r0:*:*:*:*:*:*:*",
+    "cpe:2.3:a:ca_certificates_bundle:ca_certificates_bundle:20230506-r0:*:*:*:*:*:*:*",
+    "cpe:2.3:a:ca-certificates:ca-certificates-bundle:20230506-r0:*:*:*:*:*:*:*",
+    "cpe:2.3:a:ca-certificates:ca_certificates_bundle:20230506-r0:*:*:*:*:*:*:*",
+    "cpe:2.3:a:ca_certificates:ca-certificates-bundle:20230506-r0:*:*:*:*:*:*:*",
+    "cpe:2.3:a:ca_certificates:ca_certificates_bundle:20230506-r0:*:*:*:*:*:*:*",
+    "cpe:2.3:a:ca:ca-certificates-bundle:20230506-r0:*:*:*:*:*:*:*",
+    "cpe:2.3:a:ca:ca_certificates_bundle:20230506-r0:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:apk/wolfi/ca-certificates-bundle@20230506-r0?arch=x86_64",
+   "metadataType": "ApkMetadata",
+   "metadata": {
+    "package": "ca-certificates-bundle",
+    "originPackage": "",
+    "maintainer": "",
+    "version": "20230506-r0",
+    "architecture": "x86_64",
+    "url": "",
+    "description": "",
+    "size": 0,
+    "installedSize": 0,
+    "pullDependencies": null,
+    "provides": null,
+    "pullChecksum": "",
+    "gitCommitOfApkPort": "",
+    "files": null
+   }
+  },
+  {
+   "id": "7f067570cd70310b",
+   "name": "github.com/klauspost/compress",
+   "version": "v1.17.0",
+   "type": "go-module",
+   "foundBy": "go-module-binary-cataloger",
+   "locations": [
+    {
+     "path": "/usr/bin/nats-server",
+     "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "go",
+   "cpes": [
+    "cpe:2.3:a:klauspost:compress:v1.17.0:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:golang/github.com/klauspost/compress@v1.17.0",
+   "metadataType": "GolangBinMetadata",
+   "metadata": {
+    "goCompiledVersion": "go1.21.1",
+    "architecture": "amd64",
+    "h1Digest": "h1:Rnbp4K9EjcDuVuHtd0dgA4qNuv9yKDYKK1ulpJwgrqM=",
+    "mainModule": "github.com/nats-io/nats-server/v2"
+   }
+  },
+  {
+   "id": "8eabc794a5d152a9",
+   "name": "github.com/minio/highwayhash",
+   "version": "v1.0.2",
+   "type": "go-module",
+   "foundBy": "go-module-binary-cataloger",
+   "locations": [
+    {
+     "path": "/usr/bin/nats-server",
+     "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "go",
+   "cpes": [
+    "cpe:2.3:a:minio:highwayhash:v1.0.2:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:golang/github.com/minio/highwayhash@v1.0.2",
+   "metadataType": "GolangBinMetadata",
+   "metadata": {
+    "goCompiledVersion": "go1.21.1",
+    "architecture": "amd64",
+    "h1Digest": "h1:Aak5U0nElisjDCfPSG79Tgzkn2gl66NxOMspRrKnA/g=",
+    "mainModule": "github.com/nats-io/nats-server/v2"
+   }
+  },
+  {
+   "id": "7182e322637ca575",
+   "name": "github.com/nats-io/jwt/v2",
+   "version": "v2.5.2",
+   "type": "go-module",
+   "foundBy": "go-module-binary-cataloger",
+   "locations": [
+    {
+     "path": "/usr/bin/nats-server",
+     "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "go",
+   "cpes": [
+    "cpe:2.3:a:nats-io:jwt\\/v2:v2.5.2:*:*:*:*:*:*:*",
+    "cpe:2.3:a:nats_io:jwt\\/v2:v2.5.2:*:*:*:*:*:*:*",
+    "cpe:2.3:a:nats:jwt\\/v2:v2.5.2:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:golang/github.com/nats-io/jwt/v2@v2.5.2",
+   "metadataType": "GolangBinMetadata",
+   "metadata": {
+    "goCompiledVersion": "go1.21.1",
+    "architecture": "amd64",
+    "h1Digest": "h1:DhGH+nKt+wIkDxM6qnVSKjokq5t59AZV5HRcFW0zJwU=",
+    "mainModule": "github.com/nats-io/nats-server/v2"
+   }
+  },
+  {
+   "id": "ae0d35dd43a35beb",
+   "name": "github.com/nats-io/nats-server/v2",
+   "version": "v0.0.0-20230920172051-d3ef745f253d",
+   "type": "go-module",
+   "foundBy": "go-module-binary-cataloger",
+   "locations": [
+    {
+     "path": "/usr/bin/nats-server",
+     "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "go",
+   "cpes": [
+    "cpe:2.3:a:nats-io:nats-server\\/v2:v0.0.0-20230920172051-d3ef745f253d:*:*:*:*:*:*:*",
+    "cpe:2.3:a:nats-io:nats_server\\/v2:v0.0.0-20230920172051-d3ef745f253d:*:*:*:*:*:*:*",
+    "cpe:2.3:a:nats_io:nats-server\\/v2:v0.0.0-20230920172051-d3ef745f253d:*:*:*:*:*:*:*",
+    "cpe:2.3:a:nats_io:nats_server\\/v2:v0.0.0-20230920172051-d3ef745f253d:*:*:*:*:*:*:*",
+    "cpe:2.3:a:nats:nats-server\\/v2:v0.0.0-20230920172051-d3ef745f253d:*:*:*:*:*:*:*",
+    "cpe:2.3:a:nats:nats_server\\/v2:v0.0.0-20230920172051-d3ef745f253d:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:golang/github.com/nats-io/nats-server/v2@v0.0.0-20230920172051-d3ef745f253d",
+   "metadataType": "GolangBinMetadata",
+   "metadata": {
+    "goBuildSettings": {
+     "-buildmode": "exe",
+     "-compiler": "gc",
+     "-ldflags": "-s -w -X github.com/nats-io/nats-server/v2/server.gitCommit=d3ef745f253d1851b5c21e8502acb5d6a8e6eee7",
+     "CGO_CFLAGS": "",
+     "CGO_CPPFLAGS": "",
+     "CGO_CXXFLAGS": "",
+     "CGO_ENABLED": "1",
+     "CGO_LDFLAGS": "",
+     "DefaultGODEBUG": "panicnil=1",
+     "GOAMD64": "v1",
+     "GOARCH": "amd64",
+     "GOOS": "linux",
+     "vcs": "git",
+     "vcs.modified": "true",
+     "vcs.revision": "d3ef745f253d1851b5c21e8502acb5d6a8e6eee7",
+     "vcs.time": "2023-09-20T17:20:51Z"
+    },
+    "goCompiledVersion": "go1.21.1",
+    "architecture": "amd64",
+    "mainModule": "github.com/nats-io/nats-server/v2"
+   }
+  },
+  {
+   "id": "ca20713ee27c435c",
+   "name": "github.com/nats-io/nkeys",
+   "version": "v0.4.5",
+   "type": "go-module",
+   "foundBy": "go-module-binary-cataloger",
+   "locations": [
+    {
+     "path": "/usr/bin/nats-server",
+     "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "go",
+   "cpes": [
+    "cpe:2.3:a:nats-io:nkeys:v0.4.5:*:*:*:*:*:*:*",
+    "cpe:2.3:a:nats_io:nkeys:v0.4.5:*:*:*:*:*:*:*",
+    "cpe:2.3:a:nats:nkeys:v0.4.5:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:golang/github.com/nats-io/nkeys@v0.4.5",
+   "metadataType": "GolangBinMetadata",
+   "metadata": {
+    "goCompiledVersion": "go1.21.1",
+    "architecture": "amd64",
+    "h1Digest": "h1:Zdz2BUlFm4fJlierwvGK+yl20IAKUm7eV6AAZXEhkPk=",
+    "mainModule": "github.com/nats-io/nats-server/v2"
+   }
+  },
+  {
+   "id": "eaa2ef00f6a63a05",
+   "name": "github.com/nats-io/nuid",
+   "version": "v1.0.1",
+   "type": "go-module",
+   "foundBy": "go-module-binary-cataloger",
+   "locations": [
+    {
+     "path": "/usr/bin/nats-server",
+     "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "go",
+   "cpes": [
+    "cpe:2.3:a:nats-io:nuid:v1.0.1:*:*:*:*:*:*:*",
+    "cpe:2.3:a:nats_io:nuid:v1.0.1:*:*:*:*:*:*:*",
+    "cpe:2.3:a:nats:nuid:v1.0.1:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:golang/github.com/nats-io/nuid@v1.0.1",
+   "metadataType": "GolangBinMetadata",
+   "metadata": {
+    "goCompiledVersion": "go1.21.1",
+    "architecture": "amd64",
+    "h1Digest": "h1:5iA8DT8V7q8WK2EScv2padNa/rTESc1KdnPw4TC2paw=",
+    "mainModule": "github.com/nats-io/nats-server/v2"
+   }
+  },
+  {
+   "id": "cc744a167ead10ac",
+   "name": "glibc",
+   "version": "2.38-r5",
+   "type": "apk",
+   "foundBy": "apkdb-cataloger",
+   "locations": [
+    {
+     "path": "/lib/apk/db/installed",
+     "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [
+    {
+     "value": "GPL-3.0-or-later",
+     "spdxExpression": "GPL-3.0-or-later",
+     "type": "declared",
+     "urls": [],
+     "locations": [
+      {
+       "path": "/lib/apk/db/installed",
+       "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837",
+       "annotations": {
+        "evidence": "primary"
+       }
+      }
+     ]
+    }
+   ],
+   "language": "",
+   "cpes": [
+    "cpe:2.3:a:glibc:glibc:2.38-r5:*:*:*:*:*:*:*",
+    "cpe:2.3:a:gnu:glibc:2.38-r5:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:apk/wolfi/glibc@2.38-r5?arch=x86_64&distro=wolfi-20230201",
+   "metadataType": "ApkMetadata",
+   "metadata": {
+    "package": "glibc",
+    "originPackage": "glibc",
+    "maintainer": "",
+    "version": "2.38-r5",
+    "architecture": "x86_64",
+    "url": "",
+    "description": "the GNU C library",
+    "size": 2763452,
+    "installedSize": 6656589,
+    "pullDependencies": [
+     "!musl",
+     "glibc-locale-posix",
+     "so:ld-linux-x86-64.so.2",
+     "wolfi-baselayout"
+    ],
+    "provides": [
+     "cmd:ldconfig=2.38-r5",
+     "so:libBrokenLocale.so.1=1",
+     "so:libanl.so.1=1",
+     "so:libc.so.6=6",
+     "so:libc_malloc_debug.so.0=0",
+     "so:libdl.so.2=2",
+     "so:libm.so.6=6",
+     "so:libmemusage.so=0",
+     "so:libmvec.so.1=1",
+     "so:libnsl.so.1=1",
+     "so:libnss_compat.so.2=2",
+     "so:libnss_dns.so.2=2",
+     "so:libnss_files.so.2=2",
+     "so:libpthread.so.0=0",
+     "so:libresolv.so.2=2",
+     "so:librt.so.1=1",
+     "so:libthread_db.so.1=1",
+     "so:libutil.so.1=1"
+    ],
+    "pullChecksum": "Q1jk31YFY5xASRDIRznifI1V6yg5A=",
+    "gitCommitOfApkPort": "fdf31da687adfe744daf5bbebed010257f14c05a",
+    "files": [
+     {
+      "path": "/etc"
+     },
+     {
+      "path": "/etc/rpc",
+      "digest": {
+       "algorithm": "'Q1'+base64(sha1)",
+       "value": "Q1jGjIKDdX2z6RCGWyRQdzh/kWagg="
+      }
+     },
+     {
+      "path": "/lib"
+     },
+     {
+      "path": "/lib/libBrokenLocale.so.1",
+      "ownerUid": "0",
+      "ownerGid": "0",
+      "permissions": "0755",
+      "digest": {
+       "algorithm": "'Q1'+base64(sha1)",
+       "value": "Q1ElbfizrH/ARHsXP3a2RTbdLyNj0="
+      }
+     },
+     {
+      "path": "/lib/libanl.so.1",
+      "ownerUid": "0",
+      "ownerGid": "0",
+      "permissions": "0755",
+      "digest": {
+       "algorithm": "'Q1'+base64(sha1)",
+       "value": "Q190jVzPRxl8hSilAdtj4TBpjtZIk="
+      }
+     },
+     {
+      "path": "/lib/libc.so.6",
+      "ownerUid": "0",
+      "ownerGid": "0",
+      "permissions": "0755",
+      "digest": {
+       "algorithm": "'Q1'+base64(sha1)",
+       "value": "Q1kmSPv5quYN5b6DXfOjk29ZNkngk="
+      }
+     },
+     {
+      "path": "/lib/libc_malloc_debug.so.0",
+      "ownerUid": "0",
+      "ownerGid": "0",
+      "permissions": "0755",
+      "digest": {
+       "algorithm": "'Q1'+base64(sha1)",
+       "value": "Q1VkKjXiBjuRuUYTLwZ7W6OpAOQNs="
+      }
+     },
+     {
+      "path": "/lib/libdl.so.2",
+      "ownerUid": "0",
+      "ownerGid": "0",
+      "permissions": "0755",
+      "digest": {
+       "algorithm": "'Q1'+base64(sha1)",
+       "value": "Q1kpyMO3lpMcVYM5WetZ2qtbn1D6Y="
+      }
+     },
+     {
+      "path": "/lib/libm.so.6",
+      "ownerUid": "0",
+      "ownerGid": "0",
+      "permissions": "0755",
+      "digest": {
+       "algorithm": "'Q1'+base64(sha1)",
+       "value": "Q16CnBpDGPEArc8dQpPC/q/bfhSoM="
+      }
+     },
+     {
+      "path": "/lib/libmemusage.so",
+      "ownerUid": "0",
+      "ownerGid": "0",
+      "permissions": "0755",
+      "digest": {
+       "algorithm": "'Q1'+base64(sha1)",
+       "value": "Q1giRV0d6bkjG2TkVFNuB/+Gc9AkE="
+      }
+     },
+     {
+      "path": "/lib/libmvec.so.1",
+      "ownerUid": "0",
+      "ownerGid": "0",
+      "permissions": "0755",
+      "digest": {
+       "algorithm": "'Q1'+base64(sha1)",
+       "value": "Q1G8/fG2/QMuBblHjsvmkIH270xdA="
+      }
+     },
+     {
+      "path": "/lib/libnsl.so.1",
+      "ownerUid": "0",
+      "ownerGid": "0",
+      "permissions": "0755",
+      "digest": {
+       "algorithm": "'Q1'+base64(sha1)",
+       "value": "Q1Z6nxUxHelF35soAo7q7rVEB+Vsw="
+      }
+     },
+     {
+      "path": "/lib/libnss_compat.so.2",
+      "ownerUid": "0",
+      "ownerGid": "0",
+      "permissions": "0755",
+      "digest": {
+       "algorithm": "'Q1'+base64(sha1)",
+       "value": "Q1C+j3fHDyDsuipWe5bCPNBYh6dAA="
+      }
+     },
+     {
+      "path": "/lib/libnss_dns.so.2",
+      "ownerUid": "0",
+      "ownerGid": "0",
+      "permissions": "0755",
+      "digest": {
+       "algorithm": "'Q1'+base64(sha1)",
+       "value": "Q1FBbzfDMSHl8pNlIxwiDX1jyNFII="
+      }
+     },
+     {
+      "path": "/lib/libnss_files.so.2",
+      "ownerUid": "0",
+      "ownerGid": "0",
+      "permissions": "0755",
+      "digest": {
+       "algorithm": "'Q1'+base64(sha1)",
+       "value": "Q1cfZnLd5maDmWzvrFGLrNCOT9CzY="
+      }
+     },
+     {
+      "path": "/lib/libpthread.so.0",
+      "ownerUid": "0",
+      "ownerGid": "0",
+      "permissions": "0755",
+      "digest": {
+       "algorithm": "'Q1'+base64(sha1)",
+       "value": "Q1SC4eMmjtuQwnn+X7Pucgh4i91H4="
+      }
+     },
+     {
+      "path": "/lib/libresolv.so.2",
+      "ownerUid": "0",
+      "ownerGid": "0",
+      "permissions": "0755",
+      "digest": {
+       "algorithm": "'Q1'+base64(sha1)",
+       "value": "Q14wCH5b8rf3y1ZIyAIE+hxPrd+xE="
+      }
+     },
+     {
+      "path": "/lib/librt.so.1",
+      "ownerUid": "0",
+      "ownerGid": "0",
+      "permissions": "0755",
+      "digest": {
+       "algorithm": "'Q1'+base64(sha1)",
+       "value": "Q1OhY5KO9uyORIm8BwBpykGtf0CsE="
+      }
+     },
+     {
+      "path": "/lib/libthread_db.so.1",
+      "ownerUid": "0",
+      "ownerGid": "0",
+      "permissions": "0755",
+      "digest": {
+       "algorithm": "'Q1'+base64(sha1)",
+       "value": "Q15tagDOkhnOSvWu1SwOMooeTTsK0="
+      }
+     },
+     {
+      "path": "/lib/libutil.so.1",
+      "ownerUid": "0",
+      "ownerGid": "0",
+      "permissions": "0755",
+      "digest": {
+       "algorithm": "'Q1'+base64(sha1)",
+       "value": "Q17ip7LGTKqkkC77fyyWT26s1cgSI="
+      }
+     },
+     {
+      "path": "/sbin"
+     },
+     {
+      "path": "/sbin/ldconfig",
+      "ownerUid": "0",
+      "ownerGid": "0",
+      "permissions": "0755",
+      "digest": {
+       "algorithm": "'Q1'+base64(sha1)",
+       "value": "Q13SgYDXq8fcftT+ld7YCsJS2EeoA="
+      }
+     },
+     {
+      "path": "/usr"
+     },
+     {
+      "path": "/usr/bin"
+     },
+     {
+      "path": "/usr/bin/ld.so",
+      "ownerUid": "0",
+      "ownerGid": "0",
+      "permissions": "0777",
+      "digest": {
+       "algorithm": "'Q1'+base64(sha1)",
+       "value": "Q1qBigkK5h+LxKKz9/tH7ld9UoRq0="
+      }
+     },
+     {
+      "path": "/usr/lib"
+     },
+     {
+      "path": "/var"
+     },
+     {
+      "path": "/var/lib"
+     },
+     {
+      "path": "/var/lib/db"
+     },
+     {
+      "path": "/var/lib/db/sbom"
+     },
+     {
+      "path": "/var/lib/db/sbom/glibc-2.38-r5.spdx.json",
+      "digest": {
+       "algorithm": "'Q1'+base64(sha1)",
+       "value": "Q12ZiG/MKgvZxOsBBcoEYinvY+Jsk="
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "8667fedf41cd8c9c",
+   "name": "glibc",
+   "version": "2.38-r5",
+   "type": "apk",
+   "foundBy": "sbom-cataloger",
+   "locations": [
+    {
+     "path": "/var/lib/db/sbom/glibc-2.38-r5.spdx.json",
+     "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [
+    {
+     "value": "GPL-3.0-or-later",
+     "spdxExpression": "GPL-3.0-or-later",
+     "type": "declared",
+     "urls": [],
+     "locations": []
+    }
+   ],
+   "language": "",
+   "cpes": [
+    "cpe:2.3:a:glibc:glibc:2.38-r5:*:*:*:*:*:*:*",
+    "cpe:2.3:a:gnu:glibc:2.38-r5:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:apk/wolfi/glibc@2.38-r5?arch=x86_64",
+   "metadataType": "ApkMetadata",
+   "metadata": {
+    "package": "glibc",
+    "originPackage": "",
+    "maintainer": "",
+    "version": "2.38-r5",
+    "architecture": "x86_64",
+    "url": "",
+    "description": "",
+    "size": 0,
+    "installedSize": 0,
+    "pullDependencies": null,
+    "provides": null,
+    "pullChecksum": "",
+    "gitCommitOfApkPort": "",
+    "files": null
+   }
+  },
+  {
+   "id": "13a622265a9dfd9e",
+   "name": "glibc-locale-posix",
+   "version": "2.38-r5",
+   "type": "apk",
+   "foundBy": "apkdb-cataloger",
+   "locations": [
+    {
+     "path": "/lib/apk/db/installed",
+     "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [
+    {
+     "value": "GPL-3.0-or-later",
+     "spdxExpression": "GPL-3.0-or-later",
+     "type": "declared",
+     "urls": [],
+     "locations": [
+      {
+       "path": "/lib/apk/db/installed",
+       "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837",
+       "annotations": {
+        "evidence": "primary"
+       }
+      }
+     ]
+    }
+   ],
+   "language": "",
+   "cpes": [
+    "cpe:2.3:a:glibc-locale-posix:glibc-locale-posix:2.38-r5:*:*:*:*:*:*:*",
+    "cpe:2.3:a:glibc-locale-posix:glibc_locale_posix:2.38-r5:*:*:*:*:*:*:*",
+    "cpe:2.3:a:glibc_locale_posix:glibc-locale-posix:2.38-r5:*:*:*:*:*:*:*",
+    "cpe:2.3:a:glibc_locale_posix:glibc_locale_posix:2.38-r5:*:*:*:*:*:*:*",
+    "cpe:2.3:a:glibc-locale:glibc-locale-posix:2.38-r5:*:*:*:*:*:*:*",
+    "cpe:2.3:a:glibc-locale:glibc_locale_posix:2.38-r5:*:*:*:*:*:*:*",
+    "cpe:2.3:a:glibc_locale:glibc-locale-posix:2.38-r5:*:*:*:*:*:*:*",
+    "cpe:2.3:a:glibc_locale:glibc_locale_posix:2.38-r5:*:*:*:*:*:*:*",
+    "cpe:2.3:a:glibc:glibc-locale-posix:2.38-r5:*:*:*:*:*:*:*",
+    "cpe:2.3:a:glibc:glibc_locale_posix:2.38-r5:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:apk/wolfi/glibc-locale-posix@2.38-r5?arch=x86_64&upstream=glibc&distro=wolfi-20230201",
+   "metadataType": "ApkMetadata",
+   "metadata": {
+    "package": "glibc-locale-posix",
+    "originPackage": "glibc",
+    "maintainer": "",
+    "version": "2.38-r5",
+    "architecture": "x86_64",
+    "url": "",
+    "description": "POSIX locale data for glibc",
+    "size": 76976,
+    "installedSize": 416967,
+    "pullDependencies": [],
+    "provides": [],
+    "pullChecksum": "Q1vY6oBBxN635Sy2L6y/wgvjpBeh0=",
+    "gitCommitOfApkPort": "fdf31da687adfe744daf5bbebed010257f14c05a",
+    "files": [
+     {
+      "path": "/usr"
+     },
+     {
+      "path": "/usr/lib"
+     },
+     {
+      "path": "/usr/lib/locale"
+     },
+     {
+      "path": "/usr/lib/locale/C.utf8"
+     },
+     {
+      "path": "/usr/lib/locale/C.utf8/LC_ADDRESS",
+      "digest": {
+       "algorithm": "'Q1'+base64(sha1)",
+       "value": "Q1EtDgYAVX4Nyzxk5WiUuBIw4uqnI="
+      }
+     },
+     {
+      "path": "/usr/lib/locale/C.utf8/LC_COLLATE",
+      "digest": {
+       "algorithm": "'Q1'+base64(sha1)",
+       "value": "Q18kXjIHmEh50Lc2yapC9CaOJyIbk="
+      }
+     },
+     {
+      "path": "/usr/lib/locale/C.utf8/LC_CTYPE",
+      "digest": {
+       "algorithm": "'Q1'+base64(sha1)",
+       "value": "Q1myNxU827FO7UdtNysMWzcUHOPnM="
+      }
+     },
+     {
+      "path": "/usr/lib/locale/C.utf8/LC_IDENTIFICATION",
+      "digest": {
+       "algorithm": "'Q1'+base64(sha1)",
+       "value": "Q1Hu7DsssllTDXbvcX4krw/TTZRiQ="
+      }
+     },
+     {
+      "path": "/usr/lib/locale/C.utf8/LC_MEASUREMENT",
+      "digest": {
+       "algorithm": "'Q1'+base64(sha1)",
+       "value": "Q1Cn0NJk+d7ZQFcCDoB7+qE6dXOCE="
+      }
+     },
+     {
+      "path": "/usr/lib/locale/C.utf8/LC_MONETARY",
+      "digest": {
+       "algorithm": "'Q1'+base64(sha1)",
+       "value": "Q1EQ7UfjLWXGGrgkAgL6ohFNAloAk="
+      }
+     },
+     {
+      "path": "/usr/lib/locale/C.utf8/LC_NAME",
+      "digest": {
+       "algorithm": "'Q1'+base64(sha1)",
+       "value": "Q1tdFvEELDwcS++FdmqiwgwbDYz/Y="
+      }
+     },
+     {
+      "path": "/usr/lib/locale/C.utf8/LC_NUMERIC",
+      "digest": {
+       "algorithm": "'Q1'+base64(sha1)",
+       "value": "Q1G9Lz2wQCK4z+XNen+QF28ZHhlCU="
+      }
+     },
+     {
+      "path": "/usr/lib/locale/C.utf8/LC_PAPER",
+      "digest": {
+       "algorithm": "'Q1'+base64(sha1)",
+       "value": "Q1VnqvY5OTE1t24i5yqu4d+Vdk6ZA="
+      }
+     },
+     {
+      "path": "/usr/lib/locale/C.utf8/LC_TELEPHONE",
+      "digest": {
+       "algorithm": "'Q1'+base64(sha1)",
+       "value": "Q1MxbJnhgxhsXK2XpxZ073Qxw9qEU="
+      }
+     },
+     {
+      "path": "/usr/lib/locale/C.utf8/LC_TIME",
+      "digest": {
+       "algorithm": "'Q1'+base64(sha1)",
+       "value": "Q15hmk24d+C1T6FLijmS2itWGzI5s="
+      }
+     },
+     {
+      "path": "/usr/lib/locale/C.utf8/LC_MESSAGES"
+     },
+     {
+      "path": "/usr/lib/locale/C.utf8/LC_MESSAGES/SYS_LC_MESSAGES",
+      "digest": {
+       "algorithm": "'Q1'+base64(sha1)",
+       "value": "Q1V01+kr7fE3PslQaFmw1V7nurvyA="
+      }
+     },
+     {
+      "path": "/var"
+     },
+     {
+      "path": "/var/lib"
+     },
+     {
+      "path": "/var/lib/db"
+     },
+     {
+      "path": "/var/lib/db/sbom"
+     },
+     {
+      "path": "/var/lib/db/sbom/glibc-locale-posix-2.38-r5.spdx.json",
+      "digest": {
+       "algorithm": "'Q1'+base64(sha1)",
+       "value": "Q1MrQNIK6qjGZH2PlYpsfCUTqk17c="
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "8d87e01ed5f1c10d",
+   "name": "glibc-locale-posix",
+   "version": "2.38-r5",
+   "type": "apk",
+   "foundBy": "sbom-cataloger",
+   "locations": [
+    {
+     "path": "/var/lib/db/sbom/glibc-locale-posix-2.38-r5.spdx.json",
+     "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [
+    {
+     "value": "GPL-3.0-or-later",
+     "spdxExpression": "GPL-3.0-or-later",
+     "type": "declared",
+     "urls": [],
+     "locations": []
+    }
+   ],
+   "language": "",
+   "cpes": [
+    "cpe:2.3:a:glibc-locale-posix:glibc-locale-posix:2.38-r5:*:*:*:*:*:*:*",
+    "cpe:2.3:a:glibc-locale-posix:glibc_locale_posix:2.38-r5:*:*:*:*:*:*:*",
+    "cpe:2.3:a:glibc_locale_posix:glibc-locale-posix:2.38-r5:*:*:*:*:*:*:*",
+    "cpe:2.3:a:glibc_locale_posix:glibc_locale_posix:2.38-r5:*:*:*:*:*:*:*",
+    "cpe:2.3:a:glibc-locale:glibc-locale-posix:2.38-r5:*:*:*:*:*:*:*",
+    "cpe:2.3:a:glibc-locale:glibc_locale_posix:2.38-r5:*:*:*:*:*:*:*",
+    "cpe:2.3:a:glibc_locale:glibc-locale-posix:2.38-r5:*:*:*:*:*:*:*",
+    "cpe:2.3:a:glibc_locale:glibc_locale_posix:2.38-r5:*:*:*:*:*:*:*",
+    "cpe:2.3:a:glibc:glibc-locale-posix:2.38-r5:*:*:*:*:*:*:*",
+    "cpe:2.3:a:glibc:glibc_locale_posix:2.38-r5:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:apk/wolfi/glibc-locale-posix@2.38-r5?arch=x86_64",
+   "metadataType": "ApkMetadata",
+   "metadata": {
+    "package": "glibc-locale-posix",
+    "originPackage": "",
+    "maintainer": "",
+    "version": "2.38-r5",
+    "architecture": "x86_64",
+    "url": "",
+    "description": "",
+    "size": 0,
+    "installedSize": 0,
+    "pullDependencies": null,
+    "provides": null,
+    "pullChecksum": "",
+    "gitCommitOfApkPort": "",
+    "files": null
+   }
+  },
+  {
+   "id": "b4034a585a450676",
+   "name": "go.uber.org/automaxprocs",
+   "version": "v1.5.3",
+   "type": "go-module",
+   "foundBy": "go-module-binary-cataloger",
+   "locations": [
+    {
+     "path": "/usr/bin/nats-server",
+     "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "go",
+   "cpes": [],
+   "purl": "pkg:golang/go.uber.org/automaxprocs@v1.5.3",
+   "metadataType": "GolangBinMetadata",
+   "metadata": {
+    "goCompiledVersion": "go1.21.1",
+    "architecture": "amd64",
+    "h1Digest": "h1:kWazyxZUrS3Gs4qUpbwo5kEIMGe/DAvi5Z4tl2NW4j8=",
+    "mainModule": "github.com/nats-io/nats-server/v2"
+   }
+  },
+  {
+   "id": "f386bebc11577206",
+   "name": "golang.org/x/crypto",
+   "version": "v0.13.0",
+   "type": "go-module",
+   "foundBy": "go-module-binary-cataloger",
+   "locations": [
+    {
+     "path": "/usr/bin/nats-server",
+     "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "go",
+   "cpes": [
+    "cpe:2.3:a:golang:x\\/crypto:v0.13.0:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:golang/golang.org/x/crypto@v0.13.0",
+   "metadataType": "GolangBinMetadata",
+   "metadata": {
+    "goCompiledVersion": "go1.21.1",
+    "architecture": "amd64",
+    "h1Digest": "h1:mvySKfSWJ+UKUii46M40LOvyWfN0s2U+46/jDd0e6Ck=",
+    "mainModule": "github.com/nats-io/nats-server/v2"
+   }
+  },
+  {
+   "id": "a192b953f68e72f0",
+   "name": "golang.org/x/sys",
+   "version": "v0.12.0",
+   "type": "go-module",
+   "foundBy": "go-module-binary-cataloger",
+   "locations": [
+    {
+     "path": "/usr/bin/nats-server",
+     "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "go",
+   "cpes": [
+    "cpe:2.3:a:golang:x\\/sys:v0.12.0:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:golang/golang.org/x/sys@v0.12.0",
+   "metadataType": "GolangBinMetadata",
+   "metadata": {
+    "goCompiledVersion": "go1.21.1",
+    "architecture": "amd64",
+    "h1Digest": "h1:CM0HF96J0hcLAwsHPJZjfdNzs0gftsLfgKt57wWHJ0o=",
+    "mainModule": "github.com/nats-io/nats-server/v2"
+   }
+  },
+  {
+   "id": "d1aed35d99363827",
+   "name": "golang.org/x/time",
+   "version": "v0.3.0",
+   "type": "go-module",
+   "foundBy": "go-module-binary-cataloger",
+   "locations": [
+    {
+     "path": "/usr/bin/nats-server",
+     "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "go",
+   "cpes": [
+    "cpe:2.3:a:golang:x\\/time:v0.3.0:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:golang/golang.org/x/time@v0.3.0",
+   "metadataType": "GolangBinMetadata",
+   "metadata": {
+    "goCompiledVersion": "go1.21.1",
+    "architecture": "amd64",
+    "h1Digest": "h1:rg5rLMjNzMS1RkNLzCG38eapWhnYLFYXDXj2gOlr8j4=",
+    "mainModule": "github.com/nats-io/nats-server/v2"
+   }
+  },
+  {
+   "id": "ae0382d81cd38b09",
+   "name": "ld-linux",
+   "version": "2.38-r5",
+   "type": "apk",
+   "foundBy": "apkdb-cataloger",
+   "locations": [
+    {
+     "path": "/lib/apk/db/installed",
+     "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [
+    {
+     "value": "GPL-3.0-or-later",
+     "spdxExpression": "GPL-3.0-or-later",
+     "type": "declared",
+     "urls": [],
+     "locations": [
+      {
+       "path": "/lib/apk/db/installed",
+       "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837",
+       "annotations": {
+        "evidence": "primary"
+       }
+      }
+     ]
+    }
+   ],
+   "language": "",
+   "cpes": [
+    "cpe:2.3:a:ld-linux:ld-linux:2.38-r5:*:*:*:*:*:*:*",
+    "cpe:2.3:a:ld-linux:ld_linux:2.38-r5:*:*:*:*:*:*:*",
+    "cpe:2.3:a:ld_linux:ld-linux:2.38-r5:*:*:*:*:*:*:*",
+    "cpe:2.3:a:ld_linux:ld_linux:2.38-r5:*:*:*:*:*:*:*",
+    "cpe:2.3:a:ld:ld-linux:2.38-r5:*:*:*:*:*:*:*",
+    "cpe:2.3:a:ld:ld_linux:2.38-r5:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:apk/wolfi/ld-linux@2.38-r5?arch=x86_64&upstream=glibc&distro=wolfi-20230201",
+   "metadataType": "ApkMetadata",
+   "metadata": {
+    "package": "ld-linux",
+    "originPackage": "glibc",
+    "maintainer": "",
+    "version": "2.38-r5",
+    "architecture": "x86_64",
+    "url": "",
+    "description": "the GLIBC ELF interpreter",
+    "size": 120628,
+    "installedSize": 266151,
+    "pullDependencies": [
+     "wolfi-baselayout"
+    ],
+    "provides": [
+     "so:ld-linux-x86-64.so.2=2"
+    ],
+    "pullChecksum": "Q1iWbLQvCYR2Y6zYJrlKokB14B8hk=",
+    "gitCommitOfApkPort": "fdf31da687adfe744daf5bbebed010257f14c05a",
+    "files": [
+     {
+      "path": "/etc"
+     },
+     {
+      "path": "/etc/ld.so.cache",
+      "digest": {
+       "algorithm": "'Q1'+base64(sha1)",
+       "value": "Q15+ADMzqUGB4md+X3o//XKcOqObE="
+      }
+     },
+     {
+      "path": "/etc/ld.so.conf",
+      "digest": {
+       "algorithm": "'Q1'+base64(sha1)",
+       "value": "Q11VhjuYYcqng196eHi2SGUlQzFtw="
+      }
+     },
+     {
+      "path": "/lib64"
+     },
+     {
+      "path": "/lib64/ld-linux-x86-64.so.2",
+      "ownerUid": "0",
+      "ownerGid": "0",
+      "permissions": "0755",
+      "digest": {
+       "algorithm": "'Q1'+base64(sha1)",
+       "value": "Q1CmmdDpnN7UwtSchrADeyz4esg6g="
+      }
+     },
+     {
+      "path": "/var"
+     },
+     {
+      "path": "/var/lib"
+     },
+     {
+      "path": "/var/lib/db"
+     },
+     {
+      "path": "/var/lib/db/sbom"
+     },
+     {
+      "path": "/var/lib/db/sbom/ld-linux-2.38-r5.spdx.json",
+      "digest": {
+       "algorithm": "'Q1'+base64(sha1)",
+       "value": "Q11PYtHR5xyHOZahtAhye3+G1i3vk="
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "ba17f6cb2d847566",
+   "name": "ld-linux",
+   "version": "2.38-r5",
+   "type": "apk",
+   "foundBy": "sbom-cataloger",
+   "locations": [
+    {
+     "path": "/var/lib/db/sbom/ld-linux-2.38-r5.spdx.json",
+     "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [
+    {
+     "value": "GPL-3.0-or-later",
+     "spdxExpression": "GPL-3.0-or-later",
+     "type": "declared",
+     "urls": [],
+     "locations": []
+    }
+   ],
+   "language": "",
+   "cpes": [
+    "cpe:2.3:a:ld-linux:ld-linux:2.38-r5:*:*:*:*:*:*:*",
+    "cpe:2.3:a:ld-linux:ld_linux:2.38-r5:*:*:*:*:*:*:*",
+    "cpe:2.3:a:ld_linux:ld-linux:2.38-r5:*:*:*:*:*:*:*",
+    "cpe:2.3:a:ld_linux:ld_linux:2.38-r5:*:*:*:*:*:*:*",
+    "cpe:2.3:a:ld:ld-linux:2.38-r5:*:*:*:*:*:*:*",
+    "cpe:2.3:a:ld:ld_linux:2.38-r5:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:apk/wolfi/ld-linux@2.38-r5?arch=x86_64",
+   "metadataType": "ApkMetadata",
+   "metadata": {
+    "package": "ld-linux",
+    "originPackage": "",
+    "maintainer": "",
+    "version": "2.38-r5",
+    "architecture": "x86_64",
+    "url": "",
+    "description": "",
+    "size": 0,
+    "installedSize": 0,
+    "pullDependencies": null,
+    "provides": null,
+    "pullChecksum": "",
+    "gitCommitOfApkPort": "",
+    "files": null
+   }
+  },
+  {
+   "id": "f949e34d51414f77",
+   "name": "nats-server",
+   "version": "2.10.1-r0",
+   "type": "apk",
+   "foundBy": "apkdb-cataloger",
+   "locations": [
+    {
+     "path": "/lib/apk/db/installed",
+     "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [
+    {
+     "value": "Apache-2.0",
+     "spdxExpression": "Apache-2.0",
+     "type": "declared",
+     "urls": [],
+     "locations": [
+      {
+       "path": "/lib/apk/db/installed",
+       "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837",
+       "annotations": {
+        "evidence": "primary"
+       }
+      }
+     ]
+    }
+   ],
+   "language": "",
+   "cpes": [
+    "cpe:2.3:a:nats-server:nats-server:2.10.1-r0:*:*:*:*:*:*:*",
+    "cpe:2.3:a:nats-server:nats_server:2.10.1-r0:*:*:*:*:*:*:*",
+    "cpe:2.3:a:nats_server:nats-server:2.10.1-r0:*:*:*:*:*:*:*",
+    "cpe:2.3:a:nats_server:nats_server:2.10.1-r0:*:*:*:*:*:*:*",
+    "cpe:2.3:a:nats:nats-server:2.10.1-r0:*:*:*:*:*:*:*",
+    "cpe:2.3:a:nats:nats_server:2.10.1-r0:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:apk/wolfi/nats-server@2.10.1-r0?arch=x86_64&distro=wolfi-20230201",
+   "metadataType": "ApkMetadata",
+   "metadata": {
+    "package": "nats-server",
+    "originPackage": "nats-server",
+    "maintainer": "",
+    "version": "2.10.1-r0",
+    "architecture": "x86_64",
+    "url": "",
+    "description": "High-Performance server for NATS.io, the cloud and edge native messaging system.",
+    "size": 5440881,
+    "installedSize": 12951176,
+    "pullDependencies": [
+     "so:ld-linux-x86-64.so.2",
+     "so:libc.so.6",
+     "so:libresolv.so.2"
+    ],
+    "provides": [
+     "cmd:nats-server=2.10.1-r0"
+    ],
+    "pullChecksum": "Q1ivqvqTP3UwJPU1Qgyg56QdMK1ms=",
+    "gitCommitOfApkPort": "20c5e9e7f1ca45b81bc50137ba41b81d771cf75d",
+    "files": [
+     {
+      "path": "/etc"
+     },
+     {
+      "path": "/etc/nats"
+     },
+     {
+      "path": "/etc/nats/nats-server.conf",
+      "digest": {
+       "algorithm": "'Q1'+base64(sha1)",
+       "value": "Q1I366GQmtJ0GIn2daY0bWrcccfAQ="
+      }
+     },
+     {
+      "path": "/usr"
+     },
+     {
+      "path": "/usr/bin"
+     },
+     {
+      "path": "/usr/bin/nats-server",
+      "ownerUid": "0",
+      "ownerGid": "0",
+      "permissions": "0755",
+      "digest": {
+       "algorithm": "'Q1'+base64(sha1)",
+       "value": "Q1iqZ5yZHYlC62uTGSOelZQuFAkRo="
+      }
+     },
+     {
+      "path": "/var"
+     },
+     {
+      "path": "/var/lib"
+     },
+     {
+      "path": "/var/lib/db"
+     },
+     {
+      "path": "/var/lib/db/sbom"
+     },
+     {
+      "path": "/var/lib/db/sbom/nats-server-2.10.1-r0.spdx.json",
+      "digest": {
+       "algorithm": "'Q1'+base64(sha1)",
+       "value": "Q1DXwGN5+/5knGfSIpTBLxGeT826E="
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "5331b8bfdf6bbc3e",
+   "name": "nats-server",
+   "version": "2.10.1-r0",
+   "type": "apk",
+   "foundBy": "sbom-cataloger",
+   "locations": [
+    {
+     "path": "/var/lib/db/sbom/nats-server-2.10.1-r0.spdx.json",
+     "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [
+    {
+     "value": "Apache-2.0",
+     "spdxExpression": "Apache-2.0",
+     "type": "declared",
+     "urls": [],
+     "locations": []
+    }
+   ],
+   "language": "",
+   "cpes": [
+    "cpe:2.3:a:nats-server:nats-server:2.10.1-r0:*:*:*:*:*:*:*",
+    "cpe:2.3:a:nats-server:nats_server:2.10.1-r0:*:*:*:*:*:*:*",
+    "cpe:2.3:a:nats_server:nats-server:2.10.1-r0:*:*:*:*:*:*:*",
+    "cpe:2.3:a:nats_server:nats_server:2.10.1-r0:*:*:*:*:*:*:*",
+    "cpe:2.3:a:nats:nats-server:2.10.1-r0:*:*:*:*:*:*:*",
+    "cpe:2.3:a:nats:nats_server:2.10.1-r0:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:apk/wolfi/nats-server@2.10.1-r0?arch=x86_64",
+   "metadataType": "ApkMetadata",
+   "metadata": {
+    "package": "nats-server",
+    "originPackage": "",
+    "maintainer": "",
+    "version": "2.10.1-r0",
+    "architecture": "x86_64",
+    "url": "",
+    "description": "",
+    "size": 0,
+    "installedSize": 0,
+    "pullDependencies": null,
+    "provides": null,
+    "pullChecksum": "",
+    "gitCommitOfApkPort": "",
+    "files": null
+   }
+  },
+  {
+   "id": "d113004b447fb691",
+   "name": "wolfi-baselayout",
+   "version": "20230201-r6",
+   "type": "apk",
+   "foundBy": "apkdb-cataloger",
+   "locations": [
+    {
+     "path": "/lib/apk/db/installed",
+     "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [
+    {
+     "value": "MIT",
+     "spdxExpression": "MIT",
+     "type": "declared",
+     "urls": [],
+     "locations": [
+      {
+       "path": "/lib/apk/db/installed",
+       "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837",
+       "annotations": {
+        "evidence": "primary"
+       }
+      }
+     ]
+    }
+   ],
+   "language": "",
+   "cpes": [
+    "cpe:2.3:a:wolfi-baselayout:wolfi-baselayout:20230201-r6:*:*:*:*:*:*:*",
+    "cpe:2.3:a:wolfi-baselayout:wolfi_baselayout:20230201-r6:*:*:*:*:*:*:*",
+    "cpe:2.3:a:wolfi_baselayout:wolfi-baselayout:20230201-r6:*:*:*:*:*:*:*",
+    "cpe:2.3:a:wolfi_baselayout:wolfi_baselayout:20230201-r6:*:*:*:*:*:*:*",
+    "cpe:2.3:a:wolfi:wolfi-baselayout:20230201-r6:*:*:*:*:*:*:*",
+    "cpe:2.3:a:wolfi:wolfi_baselayout:20230201-r6:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:apk/wolfi/wolfi-baselayout@20230201-r6?arch=x86_64&distro=wolfi-20230201",
+   "metadataType": "ApkMetadata",
+   "metadata": {
+    "package": "wolfi-baselayout",
+    "originPackage": "wolfi-baselayout",
+    "maintainer": "",
+    "version": "20230201-r6",
+    "architecture": "x86_64",
+    "url": "",
+    "description": "baselayout data for Wolfi",
+    "size": 14565,
+    "installedSize": 125391,
+    "pullDependencies": [
+     "ca-certificates-bundle"
+    ],
+    "provides": [],
+    "pullChecksum": "Q17VhAhkjHFu8hi9j6VPHxlOX95sc=",
+    "gitCommitOfApkPort": "f8b521413b37cc9e3afcf67d5d5bd2ea5b3aaabf",
+    "files": [
+     {
+      "path": "/etc"
+     },
+     {
+      "path": "/etc/group",
+      "digest": {
+       "algorithm": "'Q1'+base64(sha1)",
+       "value": "Q17Acf/L2WiySbELGFs9YSPt/AwRU="
+      }
+     },
+     {
+      "path": "/etc/host.conf",
+      "digest": {
+       "algorithm": "'Q1'+base64(sha1)",
+       "value": "Q1sQyvrcBDrsQFapSJFPARvDnS7BM="
+      }
+     },
+     {
+      "path": "/etc/hosts",
+      "digest": {
+       "algorithm": "'Q1'+base64(sha1)",
+       "value": "Q1BD6zJKZTRWyqGnPi4tSfd3krsMU="
+      }
+     },
+     {
+      "path": "/etc/mtab",
+      "ownerUid": "0",
+      "ownerGid": "0",
+      "permissions": "0777",
+      "digest": {
+       "algorithm": "'Q1'+base64(sha1)",
+       "value": "Q1kiljhXXH1LlQroHsEJIkPZg2eiw="
+      }
+     },
+     {
+      "path": "/etc/nsswitch.conf",
+      "digest": {
+       "algorithm": "'Q1'+base64(sha1)",
+       "value": "Q173MmSLMjpUL3AfwRM+tlucga340="
+      }
+     },
+     {
+      "path": "/etc/os-release",
+      "digest": {
+       "algorithm": "'Q1'+base64(sha1)",
+       "value": "Q1eDVoTc9JEG0RekXOVhjuYhnrNjg="
+      }
+     },
+     {
+      "path": "/etc/passwd",
+      "digest": {
+       "algorithm": "'Q1'+base64(sha1)",
+       "value": "Q1WQ4QPZJxqih/x1RrlU6tPfKFKig="
+      }
+     },
+     {
+      "path": "/etc/profile",
+      "digest": {
+       "algorithm": "'Q1'+base64(sha1)",
+       "value": "Q1Ja6003ivXdHyYFiIaawZsN9kgao="
+      }
+     },
+     {
+      "path": "/etc/protocols",
+      "digest": {
+       "algorithm": "'Q1'+base64(sha1)",
+       "value": "Q1omKlp3vgGq2ZqYzyD/KHNdo8rDc="
+      }
+     },
+     {
+      "path": "/etc/services",
+      "digest": {
+       "algorithm": "'Q1'+base64(sha1)",
+       "value": "Q19WLCv5ItKg4MH7RWfNRh1I7byQc="
+      }
+     },
+     {
+      "path": "/etc/shadow",
+      "ownerUid": "0",
+      "ownerGid": "0",
+      "permissions": "0600",
+      "digest": {
+       "algorithm": "'Q1'+base64(sha1)",
+       "value": "Q1koFtpyLTrzmCbJmhJZp493nLhuM="
+      }
+     },
+     {
+      "path": "/etc/shells",
+      "digest": {
+       "algorithm": "'Q1'+base64(sha1)",
+       "value": "Q1YR8N+anbGRHn+T2MwinvYkgCYEg="
+      }
+     },
+     {
+      "path": "/etc/profile.d"
+     },
+     {
+      "path": "/etc/profile.d/locale.sh",
+      "digest": {
+       "algorithm": "'Q1'+base64(sha1)",
+       "value": "Q1S8j+WW71mWxfVy8ythqU7HUVoBw="
+      }
+     },
+     {
+      "path": "/etc/secfixes.d"
+     },
+     {
+      "path": "/etc/secfixes.d/wolfi",
+      "digest": {
+       "algorithm": "'Q1'+base64(sha1)",
+       "value": "Q1X/9a6jBiNHCLGVLFZZBGON24xHc="
+      }
+     },
+     {
+      "path": "/usr"
+     },
+     {
+      "path": "/usr/lib64",
+      "ownerUid": "0",
+      "ownerGid": "0",
+      "permissions": "0777",
+      "digest": {
+       "algorithm": "'Q1'+base64(sha1)",
+       "value": "Q1nQYrr/8XuouaEhXExRSFE01QnZE="
+      }
+     },
+     {
+      "path": "/usr/local"
+     },
+     {
+      "path": "/usr/local/lib64",
+      "ownerUid": "0",
+      "ownerGid": "0",
+      "permissions": "0777",
+      "digest": {
+       "algorithm": "'Q1'+base64(sha1)",
+       "value": "Q1nQYrr/8XuouaEhXExRSFE01QnZE="
+      }
+     },
+     {
+      "path": "/var"
+     },
+     {
+      "path": "/var/lib"
+     },
+     {
+      "path": "/var/lib/db"
+     },
+     {
+      "path": "/var/lib/db/sbom"
+     },
+     {
+      "path": "/var/lib/db/sbom/wolfi-baselayout-20230201-r6.spdx.json",
+      "digest": {
+       "algorithm": "'Q1'+base64(sha1)",
+       "value": "Q1E/3Ts1VU0aTzA+zAfp88j4oGmqU="
+      }
+     },
+     {
+      "path": "/var/spool"
+     },
+     {
+      "path": "/var/spool/mail",
+      "ownerUid": "0",
+      "ownerGid": "0",
+      "permissions": "0777",
+      "digest": {
+       "algorithm": "'Q1'+base64(sha1)",
+       "value": "Q1dzbdazYZA2nTzSIG3YyNw7d4Juc="
+      }
+     },
+     {
+      "path": "/var/spool/cron"
+     },
+     {
+      "path": "/var/spool/cron/crontabs",
+      "ownerUid": "0",
+      "ownerGid": "0",
+      "permissions": "0777",
+      "digest": {
+       "algorithm": "'Q1'+base64(sha1)",
+       "value": "Q1OFZt+ZMp7j0Gny0rqSKuWJyqYmA="
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "34190c7aabdaf0f3",
+   "name": "wolfi-baselayout",
+   "version": "20230201-r6",
+   "type": "apk",
+   "foundBy": "sbom-cataloger",
+   "locations": [
+    {
+     "path": "/var/lib/db/sbom/wolfi-baselayout-20230201-r6.spdx.json",
+     "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [
+    {
+     "value": "MIT",
+     "spdxExpression": "MIT",
+     "type": "declared",
+     "urls": [],
+     "locations": []
+    }
+   ],
+   "language": "",
+   "cpes": [
+    "cpe:2.3:a:wolfi-baselayout:wolfi-baselayout:20230201-r6:*:*:*:*:*:*:*",
+    "cpe:2.3:a:wolfi-baselayout:wolfi_baselayout:20230201-r6:*:*:*:*:*:*:*",
+    "cpe:2.3:a:wolfi_baselayout:wolfi-baselayout:20230201-r6:*:*:*:*:*:*:*",
+    "cpe:2.3:a:wolfi_baselayout:wolfi_baselayout:20230201-r6:*:*:*:*:*:*:*",
+    "cpe:2.3:a:wolfi:wolfi-baselayout:20230201-r6:*:*:*:*:*:*:*",
+    "cpe:2.3:a:wolfi:wolfi_baselayout:20230201-r6:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:apk/wolfi/wolfi-baselayout@20230201-r6?arch=x86_64",
+   "metadataType": "ApkMetadata",
+   "metadata": {
+    "package": "wolfi-baselayout",
+    "originPackage": "",
+    "maintainer": "",
+    "version": "20230201-r6",
+    "architecture": "x86_64",
+    "url": "",
+    "description": "",
+    "size": 0,
+    "installedSize": 0,
+    "pullDependencies": null,
+    "provides": null,
+    "pullChecksum": "",
+    "gitCommitOfApkPort": "",
+    "files": null
+   }
+  }
+ ],
+ "artifactRelationships": [
+  {
+   "parent": "13a622265a9dfd9e",
+   "child": "073c3012fb646ac3",
+   "type": "contains"
+  },
+  {
+   "parent": "13a622265a9dfd9e",
+   "child": "1139a1ffa9106133",
+   "type": "contains"
+  },
+  {
+   "parent": "13a622265a9dfd9e",
+   "child": "1a5de15d675001be",
+   "type": "contains"
+  },
+  {
+   "parent": "13a622265a9dfd9e",
+   "child": "338a576ff39d52b5",
+   "type": "evident-by"
+  },
+  {
+   "parent": "13a622265a9dfd9e",
+   "child": "4058e39997a84bbc",
+   "type": "contains"
+  },
+  {
+   "parent": "13a622265a9dfd9e",
+   "child": "5ca6196f35442d96",
+   "type": "contains"
+  },
+  {
+   "parent": "13a622265a9dfd9e",
+   "child": "5e1addeba20b9161",
+   "type": "contains"
+  },
+  {
+   "parent": "13a622265a9dfd9e",
+   "child": "6b3c57ff3fd3e073",
+   "type": "contains"
+  },
+  {
+   "parent": "13a622265a9dfd9e",
+   "child": "7445daace8e206e2",
+   "type": "contains"
+  },
+  {
+   "parent": "13a622265a9dfd9e",
+   "child": "7b7e87161b7817e4",
+   "type": "contains"
+  },
+  {
+   "parent": "13a622265a9dfd9e",
+   "child": "8d87e01ed5f1c10d",
+   "type": "ownership-by-file-overlap",
+   "metadata": {
+    "files": [
+     "/var/lib/db/sbom/glibc-locale-posix-2.38-r5.spdx.json"
+    ]
+   }
+  },
+  {
+   "parent": "13a622265a9dfd9e",
+   "child": "a6b57d3d000c8627",
+   "type": "contains"
+  },
+  {
+   "parent": "13a622265a9dfd9e",
+   "child": "ca1798c3530142d1",
+   "type": "contains"
+  },
+  {
+   "parent": "13a622265a9dfd9e",
+   "child": "cc744a167ead10ac",
+   "type": "dependency-of"
+  },
+  {
+   "parent": "13a622265a9dfd9e",
+   "child": "f49c250ffdf2a228",
+   "type": "contains"
+  },
+  {
+   "parent": "13a622265a9dfd9e",
+   "child": "f6ce081c2ada01d0",
+   "type": "contains"
+  },
+  {
+   "parent": "34190c7aabdaf0f3",
+   "child": "150e7e1f829177a6",
+   "type": "contains"
+  },
+  {
+   "parent": "34190c7aabdaf0f3",
+   "child": "19819ba349c4b150",
+   "type": "described-by"
+  },
+  {
+   "parent": "34190c7aabdaf0f3",
+   "child": "19819ba349c4b150",
+   "type": "evident-by"
+  },
+  {
+   "parent": "34190c7aabdaf0f3",
+   "child": "1a25c4877e35a599",
+   "type": "contains"
+  },
+  {
+   "parent": "34190c7aabdaf0f3",
+   "child": "268d99eefb4b1630",
+   "type": "contains"
+  },
+  {
+   "parent": "34190c7aabdaf0f3",
+   "child": "349160c96285ff74",
+   "type": "contains"
+  },
+  {
+   "parent": "34190c7aabdaf0f3",
+   "child": "49ea8b12d47d3750",
+   "type": "contains"
+  },
+  {
+   "parent": "34190c7aabdaf0f3",
+   "child": "5987a1f266fd37d1",
+   "type": "contains"
+  },
+  {
+   "parent": "34190c7aabdaf0f3",
+   "child": "79d37d8f33be4a95",
+   "type": "contains"
+  },
+  {
+   "parent": "34190c7aabdaf0f3",
+   "child": "8809c730e49cb3b7",
+   "type": "contains"
+  },
+  {
+   "parent": "34190c7aabdaf0f3",
+   "child": "8df6d50e310a4c50",
+   "type": "contains"
+  },
+  {
+   "parent": "34190c7aabdaf0f3",
+   "child": "ac918430dc109cee",
+   "type": "contains"
+  },
+  {
+   "parent": "34190c7aabdaf0f3",
+   "child": "ba9020c0923f8024",
+   "type": "contains"
+  },
+  {
+   "parent": "34190c7aabdaf0f3",
+   "child": "cd81737ea2ae4835",
+   "type": "contains"
+  },
+  {
+   "parent": "34190c7aabdaf0f3",
+   "child": "cf8c86343f7c65df",
+   "type": "contains"
+  },
+  {
+   "parent": "5331b8bfdf6bbc3e",
+   "child": "17618f985b36a10c",
+   "type": "contains"
+  },
+  {
+   "parent": "5331b8bfdf6bbc3e",
+   "child": "37a7469e8ba96c8a",
+   "type": "contains"
+  },
+  {
+   "parent": "5331b8bfdf6bbc3e",
+   "child": "da5ecb5564e7e685",
+   "type": "described-by"
+  },
+  {
+   "parent": "5331b8bfdf6bbc3e",
+   "child": "da5ecb5564e7e685",
+   "type": "evident-by"
+  },
+  {
+   "parent": "6fee0b73768f172fa2390f94078473f724e4fbed1eba0a85fa3157e60076e180",
+   "child": "13a622265a9dfd9e",
+   "type": "contains"
+  },
+  {
+   "parent": "6fee0b73768f172fa2390f94078473f724e4fbed1eba0a85fa3157e60076e180",
+   "child": "34190c7aabdaf0f3",
+   "type": "contains"
+  },
+  {
+   "parent": "6fee0b73768f172fa2390f94078473f724e4fbed1eba0a85fa3157e60076e180",
+   "child": "5331b8bfdf6bbc3e",
+   "type": "contains"
+  },
+  {
+   "parent": "6fee0b73768f172fa2390f94078473f724e4fbed1eba0a85fa3157e60076e180",
+   "child": "7182e322637ca575",
+   "type": "contains"
+  },
+  {
+   "parent": "6fee0b73768f172fa2390f94078473f724e4fbed1eba0a85fa3157e60076e180",
+   "child": "7f067570cd70310b",
+   "type": "contains"
+  },
+  {
+   "parent": "6fee0b73768f172fa2390f94078473f724e4fbed1eba0a85fa3157e60076e180",
+   "child": "84513f8d74e62541",
+   "type": "contains"
+  },
+  {
+   "parent": "6fee0b73768f172fa2390f94078473f724e4fbed1eba0a85fa3157e60076e180",
+   "child": "8667fedf41cd8c9c",
+   "type": "contains"
+  },
+  {
+   "parent": "6fee0b73768f172fa2390f94078473f724e4fbed1eba0a85fa3157e60076e180",
+   "child": "8d87e01ed5f1c10d",
+   "type": "contains"
+  },
+  {
+   "parent": "6fee0b73768f172fa2390f94078473f724e4fbed1eba0a85fa3157e60076e180",
+   "child": "8eabc794a5d152a9",
+   "type": "contains"
+  },
+  {
+   "parent": "6fee0b73768f172fa2390f94078473f724e4fbed1eba0a85fa3157e60076e180",
+   "child": "a192b953f68e72f0",
+   "type": "contains"
+  },
+  {
+   "parent": "6fee0b73768f172fa2390f94078473f724e4fbed1eba0a85fa3157e60076e180",
+   "child": "ae0382d81cd38b09",
+   "type": "contains"
+  },
+  {
+   "parent": "6fee0b73768f172fa2390f94078473f724e4fbed1eba0a85fa3157e60076e180",
+   "child": "ae0d35dd43a35beb",
+   "type": "contains"
+  },
+  {
+   "parent": "6fee0b73768f172fa2390f94078473f724e4fbed1eba0a85fa3157e60076e180",
+   "child": "b4034a585a450676",
+   "type": "contains"
+  },
+  {
+   "parent": "6fee0b73768f172fa2390f94078473f724e4fbed1eba0a85fa3157e60076e180",
+   "child": "ba17f6cb2d847566",
+   "type": "contains"
+  },
+  {
+   "parent": "6fee0b73768f172fa2390f94078473f724e4fbed1eba0a85fa3157e60076e180",
+   "child": "ca20713ee27c435c",
+   "type": "contains"
+  },
+  {
+   "parent": "6fee0b73768f172fa2390f94078473f724e4fbed1eba0a85fa3157e60076e180",
+   "child": "cc744a167ead10ac",
+   "type": "contains"
+  },
+  {
+   "parent": "6fee0b73768f172fa2390f94078473f724e4fbed1eba0a85fa3157e60076e180",
+   "child": "d113004b447fb691",
+   "type": "contains"
+  },
+  {
+   "parent": "6fee0b73768f172fa2390f94078473f724e4fbed1eba0a85fa3157e60076e180",
+   "child": "d1aed35d99363827",
+   "type": "contains"
+  },
+  {
+   "parent": "6fee0b73768f172fa2390f94078473f724e4fbed1eba0a85fa3157e60076e180",
+   "child": "da6da7fb79b3c88f",
+   "type": "contains"
+  },
+  {
+   "parent": "6fee0b73768f172fa2390f94078473f724e4fbed1eba0a85fa3157e60076e180",
+   "child": "eaa2ef00f6a63a05",
+   "type": "contains"
+  },
+  {
+   "parent": "6fee0b73768f172fa2390f94078473f724e4fbed1eba0a85fa3157e60076e180",
+   "child": "f386bebc11577206",
+   "type": "contains"
+  },
+  {
+   "parent": "6fee0b73768f172fa2390f94078473f724e4fbed1eba0a85fa3157e60076e180",
+   "child": "f949e34d51414f77",
+   "type": "contains"
+  },
+  {
+   "parent": "7182e322637ca575",
+   "child": "4ee3c2d3725bb9b9",
+   "type": "evident-by"
+  },
+  {
+   "parent": "7f067570cd70310b",
+   "child": "4ee3c2d3725bb9b9",
+   "type": "evident-by"
+  },
+  {
+   "parent": "84513f8d74e62541",
+   "child": "0f3d0395cda6c27b",
+   "type": "contains"
+  },
+  {
+   "parent": "84513f8d74e62541",
+   "child": "8824c8532f77cb09",
+   "type": "described-by"
+  },
+  {
+   "parent": "84513f8d74e62541",
+   "child": "8824c8532f77cb09",
+   "type": "evident-by"
+  },
+  {
+   "parent": "8667fedf41cd8c9c",
+   "child": "0d546834d7e5ca11",
+   "type": "contains"
+  },
+  {
+   "parent": "8667fedf41cd8c9c",
+   "child": "154331836665b5e3",
+   "type": "contains"
+  },
+  {
+   "parent": "8667fedf41cd8c9c",
+   "child": "26c0be84dc0d5255",
+   "type": "contains"
+  },
+  {
+   "parent": "8667fedf41cd8c9c",
+   "child": "34ed6a1b31e8cec2",
+   "type": "contains"
+  },
+  {
+   "parent": "8667fedf41cd8c9c",
+   "child": "3f9867dd374c6747",
+   "type": "described-by"
+  },
+  {
+   "parent": "8667fedf41cd8c9c",
+   "child": "3f9867dd374c6747",
+   "type": "evident-by"
+  },
+  {
+   "parent": "8667fedf41cd8c9c",
+   "child": "3fab4c0fb41782e4",
+   "type": "contains"
+  },
+  {
+   "parent": "8667fedf41cd8c9c",
+   "child": "44fcd247744543eb",
+   "type": "contains"
+  },
+  {
+   "parent": "8667fedf41cd8c9c",
+   "child": "543190a03f04dfdd",
+   "type": "contains"
+  },
+  {
+   "parent": "8667fedf41cd8c9c",
+   "child": "5b2be9f86866f321",
+   "type": "contains"
+  },
+  {
+   "parent": "8667fedf41cd8c9c",
+   "child": "739058fe6eb4c747",
+   "type": "contains"
+  },
+  {
+   "parent": "8667fedf41cd8c9c",
+   "child": "7c34e03f01eaf7ac",
+   "type": "contains"
+  },
+  {
+   "parent": "8667fedf41cd8c9c",
+   "child": "91049698ef7f8254",
+   "type": "contains"
+  },
+  {
+   "parent": "8667fedf41cd8c9c",
+   "child": "91bbdbc93d4f817f",
+   "type": "contains"
+  },
+  {
+   "parent": "8667fedf41cd8c9c",
+   "child": "99fcad268b5c3e60",
+   "type": "contains"
+  },
+  {
+   "parent": "8667fedf41cd8c9c",
+   "child": "9b538f2b1ea9ec6e",
+   "type": "contains"
+  },
+  {
+   "parent": "8667fedf41cd8c9c",
+   "child": "d8f8079ad01e9aa7",
+   "type": "contains"
+  },
+  {
+   "parent": "8667fedf41cd8c9c",
+   "child": "dc5883c09cbf23d7",
+   "type": "contains"
+  },
+  {
+   "parent": "8667fedf41cd8c9c",
+   "child": "dce6a79f232d8ac8",
+   "type": "contains"
+  },
+  {
+   "parent": "8667fedf41cd8c9c",
+   "child": "e24e5d01d5a34007",
+   "type": "contains"
+  },
+  {
+   "parent": "8667fedf41cd8c9c",
+   "child": "f0a7f5df789b1696",
+   "type": "contains"
+  },
+  {
+   "parent": "8d87e01ed5f1c10d",
+   "child": "464b1bcf843b568f",
+   "type": "contains"
+  },
+  {
+   "parent": "8d87e01ed5f1c10d",
+   "child": "67dfc7646309137b",
+   "type": "contains"
+  },
+  {
+   "parent": "8d87e01ed5f1c10d",
+   "child": "7445daace8e206e2",
+   "type": "described-by"
+  },
+  {
+   "parent": "8d87e01ed5f1c10d",
+   "child": "7445daace8e206e2",
+   "type": "evident-by"
+  },
+  {
+   "parent": "8d87e01ed5f1c10d",
+   "child": "7a06a2aa28e807a8",
+   "type": "contains"
+  },
+  {
+   "parent": "8d87e01ed5f1c10d",
+   "child": "86683bf20f0c261f",
+   "type": "contains"
+  },
+  {
+   "parent": "8d87e01ed5f1c10d",
+   "child": "919c07ede63c3072",
+   "type": "contains"
+  },
+  {
+   "parent": "8d87e01ed5f1c10d",
+   "child": "ac09886c036591a5",
+   "type": "contains"
+  },
+  {
+   "parent": "8d87e01ed5f1c10d",
+   "child": "b73e311af80f166d",
+   "type": "contains"
+  },
+  {
+   "parent": "8d87e01ed5f1c10d",
+   "child": "b7485af380d808ba",
+   "type": "contains"
+  },
+  {
+   "parent": "8d87e01ed5f1c10d",
+   "child": "c7c187c33ef97b18",
+   "type": "contains"
+  },
+  {
+   "parent": "8d87e01ed5f1c10d",
+   "child": "caef5bcc1668ee1f",
+   "type": "contains"
+  },
+  {
+   "parent": "8d87e01ed5f1c10d",
+   "child": "d72cf0d1abfd8464",
+   "type": "contains"
+  },
+  {
+   "parent": "8d87e01ed5f1c10d",
+   "child": "f8a6ead0564f78a8",
+   "type": "contains"
+  },
+  {
+   "parent": "8eabc794a5d152a9",
+   "child": "4ee3c2d3725bb9b9",
+   "type": "evident-by"
+  },
+  {
+   "parent": "a192b953f68e72f0",
+   "child": "4ee3c2d3725bb9b9",
+   "type": "evident-by"
+  },
+  {
+   "parent": "ae0382d81cd38b09",
+   "child": "338a576ff39d52b5",
+   "type": "evident-by"
+  },
+  {
+   "parent": "ae0382d81cd38b09",
+   "child": "87b8e2507ef5f263",
+   "type": "contains"
+  },
+  {
+   "parent": "ae0382d81cd38b09",
+   "child": "9aa04046670afde4",
+   "type": "contains"
+  },
+  {
+   "parent": "ae0382d81cd38b09",
+   "child": "a6105a110c492b1d",
+   "type": "contains"
+  },
+  {
+   "parent": "ae0382d81cd38b09",
+   "child": "b09b65caa48283d3",
+   "type": "contains"
+  },
+  {
+   "parent": "ae0382d81cd38b09",
+   "child": "ba17f6cb2d847566",
+   "type": "ownership-by-file-overlap",
+   "metadata": {
+    "files": [
+     "/var/lib/db/sbom/ld-linux-2.38-r5.spdx.json"
+    ]
+   }
+  },
+  {
+   "parent": "ae0382d81cd38b09",
+   "child": "cc744a167ead10ac",
+   "type": "dependency-of"
+  },
+  {
+   "parent": "ae0382d81cd38b09",
+   "child": "f949e34d51414f77",
+   "type": "dependency-of"
+  },
+  {
+   "parent": "ae0d35dd43a35beb",
+   "child": "4ee3c2d3725bb9b9",
+   "type": "evident-by"
+  },
+  {
+   "parent": "b4034a585a450676",
+   "child": "4ee3c2d3725bb9b9",
+   "type": "evident-by"
+  },
+  {
+   "parent": "ba17f6cb2d847566",
+   "child": "6995012ebf41be44",
+   "type": "contains"
+  },
+  {
+   "parent": "ba17f6cb2d847566",
+   "child": "8d269c7d0ded5166",
+   "type": "contains"
+  },
+  {
+   "parent": "ba17f6cb2d847566",
+   "child": "9aa04046670afde4",
+   "type": "described-by"
+  },
+  {
+   "parent": "ba17f6cb2d847566",
+   "child": "9aa04046670afde4",
+   "type": "evident-by"
+  },
+  {
+   "parent": "ba17f6cb2d847566",
+   "child": "fb05f327e89a3280",
+   "type": "contains"
+  },
+  {
+   "parent": "ca20713ee27c435c",
+   "child": "4ee3c2d3725bb9b9",
+   "type": "evident-by"
+  },
+  {
+   "parent": "cc744a167ead10ac",
+   "child": "00ac34e8fafe74f5",
+   "type": "contains"
+  },
+  {
+   "parent": "cc744a167ead10ac",
+   "child": "04df25b5dfc9e840",
+   "type": "contains"
+  },
+  {
+   "parent": "cc744a167ead10ac",
+   "child": "0a912267977e6a4f",
+   "type": "contains"
+  },
+  {
+   "parent": "cc744a167ead10ac",
+   "child": "10c7cbbd79124a30",
+   "type": "contains"
+  },
+  {
+   "parent": "cc744a167ead10ac",
+   "child": "338a576ff39d52b5",
+   "type": "evident-by"
+  },
+  {
+   "parent": "cc744a167ead10ac",
+   "child": "3eb2f40269513a4a",
+   "type": "contains"
+  },
+  {
+   "parent": "cc744a167ead10ac",
+   "child": "3f9867dd374c6747",
+   "type": "contains"
+  },
+  {
+   "parent": "cc744a167ead10ac",
+   "child": "4685b28f64cc7e36",
+   "type": "contains"
+  },
+  {
+   "parent": "cc744a167ead10ac",
+   "child": "4e4718bba3d1c08a",
+   "type": "contains"
+  },
+  {
+   "parent": "cc744a167ead10ac",
+   "child": "5126493600785c80",
+   "type": "contains"
+  },
+  {
+   "parent": "cc744a167ead10ac",
+   "child": "5453a0eb87999855",
+   "type": "contains"
+  },
+  {
+   "parent": "cc744a167ead10ac",
+   "child": "64c099cd01cdda6d",
+   "type": "contains"
+  },
+  {
+   "parent": "cc744a167ead10ac",
+   "child": "76ffb24961609860",
+   "type": "contains"
+  },
+  {
+   "parent": "cc744a167ead10ac",
+   "child": "8667fedf41cd8c9c",
+   "type": "ownership-by-file-overlap",
+   "metadata": {
+    "files": [
+     "/var/lib/db/sbom/glibc-2.38-r5.spdx.json"
+    ]
+   }
+  },
+  {
+   "parent": "cc744a167ead10ac",
+   "child": "8c3fa7ed1579789b",
+   "type": "contains"
+  },
+  {
+   "parent": "cc744a167ead10ac",
+   "child": "9bf427b632e201d3",
+   "type": "contains"
+  },
+  {
+   "parent": "cc744a167ead10ac",
+   "child": "b09b65caa48283d3",
+   "type": "contains"
+  },
+  {
+   "parent": "cc744a167ead10ac",
+   "child": "c3491d60d1f802cc",
+   "type": "contains"
+  },
+  {
+   "parent": "cc744a167ead10ac",
+   "child": "e21b1c6e9bea0b4e",
+   "type": "contains"
+  },
+  {
+   "parent": "cc744a167ead10ac",
+   "child": "ef1166c1071b0e70",
+   "type": "contains"
+  },
+  {
+   "parent": "cc744a167ead10ac",
+   "child": "f2765d718f445303",
+   "type": "contains"
+  },
+  {
+   "parent": "cc744a167ead10ac",
+   "child": "f949e34d51414f77",
+   "type": "dependency-of"
+  },
+  {
+   "parent": "cc744a167ead10ac",
+   "child": "f949e34d51414f77",
+   "type": "dependency-of"
+  },
+  {
+   "parent": "cc744a167ead10ac",
+   "child": "fba815b85fd3d690",
+   "type": "contains"
+  },
+  {
+   "parent": "cc744a167ead10ac",
+   "child": "feaedd99f6a39ee7",
+   "type": "contains"
+  },
+  {
+   "parent": "d113004b447fb691",
+   "child": "09455622fb959bb7",
+   "type": "contains"
+  },
+  {
+   "parent": "d113004b447fb691",
+   "child": "19819ba349c4b150",
+   "type": "contains"
+  },
+  {
+   "parent": "d113004b447fb691",
+   "child": "2ed69eb1a2e4e0b2",
+   "type": "contains"
+  },
+  {
+   "parent": "d113004b447fb691",
+   "child": "338a576ff39d52b5",
+   "type": "evident-by"
+  },
+  {
+   "parent": "d113004b447fb691",
+   "child": "34190c7aabdaf0f3",
+   "type": "ownership-by-file-overlap",
+   "metadata": {
+    "files": [
+     "/var/lib/db/sbom/wolfi-baselayout-20230201-r6.spdx.json"
+    ]
+   }
+  },
+  {
+   "parent": "d113004b447fb691",
+   "child": "412fdc783eb65884",
+   "type": "contains"
+  },
+  {
+   "parent": "d113004b447fb691",
+   "child": "5c2e52d4044c5925",
+   "type": "contains"
+  },
+  {
+   "parent": "d113004b447fb691",
+   "child": "6eb73e6cc086a141",
+   "type": "contains"
+  },
+  {
+   "parent": "d113004b447fb691",
+   "child": "87eaa701fbef323e",
+   "type": "contains"
+  },
+  {
+   "parent": "d113004b447fb691",
+   "child": "8d3f29046db52f73",
+   "type": "contains"
+  },
+  {
+   "parent": "d113004b447fb691",
+   "child": "9d2a556e1e2162f6",
+   "type": "contains"
+  },
+  {
+   "parent": "d113004b447fb691",
+   "child": "ae0382d81cd38b09",
+   "type": "dependency-of"
+  },
+  {
+   "parent": "d113004b447fb691",
+   "child": "b3c34e16fa510d0f",
+   "type": "contains"
+  },
+  {
+   "parent": "d113004b447fb691",
+   "child": "b49b52ffac9a7fa3",
+   "type": "contains"
+  },
+  {
+   "parent": "d113004b447fb691",
+   "child": "cc744a167ead10ac",
+   "type": "dependency-of"
+  },
+  {
+   "parent": "d113004b447fb691",
+   "child": "ed06e29af7d73360",
+   "type": "contains"
+  },
+  {
+   "parent": "d113004b447fb691",
+   "child": "f4b345face50aaa7",
+   "type": "contains"
+  },
+  {
+   "parent": "d113004b447fb691",
+   "child": "f826eaff41941c32",
+   "type": "contains"
+  },
+  {
+   "parent": "d1aed35d99363827",
+   "child": "4ee3c2d3725bb9b9",
+   "type": "evident-by"
+  },
+  {
+   "parent": "da6da7fb79b3c88f",
+   "child": "338a576ff39d52b5",
+   "type": "evident-by"
+  },
+  {
+   "parent": "da6da7fb79b3c88f",
+   "child": "737c17c891b9a400",
+   "type": "contains"
+  },
+  {
+   "parent": "da6da7fb79b3c88f",
+   "child": "84513f8d74e62541",
+   "type": "ownership-by-file-overlap",
+   "metadata": {
+    "files": [
+     "/var/lib/db/sbom/ca-certificates-bundle-20230506-r0.spdx.json"
+    ]
+   }
+  },
+  {
+   "parent": "da6da7fb79b3c88f",
+   "child": "8824c8532f77cb09",
+   "type": "contains"
+  },
+  {
+   "parent": "da6da7fb79b3c88f",
+   "child": "d113004b447fb691",
+   "type": "dependency-of"
+  },
+  {
+   "parent": "eaa2ef00f6a63a05",
+   "child": "4ee3c2d3725bb9b9",
+   "type": "evident-by"
+  },
+  {
+   "parent": "f386bebc11577206",
+   "child": "4ee3c2d3725bb9b9",
+   "type": "evident-by"
+  },
+  {
+   "parent": "f949e34d51414f77",
+   "child": "1dbe6aadf5b4e86b",
+   "type": "contains"
+  },
+  {
+   "parent": "f949e34d51414f77",
+   "child": "338a576ff39d52b5",
+   "type": "evident-by"
+  },
+  {
+   "parent": "f949e34d51414f77",
+   "child": "4ee3c2d3725bb9b9",
+   "type": "contains"
+  },
+  {
+   "parent": "f949e34d51414f77",
+   "child": "5331b8bfdf6bbc3e",
+   "type": "ownership-by-file-overlap",
+   "metadata": {
+    "files": [
+     "/var/lib/db/sbom/nats-server-2.10.1-r0.spdx.json"
+    ]
+   }
+  },
+  {
+   "parent": "f949e34d51414f77",
+   "child": "7182e322637ca575",
+   "type": "ownership-by-file-overlap",
+   "metadata": {
+    "files": [
+     "/usr/bin/nats-server"
+    ]
+   }
+  },
+  {
+   "parent": "f949e34d51414f77",
+   "child": "7f067570cd70310b",
+   "type": "ownership-by-file-overlap",
+   "metadata": {
+    "files": [
+     "/usr/bin/nats-server"
+    ]
+   }
+  },
+  {
+   "parent": "f949e34d51414f77",
+   "child": "8eabc794a5d152a9",
+   "type": "ownership-by-file-overlap",
+   "metadata": {
+    "files": [
+     "/usr/bin/nats-server"
+    ]
+   }
+  },
+  {
+   "parent": "f949e34d51414f77",
+   "child": "a192b953f68e72f0",
+   "type": "ownership-by-file-overlap",
+   "metadata": {
+    "files": [
+     "/usr/bin/nats-server"
+    ]
+   }
+  },
+  {
+   "parent": "f949e34d51414f77",
+   "child": "ae0d35dd43a35beb",
+   "type": "ownership-by-file-overlap",
+   "metadata": {
+    "files": [
+     "/usr/bin/nats-server"
+    ]
+   }
+  },
+  {
+   "parent": "f949e34d51414f77",
+   "child": "b4034a585a450676",
+   "type": "ownership-by-file-overlap",
+   "metadata": {
+    "files": [
+     "/usr/bin/nats-server"
+    ]
+   }
+  },
+  {
+   "parent": "f949e34d51414f77",
+   "child": "ca20713ee27c435c",
+   "type": "ownership-by-file-overlap",
+   "metadata": {
+    "files": [
+     "/usr/bin/nats-server"
+    ]
+   }
+  },
+  {
+   "parent": "f949e34d51414f77",
+   "child": "d1aed35d99363827",
+   "type": "ownership-by-file-overlap",
+   "metadata": {
+    "files": [
+     "/usr/bin/nats-server"
+    ]
+   }
+  },
+  {
+   "parent": "f949e34d51414f77",
+   "child": "da5ecb5564e7e685",
+   "type": "contains"
+  },
+  {
+   "parent": "f949e34d51414f77",
+   "child": "eaa2ef00f6a63a05",
+   "type": "ownership-by-file-overlap",
+   "metadata": {
+    "files": [
+     "/usr/bin/nats-server"
+    ]
+   }
+  },
+  {
+   "parent": "f949e34d51414f77",
+   "child": "f386bebc11577206",
+   "type": "ownership-by-file-overlap",
+   "metadata": {
+    "files": [
+     "/usr/bin/nats-server"
+    ]
+   }
+  }
+ ],
+ "files": [
+  {
+   "id": "87eaa701fbef323e",
+   "location": {
+    "path": "/etc/group",
+    "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837"
+   }
+  },
+  {
+   "id": "2ed69eb1a2e4e0b2",
+   "location": {
+    "path": "/etc/host.conf",
+    "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837"
+   }
+  },
+  {
+   "id": "8d3f29046db52f73",
+   "location": {
+    "path": "/etc/hosts",
+    "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837"
+   }
+  },
+  {
+   "id": "87b8e2507ef5f263",
+   "location": {
+    "path": "/etc/ld.so.cache",
+    "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837"
+   }
+  },
+  {
+   "id": "a6105a110c492b1d",
+   "location": {
+    "path": "/etc/ld.so.conf",
+    "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837"
+   }
+  },
+  {
+   "id": "1dbe6aadf5b4e86b",
+   "location": {
+    "path": "/etc/nats/nats-server.conf",
+    "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837"
+   }
+  },
+  {
+   "id": "6eb73e6cc086a141",
+   "location": {
+    "path": "/etc/nsswitch.conf",
+    "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837"
+   }
+  },
+  {
+   "id": "b3c34e16fa510d0f",
+   "location": {
+    "path": "/etc/os-release",
+    "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837"
+   }
+  },
+  {
+   "id": "f4b345face50aaa7",
+   "location": {
+    "path": "/etc/passwd",
+    "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837"
+   }
+  },
+  {
+   "id": "5c2e52d4044c5925",
+   "location": {
+    "path": "/etc/profile",
+    "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837"
+   }
+  },
+  {
+   "id": "9d2a556e1e2162f6",
+   "location": {
+    "path": "/etc/profile.d/locale.sh",
+    "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837"
+   }
+  },
+  {
+   "id": "412fdc783eb65884",
+   "location": {
+    "path": "/etc/protocols",
+    "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837"
+   }
+  },
+  {
+   "id": "8c3fa7ed1579789b",
+   "location": {
+    "path": "/etc/rpc",
+    "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837"
+   }
+  },
+  {
+   "id": "f826eaff41941c32",
+   "location": {
+    "path": "/etc/secfixes.d/wolfi",
+    "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837"
+   }
+  },
+  {
+   "id": "09455622fb959bb7",
+   "location": {
+    "path": "/etc/services",
+    "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837"
+   }
+  },
+  {
+   "id": "ed06e29af7d73360",
+   "location": {
+    "path": "/etc/shadow",
+    "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837"
+   }
+  },
+  {
+   "id": "b49b52ffac9a7fa3",
+   "location": {
+    "path": "/etc/shells",
+    "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837"
+   }
+  },
+  {
+   "id": "737c17c891b9a400",
+   "location": {
+    "path": "/etc/ssl/certs/ca-certificates.crt",
+    "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837"
+   }
+  },
+  {
+   "id": "338a576ff39d52b5",
+   "location": {
+    "path": "/lib/apk/db/installed",
+    "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837"
+   }
+  },
+  {
+   "id": "b09b65caa48283d3",
+   "location": {
+    "path": "/lib/ld-linux-x86-64.so.2",
+    "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837"
+   }
+  },
+  {
+   "id": "c3491d60d1f802cc",
+   "location": {
+    "path": "/lib/libBrokenLocale.so.1",
+    "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837"
+   }
+  },
+  {
+   "id": "76ffb24961609860",
+   "location": {
+    "path": "/lib/libanl.so.1",
+    "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837"
+   }
+  },
+  {
+   "id": "f2765d718f445303",
+   "location": {
+    "path": "/lib/libc.so.6",
+    "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837"
+   }
+  },
+  {
+   "id": "feaedd99f6a39ee7",
+   "location": {
+    "path": "/lib/libc_malloc_debug.so.0",
+    "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837"
+   }
+  },
+  {
+   "id": "00ac34e8fafe74f5",
+   "location": {
+    "path": "/lib/libdl.so.2",
+    "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837"
+   }
+  },
+  {
+   "id": "5453a0eb87999855",
+   "location": {
+    "path": "/lib/libm.so.6",
+    "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837"
+   }
+  },
+  {
+   "id": "fba815b85fd3d690",
+   "location": {
+    "path": "/lib/libmemusage.so",
+    "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837"
+   }
+  },
+  {
+   "id": "5126493600785c80",
+   "location": {
+    "path": "/lib/libmvec.so.1",
+    "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837"
+   }
+  },
+  {
+   "id": "04df25b5dfc9e840",
+   "location": {
+    "path": "/lib/libnsl.so.1",
+    "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837"
+   }
+  },
+  {
+   "id": "4685b28f64cc7e36",
+   "location": {
+    "path": "/lib/libnss_compat.so.2",
+    "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837"
+   }
+  },
+  {
+   "id": "9bf427b632e201d3",
+   "location": {
+    "path": "/lib/libnss_dns.so.2",
+    "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837"
+   }
+  },
+  {
+   "id": "64c099cd01cdda6d",
+   "location": {
+    "path": "/lib/libnss_files.so.2",
+    "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837"
+   }
+  },
+  {
+   "id": "10c7cbbd79124a30",
+   "location": {
+    "path": "/lib/libpthread.so.0",
+    "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837"
+   }
+  },
+  {
+   "id": "e21b1c6e9bea0b4e",
+   "location": {
+    "path": "/lib/libresolv.so.2",
+    "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837"
+   }
+  },
+  {
+   "id": "0a912267977e6a4f",
+   "location": {
+    "path": "/lib/librt.so.1",
+    "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837"
+   }
+  },
+  {
+   "id": "3eb2f40269513a4a",
+   "location": {
+    "path": "/lib/libthread_db.so.1",
+    "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837"
+   }
+  },
+  {
+   "id": "4e4718bba3d1c08a",
+   "location": {
+    "path": "/lib/libutil.so.1",
+    "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837"
+   }
+  },
+  {
+   "id": "ef1166c1071b0e70",
+   "location": {
+    "path": "/sbin/ldconfig",
+    "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837"
+   }
+  },
+  {
+   "id": "4ee3c2d3725bb9b9",
+   "location": {
+    "path": "/usr/bin/nats-server",
+    "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837"
+   }
+  },
+  {
+   "id": "f49c250ffdf2a228",
+   "location": {
+    "path": "/usr/lib/locale/C.utf8/LC_ADDRESS",
+    "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837"
+   }
+  },
+  {
+   "id": "5e1addeba20b9161",
+   "location": {
+    "path": "/usr/lib/locale/C.utf8/LC_COLLATE",
+    "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837"
+   }
+  },
+  {
+   "id": "1139a1ffa9106133",
+   "location": {
+    "path": "/usr/lib/locale/C.utf8/LC_CTYPE",
+    "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837"
+   }
+  },
+  {
+   "id": "f6ce081c2ada01d0",
+   "location": {
+    "path": "/usr/lib/locale/C.utf8/LC_IDENTIFICATION",
+    "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837"
+   }
+  },
+  {
+   "id": "5ca6196f35442d96",
+   "location": {
+    "path": "/usr/lib/locale/C.utf8/LC_MEASUREMENT",
+    "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837"
+   }
+  },
+  {
+   "id": "ca1798c3530142d1",
+   "location": {
+    "path": "/usr/lib/locale/C.utf8/LC_MESSAGES/SYS_LC_MESSAGES",
+    "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837"
+   }
+  },
+  {
+   "id": "073c3012fb646ac3",
+   "location": {
+    "path": "/usr/lib/locale/C.utf8/LC_MONETARY",
+    "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837"
+   }
+  },
+  {
+   "id": "4058e39997a84bbc",
+   "location": {
+    "path": "/usr/lib/locale/C.utf8/LC_NAME",
+    "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837"
+   }
+  },
+  {
+   "id": "a6b57d3d000c8627",
+   "location": {
+    "path": "/usr/lib/locale/C.utf8/LC_NUMERIC",
+    "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837"
+   }
+  },
+  {
+   "id": "6b3c57ff3fd3e073",
+   "location": {
+    "path": "/usr/lib/locale/C.utf8/LC_PAPER",
+    "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837"
+   }
+  },
+  {
+   "id": "1a5de15d675001be",
+   "location": {
+    "path": "/usr/lib/locale/C.utf8/LC_TELEPHONE",
+    "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837"
+   }
+  },
+  {
+   "id": "7b7e87161b7817e4",
+   "location": {
+    "path": "/usr/lib/locale/C.utf8/LC_TIME",
+    "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837"
+   }
+  },
+  {
+   "id": "8824c8532f77cb09",
+   "location": {
+    "path": "/var/lib/db/sbom/ca-certificates-bundle-20230506-r0.spdx.json",
+    "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837"
+   }
+  },
+  {
+   "id": "3f9867dd374c6747",
+   "location": {
+    "path": "/var/lib/db/sbom/glibc-2.38-r5.spdx.json",
+    "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837"
+   }
+  },
+  {
+   "id": "7445daace8e206e2",
+   "location": {
+    "path": "/var/lib/db/sbom/glibc-locale-posix-2.38-r5.spdx.json",
+    "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837"
+   }
+  },
+  {
+   "id": "9aa04046670afde4",
+   "location": {
+    "path": "/var/lib/db/sbom/ld-linux-2.38-r5.spdx.json",
+    "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837"
+   }
+  },
+  {
+   "id": "da5ecb5564e7e685",
+   "location": {
+    "path": "/var/lib/db/sbom/nats-server-2.10.1-r0.spdx.json",
+    "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837"
+   }
+  },
+  {
+   "id": "19819ba349c4b150",
+   "location": {
+    "path": "/var/lib/db/sbom/wolfi-baselayout-20230201-r6.spdx.json",
+    "layerID": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837"
+   }
+  }
+ ],
+ "source": {
+  "id": "6fee0b73768f172fa2390f94078473f724e4fbed1eba0a85fa3157e60076e180",
+  "name": "cgr.dev/chainguard/nats",
+  "version": "sha256:6fee0b73768f172fa2390f94078473f724e4fbed1eba0a85fa3157e60076e180",
+  "type": "image",
+  "metadata": {
+   "userInput": "cgr.dev/chainguard/nats:latest",
+   "imageID": "sha256:8ae2bd433b2c50f064a1ef42015b548ceca723da3a05872bc30f08d5bad9906c",
+   "manifestDigest": "sha256:6fee0b73768f172fa2390f94078473f724e4fbed1eba0a85fa3157e60076e180",
+   "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+   "tags": [
+    "cgr.dev/chainguard/nats:latest"
+   ],
+   "imageSize": 20367608,
+   "layers": [
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:61bfd78cac545baadd5b39736f759b2e83fffaed1328c6466537f53b9c059837",
+     "size": 20367608
+    }
+   ],
+   "manifest": "eyJzY2hlbWFWZXJzaW9uIjoyLCJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmRpc3RyaWJ1dGlvbi5tYW5pZmVzdC52Mitqc29uIiwiY29uZmlnIjp7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuY29udGFpbmVyLmltYWdlLnYxK2pzb24iLCJzaXplIjo1OTMsImRpZ2VzdCI6InNoYTI1Njo4YWUyYmQ0MzNiMmM1MGYwNjRhMWVmNDIwMTViNTQ4Y2VjYTcyM2RhM2EwNTg3MmJjMzBmMDhkNWJhZDk5MDZjIn0sImxheWVycyI6W3sibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vdm5kLmRvY2tlci5pbWFnZS5yb290ZnMuZGlmZi50YXIuZ3ppcCIsInNpemUiOjIwNDU0NDAwLCJkaWdlc3QiOiJzaGEyNTY6NjFiZmQ3OGNhYzU0NWJhYWRkNWIzOTczNmY3NTliMmU4M2ZmZmFlZDEzMjhjNjQ2NjUzN2Y1M2I5YzA1OTgzNyJ9XX0=",
+   "config": "eyJhcmNoaXRlY3R1cmUiOiJhbWQ2NCIsImF1dGhvciI6ImdpdGh1Yi5jb20vY2hhaW5ndWFyZC1kZXYvYXBrbyIsImNyZWF0ZWQiOiIyMDIzLTEwLTAzVDIzOjE5OjM2WiIsImhpc3RvcnkiOlt7ImF1dGhvciI6ImFwa28iLCJjcmVhdGVkIjoiMjAyMy0xMC0wM1QyMzoxOTozNloiLCJjcmVhdGVkX2J5IjoiYXBrbyIsImNvbW1lbnQiOiJUaGlzIGlzIGFuIGFwa28gc2luZ2xlLWxheWVyIGltYWdlIn1dLCJvcyI6ImxpbnV4Iiwicm9vdGZzIjp7InR5cGUiOiJsYXllcnMiLCJkaWZmX2lkcyI6WyJzaGEyNTY6NjFiZmQ3OGNhYzU0NWJhYWRkNWIzOTczNmY3NTliMmU4M2ZmZmFlZDEzMjhjNjQ2NjUzN2Y1M2I5YzA1OTgzNyJdfSwiY29uZmlnIjp7IkNtZCI6WyItLWNvbmZpZz0vZXRjL25hdHMvbmF0cy1zZXJ2ZXIuY29uZiJdLCJFbnRyeXBvaW50IjpbIi91c3IvYmluL25hdHMtc2VydmVyIl0sIkVudiI6WyJQQVRIPS91c3IvbG9jYWwvc2JpbjovdXNyL2xvY2FsL2JpbjovdXNyL3NiaW46L3Vzci9iaW46L3NiaW46L2JpbiIsIlNTTF9DRVJUX0ZJTEU9L2V0Yy9zc2wvY2VydHMvY2EtY2VydGlmaWNhdGVzLmNydCJdLCJVc2VyIjoiNjU1MzIifX0=",
+   "repoDigests": [
+    "cgr.dev/chainguard/nats@sha256:b7b67ac26a7e3a9dea53ba25e88f7137a5e4b6bbd67a4dc1974d93eb98e81244"
+   ],
+   "architecture": "amd64",
+   "os": "linux"
+  }
+ },
+ "distro": {
+  "prettyName": "Wolfi",
+  "name": "Wolfi",
+  "id": "wolfi",
+  "versionID": "20230201",
+  "homeURL": "https://wolfi.dev"
+ },
+ "descriptor": {
+  "name": "syft",
+  "version": "0.92.0",
+  "configuration": {
+   "catalogers": null,
+   "package": {
+    "cataloger": {
+     "enabled": true,
+     "scope": "Squashed"
+    },
+    "search-unindexed-archives": false,
+    "search-indexed-archives": true
+   },
+   "golang": {
+    "search-local-mod-cache-licenses": false,
+    "local-mod-cache-dir": "",
+    "search-remote-licenses": false,
+    "proxy": "",
+    "no-proxy": ""
+   },
+   "linux-kernel": {
+    "catalog-modules": true
+   },
+   "python": {
+    "guess-unpinned-requirements": false
+   },
+   "file-metadata": {
+    "cataloger": {
+     "enabled": false,
+     "scope": "Squashed"
+    },
+    "digests": [
+     "sha256"
+    ]
+   },
+   "file-classification": {
+    "cataloger": {
+     "enabled": false,
+     "scope": "Squashed"
+    }
+   },
+   "file-contents": {
+    "cataloger": {
+     "enabled": false,
+     "scope": "Squashed"
+    },
+    "skip-files-above-size": 1048576,
+    "globs": null
+   },
+   "secrets": {
+    "cataloger": {
+     "enabled": false,
+     "scope": "AllLayers"
+    },
+    "additional-patterns": null,
+    "exclude-pattern-names": null,
+    "reveal-values": false,
+    "skip-files-above-size": 1048576
+   },
+   "registry": {
+    "insecure-skip-tls-verify": false,
+    "insecure-use-http": false,
+    "auth": null,
+    "ca-cert": ""
+   },
+   "exclude": [],
+   "platform": "",
+   "name": "",
+   "source": {
+    "name": "",
+    "version": "",
+    "file": {
+     "digests": [
+      "sha256"
+     ]
+    }
+   },
+   "parallelism": 1,
+   "default-image-pull-source": "",
+   "base-path": "",
+   "exclude-binary-overlap-by-ownership": true
+  }
+ },
+ "schema": {
+  "version": "11.0.0",
+  "url": "https://raw.githubusercontent.com/anchore/syft/main/schema/json/schema-11.0.0.json"
+ }
+}

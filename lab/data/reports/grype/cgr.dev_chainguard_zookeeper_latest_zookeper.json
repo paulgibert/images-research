@@ -1,0 +1,352 @@
+{
+ "matches": [
+  {
+   "vulnerability": {
+    "id": "CVE-2023-35116",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-35116",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/FasterXML/jackson-databind/issues/3972"
+    ],
+    "description": "** DISPUTED ** jackson-databind through 2.15.2 allows attackers to cause a denial of service or other unspecified impact via a crafted object that uses cyclic dependencies. NOTE: the vendor's perspective is that this is not a valid vulnerability report, because the steps of constructing a cyclic data structure and trying to serialize it cannot be achieved by an external attacker.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 4.7,
+       "exploitabilityScore": 1,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:fasterxml:jackson-databind:2.15.2:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "jackson-databind",
+       "version": "2.15.2"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2023-35116",
+      "versionConstraint": "<= 2.15.2 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:fasterxml:jackson-databind:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "6b86aa14b5b64c41",
+    "name": "jackson-databind",
+    "version": "2.15.2",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "/usr/share/java/zookeeper/lib/jackson-databind-2.15.2.jar",
+      "layerID": "sha256:837e179f2f3e4d1a376fb60efe9baa83b19bf3bc7dd46f62e32479e0892d8bfe"
+     }
+    ],
+    "language": "java",
+    "licenses": [
+     "https://www.apache.org/licenses/LICENSE-2.0.txt"
+    ],
+    "cpes": [
+     "cpe:2.3:a:jackson-databind:jackson-databind:2.15.2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jackson-databind:jackson_databind:2.15.2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jackson_databind:jackson-databind:2.15.2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jackson_databind:jackson_databind:2.15.2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:fasterxml:jackson-databind:2.15.2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:fasterxml:jackson_databind:2.15.2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jackson-databind:jackson:2.15.2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jackson:jackson-databind:2.15.2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jackson:jackson_databind:2.15.2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jackson_databind:jackson:2.15.2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:core:jackson-databind:2.15.2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:core:jackson_databind:2.15.2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:fasterxml:jackson:2.15.2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jackson:jackson:2.15.2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:core:jackson:2.15.2:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.15.2",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "/usr/share/java/zookeeper/lib/jackson-databind-2.15.2.jar",
+     "pomArtifactID": "jackson-databind",
+     "pomGroupID": "com.fasterxml.jackson.core",
+     "manifestName": "",
+     "archiveDigests": [
+      {
+       "algorithm": "sha1",
+       "value": "9353b021f10c307c00328f52090de2bdb4b6ff9c"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-57m8-f3v5-hm5m",
+    "dataSource": "https://github.com/advisories/GHSA-57m8-f3v5-hm5m",
+    "namespace": "github:language:java",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-57m8-f3v5-hm5m"
+    ],
+    "description": "Netty-handler does not validate host names by default",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+      "metrics": {
+       "baseScore": 5.3,
+       "exploitabilityScore": 3.9,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-4586",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-4586",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://access.redhat.com/security/cve/CVE-2023-4586",
+      "https://bugzilla.redhat.com/show_bug.cgi?id=2235564",
+      "https://security.snyk.io/vuln/SNYK-JAVA-IONETTY-1042268"
+     ],
+     "description": "A vulnerability was found in the Hot Rod client. This security issue occurs as the Hot Rod client does not enable hostname validation when using TLS, possibly resulting in a man-in-the-middle (MITM) attack.",
+     "cvss": [
+      {
+       "source": "secalert@redhat.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+       "metrics": {
+        "baseScore": 5.3,
+        "exploitabilityScore": 3.9,
+        "impactScore": 1.4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "netty-handler",
+       "version": "4.1.94.Final"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=4.1.0.Final,<=4.1.99.Final (unknown)",
+      "vulnerabilityID": "GHSA-57m8-f3v5-hm5m"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "39e20a3daede9984",
+    "name": "netty-handler",
+    "version": "4.1.94.Final",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "/usr/share/java/zookeeper/lib/netty-handler-4.1.94.Final.jar",
+      "layerID": "sha256:837e179f2f3e4d1a376fb60efe9baa83b19bf3bc7dd46f62e32479e0892d8bfe"
+     }
+    ],
+    "language": "java",
+    "licenses": [
+     "https://www.apache.org/licenses/LICENSE-2.0"
+    ],
+    "cpes": [
+     "cpe:2.3:a:netty-handler:netty-handler:4.1.94.Final:*:*:*:*:*:*:*",
+     "cpe:2.3:a:netty-handler:netty_handler:4.1.94.Final:*:*:*:*:*:*:*",
+     "cpe:2.3:a:netty-project:netty-handler:4.1.94.Final:*:*:*:*:*:*:*",
+     "cpe:2.3:a:netty-project:netty_handler:4.1.94.Final:*:*:*:*:*:*:*",
+     "cpe:2.3:a:netty_handler:netty-handler:4.1.94.Final:*:*:*:*:*:*:*",
+     "cpe:2.3:a:netty_handler:netty_handler:4.1.94.Final:*:*:*:*:*:*:*",
+     "cpe:2.3:a:netty_project:netty-handler:4.1.94.Final:*:*:*:*:*:*:*",
+     "cpe:2.3:a:netty_project:netty_handler:4.1.94.Final:*:*:*:*:*:*:*",
+     "cpe:2.3:a:handler:netty-handler:4.1.94.Final:*:*:*:*:*:*:*",
+     "cpe:2.3:a:handler:netty_handler:4.1.94.Final:*:*:*:*:*:*:*",
+     "cpe:2.3:a:netty-handler:handler:4.1.94.Final:*:*:*:*:*:*:*",
+     "cpe:2.3:a:netty-project:handler:4.1.94.Final:*:*:*:*:*:*:*",
+     "cpe:2.3:a:netty_handler:handler:4.1.94.Final:*:*:*:*:*:*:*",
+     "cpe:2.3:a:netty_project:handler:4.1.94.Final:*:*:*:*:*:*:*",
+     "cpe:2.3:a:netty:netty-handler:4.1.94.Final:*:*:*:*:*:*:*",
+     "cpe:2.3:a:netty:netty_handler:4.1.94.Final:*:*:*:*:*:*:*",
+     "cpe:2.3:a:handler:handler:4.1.94.Final:*:*:*:*:*:*:*",
+     "cpe:2.3:a:netty:handler:4.1.94.Final:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/io.netty/netty-handler@4.1.94.Final",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "/usr/share/java/zookeeper/lib/netty-handler-4.1.94.Final.jar",
+     "pomArtifactID": "netty-handler",
+     "pomGroupID": "io.netty",
+     "manifestName": "",
+     "archiveDigests": [
+      {
+       "algorithm": "sha1",
+       "value": "cd9121ce24d6d3f2898946d04b0ef3ec548b00b4"
+      }
+     ]
+    }
+   }
+  }
+ ],
+ "source": {
+  "type": "image",
+  "target": {
+   "userInput": "cgr.dev/chainguard/zookeeper:latest",
+   "imageID": "sha256:1665ef64c5b990847d575a61e550e6081abfe7110ccabad0184841f2fc54a6ad",
+   "manifestDigest": "sha256:1510e217ee5dc49cab152e8212150fee20d49a89b3bf35176cffd7879aee5150",
+   "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+   "tags": [
+    "cgr.dev/chainguard/zookeeper:latest"
+   ],
+   "imageSize": 296158530,
+   "layers": [
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:837e179f2f3e4d1a376fb60efe9baa83b19bf3bc7dd46f62e32479e0892d8bfe",
+     "size": 296158530
+    }
+   ],
+   "manifest": "eyJzY2hlbWFWZXJzaW9uIjoyLCJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmRpc3RyaWJ1dGlvbi5tYW5pZmVzdC52Mitqc29uIiwiY29uZmlnIjp7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuY29udGFpbmVyLmltYWdlLnYxK2pzb24iLCJzaXplIjo2NTUsImRpZ2VzdCI6InNoYTI1NjoxNjY1ZWY2NGM1Yjk5MDg0N2Q1NzVhNjFlNTUwZTYwODFhYmZlNzExMGNjYWJhZDAxODQ4NDFmMmZjNTRhNmFkIn0sImxheWVycyI6W3sibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vdm5kLmRvY2tlci5pbWFnZS5yb290ZnMuZGlmZi50YXIuZ3ppcCIsInNpemUiOjI5NzM5MzY2NCwiZGlnZXN0Ijoic2hhMjU2OjgzN2UxNzlmMmYzZTRkMWEzNzZmYjYwZWZlOWJhYTgzYjE5YmYzYmM3ZGQ0NmY2MmUzMjQ3OWUwODkyZDhiZmUifV19",
+   "config": "eyJhcmNoaXRlY3R1cmUiOiJhbWQ2NCIsImF1dGhvciI6ImdpdGh1Yi5jb20vY2hhaW5ndWFyZC1kZXYvYXBrbyIsImNyZWF0ZWQiOiIyMDIzLTEwLTAzVDIzOjE5OjM2WiIsImhpc3RvcnkiOlt7ImF1dGhvciI6ImFwa28iLCJjcmVhdGVkIjoiMjAyMy0xMC0wM1QyMzoxOTozNloiLCJjcmVhdGVkX2J5IjoiYXBrbyIsImNvbW1lbnQiOiJUaGlzIGlzIGFuIGFwa28gc2luZ2xlLWxheWVyIGltYWdlIn1dLCJvcyI6ImxpbnV4Iiwicm9vdGZzIjp7InR5cGUiOiJsYXllcnMiLCJkaWZmX2lkcyI6WyJzaGEyNTY6ODM3ZTE3OWYyZjNlNGQxYTM3NmZiNjBlZmU5YmFhODNiMTliZjNiYzdkZDQ2ZjYyZTMyNDc5ZTA4OTJkOGJmZSJdfSwiY29uZmlnIjp7IkNtZCI6WyJzdGFydC1mb3JlZ3JvdW5kIl0sIkVudHJ5cG9pbnQiOlsiL3Vzci9zaGFyZS9qYXZhL3pvb2tlZXBlci9iaW4vemtTZXJ2ZXIuc2giXSwiRW52IjpbIkpBVkFfSE9NRT0vdXNyL2xpYi9qdm0vamF2YS0xNy1vcGVuamRrIiwiTEFORz1lbl9VUy5VVEYtOCIsIlBBVEg9L3Vzci9sb2NhbC9zYmluOi91c3IvbG9jYWwvYmluOi91c3Ivc2JpbjovdXNyL2Jpbjovc2JpbjovYmluIiwiU1NMX0NFUlRfRklMRT0vZXRjL3NzbC9jZXJ0cy9jYS1jZXJ0aWZpY2F0ZXMuY3J0Il0sIlVzZXIiOiI2NTUzMiJ9fQ==",
+   "repoDigests": [
+    "cgr.dev/chainguard/zookeeper@sha256:67f4d6654141bb6c6d5baadda6a0a176be15c9de6a688a2925704ef73ecc0b79"
+   ],
+   "architecture": "amd64",
+   "os": "linux"
+  }
+ },
+ "distro": {
+  "name": "wolfi",
+  "version": "20230201",
+  "idLike": []
+ },
+ "descriptor": {
+  "name": "",
+  "version": "",
+  "configuration": {
+   "output": [
+    "json"
+   ],
+   "file": "",
+   "distro": "",
+   "add-cpes-if-none": false,
+   "output-template-file": "",
+   "check-for-app-update": true,
+   "only-fixed": false,
+   "only-notfixed": false,
+   "platform": "",
+   "search": {
+    "scope": "Squashed",
+    "unindexed-archives": false,
+    "indexed-archives": true
+   },
+   "ignore": null,
+   "exclude": [],
+   "db": {
+    "cache-dir": "/home/anon/.cache/grype/db",
+    "update-url": "https://toolbox-data.anchore.io/grype/databases/listing.json",
+    "ca-cert": "",
+    "auto-update": true,
+    "validate-by-hash-on-start": false,
+    "validate-age": true,
+    "max-allowed-built-age": 432000000000000
+   },
+   "externalSources": {
+    "enable": false,
+    "maven": {
+     "searchUpstreamBySha1": true,
+     "baseUrl": "https://search.maven.org/solrsearch/select"
+    }
+   },
+   "match": {
+    "java": {
+     "using-cpes": true
+    },
+    "dotnet": {
+     "using-cpes": true
+    },
+    "golang": {
+     "using-cpes": true
+    },
+    "javascript": {
+     "using-cpes": true
+    },
+    "python": {
+     "using-cpes": true
+    },
+    "ruby": {
+     "using-cpes": true
+    },
+    "stock": {
+     "using-cpes": true
+    }
+   },
+   "fail-on-severity": "",
+   "registry": {
+    "insecure-skip-tls-verify": false,
+    "insecure-use-http": false,
+    "auth": null,
+    "ca-cert": ""
+   },
+   "show-suppressed": false,
+   "by-cve": false,
+   "name": "",
+   "default-image-pull-source": "",
+   "vex-documents": [],
+   "vex-add": []
+  },
+  "db": {
+   "built": "2023-10-05T01:24:28Z",
+   "schemaVersion": 5,
+   "location": "/home/anon/.cache/grype/db/5",
+   "checksum": "sha256:0aa4480307da25db6ef6dfb3c3fbeee0ca495c184f8a1314964dfb80ce57a17e",
+   "error": null
+  },
+  "timestamp": "2023-10-05T22:42:41.669843663-04:00"
+ }
+}

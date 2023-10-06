@@ -1,0 +1,3919 @@
+{
+ "matches": [
+  {
+   "vulnerability": {
+    "id": "CVE-2022-3715",
+    "dataSource": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-3715",
+    "namespace": "ubuntu:distro:ubuntu:22.04",
+    "severity": "Low",
+    "urls": [
+     "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-3715"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-3715",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-3715",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://bugzilla.redhat.com/show_bug.cgi?id=2126720"
+     ],
+     "description": "A flaw was found in the bash package, where a heap-buffer overflow can occur in valid parameter_transform. This issue may lead to memory problems.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 7.8,
+        "exploitabilityScore": 1.8,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "22.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:22.04",
+      "package": {
+       "name": "bash",
+       "version": "5.1-6ubuntu1"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2022-3715"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "a493dde0c60c91da",
+    "name": "bash",
+    "version": "5.1-6ubuntu1",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:e378604b6e0da12b45835695c40f6d58371319c7828de793f933c7e343078a71"
+     }
+    ],
+    "language": "",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:bash:bash:5.1-6ubuntu1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/bash@5.1-6ubuntu1?arch=amd64&distro=ubuntu-22.04",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2016-2781",
+    "dataSource": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2016-2781",
+    "namespace": "ubuntu:distro:ubuntu:22.04",
+    "severity": "Low",
+    "urls": [
+     "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2016-2781"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2016-2781",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2016-2781",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "http://www.openwall.com/lists/oss-security/2016/02/28/2",
+      "http://www.openwall.com/lists/oss-security/2016/02/28/3",
+      "https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772@%3Cdev.mina.apache.org%3E"
+     ],
+     "description": "chroot in GNU coreutils, when used with --userspec, allows local users to escape to the parent session via a crafted TIOCSTI ioctl call, which pushes characters to the terminal's input buffer.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:L/AC:L/Au:N/C:N/I:P/A:N",
+       "metrics": {
+        "baseScore": 2.1,
+        "exploitabilityScore": 3.9,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.0",
+       "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:C/C:N/I:H/A:N",
+       "metrics": {
+        "baseScore": 6.5,
+        "exploitabilityScore": 2,
+        "impactScore": 4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "22.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:22.04",
+      "package": {
+       "name": "coreutils",
+       "version": "8.32-4.1ubuntu1"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2016-2781"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "82e1116c7ce0ecd1",
+    "name": "coreutils",
+    "version": "8.32-4.1ubuntu1",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:e378604b6e0da12b45835695c40f6d58371319c7828de793f933c7e343078a71"
+     }
+    ],
+    "language": "",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:coreutils:coreutils:8.32-4.1ubuntu1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/coreutils@8.32-4.1ubuntu1?arch=amd64&distro=ubuntu-22.04",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-35116",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-35116",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/FasterXML/jackson-databind/issues/3972"
+    ],
+    "description": "** DISPUTED ** jackson-databind through 2.15.2 allows attackers to cause a denial of service or other unspecified impact via a crafted object that uses cyclic dependencies. NOTE: the vendor's perspective is that this is not a valid vulnerability report, because the steps of constructing a cyclic data structure and trying to serialize it cannot be achieved by an external attacker.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 4.7,
+       "exploitabilityScore": 1,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:fasterxml:jackson-databind:2.15.2:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "jackson-databind",
+       "version": "2.15.2"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2023-35116",
+      "versionConstraint": "<= 2.15.2 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:fasterxml:jackson-databind:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "8bdadd74fa63f280",
+    "name": "jackson-databind",
+    "version": "2.15.2",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "/apache-zookeeper-3.8.2-bin/lib/jackson-databind-2.15.2.jar",
+      "layerID": "sha256:e378604b6e0da12b45835695c40f6d58371319c7828de793f933c7e343078a71"
+     }
+    ],
+    "language": "java",
+    "licenses": [
+     "https://www.apache.org/licenses/LICENSE-2.0.txt"
+    ],
+    "cpes": [
+     "cpe:2.3:a:jackson-databind:jackson-databind:2.15.2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jackson-databind:jackson_databind:2.15.2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jackson_databind:jackson-databind:2.15.2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jackson_databind:jackson_databind:2.15.2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:fasterxml:jackson-databind:2.15.2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:fasterxml:jackson_databind:2.15.2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jackson-databind:jackson:2.15.2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jackson:jackson-databind:2.15.2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jackson:jackson_databind:2.15.2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jackson_databind:jackson:2.15.2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:core:jackson-databind:2.15.2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:core:jackson_databind:2.15.2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:fasterxml:jackson:2.15.2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jackson:jackson:2.15.2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:core:jackson:2.15.2:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.15.2",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "/apache-zookeeper-3.8.2-bin/lib/jackson-databind-2.15.2.jar",
+     "pomArtifactID": "jackson-databind",
+     "pomGroupID": "com.fasterxml.jackson.core",
+     "manifestName": "",
+     "archiveDigests": [
+      {
+       "algorithm": "sha1",
+       "value": "9353b021f10c307c00328f52090de2bdb4b6ff9c"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-41900",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-41900",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/eclipse/jetty.project/pull/9528",
+     "https://github.com/eclipse/jetty.project/pull/9660",
+     "https://github.com/eclipse/jetty.project/security/advisories/GHSA-pwh8-58vv-vw48",
+     "https://www.debian.org/security/2023/dsa-5507"
+    ],
+    "description": "Jetty is a Java based web server and servlet engine. Versions 9.4.21 through 9.4.51, 10.0.15, and 11.0.15 are vulnerable to weak authentication. If a Jetty `OpenIdAuthenticator` uses the optional nested `LoginService`, and that `LoginService` decides to revoke an already authenticated user, then the current request will still treat the user as authenticated. The authentication is then cleared from the session and subsequent requests will not be treated as authenticated. So a request on a previously authenticated session could be allowed to bypass authentication after it had been rejected by the `LoginService`. This impacts usages of the jetty-openid which have configured a nested `LoginService` and where that `LoginService` will is capable of rejecting previously authenticated users. Versions 9.4.52, 10.0.16, and 11.0.16 have a patch for this issue.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N",
+      "metrics": {
+       "baseScore": 4.3,
+       "exploitabilityScore": 2.8,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "source": "security-advisories@github.com",
+      "type": "Secondary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:L/I:N/A:N",
+      "metrics": {
+       "baseScore": 3.5,
+       "exploitabilityScore": 1.8,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:eclipse:jetty:9.4.51.v20230217:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "jetty-http",
+       "version": "9.4.51.v20230217"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2023-41900",
+      "versionConstraint": ">= 9.4.21, < 9.4.52 || >= 10.0.0, < 10.0.16 || >= 11.0.0, < 11.0.16 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "2fce631febf36e45",
+    "name": "jetty-http",
+    "version": "9.4.51.v20230217",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "/apache-zookeeper-3.8.2-bin/lib/jetty-http-9.4.51.v20230217.jar",
+      "layerID": "sha256:e378604b6e0da12b45835695c40f6d58371319c7828de793f933c7e343078a71"
+     }
+    ],
+    "language": "java",
+    "licenses": [
+     "http://www.apache.org/licenses/LICENSE-2.0, https://www.eclipse.org/org/documents/epl-v10.php"
+    ],
+    "cpes": [
+     "cpe:2.3:a:eclipse-jetty-project:jetty-http:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse-jetty-project:jetty_http:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:jetty-http:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:jetty_http:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse-jetty-project:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse-jetty-project:http:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:http:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-http:jetty-http:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-http:jetty_http:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_http:jetty-http:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_http:jetty_http:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:jetty-http:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:jetty_http:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-http:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:jetty-http:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:jetty_http:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_http:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:http:jetty-http:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:http:jetty_http:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-http:http:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_http:http:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:http:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:http:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:http:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:http:http:9.4.51.v20230217:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/org.eclipse.jetty/jetty-http@9.4.51.v20230217",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "/apache-zookeeper-3.8.2-bin/lib/jetty-http-9.4.51.v20230217.jar",
+     "pomArtifactID": "jetty-http",
+     "pomGroupID": "org.eclipse.jetty",
+     "manifestName": "",
+     "archiveDigests": [
+      {
+       "algorithm": "sha1",
+       "value": "fe37568aded59dd8e437e0f670fe5f809071fe8f"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-40167",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-40167",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/eclipse/jetty.project/security/advisories/GHSA-hmr7-m48g-48f6",
+     "https://lists.debian.org/debian-lts-announce/2023/09/msg00039.html",
+     "https://www.debian.org/security/2023/dsa-5507",
+     "https://www.rfc-editor.org/rfc/rfc9110#section-8.6"
+    ],
+    "description": "Jetty is a Java based web server and servlet engine. Prior to versions 9.4.52, 10.0.16, 11.0.16, and 12.0.1, Jetty accepts the `+` character proceeding the content-length value in a HTTP/1 header field.  This is more permissive than allowed by the RFC and other servers routinely reject such requests with 400 responses.  There is no known exploit scenario, but it is conceivable that request smuggling could result if jetty is used in combination with a server that does not close the connection after sending such a 400 response. Versions 9.4.52, 10.0.16, 11.0.16, and 12.0.1 contain a patch for this issue. There is no workaround as there is no known exploit scenario.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+      "metrics": {
+       "baseScore": 5.3,
+       "exploitabilityScore": 3.9,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "source": "security-advisories@github.com",
+      "type": "Secondary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+      "metrics": {
+       "baseScore": 5.3,
+       "exploitabilityScore": 3.9,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:eclipse:jetty:9.4.51.v20230217:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "jetty-http",
+       "version": "9.4.51.v20230217"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2023-40167",
+      "versionConstraint": ">= 9.0.0, < 9.4.52 || >= 10.0.0, < 10.0.16 || >= 11.0.0, < 11.0.16 || = 12.0.0 || = 12.0.0-beta0 || = 12.0.0-beta1 || = 12.0.0-beta2 || = 12.0.0-beta3 || = 12.0.0-beta4 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "2fce631febf36e45",
+    "name": "jetty-http",
+    "version": "9.4.51.v20230217",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "/apache-zookeeper-3.8.2-bin/lib/jetty-http-9.4.51.v20230217.jar",
+      "layerID": "sha256:e378604b6e0da12b45835695c40f6d58371319c7828de793f933c7e343078a71"
+     }
+    ],
+    "language": "java",
+    "licenses": [
+     "http://www.apache.org/licenses/LICENSE-2.0, https://www.eclipse.org/org/documents/epl-v10.php"
+    ],
+    "cpes": [
+     "cpe:2.3:a:eclipse-jetty-project:jetty-http:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse-jetty-project:jetty_http:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:jetty-http:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:jetty_http:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse-jetty-project:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse-jetty-project:http:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:http:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-http:jetty-http:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-http:jetty_http:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_http:jetty-http:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_http:jetty_http:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:jetty-http:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:jetty_http:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-http:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:jetty-http:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:jetty_http:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_http:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:http:jetty-http:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:http:jetty_http:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-http:http:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_http:http:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:http:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:http:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:http:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:http:http:9.4.51.v20230217:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/org.eclipse.jetty/jetty-http@9.4.51.v20230217",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "/apache-zookeeper-3.8.2-bin/lib/jetty-http-9.4.51.v20230217.jar",
+     "pomArtifactID": "jetty-http",
+     "pomGroupID": "org.eclipse.jetty",
+     "manifestName": "",
+     "archiveDigests": [
+      {
+       "algorithm": "sha1",
+       "value": "fe37568aded59dd8e437e0f670fe5f809071fe8f"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-36479",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-36479",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/eclipse/jetty.project/pull/9516",
+     "https://github.com/eclipse/jetty.project/pull/9888",
+     "https://github.com/eclipse/jetty.project/pull/9889",
+     "https://github.com/eclipse/jetty.project/security/advisories/GHSA-3gh6-v5v9-6v9j",
+     "https://lists.debian.org/debian-lts-announce/2023/09/msg00039.html",
+     "https://www.debian.org/security/2023/dsa-5507"
+    ],
+    "description": "Eclipse Jetty Canonical Repository is the canonical repository for the Jetty project. Users of the CgiServlet with a very specific command structure may have the wrong command executed. If a user sends a request to a org.eclipse.jetty.servlets.CGI Servlet for a binary with a space in its name, the servlet will escape the command by wrapping it in quotation marks. This wrapped command, plus an optional command prefix, will then be executed through a call to Runtime.exec. If the original binary name provided by the user contains a quotation mark followed by a space, the resulting command line will contain multiple tokens instead of one. This issue was patched in version 9.4.52, 10.0.16, 11.0.16 and 12.0.0-beta2.\n",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N",
+      "metrics": {
+       "baseScore": 4.3,
+       "exploitabilityScore": 2.8,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "source": "security-advisories@github.com",
+      "type": "Secondary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:N/I:L/A:N",
+      "metrics": {
+       "baseScore": 3.5,
+       "exploitabilityScore": 1.8,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:eclipse:jetty:9.4.51.v20230217:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "jetty-http",
+       "version": "9.4.51.v20230217"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2023-36479",
+      "versionConstraint": ">= 9.0.0, < 9.4.52 || >= 10.0.0, < 10.0.16 || >= 11.0.0, < 11.0.16 || = 12.0.0-alpha1 || = 12.0.0-alpha2 || = 12.0.0-alpha3 || = 12.0.0-beta0 || = 12.0.0-beta1 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "2fce631febf36e45",
+    "name": "jetty-http",
+    "version": "9.4.51.v20230217",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "/apache-zookeeper-3.8.2-bin/lib/jetty-http-9.4.51.v20230217.jar",
+      "layerID": "sha256:e378604b6e0da12b45835695c40f6d58371319c7828de793f933c7e343078a71"
+     }
+    ],
+    "language": "java",
+    "licenses": [
+     "http://www.apache.org/licenses/LICENSE-2.0, https://www.eclipse.org/org/documents/epl-v10.php"
+    ],
+    "cpes": [
+     "cpe:2.3:a:eclipse-jetty-project:jetty-http:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse-jetty-project:jetty_http:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:jetty-http:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:jetty_http:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse-jetty-project:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse-jetty-project:http:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:http:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-http:jetty-http:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-http:jetty_http:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_http:jetty-http:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_http:jetty_http:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:jetty-http:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:jetty_http:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-http:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:jetty-http:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:jetty_http:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_http:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:http:jetty-http:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:http:jetty_http:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-http:http:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_http:http:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:http:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:http:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:http:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:http:http:9.4.51.v20230217:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/org.eclipse.jetty/jetty-http@9.4.51.v20230217",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "/apache-zookeeper-3.8.2-bin/lib/jetty-http-9.4.51.v20230217.jar",
+     "pomArtifactID": "jetty-http",
+     "pomGroupID": "org.eclipse.jetty",
+     "manifestName": "",
+     "archiveDigests": [
+      {
+       "algorithm": "sha1",
+       "value": "fe37568aded59dd8e437e0f670fe5f809071fe8f"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-41900",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-41900",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/eclipse/jetty.project/pull/9528",
+     "https://github.com/eclipse/jetty.project/pull/9660",
+     "https://github.com/eclipse/jetty.project/security/advisories/GHSA-pwh8-58vv-vw48",
+     "https://www.debian.org/security/2023/dsa-5507"
+    ],
+    "description": "Jetty is a Java based web server and servlet engine. Versions 9.4.21 through 9.4.51, 10.0.15, and 11.0.15 are vulnerable to weak authentication. If a Jetty `OpenIdAuthenticator` uses the optional nested `LoginService`, and that `LoginService` decides to revoke an already authenticated user, then the current request will still treat the user as authenticated. The authentication is then cleared from the session and subsequent requests will not be treated as authenticated. So a request on a previously authenticated session could be allowed to bypass authentication after it had been rejected by the `LoginService`. This impacts usages of the jetty-openid which have configured a nested `LoginService` and where that `LoginService` will is capable of rejecting previously authenticated users. Versions 9.4.52, 10.0.16, and 11.0.16 have a patch for this issue.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N",
+      "metrics": {
+       "baseScore": 4.3,
+       "exploitabilityScore": 2.8,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "source": "security-advisories@github.com",
+      "type": "Secondary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:L/I:N/A:N",
+      "metrics": {
+       "baseScore": 3.5,
+       "exploitabilityScore": 1.8,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:eclipse:jetty:9.4.51.v20230217:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "jetty-io",
+       "version": "9.4.51.v20230217"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2023-41900",
+      "versionConstraint": ">= 9.4.21, < 9.4.52 || >= 10.0.0, < 10.0.16 || >= 11.0.0, < 11.0.16 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "2210606b0ac5ab9a",
+    "name": "jetty-io",
+    "version": "9.4.51.v20230217",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "/apache-zookeeper-3.8.2-bin/lib/jetty-io-9.4.51.v20230217.jar",
+      "layerID": "sha256:e378604b6e0da12b45835695c40f6d58371319c7828de793f933c7e343078a71"
+     }
+    ],
+    "language": "java",
+    "licenses": [
+     "http://www.apache.org/licenses/LICENSE-2.0, https://www.eclipse.org/org/documents/epl-v10.php"
+    ],
+    "cpes": [
+     "cpe:2.3:a:eclipse-jetty-project:jetty-io:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse-jetty-project:jetty_io:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:jetty-io:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:jetty_io:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse-jetty-project:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse-jetty-project:io:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:io:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-io:jetty-io:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-io:jetty_io:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_io:jetty-io:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_io:jetty_io:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:jetty-io:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:jetty_io:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-io:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:jetty-io:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:jetty_io:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_io:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:io:jetty-io:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:io:jetty_io:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-io:io:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_io:io:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:io:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:io:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:io:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:io:io:9.4.51.v20230217:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/org.eclipse.jetty/jetty-io@9.4.51.v20230217",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "/apache-zookeeper-3.8.2-bin/lib/jetty-io-9.4.51.v20230217.jar",
+     "pomArtifactID": "jetty-io",
+     "pomGroupID": "org.eclipse.jetty",
+     "manifestName": "",
+     "archiveDigests": [
+      {
+       "algorithm": "sha1",
+       "value": "a11a0713b17334a5b6e694602fbd1a9457cb5fdd"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-40167",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-40167",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/eclipse/jetty.project/security/advisories/GHSA-hmr7-m48g-48f6",
+     "https://lists.debian.org/debian-lts-announce/2023/09/msg00039.html",
+     "https://www.debian.org/security/2023/dsa-5507",
+     "https://www.rfc-editor.org/rfc/rfc9110#section-8.6"
+    ],
+    "description": "Jetty is a Java based web server and servlet engine. Prior to versions 9.4.52, 10.0.16, 11.0.16, and 12.0.1, Jetty accepts the `+` character proceeding the content-length value in a HTTP/1 header field.  This is more permissive than allowed by the RFC and other servers routinely reject such requests with 400 responses.  There is no known exploit scenario, but it is conceivable that request smuggling could result if jetty is used in combination with a server that does not close the connection after sending such a 400 response. Versions 9.4.52, 10.0.16, 11.0.16, and 12.0.1 contain a patch for this issue. There is no workaround as there is no known exploit scenario.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+      "metrics": {
+       "baseScore": 5.3,
+       "exploitabilityScore": 3.9,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "source": "security-advisories@github.com",
+      "type": "Secondary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+      "metrics": {
+       "baseScore": 5.3,
+       "exploitabilityScore": 3.9,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:eclipse:jetty:9.4.51.v20230217:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "jetty-io",
+       "version": "9.4.51.v20230217"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2023-40167",
+      "versionConstraint": ">= 9.0.0, < 9.4.52 || >= 10.0.0, < 10.0.16 || >= 11.0.0, < 11.0.16 || = 12.0.0 || = 12.0.0-beta0 || = 12.0.0-beta1 || = 12.0.0-beta2 || = 12.0.0-beta3 || = 12.0.0-beta4 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "2210606b0ac5ab9a",
+    "name": "jetty-io",
+    "version": "9.4.51.v20230217",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "/apache-zookeeper-3.8.2-bin/lib/jetty-io-9.4.51.v20230217.jar",
+      "layerID": "sha256:e378604b6e0da12b45835695c40f6d58371319c7828de793f933c7e343078a71"
+     }
+    ],
+    "language": "java",
+    "licenses": [
+     "http://www.apache.org/licenses/LICENSE-2.0, https://www.eclipse.org/org/documents/epl-v10.php"
+    ],
+    "cpes": [
+     "cpe:2.3:a:eclipse-jetty-project:jetty-io:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse-jetty-project:jetty_io:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:jetty-io:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:jetty_io:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse-jetty-project:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse-jetty-project:io:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:io:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-io:jetty-io:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-io:jetty_io:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_io:jetty-io:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_io:jetty_io:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:jetty-io:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:jetty_io:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-io:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:jetty-io:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:jetty_io:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_io:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:io:jetty-io:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:io:jetty_io:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-io:io:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_io:io:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:io:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:io:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:io:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:io:io:9.4.51.v20230217:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/org.eclipse.jetty/jetty-io@9.4.51.v20230217",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "/apache-zookeeper-3.8.2-bin/lib/jetty-io-9.4.51.v20230217.jar",
+     "pomArtifactID": "jetty-io",
+     "pomGroupID": "org.eclipse.jetty",
+     "manifestName": "",
+     "archiveDigests": [
+      {
+       "algorithm": "sha1",
+       "value": "a11a0713b17334a5b6e694602fbd1a9457cb5fdd"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-36479",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-36479",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/eclipse/jetty.project/pull/9516",
+     "https://github.com/eclipse/jetty.project/pull/9888",
+     "https://github.com/eclipse/jetty.project/pull/9889",
+     "https://github.com/eclipse/jetty.project/security/advisories/GHSA-3gh6-v5v9-6v9j",
+     "https://lists.debian.org/debian-lts-announce/2023/09/msg00039.html",
+     "https://www.debian.org/security/2023/dsa-5507"
+    ],
+    "description": "Eclipse Jetty Canonical Repository is the canonical repository for the Jetty project. Users of the CgiServlet with a very specific command structure may have the wrong command executed. If a user sends a request to a org.eclipse.jetty.servlets.CGI Servlet for a binary with a space in its name, the servlet will escape the command by wrapping it in quotation marks. This wrapped command, plus an optional command prefix, will then be executed through a call to Runtime.exec. If the original binary name provided by the user contains a quotation mark followed by a space, the resulting command line will contain multiple tokens instead of one. This issue was patched in version 9.4.52, 10.0.16, 11.0.16 and 12.0.0-beta2.\n",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N",
+      "metrics": {
+       "baseScore": 4.3,
+       "exploitabilityScore": 2.8,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "source": "security-advisories@github.com",
+      "type": "Secondary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:N/I:L/A:N",
+      "metrics": {
+       "baseScore": 3.5,
+       "exploitabilityScore": 1.8,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:eclipse:jetty:9.4.51.v20230217:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "jetty-io",
+       "version": "9.4.51.v20230217"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2023-36479",
+      "versionConstraint": ">= 9.0.0, < 9.4.52 || >= 10.0.0, < 10.0.16 || >= 11.0.0, < 11.0.16 || = 12.0.0-alpha1 || = 12.0.0-alpha2 || = 12.0.0-alpha3 || = 12.0.0-beta0 || = 12.0.0-beta1 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "2210606b0ac5ab9a",
+    "name": "jetty-io",
+    "version": "9.4.51.v20230217",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "/apache-zookeeper-3.8.2-bin/lib/jetty-io-9.4.51.v20230217.jar",
+      "layerID": "sha256:e378604b6e0da12b45835695c40f6d58371319c7828de793f933c7e343078a71"
+     }
+    ],
+    "language": "java",
+    "licenses": [
+     "http://www.apache.org/licenses/LICENSE-2.0, https://www.eclipse.org/org/documents/epl-v10.php"
+    ],
+    "cpes": [
+     "cpe:2.3:a:eclipse-jetty-project:jetty-io:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse-jetty-project:jetty_io:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:jetty-io:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:jetty_io:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse-jetty-project:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse-jetty-project:io:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:io:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-io:jetty-io:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-io:jetty_io:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_io:jetty-io:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_io:jetty_io:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:jetty-io:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:jetty_io:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-io:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:jetty-io:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:jetty_io:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_io:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:io:jetty-io:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:io:jetty_io:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-io:io:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_io:io:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:io:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:io:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:io:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:io:io:9.4.51.v20230217:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/org.eclipse.jetty/jetty-io@9.4.51.v20230217",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "/apache-zookeeper-3.8.2-bin/lib/jetty-io-9.4.51.v20230217.jar",
+     "pomArtifactID": "jetty-io",
+     "pomGroupID": "org.eclipse.jetty",
+     "manifestName": "",
+     "archiveDigests": [
+      {
+       "algorithm": "sha1",
+       "value": "a11a0713b17334a5b6e694602fbd1a9457cb5fdd"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-41900",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-41900",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/eclipse/jetty.project/pull/9528",
+     "https://github.com/eclipse/jetty.project/pull/9660",
+     "https://github.com/eclipse/jetty.project/security/advisories/GHSA-pwh8-58vv-vw48",
+     "https://www.debian.org/security/2023/dsa-5507"
+    ],
+    "description": "Jetty is a Java based web server and servlet engine. Versions 9.4.21 through 9.4.51, 10.0.15, and 11.0.15 are vulnerable to weak authentication. If a Jetty `OpenIdAuthenticator` uses the optional nested `LoginService`, and that `LoginService` decides to revoke an already authenticated user, then the current request will still treat the user as authenticated. The authentication is then cleared from the session and subsequent requests will not be treated as authenticated. So a request on a previously authenticated session could be allowed to bypass authentication after it had been rejected by the `LoginService`. This impacts usages of the jetty-openid which have configured a nested `LoginService` and where that `LoginService` will is capable of rejecting previously authenticated users. Versions 9.4.52, 10.0.16, and 11.0.16 have a patch for this issue.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N",
+      "metrics": {
+       "baseScore": 4.3,
+       "exploitabilityScore": 2.8,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "source": "security-advisories@github.com",
+      "type": "Secondary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:L/I:N/A:N",
+      "metrics": {
+       "baseScore": 3.5,
+       "exploitabilityScore": 1.8,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:eclipse:jetty:9.4.51.v20230217:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "jetty-security",
+       "version": "9.4.51.v20230217"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2023-41900",
+      "versionConstraint": ">= 9.4.21, < 9.4.52 || >= 10.0.0, < 10.0.16 || >= 11.0.0, < 11.0.16 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "07a918c752b4f0d6",
+    "name": "jetty-security",
+    "version": "9.4.51.v20230217",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "/apache-zookeeper-3.8.2-bin/lib/jetty-security-9.4.51.v20230217.jar",
+      "layerID": "sha256:e378604b6e0da12b45835695c40f6d58371319c7828de793f933c7e343078a71"
+     }
+    ],
+    "language": "java",
+    "licenses": [
+     "http://www.apache.org/licenses/LICENSE-2.0, https://www.eclipse.org/org/documents/epl-v10.php"
+    ],
+    "cpes": [
+     "cpe:2.3:a:eclipse-jetty-project:jetty-security:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse-jetty-project:jetty_security:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:jetty-security:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:jetty_security:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse-jetty-project:security:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:security:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-security:jetty-security:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-security:jetty_security:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_security:jetty-security:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_security:jetty_security:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse-jetty-project:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-security:security:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_security:security:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:security:jetty-security:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:security:jetty_security:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:jetty-security:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:jetty_security:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-security:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:jetty-security:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:jetty_security:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_security:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:security:security:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:security:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:security:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:security:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:jetty:9.4.51.v20230217:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/org.eclipse.jetty/jetty-security@9.4.51.v20230217",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "/apache-zookeeper-3.8.2-bin/lib/jetty-security-9.4.51.v20230217.jar",
+     "pomArtifactID": "jetty-security",
+     "pomGroupID": "org.eclipse.jetty",
+     "manifestName": "",
+     "archiveDigests": [
+      {
+       "algorithm": "sha1",
+       "value": "a3342214ce480cc5bb8e74fe7589dd0436a5d903"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-40167",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-40167",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/eclipse/jetty.project/security/advisories/GHSA-hmr7-m48g-48f6",
+     "https://lists.debian.org/debian-lts-announce/2023/09/msg00039.html",
+     "https://www.debian.org/security/2023/dsa-5507",
+     "https://www.rfc-editor.org/rfc/rfc9110#section-8.6"
+    ],
+    "description": "Jetty is a Java based web server and servlet engine. Prior to versions 9.4.52, 10.0.16, 11.0.16, and 12.0.1, Jetty accepts the `+` character proceeding the content-length value in a HTTP/1 header field.  This is more permissive than allowed by the RFC and other servers routinely reject such requests with 400 responses.  There is no known exploit scenario, but it is conceivable that request smuggling could result if jetty is used in combination with a server that does not close the connection after sending such a 400 response. Versions 9.4.52, 10.0.16, 11.0.16, and 12.0.1 contain a patch for this issue. There is no workaround as there is no known exploit scenario.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+      "metrics": {
+       "baseScore": 5.3,
+       "exploitabilityScore": 3.9,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "source": "security-advisories@github.com",
+      "type": "Secondary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+      "metrics": {
+       "baseScore": 5.3,
+       "exploitabilityScore": 3.9,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:eclipse:jetty:9.4.51.v20230217:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "jetty-security",
+       "version": "9.4.51.v20230217"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2023-40167",
+      "versionConstraint": ">= 9.0.0, < 9.4.52 || >= 10.0.0, < 10.0.16 || >= 11.0.0, < 11.0.16 || = 12.0.0 || = 12.0.0-beta0 || = 12.0.0-beta1 || = 12.0.0-beta2 || = 12.0.0-beta3 || = 12.0.0-beta4 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "07a918c752b4f0d6",
+    "name": "jetty-security",
+    "version": "9.4.51.v20230217",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "/apache-zookeeper-3.8.2-bin/lib/jetty-security-9.4.51.v20230217.jar",
+      "layerID": "sha256:e378604b6e0da12b45835695c40f6d58371319c7828de793f933c7e343078a71"
+     }
+    ],
+    "language": "java",
+    "licenses": [
+     "http://www.apache.org/licenses/LICENSE-2.0, https://www.eclipse.org/org/documents/epl-v10.php"
+    ],
+    "cpes": [
+     "cpe:2.3:a:eclipse-jetty-project:jetty-security:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse-jetty-project:jetty_security:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:jetty-security:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:jetty_security:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse-jetty-project:security:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:security:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-security:jetty-security:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-security:jetty_security:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_security:jetty-security:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_security:jetty_security:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse-jetty-project:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-security:security:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_security:security:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:security:jetty-security:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:security:jetty_security:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:jetty-security:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:jetty_security:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-security:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:jetty-security:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:jetty_security:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_security:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:security:security:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:security:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:security:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:security:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:jetty:9.4.51.v20230217:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/org.eclipse.jetty/jetty-security@9.4.51.v20230217",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "/apache-zookeeper-3.8.2-bin/lib/jetty-security-9.4.51.v20230217.jar",
+     "pomArtifactID": "jetty-security",
+     "pomGroupID": "org.eclipse.jetty",
+     "manifestName": "",
+     "archiveDigests": [
+      {
+       "algorithm": "sha1",
+       "value": "a3342214ce480cc5bb8e74fe7589dd0436a5d903"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-36479",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-36479",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/eclipse/jetty.project/pull/9516",
+     "https://github.com/eclipse/jetty.project/pull/9888",
+     "https://github.com/eclipse/jetty.project/pull/9889",
+     "https://github.com/eclipse/jetty.project/security/advisories/GHSA-3gh6-v5v9-6v9j",
+     "https://lists.debian.org/debian-lts-announce/2023/09/msg00039.html",
+     "https://www.debian.org/security/2023/dsa-5507"
+    ],
+    "description": "Eclipse Jetty Canonical Repository is the canonical repository for the Jetty project. Users of the CgiServlet with a very specific command structure may have the wrong command executed. If a user sends a request to a org.eclipse.jetty.servlets.CGI Servlet for a binary with a space in its name, the servlet will escape the command by wrapping it in quotation marks. This wrapped command, plus an optional command prefix, will then be executed through a call to Runtime.exec. If the original binary name provided by the user contains a quotation mark followed by a space, the resulting command line will contain multiple tokens instead of one. This issue was patched in version 9.4.52, 10.0.16, 11.0.16 and 12.0.0-beta2.\n",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N",
+      "metrics": {
+       "baseScore": 4.3,
+       "exploitabilityScore": 2.8,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "source": "security-advisories@github.com",
+      "type": "Secondary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:N/I:L/A:N",
+      "metrics": {
+       "baseScore": 3.5,
+       "exploitabilityScore": 1.8,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:eclipse:jetty:9.4.51.v20230217:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "jetty-security",
+       "version": "9.4.51.v20230217"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2023-36479",
+      "versionConstraint": ">= 9.0.0, < 9.4.52 || >= 10.0.0, < 10.0.16 || >= 11.0.0, < 11.0.16 || = 12.0.0-alpha1 || = 12.0.0-alpha2 || = 12.0.0-alpha3 || = 12.0.0-beta0 || = 12.0.0-beta1 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "07a918c752b4f0d6",
+    "name": "jetty-security",
+    "version": "9.4.51.v20230217",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "/apache-zookeeper-3.8.2-bin/lib/jetty-security-9.4.51.v20230217.jar",
+      "layerID": "sha256:e378604b6e0da12b45835695c40f6d58371319c7828de793f933c7e343078a71"
+     }
+    ],
+    "language": "java",
+    "licenses": [
+     "http://www.apache.org/licenses/LICENSE-2.0, https://www.eclipse.org/org/documents/epl-v10.php"
+    ],
+    "cpes": [
+     "cpe:2.3:a:eclipse-jetty-project:jetty-security:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse-jetty-project:jetty_security:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:jetty-security:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:jetty_security:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse-jetty-project:security:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:security:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-security:jetty-security:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-security:jetty_security:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_security:jetty-security:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_security:jetty_security:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse-jetty-project:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-security:security:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_security:security:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:security:jetty-security:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:security:jetty_security:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:jetty-security:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:jetty_security:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-security:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:jetty-security:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:jetty_security:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_security:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:security:security:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:security:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:security:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:security:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:jetty:9.4.51.v20230217:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/org.eclipse.jetty/jetty-security@9.4.51.v20230217",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "/apache-zookeeper-3.8.2-bin/lib/jetty-security-9.4.51.v20230217.jar",
+     "pomArtifactID": "jetty-security",
+     "pomGroupID": "org.eclipse.jetty",
+     "manifestName": "",
+     "archiveDigests": [
+      {
+       "algorithm": "sha1",
+       "value": "a3342214ce480cc5bb8e74fe7589dd0436a5d903"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-41900",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-41900",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/eclipse/jetty.project/pull/9528",
+     "https://github.com/eclipse/jetty.project/pull/9660",
+     "https://github.com/eclipse/jetty.project/security/advisories/GHSA-pwh8-58vv-vw48",
+     "https://www.debian.org/security/2023/dsa-5507"
+    ],
+    "description": "Jetty is a Java based web server and servlet engine. Versions 9.4.21 through 9.4.51, 10.0.15, and 11.0.15 are vulnerable to weak authentication. If a Jetty `OpenIdAuthenticator` uses the optional nested `LoginService`, and that `LoginService` decides to revoke an already authenticated user, then the current request will still treat the user as authenticated. The authentication is then cleared from the session and subsequent requests will not be treated as authenticated. So a request on a previously authenticated session could be allowed to bypass authentication after it had been rejected by the `LoginService`. This impacts usages of the jetty-openid which have configured a nested `LoginService` and where that `LoginService` will is capable of rejecting previously authenticated users. Versions 9.4.52, 10.0.16, and 11.0.16 have a patch for this issue.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N",
+      "metrics": {
+       "baseScore": 4.3,
+       "exploitabilityScore": 2.8,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "source": "security-advisories@github.com",
+      "type": "Secondary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:L/I:N/A:N",
+      "metrics": {
+       "baseScore": 3.5,
+       "exploitabilityScore": 1.8,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:eclipse:jetty:9.4.51.v20230217:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "jetty-server",
+       "version": "9.4.51.v20230217"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2023-41900",
+      "versionConstraint": ">= 9.4.21, < 9.4.52 || >= 10.0.0, < 10.0.16 || >= 11.0.0, < 11.0.16 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "8e76ddefd6a8e029",
+    "name": "jetty-server",
+    "version": "9.4.51.v20230217",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "/apache-zookeeper-3.8.2-bin/lib/jetty-server-9.4.51.v20230217.jar",
+      "layerID": "sha256:e378604b6e0da12b45835695c40f6d58371319c7828de793f933c7e343078a71"
+     }
+    ],
+    "language": "java",
+    "licenses": [
+     "http://www.apache.org/licenses/LICENSE-2.0, https://www.eclipse.org/org/documents/epl-v10.php"
+    ],
+    "cpes": [
+     "cpe:2.3:a:eclipse-jetty-project:jetty-server:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse-jetty-project:jetty_server:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:jetty-server:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:jetty_server:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse-jetty-project:server:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:server:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse-jetty-project:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-server:jetty-server:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-server:jetty_server:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_server:jetty-server:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_server:jetty_server:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:jetty-server:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:jetty_server:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-server:server:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_server:server:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:server:jetty-server:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:server:jetty_server:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-server:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:jetty-server:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:jetty_server:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_server:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:server:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:server:server:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:server:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:server:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:jetty:9.4.51.v20230217:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/org.eclipse.jetty/jetty-server@9.4.51.v20230217",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "/apache-zookeeper-3.8.2-bin/lib/jetty-server-9.4.51.v20230217.jar",
+     "pomArtifactID": "jetty-server",
+     "pomGroupID": "org.eclipse.jetty",
+     "manifestName": "",
+     "archiveDigests": [
+      {
+       "algorithm": "sha1",
+       "value": "d0572c8460eb26adf8420e78535d95859c89a936"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-40167",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-40167",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/eclipse/jetty.project/security/advisories/GHSA-hmr7-m48g-48f6",
+     "https://lists.debian.org/debian-lts-announce/2023/09/msg00039.html",
+     "https://www.debian.org/security/2023/dsa-5507",
+     "https://www.rfc-editor.org/rfc/rfc9110#section-8.6"
+    ],
+    "description": "Jetty is a Java based web server and servlet engine. Prior to versions 9.4.52, 10.0.16, 11.0.16, and 12.0.1, Jetty accepts the `+` character proceeding the content-length value in a HTTP/1 header field.  This is more permissive than allowed by the RFC and other servers routinely reject such requests with 400 responses.  There is no known exploit scenario, but it is conceivable that request smuggling could result if jetty is used in combination with a server that does not close the connection after sending such a 400 response. Versions 9.4.52, 10.0.16, 11.0.16, and 12.0.1 contain a patch for this issue. There is no workaround as there is no known exploit scenario.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+      "metrics": {
+       "baseScore": 5.3,
+       "exploitabilityScore": 3.9,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "source": "security-advisories@github.com",
+      "type": "Secondary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+      "metrics": {
+       "baseScore": 5.3,
+       "exploitabilityScore": 3.9,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:eclipse:jetty:9.4.51.v20230217:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "jetty-server",
+       "version": "9.4.51.v20230217"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2023-40167",
+      "versionConstraint": ">= 9.0.0, < 9.4.52 || >= 10.0.0, < 10.0.16 || >= 11.0.0, < 11.0.16 || = 12.0.0 || = 12.0.0-beta0 || = 12.0.0-beta1 || = 12.0.0-beta2 || = 12.0.0-beta3 || = 12.0.0-beta4 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "8e76ddefd6a8e029",
+    "name": "jetty-server",
+    "version": "9.4.51.v20230217",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "/apache-zookeeper-3.8.2-bin/lib/jetty-server-9.4.51.v20230217.jar",
+      "layerID": "sha256:e378604b6e0da12b45835695c40f6d58371319c7828de793f933c7e343078a71"
+     }
+    ],
+    "language": "java",
+    "licenses": [
+     "http://www.apache.org/licenses/LICENSE-2.0, https://www.eclipse.org/org/documents/epl-v10.php"
+    ],
+    "cpes": [
+     "cpe:2.3:a:eclipse-jetty-project:jetty-server:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse-jetty-project:jetty_server:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:jetty-server:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:jetty_server:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse-jetty-project:server:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:server:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse-jetty-project:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-server:jetty-server:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-server:jetty_server:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_server:jetty-server:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_server:jetty_server:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:jetty-server:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:jetty_server:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-server:server:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_server:server:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:server:jetty-server:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:server:jetty_server:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-server:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:jetty-server:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:jetty_server:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_server:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:server:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:server:server:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:server:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:server:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:jetty:9.4.51.v20230217:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/org.eclipse.jetty/jetty-server@9.4.51.v20230217",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "/apache-zookeeper-3.8.2-bin/lib/jetty-server-9.4.51.v20230217.jar",
+     "pomArtifactID": "jetty-server",
+     "pomGroupID": "org.eclipse.jetty",
+     "manifestName": "",
+     "archiveDigests": [
+      {
+       "algorithm": "sha1",
+       "value": "d0572c8460eb26adf8420e78535d95859c89a936"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-36479",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-36479",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/eclipse/jetty.project/pull/9516",
+     "https://github.com/eclipse/jetty.project/pull/9888",
+     "https://github.com/eclipse/jetty.project/pull/9889",
+     "https://github.com/eclipse/jetty.project/security/advisories/GHSA-3gh6-v5v9-6v9j",
+     "https://lists.debian.org/debian-lts-announce/2023/09/msg00039.html",
+     "https://www.debian.org/security/2023/dsa-5507"
+    ],
+    "description": "Eclipse Jetty Canonical Repository is the canonical repository for the Jetty project. Users of the CgiServlet with a very specific command structure may have the wrong command executed. If a user sends a request to a org.eclipse.jetty.servlets.CGI Servlet for a binary with a space in its name, the servlet will escape the command by wrapping it in quotation marks. This wrapped command, plus an optional command prefix, will then be executed through a call to Runtime.exec. If the original binary name provided by the user contains a quotation mark followed by a space, the resulting command line will contain multiple tokens instead of one. This issue was patched in version 9.4.52, 10.0.16, 11.0.16 and 12.0.0-beta2.\n",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N",
+      "metrics": {
+       "baseScore": 4.3,
+       "exploitabilityScore": 2.8,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "source": "security-advisories@github.com",
+      "type": "Secondary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:N/I:L/A:N",
+      "metrics": {
+       "baseScore": 3.5,
+       "exploitabilityScore": 1.8,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:eclipse:jetty:9.4.51.v20230217:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "jetty-server",
+       "version": "9.4.51.v20230217"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2023-36479",
+      "versionConstraint": ">= 9.0.0, < 9.4.52 || >= 10.0.0, < 10.0.16 || >= 11.0.0, < 11.0.16 || = 12.0.0-alpha1 || = 12.0.0-alpha2 || = 12.0.0-alpha3 || = 12.0.0-beta0 || = 12.0.0-beta1 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "8e76ddefd6a8e029",
+    "name": "jetty-server",
+    "version": "9.4.51.v20230217",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "/apache-zookeeper-3.8.2-bin/lib/jetty-server-9.4.51.v20230217.jar",
+      "layerID": "sha256:e378604b6e0da12b45835695c40f6d58371319c7828de793f933c7e343078a71"
+     }
+    ],
+    "language": "java",
+    "licenses": [
+     "http://www.apache.org/licenses/LICENSE-2.0, https://www.eclipse.org/org/documents/epl-v10.php"
+    ],
+    "cpes": [
+     "cpe:2.3:a:eclipse-jetty-project:jetty-server:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse-jetty-project:jetty_server:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:jetty-server:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:jetty_server:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse-jetty-project:server:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:server:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse-jetty-project:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-server:jetty-server:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-server:jetty_server:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_server:jetty-server:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_server:jetty_server:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:jetty-server:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:jetty_server:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-server:server:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_server:server:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:server:jetty-server:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:server:jetty_server:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-server:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:jetty-server:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:jetty_server:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_server:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:server:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:server:server:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:server:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:server:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:jetty:9.4.51.v20230217:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/org.eclipse.jetty/jetty-server@9.4.51.v20230217",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "/apache-zookeeper-3.8.2-bin/lib/jetty-server-9.4.51.v20230217.jar",
+     "pomArtifactID": "jetty-server",
+     "pomGroupID": "org.eclipse.jetty",
+     "manifestName": "",
+     "archiveDigests": [
+      {
+       "algorithm": "sha1",
+       "value": "d0572c8460eb26adf8420e78535d95859c89a936"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-41900",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-41900",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/eclipse/jetty.project/pull/9528",
+     "https://github.com/eclipse/jetty.project/pull/9660",
+     "https://github.com/eclipse/jetty.project/security/advisories/GHSA-pwh8-58vv-vw48",
+     "https://www.debian.org/security/2023/dsa-5507"
+    ],
+    "description": "Jetty is a Java based web server and servlet engine. Versions 9.4.21 through 9.4.51, 10.0.15, and 11.0.15 are vulnerable to weak authentication. If a Jetty `OpenIdAuthenticator` uses the optional nested `LoginService`, and that `LoginService` decides to revoke an already authenticated user, then the current request will still treat the user as authenticated. The authentication is then cleared from the session and subsequent requests will not be treated as authenticated. So a request on a previously authenticated session could be allowed to bypass authentication after it had been rejected by the `LoginService`. This impacts usages of the jetty-openid which have configured a nested `LoginService` and where that `LoginService` will is capable of rejecting previously authenticated users. Versions 9.4.52, 10.0.16, and 11.0.16 have a patch for this issue.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N",
+      "metrics": {
+       "baseScore": 4.3,
+       "exploitabilityScore": 2.8,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "source": "security-advisories@github.com",
+      "type": "Secondary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:L/I:N/A:N",
+      "metrics": {
+       "baseScore": 3.5,
+       "exploitabilityScore": 1.8,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:eclipse:jetty:9.4.51.v20230217:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "jetty-servlet",
+       "version": "9.4.51.v20230217"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2023-41900",
+      "versionConstraint": ">= 9.4.21, < 9.4.52 || >= 10.0.0, < 10.0.16 || >= 11.0.0, < 11.0.16 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "e3a299179d522d46",
+    "name": "jetty-servlet",
+    "version": "9.4.51.v20230217",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "/apache-zookeeper-3.8.2-bin/lib/jetty-servlet-9.4.51.v20230217.jar",
+      "layerID": "sha256:e378604b6e0da12b45835695c40f6d58371319c7828de793f933c7e343078a71"
+     }
+    ],
+    "language": "java",
+    "licenses": [
+     "http://www.apache.org/licenses/LICENSE-2.0, https://www.eclipse.org/org/documents/epl-v10.php"
+    ],
+    "cpes": [
+     "cpe:2.3:a:eclipse-jetty-project:jetty-servlet:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse-jetty-project:jetty_servlet:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:jetty-servlet:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:jetty_servlet:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse-jetty-project:servlet:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:servlet:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse-jetty-project:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-servlet:jetty-servlet:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-servlet:jetty_servlet:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_servlet:jetty-servlet:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_servlet:jetty_servlet:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:jetty-servlet:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:jetty_servlet:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-servlet:servlet:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_servlet:servlet:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:servlet:jetty-servlet:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:servlet:jetty_servlet:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-servlet:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:jetty-servlet:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:jetty_servlet:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_servlet:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:servlet:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:servlet:servlet:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:servlet:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:servlet:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:jetty:9.4.51.v20230217:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/org.eclipse.jetty/jetty-servlet@9.4.51.v20230217",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "/apache-zookeeper-3.8.2-bin/lib/jetty-servlet-9.4.51.v20230217.jar",
+     "pomArtifactID": "jetty-servlet",
+     "pomGroupID": "org.eclipse.jetty",
+     "manifestName": "",
+     "archiveDigests": [
+      {
+       "algorithm": "sha1",
+       "value": "3ec1be0b1ca49b633dd7de0733d0054bb4763965"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-40167",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-40167",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/eclipse/jetty.project/security/advisories/GHSA-hmr7-m48g-48f6",
+     "https://lists.debian.org/debian-lts-announce/2023/09/msg00039.html",
+     "https://www.debian.org/security/2023/dsa-5507",
+     "https://www.rfc-editor.org/rfc/rfc9110#section-8.6"
+    ],
+    "description": "Jetty is a Java based web server and servlet engine. Prior to versions 9.4.52, 10.0.16, 11.0.16, and 12.0.1, Jetty accepts the `+` character proceeding the content-length value in a HTTP/1 header field.  This is more permissive than allowed by the RFC and other servers routinely reject such requests with 400 responses.  There is no known exploit scenario, but it is conceivable that request smuggling could result if jetty is used in combination with a server that does not close the connection after sending such a 400 response. Versions 9.4.52, 10.0.16, 11.0.16, and 12.0.1 contain a patch for this issue. There is no workaround as there is no known exploit scenario.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+      "metrics": {
+       "baseScore": 5.3,
+       "exploitabilityScore": 3.9,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "source": "security-advisories@github.com",
+      "type": "Secondary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+      "metrics": {
+       "baseScore": 5.3,
+       "exploitabilityScore": 3.9,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:eclipse:jetty:9.4.51.v20230217:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "jetty-servlet",
+       "version": "9.4.51.v20230217"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2023-40167",
+      "versionConstraint": ">= 9.0.0, < 9.4.52 || >= 10.0.0, < 10.0.16 || >= 11.0.0, < 11.0.16 || = 12.0.0 || = 12.0.0-beta0 || = 12.0.0-beta1 || = 12.0.0-beta2 || = 12.0.0-beta3 || = 12.0.0-beta4 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "e3a299179d522d46",
+    "name": "jetty-servlet",
+    "version": "9.4.51.v20230217",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "/apache-zookeeper-3.8.2-bin/lib/jetty-servlet-9.4.51.v20230217.jar",
+      "layerID": "sha256:e378604b6e0da12b45835695c40f6d58371319c7828de793f933c7e343078a71"
+     }
+    ],
+    "language": "java",
+    "licenses": [
+     "http://www.apache.org/licenses/LICENSE-2.0, https://www.eclipse.org/org/documents/epl-v10.php"
+    ],
+    "cpes": [
+     "cpe:2.3:a:eclipse-jetty-project:jetty-servlet:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse-jetty-project:jetty_servlet:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:jetty-servlet:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:jetty_servlet:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse-jetty-project:servlet:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:servlet:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse-jetty-project:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-servlet:jetty-servlet:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-servlet:jetty_servlet:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_servlet:jetty-servlet:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_servlet:jetty_servlet:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:jetty-servlet:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:jetty_servlet:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-servlet:servlet:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_servlet:servlet:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:servlet:jetty-servlet:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:servlet:jetty_servlet:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-servlet:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:jetty-servlet:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:jetty_servlet:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_servlet:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:servlet:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:servlet:servlet:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:servlet:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:servlet:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:jetty:9.4.51.v20230217:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/org.eclipse.jetty/jetty-servlet@9.4.51.v20230217",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "/apache-zookeeper-3.8.2-bin/lib/jetty-servlet-9.4.51.v20230217.jar",
+     "pomArtifactID": "jetty-servlet",
+     "pomGroupID": "org.eclipse.jetty",
+     "manifestName": "",
+     "archiveDigests": [
+      {
+       "algorithm": "sha1",
+       "value": "3ec1be0b1ca49b633dd7de0733d0054bb4763965"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-36479",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-36479",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/eclipse/jetty.project/pull/9516",
+     "https://github.com/eclipse/jetty.project/pull/9888",
+     "https://github.com/eclipse/jetty.project/pull/9889",
+     "https://github.com/eclipse/jetty.project/security/advisories/GHSA-3gh6-v5v9-6v9j",
+     "https://lists.debian.org/debian-lts-announce/2023/09/msg00039.html",
+     "https://www.debian.org/security/2023/dsa-5507"
+    ],
+    "description": "Eclipse Jetty Canonical Repository is the canonical repository for the Jetty project. Users of the CgiServlet with a very specific command structure may have the wrong command executed. If a user sends a request to a org.eclipse.jetty.servlets.CGI Servlet for a binary with a space in its name, the servlet will escape the command by wrapping it in quotation marks. This wrapped command, plus an optional command prefix, will then be executed through a call to Runtime.exec. If the original binary name provided by the user contains a quotation mark followed by a space, the resulting command line will contain multiple tokens instead of one. This issue was patched in version 9.4.52, 10.0.16, 11.0.16 and 12.0.0-beta2.\n",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N",
+      "metrics": {
+       "baseScore": 4.3,
+       "exploitabilityScore": 2.8,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "source": "security-advisories@github.com",
+      "type": "Secondary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:N/I:L/A:N",
+      "metrics": {
+       "baseScore": 3.5,
+       "exploitabilityScore": 1.8,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:eclipse:jetty:9.4.51.v20230217:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "jetty-servlet",
+       "version": "9.4.51.v20230217"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2023-36479",
+      "versionConstraint": ">= 9.0.0, < 9.4.52 || >= 10.0.0, < 10.0.16 || >= 11.0.0, < 11.0.16 || = 12.0.0-alpha1 || = 12.0.0-alpha2 || = 12.0.0-alpha3 || = 12.0.0-beta0 || = 12.0.0-beta1 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "e3a299179d522d46",
+    "name": "jetty-servlet",
+    "version": "9.4.51.v20230217",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "/apache-zookeeper-3.8.2-bin/lib/jetty-servlet-9.4.51.v20230217.jar",
+      "layerID": "sha256:e378604b6e0da12b45835695c40f6d58371319c7828de793f933c7e343078a71"
+     }
+    ],
+    "language": "java",
+    "licenses": [
+     "http://www.apache.org/licenses/LICENSE-2.0, https://www.eclipse.org/org/documents/epl-v10.php"
+    ],
+    "cpes": [
+     "cpe:2.3:a:eclipse-jetty-project:jetty-servlet:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse-jetty-project:jetty_servlet:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:jetty-servlet:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:jetty_servlet:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse-jetty-project:servlet:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:servlet:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse-jetty-project:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-servlet:jetty-servlet:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-servlet:jetty_servlet:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_servlet:jetty-servlet:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_servlet:jetty_servlet:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:jetty-servlet:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:jetty_servlet:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-servlet:servlet:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_servlet:servlet:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:servlet:jetty-servlet:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:servlet:jetty_servlet:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-servlet:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:jetty-servlet:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:jetty_servlet:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_servlet:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:servlet:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:servlet:servlet:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:servlet:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:servlet:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:jetty:9.4.51.v20230217:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/org.eclipse.jetty/jetty-servlet@9.4.51.v20230217",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "/apache-zookeeper-3.8.2-bin/lib/jetty-servlet-9.4.51.v20230217.jar",
+     "pomArtifactID": "jetty-servlet",
+     "pomGroupID": "org.eclipse.jetty",
+     "manifestName": "",
+     "archiveDigests": [
+      {
+       "algorithm": "sha1",
+       "value": "3ec1be0b1ca49b633dd7de0733d0054bb4763965"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-41900",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-41900",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/eclipse/jetty.project/pull/9528",
+     "https://github.com/eclipse/jetty.project/pull/9660",
+     "https://github.com/eclipse/jetty.project/security/advisories/GHSA-pwh8-58vv-vw48",
+     "https://www.debian.org/security/2023/dsa-5507"
+    ],
+    "description": "Jetty is a Java based web server and servlet engine. Versions 9.4.21 through 9.4.51, 10.0.15, and 11.0.15 are vulnerable to weak authentication. If a Jetty `OpenIdAuthenticator` uses the optional nested `LoginService`, and that `LoginService` decides to revoke an already authenticated user, then the current request will still treat the user as authenticated. The authentication is then cleared from the session and subsequent requests will not be treated as authenticated. So a request on a previously authenticated session could be allowed to bypass authentication after it had been rejected by the `LoginService`. This impacts usages of the jetty-openid which have configured a nested `LoginService` and where that `LoginService` will is capable of rejecting previously authenticated users. Versions 9.4.52, 10.0.16, and 11.0.16 have a patch for this issue.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N",
+      "metrics": {
+       "baseScore": 4.3,
+       "exploitabilityScore": 2.8,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "source": "security-advisories@github.com",
+      "type": "Secondary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:L/I:N/A:N",
+      "metrics": {
+       "baseScore": 3.5,
+       "exploitabilityScore": 1.8,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:eclipse:jetty:9.4.51.v20230217:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "jetty-util",
+       "version": "9.4.51.v20230217"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2023-41900",
+      "versionConstraint": ">= 9.4.21, < 9.4.52 || >= 10.0.0, < 10.0.16 || >= 11.0.0, < 11.0.16 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "f433f7fdb9e073c9",
+    "name": "jetty-util",
+    "version": "9.4.51.v20230217",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "/apache-zookeeper-3.8.2-bin/lib/jetty-util-9.4.51.v20230217.jar",
+      "layerID": "sha256:e378604b6e0da12b45835695c40f6d58371319c7828de793f933c7e343078a71"
+     }
+    ],
+    "language": "java",
+    "licenses": [
+     "http://www.apache.org/licenses/LICENSE-2.0, https://www.eclipse.org/org/documents/epl-v10.php"
+    ],
+    "cpes": [
+     "cpe:2.3:a:eclipse-jetty-project:jetty-util:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse-jetty-project:jetty_util:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:jetty-util:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:jetty_util:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse-jetty-project:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse-jetty-project:util:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:util:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-util:jetty-util:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-util:jetty_util:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_util:jetty-util:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_util:jetty_util:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:jetty-util:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:jetty_util:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-util:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:jetty-util:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:jetty_util:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_util:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-util:util:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_util:util:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:util:jetty-util:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:util:jetty_util:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:util:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:util:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:util:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:util:util:9.4.51.v20230217:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/org.eclipse.jetty/jetty-util@9.4.51.v20230217",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "/apache-zookeeper-3.8.2-bin/lib/jetty-util-9.4.51.v20230217.jar",
+     "pomArtifactID": "jetty-util",
+     "pomGroupID": "org.eclipse.jetty",
+     "manifestName": "",
+     "archiveDigests": [
+      {
+       "algorithm": "sha1",
+       "value": "a11df06530a3a28c9af7ff336730a2f8e18e7205"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-40167",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-40167",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/eclipse/jetty.project/security/advisories/GHSA-hmr7-m48g-48f6",
+     "https://lists.debian.org/debian-lts-announce/2023/09/msg00039.html",
+     "https://www.debian.org/security/2023/dsa-5507",
+     "https://www.rfc-editor.org/rfc/rfc9110#section-8.6"
+    ],
+    "description": "Jetty is a Java based web server and servlet engine. Prior to versions 9.4.52, 10.0.16, 11.0.16, and 12.0.1, Jetty accepts the `+` character proceeding the content-length value in a HTTP/1 header field.  This is more permissive than allowed by the RFC and other servers routinely reject such requests with 400 responses.  There is no known exploit scenario, but it is conceivable that request smuggling could result if jetty is used in combination with a server that does not close the connection after sending such a 400 response. Versions 9.4.52, 10.0.16, 11.0.16, and 12.0.1 contain a patch for this issue. There is no workaround as there is no known exploit scenario.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+      "metrics": {
+       "baseScore": 5.3,
+       "exploitabilityScore": 3.9,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "source": "security-advisories@github.com",
+      "type": "Secondary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+      "metrics": {
+       "baseScore": 5.3,
+       "exploitabilityScore": 3.9,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:eclipse:jetty:9.4.51.v20230217:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "jetty-util",
+       "version": "9.4.51.v20230217"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2023-40167",
+      "versionConstraint": ">= 9.0.0, < 9.4.52 || >= 10.0.0, < 10.0.16 || >= 11.0.0, < 11.0.16 || = 12.0.0 || = 12.0.0-beta0 || = 12.0.0-beta1 || = 12.0.0-beta2 || = 12.0.0-beta3 || = 12.0.0-beta4 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "f433f7fdb9e073c9",
+    "name": "jetty-util",
+    "version": "9.4.51.v20230217",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "/apache-zookeeper-3.8.2-bin/lib/jetty-util-9.4.51.v20230217.jar",
+      "layerID": "sha256:e378604b6e0da12b45835695c40f6d58371319c7828de793f933c7e343078a71"
+     }
+    ],
+    "language": "java",
+    "licenses": [
+     "http://www.apache.org/licenses/LICENSE-2.0, https://www.eclipse.org/org/documents/epl-v10.php"
+    ],
+    "cpes": [
+     "cpe:2.3:a:eclipse-jetty-project:jetty-util:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse-jetty-project:jetty_util:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:jetty-util:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:jetty_util:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse-jetty-project:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse-jetty-project:util:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:util:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-util:jetty-util:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-util:jetty_util:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_util:jetty-util:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_util:jetty_util:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:jetty-util:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:jetty_util:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-util:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:jetty-util:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:jetty_util:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_util:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-util:util:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_util:util:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:util:jetty-util:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:util:jetty_util:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:util:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:util:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:util:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:util:util:9.4.51.v20230217:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/org.eclipse.jetty/jetty-util@9.4.51.v20230217",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "/apache-zookeeper-3.8.2-bin/lib/jetty-util-9.4.51.v20230217.jar",
+     "pomArtifactID": "jetty-util",
+     "pomGroupID": "org.eclipse.jetty",
+     "manifestName": "",
+     "archiveDigests": [
+      {
+       "algorithm": "sha1",
+       "value": "a11df06530a3a28c9af7ff336730a2f8e18e7205"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-36479",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-36479",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/eclipse/jetty.project/pull/9516",
+     "https://github.com/eclipse/jetty.project/pull/9888",
+     "https://github.com/eclipse/jetty.project/pull/9889",
+     "https://github.com/eclipse/jetty.project/security/advisories/GHSA-3gh6-v5v9-6v9j",
+     "https://lists.debian.org/debian-lts-announce/2023/09/msg00039.html",
+     "https://www.debian.org/security/2023/dsa-5507"
+    ],
+    "description": "Eclipse Jetty Canonical Repository is the canonical repository for the Jetty project. Users of the CgiServlet with a very specific command structure may have the wrong command executed. If a user sends a request to a org.eclipse.jetty.servlets.CGI Servlet for a binary with a space in its name, the servlet will escape the command by wrapping it in quotation marks. This wrapped command, plus an optional command prefix, will then be executed through a call to Runtime.exec. If the original binary name provided by the user contains a quotation mark followed by a space, the resulting command line will contain multiple tokens instead of one. This issue was patched in version 9.4.52, 10.0.16, 11.0.16 and 12.0.0-beta2.\n",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N",
+      "metrics": {
+       "baseScore": 4.3,
+       "exploitabilityScore": 2.8,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "source": "security-advisories@github.com",
+      "type": "Secondary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:N/I:L/A:N",
+      "metrics": {
+       "baseScore": 3.5,
+       "exploitabilityScore": 1.8,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:eclipse:jetty:9.4.51.v20230217:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "jetty-util",
+       "version": "9.4.51.v20230217"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2023-36479",
+      "versionConstraint": ">= 9.0.0, < 9.4.52 || >= 10.0.0, < 10.0.16 || >= 11.0.0, < 11.0.16 || = 12.0.0-alpha1 || = 12.0.0-alpha2 || = 12.0.0-alpha3 || = 12.0.0-beta0 || = 12.0.0-beta1 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "f433f7fdb9e073c9",
+    "name": "jetty-util",
+    "version": "9.4.51.v20230217",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "/apache-zookeeper-3.8.2-bin/lib/jetty-util-9.4.51.v20230217.jar",
+      "layerID": "sha256:e378604b6e0da12b45835695c40f6d58371319c7828de793f933c7e343078a71"
+     }
+    ],
+    "language": "java",
+    "licenses": [
+     "http://www.apache.org/licenses/LICENSE-2.0, https://www.eclipse.org/org/documents/epl-v10.php"
+    ],
+    "cpes": [
+     "cpe:2.3:a:eclipse-jetty-project:jetty-util:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse-jetty-project:jetty_util:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:jetty-util:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:jetty_util:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse-jetty-project:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse-jetty-project:util:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:util:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-util:jetty-util:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-util:jetty_util:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_util:jetty-util:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_util:jetty_util:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:jetty-util:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:jetty_util:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-util:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:jetty-util:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:jetty_util:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_util:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-util:util:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_util:util:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:util:jetty-util:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:util:jetty_util:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:util:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:util:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:util:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:util:util:9.4.51.v20230217:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/org.eclipse.jetty/jetty-util@9.4.51.v20230217",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "/apache-zookeeper-3.8.2-bin/lib/jetty-util-9.4.51.v20230217.jar",
+     "pomArtifactID": "jetty-util",
+     "pomGroupID": "org.eclipse.jetty",
+     "manifestName": "",
+     "archiveDigests": [
+      {
+       "algorithm": "sha1",
+       "value": "a11df06530a3a28c9af7ff336730a2f8e18e7205"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-41900",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-41900",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/eclipse/jetty.project/pull/9528",
+     "https://github.com/eclipse/jetty.project/pull/9660",
+     "https://github.com/eclipse/jetty.project/security/advisories/GHSA-pwh8-58vv-vw48",
+     "https://www.debian.org/security/2023/dsa-5507"
+    ],
+    "description": "Jetty is a Java based web server and servlet engine. Versions 9.4.21 through 9.4.51, 10.0.15, and 11.0.15 are vulnerable to weak authentication. If a Jetty `OpenIdAuthenticator` uses the optional nested `LoginService`, and that `LoginService` decides to revoke an already authenticated user, then the current request will still treat the user as authenticated. The authentication is then cleared from the session and subsequent requests will not be treated as authenticated. So a request on a previously authenticated session could be allowed to bypass authentication after it had been rejected by the `LoginService`. This impacts usages of the jetty-openid which have configured a nested `LoginService` and where that `LoginService` will is capable of rejecting previously authenticated users. Versions 9.4.52, 10.0.16, and 11.0.16 have a patch for this issue.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N",
+      "metrics": {
+       "baseScore": 4.3,
+       "exploitabilityScore": 2.8,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "source": "security-advisories@github.com",
+      "type": "Secondary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:L/I:N/A:N",
+      "metrics": {
+       "baseScore": 3.5,
+       "exploitabilityScore": 1.8,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:eclipse:jetty:9.4.51.v20230217:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "jetty-util-ajax",
+       "version": "9.4.51.v20230217"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2023-41900",
+      "versionConstraint": ">= 9.4.21, < 9.4.52 || >= 10.0.0, < 10.0.16 || >= 11.0.0, < 11.0.16 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "ad1652035cb0541c",
+    "name": "jetty-util-ajax",
+    "version": "9.4.51.v20230217",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "/apache-zookeeper-3.8.2-bin/lib/jetty-util-ajax-9.4.51.v20230217.jar",
+      "layerID": "sha256:e378604b6e0da12b45835695c40f6d58371319c7828de793f933c7e343078a71"
+     }
+    ],
+    "language": "java",
+    "licenses": [
+     "http://www.apache.org/licenses/LICENSE-2.0, https://www.eclipse.org/org/documents/epl-v10.php"
+    ],
+    "cpes": [
+     "cpe:2.3:a:eclipse-jetty-project:jetty-util-ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse-jetty-project:jetty_util_ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:jetty-util-ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:jetty_util_ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-util-ajax:jetty-util-ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-util-ajax:jetty_util_ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_util_ajax:jetty-util-ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_util_ajax:jetty_util_ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse-jetty-project:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse-jetty-project:ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-util:jetty-util-ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-util:jetty_util_ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_util:jetty-util-ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_util:jetty_util_ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:jetty-util-ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:jetty_util_ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-util-ajax:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:jetty-util-ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:jetty_util_ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_util_ajax:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ajax:jetty-util-ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ajax:jetty_util_ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-util-ajax:ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_util_ajax:ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:util:jetty-util-ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:util:jetty_util_ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-util:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_util:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-util:ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_util:ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ajax:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:util:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ajax:ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:util:ajax:9.4.51.v20230217:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/org.eclipse.jetty/jetty-util-ajax@9.4.51.v20230217",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "/apache-zookeeper-3.8.2-bin/lib/jetty-util-ajax-9.4.51.v20230217.jar",
+     "pomArtifactID": "jetty-util-ajax",
+     "pomGroupID": "org.eclipse.jetty",
+     "manifestName": "",
+     "archiveDigests": [
+      {
+       "algorithm": "sha1",
+       "value": "3b2a998a5ed1f93bc1878fa89d65e307d8b8ebaf"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-40167",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-40167",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/eclipse/jetty.project/security/advisories/GHSA-hmr7-m48g-48f6",
+     "https://lists.debian.org/debian-lts-announce/2023/09/msg00039.html",
+     "https://www.debian.org/security/2023/dsa-5507",
+     "https://www.rfc-editor.org/rfc/rfc9110#section-8.6"
+    ],
+    "description": "Jetty is a Java based web server and servlet engine. Prior to versions 9.4.52, 10.0.16, 11.0.16, and 12.0.1, Jetty accepts the `+` character proceeding the content-length value in a HTTP/1 header field.  This is more permissive than allowed by the RFC and other servers routinely reject such requests with 400 responses.  There is no known exploit scenario, but it is conceivable that request smuggling could result if jetty is used in combination with a server that does not close the connection after sending such a 400 response. Versions 9.4.52, 10.0.16, 11.0.16, and 12.0.1 contain a patch for this issue. There is no workaround as there is no known exploit scenario.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+      "metrics": {
+       "baseScore": 5.3,
+       "exploitabilityScore": 3.9,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "source": "security-advisories@github.com",
+      "type": "Secondary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+      "metrics": {
+       "baseScore": 5.3,
+       "exploitabilityScore": 3.9,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:eclipse:jetty:9.4.51.v20230217:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "jetty-util-ajax",
+       "version": "9.4.51.v20230217"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2023-40167",
+      "versionConstraint": ">= 9.0.0, < 9.4.52 || >= 10.0.0, < 10.0.16 || >= 11.0.0, < 11.0.16 || = 12.0.0 || = 12.0.0-beta0 || = 12.0.0-beta1 || = 12.0.0-beta2 || = 12.0.0-beta3 || = 12.0.0-beta4 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "ad1652035cb0541c",
+    "name": "jetty-util-ajax",
+    "version": "9.4.51.v20230217",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "/apache-zookeeper-3.8.2-bin/lib/jetty-util-ajax-9.4.51.v20230217.jar",
+      "layerID": "sha256:e378604b6e0da12b45835695c40f6d58371319c7828de793f933c7e343078a71"
+     }
+    ],
+    "language": "java",
+    "licenses": [
+     "http://www.apache.org/licenses/LICENSE-2.0, https://www.eclipse.org/org/documents/epl-v10.php"
+    ],
+    "cpes": [
+     "cpe:2.3:a:eclipse-jetty-project:jetty-util-ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse-jetty-project:jetty_util_ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:jetty-util-ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:jetty_util_ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-util-ajax:jetty-util-ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-util-ajax:jetty_util_ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_util_ajax:jetty-util-ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_util_ajax:jetty_util_ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse-jetty-project:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse-jetty-project:ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-util:jetty-util-ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-util:jetty_util_ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_util:jetty-util-ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_util:jetty_util_ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:jetty-util-ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:jetty_util_ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-util-ajax:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:jetty-util-ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:jetty_util_ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_util_ajax:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ajax:jetty-util-ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ajax:jetty_util_ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-util-ajax:ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_util_ajax:ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:util:jetty-util-ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:util:jetty_util_ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-util:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_util:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-util:ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_util:ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ajax:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:util:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ajax:ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:util:ajax:9.4.51.v20230217:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/org.eclipse.jetty/jetty-util-ajax@9.4.51.v20230217",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "/apache-zookeeper-3.8.2-bin/lib/jetty-util-ajax-9.4.51.v20230217.jar",
+     "pomArtifactID": "jetty-util-ajax",
+     "pomGroupID": "org.eclipse.jetty",
+     "manifestName": "",
+     "archiveDigests": [
+      {
+       "algorithm": "sha1",
+       "value": "3b2a998a5ed1f93bc1878fa89d65e307d8b8ebaf"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-36479",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-36479",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/eclipse/jetty.project/pull/9516",
+     "https://github.com/eclipse/jetty.project/pull/9888",
+     "https://github.com/eclipse/jetty.project/pull/9889",
+     "https://github.com/eclipse/jetty.project/security/advisories/GHSA-3gh6-v5v9-6v9j",
+     "https://lists.debian.org/debian-lts-announce/2023/09/msg00039.html",
+     "https://www.debian.org/security/2023/dsa-5507"
+    ],
+    "description": "Eclipse Jetty Canonical Repository is the canonical repository for the Jetty project. Users of the CgiServlet with a very specific command structure may have the wrong command executed. If a user sends a request to a org.eclipse.jetty.servlets.CGI Servlet for a binary with a space in its name, the servlet will escape the command by wrapping it in quotation marks. This wrapped command, plus an optional command prefix, will then be executed through a call to Runtime.exec. If the original binary name provided by the user contains a quotation mark followed by a space, the resulting command line will contain multiple tokens instead of one. This issue was patched in version 9.4.52, 10.0.16, 11.0.16 and 12.0.0-beta2.\n",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N",
+      "metrics": {
+       "baseScore": 4.3,
+       "exploitabilityScore": 2.8,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "source": "security-advisories@github.com",
+      "type": "Secondary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:N/I:L/A:N",
+      "metrics": {
+       "baseScore": 3.5,
+       "exploitabilityScore": 1.8,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:eclipse:jetty:9.4.51.v20230217:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "jetty-util-ajax",
+       "version": "9.4.51.v20230217"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2023-36479",
+      "versionConstraint": ">= 9.0.0, < 9.4.52 || >= 10.0.0, < 10.0.16 || >= 11.0.0, < 11.0.16 || = 12.0.0-alpha1 || = 12.0.0-alpha2 || = 12.0.0-alpha3 || = 12.0.0-beta0 || = 12.0.0-beta1 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "ad1652035cb0541c",
+    "name": "jetty-util-ajax",
+    "version": "9.4.51.v20230217",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "/apache-zookeeper-3.8.2-bin/lib/jetty-util-ajax-9.4.51.v20230217.jar",
+      "layerID": "sha256:e378604b6e0da12b45835695c40f6d58371319c7828de793f933c7e343078a71"
+     }
+    ],
+    "language": "java",
+    "licenses": [
+     "http://www.apache.org/licenses/LICENSE-2.0, https://www.eclipse.org/org/documents/epl-v10.php"
+    ],
+    "cpes": [
+     "cpe:2.3:a:eclipse-jetty-project:jetty-util-ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse-jetty-project:jetty_util_ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:jetty-util-ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:jetty_util_ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-util-ajax:jetty-util-ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-util-ajax:jetty_util_ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_util_ajax:jetty-util-ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_util_ajax:jetty_util_ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse-jetty-project:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse-jetty-project:ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-util:jetty-util-ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-util:jetty_util_ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_util:jetty-util-ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_util:jetty_util_ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:jetty-util-ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:jetty_util_ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-util-ajax:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:jetty-util-ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:jetty_util_ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_util_ajax:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ajax:jetty-util-ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ajax:jetty_util_ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-util-ajax:ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_util_ajax:ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:util:jetty-util-ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:util:jetty_util_ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-util:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_util:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-util:ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_util:ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ajax:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:util:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ajax:ajax:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:util:ajax:9.4.51.v20230217:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/org.eclipse.jetty/jetty-util-ajax@9.4.51.v20230217",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "/apache-zookeeper-3.8.2-bin/lib/jetty-util-ajax-9.4.51.v20230217.jar",
+     "pomArtifactID": "jetty-util-ajax",
+     "pomGroupID": "org.eclipse.jetty",
+     "manifestName": "",
+     "archiveDigests": [
+      {
+       "algorithm": "sha1",
+       "value": "3b2a998a5ed1f93bc1878fa89d65e307d8b8ebaf"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-4911",
+    "dataSource": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2023-4911",
+    "namespace": "ubuntu:distro:ubuntu:22.04",
+    "severity": "High",
+    "urls": [
+     "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2023-4911"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "2.35-0ubuntu3.4"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-4911",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-4911",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "http://www.openwall.com/lists/oss-security/2023/10/03/2",
+      "http://www.openwall.com/lists/oss-security/2023/10/03/3",
+      "https://access.redhat.com/security/cve/CVE-2023-4911",
+      "https://bugzilla.redhat.com/show_bug.cgi?id=2238352",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/4DBUQRRPB47TC3NJOUIBVWUGFHBJAFDL/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/DFG4P76UHHZEWQ26FWBXG76N2QLKKPZA/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/NDAQWHTSVOCOZ5K6KPIWKRT3JX4RTZUR/",
+      "https://security.gentoo.org/glsa/202310-03",
+      "https://www.debian.org/security/2023/dsa-5514",
+      "https://www.qualys.com/2023/10/03/cve-2023-4911/looney-tunables-local-privilege-escalation-glibc-ld-so.txt",
+      "https://www.qualys.com/cve-2023-4911/"
+     ],
+     "description": "A buffer overflow was discovered in the GNU C Library's dynamic loader ld.so while processing the GLIBC_TUNABLES environment variable. This issue could allow a local attacker to use maliciously crafted GLIBC_TUNABLES environment variables when launching binaries with SUID permission to execute code with elevated privileges.",
+     "cvss": [
+      {
+       "source": "secalert@redhat.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 7.8,
+        "exploitabilityScore": 1.8,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "22.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:22.04",
+      "package": {
+       "name": "glibc",
+       "version": "2.35-0ubuntu3.3"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 2.35-0ubuntu3.4 (deb)",
+      "vulnerabilityID": "CVE-2023-4911"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "773dde519cd04dd5",
+    "name": "libc6",
+    "version": "2.35-0ubuntu3.3",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:e378604b6e0da12b45835695c40f6d58371319c7828de793f933c7e343078a71"
+     }
+    ],
+    "language": "",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:libc6:libc6:2.35-0ubuntu3.3:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/libc6@2.35-0ubuntu3.3?arch=amd64&upstream=glibc&distro=ubuntu-22.04",
+    "upstreams": [
+     {
+      "name": "glibc"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2016-20013",
+    "dataSource": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2016-20013",
+    "namespace": "ubuntu:distro:ubuntu:22.04",
+    "severity": "Negligible",
+    "urls": [
+     "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2016-20013"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2016-20013",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2016-20013",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://akkadia.org/drepper/SHA-crypt.txt",
+      "https://pthree.org/2018/05/23/do-not-use-sha256crypt-sha512crypt-theyre-dangerous/",
+      "https://twitter.com/solardiz/status/795601240151457793"
+     ],
+     "description": "sha256crypt and sha512crypt through 0.6 allow attackers to cause a denial of service (CPU consumption) because the algorithm's runtime is proportional to the square of the length of the password.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+       "metrics": {
+        "baseScore": 5,
+        "exploitabilityScore": 10,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "22.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:22.04",
+      "package": {
+       "name": "glibc",
+       "version": "2.35-0ubuntu3.3"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2016-20013"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "773dde519cd04dd5",
+    "name": "libc6",
+    "version": "2.35-0ubuntu3.3",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:e378604b6e0da12b45835695c40f6d58371319c7828de793f933c7e343078a71"
+     }
+    ],
+    "language": "",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:libc6:libc6:2.35-0ubuntu3.3:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/libc6@2.35-0ubuntu3.3?arch=amd64&upstream=glibc&distro=ubuntu-22.04",
+    "upstreams": [
+     {
+      "name": "glibc"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2017-11164",
+    "dataSource": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2017-11164",
+    "namespace": "ubuntu:distro:ubuntu:22.04",
+    "severity": "Negligible",
+    "urls": [
+     "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2017-11164"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2017-11164",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2017-11164",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "http://openwall.com/lists/oss-security/2017/07/11/3",
+      "http://www.openwall.com/lists/oss-security/2023/04/11/1",
+      "http://www.openwall.com/lists/oss-security/2023/04/12/1",
+      "http://www.securityfocus.com/bid/99575",
+      "https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772@%3Cdev.mina.apache.org%3E"
+     ],
+     "description": "In PCRE 8.41, the OP_KETRMAX feature in the match function in pcre_exec.c allows stack exhaustion (uncontrolled recursion) when processing a crafted regular expression.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
+       "metrics": {
+        "baseScore": 7.8,
+        "exploitabilityScore": 10,
+        "impactScore": 6.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.0",
+       "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "22.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:22.04",
+      "package": {
+       "name": "pcre3",
+       "version": "2:8.39-13ubuntu0.22.04.1"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2017-11164"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "ff916fa49ff4bed6",
+    "name": "libpcre3",
+    "version": "2:8.39-13ubuntu0.22.04.1",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:e378604b6e0da12b45835695c40f6d58371319c7828de793f933c7e343078a71"
+     }
+    ],
+    "language": "",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:libpcre3:libpcre3:2:8.39-13ubuntu0.22.04.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/libpcre3@2:8.39-13ubuntu0.22.04.1?arch=amd64&upstream=pcre3&distro=ubuntu-22.04",
+    "upstreams": [
+     {
+      "name": "pcre3"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-57m8-f3v5-hm5m",
+    "dataSource": "https://github.com/advisories/GHSA-57m8-f3v5-hm5m",
+    "namespace": "github:language:java",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-57m8-f3v5-hm5m"
+    ],
+    "description": "Netty-handler does not validate host names by default",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+      "metrics": {
+       "baseScore": 5.3,
+       "exploitabilityScore": 3.9,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-4586",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-4586",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://access.redhat.com/security/cve/CVE-2023-4586",
+      "https://bugzilla.redhat.com/show_bug.cgi?id=2235564",
+      "https://security.snyk.io/vuln/SNYK-JAVA-IONETTY-1042268"
+     ],
+     "description": "A vulnerability was found in the Hot Rod client. This security issue occurs as the Hot Rod client does not enable hostname validation when using TLS, possibly resulting in a man-in-the-middle (MITM) attack.",
+     "cvss": [
+      {
+       "source": "secalert@redhat.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+       "metrics": {
+        "baseScore": 5.3,
+        "exploitabilityScore": 3.9,
+        "impactScore": 1.4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "netty-handler",
+       "version": "4.1.94.Final"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=4.1.0.Final,<=4.1.99.Final (unknown)",
+      "vulnerabilityID": "GHSA-57m8-f3v5-hm5m"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "9270e3c06e929d3e",
+    "name": "netty-handler",
+    "version": "4.1.94.Final",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "/apache-zookeeper-3.8.2-bin/lib/netty-handler-4.1.94.Final.jar",
+      "layerID": "sha256:e378604b6e0da12b45835695c40f6d58371319c7828de793f933c7e343078a71"
+     }
+    ],
+    "language": "java",
+    "licenses": [
+     "https://www.apache.org/licenses/LICENSE-2.0"
+    ],
+    "cpes": [
+     "cpe:2.3:a:netty-handler:netty-handler:4.1.94.Final:*:*:*:*:*:*:*",
+     "cpe:2.3:a:netty-handler:netty_handler:4.1.94.Final:*:*:*:*:*:*:*",
+     "cpe:2.3:a:netty-project:netty-handler:4.1.94.Final:*:*:*:*:*:*:*",
+     "cpe:2.3:a:netty-project:netty_handler:4.1.94.Final:*:*:*:*:*:*:*",
+     "cpe:2.3:a:netty_handler:netty-handler:4.1.94.Final:*:*:*:*:*:*:*",
+     "cpe:2.3:a:netty_handler:netty_handler:4.1.94.Final:*:*:*:*:*:*:*",
+     "cpe:2.3:a:netty_project:netty-handler:4.1.94.Final:*:*:*:*:*:*:*",
+     "cpe:2.3:a:netty_project:netty_handler:4.1.94.Final:*:*:*:*:*:*:*",
+     "cpe:2.3:a:handler:netty-handler:4.1.94.Final:*:*:*:*:*:*:*",
+     "cpe:2.3:a:handler:netty_handler:4.1.94.Final:*:*:*:*:*:*:*",
+     "cpe:2.3:a:netty-handler:handler:4.1.94.Final:*:*:*:*:*:*:*",
+     "cpe:2.3:a:netty-project:handler:4.1.94.Final:*:*:*:*:*:*:*",
+     "cpe:2.3:a:netty_handler:handler:4.1.94.Final:*:*:*:*:*:*:*",
+     "cpe:2.3:a:netty_project:handler:4.1.94.Final:*:*:*:*:*:*:*",
+     "cpe:2.3:a:netty:netty-handler:4.1.94.Final:*:*:*:*:*:*:*",
+     "cpe:2.3:a:netty:netty_handler:4.1.94.Final:*:*:*:*:*:*:*",
+     "cpe:2.3:a:handler:handler:4.1.94.Final:*:*:*:*:*:*:*",
+     "cpe:2.3:a:netty:handler:4.1.94.Final:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/io.netty/netty-handler@4.1.94.Final",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "/apache-zookeeper-3.8.2-bin/lib/netty-handler-4.1.94.Final.jar",
+     "pomArtifactID": "netty-handler",
+     "pomGroupID": "io.netty",
+     "manifestName": "",
+     "archiveDigests": [
+      {
+       "algorithm": "sha1",
+       "value": "cd9121ce24d6d3f2898946d04b0ef3ec548b00b4"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-55g7-9cwv-5qfv",
+    "dataSource": "https://github.com/advisories/GHSA-55g7-9cwv-5qfv",
+    "namespace": "github:language:java",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-55g7-9cwv-5qfv"
+    ],
+    "description": "snappy-java's missing upper bound check on chunk length can lead to Denial of Service (DoS) impact",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "1.1.10.4"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-43642",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-43642",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/xerial/snappy-java/commit/9f8c3cf74223ed0a8a834134be9c917b9f10ceb5",
+      "https://github.com/xerial/snappy-java/security/advisories/GHSA-55g7-9cwv-5qfv"
+     ],
+     "description": "snappy-java is a Java port of the snappy, a fast C++ compresser/decompresser developed by Google. The SnappyInputStream was found to be vulnerable to Denial of Service (DoS) attacks when decompressing data with a too large chunk size. Due to missing upper bound check on chunk length, an unrecoverable fatal error can occur. All versions of snappy-java including the latest released version 1.1.10.3 are vulnerable to this issue. A fix has been introduced in commit `9f8c3cf74` which will be included in the 1.1.10.4 release. Users are advised to upgrade. Users unable to upgrade should only accept compressed data from trusted sources.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "snappy-java",
+       "version": "1.1.10.1"
+      }
+     },
+     "found": {
+      "versionConstraint": "<=1.1.10.3 (unknown)",
+      "vulnerabilityID": "GHSA-55g7-9cwv-5qfv"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "c8a64f04553da86c",
+    "name": "snappy-java",
+    "version": "1.1.10.1",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "/apache-zookeeper-3.8.2-bin/lib/snappy-java-1.1.10.1.jar",
+      "layerID": "sha256:e378604b6e0da12b45835695c40f6d58371319c7828de793f933c7e343078a71"
+     }
+    ],
+    "language": "java",
+    "licenses": [
+     "http://www.apache.org/licenses/LICENSE-2.0.txt"
+    ],
+    "cpes": [
+     "cpe:2.3:a:SnappyBundleActivator:SnappyBundleActivator:1.1.10.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:SnappyBundleActivator:snappy-java:1.1.10.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:SnappyBundleActivator:snappy_java:1.1.10.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:snappy-java:SnappyBundleActivator:1.1.10.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:snappy_java:SnappyBundleActivator:1.1.10.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:xerial-org:SnappyBundleActivator:1.1.10.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:xerial_org:SnappyBundleActivator:1.1.10.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:SnappyBundleActivator:snappy:1.1.10.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:snappy:SnappyBundleActivator:1.1.10.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:xerial:SnappyBundleActivator:1.1.10.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:snappy-java:snappy-java:1.1.10.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:snappy-java:snappy_java:1.1.10.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:snappy_java:snappy-java:1.1.10.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:snappy_java:snappy_java:1.1.10.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:xerial-org:snappy-java:1.1.10.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:xerial-org:snappy_java:1.1.10.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:xerial_org:snappy-java:1.1.10.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:xerial_org:snappy_java:1.1.10.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:snappy-java:snappy:1.1.10.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:snappy:snappy-java:1.1.10.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:snappy:snappy_java:1.1.10.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:snappy_java:snappy:1.1.10.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:xerial:snappy-java:1.1.10.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:xerial:snappy_java:1.1.10.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:xerial-org:snappy:1.1.10.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:xerial_org:snappy:1.1.10.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:snappy:snappy:1.1.10.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:xerial:snappy:1.1.10.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/org.xerial.snappy/snappy-java@1.1.10.1",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "/apache-zookeeper-3.8.2-bin/lib/snappy-java-1.1.10.1.jar",
+     "pomArtifactID": "",
+     "pomGroupID": "",
+     "manifestName": "",
+     "archiveDigests": [
+      {
+       "algorithm": "sha1",
+       "value": "4a1e1a22cba39145dfa20f2fef4e1ca38c8e02a1"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-43642",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-43642",
+    "namespace": "nvd:cpe",
+    "severity": "High",
+    "urls": [
+     "https://github.com/xerial/snappy-java/commit/9f8c3cf74223ed0a8a834134be9c917b9f10ceb5",
+     "https://github.com/xerial/snappy-java/security/advisories/GHSA-55g7-9cwv-5qfv"
+    ],
+    "description": "snappy-java is a Java port of the snappy, a fast C++ compresser/decompresser developed by Google. The SnappyInputStream was found to be vulnerable to Denial of Service (DoS) attacks when decompressing data with a too large chunk size. Due to missing upper bound check on chunk length, an unrecoverable fatal error can occur. All versions of snappy-java including the latest released version 1.1.10.3 are vulnerable to this issue. A fix has been introduced in commit `9f8c3cf74` which will be included in the 1.1.10.4 release. Users are advised to upgrade. Users unable to upgrade should only accept compressed data from trusted sources.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "source": "security-advisories@github.com",
+      "type": "Secondary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:xerial:snappy-java:1.1.10.1:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "snappy-java",
+       "version": "1.1.10.1"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2023-43642",
+      "versionConstraint": "< 1.1.10.4 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:xerial:snappy-java:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "c8a64f04553da86c",
+    "name": "snappy-java",
+    "version": "1.1.10.1",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "/apache-zookeeper-3.8.2-bin/lib/snappy-java-1.1.10.1.jar",
+      "layerID": "sha256:e378604b6e0da12b45835695c40f6d58371319c7828de793f933c7e343078a71"
+     }
+    ],
+    "language": "java",
+    "licenses": [
+     "http://www.apache.org/licenses/LICENSE-2.0.txt"
+    ],
+    "cpes": [
+     "cpe:2.3:a:SnappyBundleActivator:SnappyBundleActivator:1.1.10.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:SnappyBundleActivator:snappy-java:1.1.10.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:SnappyBundleActivator:snappy_java:1.1.10.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:snappy-java:SnappyBundleActivator:1.1.10.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:snappy_java:SnappyBundleActivator:1.1.10.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:xerial-org:SnappyBundleActivator:1.1.10.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:xerial_org:SnappyBundleActivator:1.1.10.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:SnappyBundleActivator:snappy:1.1.10.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:snappy:SnappyBundleActivator:1.1.10.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:xerial:SnappyBundleActivator:1.1.10.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:snappy-java:snappy-java:1.1.10.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:snappy-java:snappy_java:1.1.10.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:snappy_java:snappy-java:1.1.10.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:snappy_java:snappy_java:1.1.10.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:xerial-org:snappy-java:1.1.10.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:xerial-org:snappy_java:1.1.10.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:xerial_org:snappy-java:1.1.10.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:xerial_org:snappy_java:1.1.10.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:snappy-java:snappy:1.1.10.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:snappy:snappy-java:1.1.10.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:snappy:snappy_java:1.1.10.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:snappy_java:snappy:1.1.10.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:xerial:snappy-java:1.1.10.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:xerial:snappy_java:1.1.10.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:xerial-org:snappy:1.1.10.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:xerial_org:snappy:1.1.10.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:snappy:snappy:1.1.10.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:xerial:snappy:1.1.10.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/org.xerial.snappy/snappy-java@1.1.10.1",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "/apache-zookeeper-3.8.2-bin/lib/snappy-java-1.1.10.1.jar",
+     "pomArtifactID": "",
+     "pomGroupID": "",
+     "manifestName": "",
+     "archiveDigests": [
+      {
+       "algorithm": "sha1",
+       "value": "4a1e1a22cba39145dfa20f2fef4e1ca38c8e02a1"
+      }
+     ]
+    }
+   }
+  }
+ ],
+ "source": {
+  "type": "image",
+  "target": {
+   "userInput": "docker.io/rapidfort/zookeeper-official:latest",
+   "imageID": "sha256:c9968a9a46281729d4a230c382c65eb0d6289a965620e111b4af6569b1ae5bbc",
+   "manifestDigest": "sha256:d9c1279c18434763224812f0f8e76b96ca0a680ea13227d40356f6b2abf9f78a",
+   "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+   "tags": [
+    "rapidfort/zookeeper-official:latest"
+   ],
+   "imageSize": 183985458,
+   "layers": [
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:e378604b6e0da12b45835695c40f6d58371319c7828de793f933c7e343078a71",
+     "size": 183985458
+    }
+   ],
+   "manifest": "eyJzY2hlbWFWZXJzaW9uIjoyLCJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmRpc3RyaWJ1dGlvbi5tYW5pZmVzdC52Mitqc29uIiwiY29uZmlnIjp7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuY29udGFpbmVyLmltYWdlLnYxK2pzb24iLCJzaXplIjo2MDM5LCJkaWdlc3QiOiJzaGEyNTY6Yzk5NjhhOWE0NjI4MTcyOWQ0YTIzMGMzODJjNjVlYjBkNjI4OWE5NjU2MjBlMTExYjRhZjY1NjliMWFlNWJiYyJ9LCJsYXllcnMiOlt7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjoxODYzODM4NzIsImRpZ2VzdCI6InNoYTI1NjplMzc4NjA0YjZlMGRhMTJiNDU4MzU2OTVjNDBmNmQ1ODM3MTMxOWM3ODI4ZGU3OTNmOTMzYzdlMzQzMDc4YTcxIn1dfQ==",
+   "config": "eyJhcmNoaXRlY3R1cmUiOiJhbWQ2NCIsImNvbmZpZyI6eyJIb3N0bmFtZSI6IiIsIkRvbWFpbm5hbWUiOiIiLCJVc2VyIjoiIiwiQXR0YWNoU3RkaW4iOmZhbHNlLCJBdHRhY2hTdGRvdXQiOmZhbHNlLCJBdHRhY2hTdGRlcnIiOmZhbHNlLCJFeHBvc2VkUG9ydHMiOnsiMjE4MS90Y3AiOnt9LCIyODg4L3RjcCI6e30sIjM4ODgvdGNwIjp7fSwiODA4MC90Y3AiOnt9fSwiVHR5IjpmYWxzZSwiT3BlblN0ZGluIjpmYWxzZSwiU3RkaW5PbmNlIjpmYWxzZSwiRW52IjpbIlBBVEg9L29wdC9qYXZhL29wZW5qZGsvYmluOi91c3IvbG9jYWwvc2JpbjovdXNyL2xvY2FsL2JpbjovdXNyL3NiaW46L3Vzci9iaW46L3NiaW46L2JpbjovYXBhY2hlLXpvb2tlZXBlci0zLjguMi1iaW4vYmluIiwiSkFWQV9IT01FPS9vcHQvamF2YS9vcGVuamRrIiwiTEFORz1lbl9VUy5VVEYtOCIsIkxBTkdVQUdFPWVuX1VTOmVuIiwiTENfQUxMPWVuX1VTLlVURi04IiwiSkFWQV9WRVJTSU9OPWpkay0xMS4wLjIwLjErMSIsIlpPT19DT05GX0RJUj0vY29uZiIsIlpPT19EQVRBX0RJUj0vZGF0YSIsIlpPT19EQVRBX0xPR19ESVI9L2RhdGFsb2ciLCJaT09fTE9HX0RJUj0vbG9ncyIsIlpPT19USUNLX1RJTUU9MjAwMCIsIlpPT19JTklUX0xJTUlUPTUiLCJaT09fU1lOQ19MSU1JVD0yIiwiWk9PX0FVVE9QVVJHRV9QVVJHRUlOVEVSVkFMPTAiLCJaT09fQVVUT1BVUkdFX1NOQVBSRVRBSU5DT1VOVD0zIiwiWk9PX01BWF9DTElFTlRfQ05YTlM9NjAiLCJaT09fU1RBTkRBTE9ORV9FTkFCTEVEPXRydWUiLCJaT09fQURNSU5TRVJWRVJfRU5BQkxFRD10cnVlIiwiWk9PQ0ZHRElSPS9jb25mIl0sIkNtZCI6WyJ6a1NlcnZlci5zaCIsInN0YXJ0LWZvcmVncm91bmQiXSwiSW1hZ2UiOiJzaGEyNTY6ZmZlNWQwZmRlOTUxNTJiYTA1MTk3ZDAxYzYxOWFjYjI3YzUxNzRjMmRmMjkwMmJkODdiMzU1N2EyN2U0YjFmNCIsIlZvbHVtZXMiOnsiL2RhdGEiOnt9LCIvZGF0YWxvZyI6e30sIi9sb2dzIjp7fX0sIldvcmtpbmdEaXIiOiIvYXBhY2hlLXpvb2tlZXBlci0zLjguMi1iaW4iLCJFbnRyeXBvaW50IjpbIi9kb2NrZXItZW50cnlwb2ludC5zaCJdLCJPbkJ1aWxkIjpudWxsLCJMYWJlbHMiOnsiaW8uYnVpbGRhaC52ZXJzaW9uIjoiMS4yOS4wIiwib3JnLm9wZW5jb250YWluZXJzLmltYWdlLnJlZi5uYW1lIjoidWJ1bnR1Iiwib3JnLm9wZW5jb250YWluZXJzLmltYWdlLnZlcnNpb24iOiIyMi4wNCIsIm9yaWdfaW1hZ2VfZGlnZXN0Ijoic2hhMjU2OjIwNGYxMGY3MzUzZDJiOWYzYmYxZmNmMDM3Y2FiYzQ1NTA1NzZkNmU5Y2ExYmVhMjc3ZDI5OTQ0ZGRmNjg1ZTMiLCJyZi5hNGI0ZmFjYi1mMzE1LTQyODItYmM2NC1lMDE0MmZmZDlkYWQiOiJkb2NrZXIuaW8vbGlicmFyeS96b29rZWVwZXI6My44LjItdGVtdXJpbiIsInJmX2ltYWdlX2d1aWQuZDYxMTIyZWYtZWFjYy00Nzg5LTg4YzctYWE1YjI0YjgxYmE4IjoiZDYxMTIyZWYtZWFjYy00Nzg5LTg4YzctYWE1YjI0YjgxYmE4In19LCJjb250YWluZXIiOiI2MGRjMzRlYzgyMWU1YjM4MTQxMjY1YTk0OWVkMzE4YmYyM2FlYTJmMGQ1YjZhZmJhN2Q2OWE5ZTc0NDk2ZDVmIiwiY29udGFpbmVyX2NvbmZpZyI6eyJIb3N0bmFtZSI6IjYwZGMzNGVjODIxZSIsIkRvbWFpbm5hbWUiOiIiLCJVc2VyIjoiIiwiQXR0YWNoU3RkaW4iOmZhbHNlLCJBdHRhY2hTdGRvdXQiOmZhbHNlLCJBdHRhY2hTdGRlcnIiOmZhbHNlLCJFeHBvc2VkUG9ydHMiOnsiMjE4MS90Y3AiOnt9LCIyODg4L3RjcCI6e30sIjM4ODgvdGNwIjp7fSwiODA4MC90Y3AiOnt9fSwiVHR5IjpmYWxzZSwiT3BlblN0ZGluIjpmYWxzZSwiU3RkaW5PbmNlIjpmYWxzZSwiRW52IjpbIlBBVEg9L29wdC9qYXZhL29wZW5qZGsvYmluOi91c3IvbG9jYWwvc2JpbjovdXNyL2xvY2FsL2JpbjovdXNyL3NiaW46L3Vzci9iaW46L3NiaW46L2JpbjovYXBhY2hlLXpvb2tlZXBlci0zLjguMi1iaW4vYmluIiwiSkFWQV9IT01FPS9vcHQvamF2YS9vcGVuamRrIiwiTEFORz1lbl9VUy5VVEYtOCIsIkxBTkdVQUdFPWVuX1VTOmVuIiwiTENfQUxMPWVuX1VTLlVURi04IiwiSkFWQV9WRVJTSU9OPWpkay0xMS4wLjIwLjErMSIsIlpPT19DT05GX0RJUj0vY29uZiIsIlpPT19EQVRBX0RJUj0vZGF0YSIsIlpPT19EQVRBX0xPR19ESVI9L2RhdGFsb2ciLCJaT09fTE9HX0RJUj0vbG9ncyIsIlpPT19USUNLX1RJTUU9MjAwMCIsIlpPT19JTklUX0xJTUlUPTUiLCJaT09fU1lOQ19MSU1JVD0yIiwiWk9PX0FVVE9QVVJHRV9QVVJHRUlOVEVSVkFMPTAiLCJaT09fQVVUT1BVUkdFX1NOQVBSRVRBSU5DT1VOVD0zIiwiWk9PX01BWF9DTElFTlRfQ05YTlM9NjAiLCJaT09fU1RBTkRBTE9ORV9FTkFCTEVEPXRydWUiLCJaT09fQURNSU5TRVJWRVJfRU5BQkxFRD10cnVlIiwiWk9PQ0ZHRElSPS9jb25mIl0sIkNtZCI6WyIvYmluL3NoIiwiLWMiLCIjKG5vcCkgIiwiTEFCRUwgb3JpZ19pbWFnZV9kaWdlc3Q9c2hhMjU2OjIwNGYxMGY3MzUzZDJiOWYzYmYxZmNmMDM3Y2FiYzQ1NTA1NzZkNmU5Y2ExYmVhMjc3ZDI5OTQ0ZGRmNjg1ZTMiXSwiSW1hZ2UiOiJzaGEyNTY6ZmZlNWQwZmRlOTUxNTJiYTA1MTk3ZDAxYzYxOWFjYjI3YzUxNzRjMmRmMjkwMmJkODdiMzU1N2EyN2U0YjFmNCIsIlZvbHVtZXMiOnsiL2RhdGEiOnt9LCIvZGF0YWxvZyI6e30sIi9sb2dzIjp7fX0sIldvcmtpbmdEaXIiOiIvYXBhY2hlLXpvb2tlZXBlci0zLjguMi1iaW4iLCJFbnRyeXBvaW50IjpbIi9kb2NrZXItZW50cnlwb2ludC5zaCJdLCJPbkJ1aWxkIjpudWxsLCJMYWJlbHMiOnsiaW8uYnVpbGRhaC52ZXJzaW9uIjoiMS4yOS4wIiwib3JnLm9wZW5jb250YWluZXJzLmltYWdlLnJlZi5uYW1lIjoidWJ1bnR1Iiwib3JnLm9wZW5jb250YWluZXJzLmltYWdlLnZlcnNpb24iOiIyMi4wNCIsIm9yaWdfaW1hZ2VfZGlnZXN0Ijoic2hhMjU2OjIwNGYxMGY3MzUzZDJiOWYzYmYxZmNmMDM3Y2FiYzQ1NTA1NzZkNmU5Y2ExYmVhMjc3ZDI5OTQ0ZGRmNjg1ZTMiLCJyZi5hNGI0ZmFjYi1mMzE1LTQyODItYmM2NC1lMDE0MmZmZDlkYWQiOiJkb2NrZXIuaW8vbGlicmFyeS96b29rZWVwZXI6My44LjItdGVtdXJpbiIsInJmX2ltYWdlX2d1aWQuZDYxMTIyZWYtZWFjYy00Nzg5LTg4YzctYWE1YjI0YjgxYmE4IjoiZDYxMTIyZWYtZWFjYy00Nzg5LTg4YzctYWE1YjI0YjgxYmE4In19LCJjcmVhdGVkIjoiMjAyMy0xMC0wM1QxMzo1NzoyNi4xODgyNTkyNjlaIiwiZG9ja2VyX3ZlcnNpb24iOiIyNC4wLjYiLCJoaXN0b3J5IjpbeyJjcmVhdGVkIjoiMjAyMy0xMC0wM1QxMzo1Njo1MS4xOTY3NzI2NFoiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgQUREIGZpbGU6NjUxZGVhOTFiM2UyOTVkYTBmZDliMGI5OTEwOGI1NTJkN2E1MjUzMTE0NTQ3YWVhYTQ5NjIzYmUxODg2M2VmYyBpbiAvICJ9LHsiY3JlYXRlZCI6IjIwMjMtMTAtMDNUMTM6NTY6NTIuNDUxODY1MTI2WiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSBMQUJFTCBcIm9yZy5vcGVuY29udGFpbmVycy5pbWFnZS5yZWYubmFtZVwiPVwidWJ1bnR1XCIgXCJvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UudmVyc2lvblwiPVwiMjIuMDRcIiBcInJmLmE0YjRmYWNiLWYzMTUtNDI4Mi1iYzY0LWUwMTQyZmZkOWRhZFwiPVwiZG9ja2VyLmlvL2xpYnJhcnkvem9va2VlcGVyOjMuOC4yLXRlbXVyaW5cIiIsImNvbW1lbnQiOiJGUk9NIDk0YjE3NTM5ZjAxMyIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDIzLTEwLTAzVDEzOjU2OjUyLjQ4MzQxODc3MloiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgRU5WIFBBVEg9XCIvb3B0L2phdmEvb3Blbmpkay9iaW46L3Vzci9sb2NhbC9zYmluOi91c3IvbG9jYWwvYmluOi91c3Ivc2JpbjovdXNyL2Jpbjovc2JpbjovYmluOi9hcGFjaGUtem9va2VlcGVyLTMuOC4yLWJpbi9iaW5cIiBKQVZBX0hPTUU9XCIvb3B0L2phdmEvb3Blbmpka1wiIExBTkc9XCJlbl9VUy5VVEYtOFwiIExBTkdVQUdFPVwiZW5fVVM6ZW5cIiBMQ19BTEw9XCJlbl9VUy5VVEYtOFwiIEpBVkFfVkVSU0lPTj1cImpkay0xMS4wLjIwLjErMVwiIFpPT19DT05GX0RJUj1cIi9jb25mXCIgWk9PX0RBVEFfRElSPVwiL2RhdGFcIiBaT09fREFUQV9MT0dfRElSPVwiL2RhdGFsb2dcIiBaT09fTE9HX0RJUj1cIi9sb2dzXCIgWk9PX1RJQ0tfVElNRT1cIjIwMDBcIiBaT09fSU5JVF9MSU1JVD1cIjVcIiBaT09fU1lOQ19MSU1JVD1cIjJcIiBaT09fQVVUT1BVUkdFX1BVUkdFSU5URVJWQUw9XCIwXCIgWk9PX0FVVE9QVVJHRV9TTkFQUkVUQUlOQ09VTlQ9XCIzXCIgWk9PX01BWF9DTElFTlRfQ05YTlM9XCI2MFwiIFpPT19TVEFOREFMT05FX0VOQUJMRUQ9XCJ0cnVlXCIgWk9PX0FETUlOU0VSVkVSX0VOQUJMRUQ9XCJ0cnVlXCIgWk9PQ0ZHRElSPVwiL2NvbmZcIiAiLCJjb21tZW50IjoiRlJPTSBlZDdhYzFhOTMwOGEiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyMy0xMC0wM1QxMzo1Njo1Mi41MTg5NzcwNTlaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApIEVYUE9TRSAgMjE4MS90Y3AgMjg4OC90Y3AgMzg4OC90Y3AgODA4MC90Y3AiLCJjb21tZW50IjoiRlJPTSBhNDg5NDYyZDAwYWUiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyMy0xMC0wM1QxMzo1Njo1Mi41NzIzODM3MjFaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApIFZPTFVNRSBbXCIvZGF0YVwiLCBcIi9kYXRhbG9nXCIsIFwiL2xvZ3NcIl0iLCJjb21tZW50IjoiRlJPTSA1ZmZhY2E2ZGFiYzMiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyMy0xMC0wM1QxMzo1Njo1Mi42MzU1Mjc4MTJaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApIFdPUktESVIgL2FwYWNoZS16b29rZWVwZXItMy44LjItYmluIiwiY29tbWVudCI6IkZST00gYWMxOTlkNGE0ZTliIiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjMtMTAtMDNUMTM6NTY6NTIuNjk1NDk5MjI5WiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSBFTlRSWVBPSU5UIFtcIi9kb2NrZXItZW50cnlwb2ludC5zaFwiXSIsImNvbW1lbnQiOiJGUk9NIDIwZjZjMzI1NzE4ZiIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDIzLTEwLTAzVDEzOjU2OjUyLjc1NjM4NDQ4NFoiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgQ01EIFtcInprU2VydmVyLnNoXCIsIFwic3RhcnQtZm9yZWdyb3VuZFwiXSIsImNvbW1lbnQiOiJGUk9NIDk3OTIyMTg4MTFkZSIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDIzLTEwLTAzVDEzOjU2OjUyLjg4MjUyMzUxNFoiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgTEFCRUwgXCJyZl9pbWFnZV9ndWlkLmQ2MTEyMmVmLWVhY2MtNDc4OS04OGM3LWFhNWIyNGI4MWJhOFwiPVwiZDYxMTIyZWYtZWFjYy00Nzg5LTg4YzctYWE1YjI0YjgxYmE4XCIiLCJjb21tZW50IjoiRlJPTSBkY2RmOTVmN2ExZDkiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyMy0xMC0wM1QxMzo1NzoxNC4wNjY2NjcyMjRaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApICBMQUJFTCBvcmlnX2ltYWdlX2RpZ2VzdD1zaGEyNTY6MjA0ZjEwZjczNTNkMmI5ZjNiZjFmY2YwMzdjYWJjNDU1MDU3NmQ2ZTljYTFiZWEyNzdkMjk5NDRkZGY2ODVlMyIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDIzLTEwLTAzVDEzOjU3OjI2LjE4ODI1OTI2OVoiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgIExBQkVMIG9yaWdfaW1hZ2VfZGlnZXN0PXNoYTI1NjoyMDRmMTBmNzM1M2QyYjlmM2JmMWZjZjAzN2NhYmM0NTUwNTc2ZDZlOWNhMWJlYTI3N2QyOTk0NGRkZjY4NWUzIiwiZW1wdHlfbGF5ZXIiOnRydWV9XSwib3MiOiJsaW51eCIsInJvb3RmcyI6eyJ0eXBlIjoibGF5ZXJzIiwiZGlmZl9pZHMiOlsic2hhMjU2OmUzNzg2MDRiNmUwZGExMmI0NTgzNTY5NWM0MGY2ZDU4MzcxMzE5Yzc4MjhkZTc5M2Y5MzNjN2UzNDMwNzhhNzEiXX19",
+   "repoDigests": [
+    "rapidfort/zookeeper-official@sha256:e5b6660d4b69d34139074da72a5c3b85f739df1d4052ab1dbbeb9596ca2b2c20"
+   ],
+   "architecture": "amd64",
+   "os": "linux"
+  }
+ },
+ "distro": {
+  "name": "ubuntu",
+  "version": "22.04",
+  "idLike": [
+   "debian"
+  ]
+ },
+ "descriptor": {
+  "name": "",
+  "version": "",
+  "configuration": {
+   "output": [
+    "json"
+   ],
+   "file": "",
+   "distro": "",
+   "add-cpes-if-none": false,
+   "output-template-file": "",
+   "check-for-app-update": true,
+   "only-fixed": false,
+   "only-notfixed": false,
+   "platform": "",
+   "search": {
+    "scope": "Squashed",
+    "unindexed-archives": false,
+    "indexed-archives": true
+   },
+   "ignore": null,
+   "exclude": [],
+   "db": {
+    "cache-dir": "/home/anon/.cache/grype/db",
+    "update-url": "https://toolbox-data.anchore.io/grype/databases/listing.json",
+    "ca-cert": "",
+    "auto-update": true,
+    "validate-by-hash-on-start": false,
+    "validate-age": true,
+    "max-allowed-built-age": 432000000000000
+   },
+   "externalSources": {
+    "enable": false,
+    "maven": {
+     "searchUpstreamBySha1": true,
+     "baseUrl": "https://search.maven.org/solrsearch/select"
+    }
+   },
+   "match": {
+    "java": {
+     "using-cpes": true
+    },
+    "dotnet": {
+     "using-cpes": true
+    },
+    "golang": {
+     "using-cpes": true
+    },
+    "javascript": {
+     "using-cpes": true
+    },
+    "python": {
+     "using-cpes": true
+    },
+    "ruby": {
+     "using-cpes": true
+    },
+    "stock": {
+     "using-cpes": true
+    }
+   },
+   "fail-on-severity": "",
+   "registry": {
+    "insecure-skip-tls-verify": false,
+    "insecure-use-http": false,
+    "auth": null,
+    "ca-cert": ""
+   },
+   "show-suppressed": false,
+   "by-cve": false,
+   "name": "",
+   "default-image-pull-source": "",
+   "vex-documents": [],
+   "vex-add": []
+  },
+  "db": {
+   "built": "2023-10-05T01:24:28Z",
+   "schemaVersion": 5,
+   "location": "/home/anon/.cache/grype/db/5",
+   "checksum": "sha256:0aa4480307da25db6ef6dfb3c3fbeee0ca495c184f8a1314964dfb80ce57a17e",
+   "error": null
+  },
+  "timestamp": "2023-10-05T22:43:42.484729583-04:00"
+ }
+}
