@@ -23,8 +23,9 @@ class ImageProcessor:
         cmd = f"docker image rm {image_full_name}"
         os.system(cmd)
     
-    def process(self, registry_domain: str, registry_path: str,
-             image_name: str, tag: str, compare_id: str):
+    def process(self, registry_type: str, image_type: str,
+                registry_domain: str, registry_path: str,
+                image_name: str, tag: str):
         if len(self.scanners) == 0:
             print("0 scanners specified. Nothing to do!")
             return
@@ -33,8 +34,7 @@ class ImageProcessor:
                                           image_name, tag)
 
         for sc in self.scanners:
-            sc.scan(registry_domain, registry_path, image_name,
-                    tag, compare_id)
+            sc.scan(registry_type, image_type, full_name)
             
         self._rm_image(full_name)
 
@@ -68,13 +68,13 @@ def main():
     
     with open(IMAGES_JSON_PATH, "r") as fp:
         for image in json.load(fp)["images"]:
-            compare_id = image["name"]
             for registry in image["registries"]:
-                proc.process(registry["domain"],
+                proc.process(registry["name"],
+                             image["name"],
+                             registry["domain"],
                              registry["path"],
                              registry["image_name"],
-                             registry["tag"],
-                             compare_id)
+                             registry["tag"])
 
 
 if __name__ == "__main__":

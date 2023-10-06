@@ -1,2 +1,0 @@
-[31m1 error occurred:
-	* failed to construct source from user input "cgr.dev/chainguard/grafana:latest": unable to load image: unable to use DockerDaemon source: pull failed: Error response from daemon: Head "https://cgr.dev/v2/chainguard/grafana/manifests/latest": unknown: Forbidden[0m

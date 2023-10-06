@@ -25,27 +25,11 @@ class ReportParser:
             except json.decoder.JSONDecodeError:
                 raise ReportParserError
     
-    def registry_domain(self) -> int:
+    def registry_type(self) -> int:
         return self.report_file_name.split("_")[0]
     
-    def registry_path(self) -> int:
-        return self.report_file_name.split("_")[1]
-    
-    def image_name(self) -> int:
-        return self.report_file_name.split("_")[2]
-    
-    def image_tag(self) -> int:
-        return self.report_file_name.split("_")[3]
-    
-    def report_type(self) -> str:
-        if self.registry_path() == "chainguard":
-            return "chainguard"
-        if self.registry_path() == "rapidfort":
-            return "rapidfort"
-        return "other"
-    
-    def compare_id(self) -> int:
-        return self.report_file_name.split("_")[4].split(".")[0]
+    def image_type(self) -> int:
+        return self.report_file_name.split("_")[1].split(".")[0]
     
     def ds(self) -> pd.DataFrame:
         raise NotImplementedError
@@ -63,13 +47,9 @@ class MetadataReportParser(ReportParser):
     
     def ds(self) -> pd.DataFrame:
         metadata = {
-            "registry_domain": self.registry_domain(),
-            "registry_path": self.registry_path(),
-            "image_name": self.image_name(),
-            "image_tag": self.image_tag(),
-            "compare_id": self.compare_id(),
+            "registry_type": self.registry_type(),
+            "image_type": self.image_type(),
             "image_size": self.image_size(),
-            "report_type": self.report_type()
         }
         
         return pd.DataFrame(metadata, index=[0])
@@ -80,12 +60,7 @@ class GrypeReportParser(ReportParser):
         super().__init__(report_path)
     
     def ds(self) -> pd.DataFrame:
-        df = pd.DataFrame(columns=["registry_domain",
-                                   "registry_path",
-                                   "image_name",
-                                   "image_tag",
-                                   "severity",
-                                   "type"])
+        df = pd.DataFrame()
         for match in self.report["matches"]:
             vdata = {
                 "severity": match["vulnerability"]["severity"].lower(),
@@ -93,12 +68,8 @@ class GrypeReportParser(ReportParser):
             }
 
             vdata.update({
-                "registry_domain": self.registry_domain(),
-                "registry_path": self.registry_path(),
-                "image_name": self.image_name(),
-                "image_tag": self.image_tag(),
-                "compare_id": self.compare_id(),
-                "report_type": self.report_type()
+                "registry_type": self.registry_type(),
+                "image_type": self.image_type(),
             })
 
             df = pd.concat([df, pd.DataFrame(vdata, index=[0])],
@@ -111,12 +82,7 @@ class SyftReportParser(ReportParser):
         super().__init__(report_path)
     
     def ds(self) -> pd.DataFrame:
-        df = pd.DataFrame(columns=["registry_domain",
-                                   "registry_path",
-                                   "image_name",
-                                   "image_tag",
-                                   "component_name",
-                                   "type"])
+        df = pd.DataFrame()
         for art in self.report["artifacts"]:
             cdata = {
                 "component_name": art["name"],
@@ -131,12 +97,8 @@ class SyftReportParser(ReportParser):
             #     })
 
             cdata.update({
-                "registry_domain": self.registry_domain(),
-                "registry_path": self.registry_path(),
-                "image_name": self.image_name(),
-                "image_tag": self.image_tag(),
-                "compare_id": self.compare_id(),
-                "report_type": self.report_type()
+                "registry_type": self.registry_type(),
+                "image_type": self.image_type(),
             })
 
             df = pd.concat([df, pd.DataFrame(cdata, index=[0])],
