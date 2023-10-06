@@ -73,7 +73,7 @@ def main():
     vuln_df = build_grype_ds(os.path.join(reports_dir, "grype"))
     vuln_df.to_csv(os.path.join(out_dir, VULNS_CSV), index=False)
 
-    comps_df = build_metadata_ds(os.path.join(reports_dir, "syft"))
+    comps_df = build_syft_ds(os.path.join(reports_dir, "syft"))
     comps_df.to_csv(os.path.join(out_dir, COMPONENTS_CSV), index=False)
 
 

@@ -37,6 +37,13 @@ class ReportParser:
     def image_tag(self) -> int:
         return self.report_file_name.split("_")[3]
     
+    def report_type(self) -> str:
+        if self.registry_path() == "chainguard":
+            return "chainguard"
+        if self.registry_path() == "rapidfort":
+            return "rapidfort"
+        return "other"
+    
     def compare_id(self) -> int:
         return self.report_file_name.split("_")[4].split(".")[0]
     
@@ -53,13 +60,6 @@ class MetadataReportParser(ReportParser):
             return self.report["source"]["target"]["imageSize"]
         except KeyError:
             return 0
-    
-    def report_type(self) -> str:
-        if self.registry_path() == "chainguard":
-            return "chainguard"
-        if self.registry_path() == "rapidfort":
-            return "rapidfort"
-        return "other"
     
     def ds(self) -> pd.DataFrame:
         metadata = {
@@ -98,6 +98,7 @@ class GrypeReportParser(ReportParser):
                 "image_name": self.image_name(),
                 "image_tag": self.image_tag(),
                 "compare_id": self.compare_id(),
+                "report_type": self.report_type()
             })
 
             df = pd.concat([df, pd.DataFrame(vdata, index=[0])],
@@ -135,6 +136,7 @@ class SyftReportParser(ReportParser):
                 "image_name": self.image_name(),
                 "image_tag": self.image_tag(),
                 "compare_id": self.compare_id(),
+                "report_type": self.report_type()
             })
 
             df = pd.concat([df, pd.DataFrame(cdata, index=[0])],
