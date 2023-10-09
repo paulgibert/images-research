@@ -1,4 +1,5 @@
 from typing import Dict, List, Iterable
+import matplotlib
 import matplotlib.pyplot as plt
 from matplotlib.axes import Axes
 import numpy as np
@@ -63,24 +64,44 @@ def plot_hlines(ax: Axes, members: Dict[str, float], control_member: str, groups
     ax.set_yticks(y, groups)
     ax.legend(loc='lower right', ncols=1)
 
+
+def plot_stack(ax: Axes, members: Dict[str, float], control_member: str, groups: List[str],
+                colors: Dict[str, str]):
+    n_groups = len(groups)
+
+    # Sort groups by control_member size
+    x = np.arange(n_groups)
+    yi = np.argsort(members[control_member])
+
+    # Plot points for each non-control member
+    labeled = False
+    for i, x in enumerate(yi):
+        y = [mem_y[x] for mem_y in members.values()]
+        zorders = np.argsort(y)
+        for mem, _y, z in zip(list(members.keys()), y, zorders):
+            clr = colors[mem]
+            label = None if labeled else mem
+            ax.barh(i, _y, height=.9, color=clr, zorder=-z, label=label)
+        labeled = True
     
+    ax.set_yticks(yi, groups, fontsize=8)
+    ax.legend(loc='lower right', ncols=1)
+
+    
+
 if __name__ == "__main__":
     fig, ax = plt.subplots()
     members = {
         "chainguard": [3, 7, 4],
-        "alpine": [6, 10, 5],
         "rapidfort": [12, 21, 15],
-        "slim.ai": [15, 37, 22],
         "original": [50, 123, 92]
     }
     groups = ["redis", "mongodb", "nginx"]
     colors = {
         "chainguard": "purple",
-        "alpine": "pink",
         "rapidfort": "red",
-        "slim.ai": "blue",
         "original": "grey"
     }
     
-    plot_hlines(ax, members, "original", groups, colors)
+    plot_stack(ax, members, "original", groups, colors)
     plt.show()
