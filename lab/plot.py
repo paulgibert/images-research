@@ -37,21 +37,50 @@ def plot_hbar_groups(ax: Axes, members: Dict[str, any],
     ax.legend(loc='upper right', ncols=1)
 
 
+def plot_hlines(ax: Axes, members: Dict[str, float], control_member: str, groups: List[str],
+                colors: Dict[str, str]):
+    n_groups = len(groups)
+
+    # Sort groups by control_member size
+    xi = np.argsort(members[control_member])
+
+    # Plot hlines for control memeber
+    y = np.arange(n_groups)
+    xmax = np.array(members[control_member])[xi]
+    clr = colors[control_member]
+    ax.hlines(y, 0, xmax, color=clr, zorder=-1)
+    ax.scatter(xmax, y, color=clr, marker="|", zorder=-1)
+
+    # Plot points for each non-control member
+    for mem in members.keys():
+        # Skip control member - already plotted
+        if mem == control_member:
+            continue
+        x = np.array(members[mem])[xi]
+        clr = colors[mem]
+        ax.scatter(x, y, color=clr, label=mem)
+    
+    ax.set_yticks(y, groups)
+    ax.legend(loc='lower right', ncols=1)
+
+    
 if __name__ == "__main__":
     fig, ax = plt.subplots()
     members = {
-        "chainguard": [[1, 5], 5, 10],
-        "alpine": [[2, 6], 6, 12],
-        "rapidfort": [[3, 3], 7, [2, 5, 6, 2, 1, 0]],
-        "slim.ai": [[4, 1], 8, 16]
+        "chainguard": [3, 7, 4],
+        "alpine": [6, 10, 5],
+        "rapidfort": [12, 21, 15],
+        "slim.ai": [15, 37, 22],
+        "original": [50, 123, 92]
     }
     groups = ["redis", "mongodb", "nginx"]
     colors = {
-        "chainguard": ["lightblue", "blue"],
-        "alpine": ["pink", "red"],
-        "rapidfort": ["red", "black"],
-        "slim.ai": ["yellow"]
+        "chainguard": "purple",
+        "alpine": "pink",
+        "rapidfort": "red",
+        "slim.ai": "blue",
+        "original": "grey"
     }
-
-    plot_hbar_groups(ax, members, groups, colors)
+    
+    plot_hlines(ax, members, "original", groups, colors)
     plt.show()
