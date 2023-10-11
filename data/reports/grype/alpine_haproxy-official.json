@@ -1,0 +1,297 @@
+{
+ "matches": [
+  {
+   "vulnerability": {
+    "id": "CVE-2023-0056",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-0056",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://access.redhat.com/security/cve/CVE-2023-0056"
+    ],
+    "description": "An uncontrolled resource consumption vulnerability was discovered in HAProxy which could crash the service. This issue could allow an authenticated remote attacker to run a specially crafted malicious server in an OpenShift cluster. The biggest impact is to availability.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 6.5,
+       "exploitabilityScore": 2.8,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "stock-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:haproxy:haproxy:2.8.3:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "haproxy",
+       "version": "2.8.3"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2023-0056",
+      "versionConstraint": "none (unknown)",
+      "cpes": [
+       "cpe:2.3:a:haproxy:haproxy:-:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "8619d1178fc6fbe0",
+    "name": "haproxy",
+    "version": "2.8.3",
+    "type": "binary",
+    "locations": [
+     {
+      "path": "/usr/local/sbin/haproxy",
+      "layerID": "sha256:c8405edbf49ae2ccf6ed7d0dc68a3192638940fb0d222a20ccb66452b20a5e34"
+     }
+    ],
+    "language": "",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:haproxy:haproxy:2.8.3:*:*:*:*:*:*:*",
+     "cpe:2.3:a:haproxy:haproxy:2.8.3:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:generic/haproxy@2.8.3",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2016-2102",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2016-2102",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://bugzilla.redhat.com/show_bug.cgi?id=1311145"
+    ],
+    "description": "HAProxy statistics in openstack-tripleo-image-elements are non-authenticated over the network.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "2.0",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+      "metrics": {
+       "baseScore": 5,
+       "exploitabilityScore": 10,
+       "impactScore": 2.9
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.0",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+      "metrics": {
+       "baseScore": 5.3,
+       "exploitabilityScore": 3.9,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "stock-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:haproxy:haproxy:2.8.3:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "haproxy",
+       "version": "2.8.3"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2016-2102",
+      "versionConstraint": "none (unknown)",
+      "cpes": [
+       "cpe:2.3:a:haproxy:haproxy:-:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "8619d1178fc6fbe0",
+    "name": "haproxy",
+    "version": "2.8.3",
+    "type": "binary",
+    "locations": [
+     {
+      "path": "/usr/local/sbin/haproxy",
+      "layerID": "sha256:c8405edbf49ae2ccf6ed7d0dc68a3192638940fb0d222a20ccb66452b20a5e34"
+     }
+    ],
+    "language": "",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:haproxy:haproxy:2.8.3:*:*:*:*:*:*:*",
+     "cpe:2.3:a:haproxy:haproxy:2.8.3:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:generic/haproxy@2.8.3",
+    "upstreams": []
+   }
+  }
+ ],
+ "source": {
+  "type": "image",
+  "target": {
+   "userInput": "docker.io/haproxy:alpine",
+   "imageID": "sha256:25a2b59d138b1069d32eb9ca7b10e6061eb47aa05dfbf51723e51eedf24a25a2",
+   "manifestDigest": "sha256:5d01b693b75688bb2647c3d73a4ff5aa5c749b5dbc085a829222437974e1207e",
+   "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+   "tags": [
+    "haproxy:alpine"
+   ],
+   "imageSize": 24279723,
+   "layers": [
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:cc2447e1835a40530975ab80bb1f872fbab0f2a0faecf2ab16fbbb89b3589438",
+     "size": 7330497
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:ecc6e9273c0780f9fff09fe083fc66815fad008efe6ee9b1b9ec937254ba584e",
+     "size": 4707
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:c8405edbf49ae2ccf6ed7d0dc68a3192638940fb0d222a20ccb66452b20a5e34",
+     "size": 16944102
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:7b18fdb665ccbd37354a0e8ebbf5db2f550ca02f1699130295fdaf75729a60f8",
+     "size": 417
+    }
+   ],
+   "manifest": "eyJzY2hlbWFWZXJzaW9uIjoyLCJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmRpc3RyaWJ1dGlvbi5tYW5pZmVzdC52Mitqc29uIiwiY29uZmlnIjp7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuY29udGFpbmVyLmltYWdlLnYxK2pzb24iLCJzaXplIjo1MjYzLCJkaWdlc3QiOiJzaGEyNTY6MjVhMmI1OWQxMzhiMTA2OWQzMmViOWNhN2IxMGU2MDYxZWI0N2FhMDVkZmJmNTE3MjNlNTFlZWRmMjRhMjVhMiJ9LCJsYXllcnMiOlt7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjo3NjI1NzI4LCJkaWdlc3QiOiJzaGEyNTY6Y2MyNDQ3ZTE4MzVhNDA1MzA5NzVhYjgwYmIxZjg3MmZiYWIwZjJhMGZhZWNmMmFiMTZmYmJiODliMzU4OTQzOCJ9LHsibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vdm5kLmRvY2tlci5pbWFnZS5yb290ZnMuZGlmZi50YXIuZ3ppcCIsInNpemUiOjEyODAwLCJkaWdlc3QiOiJzaGEyNTY6ZWNjNmU5MjczYzA3ODBmOWZmZjA5ZmUwODNmYzY2ODE1ZmFkMDA4ZWZlNmVlOWIxYjllYzkzNzI1NGJhNTg0ZSJ9LHsibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vdm5kLmRvY2tlci5pbWFnZS5yb290ZnMuZGlmZi50YXIuZ3ppcCIsInNpemUiOjE2OTczODI0LCJkaWdlc3QiOiJzaGEyNTY6Yzg0MDVlZGJmNDlhZTJjY2Y2ZWQ3ZDBkYzY4YTMxOTI2Mzg5NDBmYjBkMjIyYTIwY2NiNjY0NTJiMjBhNWUzNCJ9LHsibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vdm5kLmRvY2tlci5pbWFnZS5yb290ZnMuZGlmZi50YXIuZ3ppcCIsInNpemUiOjM1ODQsImRpZ2VzdCI6InNoYTI1Njo3YjE4ZmRiNjY1Y2NiZDM3MzU0YTBlOGViYmY1ZGIyZjU1MGNhMDJmMTY5OTEzMDI5NWZkYWY3NTcyOWE2MGY4In1dfQ==",
+   "config": "eyJhcmNoaXRlY3R1cmUiOiJhbWQ2NCIsImNvbmZpZyI6eyJIb3N0bmFtZSI6IiIsIkRvbWFpbm5hbWUiOiIiLCJVc2VyIjoiaGFwcm94eSIsIkF0dGFjaFN0ZGluIjpmYWxzZSwiQXR0YWNoU3Rkb3V0IjpmYWxzZSwiQXR0YWNoU3RkZXJyIjpmYWxzZSwiVHR5IjpmYWxzZSwiT3BlblN0ZGluIjpmYWxzZSwiU3RkaW5PbmNlIjpmYWxzZSwiRW52IjpbIlBBVEg9L3Vzci9sb2NhbC9zYmluOi91c3IvbG9jYWwvYmluOi91c3Ivc2JpbjovdXNyL2Jpbjovc2JpbjovYmluIiwiSEFQUk9YWV9WRVJTSU9OPTIuOC4zIiwiSEFQUk9YWV9VUkw9aHR0cHM6Ly93d3cuaGFwcm94eS5vcmcvZG93bmxvYWQvMi44L3NyYy9oYXByb3h5LTIuOC4zLnRhci5neiIsIkhBUFJPWFlfU0hBMjU2PTllY2M2ZmZlNjdhOTc3ZDFlZDI3OTEwN2JiZGFiNzkwZDczYWUyYTYyNmJjMzhlZWUyM2ZhMWY2Nzg2YTc1OWUiXSwiQ21kIjpbImhhcHJveHkiLCItZiIsIi91c3IvbG9jYWwvZXRjL2hhcHJveHkvaGFwcm94eS5jZmciXSwiSW1hZ2UiOiJzaGEyNTY6ZTA4ZjlmODhmMThmZmE4YTM2ZDE3MjhiOTg1MjQ0MTAzMWZjOTE1OGEzYTkxYmI3YmNjM2I0NGMxZjc3MDdiMCIsIlZvbHVtZXMiOm51bGwsIldvcmtpbmdEaXIiOiIvdmFyL2xpYi9oYXByb3h5IiwiRW50cnlwb2ludCI6WyJkb2NrZXItZW50cnlwb2ludC5zaCJdLCJPbkJ1aWxkIjpudWxsLCJMYWJlbHMiOm51bGwsIlN0b3BTaWduYWwiOiJTSUdVU1IxIn0sImNvbnRhaW5lciI6Ijg2NGJhZjk0MTM5NjM5YmYyNjY4NzgwZDFiODJlNzc5YjA0N2U2N2RmZWY3YzU1MDVhYzNkYzkyYjc2MWY4MTIiLCJjb250YWluZXJfY29uZmlnIjp7Ikhvc3RuYW1lIjoiODY0YmFmOTQxMzk2IiwiRG9tYWlubmFtZSI6IiIsIlVzZXIiOiJoYXByb3h5IiwiQXR0YWNoU3RkaW4iOmZhbHNlLCJBdHRhY2hTdGRvdXQiOmZhbHNlLCJBdHRhY2hTdGRlcnIiOmZhbHNlLCJUdHkiOmZhbHNlLCJPcGVuU3RkaW4iOmZhbHNlLCJTdGRpbk9uY2UiOmZhbHNlLCJFbnYiOlsiUEFUSD0vdXNyL2xvY2FsL3NiaW46L3Vzci9sb2NhbC9iaW46L3Vzci9zYmluOi91c3IvYmluOi9zYmluOi9iaW4iLCJIQVBST1hZX1ZFUlNJT049Mi44LjMiLCJIQVBST1hZX1VSTD1odHRwczovL3d3dy5oYXByb3h5Lm9yZy9kb3dubG9hZC8yLjgvc3JjL2hhcHJveHktMi44LjMudGFyLmd6IiwiSEFQUk9YWV9TSEEyNTY9OWVjYzZmZmU2N2E5NzdkMWVkMjc5MTA3YmJkYWI3OTBkNzNhZTJhNjI2YmMzOGVlZTIzZmExZjY3ODZhNzU5ZSJdLCJDbWQiOlsiL2Jpbi9zaCIsIi1jIiwiIyhub3ApICIsIkNNRCBbXCJoYXByb3h5XCIgXCItZlwiIFwiL3Vzci9sb2NhbC9ldGMvaGFwcm94eS9oYXByb3h5LmNmZ1wiXSJdLCJJbWFnZSI6InNoYTI1NjplMDhmOWY4OGYxOGZmYThhMzZkMTcyOGI5ODUyNDQxMDMxZmM5MTU4YTNhOTFiYjdiY2MzYjQ0YzFmNzcwN2IwIiwiVm9sdW1lcyI6bnVsbCwiV29ya2luZ0RpciI6Ii92YXIvbGliL2hhcHJveHkiLCJFbnRyeXBvaW50IjpbImRvY2tlci1lbnRyeXBvaW50LnNoIl0sIk9uQnVpbGQiOm51bGwsIkxhYmVscyI6e30sIlN0b3BTaWduYWwiOiJTSUdVU1IxIn0sImNyZWF0ZWQiOiIyMDIzLTA5LTI4VDIyOjQ4OjAyLjg2MDYzNDkzNloiLCJkb2NrZXJfdmVyc2lvbiI6IjIwLjEwLjIzIiwiaGlzdG9yeSI6W3siY3JlYXRlZCI6IjIwMjMtMDktMjhUMjE6MTk6MjcuNjg2MTEwMDYzWiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSBBREQgZmlsZTo3NTYxODNiYmE5YzdmNDU5M2MyYjIxNmU5OGU0MjA4YjkxNjNjNGM5NjJlYTA4MzdlZjg4YmQ5MTc2MDlkMDAxIGluIC8gIn0seyJjcmVhdGVkIjoiMjAyMy0wOS0yOFQyMToxOToyNy44MDE0Nzk0MDlaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApICBDTUQgW1wiL2Jpbi9zaFwiXSIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDIzLTA5LTI4VDIyOjQ2OjQ1Ljc0NTEwMTY0NloiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyBzZXQgLWV1eDsgXHRhZGRncm91cCAtLWdpZCA5OSAtLXN5c3RlbSBoYXByb3h5OyBcdGFkZHVzZXIgXHRcdC0tZGlzYWJsZWQtcGFzc3dvcmQgXHRcdC0taG9tZSAvdmFyL2xpYi9oYXByb3h5IFx0XHQtLWluZ3JvdXAgaGFwcm94eSBcdFx0LS1uby1jcmVhdGUtaG9tZSBcdFx0LS1zeXN0ZW0gXHRcdC0tdWlkIDk5IFx0XHRoYXByb3h5IFx0OyBcdG1rZGlyIC92YXIvbGliL2hhcHJveHk7IFx0Y2hvd24gaGFwcm94eTpoYXByb3h5IC92YXIvbGliL2hhcHJveHkifSx7ImNyZWF0ZWQiOiIyMDIzLTA5LTI4VDIyOjQ3OjI4LjczNTczMDczMloiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgIEVOViBIQVBST1hZX1ZFUlNJT049Mi44LjMiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyMy0wOS0yOFQyMjo0NzoyOC44MjYzNjk0MTlaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApICBFTlYgSEFQUk9YWV9VUkw9aHR0cHM6Ly93d3cuaGFwcm94eS5vcmcvZG93bmxvYWQvMi44L3NyYy9oYXByb3h5LTIuOC4zLnRhci5neiIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDIzLTA5LTI4VDIyOjQ3OjI4LjkxMzczMzA5NFoiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgIEVOViBIQVBST1hZX1NIQTI1Nj05ZWNjNmZmZTY3YTk3N2QxZWQyNzkxMDdiYmRhYjc5MGQ3M2FlMmE2MjZiYzM4ZWVlMjNmYTFmNjc4NmE3NTllIiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjMtMDktMjhUMjI6NDg6MDIuMjYwNjk4Mzk1WiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jIHNldCAtZXV4OyBcdFx0YXBrIGFkZCAtLW5vLWNhY2hlIC0tdmlydHVhbCAuYnVpbGQtZGVwcyBcdFx0Z2NjIFx0XHRsaWJjLWRldiBcdFx0bGludXgtaGVhZGVycyBcdFx0bHVhNS4zLWRldiBcdFx0bWFrZSBcdFx0b3BlbnNzbCBcdFx0b3BlbnNzbC1kZXYgXHRcdHBjcmUyLWRldiBcdFx0cmVhZGxpbmUtZGV2IFx0XHR0YXIgXHQ7IFx0XHR3Z2V0IC1PIGhhcHJveHkudGFyLmd6IFwiJEhBUFJPWFlfVVJMXCI7IFx0ZWNobyBcIiRIQVBST1hZX1NIQTI1NiAqaGFwcm94eS50YXIuZ3pcIiB8IHNoYTI1NnN1bSAtYzsgXHRta2RpciAtcCAvdXNyL3NyYy9oYXByb3h5OyBcdHRhciAteHpmIGhhcHJveHkudGFyLmd6IC1DIC91c3Ivc3JjL2hhcHJveHkgLS1zdHJpcC1jb21wb25lbnRzPTE7IFx0cm0gaGFwcm94eS50YXIuZ3o7IFx0XHRtYWtlT3B0cz0nIFx0XHRUQVJHRVQ9bGludXgtbXVzbCBcdFx0VVNFX0dFVEFERFJJTkZPPTEgXHRcdFVTRV9MVUE9MSBMVUFfSU5DPS91c3IvaW5jbHVkZS9sdWE1LjMgTFVBX0xJQj0vdXNyL2xpYi9sdWE1LjMgXHRcdFVTRV9PUEVOU1NMPTEgXHRcdFVTRV9QQ1JFMj0xIFVTRV9QQ1JFMl9KSVQ9MSBcdFx0VVNFX1BST01FWD0xIFx0XHRcdFx0RVhUUkFfT0JKUz1cIiBcdFx0XCIgXHQnOyBcdFx0bnByb2M9XCIkKGdldGNvbmYgX05QUk9DRVNTT1JTX09OTE4pXCI7IFx0ZXZhbCBcIm1ha2UgLUMgL3Vzci9zcmMvaGFwcm94eSAtaiAnJG5wcm9jJyBhbGwgJG1ha2VPcHRzXCI7IFx0ZXZhbCBcIm1ha2UgLUMgL3Vzci9zcmMvaGFwcm94eSBpbnN0YWxsLWJpbiAkbWFrZU9wdHNcIjsgXHRcdG1rZGlyIC1wIC91c3IvbG9jYWwvZXRjL2hhcHJveHk7IFx0Y3AgLVIgL3Vzci9zcmMvaGFwcm94eS9leGFtcGxlcy9lcnJvcmZpbGVzIC91c3IvbG9jYWwvZXRjL2hhcHJveHkvZXJyb3JzOyBcdHJtIC1yZiAvdXNyL3NyYy9oYXByb3h5OyBcdFx0cnVuRGVwcz1cIiQoIFx0XHRzY2FuZWxmIC0tbmVlZGVkIC0tbm9iYW5uZXIgLS1mb3JtYXQgJyVuI3AnIC0tcmVjdXJzaXZlIC91c3IvbG9jYWwgXHRcdFx0fCB0ciAnLCcgJ1xcbicgXHRcdFx0fCBzb3J0IC11IFx0XHRcdHwgYXdrICdzeXN0ZW0oXCJbIC1lIC91c3IvbG9jYWwvbGliL1wiICQxIFwiIF1cIikgPT0gMCB7IG5leHQgfSB7IHByaW50IFwic286XCIgJDEgfScgXHQpXCI7IFx0YXBrIGFkZCAtLW5vLW5ldHdvcmsgLS12aXJ0dWFsIC5oYXByb3h5LXJ1bmRlcHMgJHJ1bkRlcHM7IFx0YXBrIGRlbCAtLW5vLW5ldHdvcmsgLmJ1aWxkLWRlcHM7IFx0XHRoYXByb3h5IC12In0seyJjcmVhdGVkIjoiMjAyMy0wOS0yOFQyMjo0ODowMi4zNzkwNDExOTFaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApICBTVE9QU0lHTkFMIFNJR1VTUjEiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyMy0wOS0yOFQyMjo0ODowMi40OTUyOTE3MDZaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApIENPUFkgZmlsZTphN2RiNWVmOGRiY2Q4MzFmZjY4ZDZmZjJmYjQ1YmMzNDA1MzlhZDZkN2E1OGQ1NDMyM2ZkNzM5OWQxNTIwOTEwIGluIC91c3IvbG9jYWwvYmluLyAifSx7ImNyZWF0ZWQiOiIyMDIzLTA5LTI4VDIyOjQ4OjAyLjU5Nzc5NzQ0N1oiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgIEVOVFJZUE9JTlQgW1wiZG9ja2VyLWVudHJ5cG9pbnQuc2hcIl0iLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyMy0wOS0yOFQyMjo0ODowMi42ODY4OTk2OTNaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApICBVU0VSIGhhcHJveHkiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyMy0wOS0yOFQyMjo0ODowMi43NzU4NzY0OTJaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApIFdPUktESVIgL3Zhci9saWIvaGFwcm94eSIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDIzLTA5LTI4VDIyOjQ4OjAyLjg2MDYzNDkzNloiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgIENNRCBbXCJoYXByb3h5XCIgXCItZlwiIFwiL3Vzci9sb2NhbC9ldGMvaGFwcm94eS9oYXByb3h5LmNmZ1wiXSIsImVtcHR5X2xheWVyIjp0cnVlfV0sIm9zIjoibGludXgiLCJyb290ZnMiOnsidHlwZSI6ImxheWVycyIsImRpZmZfaWRzIjpbInNoYTI1NjpjYzI0NDdlMTgzNWE0MDUzMDk3NWFiODBiYjFmODcyZmJhYjBmMmEwZmFlY2YyYWIxNmZiYmI4OWIzNTg5NDM4Iiwic2hhMjU2OmVjYzZlOTI3M2MwNzgwZjlmZmYwOWZlMDgzZmM2NjgxNWZhZDAwOGVmZTZlZTliMWI5ZWM5MzcyNTRiYTU4NGUiLCJzaGEyNTY6Yzg0MDVlZGJmNDlhZTJjY2Y2ZWQ3ZDBkYzY4YTMxOTI2Mzg5NDBmYjBkMjIyYTIwY2NiNjY0NTJiMjBhNWUzNCIsInNoYTI1Njo3YjE4ZmRiNjY1Y2NiZDM3MzU0YTBlOGViYmY1ZGIyZjU1MGNhMDJmMTY5OTEzMDI5NWZkYWY3NTcyOWE2MGY4Il19fQ==",
+   "repoDigests": [
+    "haproxy@sha256:c6e6437bde2c9c76987e1f24287a2c62150123629151b46f69cd28088da95bb4"
+   ],
+   "architecture": "amd64",
+   "os": "linux"
+  }
+ },
+ "distro": {
+  "name": "alpine",
+  "version": "3.18.4",
+  "idLike": []
+ },
+ "descriptor": {
+  "name": "",
+  "version": "",
+  "configuration": {
+   "output": [
+    "json"
+   ],
+   "file": "",
+   "distro": "",
+   "add-cpes-if-none": false,
+   "output-template-file": "",
+   "check-for-app-update": true,
+   "only-fixed": false,
+   "only-notfixed": false,
+   "platform": "",
+   "search": {
+    "scope": "Squashed",
+    "unindexed-archives": false,
+    "indexed-archives": true
+   },
+   "ignore": null,
+   "exclude": [],
+   "db": {
+    "cache-dir": "/home/anon/.cache/grype/db",
+    "update-url": "https://toolbox-data.anchore.io/grype/databases/listing.json",
+    "ca-cert": "",
+    "auto-update": true,
+    "validate-by-hash-on-start": false,
+    "validate-age": true,
+    "max-allowed-built-age": 432000000000000
+   },
+   "externalSources": {
+    "enable": false,
+    "maven": {
+     "searchUpstreamBySha1": true,
+     "baseUrl": "https://search.maven.org/solrsearch/select"
+    }
+   },
+   "match": {
+    "java": {
+     "using-cpes": true
+    },
+    "dotnet": {
+     "using-cpes": true
+    },
+    "golang": {
+     "using-cpes": true
+    },
+    "javascript": {
+     "using-cpes": true
+    },
+    "python": {
+     "using-cpes": true
+    },
+    "ruby": {
+     "using-cpes": true
+    },
+    "stock": {
+     "using-cpes": true
+    }
+   },
+   "fail-on-severity": "",
+   "registry": {
+    "insecure-skip-tls-verify": false,
+    "insecure-use-http": false,
+    "auth": null,
+    "ca-cert": ""
+   },
+   "show-suppressed": false,
+   "by-cve": false,
+   "name": "",
+   "default-image-pull-source": "",
+   "vex-documents": [],
+   "vex-add": []
+  },
+  "db": {
+   "built": "2023-10-10T01:23:53Z",
+   "schemaVersion": 5,
+   "location": "/home/anon/.cache/grype/db/5",
+   "checksum": "sha256:c1dd693b90da9833fd1716f9d2432de66004be2bd188e882392b0076a589cbf4",
+   "error": null
+  },
+  "timestamp": "2023-10-10T16:35:03.892823647-04:00"
+ }
+}

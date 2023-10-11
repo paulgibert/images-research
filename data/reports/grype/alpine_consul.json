@@ -1,0 +1,849 @@
+{
+ "matches": [
+  {
+   "vulnerability": {
+    "id": "CVE-2022-48174",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-48174",
+    "namespace": "nvd:cpe",
+    "severity": "Critical",
+    "urls": [
+     "https://bugs.busybox.net/show_bug.cgi?id=15216"
+    ],
+    "description": "There is a stack overflow vulnerability in ash.c:6030 in busybox before 1.35. In the environment of Internet of Vehicles, this vulnerability can be executed from command to arbitrary code execution.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 9.8,
+       "exploitabilityScore": 3.9,
+       "impactScore": 5.9
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:busybox:busybox:1.34.1-r7:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "busybox",
+       "version": "1.34.1-r7"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2022-48174",
+      "versionConstraint": "< 1.35.0 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:busybox:busybox:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "1a9066e6f96ca31c",
+    "name": "busybox",
+    "version": "1.34.1-r7",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:dc48c371f0d3883ed6a15475fcb8048e6dc35a76af3ace1ac7fe99061cbb2336"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-2.0-only"
+    ],
+    "cpes": [
+     "cpe:2.3:a:busybox:busybox:1.34.1-r7:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/busybox@1.34.1-r7?arch=x86_64&distro=alpine-3.15.10",
+    "upstreams": [
+     {
+      "name": "busybox"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-38039",
+    "dataSource": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-38039",
+    "namespace": "alpine:distro:alpine:3.15",
+    "severity": "High",
+    "urls": [
+     "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-38039"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "8.3.0-r0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-38039",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-38039",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://hackerone.com/reports/2072338",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/5DCZMYODALBLVOXVJEN2LF2MLANEYL4F/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/M6KGKB2JNZVT276JYSKI6FV2VFJUGDOJ/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/TEAWTYHC3RT6ZRS5OZRHLAIENVN6CCIS/"
+     ],
+     "description": "When curl retrieves an HTTP response, it stores the incoming headers so that\nthey can be accessed later via the libcurl headers API.\n\nHowever, curl did not have a limit in how many or how large headers it would\naccept in a response, allowing a malicious server to stream an endless series\nof headers and eventually cause curl to run out of heap memory.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "alpine",
+       "version": "3.15.10"
+      },
+      "namespace": "alpine:distro:alpine:3.15",
+      "package": {
+       "name": "curl",
+       "version": "8.2.1-r0"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 8.3.0-r0 (apk)",
+      "vulnerabilityID": "CVE-2023-38039"
+     }
+    },
+    {
+     "type": "exact-direct-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "alpine",
+       "version": "3.15.10"
+      },
+      "namespace": "alpine:distro:alpine:3.15",
+      "package": {
+       "name": "curl",
+       "version": "8.2.1-r0"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 8.3.0-r0 (apk)",
+      "vulnerabilityID": "CVE-2023-38039"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "a5b177a9e72654dd",
+    "name": "curl",
+    "version": "8.2.1-r0",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:dc48c371f0d3883ed6a15475fcb8048e6dc35a76af3ace1ac7fe99061cbb2336"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "MIT"
+    ],
+    "cpes": [
+     "cpe:2.3:a:curl:curl:8.2.1-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:haxx:curl:8.2.1-r0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/curl@8.2.1-r0?arch=x86_64&distro=alpine-3.15.10",
+    "upstreams": [
+     {
+      "name": "curl"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-h828-v5pv-33qx",
+    "dataSource": "https://github.com/advisories/GHSA-h828-v5pv-33qx",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-h828-v5pv-33qx"
+    ],
+    "description": "coreDNS vulnerable to Improper Restriction of Communication Channel to Intended Endpoints",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+      "metrics": {
+       "baseScore": 6.1,
+       "exploitabilityScore": 2.8,
+       "impactScore": 2.7
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-2837",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-2837",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://bugzilla.redhat.com/show_bug.cgi?id=2118543"
+     ],
+     "description": "A flaw was found in coreDNS. This flaw allows a malicious user to redirect traffic intended for external top-level domains (TLD) to a pod they control by creating projects and namespaces that match the TLD.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+       "metrics": {
+        "baseScore": 6.1,
+        "exploitabilityScore": 2.8,
+        "impactScore": 2.7
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/coredns/coredns",
+       "version": "v1.6.6"
+      }
+     },
+     "found": {
+      "versionConstraint": "<=1.9.3 (unknown)",
+      "vulnerabilityID": "GHSA-h828-v5pv-33qx"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "f12b0ae9698b618b",
+    "name": "github.com/coredns/coredns",
+    "version": "v1.6.6",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/bin/consul",
+      "layerID": "sha256:dc48c371f0d3883ed6a15475fcb8048e6dc35a76af3ace1ac7fe99061cbb2336"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:coredns:coredns:v1.6.6:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/coredns/coredns@v1.6.6",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.20.4",
+     "architecture": "amd64",
+     "h1Digest": "h1:GFJXHHBiN2YGp4vS1tltNR0AhI1+TXhb79WT1VAS47I=",
+     "mainModule": "github.com/hashicorp/consul"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-ch7v-37xg-75ph",
+    "dataSource": "https://github.com/advisories/GHSA-ch7v-37xg-75ph",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-ch7v-37xg-75ph"
+    ],
+    "description": "coreDNS vulnerable to Improper Restriction of Communication Channel to Intended Endpoints",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N",
+      "metrics": {
+       "baseScore": 4.4,
+       "exploitabilityScore": 1.8,
+       "impactScore": 2.5
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-2835",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-2835",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://bugzilla.redhat.com/show_bug.cgi?id=2118542"
+     ],
+     "description": "A flaw was found in coreDNS. This flaw allows a malicious user to reroute internal calls to some internal services that were accessed by the FQDN in a format of <service>.<namespace>.svc.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N",
+       "metrics": {
+        "baseScore": 4.4,
+        "exploitabilityScore": 1.8,
+        "impactScore": 2.5
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/coredns/coredns",
+       "version": "v1.6.6"
+      }
+     },
+     "found": {
+      "versionConstraint": "<=1.9.3 (unknown)",
+      "vulnerabilityID": "GHSA-ch7v-37xg-75ph"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "f12b0ae9698b618b",
+    "name": "github.com/coredns/coredns",
+    "version": "v1.6.6",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/bin/consul",
+      "layerID": "sha256:dc48c371f0d3883ed6a15475fcb8048e6dc35a76af3ace1ac7fe99061cbb2336"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:coredns:coredns:v1.6.6:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/coredns/coredns@v1.6.6",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.20.4",
+     "architecture": "amd64",
+     "h1Digest": "h1:GFJXHHBiN2YGp4vS1tltNR0AhI1+TXhb79WT1VAS47I=",
+     "mainModule": "github.com/hashicorp/consul"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-8cfg-vx93-jvxw",
+    "dataSource": "https://github.com/advisories/GHSA-8cfg-vx93-jvxw",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-8cfg-vx93-jvxw"
+    ],
+    "description": "Kubernetes client-go vulnerable to Sensitive Information Leak via Log File",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:N/A:N",
+      "metrics": {
+       "baseScore": 4.7,
+       "exploitabilityScore": 1,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "0.18.14"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2020-8565",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2020-8565",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://github.com/kubernetes/kubernetes/issues/95623",
+      "https://groups.google.com/g/kubernetes-security-discuss/c/vm-HcrFUOCs/m/36utxAM5CwAJ"
+     ],
+     "description": "In Kubernetes, if the logging level is set to at least 9, authorization and bearer tokens will be written to log files. This can occur both in API server logs and client tool output like kubectl. This affects <= v1.19.3, <= v1.18.10, <= v1.17.13, < v1.20.0-alpha2.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:L/AC:L/Au:N/C:P/I:N/A:N",
+       "metrics": {
+        "baseScore": 2.1,
+        "exploitabilityScore": 3.9,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+       "metrics": {
+        "baseScore": 5.5,
+        "exploitabilityScore": 1.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "jordan@liggitt.net",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:N/A:N",
+       "metrics": {
+        "baseScore": 4.7,
+        "exploitabilityScore": 1,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "k8s.io/client-go",
+       "version": "v0.18.2"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=0.18.0,<0.18.14 (unknown)",
+      "vulnerabilityID": "GHSA-8cfg-vx93-jvxw"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "c7e6308b41d40c4d",
+    "name": "k8s.io/client-go",
+    "version": "v0.18.2",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/bin/consul",
+      "layerID": "sha256:dc48c371f0d3883ed6a15475fcb8048e6dc35a76af3ace1ac7fe99061cbb2336"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [],
+    "purl": "pkg:golang/k8s.io/client-go@v0.18.2",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.20.4",
+     "architecture": "amd64",
+     "h1Digest": "h1:aLB0iaD4nmwh7arT2wIn+lMnAq7OswjaejkQ8p9bBYE=",
+     "mainModule": "github.com/hashicorp/consul"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-38039",
+    "dataSource": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-38039",
+    "namespace": "alpine:distro:alpine:3.15",
+    "severity": "High",
+    "urls": [
+     "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-38039"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "8.3.0-r0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-38039",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-38039",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://hackerone.com/reports/2072338",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/5DCZMYODALBLVOXVJEN2LF2MLANEYL4F/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/M6KGKB2JNZVT276JYSKI6FV2VFJUGDOJ/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/TEAWTYHC3RT6ZRS5OZRHLAIENVN6CCIS/"
+     ],
+     "description": "When curl retrieves an HTTP response, it stores the incoming headers so that\nthey can be accessed later via the libcurl headers API.\n\nHowever, curl did not have a limit in how many or how large headers it would\naccept in a response, allowing a malicious server to stream an endless series\nof headers and eventually cause curl to run out of heap memory.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "alpine",
+       "version": "3.15.10"
+      },
+      "namespace": "alpine:distro:alpine:3.15",
+      "package": {
+       "name": "curl",
+       "version": "8.2.1-r0"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 8.3.0-r0 (apk)",
+      "vulnerabilityID": "CVE-2023-38039"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "ae95bcaf52e0bb8f",
+    "name": "libcurl",
+    "version": "8.2.1-r0",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:dc48c371f0d3883ed6a15475fcb8048e6dc35a76af3ace1ac7fe99061cbb2336"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "MIT"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libcurl:libcurl:8.2.1-r0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/libcurl@8.2.1-r0?arch=x86_64&upstream=curl&distro=alpine-3.15.10",
+    "upstreams": [
+     {
+      "name": "curl"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2022-48174",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-48174",
+    "namespace": "nvd:cpe",
+    "severity": "Critical",
+    "urls": [
+     "https://bugs.busybox.net/show_bug.cgi?id=15216"
+    ],
+    "description": "There is a stack overflow vulnerability in ash.c:6030 in busybox before 1.35. In the environment of Internet of Vehicles, this vulnerability can be executed from command to arbitrary code execution.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 9.8,
+       "exploitabilityScore": 3.9,
+       "impactScore": 5.9
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:busybox:busybox:1.34.1-r7:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "busybox",
+       "version": "1.34.1-r7"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2022-48174",
+      "versionConstraint": "< 1.35.0 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:busybox:busybox:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "07bd2a07891210e1",
+    "name": "ssl_client",
+    "version": "1.34.1-r7",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:dc48c371f0d3883ed6a15475fcb8048e6dc35a76af3ace1ac7fe99061cbb2336"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-2.0-only"
+    ],
+    "cpes": [
+     "cpe:2.3:a:ssl-client:ssl-client:1.34.1-r7:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ssl-client:ssl_client:1.34.1-r7:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ssl_client:ssl-client:1.34.1-r7:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ssl_client:ssl_client:1.34.1-r7:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ssl:ssl-client:1.34.1-r7:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ssl:ssl_client:1.34.1-r7:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/ssl_client@1.34.1-r7?arch=x86_64&upstream=busybox&distro=alpine-3.15.10",
+    "upstreams": [
+     {
+      "name": "busybox"
+     }
+    ]
+   }
+  }
+ ],
+ "source": {
+  "type": "image",
+  "target": {
+   "userInput": "docker.io/consul:1.15.4",
+   "imageID": "sha256:f012b134049ccd6dc2e15fb33cb577bb0076cebd1f06b9eff1c7ab3aaf156d35",
+   "manifestDigest": "sha256:e1eb4f6ed376b5d3295252fe563856e3880a55d79bfbcebc2c95f33ec9793bdf",
+   "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+   "tags": [
+    "consul:1.15.4"
+   ],
+   "imageSize": 155379239,
+   "layers": [
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:bc0a9d4e16d0b949d594bf5fc629d05200d5ddac339a899eac27190ebf12e569",
+     "size": 5585548
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:24161fab3dd1f118d8ca57d3a74b193ab4ccd3ff0895e5d166df892477a17b52",
+     "size": 4705
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:dc48c371f0d3883ed6a15475fcb8048e6dc35a76af3ace1ac7fe99061cbb2336",
+     "size": 149784660
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:fb7acbb331f284e5147aa8e73a25dab45b24286d36e6fddca4474aecaacb4b15",
+     "size": 0
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:42490e9307004eb4fa07ef5c731325082b542bf2e1ba047cd7713acd0b96ada2",
+     "size": 17
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:abca2ae8c3aa60022fce36ea8980f06e5e60378790e4db97471440804abcbdff",
+     "size": 4309
+    }
+   ],
+   "manifest": "eyJzY2hlbWFWZXJzaW9uIjoyLCJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmRpc3RyaWJ1dGlvbi5tYW5pZmVzdC52Mitqc29uIiwiY29uZmlnIjp7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuY29udGFpbmVyLmltYWdlLnYxK2pzb24iLCJzaXplIjo3ODc1LCJkaWdlc3QiOiJzaGEyNTY6ZjAxMmIxMzQwNDljY2Q2ZGMyZTE1ZmIzM2NiNTc3YmIwMDc2Y2ViZDFmMDZiOWVmZjFjN2FiM2FhZjE1NmQzNSJ9LCJsYXllcnMiOlt7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjo1ODcwNTkyLCJkaWdlc3QiOiJzaGEyNTY6YmMwYTlkNGUxNmQwYjk0OWQ1OTRiZjVmYzYyOWQwNTIwMGQ1ZGRhYzMzOWE4OTllYWMyNzE5MGViZjEyZTU2OSJ9LHsibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vdm5kLmRvY2tlci5pbWFnZS5yb290ZnMuZGlmZi50YXIuZ3ppcCIsInNpemUiOjEyMjg4LCJkaWdlc3QiOiJzaGEyNTY6MjQxNjFmYWIzZGQxZjExOGQ4Y2E1N2QzYTc0YjE5M2FiNGNjZDNmZjA4OTVlNWQxNjZkZjg5MjQ3N2ExN2I1MiJ9LHsibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vdm5kLmRvY2tlci5pbWFnZS5yb290ZnMuZGlmZi50YXIuZ3ppcCIsInNpemUiOjE1MTAzNjQxNiwiZGlnZXN0Ijoic2hhMjU2OmRjNDhjMzcxZjBkMzg4M2VkNmExNTQ3NWZjYjgwNDhlNmRjMzVhNzZhZjNhY2UxYWM3ZmU5OTA2MWNiYjIzMzYifSx7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjozMDcyLCJkaWdlc3QiOiJzaGEyNTY6ZmI3YWNiYjMzMWYyODRlNTE0N2FhOGU3M2EyNWRhYjQ1YjI0Mjg2ZDM2ZTZmZGRjYTQ0NzRhZWNhYWNiNGIxNSJ9LHsibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vdm5kLmRvY2tlci5pbWFnZS5yb290ZnMuZGlmZi50YXIuZ3ppcCIsInNpemUiOjI1NjAsImRpZ2VzdCI6InNoYTI1Njo0MjQ5MGU5MzA3MDA0ZWI0ZmEwN2VmNWM3MzEzMjUwODJiNTQyYmYyZTFiYTA0N2NkNzcxM2FjZDBiOTZhZGEyIn0seyJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmltYWdlLnJvb3Rmcy5kaWZmLnRhci5nemlwIiwic2l6ZSI6NzY4MCwiZGlnZXN0Ijoic2hhMjU2OmFiY2EyYWU4YzNhYTYwMDIyZmNlMzZlYTg5ODBmMDZlNWU2MDM3ODc5MGU0ZGI5NzQ3MTQ0MDgwNGFiY2JkZmYifV19",
+   "config": "eyJhcmNoaXRlY3R1cmUiOiJhbWQ2NCIsImNvbmZpZyI6eyJIb3N0bmFtZSI6IiIsIkRvbWFpbm5hbWUiOiIiLCJVc2VyIjoiIiwiQXR0YWNoU3RkaW4iOmZhbHNlLCJBdHRhY2hTdGRvdXQiOmZhbHNlLCJBdHRhY2hTdGRlcnIiOmZhbHNlLCJFeHBvc2VkUG9ydHMiOnsiODMwMC90Y3AiOnt9LCI4MzAxL3RjcCI6e30sIjgzMDEvdWRwIjp7fSwiODMwMi90Y3AiOnt9LCI4MzAyL3VkcCI6e30sIjg1MDAvdGNwIjp7fSwiODYwMC90Y3AiOnt9LCI4NjAwL3VkcCI6e319LCJUdHkiOmZhbHNlLCJPcGVuU3RkaW4iOmZhbHNlLCJTdGRpbk9uY2UiOmZhbHNlLCJFbnYiOlsiUEFUSD0vdXNyL2xvY2FsL3NiaW46L3Vzci9sb2NhbC9iaW46L3Vzci9zYmluOi91c3IvYmluOi9zYmluOi9iaW4iLCJIQVNISUNPUlBfUkVMRUFTRVM9aHR0cHM6Ly9yZWxlYXNlcy5oYXNoaWNvcnAuY29tIl0sIkNtZCI6WyJhZ2VudCIsIi1kZXYiLCItY2xpZW50IiwiMC4wLjAuMCJdLCJJbWFnZSI6InNoYTI1NjpkMmE4YTE3OWQ5MjVjZTBlNTE5YzAzMjZmYzQ2YzZkZDgwMWJlYzNjMDFhNmU2ODYzNmVmMjRlZTFjYTAyOWEyIiwiVm9sdW1lcyI6eyIvY29uc3VsL2RhdGEiOnt9fSwiV29ya2luZ0RpciI6IiIsIkVudHJ5cG9pbnQiOlsiZG9ja2VyLWVudHJ5cG9pbnQuc2giXSwiT25CdWlsZCI6bnVsbCwiTGFiZWxzIjp7Im9yZy5vcGVuY29udGFpbmVycy5pbWFnZS5hdXRob3JzIjoiQ29uc3VsIFRlYW0gXHUwMDNjY29uc3VsQGhhc2hpY29ycC5jb21cdTAwM2UiLCJvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UuZGVzY3JpcHRpb24iOiJDb25zdWwgaXMgYSBkYXRhY2VudGVyIHJ1bnRpbWUgdGhhdCBwcm92aWRlcyBzZXJ2aWNlIGRpc2NvdmVyeSwgY29uZmlndXJhdGlvbiwgYW5kIG9yY2hlc3RyYXRpb24uIiwib3JnLm9wZW5jb250YWluZXJzLmltYWdlLmRvY3VtZW50YXRpb24iOiJodHRwczovL3d3dy5jb25zdWwuaW8vZG9jcyIsIm9yZy5vcGVuY29udGFpbmVycy5pbWFnZS5zb3VyY2UiOiJodHRwczovL2dpdGh1Yi5jb20vaGFzaGljb3JwL2NvbnN1bCIsIm9yZy5vcGVuY29udGFpbmVycy5pbWFnZS50aXRsZSI6ImNvbnN1bCIsIm9yZy5vcGVuY29udGFpbmVycy5pbWFnZS51cmwiOiJodHRwczovL3d3dy5jb25zdWwuaW8vIiwib3JnLm9wZW5jb250YWluZXJzLmltYWdlLnZlbmRvciI6Ikhhc2hpQ29ycCIsIm9yZy5vcGVuY29udGFpbmVycy5pbWFnZS52ZXJzaW9uIjoiMS4xNS40In19LCJjb250YWluZXIiOiI1Y2Y0YzZiZTQ4ZDU4ZGU0MWZjYjkyNzhkYWQ0ZTlmNzA0NzJkZmY3YzI4MTJiMWE5Y2RiOGI5MGU1YTliNDQ4IiwiY29udGFpbmVyX2NvbmZpZyI6eyJIb3N0bmFtZSI6IjVjZjRjNmJlNDhkNSIsIkRvbWFpbm5hbWUiOiIiLCJVc2VyIjoiIiwiQXR0YWNoU3RkaW4iOmZhbHNlLCJBdHRhY2hTdGRvdXQiOmZhbHNlLCJBdHRhY2hTdGRlcnIiOmZhbHNlLCJFeHBvc2VkUG9ydHMiOnsiODMwMC90Y3AiOnt9LCI4MzAxL3RjcCI6e30sIjgzMDEvdWRwIjp7fSwiODMwMi90Y3AiOnt9LCI4MzAyL3VkcCI6e30sIjg1MDAvdGNwIjp7fSwiODYwMC90Y3AiOnt9LCI4NjAwL3VkcCI6e319LCJUdHkiOmZhbHNlLCJPcGVuU3RkaW4iOmZhbHNlLCJTdGRpbk9uY2UiOmZhbHNlLCJFbnYiOlsiUEFUSD0vdXNyL2xvY2FsL3NiaW46L3Vzci9sb2NhbC9iaW46L3Vzci9zYmluOi91c3IvYmluOi9zYmluOi9iaW4iLCJIQVNISUNPUlBfUkVMRUFTRVM9aHR0cHM6Ly9yZWxlYXNlcy5oYXNoaWNvcnAuY29tIl0sIkNtZCI6WyIvYmluL3NoIiwiLWMiLCIjKG5vcCkgIiwiQ01EIFtcImFnZW50XCIgXCItZGV2XCIgXCItY2xpZW50XCIgXCIwLjAuMC4wXCJdIl0sIkltYWdlIjoic2hhMjU2OmQyYThhMTc5ZDkyNWNlMGU1MTljMDMyNmZjNDZjNmRkODAxYmVjM2MwMWE2ZTY4NjM2ZWYyNGVlMWNhMDI5YTIiLCJWb2x1bWVzIjp7Ii9jb25zdWwvZGF0YSI6e319LCJXb3JraW5nRGlyIjoiIiwiRW50cnlwb2ludCI6WyJkb2NrZXItZW50cnlwb2ludC5zaCJdLCJPbkJ1aWxkIjpudWxsLCJMYWJlbHMiOnsib3JnLm9wZW5jb250YWluZXJzLmltYWdlLmF1dGhvcnMiOiJDb25zdWwgVGVhbSBcdTAwM2Njb25zdWxAaGFzaGljb3JwLmNvbVx1MDAzZSIsIm9yZy5vcGVuY29udGFpbmVycy5pbWFnZS5kZXNjcmlwdGlvbiI6IkNvbnN1bCBpcyBhIGRhdGFjZW50ZXIgcnVudGltZSB0aGF0IHByb3ZpZGVzIHNlcnZpY2UgZGlzY292ZXJ5LCBjb25maWd1cmF0aW9uLCBhbmQgb3JjaGVzdHJhdGlvbi4iLCJvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UuZG9jdW1lbnRhdGlvbiI6Imh0dHBzOi8vd3d3LmNvbnN1bC5pby9kb2NzIiwib3JnLm9wZW5jb250YWluZXJzLmltYWdlLnNvdXJjZSI6Imh0dHBzOi8vZ2l0aHViLmNvbS9oYXNoaWNvcnAvY29uc3VsIiwib3JnLm9wZW5jb250YWluZXJzLmltYWdlLnRpdGxlIjoiY29uc3VsIiwib3JnLm9wZW5jb250YWluZXJzLmltYWdlLnVybCI6Imh0dHBzOi8vd3d3LmNvbnN1bC5pby8iLCJvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UudmVuZG9yIjoiSGFzaGlDb3JwIiwib3JnLm9wZW5jb250YWluZXJzLmltYWdlLnZlcnNpb24iOiIxLjE1LjQifX0sImNyZWF0ZWQiOiIyMDIzLTA4LTA3VDIwOjI5OjA0Ljk2Nzc4NjIxMVoiLCJkb2NrZXJfdmVyc2lvbiI6IjIwLjEwLjIzIiwiaGlzdG9yeSI6W3siY3JlYXRlZCI6IjIwMjMtMDgtMDdUMTk6MjA6MzcuNjk4ODMwNjM4WiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSBBREQgZmlsZTo0ZmFhZTI5N2I2Y2FiYTkyZTE3OTFhNWZmNjY3YmUwZmNiNGRlNmE0ZGUyZGYxNTUzOTU5NTdlZjlkOGFkNWU1IGluIC8gIn0seyJjcmVhdGVkIjoiMjAyMy0wOC0wN1QxOToyMDozNy43OTgyMDk1NzRaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApICBDTUQgW1wiL2Jpbi9zaFwiXSIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDIzLTA4LTA3VDIwOjI4OjU3LjA1MDc5NzE5NloiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgIEFSRyBDT05TVUxfVkVSU0lPTj0xLjE1LjQiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyMy0wOC0wN1QyMDoyODo1Ny4xMzAxNTQ5M1oiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgIExBQkVMIG9yZy5vcGVuY29udGFpbmVycy5pbWFnZS5hdXRob3JzPUNvbnN1bCBUZWFtIFx1MDAzY2NvbnN1bEBoYXNoaWNvcnAuY29tXHUwMDNlIG9yZy5vcGVuY29udGFpbmVycy5pbWFnZS51cmw9aHR0cHM6Ly93d3cuY29uc3VsLmlvLyBvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UuZG9jdW1lbnRhdGlvbj1odHRwczovL3d3dy5jb25zdWwuaW8vZG9jcyBvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2Uuc291cmNlPWh0dHBzOi8vZ2l0aHViLmNvbS9oYXNoaWNvcnAvY29uc3VsIG9yZy5vcGVuY29udGFpbmVycy5pbWFnZS52ZXJzaW9uPTEuMTUuNCBvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UudmVuZG9yPUhhc2hpQ29ycCBvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UudGl0bGU9Y29uc3VsIG9yZy5vcGVuY29udGFpbmVycy5pbWFnZS5kZXNjcmlwdGlvbj1Db25zdWwgaXMgYSBkYXRhY2VudGVyIHJ1bnRpbWUgdGhhdCBwcm92aWRlcyBzZXJ2aWNlIGRpc2NvdmVyeSwgY29uZmlndXJhdGlvbiwgYW5kIG9yY2hlc3RyYXRpb24uIiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjMtMDgtMDdUMjA6Mjg6NTcuMjA5NTUyNTE5WiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSAgRU5WIEhBU0hJQ09SUF9SRUxFQVNFUz1odHRwczovL3JlbGVhc2VzLmhhc2hpY29ycC5jb20iLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyMy0wOC0wN1QyMDoyODo1Ny43Mjk0NjUwMTNaIiwiY3JlYXRlZF9ieSI6InwxIENPTlNVTF9WRVJTSU9OPTEuMTUuNCAvYmluL3NoIC1jIGFkZGdyb3VwIGNvbnN1bCBcdTAwMjZcdTAwMjYgICAgIGFkZHVzZXIgLVMgLUcgY29uc3VsIGNvbnN1bCJ9LHsiY3JlYXRlZCI6IjIwMjMtMDgtMDdUMjA6Mjk6MDMuMTgxMDY4MDMzWiIsImNyZWF0ZWRfYnkiOiJ8MSBDT05TVUxfVkVSU0lPTj0xLjE1LjQgL2Jpbi9zaCAtYyBzZXQgLWV1eCBcdTAwMjZcdTAwMjYgICAgIGFwayBhZGQgLS1uby1jYWNoZSBjYS1jZXJ0aWZpY2F0ZXMgY3VybCBkdW1iLWluaXQgZ251cGcgbGliY2FwIG9wZW5zc2wgc3UtZXhlYyBpcHV0aWxzIGpxIGxpYmM2LWNvbXBhdCBpcHRhYmxlcyB0emRhdGEgXHUwMDI2XHUwMDI2ICAgICBncGcgLS1rZXlzZXJ2ZXIga2V5c2VydmVyLnVidW50dS5jb20gLS1yZWN2LWtleXMgQzg3NDAxMUYwQUI0MDUxMTBEMDIxMDU1MzQzNjVEOTQ3MkQ3NDY4RiBcdTAwMjZcdTAwMjYgICAgIG1rZGlyIC1wIC90bXAvYnVpbGQgXHUwMDI2XHUwMDI2ICAgICBjZCAvdG1wL2J1aWxkIFx1MDAyNlx1MDAyNiAgICAgYXBrQXJjaD1cIiQoYXBrIC0tcHJpbnQtYXJjaClcIiBcdTAwMjZcdTAwMjYgICAgIGNhc2UgXCIke2Fwa0FyY2h9XCIgaW4gICAgICAgICBhYXJjaDY0KSBjb25zdWxBcmNoPSdhcm02NCcgOzsgICAgICAgICBhcm1oZikgY29uc3VsQXJjaD0nYXJtJyA7OyAgICAgICAgIHg4NikgY29uc3VsQXJjaD0nMzg2JyA7OyAgICAgICAgIHg4Nl82NCkgY29uc3VsQXJjaD0nYW1kNjQnIDs7ICAgICAgICAgKikgZWNobyBcdTAwM2VcdTAwMjYyIFwiZXJyb3I6IHVuc3VwcG9ydGVkIGFyY2hpdGVjdHVyZTogJHthcGtBcmNofSAoc2VlICR7SEFTSElDT1JQX1JFTEVBU0VTfS9jb25zdWwvJHtDT05TVUxfVkVSU0lPTn0vKVwiIFx1MDAyNlx1MDAyNiBleGl0IDEgOzsgICAgIGVzYWMgXHUwMDI2XHUwMDI2ICAgICB3Z2V0ICR7SEFTSElDT1JQX1JFTEVBU0VTfS9jb25zdWwvJHtDT05TVUxfVkVSU0lPTn0vY29uc3VsXyR7Q09OU1VMX1ZFUlNJT059X2xpbnV4XyR7Y29uc3VsQXJjaH0uemlwIFx1MDAyNlx1MDAyNiAgICAgd2dldCAke0hBU0hJQ09SUF9SRUxFQVNFU30vY29uc3VsLyR7Q09OU1VMX1ZFUlNJT059L2NvbnN1bF8ke0NPTlNVTF9WRVJTSU9OfV9TSEEyNTZTVU1TIFx1MDAyNlx1MDAyNiAgICAgd2dldCAke0hBU0hJQ09SUF9SRUxFQVNFU30vY29uc3VsLyR7Q09OU1VMX1ZFUlNJT059L2NvbnN1bF8ke0NPTlNVTF9WRVJTSU9OfV9TSEEyNTZTVU1TLnNpZyBcdTAwMjZcdTAwMjYgICAgIGdwZyAtLWJhdGNoIC0tdmVyaWZ5IGNvbnN1bF8ke0NPTlNVTF9WRVJTSU9OfV9TSEEyNTZTVU1TLnNpZyBjb25zdWxfJHtDT05TVUxfVkVSU0lPTn1fU0hBMjU2U1VNUyBcdTAwMjZcdTAwMjYgICAgIGdyZXAgY29uc3VsXyR7Q09OU1VMX1ZFUlNJT059X2xpbnV4XyR7Y29uc3VsQXJjaH0uemlwIGNvbnN1bF8ke0NPTlNVTF9WRVJTSU9OfV9TSEEyNTZTVU1TIHwgc2hhMjU2c3VtIC1jIFx1MDAyNlx1MDAyNiAgICAgdW56aXAgLWQgL3RtcC9idWlsZCBjb25zdWxfJHtDT05TVUxfVkVSU0lPTn1fbGludXhfJHtjb25zdWxBcmNofS56aXAgXHUwMDI2XHUwMDI2ICAgICBjcCAvdG1wL2J1aWxkL2NvbnN1bCAvYmluL2NvbnN1bCBcdTAwMjZcdTAwMjYgICAgIGlmIFsgLWYgL3RtcC9idWlsZC9FVUxBLnR4dCBdOyB0aGVuIG1rZGlyIC1wIC91c3Ivc2hhcmUvZG9jL2NvbnN1bDsgbXYgL3RtcC9idWlsZC9FVUxBLnR4dCAvdXNyL3NoYXJlL2RvYy9jb25zdWwvRVVMQS50eHQ7IGZpIFx1MDAyNlx1MDAyNiAgICAgaWYgWyAtZiAvdG1wL2J1aWxkL1Rlcm1zT2ZFdmFsdWF0aW9uLnR4dCBdOyB0aGVuIG1rZGlyIC1wIC91c3Ivc2hhcmUvZG9jL2NvbnN1bDsgbXYgL3RtcC9idWlsZC9UZXJtc09mRXZhbHVhdGlvbi50eHQgL3Vzci9zaGFyZS9kb2MvY29uc3VsL1Rlcm1zT2ZFdmFsdWF0aW9uLnR4dDsgZmkgXHUwMDI2XHUwMDI2ICAgICBjZCAvdG1wIFx1MDAyNlx1MDAyNiAgICAgcm0gLXJmIC90bXAvYnVpbGQgXHUwMDI2XHUwMDI2ICAgICBncGdjb25mIC0ta2lsbCBhbGwgXHUwMDI2XHUwMDI2ICAgICBhcGsgZGVsIGdudXBnIG9wZW5zc2wgXHUwMDI2XHUwMDI2ICAgICBybSAtcmYgL3Jvb3QvLmdudXBnIFx1MDAyNlx1MDAyNiAgICAgY29uc3VsIHZlcnNpb24ifSx7ImNyZWF0ZWQiOiIyMDIzLTA4LTA3VDIwOjI5OjAzLjkxNTkyMDQwOFoiLCJjcmVhdGVkX2J5IjoifDEgQ09OU1VMX1ZFUlNJT049MS4xNS40IC9iaW4vc2ggLWMgbWtkaXIgLXAgL2NvbnN1bC9kYXRhIFx1MDAyNlx1MDAyNiAgICAgbWtkaXIgLXAgL2NvbnN1bC9jb25maWcgXHUwMDI2XHUwMDI2ICAgICBjaG93biAtUiBjb25zdWw6Y29uc3VsIC9jb25zdWwifSx7ImNyZWF0ZWQiOiIyMDIzLTA4LTA3VDIwOjI5OjA0LjM3NTkzMTYwM1oiLCJjcmVhdGVkX2J5IjoifDEgQ09OU1VMX1ZFUlNJT049MS4xNS40IC9iaW4vc2ggLWMgdGVzdCAtZSAvZXRjL25zc3dpdGNoLmNvbmYgfHwgZWNobyAnaG9zdHM6IGZpbGVzIGRucycgXHUwMDNlIC9ldGMvbnNzd2l0Y2guY29uZiJ9LHsiY3JlYXRlZCI6IjIwMjMtMDgtMDdUMjA6Mjk6MDQuNDU4OTQwNTA0WiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSAgVk9MVU1FIFsvY29uc3VsL2RhdGFdIiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjMtMDgtMDdUMjA6Mjk6MDQuNTQzOTMwMzE3WiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSAgRVhQT1NFIDgzMDAiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyMy0wOC0wN1QyMDoyOTowNC42MjY1MzI4MTdaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApICBFWFBPU0UgODMwMSA4MzAxL3VkcCA4MzAyIDgzMDIvdWRwIiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjMtMDgtMDdUMjA6Mjk6MDQuNzE0NDQzNzA0WiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSAgRVhQT1NFIDg1MDAgODYwMCA4NjAwL3VkcCIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDIzLTA4LTA3VDIwOjI5OjA0LjgwNDI2OTM0NVoiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgQ09QWSBmaWxlOmY1YmEwMGZiOWZkM2E2N2E4MzVhNzkyZTA3YjExZGEzYjE2MzIyMmMxOGY4NTEyYWE3NzJiMzY1MjBkMmE2NTMgaW4gL3Vzci9sb2NhbC9iaW4vZG9ja2VyLWVudHJ5cG9pbnQuc2ggIn0seyJjcmVhdGVkIjoiMjAyMy0wOC0wN1QyMDoyOTowNC44ODM1MDgyOVoiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgIEVOVFJZUE9JTlQgW1wiZG9ja2VyLWVudHJ5cG9pbnQuc2hcIl0iLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyMy0wOC0wN1QyMDoyOTowNC45Njc3ODYyMTFaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApICBDTUQgW1wiYWdlbnRcIiBcIi1kZXZcIiBcIi1jbGllbnRcIiBcIjAuMC4wLjBcIl0iLCJlbXB0eV9sYXllciI6dHJ1ZX1dLCJvcyI6ImxpbnV4Iiwicm9vdGZzIjp7InR5cGUiOiJsYXllcnMiLCJkaWZmX2lkcyI6WyJzaGEyNTY6YmMwYTlkNGUxNmQwYjk0OWQ1OTRiZjVmYzYyOWQwNTIwMGQ1ZGRhYzMzOWE4OTllYWMyNzE5MGViZjEyZTU2OSIsInNoYTI1NjoyNDE2MWZhYjNkZDFmMTE4ZDhjYTU3ZDNhNzRiMTkzYWI0Y2NkM2ZmMDg5NWU1ZDE2NmRmODkyNDc3YTE3YjUyIiwic2hhMjU2OmRjNDhjMzcxZjBkMzg4M2VkNmExNTQ3NWZjYjgwNDhlNmRjMzVhNzZhZjNhY2UxYWM3ZmU5OTA2MWNiYjIzMzYiLCJzaGEyNTY6ZmI3YWNiYjMzMWYyODRlNTE0N2FhOGU3M2EyNWRhYjQ1YjI0Mjg2ZDM2ZTZmZGRjYTQ0NzRhZWNhYWNiNGIxNSIsInNoYTI1Njo0MjQ5MGU5MzA3MDA0ZWI0ZmEwN2VmNWM3MzEzMjUwODJiNTQyYmYyZTFiYTA0N2NkNzcxM2FjZDBiOTZhZGEyIiwic2hhMjU2OmFiY2EyYWU4YzNhYTYwMDIyZmNlMzZlYTg5ODBmMDZlNWU2MDM3ODc5MGU0ZGI5NzQ3MTQ0MDgwNGFiY2JkZmYiXX19",
+   "repoDigests": [
+    "consul@sha256:362519540425cf077229da3851f3b80d622742dd81f1b2014863c044c2124ef3"
+   ],
+   "architecture": "amd64",
+   "os": "linux"
+  }
+ },
+ "distro": {
+  "name": "alpine",
+  "version": "3.15.10",
+  "idLike": []
+ },
+ "descriptor": {
+  "name": "",
+  "version": "",
+  "configuration": {
+   "output": [
+    "json"
+   ],
+   "file": "",
+   "distro": "",
+   "add-cpes-if-none": false,
+   "output-template-file": "",
+   "check-for-app-update": true,
+   "only-fixed": false,
+   "only-notfixed": false,
+   "platform": "",
+   "search": {
+    "scope": "Squashed",
+    "unindexed-archives": false,
+    "indexed-archives": true
+   },
+   "ignore": null,
+   "exclude": [],
+   "db": {
+    "cache-dir": "/home/anon/.cache/grype/db",
+    "update-url": "https://toolbox-data.anchore.io/grype/databases/listing.json",
+    "ca-cert": "",
+    "auto-update": true,
+    "validate-by-hash-on-start": false,
+    "validate-age": true,
+    "max-allowed-built-age": 432000000000000
+   },
+   "externalSources": {
+    "enable": false,
+    "maven": {
+     "searchUpstreamBySha1": true,
+     "baseUrl": "https://search.maven.org/solrsearch/select"
+    }
+   },
+   "match": {
+    "java": {
+     "using-cpes": true
+    },
+    "dotnet": {
+     "using-cpes": true
+    },
+    "golang": {
+     "using-cpes": true
+    },
+    "javascript": {
+     "using-cpes": true
+    },
+    "python": {
+     "using-cpes": true
+    },
+    "ruby": {
+     "using-cpes": true
+    },
+    "stock": {
+     "using-cpes": true
+    }
+   },
+   "fail-on-severity": "",
+   "registry": {
+    "insecure-skip-tls-verify": false,
+    "insecure-use-http": false,
+    "auth": null,
+    "ca-cert": ""
+   },
+   "show-suppressed": false,
+   "by-cve": false,
+   "name": "",
+   "default-image-pull-source": "",
+   "vex-documents": [],
+   "vex-add": []
+  },
+  "db": {
+   "built": "2023-10-10T01:23:53Z",
+   "schemaVersion": 5,
+   "location": "/home/anon/.cache/grype/db/5",
+   "checksum": "sha256:c1dd693b90da9833fd1716f9d2432de66004be2bd188e882392b0076a589cbf4",
+   "error": null
+  },
+  "timestamp": "2023-10-10T16:38:45.916935714-04:00"
+ }
+}

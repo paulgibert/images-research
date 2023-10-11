@@ -1,0 +1,119 @@
+{
+ "matches": [],
+ "source": {
+  "type": "image",
+  "target": {
+   "userInput": "cgr.dev/chainguard/etcd:latest",
+   "imageID": "sha256:fd9b290d279d21d737b6eea759affcbcfb34a33b12b4c365416f9f18e5cc677c",
+   "manifestDigest": "sha256:e8b654afd0b98f6ebd108014058aa52911955c52b0107292ca04c07823d3bd9e",
+   "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+   "tags": [
+    "cgr.dev/chainguard/etcd:latest"
+   ],
+   "imageSize": 67191959,
+   "layers": [
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:88a6f6f7ace710a1a5b0eb8483cb6e3e1ba2517644650c5312858ebcf5919001",
+     "size": 67191959
+    }
+   ],
+   "manifest": "eyJzY2hlbWFWZXJzaW9uIjoyLCJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmRpc3RyaWJ1dGlvbi5tYW5pZmVzdC52Mitqc29uIiwiY29uZmlnIjp7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuY29udGFpbmVyLmltYWdlLnYxK2pzb24iLCJzaXplIjo1NzAsImRpZ2VzdCI6InNoYTI1NjpmZDliMjkwZDI3OWQyMWQ3MzdiNmVlYTc1OWFmZmNiY2ZiMzRhMzNiMTJiNGMzNjU0MTZmOWYxOGU1Y2M2NzdjIn0sImxheWVycyI6W3sibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vdm5kLmRvY2tlci5pbWFnZS5yb290ZnMuZGlmZi50YXIuZ3ppcCIsInNpemUiOjY3MjgwMzg0LCJkaWdlc3QiOiJzaGEyNTY6ODhhNmY2ZjdhY2U3MTBhMWE1YjBlYjg0ODNjYjZlM2UxYmEyNTE3NjQ0NjUwYzUzMTI4NThlYmNmNTkxOTAwMSJ9XX0=",
+   "config": "eyJhcmNoaXRlY3R1cmUiOiJhbWQ2NCIsImF1dGhvciI6ImdpdGh1Yi5jb20vY2hhaW5ndWFyZC1kZXYvYXBrbyIsImNyZWF0ZWQiOiIyMDIzLTEwLTA3VDAzOjMwOjI5WiIsImhpc3RvcnkiOlt7ImF1dGhvciI6ImFwa28iLCJjcmVhdGVkIjoiMjAyMy0xMC0wN1QwMzozMDoyOVoiLCJjcmVhdGVkX2J5IjoiYXBrbyIsImNvbW1lbnQiOiJUaGlzIGlzIGFuIGFwa28gc2luZ2xlLWxheWVyIGltYWdlIn1dLCJvcyI6ImxpbnV4Iiwicm9vdGZzIjp7InR5cGUiOiJsYXllcnMiLCJkaWZmX2lkcyI6WyJzaGEyNTY6ODhhNmY2ZjdhY2U3MTBhMWE1YjBlYjg0ODNjYjZlM2UxYmEyNTE3NjQ0NjUwYzUzMTI4NThlYmNmNTkxOTAwMSJdfSwiY29uZmlnIjp7IkVudHJ5cG9pbnQiOlsiL3Vzci9iaW4vZXRjZCJdLCJFbnYiOlsiRVRDRF9EQVRBX0RJUj0vdmFyL2xpYi9ldGNkIiwiUEFUSD0vdXNyL2xvY2FsL3NiaW46L3Vzci9sb2NhbC9iaW46L3Vzci9zYmluOi91c3IvYmluOi9zYmluOi9iaW4iLCJTU0xfQ0VSVF9GSUxFPS9ldGMvc3NsL2NlcnRzL2NhLWNlcnRpZmljYXRlcy5jcnQiXSwiVXNlciI6IjY1NTMyIn19",
+   "repoDigests": [
+    "cgr.dev/chainguard/etcd@sha256:ed7f1a1a95d6240878df43911aa488b7363fb8382187a38544c17efb58d1e445"
+   ],
+   "architecture": "amd64",
+   "os": "linux"
+  }
+ },
+ "distro": {
+  "name": "wolfi",
+  "version": "20230201",
+  "idLike": []
+ },
+ "descriptor": {
+  "name": "",
+  "version": "",
+  "configuration": {
+   "output": [
+    "json"
+   ],
+   "file": "",
+   "distro": "",
+   "add-cpes-if-none": false,
+   "output-template-file": "",
+   "check-for-app-update": true,
+   "only-fixed": false,
+   "only-notfixed": false,
+   "platform": "",
+   "search": {
+    "scope": "Squashed",
+    "unindexed-archives": false,
+    "indexed-archives": true
+   },
+   "ignore": null,
+   "exclude": [],
+   "db": {
+    "cache-dir": "/home/anon/.cache/grype/db",
+    "update-url": "https://toolbox-data.anchore.io/grype/databases/listing.json",
+    "ca-cert": "",
+    "auto-update": true,
+    "validate-by-hash-on-start": false,
+    "validate-age": true,
+    "max-allowed-built-age": 432000000000000
+   },
+   "externalSources": {
+    "enable": false,
+    "maven": {
+     "searchUpstreamBySha1": true,
+     "baseUrl": "https://search.maven.org/solrsearch/select"
+    }
+   },
+   "match": {
+    "java": {
+     "using-cpes": true
+    },
+    "dotnet": {
+     "using-cpes": true
+    },
+    "golang": {
+     "using-cpes": true
+    },
+    "javascript": {
+     "using-cpes": true
+    },
+    "python": {
+     "using-cpes": true
+    },
+    "ruby": {
+     "using-cpes": true
+    },
+    "stock": {
+     "using-cpes": true
+    }
+   },
+   "fail-on-severity": "",
+   "registry": {
+    "insecure-skip-tls-verify": false,
+    "insecure-use-http": false,
+    "auth": null,
+    "ca-cert": ""
+   },
+   "show-suppressed": false,
+   "by-cve": false,
+   "name": "",
+   "default-image-pull-source": "",
+   "vex-documents": [],
+   "vex-add": []
+  },
+  "db": {
+   "built": "2023-10-10T01:23:53Z",
+   "schemaVersion": 5,
+   "location": "/home/anon/.cache/grype/db/5",
+   "checksum": "sha256:c1dd693b90da9833fd1716f9d2432de66004be2bd188e882392b0076a589cbf4",
+   "error": null
+  },
+  "timestamp": "2023-10-10T16:32:55.95483997-04:00"
+ }
+}

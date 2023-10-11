@@ -1,0 +1,1045 @@
+{
+ "matches": [
+  {
+   "vulnerability": {
+    "id": "CVE-2023-1732",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-1732",
+    "namespace": "nvd:cpe",
+    "severity": "High",
+    "urls": [
+     "https://github.com/cloudflare/circl/security/advisories/GHSA-2q89-485c-9j2x"
+    ],
+    "description": "When sampling randomness for a shared secret, the implementation of Kyber and FrodoKEM, did not check whether crypto/rand.Read() returns an error. In rare deployment cases (error thrown by the Read() function), this could lead to a predictable shared secret.\n\nThe tkn20 and blindrsa components did not check whether enough randomness was returned from the user provided randomness source. Typically the user provides crypto/rand.Reader, which in the vast majority of cases will always return the right number random bytes. In the cases where it does not, or the user provides a source that does not, the blinding for blindrsa is weak and integrity of the plaintext is not ensured in tkn20.\n\n",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:H/A:N",
+      "metrics": {
+       "baseScore": 8.2,
+       "exploitabilityScore": 3.9,
+       "impactScore": 4.2
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "source": "cna@cloudflare.com",
+      "type": "Secondary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:U/C:L/I:H/A:N",
+      "metrics": {
+       "baseScore": 5.3,
+       "exploitabilityScore": 1,
+       "impactScore": 4.2
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:cloudflare:circl:v1.1.0:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "github.com/cloudflare/circl",
+       "version": "v1.1.0"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2023-1732",
+      "versionConstraint": "< 1.3.3 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:cloudflare:circl:*:*:*:*:*:go:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "c6bf329e32e42b84",
+    "name": "github.com/cloudflare/circl",
+    "version": "v1.1.0",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/bin/vault",
+      "layerID": "sha256:395de4e2a5ab3bab8676dee0ff87a08f0e212d8752a11ce3779a60a32eded448"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:cloudflare:circl:v1.1.0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/cloudflare/circl@v1.1.0",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.20.4",
+     "architecture": "amd64",
+     "h1Digest": "h1:bZgT/A+cikZnKIwn7xL2OBj012Bmvho/o6RpRvv3GKY=",
+     "mainModule": "github.com/hashicorp/vault"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-2q89-485c-9j2x",
+    "dataSource": "https://github.com/advisories/GHSA-2q89-485c-9j2x",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-2q89-485c-9j2x"
+    ],
+    "description": "Improper random reading in CIRCL",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:U/C:L/I:H/A:N",
+      "metrics": {
+       "baseScore": 5.3,
+       "exploitabilityScore": 1,
+       "impactScore": 4.2
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "1.3.3"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-1732",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-1732",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/cloudflare/circl/security/advisories/GHSA-2q89-485c-9j2x"
+     ],
+     "description": "When sampling randomness for a shared secret, the implementation of Kyber and FrodoKEM, did not check whether crypto/rand.Read() returns an error. In rare deployment cases (error thrown by the Read() function), this could lead to a predictable shared secret.\n\nThe tkn20 and blindrsa components did not check whether enough randomness was returned from the user provided randomness source. Typically the user provides crypto/rand.Reader, which in the vast majority of cases will always return the right number random bytes. In the cases where it does not, or the user provides a source that does not, the blinding for blindrsa is weak and integrity of the plaintext is not ensured in tkn20.\n\n",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:H/A:N",
+       "metrics": {
+        "baseScore": 8.2,
+        "exploitabilityScore": 3.9,
+        "impactScore": 4.2
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "cna@cloudflare.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:U/C:L/I:H/A:N",
+       "metrics": {
+        "baseScore": 5.3,
+        "exploitabilityScore": 1,
+        "impactScore": 4.2
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/cloudflare/circl",
+       "version": "v1.1.0"
+      }
+     },
+     "found": {
+      "versionConstraint": "<1.3.3 (unknown)",
+      "vulnerabilityID": "GHSA-2q89-485c-9j2x"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "c6bf329e32e42b84",
+    "name": "github.com/cloudflare/circl",
+    "version": "v1.1.0",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/bin/vault",
+      "layerID": "sha256:395de4e2a5ab3bab8676dee0ff87a08f0e212d8752a11ce3779a60a32eded448"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:cloudflare:circl:v1.1.0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/cloudflare/circl@v1.1.0",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.20.4",
+     "architecture": "amd64",
+     "h1Digest": "h1:bZgT/A+cikZnKIwn7xL2OBj012Bmvho/o6RpRvv3GKY=",
+     "mainModule": "github.com/hashicorp/vault"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-v84f-6r39-cpfc",
+    "dataSource": "https://github.com/advisories/GHSA-v84f-6r39-cpfc",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-v84f-6r39-cpfc"
+    ],
+    "description": "HashiCorp Vault Improper Input Validation vulnerability",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:N",
+      "metrics": {
+       "baseScore": 6.8,
+       "exploitabilityScore": 1.6,
+       "impactScore": 5.2
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "1.13.7"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-4680",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-4680",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://discuss.hashicorp.com/t/hcsec-2023-28-vault-s-transit-secrets-engine-allowed-nonce-specified-without-convergent-encryption/58249"
+     ],
+     "description": "HashiCorp Vault and Vault Enterprise transit secrets engine allowed authorized users to specify arbitrary nonces, even with convergent encryption disabled. The encrypt endpoint, in combination with an offline attack, could be used to decrypt arbitrary ciphertext and potentially derive the authentication subkey when using transit secrets engine without convergent encryption. Introduced in 1.6.0 and fixed in 1.14.3, 1.13.7, and 1.12.11.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:N",
+       "metrics": {
+        "baseScore": 6.8,
+        "exploitabilityScore": 1.6,
+        "impactScore": 5.2
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security@hashicorp.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:N",
+       "metrics": {
+        "baseScore": 6.8,
+        "exploitabilityScore": 1.6,
+        "impactScore": 5.2
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/hashicorp/vault",
+       "version": "v1.13.3"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=1.13.0,<1.13.7 (unknown)",
+      "vulnerabilityID": "GHSA-v84f-6r39-cpfc"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "2a49249dd6cd9cb8",
+    "name": "github.com/hashicorp/vault",
+    "version": "v1.13.3",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/bin/vault",
+      "layerID": "sha256:395de4e2a5ab3bab8676dee0ff87a08f0e212d8752a11ce3779a60a32eded448"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:hashicorp:vault:v1.13.3:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/hashicorp/vault@v1.13.3",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goBuildSettings": {
+      "-buildmode": "exe",
+      "-compiler": "gc",
+      "-ldflags": "-X github.com/hashicorp/vault/version.Version=1.13.3 -X github.com/hashicorp/vault/version.GitCommit=3bedf816cbf851656ae9e6bd65dd4a67a9ddff5e -X github.com/hashicorp/vault/version.BuildDate=2023-06-06T18:12:37Z",
+      "-tags": "ui",
+      "CGO_ENABLED": "0",
+      "GOAMD64": "v1",
+      "GOARCH": "amd64",
+      "GOOS": "linux",
+      "vcs": "git",
+      "vcs.modified": "false",
+      "vcs.revision": "3bedf816cbf851656ae9e6bd65dd4a67a9ddff5e",
+      "vcs.time": "2023-06-07T01:12:37Z"
+     },
+     "goCompiledVersion": "go1.20.4",
+     "architecture": "amd64",
+     "mainModule": "github.com/hashicorp/vault"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-9v3w-w2jh-4hff",
+    "dataSource": "https://github.com/advisories/GHSA-9v3w-w2jh-4hff",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-9v3w-w2jh-4hff"
+    ],
+    "description": "HashiCorp Vault and Vault Enterprise vulnerable to user enumeration",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+      "metrics": {
+       "baseScore": 5.3,
+       "exploitabilityScore": 3.9,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "1.13.5"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-3462",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-3462",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://discuss.hashicorp.com/t/hcsec-2023-24-vaults-ldap-auth-method-allows-for-user-enumeration/56714"
+     ],
+     "description": "HashiCorp's Vault and Vault Enterprise are vulnerable to user enumeration when using the LDAP auth method. An attacker may submit requests of existent and non-existent LDAP users and observe the response from Vault to check if the account is valid on the LDAP server. This vulnerability is fixed in Vault 1.14.1 and 1.13.5.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+       "metrics": {
+        "baseScore": 5.3,
+        "exploitabilityScore": 3.9,
+        "impactScore": 1.4
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security@hashicorp.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+       "metrics": {
+        "baseScore": 5.3,
+        "exploitabilityScore": 3.9,
+        "impactScore": 1.4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/hashicorp/vault",
+       "version": "v1.13.3"
+      }
+     },
+     "found": {
+      "versionConstraint": "<1.13.5 (unknown)",
+      "vulnerabilityID": "GHSA-9v3w-w2jh-4hff"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "2a49249dd6cd9cb8",
+    "name": "github.com/hashicorp/vault",
+    "version": "v1.13.3",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/bin/vault",
+      "layerID": "sha256:395de4e2a5ab3bab8676dee0ff87a08f0e212d8752a11ce3779a60a32eded448"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:hashicorp:vault:v1.13.3:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/hashicorp/vault@v1.13.3",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goBuildSettings": {
+      "-buildmode": "exe",
+      "-compiler": "gc",
+      "-ldflags": "-X github.com/hashicorp/vault/version.Version=1.13.3 -X github.com/hashicorp/vault/version.GitCommit=3bedf816cbf851656ae9e6bd65dd4a67a9ddff5e -X github.com/hashicorp/vault/version.BuildDate=2023-06-06T18:12:37Z",
+      "-tags": "ui",
+      "CGO_ENABLED": "0",
+      "GOAMD64": "v1",
+      "GOARCH": "amd64",
+      "GOOS": "linux",
+      "vcs": "git",
+      "vcs.modified": "false",
+      "vcs.revision": "3bedf816cbf851656ae9e6bd65dd4a67a9ddff5e",
+      "vcs.time": "2023-06-07T01:12:37Z"
+     },
+     "goCompiledVersion": "go1.20.4",
+     "architecture": "amd64",
+     "mainModule": "github.com/hashicorp/vault"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-4680",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-4680",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://discuss.hashicorp.com/t/hcsec-2023-28-vault-s-transit-secrets-engine-allowed-nonce-specified-without-convergent-encryption/58249"
+    ],
+    "description": "HashiCorp Vault and Vault Enterprise transit secrets engine allowed authorized users to specify arbitrary nonces, even with convergent encryption disabled. The encrypt endpoint, in combination with an offline attack, could be used to decrypt arbitrary ciphertext and potentially derive the authentication subkey when using transit secrets engine without convergent encryption. Introduced in 1.6.0 and fixed in 1.14.3, 1.13.7, and 1.12.11.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:N",
+      "metrics": {
+       "baseScore": 6.8,
+       "exploitabilityScore": 1.6,
+       "impactScore": 5.2
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "source": "security@hashicorp.com",
+      "type": "Secondary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:N",
+      "metrics": {
+       "baseScore": 6.8,
+       "exploitabilityScore": 1.6,
+       "impactScore": 5.2
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:hashicorp:vault:v1.13.3:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "github.com/hashicorp/vault",
+       "version": "v1.13.3"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2023-4680",
+      "versionConstraint": ">= 1.6.0, < 1.12.11 || >= 1.6.0, < 1.12.11 || >= 1.13.0, < 1.13.7 || >= 1.13.0, < 1.13.7 || >= 1.14.0, < 1.14.3 || >= 1.14.0, < 1.14.3 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:hashicorp:vault:*:*:*:*:*:*:*:*",
+       "cpe:2.3:a:hashicorp:vault:*:*:*:*:enterprise:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "2a49249dd6cd9cb8",
+    "name": "github.com/hashicorp/vault",
+    "version": "v1.13.3",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/bin/vault",
+      "layerID": "sha256:395de4e2a5ab3bab8676dee0ff87a08f0e212d8752a11ce3779a60a32eded448"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:hashicorp:vault:v1.13.3:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/hashicorp/vault@v1.13.3",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goBuildSettings": {
+      "-buildmode": "exe",
+      "-compiler": "gc",
+      "-ldflags": "-X github.com/hashicorp/vault/version.Version=1.13.3 -X github.com/hashicorp/vault/version.GitCommit=3bedf816cbf851656ae9e6bd65dd4a67a9ddff5e -X github.com/hashicorp/vault/version.BuildDate=2023-06-06T18:12:37Z",
+      "-tags": "ui",
+      "CGO_ENABLED": "0",
+      "GOAMD64": "v1",
+      "GOARCH": "amd64",
+      "GOOS": "linux",
+      "vcs": "git",
+      "vcs.modified": "false",
+      "vcs.revision": "3bedf816cbf851656ae9e6bd65dd4a67a9ddff5e",
+      "vcs.time": "2023-06-07T01:12:37Z"
+     },
+     "goCompiledVersion": "go1.20.4",
+     "architecture": "amd64",
+     "mainModule": "github.com/hashicorp/vault"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-3775",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-3775",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://discuss.hashicorp.com/t/hcsec-2023-29-vault-enterprise-s-sentinel-rgp-policies-allowed-for-cross-namespace-denial-of-service/58653"
+    ],
+    "description": "A Vault Enterprise Sentinel Role Governing Policy created by an operator to restrict access to resources in one namespace can be applied to requests outside in another non-descendant namespace, potentially resulting in denial of service. Fixed in Vault Enterprise 1.15.0, 1.14.4, 1.13.8.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 4.9,
+       "exploitabilityScore": 1.2,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "source": "security@hashicorp.com",
+      "type": "Secondary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:R/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 4.2,
+       "exploitabilityScore": 0.5,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:hashicorp:vault:v1.13.3:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "github.com/hashicorp/vault",
+       "version": "v1.13.3"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2023-3775",
+      "versionConstraint": ">= 0.11.0, < 1.13.8 || >= 1.14.0, < 1.14.4 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:hashicorp:vault:*:*:*:*:enterprise:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "2a49249dd6cd9cb8",
+    "name": "github.com/hashicorp/vault",
+    "version": "v1.13.3",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/bin/vault",
+      "layerID": "sha256:395de4e2a5ab3bab8676dee0ff87a08f0e212d8752a11ce3779a60a32eded448"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:hashicorp:vault:v1.13.3:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/hashicorp/vault@v1.13.3",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goBuildSettings": {
+      "-buildmode": "exe",
+      "-compiler": "gc",
+      "-ldflags": "-X github.com/hashicorp/vault/version.Version=1.13.3 -X github.com/hashicorp/vault/version.GitCommit=3bedf816cbf851656ae9e6bd65dd4a67a9ddff5e -X github.com/hashicorp/vault/version.BuildDate=2023-06-06T18:12:37Z",
+      "-tags": "ui",
+      "CGO_ENABLED": "0",
+      "GOAMD64": "v1",
+      "GOARCH": "amd64",
+      "GOOS": "linux",
+      "vcs": "git",
+      "vcs.modified": "false",
+      "vcs.revision": "3bedf816cbf851656ae9e6bd65dd4a67a9ddff5e",
+      "vcs.time": "2023-06-07T01:12:37Z"
+     },
+     "goCompiledVersion": "go1.20.4",
+     "architecture": "amd64",
+     "mainModule": "github.com/hashicorp/vault"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-3462",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-3462",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://discuss.hashicorp.com/t/hcsec-2023-24-vaults-ldap-auth-method-allows-for-user-enumeration/56714"
+    ],
+    "description": "HashiCorp's Vault and Vault Enterprise are vulnerable to user enumeration when using the LDAP auth method. An attacker may submit requests of existent and non-existent LDAP users and observe the response from Vault to check if the account is valid on the LDAP server. This vulnerability is fixed in Vault 1.14.1 and 1.13.5.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+      "metrics": {
+       "baseScore": 5.3,
+       "exploitabilityScore": 3.9,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "source": "security@hashicorp.com",
+      "type": "Secondary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+      "metrics": {
+       "baseScore": 5.3,
+       "exploitabilityScore": 3.9,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:hashicorp:vault:v1.13.3:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "github.com/hashicorp/vault",
+       "version": "v1.13.3"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2023-3462",
+      "versionConstraint": ">= 1.13.0, < 1.13.5 || >= 1.13.0, < 1.13.5 || = 1.14.0 || = 1.14.0 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:hashicorp:vault:*:*:*:*:-:*:*:*",
+       "cpe:2.3:a:hashicorp:vault:*:*:*:*:enterprise:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "2a49249dd6cd9cb8",
+    "name": "github.com/hashicorp/vault",
+    "version": "v1.13.3",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/bin/vault",
+      "layerID": "sha256:395de4e2a5ab3bab8676dee0ff87a08f0e212d8752a11ce3779a60a32eded448"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:hashicorp:vault:v1.13.3:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/hashicorp/vault@v1.13.3",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goBuildSettings": {
+      "-buildmode": "exe",
+      "-compiler": "gc",
+      "-ldflags": "-X github.com/hashicorp/vault/version.Version=1.13.3 -X github.com/hashicorp/vault/version.GitCommit=3bedf816cbf851656ae9e6bd65dd4a67a9ddff5e -X github.com/hashicorp/vault/version.BuildDate=2023-06-06T18:12:37Z",
+      "-tags": "ui",
+      "CGO_ENABLED": "0",
+      "GOAMD64": "v1",
+      "GOARCH": "amd64",
+      "GOOS": "linux",
+      "vcs": "git",
+      "vcs.modified": "false",
+      "vcs.revision": "3bedf816cbf851656ae9e6bd65dd4a67a9ddff5e",
+      "vcs.time": "2023-06-07T01:12:37Z"
+     },
+     "goCompiledVersion": "go1.20.4",
+     "architecture": "amd64",
+     "mainModule": "github.com/hashicorp/vault"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-fwv2-65wh-2w8c",
+    "dataSource": "https://github.com/advisories/GHSA-fwv2-65wh-2w8c",
+    "namespace": "github:language:go",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-fwv2-65wh-2w8c"
+    ],
+    "description": "Snowflake Golang Driver vulnerable to Command Injection",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:N",
+      "metrics": {
+       "baseScore": 7.3,
+       "exploitabilityScore": 2.1,
+       "impactScore": 5.2
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "1.6.19"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-34231",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-34231",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/snowflakedb/gosnowflake/commit/e11a2a555f1b9f7adc1f01fb7b5e7f38fbbb2a1c",
+      "https://github.com/snowflakedb/gosnowflake/pull/757",
+      "https://github.com/snowflakedb/gosnowflake/security/advisories/GHSA-fwv2-65wh-2w8c"
+     ],
+     "description": "gosnowflake is th Snowflake Golang driver. Prior to version 1.6.19, a command injection vulnerability exists in the Snowflake Golang driver via single sign-on (SSO) browser URL authentication. In order to exploit the potential for command injection, an attacker would need to be successful in (1) establishing a malicious resource and (2) redirecting users to utilize the resource. The attacker could set up a malicious, publicly accessible server which responds to the SSO URL with an attack payload. If the attacker then tricked a user into visiting the maliciously crafted connection URL, the user’s local machine would render the malicious payload, leading to a remote code execution. This attack scenario can be mitigated through URL whitelisting as well as common anti-phishing resources. A patch is available in version 1.6.19.",
+     "cvss": [
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.0",
+       "vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:N",
+       "metrics": {
+        "baseScore": 7.3,
+        "exploitabilityScore": 2.1,
+        "impactScore": 5.2
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 8.8,
+        "exploitabilityScore": 2.8,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/snowflakedb/gosnowflake",
+       "version": "v1.6.3"
+      }
+     },
+     "found": {
+      "versionConstraint": "<1.6.19 (unknown)",
+      "vulnerabilityID": "GHSA-fwv2-65wh-2w8c"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "ede34b992d91625d",
+    "name": "github.com/snowflakedb/gosnowflake",
+    "version": "v1.6.3",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/bin/vault",
+      "layerID": "sha256:395de4e2a5ab3bab8676dee0ff87a08f0e212d8752a11ce3779a60a32eded448"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:snowflakedb:gosnowflake:v1.6.3:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/snowflakedb/gosnowflake@v1.6.3",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.20.4",
+     "architecture": "amd64",
+     "h1Digest": "h1:EJDdDi74YbYt1ty164ge3fMZ0eVZ6KA7b1zmAa/wnRo=",
+     "mainModule": "github.com/hashicorp/vault"
+    }
+   }
+  }
+ ],
+ "source": {
+  "type": "image",
+  "target": {
+   "userInput": "docker.io/vault:1.13.3",
+   "imageID": "sha256:6d1fcd1a47eb84358f17a6918352cdf576f606d9fc9d36e8d13d9c9315ad89f9",
+   "manifestDigest": "sha256:b726262c7febf887b990d13eb5ca04e6d4b9ebcab082ad6ac1eabab36f206791",
+   "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+   "tags": [
+    "vault:1.13.3"
+   ],
+   "imageSize": 255032675,
+   "layers": [
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:cc2447e1835a40530975ab80bb1f872fbab0f2a0faecf2ab16fbbb89b3589438",
+     "size": 7330497
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:c9ca54c9957306c8ee867cbbe3384c86d49ef4c8b397bf05d6cf5ecee556f04e",
+     "size": 4699
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:395de4e2a5ab3bab8676dee0ff87a08f0e212d8752a11ce3779a60a32eded448",
+     "size": 247693433
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:3094ee39399bfbc85e870f3b72d5a6418c65d7e991f4c668d09f6d604458eb19",
+     "size": 0
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:14d0d8befa2bf84c289e661e6a60aa38f18f5b896b957ff69bba97fbe1769e48",
+     "size": 4046
+    }
+   ],
+   "manifest": "eyJzY2hlbWFWZXJzaW9uIjoyLCJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmRpc3RyaWJ1dGlvbi5tYW5pZmVzdC52Mitqc29uIiwiY29uZmlnIjp7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuY29udGFpbmVyLmltYWdlLnYxK2pzb24iLCJzaXplIjo1NTQ5LCJkaWdlc3QiOiJzaGEyNTY6NmQxZmNkMWE0N2ViODQzNThmMTdhNjkxODM1MmNkZjU3NmY2MDZkOWZjOWQzNmU4ZDEzZDljOTMxNWFkODlmOSJ9LCJsYXllcnMiOlt7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjo3NjI1NzI4LCJkaWdlc3QiOiJzaGEyNTY6Y2MyNDQ3ZTE4MzVhNDA1MzA5NzVhYjgwYmIxZjg3MmZiYWIwZjJhMGZhZWNmMmFiMTZmYmJiODliMzU4OTQzOCJ9LHsibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vdm5kLmRvY2tlci5pbWFnZS5yb290ZnMuZGlmZi50YXIuZ3ppcCIsInNpemUiOjEyMjg4LCJkaWdlc3QiOiJzaGEyNTY6YzljYTU0Yzk5NTczMDZjOGVlODY3Y2JiZTMzODRjODZkNDllZjRjOGIzOTdiZjA1ZDZjZjVlY2VlNTU2ZjA0ZSJ9LHsibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vdm5kLmRvY2tlci5pbWFnZS5yb290ZnMuZGlmZi50YXIuZ3ppcCIsInNpemUiOjI0ODgwMTc5MiwiZGlnZXN0Ijoic2hhMjU2OjM5NWRlNGUyYTVhYjNiYWI4Njc2ZGVlMGZmODdhMDhmMGUyMTJkODc1MmExMWNlMzc3OWE2MGEzMmVkZWQ0NDgifSx7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjozNTg0LCJkaWdlc3QiOiJzaGEyNTY6MzA5NGVlMzkzOTliZmJjODVlODcwZjNiNzJkNWE2NDE4YzY1ZDdlOTkxZjRjNjY4ZDA5ZjZkNjA0NDU4ZWIxOSJ9LHsibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vdm5kLmRvY2tlci5pbWFnZS5yb290ZnMuZGlmZi50YXIuZ3ppcCIsInNpemUiOjcxNjgsImRpZ2VzdCI6InNoYTI1NjoxNGQwZDhiZWZhMmJmODRjMjg5ZTY2MWU2YTYwYWEzOGYxOGY1Yjg5NmI5NTdmZjY5YmJhOTdmYmUxNzY5ZTQ4In1dfQ==",
+   "config": "eyJhcmNoaXRlY3R1cmUiOiJhbWQ2NCIsImNvbmZpZyI6eyJIb3N0bmFtZSI6IiIsIkRvbWFpbm5hbWUiOiIiLCJVc2VyIjoiIiwiQXR0YWNoU3RkaW4iOmZhbHNlLCJBdHRhY2hTdGRvdXQiOmZhbHNlLCJBdHRhY2hTdGRlcnIiOmZhbHNlLCJFeHBvc2VkUG9ydHMiOnsiODIwMC90Y3AiOnt9fSwiVHR5IjpmYWxzZSwiT3BlblN0ZGluIjpmYWxzZSwiU3RkaW5PbmNlIjpmYWxzZSwiRW52IjpbIlBBVEg9L3Vzci9sb2NhbC9zYmluOi91c3IvbG9jYWwvYmluOi91c3Ivc2JpbjovdXNyL2Jpbjovc2JpbjovYmluIl0sIkNtZCI6WyJzZXJ2ZXIiLCItZGV2Il0sIkltYWdlIjoic2hhMjU2OmFlZDY4NmZjYmU3MTk1ZDI1ODMxNmFjNzcyMWYzODEyYzI0NmUzM2Q5ZmUwNTY4MzAxMzdiMTJiY2YzODk2YzIiLCJWb2x1bWVzIjp7Ii92YXVsdC9maWxlIjp7fSwiL3ZhdWx0L2xvZ3MiOnt9fSwiV29ya2luZ0RpciI6IiIsIkVudHJ5cG9pbnQiOlsiZG9ja2VyLWVudHJ5cG9pbnQuc2giXSwiT25CdWlsZCI6bnVsbCwiTGFiZWxzIjpudWxsfSwiY29udGFpbmVyIjoiYjllOTBhNDkwZDE5YjFlZDUyOTI0YjNmYzE3Yjc4OWFiMTk4MmVjYzE3NDg0ZWJjMmZkNjA4OTNhOTM2NjE0OCIsImNvbnRhaW5lcl9jb25maWciOnsiSG9zdG5hbWUiOiJiOWU5MGE0OTBkMTkiLCJEb21haW5uYW1lIjoiIiwiVXNlciI6IiIsIkF0dGFjaFN0ZGluIjpmYWxzZSwiQXR0YWNoU3Rkb3V0IjpmYWxzZSwiQXR0YWNoU3RkZXJyIjpmYWxzZSwiRXhwb3NlZFBvcnRzIjp7IjgyMDAvdGNwIjp7fX0sIlR0eSI6ZmFsc2UsIk9wZW5TdGRpbiI6ZmFsc2UsIlN0ZGluT25jZSI6ZmFsc2UsIkVudiI6WyJQQVRIPS91c3IvbG9jYWwvc2JpbjovdXNyL2xvY2FsL2JpbjovdXNyL3NiaW46L3Vzci9iaW46L3NiaW46L2JpbiJdLCJDbWQiOlsiL2Jpbi9zaCIsIi1jIiwiIyhub3ApICIsIkNNRCBbXCJzZXJ2ZXJcIiBcIi1kZXZcIl0iXSwiSW1hZ2UiOiJzaGEyNTY6YWVkNjg2ZmNiZTcxOTVkMjU4MzE2YWM3NzIxZjM4MTJjMjQ2ZTMzZDlmZTA1NjgzMDEzN2IxMmJjZjM4OTZjMiIsIlZvbHVtZXMiOnsiL3ZhdWx0L2ZpbGUiOnt9LCIvdmF1bHQvbG9ncyI6e319LCJXb3JraW5nRGlyIjoiIiwiRW50cnlwb2ludCI6WyJkb2NrZXItZW50cnlwb2ludC5zaCJdLCJPbkJ1aWxkIjpudWxsLCJMYWJlbHMiOnt9fSwiY3JlYXRlZCI6IjIwMjMtMDktMjlUMDA6MDY6NDcuODc1MDk4MTIzWiIsImRvY2tlcl92ZXJzaW9uIjoiMjAuMTAuMjMiLCJoaXN0b3J5IjpbeyJjcmVhdGVkIjoiMjAyMy0wOS0yOFQyMToxOToyNy42ODYxMTAwNjNaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApIEFERCBmaWxlOjc1NjE4M2JiYTljN2Y0NTkzYzJiMjE2ZTk4ZTQyMDhiOTE2M2M0Yzk2MmVhMDgzN2VmODhiZDkxNzYwOWQwMDEgaW4gLyAifSx7ImNyZWF0ZWQiOiIyMDIzLTA5LTI4VDIxOjE5OjI3LjgwMTQ3OTQwOVoiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgIENNRCBbXCIvYmluL3NoXCJdIiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjMtMDktMjlUMDA6MDY6MzcuMzMxNTI1MzE3WiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSAgQVJHIFZBVUxUX1ZFUlNJT049MS4xMy4zIiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjMtMDktMjlUMDA6MDY6MzcuODc4NjY1NDUxWiIsImNyZWF0ZWRfYnkiOiJ8MSBWQVVMVF9WRVJTSU9OPTEuMTMuMyAvYmluL3NoIC1jIGFkZGdyb3VwIHZhdWx0IFx1MDAyNlx1MDAyNiAgICAgYWRkdXNlciAtUyAtRyB2YXVsdCB2YXVsdCJ9LHsiY3JlYXRlZCI6IjIwMjMtMDktMjlUMDA6MDY6NDYuMjczNzI1NDIxWiIsImNyZWF0ZWRfYnkiOiJ8MSBWQVVMVF9WRVJTSU9OPTEuMTMuMyAvYmluL3NoIC1jIHNldCAtZXV4OyAgICAgYXBrIGFkZCAtLW5vLWNhY2hlIGNhLWNlcnRpZmljYXRlcyBnbnVwZyBvcGVuc3NsIGxpYmNhcCBzdS1leGVjIGR1bWItaW5pdCB0emRhdGEgXHUwMDI2XHUwMDI2ICAgICBhcGtBcmNoPVwiJChhcGsgLS1wcmludC1hcmNoKVwiOyAgICAgY2FzZSBcIiRhcGtBcmNoXCIgaW4gICAgICAgICBhcm1oZikgQVJDSD0nYXJtJyA7OyAgICAgICAgIGFhcmNoNjQpIEFSQ0g9J2FybTY0JyA7OyAgICAgICAgIHg4Nl82NCkgQVJDSD0nYW1kNjQnIDs7ICAgICAgICAgeDg2KSBBUkNIPSczODYnIDs7ICAgICAgICAgKikgZWNobyBcdTAwM2VcdTAwMjYyIFwiZXJyb3I6IHVuc3VwcG9ydGVkIGFyY2hpdGVjdHVyZTogJGFwa0FyY2hcIjsgZXhpdCAxIDs7ICAgICBlc2FjIFx1MDAyNlx1MDAyNiAgICAgVkFVTFRfR1BHS0VZPUM4NzQwMTFGMEFCNDA1MTEwRDAyMTA1NTM0MzY1RDk0NzJENzQ2OEY7ICAgICBmb3VuZD0nJzsgICAgIGZvciBzZXJ2ZXIgaW4gICAgICAgICBoa3BzOi8va2V5cy5vcGVucGdwLm9yZyAgICAgICAgIGhrcHM6Ly9rZXlzZXJ2ZXIudWJ1bnR1LmNvbSAgICAgICAgIGhrcHM6Ly9wZ3AubWl0LmVkdSAgICAgOyBkbyAgICAgICAgIGVjaG8gXCJGZXRjaGluZyBHUEcga2V5ICRWQVVMVF9HUEdLRVkgZnJvbSAkc2VydmVyXCI7ICAgICAgICAgZ3BnIC0tYmF0Y2ggLS1rZXlzZXJ2ZXIgXCIkc2VydmVyXCIgLS1yZWN2LWtleXMgXCIkVkFVTFRfR1BHS0VZXCIgXHUwMDI2XHUwMDI2IGZvdW5kPXllcyBcdTAwMjZcdTAwMjYgYnJlYWs7ICAgICBkb25lOyAgICAgdGVzdCAteiBcIiRmb3VuZFwiIFx1MDAyNlx1MDAyNiBlY2hvIFx1MDAzZVx1MDAyNjIgXCJlcnJvcjogZmFpbGVkIHRvIGZldGNoIEdQRyBrZXkgJFZBVUxUX0dQR0tFWVwiIFx1MDAyNlx1MDAyNiBleGl0IDE7ICAgICBta2RpciAtcCAvdG1wL2J1aWxkIFx1MDAyNlx1MDAyNiAgICAgY2QgL3RtcC9idWlsZCBcdTAwMjZcdTAwMjYgICAgIHdnZXQgaHR0cHM6Ly9yZWxlYXNlcy5oYXNoaWNvcnAuY29tL3ZhdWx0LyR7VkFVTFRfVkVSU0lPTn0vdmF1bHRfJHtWQVVMVF9WRVJTSU9OfV9saW51eF8ke0FSQ0h9LnppcCBcdTAwMjZcdTAwMjYgICAgIHdnZXQgaHR0cHM6Ly9yZWxlYXNlcy5oYXNoaWNvcnAuY29tL3ZhdWx0LyR7VkFVTFRfVkVSU0lPTn0vdmF1bHRfJHtWQVVMVF9WRVJTSU9OfV9TSEEyNTZTVU1TIFx1MDAyNlx1MDAyNiAgICAgd2dldCBodHRwczovL3JlbGVhc2VzLmhhc2hpY29ycC5jb20vdmF1bHQvJHtWQVVMVF9WRVJTSU9OfS92YXVsdF8ke1ZBVUxUX1ZFUlNJT059X1NIQTI1NlNVTVMuc2lnIFx1MDAyNlx1MDAyNiAgICAgZ3BnIC0tYmF0Y2ggLS12ZXJpZnkgdmF1bHRfJHtWQVVMVF9WRVJTSU9OfV9TSEEyNTZTVU1TLnNpZyB2YXVsdF8ke1ZBVUxUX1ZFUlNJT059X1NIQTI1NlNVTVMgXHUwMDI2XHUwMDI2ICAgICBncmVwIHZhdWx0XyR7VkFVTFRfVkVSU0lPTn1fbGludXhfJHtBUkNIfS56aXAgdmF1bHRfJHtWQVVMVF9WRVJTSU9OfV9TSEEyNTZTVU1TIHwgc2hhMjU2c3VtIC1jIFx1MDAyNlx1MDAyNiAgICAgdW56aXAgLWQgL3RtcC9idWlsZCB2YXVsdF8ke1ZBVUxUX1ZFUlNJT059X2xpbnV4XyR7QVJDSH0uemlwIFx1MDAyNlx1MDAyNiAgICAgY3AgL3RtcC9idWlsZC92YXVsdCAvYmluL3ZhdWx0IFx1MDAyNlx1MDAyNiAgICAgaWYgWyAtZiAvdG1wL2J1aWxkL0VVTEEudHh0IF07IHRoZW4gbWtkaXIgLXAgL3Vzci9zaGFyZS9kb2MvdmF1bHQ7IG12IC90bXAvYnVpbGQvRVVMQS50eHQgL3Vzci9zaGFyZS9kb2MvdmF1bHQvRVVMQS50eHQ7IGZpIFx1MDAyNlx1MDAyNiAgICAgaWYgWyAtZiAvdG1wL2J1aWxkL1Rlcm1zT2ZFdmFsdWF0aW9uLnR4dCBdOyB0aGVuIG1rZGlyIC1wIC91c3Ivc2hhcmUvZG9jL3ZhdWx0OyBtdiAvdG1wL2J1aWxkL1Rlcm1zT2ZFdmFsdWF0aW9uLnR4dCAvdXNyL3NoYXJlL2RvYy92YXVsdC9UZXJtc09mRXZhbHVhdGlvbi50eHQ7IGZpIFx1MDAyNlx1MDAyNiAgICAgY2QgL3RtcCBcdTAwMjZcdTAwMjYgICAgIHJtIC1yZiAvdG1wL2J1aWxkIFx1MDAyNlx1MDAyNiAgICAgZ3BnY29uZiAtLWtpbGwgZGlybW5nciBcdTAwMjZcdTAwMjYgICAgIGdwZ2NvbmYgLS1raWxsIGdwZy1hZ2VudCBcdTAwMjZcdTAwMjYgICAgIGFwayBkZWwgZ251cGcgb3BlbnNzbCBcdTAwMjZcdTAwMjYgICAgIHJtIC1yZiAvcm9vdC8uZ251cGcifSx7ImNyZWF0ZWQiOiIyMDIzLTA5LTI5VDAwOjA2OjQ3LjI0NTY5MTU4NVoiLCJjcmVhdGVkX2J5IjoifDEgVkFVTFRfVkVSU0lPTj0xLjEzLjMgL2Jpbi9zaCAtYyBta2RpciAtcCAvdmF1bHQvbG9ncyBcdTAwMjZcdTAwMjYgICAgIG1rZGlyIC1wIC92YXVsdC9maWxlIFx1MDAyNlx1MDAyNiAgICAgbWtkaXIgLXAgL3ZhdWx0L2NvbmZpZyBcdTAwMjZcdTAwMjYgICAgIGNob3duIC1SIHZhdWx0OnZhdWx0IC92YXVsdCJ9LHsiY3JlYXRlZCI6IjIwMjMtMDktMjlUMDA6MDY6NDcuMzQ2OTEzMjAyWiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSAgVk9MVU1FIFsvdmF1bHQvbG9nc10iLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyMy0wOS0yOVQwMDowNjo0Ny40NTQ2NTM4NThaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApICBWT0xVTUUgWy92YXVsdC9maWxlXSIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDIzLTA5LTI5VDAwOjA2OjQ3LjU4NjUyMzgyNloiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgIEVYUE9TRSA4MjAwIiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjMtMDktMjlUMDA6MDY6NDcuNjg5NjkzODMxWiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSBDT1BZIGZpbGU6Mjg0NzI1ZTgyZGZhZGU2N2M4YjIwOTI1ODVmNzBhMTUxYjg3ODJkODMxMDYwODJhNWI0ODUyYjk5NmI3ZTU1MCBpbiAvdXNyL2xvY2FsL2Jpbi9kb2NrZXItZW50cnlwb2ludC5zaCAifSx7ImNyZWF0ZWQiOiIyMDIzLTA5LTI5VDAwOjA2OjQ3Ljc4MTcyNDg2NVoiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgIEVOVFJZUE9JTlQgW1wiZG9ja2VyLWVudHJ5cG9pbnQuc2hcIl0iLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyMy0wOS0yOVQwMDowNjo0Ny44NzUwOTgxMjNaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApICBDTUQgW1wic2VydmVyXCIgXCItZGV2XCJdIiwiZW1wdHlfbGF5ZXIiOnRydWV9XSwib3MiOiJsaW51eCIsInJvb3RmcyI6eyJ0eXBlIjoibGF5ZXJzIiwiZGlmZl9pZHMiOlsic2hhMjU2OmNjMjQ0N2UxODM1YTQwNTMwOTc1YWI4MGJiMWY4NzJmYmFiMGYyYTBmYWVjZjJhYjE2ZmJiYjg5YjM1ODk0MzgiLCJzaGEyNTY6YzljYTU0Yzk5NTczMDZjOGVlODY3Y2JiZTMzODRjODZkNDllZjRjOGIzOTdiZjA1ZDZjZjVlY2VlNTU2ZjA0ZSIsInNoYTI1NjozOTVkZTRlMmE1YWIzYmFiODY3NmRlZTBmZjg3YTA4ZjBlMjEyZDg3NTJhMTFjZTM3NzlhNjBhMzJlZGVkNDQ4Iiwic2hhMjU2OjMwOTRlZTM5Mzk5YmZiYzg1ZTg3MGYzYjcyZDVhNjQxOGM2NWQ3ZTk5MWY0YzY2OGQwOWY2ZDYwNDQ1OGViMTkiLCJzaGEyNTY6MTRkMGQ4YmVmYTJiZjg0YzI4OWU2NjFlNmE2MGFhMzhmMThmNWI4OTZiOTU3ZmY2OWJiYTk3ZmJlMTc2OWU0OCJdfX0=",
+   "repoDigests": [
+    "vault@sha256:e322a5e23ed6e5f151bba1e2b57ed5a7204eab1f1f603bb104c1241cca213f33"
+   ],
+   "architecture": "amd64",
+   "os": "linux"
+  }
+ },
+ "distro": {
+  "name": "alpine",
+  "version": "3.18.4",
+  "idLike": []
+ },
+ "descriptor": {
+  "name": "",
+  "version": "",
+  "configuration": {
+   "output": [
+    "json"
+   ],
+   "file": "",
+   "distro": "",
+   "add-cpes-if-none": false,
+   "output-template-file": "",
+   "check-for-app-update": true,
+   "only-fixed": false,
+   "only-notfixed": false,
+   "platform": "",
+   "search": {
+    "scope": "Squashed",
+    "unindexed-archives": false,
+    "indexed-archives": true
+   },
+   "ignore": null,
+   "exclude": [],
+   "db": {
+    "cache-dir": "/home/anon/.cache/grype/db",
+    "update-url": "https://toolbox-data.anchore.io/grype/databases/listing.json",
+    "ca-cert": "",
+    "auto-update": true,
+    "validate-by-hash-on-start": false,
+    "validate-age": true,
+    "max-allowed-built-age": 432000000000000
+   },
+   "externalSources": {
+    "enable": false,
+    "maven": {
+     "searchUpstreamBySha1": true,
+     "baseUrl": "https://search.maven.org/solrsearch/select"
+    }
+   },
+   "match": {
+    "java": {
+     "using-cpes": true
+    },
+    "dotnet": {
+     "using-cpes": true
+    },
+    "golang": {
+     "using-cpes": true
+    },
+    "javascript": {
+     "using-cpes": true
+    },
+    "python": {
+     "using-cpes": true
+    },
+    "ruby": {
+     "using-cpes": true
+    },
+    "stock": {
+     "using-cpes": true
+    }
+   },
+   "fail-on-severity": "",
+   "registry": {
+    "insecure-skip-tls-verify": false,
+    "insecure-use-http": false,
+    "auth": null,
+    "ca-cert": ""
+   },
+   "show-suppressed": false,
+   "by-cve": false,
+   "name": "",
+   "default-image-pull-source": "",
+   "vex-documents": [],
+   "vex-add": []
+  },
+  "db": {
+   "built": "2023-10-10T01:23:53Z",
+   "schemaVersion": 5,
+   "location": "/home/anon/.cache/grype/db/5",
+   "checksum": "sha256:c1dd693b90da9833fd1716f9d2432de66004be2bd188e882392b0076a589cbf4",
+   "error": null
+  },
+  "timestamp": "2023-10-10T16:43:26.298089872-04:00"
+ }
+}

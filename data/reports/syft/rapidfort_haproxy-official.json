@@ -1,0 +1,933 @@
+{
+ "artifacts": [
+  {
+   "id": "28236318a0dfac9d",
+   "name": "coreutils",
+   "version": "8.32-4+b1",
+   "type": "deb",
+   "foundBy": "dpkgdb-cataloger",
+   "locations": [
+    {
+     "path": "/var/lib/dpkg/status",
+     "layerID": "sha256:c7d97df5e4106a92bc884693cb315ab7ca73cacd5614242f5967a356fc7f9a18",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "",
+   "cpes": [
+    "cpe:2.3:a:coreutils:coreutils:8.32-4\\+b1:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:deb/debian/coreutils@8.32-4+b1?arch=amd64&upstream=coreutils%408.32-4&distro=debian-11",
+   "metadataType": "DpkgMetadata",
+   "metadata": {
+    "package": "coreutils",
+    "source": "coreutils",
+    "version": "8.32-4+b1",
+    "sourceVersion": "8.32-4",
+    "architecture": "amd64",
+    "maintainer": "Michael Stone <mstone@debian.org>",
+    "installedSize": 17478,
+    "files": []
+   }
+  },
+  {
+   "id": "900ad742d954a454",
+   "name": "dash",
+   "version": "0.5.11+git20200708+dd9ef66-5",
+   "type": "deb",
+   "foundBy": "dpkgdb-cataloger",
+   "locations": [
+    {
+     "path": "/var/lib/dpkg/status",
+     "layerID": "sha256:c7d97df5e4106a92bc884693cb315ab7ca73cacd5614242f5967a356fc7f9a18",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "",
+   "cpes": [
+    "cpe:2.3:a:dash:dash:0.5.11\\+git20200708\\+dd9ef66-5:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:deb/debian/dash@0.5.11+git20200708+dd9ef66-5?arch=amd64&distro=debian-11",
+   "metadataType": "DpkgMetadata",
+   "metadata": {
+    "package": "dash",
+    "source": "",
+    "version": "0.5.11+git20200708+dd9ef66-5",
+    "sourceVersion": "",
+    "architecture": "amd64",
+    "maintainer": "Andrej Shadura <andrewsh@debian.org>",
+    "installedSize": 221,
+    "files": []
+   }
+  },
+  {
+   "id": "a07031caedbca661",
+   "name": "grep",
+   "version": "3.6-1",
+   "type": "deb",
+   "foundBy": "dpkgdb-cataloger",
+   "locations": [
+    {
+     "path": "/var/lib/dpkg/status",
+     "layerID": "sha256:c7d97df5e4106a92bc884693cb315ab7ca73cacd5614242f5967a356fc7f9a18",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "",
+   "cpes": [
+    "cpe:2.3:a:grep:grep:3.6-1:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:deb/debian/grep@3.6-1?arch=amd64&distro=debian-11",
+   "metadataType": "DpkgMetadata",
+   "metadata": {
+    "package": "grep",
+    "source": "",
+    "version": "3.6-1",
+    "sourceVersion": "",
+    "architecture": "amd64",
+    "maintainer": "Anibal Monsalve Salazar <anibal@debian.org>",
+    "installedSize": 1091,
+    "files": []
+   }
+  },
+  {
+   "id": "2834c638ecdea35b",
+   "name": "libacl1",
+   "version": "2.2.53-10",
+   "type": "deb",
+   "foundBy": "dpkgdb-cataloger",
+   "locations": [
+    {
+     "path": "/var/lib/dpkg/status",
+     "layerID": "sha256:c7d97df5e4106a92bc884693cb315ab7ca73cacd5614242f5967a356fc7f9a18",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "",
+   "cpes": [
+    "cpe:2.3:a:libacl1:libacl1:2.2.53-10:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:deb/debian/libacl1@2.2.53-10?arch=amd64&upstream=acl&distro=debian-11",
+   "metadataType": "DpkgMetadata",
+   "metadata": {
+    "package": "libacl1",
+    "source": "acl",
+    "version": "2.2.53-10",
+    "sourceVersion": "",
+    "architecture": "amd64",
+    "maintainer": "Guillem Jover <guillem@debian.org>",
+    "installedSize": 71,
+    "files": []
+   }
+  },
+  {
+   "id": "e58a78e4c7bc789d",
+   "name": "libattr1",
+   "version": "1:2.4.48-6",
+   "type": "deb",
+   "foundBy": "dpkgdb-cataloger",
+   "locations": [
+    {
+     "path": "/var/lib/dpkg/status",
+     "layerID": "sha256:c7d97df5e4106a92bc884693cb315ab7ca73cacd5614242f5967a356fc7f9a18",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "",
+   "cpes": [
+    "cpe:2.3:a:libattr1:libattr1:1\\:2.4.48-6:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:deb/debian/libattr1@1:2.4.48-6?arch=amd64&upstream=attr&distro=debian-11",
+   "metadataType": "DpkgMetadata",
+   "metadata": {
+    "package": "libattr1",
+    "source": "attr",
+    "version": "1:2.4.48-6",
+    "sourceVersion": "",
+    "architecture": "amd64",
+    "maintainer": "Guillem Jover <guillem@debian.org>",
+    "installedSize": 56,
+    "files": [
+     {
+      "path": "/etc/xattr.conf",
+      "digest": {
+       "algorithm": "md5",
+       "value": "d1e7e7add29e247fdcf2a098fe5b37a0"
+      },
+      "isConfigFile": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "58b2fc3e1c0d3a7b",
+   "name": "libc6",
+   "version": "2.31-13+deb11u5",
+   "type": "deb",
+   "foundBy": "dpkgdb-cataloger",
+   "locations": [
+    {
+     "path": "/var/lib/dpkg/status",
+     "layerID": "sha256:c7d97df5e4106a92bc884693cb315ab7ca73cacd5614242f5967a356fc7f9a18",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "",
+   "cpes": [
+    "cpe:2.3:a:libc6:libc6:2.31-13\\+deb11u5:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:deb/debian/libc6@2.31-13+deb11u5?arch=amd64&upstream=glibc&distro=debian-11",
+   "metadataType": "DpkgMetadata",
+   "metadata": {
+    "package": "libc6",
+    "source": "glibc",
+    "version": "2.31-13+deb11u5",
+    "sourceVersion": "",
+    "architecture": "amd64",
+    "maintainer": "GNU Libc Maintainers <debian-glibc@lists.debian.org>",
+    "installedSize": 12837,
+    "files": [
+     {
+      "path": "/etc/ld.so.conf.d/x86_64-linux-gnu.conf",
+      "digest": {
+       "algorithm": "md5",
+       "value": "d4e7a7b88a71b5ffd9e2644e71a0cfab"
+      },
+      "isConfigFile": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "47305f72711a0fec",
+   "name": "libcrypt1",
+   "version": "1:4.4.18-4",
+   "type": "deb",
+   "foundBy": "dpkgdb-cataloger",
+   "locations": [
+    {
+     "path": "/var/lib/dpkg/status",
+     "layerID": "sha256:c7d97df5e4106a92bc884693cb315ab7ca73cacd5614242f5967a356fc7f9a18",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "",
+   "cpes": [
+    "cpe:2.3:a:libcrypt1:libcrypt1:1\\:4.4.18-4:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:deb/debian/libcrypt1@1:4.4.18-4?arch=amd64&upstream=libxcrypt&distro=debian-11",
+   "metadataType": "DpkgMetadata",
+   "metadata": {
+    "package": "libcrypt1",
+    "source": "libxcrypt",
+    "version": "1:4.4.18-4",
+    "sourceVersion": "",
+    "architecture": "amd64",
+    "maintainer": "Marco d'Itri <md@linux.it>",
+    "installedSize": 226,
+    "files": []
+   }
+  },
+  {
+   "id": "fd24d3c4533cda9a",
+   "name": "libgcc-s1",
+   "version": "10.2.1-6",
+   "type": "deb",
+   "foundBy": "dpkgdb-cataloger",
+   "locations": [
+    {
+     "path": "/var/lib/dpkg/status",
+     "layerID": "sha256:c7d97df5e4106a92bc884693cb315ab7ca73cacd5614242f5967a356fc7f9a18",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "",
+   "cpes": [
+    "cpe:2.3:a:libgcc-s1:libgcc-s1:10.2.1-6:*:*:*:*:*:*:*",
+    "cpe:2.3:a:libgcc-s1:libgcc_s1:10.2.1-6:*:*:*:*:*:*:*",
+    "cpe:2.3:a:libgcc_s1:libgcc-s1:10.2.1-6:*:*:*:*:*:*:*",
+    "cpe:2.3:a:libgcc_s1:libgcc_s1:10.2.1-6:*:*:*:*:*:*:*",
+    "cpe:2.3:a:libgcc:libgcc-s1:10.2.1-6:*:*:*:*:*:*:*",
+    "cpe:2.3:a:libgcc:libgcc_s1:10.2.1-6:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:deb/debian/libgcc-s1@10.2.1-6?arch=amd64&upstream=gcc-10&distro=debian-11",
+   "metadataType": "DpkgMetadata",
+   "metadata": {
+    "package": "libgcc-s1",
+    "source": "gcc-10",
+    "version": "10.2.1-6",
+    "sourceVersion": "",
+    "architecture": "amd64",
+    "maintainer": "Debian GCC Maintainers <debian-gcc@lists.debian.org>",
+    "installedSize": 116,
+    "files": []
+   }
+  },
+  {
+   "id": "fb878e2d436cbd83",
+   "name": "liblua5.3-0",
+   "version": "5.3.3-1.1+b1",
+   "type": "deb",
+   "foundBy": "dpkgdb-cataloger",
+   "locations": [
+    {
+     "path": "/var/lib/dpkg/status",
+     "layerID": "sha256:c7d97df5e4106a92bc884693cb315ab7ca73cacd5614242f5967a356fc7f9a18",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "",
+   "cpes": [
+    "cpe:2.3:a:liblua5.3-0:liblua5.3-0:5.3.3-1.1\\+b1:*:*:*:*:*:*:*",
+    "cpe:2.3:a:liblua5.3-0:liblua5.3_0:5.3.3-1.1\\+b1:*:*:*:*:*:*:*",
+    "cpe:2.3:a:liblua5.3_0:liblua5.3-0:5.3.3-1.1\\+b1:*:*:*:*:*:*:*",
+    "cpe:2.3:a:liblua5.3_0:liblua5.3_0:5.3.3-1.1\\+b1:*:*:*:*:*:*:*",
+    "cpe:2.3:a:liblua5.3:liblua5.3-0:5.3.3-1.1\\+b1:*:*:*:*:*:*:*",
+    "cpe:2.3:a:liblua5.3:liblua5.3_0:5.3.3-1.1\\+b1:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:deb/debian/liblua5.3-0@5.3.3-1.1+b1?arch=amd64&upstream=lua5.3%405.3.3-1.1&distro=debian-11",
+   "metadataType": "DpkgMetadata",
+   "metadata": {
+    "package": "liblua5.3-0",
+    "source": "lua5.3",
+    "version": "5.3.3-1.1+b1",
+    "sourceVersion": "5.3.3-1.1",
+    "architecture": "amd64",
+    "maintainer": "Enrico Tassi <gareuselesinge@debian.org>",
+    "installedSize": 476,
+    "files": []
+   }
+  },
+  {
+   "id": "c2b2703f3a391847",
+   "name": "libpcre2-8-0",
+   "version": "10.36-2+deb11u1",
+   "type": "deb",
+   "foundBy": "dpkgdb-cataloger",
+   "locations": [
+    {
+     "path": "/var/lib/dpkg/status",
+     "layerID": "sha256:c7d97df5e4106a92bc884693cb315ab7ca73cacd5614242f5967a356fc7f9a18",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "",
+   "cpes": [
+    "cpe:2.3:a:libpcre2-8-0:libpcre2-8-0:10.36-2\\+deb11u1:*:*:*:*:*:*:*",
+    "cpe:2.3:a:libpcre2-8-0:libpcre2_8_0:10.36-2\\+deb11u1:*:*:*:*:*:*:*",
+    "cpe:2.3:a:libpcre2_8_0:libpcre2-8-0:10.36-2\\+deb11u1:*:*:*:*:*:*:*",
+    "cpe:2.3:a:libpcre2_8_0:libpcre2_8_0:10.36-2\\+deb11u1:*:*:*:*:*:*:*",
+    "cpe:2.3:a:libpcre2-8:libpcre2-8-0:10.36-2\\+deb11u1:*:*:*:*:*:*:*",
+    "cpe:2.3:a:libpcre2-8:libpcre2_8_0:10.36-2\\+deb11u1:*:*:*:*:*:*:*",
+    "cpe:2.3:a:libpcre2_8:libpcre2-8-0:10.36-2\\+deb11u1:*:*:*:*:*:*:*",
+    "cpe:2.3:a:libpcre2_8:libpcre2_8_0:10.36-2\\+deb11u1:*:*:*:*:*:*:*",
+    "cpe:2.3:a:libpcre2:libpcre2-8-0:10.36-2\\+deb11u1:*:*:*:*:*:*:*",
+    "cpe:2.3:a:libpcre2:libpcre2_8_0:10.36-2\\+deb11u1:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:deb/debian/libpcre2-8-0@10.36-2+deb11u1?arch=amd64&upstream=pcre2&distro=debian-11",
+   "metadataType": "DpkgMetadata",
+   "metadata": {
+    "package": "libpcre2-8-0",
+    "source": "pcre2",
+    "version": "10.36-2+deb11u1",
+    "sourceVersion": "",
+    "architecture": "amd64",
+    "maintainer": "Matthew Vernon <matthew@debian.org>",
+    "installedSize": 664,
+    "files": []
+   }
+  },
+  {
+   "id": "7759f1a277e93c8e",
+   "name": "libpcre3",
+   "version": "2:8.39-13",
+   "type": "deb",
+   "foundBy": "dpkgdb-cataloger",
+   "locations": [
+    {
+     "path": "/var/lib/dpkg/status",
+     "layerID": "sha256:c7d97df5e4106a92bc884693cb315ab7ca73cacd5614242f5967a356fc7f9a18",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "",
+   "cpes": [
+    "cpe:2.3:a:libpcre3:libpcre3:2\\:8.39-13:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:deb/debian/libpcre3@2:8.39-13?arch=amd64&upstream=pcre3&distro=debian-11",
+   "metadataType": "DpkgMetadata",
+   "metadata": {
+    "package": "libpcre3",
+    "source": "pcre3",
+    "version": "2:8.39-13",
+    "sourceVersion": "",
+    "architecture": "amd64",
+    "maintainer": "Matthew Vernon <matthew@debian.org>",
+    "installedSize": 669,
+    "files": []
+   }
+  },
+  {
+   "id": "7b9ed0eefa21d745",
+   "name": "libselinux1",
+   "version": "3.1-3",
+   "type": "deb",
+   "foundBy": "dpkgdb-cataloger",
+   "locations": [
+    {
+     "path": "/var/lib/dpkg/status",
+     "layerID": "sha256:c7d97df5e4106a92bc884693cb315ab7ca73cacd5614242f5967a356fc7f9a18",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "",
+   "cpes": [
+    "cpe:2.3:a:libselinux1:libselinux1:3.1-3:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:deb/debian/libselinux1@3.1-3?arch=amd64&upstream=libselinux&distro=debian-11",
+   "metadataType": "DpkgMetadata",
+   "metadata": {
+    "package": "libselinux1",
+    "source": "libselinux",
+    "version": "3.1-3",
+    "sourceVersion": "",
+    "architecture": "amd64",
+    "maintainer": "Debian SELinux maintainers <selinux-devel@lists.alioth.debian.org>",
+    "installedSize": 207,
+    "files": []
+   }
+  },
+  {
+   "id": "0f2c1070a22c41c9",
+   "name": "libssl1.1",
+   "version": "1.1.1n-0+deb11u4",
+   "type": "deb",
+   "foundBy": "dpkgdb-cataloger",
+   "locations": [
+    {
+     "path": "/var/lib/dpkg/status",
+     "layerID": "sha256:c7d97df5e4106a92bc884693cb315ab7ca73cacd5614242f5967a356fc7f9a18",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "",
+   "cpes": [
+    "cpe:2.3:a:libssl1.1:libssl1.1:1.1.1n-0\\+deb11u4:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:deb/debian/libssl1.1@1.1.1n-0+deb11u4?arch=amd64&upstream=openssl&distro=debian-11",
+   "metadataType": "DpkgMetadata",
+   "metadata": {
+    "package": "libssl1.1",
+    "source": "openssl",
+    "version": "1.1.1n-0+deb11u4",
+    "sourceVersion": "",
+    "architecture": "amd64",
+    "maintainer": "Debian OpenSSL Team <pkg-openssl-devel@lists.alioth.debian.org>",
+    "installedSize": 4124,
+    "files": []
+   }
+  },
+  {
+   "id": "e851fbdb5034dfb2",
+   "name": "libtinfo6",
+   "version": "6.2+20201114-2",
+   "type": "deb",
+   "foundBy": "dpkgdb-cataloger",
+   "locations": [
+    {
+     "path": "/var/lib/dpkg/status",
+     "layerID": "sha256:c7d97df5e4106a92bc884693cb315ab7ca73cacd5614242f5967a356fc7f9a18",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "",
+   "cpes": [
+    "cpe:2.3:a:libtinfo6:libtinfo6:6.2\\+20201114-2:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:deb/debian/libtinfo6@6.2+20201114-2?arch=amd64&upstream=ncurses&distro=debian-11",
+   "metadataType": "DpkgMetadata",
+   "metadata": {
+    "package": "libtinfo6",
+    "source": "ncurses",
+    "version": "6.2+20201114-2",
+    "sourceVersion": "",
+    "architecture": "amd64",
+    "maintainer": "Craig Small <csmall@debian.org>",
+    "installedSize": 536,
+    "files": []
+   }
+  },
+  {
+   "id": "5f73ffe4ec8ee503",
+   "name": "ncurses-bin",
+   "version": "6.2+20201114-2",
+   "type": "deb",
+   "foundBy": "dpkgdb-cataloger",
+   "locations": [
+    {
+     "path": "/var/lib/dpkg/status",
+     "layerID": "sha256:c7d97df5e4106a92bc884693cb315ab7ca73cacd5614242f5967a356fc7f9a18",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "",
+   "cpes": [
+    "cpe:2.3:a:ncurses-bin:ncurses-bin:6.2\\+20201114-2:*:*:*:*:*:*:*",
+    "cpe:2.3:a:ncurses-bin:ncurses_bin:6.2\\+20201114-2:*:*:*:*:*:*:*",
+    "cpe:2.3:a:ncurses_bin:ncurses-bin:6.2\\+20201114-2:*:*:*:*:*:*:*",
+    "cpe:2.3:a:ncurses_bin:ncurses_bin:6.2\\+20201114-2:*:*:*:*:*:*:*",
+    "cpe:2.3:a:ncurses:ncurses-bin:6.2\\+20201114-2:*:*:*:*:*:*:*",
+    "cpe:2.3:a:ncurses:ncurses_bin:6.2\\+20201114-2:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:deb/debian/ncurses-bin@6.2+20201114-2?arch=amd64&upstream=ncurses&distro=debian-11",
+   "metadataType": "DpkgMetadata",
+   "metadata": {
+    "package": "ncurses-bin",
+    "source": "ncurses",
+    "version": "6.2+20201114-2",
+    "sourceVersion": "",
+    "architecture": "amd64",
+    "maintainer": "Craig Small <csmall@debian.org>",
+    "installedSize": 645,
+    "files": []
+   }
+  },
+  {
+   "id": "b6e51d7d5f24e679",
+   "name": "sed",
+   "version": "4.7-1",
+   "type": "deb",
+   "foundBy": "dpkgdb-cataloger",
+   "locations": [
+    {
+     "path": "/var/lib/dpkg/status",
+     "layerID": "sha256:c7d97df5e4106a92bc884693cb315ab7ca73cacd5614242f5967a356fc7f9a18",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "",
+   "cpes": [
+    "cpe:2.3:a:sed:sed:4.7-1:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:deb/debian/sed@4.7-1?arch=amd64&distro=debian-11",
+   "metadataType": "DpkgMetadata",
+   "metadata": {
+    "package": "sed",
+    "source": "",
+    "version": "4.7-1",
+    "sourceVersion": "",
+    "architecture": "amd64",
+    "maintainer": "Clint Adams <clint@debian.org>",
+    "installedSize": 883,
+    "files": []
+   }
+  },
+  {
+   "id": "3085d22a6edfb2d3",
+   "name": "tar",
+   "version": "1.34+dfsg-1",
+   "type": "deb",
+   "foundBy": "dpkgdb-cataloger",
+   "locations": [
+    {
+     "path": "/var/lib/dpkg/status",
+     "layerID": "sha256:c7d97df5e4106a92bc884693cb315ab7ca73cacd5614242f5967a356fc7f9a18",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "",
+   "cpes": [
+    "cpe:2.3:a:tar:tar:1.34\\+dfsg-1:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:deb/debian/tar@1.34+dfsg-1?arch=amd64&distro=debian-11",
+   "metadataType": "DpkgMetadata",
+   "metadata": {
+    "package": "tar",
+    "source": "",
+    "version": "1.34+dfsg-1",
+    "sourceVersion": "",
+    "architecture": "amd64",
+    "maintainer": "Janos Lenart <ocsi@debian.org>",
+    "installedSize": 3152,
+    "files": []
+   }
+  }
+ ],
+ "artifactRelationships": [
+  {
+   "parent": "0f2c1070a22c41c9",
+   "child": "6c884cc18781561b",
+   "type": "evident-by"
+  },
+  {
+   "parent": "28236318a0dfac9d",
+   "child": "6c884cc18781561b",
+   "type": "evident-by"
+  },
+  {
+   "parent": "2834c638ecdea35b",
+   "child": "6c884cc18781561b",
+   "type": "evident-by"
+  },
+  {
+   "parent": "3085d22a6edfb2d3",
+   "child": "6c884cc18781561b",
+   "type": "evident-by"
+  },
+  {
+   "parent": "47305f72711a0fec",
+   "child": "6c884cc18781561b",
+   "type": "evident-by"
+  },
+  {
+   "parent": "58b2fc3e1c0d3a7b",
+   "child": "6c884cc18781561b",
+   "type": "evident-by"
+  },
+  {
+   "parent": "58b2fc3e1c0d3a7b",
+   "child": "e8cde9647fac18b7",
+   "type": "contains"
+  },
+  {
+   "parent": "5f73ffe4ec8ee503",
+   "child": "6c884cc18781561b",
+   "type": "evident-by"
+  },
+  {
+   "parent": "7759f1a277e93c8e",
+   "child": "6c884cc18781561b",
+   "type": "evident-by"
+  },
+  {
+   "parent": "7b9ed0eefa21d745",
+   "child": "6c884cc18781561b",
+   "type": "evident-by"
+  },
+  {
+   "parent": "900ad742d954a454",
+   "child": "6c884cc18781561b",
+   "type": "evident-by"
+  },
+  {
+   "parent": "a07031caedbca661",
+   "child": "6c884cc18781561b",
+   "type": "evident-by"
+  },
+  {
+   "parent": "a3fcd1f71fb5a0a9892bd20ee44a127e4ea49adef1f3982c92e7f223bdb38fc6",
+   "child": "0f2c1070a22c41c9",
+   "type": "contains"
+  },
+  {
+   "parent": "a3fcd1f71fb5a0a9892bd20ee44a127e4ea49adef1f3982c92e7f223bdb38fc6",
+   "child": "28236318a0dfac9d",
+   "type": "contains"
+  },
+  {
+   "parent": "a3fcd1f71fb5a0a9892bd20ee44a127e4ea49adef1f3982c92e7f223bdb38fc6",
+   "child": "2834c638ecdea35b",
+   "type": "contains"
+  },
+  {
+   "parent": "a3fcd1f71fb5a0a9892bd20ee44a127e4ea49adef1f3982c92e7f223bdb38fc6",
+   "child": "3085d22a6edfb2d3",
+   "type": "contains"
+  },
+  {
+   "parent": "a3fcd1f71fb5a0a9892bd20ee44a127e4ea49adef1f3982c92e7f223bdb38fc6",
+   "child": "47305f72711a0fec",
+   "type": "contains"
+  },
+  {
+   "parent": "a3fcd1f71fb5a0a9892bd20ee44a127e4ea49adef1f3982c92e7f223bdb38fc6",
+   "child": "58b2fc3e1c0d3a7b",
+   "type": "contains"
+  },
+  {
+   "parent": "a3fcd1f71fb5a0a9892bd20ee44a127e4ea49adef1f3982c92e7f223bdb38fc6",
+   "child": "5f73ffe4ec8ee503",
+   "type": "contains"
+  },
+  {
+   "parent": "a3fcd1f71fb5a0a9892bd20ee44a127e4ea49adef1f3982c92e7f223bdb38fc6",
+   "child": "7759f1a277e93c8e",
+   "type": "contains"
+  },
+  {
+   "parent": "a3fcd1f71fb5a0a9892bd20ee44a127e4ea49adef1f3982c92e7f223bdb38fc6",
+   "child": "7b9ed0eefa21d745",
+   "type": "contains"
+  },
+  {
+   "parent": "a3fcd1f71fb5a0a9892bd20ee44a127e4ea49adef1f3982c92e7f223bdb38fc6",
+   "child": "900ad742d954a454",
+   "type": "contains"
+  },
+  {
+   "parent": "a3fcd1f71fb5a0a9892bd20ee44a127e4ea49adef1f3982c92e7f223bdb38fc6",
+   "child": "a07031caedbca661",
+   "type": "contains"
+  },
+  {
+   "parent": "a3fcd1f71fb5a0a9892bd20ee44a127e4ea49adef1f3982c92e7f223bdb38fc6",
+   "child": "b6e51d7d5f24e679",
+   "type": "contains"
+  },
+  {
+   "parent": "a3fcd1f71fb5a0a9892bd20ee44a127e4ea49adef1f3982c92e7f223bdb38fc6",
+   "child": "c2b2703f3a391847",
+   "type": "contains"
+  },
+  {
+   "parent": "a3fcd1f71fb5a0a9892bd20ee44a127e4ea49adef1f3982c92e7f223bdb38fc6",
+   "child": "e58a78e4c7bc789d",
+   "type": "contains"
+  },
+  {
+   "parent": "a3fcd1f71fb5a0a9892bd20ee44a127e4ea49adef1f3982c92e7f223bdb38fc6",
+   "child": "e851fbdb5034dfb2",
+   "type": "contains"
+  },
+  {
+   "parent": "a3fcd1f71fb5a0a9892bd20ee44a127e4ea49adef1f3982c92e7f223bdb38fc6",
+   "child": "fb878e2d436cbd83",
+   "type": "contains"
+  },
+  {
+   "parent": "a3fcd1f71fb5a0a9892bd20ee44a127e4ea49adef1f3982c92e7f223bdb38fc6",
+   "child": "fd24d3c4533cda9a",
+   "type": "contains"
+  },
+  {
+   "parent": "b6e51d7d5f24e679",
+   "child": "6c884cc18781561b",
+   "type": "evident-by"
+  },
+  {
+   "parent": "c2b2703f3a391847",
+   "child": "6c884cc18781561b",
+   "type": "evident-by"
+  },
+  {
+   "parent": "e58a78e4c7bc789d",
+   "child": "6c884cc18781561b",
+   "type": "evident-by"
+  },
+  {
+   "parent": "e851fbdb5034dfb2",
+   "child": "6c884cc18781561b",
+   "type": "evident-by"
+  },
+  {
+   "parent": "fb878e2d436cbd83",
+   "child": "6c884cc18781561b",
+   "type": "evident-by"
+  },
+  {
+   "parent": "fd24d3c4533cda9a",
+   "child": "6c884cc18781561b",
+   "type": "evident-by"
+  }
+ ],
+ "files": [
+  {
+   "id": "e8cde9647fac18b7",
+   "location": {
+    "path": "/etc/ld.so.conf.d/x86_64-linux-gnu.conf",
+    "layerID": "sha256:c7d97df5e4106a92bc884693cb315ab7ca73cacd5614242f5967a356fc7f9a18"
+   }
+  },
+  {
+   "id": "6c884cc18781561b",
+   "location": {
+    "path": "/var/lib/dpkg/status",
+    "layerID": "sha256:c7d97df5e4106a92bc884693cb315ab7ca73cacd5614242f5967a356fc7f9a18"
+   }
+  }
+ ],
+ "source": {
+  "id": "a3fcd1f71fb5a0a9892bd20ee44a127e4ea49adef1f3982c92e7f223bdb38fc6",
+  "name": "docker.io/rapidfort/haproxy-official",
+  "version": "sha256:a3fcd1f71fb5a0a9892bd20ee44a127e4ea49adef1f3982c92e7f223bdb38fc6",
+  "type": "image",
+  "metadata": {
+   "userInput": "docker.io/rapidfort/haproxy-official:latest",
+   "imageID": "sha256:1f866ef1a0a073cfb44edf7f7b4ade5e46238b0a0f1a8db2dab930ca2d000d4e",
+   "manifestDigest": "sha256:a3fcd1f71fb5a0a9892bd20ee44a127e4ea49adef1f3982c92e7f223bdb38fc6",
+   "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+   "tags": [
+    "rapidfort/haproxy-official:latest"
+   ],
+   "imageSize": 32847291,
+   "layers": [
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:c7d97df5e4106a92bc884693cb315ab7ca73cacd5614242f5967a356fc7f9a18",
+     "size": 32847291
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+     "size": 0
+    }
+   ],
+   "manifest": "eyJzY2hlbWFWZXJzaW9uIjoyLCJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmRpc3RyaWJ1dGlvbi5tYW5pZmVzdC52Mitqc29uIiwiY29uZmlnIjp7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuY29udGFpbmVyLmltYWdlLnYxK2pzb24iLCJzaXplIjo0MzUwLCJkaWdlc3QiOiJzaGEyNTY6MWY4NjZlZjFhMGEwNzNjZmI0NGVkZjdmN2I0YWRlNWU0NjIzOGIwYTBmMWE4ZGIyZGFiOTMwY2EyZDAwMGQ0ZSJ9LCJsYXllcnMiOlt7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjozMzU1MDg0OCwiZGlnZXN0Ijoic2hhMjU2OmM3ZDk3ZGY1ZTQxMDZhOTJiYzg4NDY5M2NiMzE1YWI3Y2E3M2NhY2Q1NjE0MjQyZjU5NjdhMzU2ZmM3ZjlhMTgifSx7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjoxMDI0LCJkaWdlc3QiOiJzaGEyNTY6NWY3MGJmMThhMDg2MDA3MDE2ZTk0OGIwNGFlZDNiODIxMDNhMzZiZWE0MTc1NWI2Y2RkZmFmMTBhY2UzYzZlZiJ9XX0=",
+   "config": "eyJhcmNoaXRlY3R1cmUiOiJhbWQ2NCIsImNvbmZpZyI6eyJIb3N0bmFtZSI6IiIsIkRvbWFpbm5hbWUiOiIiLCJVc2VyIjoiaGFwcm94eSIsIkF0dGFjaFN0ZGluIjpmYWxzZSwiQXR0YWNoU3Rkb3V0IjpmYWxzZSwiQXR0YWNoU3RkZXJyIjpmYWxzZSwiVHR5IjpmYWxzZSwiT3BlblN0ZGluIjpmYWxzZSwiU3RkaW5PbmNlIjpmYWxzZSwiRW52IjpbIlBBVEg9L3Vzci9sb2NhbC9zYmluOi91c3IvbG9jYWwvYmluOi91c3Ivc2JpbjovdXNyL2Jpbjovc2JpbjovYmluIiwiSEFQUk9YWV9WRVJTSU9OPTIuOC1kZXY4IiwiSEFQUk9YWV9VUkw9aHR0cHM6Ly93d3cuaGFwcm94eS5vcmcvZG93bmxvYWQvMi44L3NyYy9kZXZlbC9oYXByb3h5LTIuOC1kZXY4LnRhci5neiIsIkhBUFJPWFlfU0hBMjU2PWJiZTJjODJjMGU0ZjM2ZTNmNThmZmJkMDFkZTJjYmVlYTI1YjE1YmUyNjM0ODk0NGYwNWY0ODE3YTE3Y2NhZTAiXSwiQ21kIjpbImhhcHJveHkiLCItZiIsIi91c3IvbG9jYWwvZXRjL2hhcHJveHkvaGFwcm94eS5jZmciXSwiQXJnc0VzY2FwZWQiOnRydWUsIkltYWdlIjoic2hhMjU2OjJmN2ZjMjhmNTFkMzRiNDM3YTQxZDc0YzQ1ZDA4MGNmYmI0OTdkYmU3YTM0NjlkOTE2MGRiMjJiOWY5NTg2YjkiLCJWb2x1bWVzIjpudWxsLCJXb3JraW5nRGlyIjoiL3Zhci9saWIvaGFwcm94eSIsIkVudHJ5cG9pbnQiOlsiZG9ja2VyLWVudHJ5cG9pbnQuc2giXSwiT25CdWlsZCI6bnVsbCwiTGFiZWxzIjp7Im9yaWdfaW1hZ2VfZGlnZXN0Ijoic2hhMjU2OjE0YmNhNTA5MWNhNTBjOTVlM2E0ODc4MGI0MTQ3NDQ0OGIxMzNjNmVjMzhjNGZlOWVjMWIwMzQxNTY2NjgxNzkiLCJyZi41ZmFjZWRhZi0zYzE3LTQ5OTQtYWI0OC02ZDgzNWE2ZDZhNDMiOiJkb2NrZXIuaW8vbGlicmFyeS9oYXByb3h5OjIuOC1kZXY4LWJ1bGxzZXllIiwicmZfaW1hZ2VfZ3VpZC5hMTM0MGI1ZS00YmM2LTQ2M2YtYTlhYy02ZDQ3MDE1YjA3NjIiOiJhMTM0MGI1ZS00YmM2LTQ2M2YtYTlhYy02ZDQ3MDE1YjA3NjIifSwiU3RvcFNpZ25hbCI6IlNJR1VTUjEifSwiY29udGFpbmVyIjoiYTdhZDU4ZmNjYmE1ZGFlZDQxMmFjYmYxNTRjNDY1YmUxY2IzODIyMGNiMmMwZmQ5NjNiNzdkMjhkNWQzNDIxNiIsImNvbnRhaW5lcl9jb25maWciOnsiSG9zdG5hbWUiOiJhN2FkNThmY2NiYTUiLCJEb21haW5uYW1lIjoiIiwiVXNlciI6ImhhcHJveHkiLCJBdHRhY2hTdGRpbiI6ZmFsc2UsIkF0dGFjaFN0ZG91dCI6ZmFsc2UsIkF0dGFjaFN0ZGVyciI6ZmFsc2UsIlR0eSI6ZmFsc2UsIk9wZW5TdGRpbiI6ZmFsc2UsIlN0ZGluT25jZSI6ZmFsc2UsIkVudiI6WyJQQVRIPS91c3IvbG9jYWwvc2JpbjovdXNyL2xvY2FsL2JpbjovdXNyL3NiaW46L3Vzci9iaW46L3NiaW46L2JpbiIsIkhBUFJPWFlfVkVSU0lPTj0yLjgtZGV2OCIsIkhBUFJPWFlfVVJMPWh0dHBzOi8vd3d3LmhhcHJveHkub3JnL2Rvd25sb2FkLzIuOC9zcmMvZGV2ZWwvaGFwcm94eS0yLjgtZGV2OC50YXIuZ3oiLCJIQVBST1hZX1NIQTI1Nj1iYmUyYzgyYzBlNGYzNmUzZjU4ZmZiZDAxZGUyY2JlZWEyNWIxNWJlMjYzNDg5NDRmMDVmNDgxN2ExN2NjYWUwIl0sIkNtZCI6WyIvYmluL3NoIiwiLWMiLCIjKG5vcCkgIiwiTEFCRUwgb3JpZ19pbWFnZV9kaWdlc3Q9c2hhMjU2OjE0YmNhNTA5MWNhNTBjOTVlM2E0ODc4MGI0MTQ3NDQ0OGIxMzNjNmVjMzhjNGZlOWVjMWIwMzQxNTY2NjgxNzkiXSwiQXJnc0VzY2FwZWQiOnRydWUsIkltYWdlIjoic2hhMjU2OjJmN2ZjMjhmNTFkMzRiNDM3YTQxZDc0YzQ1ZDA4MGNmYmI0OTdkYmU3YTM0NjlkOTE2MGRiMjJiOWY5NTg2YjkiLCJWb2x1bWVzIjpudWxsLCJXb3JraW5nRGlyIjoiL3Zhci9saWIvaGFwcm94eSIsIkVudHJ5cG9pbnQiOlsiZG9ja2VyLWVudHJ5cG9pbnQuc2giXSwiT25CdWlsZCI6bnVsbCwiTGFiZWxzIjp7Im9yaWdfaW1hZ2VfZGlnZXN0Ijoic2hhMjU2OjE0YmNhNTA5MWNhNTBjOTVlM2E0ODc4MGI0MTQ3NDQ0OGIxMzNjNmVjMzhjNGZlOWVjMWIwMzQxNTY2NjgxNzkiLCJyZi41ZmFjZWRhZi0zYzE3LTQ5OTQtYWI0OC02ZDgzNWE2ZDZhNDMiOiJkb2NrZXIuaW8vbGlicmFyeS9oYXByb3h5OjIuOC1kZXY4LWJ1bGxzZXllIiwicmZfaW1hZ2VfZ3VpZC5hMTM0MGI1ZS00YmM2LTQ2M2YtYTlhYy02ZDQ3MDE1YjA3NjIiOiJhMTM0MGI1ZS00YmM2LTQ2M2YtYTlhYy02ZDQ3MDE1YjA3NjIifSwiU3RvcFNpZ25hbCI6IlNJR1VTUjEifSwiY3JlYXRlZCI6IjIwMjMtMDQtMjVUMDE6NDM6MzguODk2MTQ1MTQ2WiIsImRvY2tlcl92ZXJzaW9uIjoiMjAuMTAuMjMrYXp1cmUtMyIsImhpc3RvcnkiOlt7ImNyZWF0ZWQiOiIyMDIzLTA0LTI1VDAxOjQzOjE4LjUwNzU4NjEyWiIsImNyZWF0ZWRfYnkiOiJBREQgZG9ja2VyLmlvLWxpYnJhcnktaGFwcm94eV8yLjgtZGV2OC1idWxsc2V5ZS5yZmhhcmRlbmVkLmRpci50YXIgLyAjIGJ1aWxka2l0IiwiY29tbWVudCI6ImJ1aWxka2l0LmRvY2tlcmZpbGUudjAifSx7ImNyZWF0ZWQiOiIyMDIzLTA0LTI1VDAxOjQzOjE5Ljc3ODA4Nzg4NloiLCJjcmVhdGVkX2J5IjoiTEFCRUwgcmYuNWZhY2VkYWYtM2MxNy00OTk0LWFiNDgtNmQ4MzVhNmQ2YTQzPWRvY2tlci5pby9saWJyYXJ5L2hhcHJveHk6Mi44LWRldjgtYnVsbHNleWUiLCJjb21tZW50IjoiYnVpbGRraXQuZG9ja2VyZmlsZS52MCIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDIzLTA0LTI1VDAxOjQzOjE5Ljc3ODA4Nzg4NloiLCJjcmVhdGVkX2J5IjoiRU5WIFBBVEg9L3Vzci9sb2NhbC9zYmluOi91c3IvbG9jYWwvYmluOi91c3Ivc2JpbjovdXNyL2Jpbjovc2JpbjovYmluIEhBUFJPWFlfVkVSU0lPTj0yLjgtZGV2OCBIQVBST1hZX1VSTD1odHRwczovL3d3dy5oYXByb3h5Lm9yZy9kb3dubG9hZC8yLjgvc3JjL2RldmVsL2hhcHJveHktMi44LWRldjgudGFyLmd6IEhBUFJPWFlfU0hBMjU2PWJiZTJjODJjMGU0ZjM2ZTNmNThmZmJkMDFkZTJjYmVlYTI1YjE1YmUyNjM0ODk0NGYwNWY0ODE3YTE3Y2NhZTAiLCJjb21tZW50IjoiYnVpbGRraXQuZG9ja2VyZmlsZS52MCIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDIzLTA0LTI1VDAxOjQzOjE5Ljc3ODA4Nzg4NloiLCJjcmVhdGVkX2J5IjoiV09SS0RJUiAvdmFyL2xpYi9oYXByb3h5IiwiY29tbWVudCI6ImJ1aWxka2l0LmRvY2tlcmZpbGUudjAifSx7ImNyZWF0ZWQiOiIyMDIzLTA0LTI1VDAxOjQzOjE5Ljc3ODA4Nzg4NloiLCJjcmVhdGVkX2J5IjoiU1RPUFNJR05BTCBTSUdVU1IxIiwiY29tbWVudCI6ImJ1aWxka2l0LmRvY2tlcmZpbGUudjAiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyMy0wNC0yNVQwMTo0MzoxOS43NzgwODc4ODZaIiwiY3JlYXRlZF9ieSI6IlVTRVIgaGFwcm94eSIsImNvbW1lbnQiOiJidWlsZGtpdC5kb2NrZXJmaWxlLnYwIiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjMtMDQtMjVUMDE6NDM6MTkuNzc4MDg3ODg2WiIsImNyZWF0ZWRfYnkiOiJFTlRSWVBPSU5UIFtcImRvY2tlci1lbnRyeXBvaW50LnNoXCJdIiwiY29tbWVudCI6ImJ1aWxka2l0LmRvY2tlcmZpbGUudjAiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyMy0wNC0yNVQwMTo0MzoxOS43NzgwODc4ODZaIiwiY3JlYXRlZF9ieSI6IkNNRCBbXCJoYXByb3h5XCIgXCItZlwiIFwiL3Vzci9sb2NhbC9ldGMvaGFwcm94eS9oYXByb3h5LmNmZ1wiXSIsImNvbW1lbnQiOiJidWlsZGtpdC5kb2NrZXJmaWxlLnYwIiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjMtMDQtMjVUMDE6NDM6MzAuNjQzMzkxODQxWiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSAgTEFCRUwgb3JpZ19pbWFnZV9kaWdlc3Q9c2hhMjU2OjE0YmNhNTA5MWNhNTBjOTVlM2E0ODc4MGI0MTQ3NDQ0OGIxMzNjNmVjMzhjNGZlOWVjMWIwMzQxNTY2NjgxNzkiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyMy0wNC0yNVQwMTo0MzozOC44OTYxNDUxNDZaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApICBMQUJFTCBvcmlnX2ltYWdlX2RpZ2VzdD1zaGEyNTY6MTRiY2E1MDkxY2E1MGM5NWUzYTQ4NzgwYjQxNDc0NDQ4YjEzM2M2ZWMzOGM0ZmU5ZWMxYjAzNDE1NjY2ODE3OSIsImVtcHR5X2xheWVyIjp0cnVlfV0sIm9zIjoibGludXgiLCJyb290ZnMiOnsidHlwZSI6ImxheWVycyIsImRpZmZfaWRzIjpbInNoYTI1NjpjN2Q5N2RmNWU0MTA2YTkyYmM4ODQ2OTNjYjMxNWFiN2NhNzNjYWNkNTYxNDI0MmY1OTY3YTM1NmZjN2Y5YTE4Iiwic2hhMjU2OjVmNzBiZjE4YTA4NjAwNzAxNmU5NDhiMDRhZWQzYjgyMTAzYTM2YmVhNDE3NTViNmNkZGZhZjEwYWNlM2M2ZWYiXX19",
+   "repoDigests": [
+    "rapidfort/haproxy-official@sha256:3aad05ebaa4da0b7908b94466a2f26efe2b64100318360ac4c3883f685dbf5b5"
+   ],
+   "architecture": "amd64",
+   "os": "linux"
+  }
+ },
+ "distro": {
+  "prettyName": "Debian GNU/Linux 11 (bullseye)",
+  "name": "Debian GNU/Linux",
+  "id": "debian",
+  "version": "11 (bullseye)",
+  "versionID": "11",
+  "versionCodename": "bullseye",
+  "homeURL": "https://www.debian.org/",
+  "supportURL": "https://www.debian.org/support",
+  "bugReportURL": "https://bugs.debian.org/"
+ },
+ "descriptor": {
+  "name": "syft",
+  "version": "0.92.0",
+  "configuration": {
+   "catalogers": null,
+   "package": {
+    "cataloger": {
+     "enabled": true,
+     "scope": "Squashed"
+    },
+    "search-unindexed-archives": false,
+    "search-indexed-archives": true
+   },
+   "golang": {
+    "search-local-mod-cache-licenses": false,
+    "local-mod-cache-dir": "",
+    "search-remote-licenses": false,
+    "proxy": "",
+    "no-proxy": ""
+   },
+   "linux-kernel": {
+    "catalog-modules": true
+   },
+   "python": {
+    "guess-unpinned-requirements": false
+   },
+   "file-metadata": {
+    "cataloger": {
+     "enabled": false,
+     "scope": "Squashed"
+    },
+    "digests": [
+     "sha256"
+    ]
+   },
+   "file-classification": {
+    "cataloger": {
+     "enabled": false,
+     "scope": "Squashed"
+    }
+   },
+   "file-contents": {
+    "cataloger": {
+     "enabled": false,
+     "scope": "Squashed"
+    },
+    "skip-files-above-size": 1048576,
+    "globs": null
+   },
+   "secrets": {
+    "cataloger": {
+     "enabled": false,
+     "scope": "AllLayers"
+    },
+    "additional-patterns": null,
+    "exclude-pattern-names": null,
+    "reveal-values": false,
+    "skip-files-above-size": 1048576
+   },
+   "registry": {
+    "insecure-skip-tls-verify": false,
+    "insecure-use-http": false,
+    "auth": null,
+    "ca-cert": ""
+   },
+   "exclude": [],
+   "platform": "",
+   "name": "",
+   "source": {
+    "name": "",
+    "version": "",
+    "file": {
+     "digests": [
+      "sha256"
+     ]
+    }
+   },
+   "parallelism": 1,
+   "default-image-pull-source": "",
+   "base-path": "",
+   "exclude-binary-overlap-by-ownership": true
+  }
+ },
+ "schema": {
+  "version": "11.0.0",
+  "url": "https://raw.githubusercontent.com/anchore/syft/main/schema/json/schema-11.0.0.json"
+ }
+}

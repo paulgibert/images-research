@@ -1,0 +1,542 @@
+{
+ "matches": [
+  {
+   "vulnerability": {
+    "id": "GHSA-v86x-5fm3-5p7j",
+    "dataSource": "https://github.com/advisories/GHSA-v86x-5fm3-5p7j",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-v86x-5fm3-5p7j"
+    ],
+    "description": "Alertmanager UI is vulnerable to stored XSS via the /api/v1/alerts endpoint",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+      "metrics": {
+       "baseScore": 5.4,
+       "exploitabilityScore": 2.3,
+       "impactScore": 2.7
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "0.25.1"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-40577",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-40577",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://github.com/prometheus/alertmanager/security/advisories/GHSA-v86x-5fm3-5p7j",
+      "https://lists.debian.org/debian-lts-announce/2023/10/msg00011.html"
+     ],
+     "description": "Alertmanager handles alerts sent by client applications such as the Prometheus server. An attacker with the permission to perform POST requests on the /api/v1/alerts endpoint could be able to execute arbitrary JavaScript code on the users of Prometheus Alertmanager. This issue has been fixed in Alertmanager version 0.2.51.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+       "metrics": {
+        "baseScore": 5.4,
+        "exploitabilityScore": 2.3,
+        "impactScore": 2.7
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/prometheus/alertmanager",
+       "version": "v0.25.0"
+      }
+     },
+     "found": {
+      "versionConstraint": "<=0.25.0 (unknown)",
+      "vulnerabilityID": "GHSA-v86x-5fm3-5p7j"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "da3d43dc8daabd2a",
+    "name": "github.com/prometheus/alertmanager",
+    "version": "v0.25.0",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/usr/bin/prometheus",
+      "layerID": "sha256:c2e87bd4d194f340e99a962c95816cdde9ad6c2aa37d2fb5d2e773df188e7fb1"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:prometheus:alertmanager:v0.25.0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/prometheus/alertmanager@v0.25.0",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.21.2",
+     "architecture": "amd64",
+     "h1Digest": "h1:vbXKUR6PYRiZPRIKfmXaG+dmCKG52RtPL4Btl8hQGvg=",
+     "mainModule": "github.com/prometheus/prometheus"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-v86x-5fm3-5p7j",
+    "dataSource": "https://github.com/advisories/GHSA-v86x-5fm3-5p7j",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-v86x-5fm3-5p7j"
+    ],
+    "description": "Alertmanager UI is vulnerable to stored XSS via the /api/v1/alerts endpoint",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+      "metrics": {
+       "baseScore": 5.4,
+       "exploitabilityScore": 2.3,
+       "impactScore": 2.7
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "0.25.1"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-40577",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-40577",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://github.com/prometheus/alertmanager/security/advisories/GHSA-v86x-5fm3-5p7j",
+      "https://lists.debian.org/debian-lts-announce/2023/10/msg00011.html"
+     ],
+     "description": "Alertmanager handles alerts sent by client applications such as the Prometheus server. An attacker with the permission to perform POST requests on the /api/v1/alerts endpoint could be able to execute arbitrary JavaScript code on the users of Prometheus Alertmanager. This issue has been fixed in Alertmanager version 0.2.51.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+       "metrics": {
+        "baseScore": 5.4,
+        "exploitabilityScore": 2.3,
+        "impactScore": 2.7
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/prometheus/alertmanager",
+       "version": "v0.25.0"
+      }
+     },
+     "found": {
+      "versionConstraint": "<=0.25.0 (unknown)",
+      "vulnerabilityID": "GHSA-v86x-5fm3-5p7j"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "98d1d6fd880940a5",
+    "name": "github.com/prometheus/alertmanager",
+    "version": "v0.25.0",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/usr/bin/promtool",
+      "layerID": "sha256:c2e87bd4d194f340e99a962c95816cdde9ad6c2aa37d2fb5d2e773df188e7fb1"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:prometheus:alertmanager:v0.25.0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/prometheus/alertmanager@v0.25.0",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.21.2",
+     "architecture": "amd64",
+     "h1Digest": "h1:vbXKUR6PYRiZPRIKfmXaG+dmCKG52RtPL4Btl8hQGvg=",
+     "mainModule": "github.com/prometheus/prometheus"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-40577",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-40577",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/prometheus/alertmanager/security/advisories/GHSA-v86x-5fm3-5p7j",
+     "https://lists.debian.org/debian-lts-announce/2023/10/msg00011.html"
+    ],
+    "description": "Alertmanager handles alerts sent by client applications such as the Prometheus server. An attacker with the permission to perform POST requests on the /api/v1/alerts endpoint could be able to execute arbitrary JavaScript code on the users of Prometheus Alertmanager. This issue has been fixed in Alertmanager version 0.2.51.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+      "metrics": {
+       "baseScore": 5.4,
+       "exploitabilityScore": 2.3,
+       "impactScore": 2.7
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "source": "security-advisories@github.com",
+      "type": "Secondary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:prometheus:alertmanager:v0.25.0:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "github.com/prometheus/alertmanager",
+       "version": "v0.25.0"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2023-40577",
+      "versionConstraint": "= 0.25.0 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:prometheus:alertmanager:0.25.0:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "da3d43dc8daabd2a",
+    "name": "github.com/prometheus/alertmanager",
+    "version": "v0.25.0",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/usr/bin/prometheus",
+      "layerID": "sha256:c2e87bd4d194f340e99a962c95816cdde9ad6c2aa37d2fb5d2e773df188e7fb1"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:prometheus:alertmanager:v0.25.0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/prometheus/alertmanager@v0.25.0",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.21.2",
+     "architecture": "amd64",
+     "h1Digest": "h1:vbXKUR6PYRiZPRIKfmXaG+dmCKG52RtPL4Btl8hQGvg=",
+     "mainModule": "github.com/prometheus/prometheus"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-40577",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-40577",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/prometheus/alertmanager/security/advisories/GHSA-v86x-5fm3-5p7j",
+     "https://lists.debian.org/debian-lts-announce/2023/10/msg00011.html"
+    ],
+    "description": "Alertmanager handles alerts sent by client applications such as the Prometheus server. An attacker with the permission to perform POST requests on the /api/v1/alerts endpoint could be able to execute arbitrary JavaScript code on the users of Prometheus Alertmanager. This issue has been fixed in Alertmanager version 0.2.51.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+      "metrics": {
+       "baseScore": 5.4,
+       "exploitabilityScore": 2.3,
+       "impactScore": 2.7
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "source": "security-advisories@github.com",
+      "type": "Secondary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:prometheus:alertmanager:v0.25.0:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "github.com/prometheus/alertmanager",
+       "version": "v0.25.0"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2023-40577",
+      "versionConstraint": "= 0.25.0 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:prometheus:alertmanager:0.25.0:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "98d1d6fd880940a5",
+    "name": "github.com/prometheus/alertmanager",
+    "version": "v0.25.0",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/usr/bin/promtool",
+      "layerID": "sha256:c2e87bd4d194f340e99a962c95816cdde9ad6c2aa37d2fb5d2e773df188e7fb1"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:prometheus:alertmanager:v0.25.0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/prometheus/alertmanager@v0.25.0",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.21.2",
+     "architecture": "amd64",
+     "h1Digest": "h1:vbXKUR6PYRiZPRIKfmXaG+dmCKG52RtPL4Btl8hQGvg=",
+     "mainModule": "github.com/prometheus/prometheus"
+    }
+   }
+  }
+ ],
+ "source": {
+  "type": "image",
+  "target": {
+   "userInput": "cgr.dev/chainguard/prometheus:latest",
+   "imageID": "sha256:30f70bc4ddacc7935a609eef36ada237a7230f3b5af9cfd0ad56bd0759f9e5a0",
+   "manifestDigest": "sha256:84ad574d622b5d5e18f126674873fb1b2675e4fe8e513bfc36c288bb4538cdf2",
+   "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+   "tags": [
+    "cgr.dev/chainguard/prometheus:latest"
+   ],
+   "imageSize": 181807369,
+   "layers": [
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:c2e87bd4d194f340e99a962c95816cdde9ad6c2aa37d2fb5d2e773df188e7fb1",
+     "size": 181807369
+    }
+   ],
+   "manifest": "eyJzY2hlbWFWZXJzaW9uIjoyLCJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmRpc3RyaWJ1dGlvbi5tYW5pZmVzdC52Mitqc29uIiwiY29uZmlnIjp7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuY29udGFpbmVyLmltYWdlLnYxK2pzb24iLCJzaXplIjo1MjIsImRpZ2VzdCI6InNoYTI1NjozMGY3MGJjNGRkYWNjNzkzNWE2MDllZWYzNmFkYTIzN2E3MjMwZjNiNWFmOWNmZDBhZDU2YmQwNzU5ZjllNWEwIn0sImxheWVycyI6W3sibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vdm5kLmRvY2tlci5pbWFnZS5yb290ZnMuZGlmZi50YXIuZ3ppcCIsInNpemUiOjE4MTkwNTQwOCwiZGlnZXN0Ijoic2hhMjU2OmMyZTg3YmQ0ZDE5NGYzNDBlOTlhOTYyYzk1ODE2Y2RkZTlhZDZjMmFhMzdkMmZiNWQyZTc3M2RmMTg4ZTdmYjEifV19",
+   "config": "eyJhcmNoaXRlY3R1cmUiOiJhbWQ2NCIsImF1dGhvciI6ImdpdGh1Yi5jb20vY2hhaW5ndWFyZC1kZXYvYXBrbyIsImNyZWF0ZWQiOiIyMDIzLTEwLTA1VDIwOjMwOjQxWiIsImhpc3RvcnkiOlt7ImF1dGhvciI6ImFwa28iLCJjcmVhdGVkIjoiMjAyMy0xMC0wNVQyMDozMDo0MVoiLCJjcmVhdGVkX2J5IjoiYXBrbyIsImNvbW1lbnQiOiJUaGlzIGlzIGFuIGFwa28gc2luZ2xlLWxheWVyIGltYWdlIn1dLCJvcyI6ImxpbnV4Iiwicm9vdGZzIjp7InR5cGUiOiJsYXllcnMiLCJkaWZmX2lkcyI6WyJzaGEyNTY6YzJlODdiZDRkMTk0ZjM0MGU5OWE5NjJjOTU4MTZjZGRlOWFkNmMyYWEzN2QyZmI1ZDJlNzczZGYxODhlN2ZiMSJdfSwiY29uZmlnIjp7IkVudHJ5cG9pbnQiOlsicHJvbWV0aGV1cyJdLCJFbnYiOlsiUEFUSD0vdXNyL2xvY2FsL3NiaW46L3Vzci9sb2NhbC9iaW46L3Vzci9zYmluOi91c3IvYmluOi9zYmluOi9iaW4iLCJTU0xfQ0VSVF9GSUxFPS9ldGMvc3NsL2NlcnRzL2NhLWNlcnRpZmljYXRlcy5jcnQiXX19",
+   "repoDigests": [
+    "cgr.dev/chainguard/prometheus@sha256:422bf9f4f16242561d32d82994941efe5abf3796a1f770c9864a21be32f0a442"
+   ],
+   "architecture": "amd64",
+   "os": "linux"
+  }
+ },
+ "distro": {
+  "name": "wolfi",
+  "version": "20230201",
+  "idLike": []
+ },
+ "descriptor": {
+  "name": "",
+  "version": "",
+  "configuration": {
+   "output": [
+    "json"
+   ],
+   "file": "",
+   "distro": "",
+   "add-cpes-if-none": false,
+   "output-template-file": "",
+   "check-for-app-update": true,
+   "only-fixed": false,
+   "only-notfixed": false,
+   "platform": "",
+   "search": {
+    "scope": "Squashed",
+    "unindexed-archives": false,
+    "indexed-archives": true
+   },
+   "ignore": null,
+   "exclude": [],
+   "db": {
+    "cache-dir": "/home/anon/.cache/grype/db",
+    "update-url": "https://toolbox-data.anchore.io/grype/databases/listing.json",
+    "ca-cert": "",
+    "auto-update": true,
+    "validate-by-hash-on-start": false,
+    "validate-age": true,
+    "max-allowed-built-age": 432000000000000
+   },
+   "externalSources": {
+    "enable": false,
+    "maven": {
+     "searchUpstreamBySha1": true,
+     "baseUrl": "https://search.maven.org/solrsearch/select"
+    }
+   },
+   "match": {
+    "java": {
+     "using-cpes": true
+    },
+    "dotnet": {
+     "using-cpes": true
+    },
+    "golang": {
+     "using-cpes": true
+    },
+    "javascript": {
+     "using-cpes": true
+    },
+    "python": {
+     "using-cpes": true
+    },
+    "ruby": {
+     "using-cpes": true
+    },
+    "stock": {
+     "using-cpes": true
+    }
+   },
+   "fail-on-severity": "",
+   "registry": {
+    "insecure-skip-tls-verify": false,
+    "insecure-use-http": false,
+    "auth": null,
+    "ca-cert": ""
+   },
+   "show-suppressed": false,
+   "by-cve": false,
+   "name": "",
+   "default-image-pull-source": "",
+   "vex-documents": [],
+   "vex-add": []
+  },
+  "db": {
+   "built": "2023-10-10T01:23:53Z",
+   "schemaVersion": 5,
+   "location": "/home/anon/.cache/grype/db/5",
+   "checksum": "sha256:c1dd693b90da9833fd1716f9d2432de66004be2bd188e882392b0076a589cbf4",
+   "error": null
+  },
+  "timestamp": "2023-10-10T19:26:36.269297883-04:00"
+ }
+}

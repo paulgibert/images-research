@@ -1,0 +1,252 @@
+{
+ "matches": [
+  {
+   "vulnerability": {
+    "id": "CVE-2019-3826",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2019-3826",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://access.redhat.com/errata/RHBA-2019:0327",
+     "https://advisory.checkmarx.net/advisory/CX-2019-4297",
+     "https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2019-3826",
+     "https://github.com/prometheus/prometheus/commit/62e591f9",
+     "https://github.com/prometheus/prometheus/pull/5163",
+     "https://lists.apache.org/thread.html/r48d5019bd42e0770f7e5351e420a63a41ff1f16924942442c6aff6a8@%3Ccommits.zookeeper.apache.org%3E",
+     "https://lists.apache.org/thread.html/r8e3f7da12bf5750b0a02e69a78a61073a2ac950eed7451ce70a65177@%3Ccommits.zookeeper.apache.org%3E",
+     "https://lists.apache.org/thread.html/rdf2a0d94c3b5b523aeff7741ae71347415276062811b687f30ea6573@%3Ccommits.zookeeper.apache.org%3E"
+    ],
+    "description": "A stored, DOM based, cross-site scripting (XSS) flaw was found in Prometheus before version 2.7.1. An attacker could exploit this by convincing an authenticated user to visit a crafted URL on a Prometheus server, allowing for the execution and persistent storage of arbitrary scripts.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "2.0",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+      "metrics": {
+       "baseScore": 4.3,
+       "exploitabilityScore": 8.6,
+       "impactScore": 2.9
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.0",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+      "metrics": {
+       "baseScore": 6.1,
+       "exploitabilityScore": 2.8,
+       "impactScore": 2.7
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "source": "secalert@redhat.com",
+      "type": "Secondary",
+      "version": "3.0",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+      "metrics": {
+       "baseScore": 6.1,
+       "exploitabilityScore": 2.8,
+       "impactScore": 2.7
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:prometheus:prometheus:v0.46.0:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "github.com/prometheus/prometheus",
+       "version": "v0.46.0"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2019-3826",
+      "versionConstraint": "< 2.7.1 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:prometheus:prometheus:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "c5d2eb74cf37c33d",
+    "name": "github.com/prometheus/prometheus",
+    "version": "v0.46.0",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/usr/bin/telegraf",
+      "layerID": "sha256:2a30b0419c03aadf7ba54200ed9993593b13278f845bb547dc93165796e607c5"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:prometheus:prometheus:v0.46.0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/prometheus/prometheus@v0.46.0",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.21.1",
+     "architecture": "amd64",
+     "h1Digest": "h1:9JSdXnsuT6YsbODEhSQMwxNkGwPExfmzqG73vCMk/Kw=",
+     "mainModule": "github.com/influxdata/telegraf"
+    }
+   }
+  }
+ ],
+ "source": {
+  "type": "image",
+  "target": {
+   "userInput": "docker.io/telegraf:alpine",
+   "imageID": "sha256:c9e8de638799c6d831fb35bfa225b6685a5987ab5a9c84ac9e280610841b9e74",
+   "manifestDigest": "sha256:fbd2440dab6a5d21220bc696c9cb741eafc1ea2069188bf4c50382b987a0d3b6",
+   "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+   "tags": [
+    "telegraf:alpine"
+   ],
+   "imageSize": 218334914,
+   "layers": [
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:cc2447e1835a40530975ab80bb1f872fbab0f2a0faecf2ab16fbbb89b3589438",
+     "size": 7330497
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:ed6b4db053f6619a69cd4cd5f447538b743a437a497dd32f775dff8d6571b384",
+     "size": 222
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:1ec672c1d5ad2e103414798115d3697c9da6636d6c12e14141bbdb3d0856968e",
+     "size": 7874948
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:2a30b0419c03aadf7ba54200ed9993593b13278f845bb547dc93165796e607c5",
+     "size": 203128882
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:889bcdbd0880a8686124ad6b4d7c79e7238c7b5e7391cfecfb879c121ed72125",
+     "size": 365
+    }
+   ],
+   "manifest": "eyJzY2hlbWFWZXJzaW9uIjoyLCJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmRpc3RyaWJ1dGlvbi5tYW5pZmVzdC52Mitqc29uIiwiY29uZmlnIjp7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuY29udGFpbmVyLmltYWdlLnYxK2pzb24iLCJzaXplIjo0NjExLCJkaWdlc3QiOiJzaGEyNTY6YzllOGRlNjM4Nzk5YzZkODMxZmIzNWJmYTIyNWI2Njg1YTU5ODdhYjVhOWM4NGFjOWUyODA2MTA4NDFiOWU3NCJ9LCJsYXllcnMiOlt7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjo3NjI1NzI4LCJkaWdlc3QiOiJzaGEyNTY6Y2MyNDQ3ZTE4MzVhNDA1MzA5NzVhYjgwYmIxZjg3MmZiYWIwZjJhMGZhZWNmMmFiMTZmYmJiODliMzU4OTQzOCJ9LHsibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vdm5kLmRvY2tlci5pbWFnZS5yb290ZnMuZGlmZi50YXIuZ3ppcCIsInNpemUiOjI1NjAsImRpZ2VzdCI6InNoYTI1NjplZDZiNGRiMDUzZjY2MTlhNjljZDRjZDVmNDQ3NTM4Yjc0M2E0MzdhNDk3ZGQzMmY3NzVkZmY4ZDY1NzFiMzg0In0seyJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmltYWdlLnJvb3Rmcy5kaWZmLnRhci5nemlwIiwic2l6ZSI6OTExODcyMCwiZGlnZXN0Ijoic2hhMjU2OjFlYzY3MmMxZDVhZDJlMTAzNDE0Nzk4MTE1ZDM2OTdjOWRhNjYzNmQ2YzEyZTE0MTQxYmJkYjNkMDg1Njk2OGUifSx7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjoyMDMxNTA4NDgsImRpZ2VzdCI6InNoYTI1NjoyYTMwYjA0MTljMDNhYWRmN2JhNTQyMDBlZDk5OTM1OTNiMTMyNzhmODQ1YmI1NDdkYzkzMTY1Nzk2ZTYwN2M1In0seyJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmltYWdlLnJvb3Rmcy5kaWZmLnRhci5nemlwIiwic2l6ZSI6MjA0OCwiZGlnZXN0Ijoic2hhMjU2Ojg4OWJjZGJkMDg4MGE4Njg2MTI0YWQ2YjRkN2M3OWU3MjM4YzdiNWU3MzkxY2ZlY2ZiODc5YzEyMWVkNzIxMjUifV19",
+   "config": "eyJhcmNoaXRlY3R1cmUiOiJhbWQ2NCIsImNvbmZpZyI6eyJIb3N0bmFtZSI6IiIsIkRvbWFpbm5hbWUiOiIiLCJVc2VyIjoiIiwiQXR0YWNoU3RkaW4iOmZhbHNlLCJBdHRhY2hTdGRvdXQiOmZhbHNlLCJBdHRhY2hTdGRlcnIiOmZhbHNlLCJFeHBvc2VkUG9ydHMiOnsiODA5Mi91ZHAiOnt9LCI4MDk0L3RjcCI6e30sIjgxMjUvdWRwIjp7fX0sIlR0eSI6ZmFsc2UsIk9wZW5TdGRpbiI6ZmFsc2UsIlN0ZGluT25jZSI6ZmFsc2UsIkVudiI6WyJQQVRIPS91c3IvbG9jYWwvc2JpbjovdXNyL2xvY2FsL2JpbjovdXNyL3NiaW46L3Vzci9iaW46L3NiaW46L2JpbiIsIlRFTEVHUkFGX1ZFUlNJT049MS4yOC4yIl0sIkNtZCI6WyJ0ZWxlZ3JhZiJdLCJJbWFnZSI6InNoYTI1NjoxZTUxZDc0NTE0MjFiOTExODQ0OWEzMTU2MTk4MjNlZjI2NDNlYWM4NTljZjEyYTU2ZTIyM2U4NWYwZTQ1MDU0IiwiVm9sdW1lcyI6bnVsbCwiV29ya2luZ0RpciI6IiIsIkVudHJ5cG9pbnQiOlsiL2VudHJ5cG9pbnQuc2giXSwiT25CdWlsZCI6bnVsbCwiTGFiZWxzIjpudWxsfSwiY29udGFpbmVyIjoiNTVhNTI1YWY3YzE0MjM4MDc4MWY5ODBmZTdmMzNkODU5ZGE1NzY3MTZhNGRlOGZkYmUwMzBkNjgxNWZjNzRhNiIsImNvbnRhaW5lcl9jb25maWciOnsiSG9zdG5hbWUiOiI1NWE1MjVhZjdjMTQiLCJEb21haW5uYW1lIjoiIiwiVXNlciI6IiIsIkF0dGFjaFN0ZGluIjpmYWxzZSwiQXR0YWNoU3Rkb3V0IjpmYWxzZSwiQXR0YWNoU3RkZXJyIjpmYWxzZSwiRXhwb3NlZFBvcnRzIjp7IjgwOTIvdWRwIjp7fSwiODA5NC90Y3AiOnt9LCI4MTI1L3VkcCI6e319LCJUdHkiOmZhbHNlLCJPcGVuU3RkaW4iOmZhbHNlLCJTdGRpbk9uY2UiOmZhbHNlLCJFbnYiOlsiUEFUSD0vdXNyL2xvY2FsL3NiaW46L3Vzci9sb2NhbC9iaW46L3Vzci9zYmluOi91c3IvYmluOi9zYmluOi9iaW4iLCJURUxFR1JBRl9WRVJTSU9OPTEuMjguMiJdLCJDbWQiOlsiL2Jpbi9zaCIsIi1jIiwiIyhub3ApICIsIkNNRCBbXCJ0ZWxlZ3JhZlwiXSJdLCJJbWFnZSI6InNoYTI1NjoxZTUxZDc0NTE0MjFiOTExODQ0OWEzMTU2MTk4MjNlZjI2NDNlYWM4NTljZjEyYTU2ZTIyM2U4NWYwZTQ1MDU0IiwiVm9sdW1lcyI6bnVsbCwiV29ya2luZ0RpciI6IiIsIkVudHJ5cG9pbnQiOlsiL2VudHJ5cG9pbnQuc2giXSwiT25CdWlsZCI6bnVsbCwiTGFiZWxzIjp7fX0sImNyZWF0ZWQiOiIyMDIzLTEwLTAzVDA0OjA1OjA2LjcyMjg3NDA5NVoiLCJkb2NrZXJfdmVyc2lvbiI6IjIwLjEwLjIzIiwiaGlzdG9yeSI6W3siY3JlYXRlZCI6IjIwMjMtMDktMjhUMjE6MTk6MjcuNjg2MTEwMDYzWiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSBBREQgZmlsZTo3NTYxODNiYmE5YzdmNDU5M2MyYjIxNmU5OGU0MjA4YjkxNjNjNGM5NjJlYTA4MzdlZjg4YmQ5MTc2MDlkMDAxIGluIC8gIn0seyJjcmVhdGVkIjoiMjAyMy0wOS0yOFQyMToxOToyNy44MDE0Nzk0MDlaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApICBDTUQgW1wiL2Jpbi9zaFwiXSIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDIzLTA5LTI4VDIzOjIyOjEwLjE2MjAyMzU3OFoiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyBlY2hvICdob3N0czogZmlsZXMgZG5zJyBcdTAwM2VcdTAwM2UgL2V0Yy9uc3N3aXRjaC5jb25mIn0seyJjcmVhdGVkIjoiMjAyMy0wOS0yOVQwMzoyNToyMi40MjA0Nzk0MTZaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgYXBrIGFkZCAtLW5vLWNhY2hlIGlwdXRpbHMgY2EtY2VydGlmaWNhdGVzIG5ldC1zbm1wLXRvb2xzIHByb2NwcyBsbV9zZW5zb3JzIHR6ZGF0YSBzdS1leGVjIGxpYmNhcCBcdTAwMjZcdTAwMjYgICAgIHVwZGF0ZS1jYS1jZXJ0aWZpY2F0ZXMifSx7ImNyZWF0ZWQiOiIyMDIzLTEwLTAzVDA0OjA0OjU5LjU3NzU5OTg3NloiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgIEVOViBURUxFR1JBRl9WRVJTSU9OPTEuMjguMiIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDIzLTEwLTAzVDA0OjA1OjA2LjA2MTQwOTM5WiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jIEFSQ0g9IFx1MDAyNlx1MDAyNiAgICAgY2FzZSBcIiQoYXBrIC0tcHJpbnQtYXJjaClcIiBpbiAgICAgICAgIHg4Nl82NCkgQVJDSD0nYW1kNjQnOzsgICAgICAgICBhYXJjaDY0KSBBUkNIPSdhcm02NCc7OyAgICAgICAgICopIGVjaG8gXCJVbnN1cHBvcnRlZCBhcmNoaXRlY3R1cmU6ICQoYXBrIC0tcHJpbnQtYXJjaClcIjsgZXhpdCAxOzsgICAgIGVzYWMgXHUwMDI2XHUwMDI2ICAgICBzZXQgLWV4IFx1MDAyNlx1MDAyNiAgICAgbWtkaXIgfi8uZ251cGc7ICAgICBlY2hvIFwiZGlzYWJsZS1pcHY2XCIgXHUwMDNlXHUwMDNlIH4vLmdudXBnL2Rpcm1uZ3IuY29uZjsgICAgIGFwayBhZGQgLS1uby1jYWNoZSAtLXZpcnR1YWwgLmJ1aWxkLWRlcHMgd2dldCBnbnVwZyB0YXIgXHUwMDI2XHUwMDI2ICAgICBmb3Iga2V5IGluICAgICAgICAgOUQ1MzlEOTBEMzMyOERDN0Q2QzhEM0I5RDhGRjhFMUY3REY4QjA3RSA7ICAgICBkbyAgICAgICAgIGdwZyAtLWtleXNlcnZlciBoa3A6Ly9rZXlzZXJ2ZXIudWJ1bnR1LmNvbSAtLXJlY3Yta2V5cyBcIiRrZXlcIiA7ICAgICBkb25lIFx1MDAyNlx1MDAyNiAgICAgd2dldCAtLW5vLXZlcmJvc2UgaHR0cHM6Ly9kbC5pbmZsdXhkYXRhLmNvbS90ZWxlZ3JhZi9yZWxlYXNlcy90ZWxlZ3JhZi0ke1RFTEVHUkFGX1ZFUlNJT059X2xpbnV4XyR7QVJDSH0udGFyLmd6LmFzYyBcdTAwMjZcdTAwMjYgICAgIHdnZXQgLS1uby12ZXJib3NlIGh0dHBzOi8vZGwuaW5mbHV4ZGF0YS5jb20vdGVsZWdyYWYvcmVsZWFzZXMvdGVsZWdyYWYtJHtURUxFR1JBRl9WRVJTSU9OfV9saW51eF8ke0FSQ0h9LnRhci5neiBcdTAwMjZcdTAwMjYgICAgIGdwZyAtLWJhdGNoIC0tdmVyaWZ5IHRlbGVncmFmLSR7VEVMRUdSQUZfVkVSU0lPTn1fbGludXhfJHtBUkNIfS50YXIuZ3ouYXNjIHRlbGVncmFmLSR7VEVMRUdSQUZfVkVSU0lPTn1fbGludXhfJHtBUkNIfS50YXIuZ3ogXHUwMDI2XHUwMDI2ICAgICBta2RpciAtcCAvdXNyL3NyYyAvZXRjL3RlbGVncmFmIFx1MDAyNlx1MDAyNiAgICAgdGFyIC1DIC91c3Ivc3JjIC14emYgdGVsZWdyYWYtJHtURUxFR1JBRl9WRVJTSU9OfV9saW51eF8ke0FSQ0h9LnRhci5neiBcdTAwMjZcdTAwMjYgICAgIG12IC91c3Ivc3JjL3RlbGVncmFmKi9ldGMvdGVsZWdyYWYvdGVsZWdyYWYuY29uZiAvZXRjL3RlbGVncmFmLyBcdTAwMjZcdTAwMjYgICAgIG1rZGlyIC9ldGMvdGVsZWdyYWYvdGVsZWdyYWYuZCBcdTAwMjZcdTAwMjYgICAgIGNwIC1hIC91c3Ivc3JjL3RlbGVncmFmKi91c3IvYmluL3RlbGVncmFmIC91c3IvYmluLyBcdTAwMjZcdTAwMjYgICAgIGdwZ2NvbmYgLS1raWxsIGFsbCBcdTAwMjZcdTAwMjYgICAgIHJtIC1yZiAqLnRhci5neiogL3Vzci9zcmMgL3Jvb3QvLmdudXBnIFx1MDAyNlx1MDAyNiAgICAgYXBrIGRlbCAuYnVpbGQtZGVwcyBcdTAwMjZcdTAwMjYgICAgIGFkZGdyb3VwIC1TIHRlbGVncmFmIFx1MDAyNlx1MDAyNiAgICAgYWRkdXNlciAtUyB0ZWxlZ3JhZiAtRyB0ZWxlZ3JhZiBcdTAwMjZcdTAwMjYgICAgIGNob3duIC1SIHRlbGVncmFmOnRlbGVncmFmIC9ldGMvdGVsZWdyYWYifSx7ImNyZWF0ZWQiOiIyMDIzLTEwLTAzVDA0OjA1OjA2LjQ1OTkwNzk3WiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSAgRVhQT1NFIDgwOTIvdWRwIDgwOTQgODEyNS91ZHAiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyMy0xMC0wM1QwNDowNTowNi41NTE3MTg5NTdaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApIENPUFkgZmlsZTpmNDFjYjY0MTI5ZTAzYzQ2NTIzYzNhY2QyZGE3NzM3NmE2OGQ5Nzg1ZDc3NWZhZjBkMzU5MDUxYzIwYjRmMWJmIGluIC9lbnRyeXBvaW50LnNoICJ9LHsiY3JlYXRlZCI6IjIwMjMtMTAtMDNUMDQ6MDU6MDYuNjM1MjUyODA5WiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSAgRU5UUllQT0lOVCBbXCIvZW50cnlwb2ludC5zaFwiXSIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDIzLTEwLTAzVDA0OjA1OjA2LjcyMjg3NDA5NVoiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgIENNRCBbXCJ0ZWxlZ3JhZlwiXSIsImVtcHR5X2xheWVyIjp0cnVlfV0sIm9zIjoibGludXgiLCJyb290ZnMiOnsidHlwZSI6ImxheWVycyIsImRpZmZfaWRzIjpbInNoYTI1NjpjYzI0NDdlMTgzNWE0MDUzMDk3NWFiODBiYjFmODcyZmJhYjBmMmEwZmFlY2YyYWIxNmZiYmI4OWIzNTg5NDM4Iiwic2hhMjU2OmVkNmI0ZGIwNTNmNjYxOWE2OWNkNGNkNWY0NDc1MzhiNzQzYTQzN2E0OTdkZDMyZjc3NWRmZjhkNjU3MWIzODQiLCJzaGEyNTY6MWVjNjcyYzFkNWFkMmUxMDM0MTQ3OTgxMTVkMzY5N2M5ZGE2NjM2ZDZjMTJlMTQxNDFiYmRiM2QwODU2OTY4ZSIsInNoYTI1NjoyYTMwYjA0MTljMDNhYWRmN2JhNTQyMDBlZDk5OTM1OTNiMTMyNzhmODQ1YmI1NDdkYzkzMTY1Nzk2ZTYwN2M1Iiwic2hhMjU2Ojg4OWJjZGJkMDg4MGE4Njg2MTI0YWQ2YjRkN2M3OWU3MjM4YzdiNWU3MzkxY2ZlY2ZiODc5YzEyMWVkNzIxMjUiXX19",
+   "repoDigests": [
+    "telegraf@sha256:8ca038c7af92a0469bd607b576e6adbde702cb5f50152e6eb14d3fc9143884e5"
+   ],
+   "architecture": "amd64",
+   "os": "linux"
+  }
+ },
+ "distro": {
+  "name": "alpine",
+  "version": "3.18.4",
+  "idLike": []
+ },
+ "descriptor": {
+  "name": "",
+  "version": "",
+  "configuration": {
+   "output": [
+    "json"
+   ],
+   "file": "",
+   "distro": "",
+   "add-cpes-if-none": false,
+   "output-template-file": "",
+   "check-for-app-update": true,
+   "only-fixed": false,
+   "only-notfixed": false,
+   "platform": "",
+   "search": {
+    "scope": "Squashed",
+    "unindexed-archives": false,
+    "indexed-archives": true
+   },
+   "ignore": null,
+   "exclude": [],
+   "db": {
+    "cache-dir": "/home/anon/.cache/grype/db",
+    "update-url": "https://toolbox-data.anchore.io/grype/databases/listing.json",
+    "ca-cert": "",
+    "auto-update": true,
+    "validate-by-hash-on-start": false,
+    "validate-age": true,
+    "max-allowed-built-age": 432000000000000
+   },
+   "externalSources": {
+    "enable": false,
+    "maven": {
+     "searchUpstreamBySha1": true,
+     "baseUrl": "https://search.maven.org/solrsearch/select"
+    }
+   },
+   "match": {
+    "java": {
+     "using-cpes": true
+    },
+    "dotnet": {
+     "using-cpes": true
+    },
+    "golang": {
+     "using-cpes": true
+    },
+    "javascript": {
+     "using-cpes": true
+    },
+    "python": {
+     "using-cpes": true
+    },
+    "ruby": {
+     "using-cpes": true
+    },
+    "stock": {
+     "using-cpes": true
+    }
+   },
+   "fail-on-severity": "",
+   "registry": {
+    "insecure-skip-tls-verify": false,
+    "insecure-use-http": false,
+    "auth": null,
+    "ca-cert": ""
+   },
+   "show-suppressed": false,
+   "by-cve": false,
+   "name": "",
+   "default-image-pull-source": "",
+   "vex-documents": [],
+   "vex-add": []
+  },
+  "db": {
+   "built": "2023-10-10T01:23:53Z",
+   "schemaVersion": 5,
+   "location": "/home/anon/.cache/grype/db/5",
+   "checksum": "sha256:c1dd693b90da9833fd1716f9d2432de66004be2bd188e882392b0076a589cbf4",
+   "error": null
+  },
+  "timestamp": "2023-10-10T16:44:08.41458005-04:00"
+ }
+}

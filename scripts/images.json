@@ -1,0 +1,804 @@
+{
+    "flavors": [
+        {
+        "name": "mariadb",
+        "providers": [
+            {
+            "name": "chainguard",
+            "domain": "cgr.dev",
+            "path": "chainguard/mariadb",
+            "tag": "latest"
+            },
+            {
+            "name": "rapidfort",
+            "domain": "docker.io",
+            "path": "rapidfort/mariadb",
+            "tag": "latest"
+            },
+            {
+            "name": "original",
+            "domain": "docker.io",
+            "path": "mariadb",
+            "tag": "latest"
+            },
+            {
+            "name": "alpine",
+            "domain": "docker.io",
+            "path": "yobasystems/alpine-mariadb",
+            "tag": "latest"
+            }
+        ]
+        },
+        {
+        "name": "postgres-official",
+        "providers": [
+            {
+            "name": "chainguard",
+            "domain": "cgr.dev",
+            "path": "chainguard/postgres",
+            "tag": "latest"
+            },
+            {
+            "name": "rapidfort",
+            "domain": "docker.io",
+            "path": "rapidfort/postgresql-official",
+            "tag": "latest"
+            },
+            {
+            "name": "original",
+            "domain": "docker.io",
+            "path": "postgres",
+            "tag": "latest"
+            },
+            {
+            "name": "alpine",
+            "domain": "docker.io",
+            "path": "postgres",
+            "tag": "alpine"
+            }
+        ]
+        },
+        {
+        "name": "redis",
+        "providers": [
+            {
+            "name": "chainguard",
+            "domain": "cgr.dev",
+            "path": "chainguard/redis",
+            "tag": "latest"
+            },
+            {
+            "name": "rapidfort",
+            "domain": "docker.io",
+            "path": "rapidfort/redis",
+            "tag": "latest"
+            },
+            {
+            "name": "original",
+            "domain": "docker.io",
+            "path": "bitnami/redis",
+            "tag": "latest"
+            },
+            {
+            "name": "alpine",
+            "domain": "docker.io",
+            "path": "redis",
+            "tag": "alpine"
+            }
+        ]
+        },
+        {
+        "name": "redis-official",
+        "providers": [
+            {
+            "name": "chainguard",
+            "domain": "cgr.dev",
+            "path": "chainguard/redis",
+            "tag": "latest"
+            },
+            {
+            "name": "rapidfort",
+            "domain": "docker.io",
+            "path": "rapidfort/redis-official",
+            "tag": "latest"
+            },
+            {
+            "name": "original",
+            "domain": "docker.io",
+            "path": "redis",
+            "tag": "latest"
+            },
+            {
+            "name": "alpine",
+            "domain": "docker.io",
+            "path": "redis",
+            "tag": "alpine"
+            }
+        ]
+        },
+        {
+        "name": "nginx",
+        "providers": [
+            {
+            "name": "chainguard",
+            "domain": "cgr.dev",
+            "path": "chainguard/nginx",
+            "tag": "latest"
+            },
+            {
+            "name": "rapidfort",
+            "domain": "docker.io",
+            "path": "rapidfort/nginx",
+            "tag": "latest"
+            },
+            {
+            "name": "original",
+            "domain": "docker.io",
+            "path": "bitnami/nginx",
+            "tag": "latest"
+            },
+            {
+            "name": "alpine",
+            "domain": "docker.io",
+            "path": "nginx",
+            "tag": "alpine"
+            }
+        ]
+        },
+        {
+        "name": "nginx-official",
+        "providers": [
+            {
+            "name": "chainguard",
+            "domain": "cgr.dev",
+            "path": "chainguard/nginx",
+            "tag": "latest"
+            },
+            {
+            "name": "rapidfort",
+            "domain": "docker.io",
+            "path": "rapidfort/nginx-official",
+            "tag": "latest"
+            },
+            {
+            "name": "original",
+            "domain": "docker.io",
+            "path": "nginx",
+            "tag": "latest"
+            },
+            {
+            "name": "alpine",
+            "domain": "docker.io",
+            "path": "nginx",
+            "tag": "alpine"
+            }
+        ]
+        },
+        {
+        "name": "envoy",
+        "providers": [
+            {
+            "name": "chainguard",
+            "domain": "cgr.dev",
+            "path": "chainguard/envoy",
+            "tag": "latest"
+            },
+            {
+            "name": "rapidfort",
+            "domain": "docker.io",
+            "path": "rapidfort/envoy",
+            "tag": "latest"
+            },
+            {
+            "name": "original",
+            "domain": "docker.io",
+            "path": "bitnami/envoy",
+            "tag": "latest"
+            },
+            {
+            "name": "alpine",
+            "domain": "docker.io",
+            "path": "envoyproxy/envoy-alpine",
+            "tag": "v1.21-latest"
+            }
+        ]
+        },
+        {
+        "name": "envoy-official",
+        "providers": [
+            {
+            "name": "chainguard",
+            "domain": "cgr.dev",
+            "path": "chainguard/envoy",
+            "tag": "latest"
+            },
+            {
+            "name": "rapidfort",
+            "domain": "docker.io",
+            "path": "rapidfort/envoy-official",
+            "tag": "latest"
+            },
+            {
+            "name": "original",
+            "domain": "docker.io",
+            "path": "envoyproxy/envoy",
+            "tag": "v1.27-latest"
+            },
+            {
+            "name": "alpine",
+            "domain": "docker.io",
+            "path": "envoyproxy/envoy-alpine",
+            "tag": "v1.21-latest"
+            }
+        ]
+        },
+        {
+        "name": "etcd",
+        "providers": [
+            {
+            "name": "chainguard",
+            "domain": "cgr.dev",
+            "path": "chainguard/etcd",
+            "tag": "latest"
+            },
+            {
+            "name": "rapidfort",
+            "domain": "docker.io",
+            "path": "rapidfort/etcd",
+            "tag": "latest"
+            },
+            {
+            "name": "original",
+            "domain": "docker.io",
+            "path": "bitnami/etcd",
+            "tag": "latest"
+            }
+        ]
+        },
+        {
+        "name": "fluentd",
+        "providers": [
+            {
+            "name": "chainguard",
+            "domain": "cgr.dev",
+            "path": "chainguard/fluentd",
+            "tag": "latest"
+            },
+            {
+            "name": "rapidfort",
+            "domain": "docker.io",
+            "path": "rapidfort/fluentd",
+            "tag": "latest"
+            },
+            {
+            "name": "original",
+            "domain": "docker.io",
+            "path": "bitnami/fluentd",
+            "tag": "latest"
+            },
+            {
+            "name": "alpine",
+            "domain": "docker.io",
+            "path": "fluent/fluentd",
+            "tag": "edge"
+            }
+        ]
+        },
+        {
+        "name": "fluentd-official",
+        "providers": [
+            {
+            "name": "chainguard",
+            "domain": "cgr.dev",
+            "path": "chainguard/fluentd",
+            "tag": "latest"
+            },
+            {
+            "name": "rapidfort",
+            "domain": "docker.io",
+            "path": "rapidfort/fluentd-official",
+            "tag": "latest"
+            },
+            {
+            "name": "original",
+            "domain": "docker.io",
+            "path": "fluentd",
+            "tag": "latest"
+            },
+            {
+            "name": "alpine",
+            "domain": "docker.io",
+            "path": "fluent/fluentd",
+            "tag": "edge"
+            }
+        ]
+        },
+        {
+        "name": "haproxy",
+        "providers": [
+            {
+            "name": "chainguard",
+            "domain": "cgr.dev",
+            "path": "chainguard/haproxy",
+            "tag": "latest"
+            },
+            {
+            "name": "rapidfort",
+            "domain": "docker.io",
+            "path": "rapidfort/haproxy",
+            "tag": "latest"
+            },
+            {
+            "name": "original",
+            "domain": "docker.io",
+            "path": "bitnami/haproxy",
+            "tag": "latest"
+            },
+            {
+            "name": "alpine",
+            "domain": "docker.io",
+            "path": "haproxy",
+            "tag": "alpine"
+            }
+        ]
+        },
+        {
+        "name": "haproxy-official",
+        "providers": [
+            {
+            "name": "chainguard",
+            "domain": "cgr.dev",
+            "path": "chainguard/haproxy",
+            "tag": "latest"
+            },
+            {
+            "name": "rapidfort",
+            "domain": "docker.io",
+            "path": "rapidfort/haproxy-official",
+            "tag": "latest"
+            },
+            {
+            "name": "original",
+            "domain": "docker.io",
+            "path": "haproxy",
+            "tag": "latest"
+            },
+            {
+            "name": "alpine",
+            "domain": "docker.io",
+            "path": "haproxy",
+            "tag": "alpine"
+            }
+        ]
+        },
+        {
+        "name": "influxdb",
+        "providers": [
+            {
+            "name": "chainguard",
+            "domain": "cgr.dev",
+            "path": "chainguard/influxdb",
+            "tag": "latest"
+            },
+            {
+            "name": "rapidfort",
+            "domain": "docker.io",
+            "path": "rapidfort/influxdb",
+            "tag": "latest"
+            },
+            {
+            "name": "original",
+            "domain": "docker.io",
+            "path": "bitnami/influxdb",
+            "tag": "latest"
+            },
+            {
+            "name": "alpine",
+            "domain": "docker.io",
+            "path": "influxdb",
+            "tag": "alpine"
+            }
+        ]
+        },
+        {
+        "name": "rabbitmq",
+        "providers": [
+            {
+            "name": "chainguard",
+            "domain": "cgr.dev",
+            "path": "chainguard/rabbitmq",
+            "tag": "latest"
+            },
+            {
+            "name": "rapidfort",
+            "domain": "docker.io",
+            "path": "rapidfort/rabbitmq",
+            "tag": "latest"
+            },
+            {
+            "name": "original",
+            "domain": "docker.io",
+            "path": "bitnami/rabbitmq",
+            "tag": "latest"
+            },
+            {
+            "name": "alpine",
+            "domain": "docker.io",
+            "path": "rabbitmq",
+            "tag": "alpine"
+            }
+        ]
+        },
+        {
+        "name": "zookeper",
+        "providers": [
+            {
+            "name": "chainguard",
+            "domain": "cgr.dev",
+            "path": "chainguard/zookeeper",
+            "tag": "latest"
+            },
+            {
+            "name": "rapidfort",
+            "domain": "docker.io",
+            "path": "rapidfort/zookeeper",
+            "tag": "latest"
+            },
+            {
+            "name": "original",
+            "domain": "docker.io",
+            "path": "bitnami/zookeeper",
+            "tag": "latest"
+            },
+            {
+            "name": "alpine",
+            "domain": "docker.io",
+            "path": "smizy/zookeeper",
+            "tag": "latest"
+            }
+        ]
+        },
+        {
+        "name": "zookeper-official",
+        "providers": [
+            {
+            "name": "chainguard",
+            "domain": "cgr.dev",
+            "path": "chainguard/zookeeper",
+            "tag": "latest"
+            },
+            {
+            "name": "rapidfort",
+            "domain": "docker.io",
+            "path": "rapidfort/zookeeper-official",
+            "tag": "latest"
+            },
+            {
+            "name": "original",
+            "domain": "docker.io",
+            "path": "zookeeper",
+            "tag": "latest"
+            },
+            {
+            "name": "alpine",
+            "domain": "docker.io",
+            "path": "smizy/zookeeper",
+            "tag": "latest"
+            }
+        ]
+        },
+        {
+        "name": "consul",
+        "providers": [
+            {
+            "name": "chainguard",
+            "domain": "cgr.dev",
+            "path": "chainguard/consul",
+            "tag": "latest"
+            },
+            {
+            "name": "rapidfort",
+            "domain": "docker.io",
+            "path": "rapidfort/consul",
+            "tag": "latest"
+            },
+            {
+            "name": "original",
+            "domain": "docker.io",
+            "path": "bitnami/consul",
+            "tag": "latest"
+            },
+            {
+            "name": "alpine",
+            "domain": "docker.io",
+            "path": "consul",
+            "tag": "1.15.4"
+            }
+        ]
+        },
+        {
+        "name": "nats",
+        "providers": [
+            {
+            "name": "chainguard",
+            "domain": "cgr.dev",
+            "path": "chainguard/nats",
+            "tag": "latest"
+            },
+            {
+            "name": "rapidfort",
+            "domain": "docker.io",
+            "path": "rapidfort/nats",
+            "tag": "latest"
+            },
+            {
+            "name": "original",
+            "domain": "docker.io",
+            "path": "bitnami/nats",
+            "tag": "latest"
+            },
+            {
+            "name": "alpine",
+            "domain": "docker.io",
+            "path": "nats",
+            "tag": "alpine"
+            }
+        ]
+        },
+        {
+        "name": "nats-official",
+        "providers": [
+            {
+            "name": "chainguard",
+            "domain": "cgr.dev",
+            "path": "chainguard/nats",
+            "tag": "latest"
+            },
+            {
+            "name": "rapidfort",
+            "domain": "docker.io",
+            "path": "rapidfort/nats-official",
+            "tag": "latest"
+            },
+            {
+            "name": "original",
+            "domain": "docker.io",
+            "path": "nats",
+            "tag": "latest"
+            },
+            {
+            "name": "alpine",
+            "domain": "docker.io",
+            "path": "nats",
+            "tag": "alpine"
+            }
+        ]
+        },
+        {
+        "name": "prometheus",
+        "providers": [
+            {
+            "name": "chainguard",
+            "domain": "cgr.dev",
+            "path": "chainguard/prometheus",
+            "tag": "latest"
+            },
+            {
+            "name": "rapidfort",
+            "domain": "docker.io",
+            "path": "rapidfort/prometheus",
+            "tag": "latest"
+            },
+            {
+            "name": "original",
+            "domain": "docker.io",
+            "path": "bitnami/prometheus",
+            "tag": "latest"
+            },
+            {
+            "name": "alpine",
+            "domain": "docker.io",
+            "path": "secureimages/prometheus",
+            "tag": "latest"
+            }
+        ]
+        },
+        {
+        "name": "memcached",
+        "providers": [
+            {
+            "name": "chainguard",
+            "domain": "cgr.dev",
+            "path": "chainguard/memcached",
+            "tag": "latest"
+            },
+            {
+            "name": "rapidfort",
+            "domain": "docker.io",
+            "path": "rapidfort/memcached",
+            "tag": "latest"
+            },
+            {
+            "name": "original",
+            "domain": "docker.io",
+            "path": "bitnami/memcached",
+            "tag": "latest"
+            },
+            {
+            "name": "alpine",
+            "domain": "docker.io",
+            "path": "memcached",
+            "tag": "alpine"
+            }
+        ]
+        },
+        {
+        "name": "memcached-official",
+        "providers": [
+            {
+            "name": "chainguard",
+            "domain": "cgr.dev",
+            "path": "chainguard/memcached",
+            "tag": "latest"
+            },
+            {
+            "name": "rapidfort",
+            "domain": "docker.io",
+            "path": "rapidfort/memcached-official",
+            "tag": "latest"
+            },
+            {
+            "name": "original",
+            "domain": "docker.io",
+            "path": "memcached",
+            "tag": "latest"
+            },
+            {
+            "name": "alpine",
+            "domain": "docker.io",
+            "path": "memcached",
+            "tag": "alpine"
+            }
+        ]
+        },
+        {
+        "name": "cassandra-official",
+        "providers": [
+            {
+            "name": "chainguard",
+            "domain": "cgr.dev",
+            "path": "chainguard/cassandra",
+            "tag": "latest"
+            },
+            {
+            "name": "rapidfort",
+            "domain": "docker.io",
+            "path": "rapidfort/cassandra-official",
+            "tag": "latest"
+            },
+            {
+            "name": "original",
+            "domain": "docker.io",
+            "path": "cassandra",
+            "tag": "latest"
+            }
+        ]
+        },
+        {
+        "name": "curl",
+        "providers": [
+            {
+            "name": "chainguard",
+            "domain": "cgr.dev",
+            "path": "chainguard/curl",
+            "tag": "latest"
+            },
+            {
+            "name": "rapidfort",
+            "domain": "docker.io",
+            "path": "rapidfort/curl",
+            "tag": "latest"
+            },
+            {
+            "name": "original",
+            "domain": "docker.io",
+            "path": "curlimages/curl",
+            "tag": "latest"
+            },
+            {
+            "name": "alpine",
+            "domain": "docker.io",
+            "path": "alpine/curl",
+            "tag": "latest"
+            }
+        ]
+        },
+        {
+        "name": "traefik",
+        "providers": [
+            {
+            "name": "chainguard",
+            "domain": "cgr.dev",
+            "path": "chainguard/traefik",
+            "tag": "latest"
+            },
+            {
+            "name": "rapidfort",
+            "domain": "docker.io",
+            "path": "rapidfort/traefik",
+            "tag": "latest"
+            },
+            {
+            "name": "original",
+            "domain": "docker.io",
+            "path": "traefik",
+            "tag": "latest"
+            },
+            {
+            "name": "alpine",
+            "domain": "docker.io",
+            "path": "traefik",
+            "tag": "alpine"
+            }
+        ]
+        },
+        {
+        "name": "vault",
+        "providers": [
+            {
+            "name": "chainguard",
+            "domain": "cgr.dev",
+            "path": "chainguard/vault",
+            "tag": "latest"
+            },
+            {
+            "name": "rapidfort",
+            "domain": "docker.io",
+            "path": "rapidfort/vault",
+            "tag": "latest"
+            },
+            {
+            "name": "original",
+            "domain": "docker.io",
+            "path": "hashicorp/vault",
+            "tag": "latest"
+            },
+            {
+            "name": "alpine",
+            "domain": "docker.io",
+            "path": "vault",
+            "tag": "1.13.3"
+            }
+        ]
+        },
+        {
+        "name": "telegraf",
+        "providers": [
+            {
+            "name": "chainguard",
+            "domain": "cgr.dev",
+            "path": "chainguard/telegraf",
+            "tag": "latest"
+            },
+            {
+            "name": "rapidfort",
+            "domain": "docker.io",
+            "path": "rapidfort/telegraf",
+            "tag": "latest"
+            },
+            {
+            "name": "original",
+            "domain": "docker.io",
+            "path": "bitnami/telegraf",
+            "tag": "latest"
+            },
+            {
+            "name": "alpine",
+            "domain": "docker.io",
+            "path": "telegraf",
+            "tag": "alpine"
+            }
+        ]
+        }
+    ]
+}
