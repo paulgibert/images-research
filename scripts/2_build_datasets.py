@@ -81,7 +81,7 @@ def agg_ds(meta_df: pd.DataFrame, grype_df: pd.DataFrame,
 
 def parse_args() -> Tuple[str, str]:
     parser = argparse.ArgumentParser(
-                    prog='build_ds.py',
+                    prog='2_build_datasets.py',
                     description='Builds datasets from grype and syft reports.')
     
     parser.add_argument("--reports-dir", "-r",
