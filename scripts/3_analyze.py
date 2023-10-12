@@ -4,14 +4,14 @@ import sys
 # Add parent dir to path
 sys.path.append("/".join(os.path.dirname(__file__).split("/")[0:-1]))
 
+from typing import Tuple
 import pandas as pd
 import matplotlib.pyplot as plt
+from matplotlib.figure import Figure
+from matplotlib.axes import Axes
+import seaborn as sns
 import numpy as np
-from src.plot import (plot_stacked_bar,
-                      plot_grouped_bar,
-                      plot_sbs_grouped_bar,
-                      plot_hist,
-                      plot_hline_chart)
+from src.plot import plot_hline_chart
 
 
 def get_column(df: pd.DataFrame, provider: str, column: str) -> np.ndarray:
@@ -20,35 +20,46 @@ def get_column(df: pd.DataFrame, provider: str, column: str) -> np.ndarray:
         data.sort_values(by=["image_flavor"])[column])
 
 
-def main():
+def make_fig(df: pd.DataFrame, column: str) -> Tuple[Figure, Axes]:
+    import matplotlib as mpl
+    mpl.rcParams["font.family"] = "serif"
+    fig, ax = plt.subplots(figsize=(8,6))
     column = "n_vulnerabilities"
-
-    df = pd.read_csv("data/datasets/agg.csv")
     flavors = df["image_flavor"].unique()
 
+    org = get_column(df, "original", column)
     cg = get_column(df, "chainguard", column)
     rf = get_column(df, "rapidfort", column)
-    org = get_column(df, "original", column)
 
-    """ Single plots """
-    _, ax = plt.subplots()
-    # plot_stacked_bar(ax, org, cg, rf, flavors)
-    # plot_grouped_bar(ax, org, cg, rf, flavors, highlight_min=False)
-    # plot_grouped_bar(ax, org, cg, rf, flavors, highlight_min=True)
-    # plot_hist(ax, org, cg, rf, flavors,
-    #           nbins=np.arange(0, np.max(org), 10),
-    #           alpha=1,
-    #           uselines=True)
-    # plot_hline_chart(ax, org, cg, rf, flavors,
-    #                  highlight_min=False)
-    # plot_hline_chart(ax, org, cg, rf, flavors,
-    #                  highlight_min=True)
+    plot_hline_chart(ax, org, cg, rf, flavors)
+    return fig, ax
 
-    """ Double plots """
-    _, ax = plt.subplots(1, 2)
-    plot_sbs_grouped_bar(ax, org, cg, rf, flavors)
+
+def make_n_vulns_fig(df: pd.DataFrame, out_path: str):
+    fig, ax = make_fig(df, "n_vulnerabilities")
+
+    sns.despine(ax=ax, offset=5)
+    ax.set_title("Number of Vulnerabilities Per Image", pad=10)
+    ax.set_xlabel("Number of Vulnerabilities")
+    xticks = np.arange(0, 300, 50)
+    ax.set_xticks(xticks, [str(int(t)) for t in xticks], fontsize=10)
+    ax.set_xlabel("Number of Vulnerabilities", fontsize=10)
+
+    fig.tight_layout()
+
+
+def main():
+
+    df = pd.read_csv("data/datasets/agg.csv")
+    make_n_vulns_fig(df, "n_vulns.png")
+
+    # import matplotlib as mpl
+    # from matplotlib.font_manager import get_font_names
+    # for font in get_font_names():
+        
+    #     print(font)
+    #     plt.show()
     plt.show()
-
 
 if __name__ == "__main__":
     main()

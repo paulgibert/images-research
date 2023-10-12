@@ -22419,41 +22419,32 @@
     }
    ],
    "artifact": {
-    "id": "70b1c14c35eafe79",
+    "id": "e266c69bf9208dbe",
     "name": "netty",
     "version": "3.10.5.Final",
     "type": "java-archive",
     "locations": [
      {
-      "path": "/usr/local/zookeeper-3.4.10/lib/netty-3.10.5.Final.jar",
+      "path": "/usr/local/zookeeper-3.4.10/contrib/fatjar/zookeeper-3.4.10-fatjar.jar",
       "layerID": "sha256:190482cb294ece8fddfe12ca8d05641887763a3955314a5aaa6d23b6587fe452"
      }
     ],
     "language": "java",
-    "licenses": [
-     "http://www.apache.org/licenses/LICENSE-2.0"
-    ],
+    "licenses": [],
     "cpes": [
-     "cpe:2.3:a:NettyBundleActivator:netty:3.10.5.Final:*:*:*:*:*:*:*",
-     "cpe:2.3:a:container:netty:3.10.5.Final:*:*:*:*:*:*:*",
-     "cpe:2.3:a:jboss:netty:3.10.5.Final:*:*:*:*:*:*:*",
+     "cpe:2.3:a:sonatype:netty:3.10.5.Final:*:*:*:*:*:*:*",
      "cpe:2.3:a:netty:netty:3.10.5.Final:*:*:*:*:*:*:*",
-     "cpe:2.3:a:osgi:netty:3.10.5.Final:*:*:*:*:*:*:*"
+     "cpe:2.3:a:oss:netty:3.10.5.Final:*:*:*:*:*:*:*"
     ],
     "purl": "pkg:maven/io.netty/netty@3.10.5.Final",
     "upstreams": [],
     "metadataType": "JavaMetadata",
     "metadata": {
-     "virtualPath": "/usr/local/zookeeper-3.4.10/lib/netty-3.10.5.Final.jar",
+     "virtualPath": "/usr/local/zookeeper-3.4.10/contrib/fatjar/zookeeper-3.4.10-fatjar.jar:io.netty:netty",
      "pomArtifactID": "netty",
      "pomGroupID": "io.netty",
      "manifestName": "",
-     "archiveDigests": [
-      {
-       "algorithm": "sha1",
-       "value": "9ca7d55d246092bddd29b867706e2f6c7db701a0"
-      }
-     ]
+     "archiveDigests": null
     }
    }
   },
@@ -22610,155 +22601,6 @@
     }
    ],
    "artifact": {
-    "id": "e266c69bf9208dbe",
-    "name": "netty",
-    "version": "3.10.5.Final",
-    "type": "java-archive",
-    "locations": [
-     {
-      "path": "/usr/local/zookeeper-3.4.10/contrib/fatjar/zookeeper-3.4.10-fatjar.jar",
-      "layerID": "sha256:190482cb294ece8fddfe12ca8d05641887763a3955314a5aaa6d23b6587fe452"
-     }
-    ],
-    "language": "java",
-    "licenses": [],
-    "cpes": [
-     "cpe:2.3:a:sonatype:netty:3.10.5.Final:*:*:*:*:*:*:*",
-     "cpe:2.3:a:netty:netty:3.10.5.Final:*:*:*:*:*:*:*",
-     "cpe:2.3:a:oss:netty:3.10.5.Final:*:*:*:*:*:*:*"
-    ],
-    "purl": "pkg:maven/io.netty/netty@3.10.5.Final",
-    "upstreams": [],
-    "metadataType": "JavaMetadata",
-    "metadata": {
-     "virtualPath": "/usr/local/zookeeper-3.4.10/contrib/fatjar/zookeeper-3.4.10-fatjar.jar:io.netty:netty",
-     "pomArtifactID": "netty",
-     "pomGroupID": "io.netty",
-     "manifestName": "",
-     "archiveDigests": null
-    }
-   }
-  },
-  {
-   "vulnerability": {
-    "id": "CVE-2019-20445",
-    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2019-20445",
-    "namespace": "nvd:cpe",
-    "severity": "Critical",
-    "urls": [
-     "https://access.redhat.com/errata/RHSA-2020:0497",
-     "https://access.redhat.com/errata/RHSA-2020:0567",
-     "https://access.redhat.com/errata/RHSA-2020:0601",
-     "https://access.redhat.com/errata/RHSA-2020:0605",
-     "https://access.redhat.com/errata/RHSA-2020:0606",
-     "https://access.redhat.com/errata/RHSA-2020:0804",
-     "https://access.redhat.com/errata/RHSA-2020:0805",
-     "https://access.redhat.com/errata/RHSA-2020:0806",
-     "https://access.redhat.com/errata/RHSA-2020:0811",
-     "https://github.com/netty/netty/compare/netty-4.1.43.Final...netty-4.1.44.Final",
-     "https://github.com/netty/netty/issues/9861",
-     "https://lists.apache.org/thread.html/r030beff88aeb6d7a2d6cd21342bd18686153ce6e26a4171d0e035663@%3Cissues.flume.apache.org%3E",
-     "https://lists.apache.org/thread.html/r1b103833cb5bc8466e24ff0ecc5e75b45a705334ab6a444e64e840a0@%3Cissues.bookkeeper.apache.org%3E",
-     "https://lists.apache.org/thread.html/r1fcccf8bdb3531c28bc9aa605a6a1bea7e68cef6fc12e01faafb2fb5@%3Cissues.zookeeper.apache.org%3E",
-     "https://lists.apache.org/thread.html/r205937c85817a911b0c72655c2377e7a2c9322d6ef6ce1b118d34d8d@%3Cdev.geode.apache.org%3E",
-     "https://lists.apache.org/thread.html/r2f2989b7815d809ff3fda8ce330f553e5f133505afd04ffbc135f35f@%3Cissues.spark.apache.org%3E",
-     "https://lists.apache.org/thread.html/r310d2ce22304d5298ff87f10134f918c87919b452734f9841d95682d@%3Ccommits.zookeeper.apache.org%3E",
-     "https://lists.apache.org/thread.html/r36fcf538b28f2029e8b4f6b9a772f3b107913a78f09b095c5b153a62@%3Cissues.zookeeper.apache.org%3E",
-     "https://lists.apache.org/thread.html/r46f93de62b1e199f3f9babb18128681677c53493546f532ed88c359d@%3Creviews.spark.apache.org%3E",
-     "https://lists.apache.org/thread.html/r4d3f1d3e333d9c2b2f6e6ae8ed8750d4de03410ac294bcd12c7eefa3@%3Ccommits.cassandra.apache.org%3E",
-     "https://lists.apache.org/thread.html/r4ff40646e9ccce13560458419accdfc227b8b6ca4ead3a8a91decc74@%3Cissues.flume.apache.org%3E",
-     "https://lists.apache.org/thread.html/r640eb9b3213058a963e18291f903fc1584e577f60035f941e32f760a@%3Cissues.zookeeper.apache.org%3E",
-     "https://lists.apache.org/thread.html/r6945f3c346b7af89bbd3526a7c9b705b1e3569070ebcd0964bcedd7d@%3Cissues.zookeeper.apache.org%3E",
-     "https://lists.apache.org/thread.html/r70b1ff22ee80e8101805b9a473116dd33265709007d2deb6f8c80bf2@%3Ccommits.druid.apache.org%3E",
-     "https://lists.apache.org/thread.html/r7790b9d99696d9eddce8a8c96f13bb68460984294ea6fea3800143e4@%3Ccommits.pulsar.apache.org%3E",
-     "https://lists.apache.org/thread.html/r804895eedd72c9ec67898286eb185e04df852b0dd5fe53cf5b6138f9@%3Cissues.zookeeper.apache.org%3E",
-     "https://lists.apache.org/thread.html/r81700644754e66ffea465c869cb477de25f8041e21598e8818fc2c45@%3Cdev.zookeeper.apache.org%3E",
-     "https://lists.apache.org/thread.html/r819aaeb9944bdcfca438dcc51f05650dc728daf64dfd7d774fc2499b@%3Ccommits.zookeeper.apache.org%3E",
-     "https://lists.apache.org/thread.html/r832724df393a7ef25ca4c7c2eb83ad2d6c21c74569acda5233f9f1ec@%3Ccommits.pulsar.apache.org%3E",
-     "https://lists.apache.org/thread.html/r959474dcf7f88565ed89f6252ca5a274419006cb71348f14764b183d@%3Ccommits.cassandra.apache.org%3E",
-     "https://lists.apache.org/thread.html/r96e08f929234e8ba1ef4a93a0fd2870f535a1f9ab628fabc46115986@%3Cdev.zookeeper.apache.org%3E",
-     "https://lists.apache.org/thread.html/r9b20cdac704cf9a583400350e2d5b576fa8417c18ddb961201676c60@%3Ccommits.zookeeper.apache.org%3E",
-     "https://lists.apache.org/thread.html/ra1a71b576a45426af5ee65255be9596ff3181a342f4ba73b800db78f@%3Cdev.geode.apache.org%3E",
-     "https://lists.apache.org/thread.html/ra2ace4bcb5cf487f72cbcbfa0f8cc08e755ec2b93d7e69f276148b08@%3Cissues.zookeeper.apache.org%3E",
-     "https://lists.apache.org/thread.html/ra9fbfe7d4830ae675bf34c7c0f8c22fc8a4099f65706c1bc4f54c593@%3Cissues.zookeeper.apache.org%3E",
-     "https://lists.apache.org/thread.html/raaac04b7567c554786132144bea3dcb72568edd410c1e6f0101742e7@%3Cissues.flink.apache.org%3E",
-     "https://lists.apache.org/thread.html/rb5c065e7bd701b0744f9f28ad769943f91745102716c1eb516325f11@%3Cissues.spark.apache.org%3E",
-     "https://lists.apache.org/thread.html/rb84c57670ec48ef23f4d07973b7fa69f629b8e7fcfb48874362feb6f@%3Ccommits.zookeeper.apache.org%3E",
-     "https://lists.apache.org/thread.html/rbdb59c683d666130906a9c05a1d2b034c4cc08cda7ed41322bd54fe2@%3Cissues.flume.apache.org%3E",
-     "https://lists.apache.org/thread.html/rce71d33747010d32d31d90f5d737dae26291d96552f513a266c92fbb@%3Cnotifications.zookeeper.apache.org%3E",
-     "https://lists.apache.org/thread.html/rd0e44e8ef71eeaaa3cf3d1b8b41eb25894372e2995ec908ce7624d26@%3Ccommits.pulsar.apache.org%3E",
-     "https://lists.apache.org/thread.html/rd8f72411fb75b98d366400ae789966373b5c3eb3f511e717caf3e49e@%3Cissues.flink.apache.org%3E",
-     "https://lists.apache.org/thread.html/rdb69125652311d0c41f6066ff44072a3642cf33a4b5e3c4f9c1ec9c2@%3Ccommits.pulsar.apache.org%3E",
-     "https://lists.apache.org/thread.html/re45ee9256d3233c31d78e59ee59c7dc841c7fbd83d0769285b41e948@%3Ccommits.druid.apache.org%3E",
-     "https://lists.apache.org/thread.html/rf5b2dfb7401666a19915f8eaef3ba9f5c3386e2066fcd2ae66e16a2f@%3Cdev.flink.apache.org%3E",
-     "https://lists.apache.org/thread.html/rfb55f245b08d8a6ec0fb4dc159022227cd22de34c4419c2fbb18802b@%3Cnotifications.zookeeper.apache.org%3E",
-     "https://lists.apache.org/thread.html/rff210a24f3a924829790e69eaefa84820902b7b31f17c3bf2def9114@%3Ccommits.druid.apache.org%3E",
-     "https://lists.debian.org/debian-lts-announce/2020/02/msg00017.html",
-     "https://lists.debian.org/debian-lts-announce/2020/02/msg00018.html",
-     "https://lists.debian.org/debian-lts-announce/2020/09/msg00003.html",
-     "https://lists.debian.org/debian-lts-announce/2020/09/msg00004.html",
-     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/TS6VX7OMXPDJIU5LRGUAHRK6MENAVJ46/",
-     "https://usn.ubuntu.com/4532-1/",
-     "https://www.debian.org/security/2021/dsa-4885"
-    ],
-    "description": "HttpObjectDecoder.java in Netty before 4.1.44 allows a Content-Length header to be accompanied by a second Content-Length header, or by a Transfer-Encoding header.",
-    "cvss": [
-     {
-      "source": "nvd@nist.gov",
-      "type": "Primary",
-      "version": "2.0",
-      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:N",
-      "metrics": {
-       "baseScore": 6.4,
-       "exploitabilityScore": 10,
-       "impactScore": 4.9
-      },
-      "vendorMetadata": {}
-     },
-     {
-      "source": "nvd@nist.gov",
-      "type": "Primary",
-      "version": "3.1",
-      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
-      "metrics": {
-       "baseScore": 9.1,
-       "exploitabilityScore": 3.9,
-       "impactScore": 5.2
-      },
-      "vendorMetadata": {}
-     }
-    ],
-    "fix": {
-     "versions": [],
-     "state": "unknown"
-    },
-    "advisories": []
-   },
-   "relatedVulnerabilities": [],
-   "matchDetails": [
-    {
-     "type": "cpe-match",
-     "matcher": "java-matcher",
-     "searchedBy": {
-      "namespace": "nvd:cpe",
-      "cpes": [
-       "cpe:2.3:a:netty:netty:3.10.5.Final:*:*:*:*:*:*:*"
-      ],
-      "Package": {
-       "name": "netty",
-       "version": "3.10.5.Final"
-      }
-     },
-     "found": {
-      "vulnerabilityID": "CVE-2019-20445",
-      "versionConstraint": "< 4.1.44 (unknown)",
-      "cpes": [
-       "cpe:2.3:a:netty:netty:*:*:*:*:*:*:*:*"
-      ]
-     }
-    }
-   ],
-   "artifact": {
     "id": "70b1c14c35eafe79",
     "name": "netty",
     "version": "3.10.5.Final",
@@ -22948,6 +22790,334 @@
   },
   {
    "vulnerability": {
+    "id": "CVE-2019-20445",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2019-20445",
+    "namespace": "nvd:cpe",
+    "severity": "Critical",
+    "urls": [
+     "https://access.redhat.com/errata/RHSA-2020:0497",
+     "https://access.redhat.com/errata/RHSA-2020:0567",
+     "https://access.redhat.com/errata/RHSA-2020:0601",
+     "https://access.redhat.com/errata/RHSA-2020:0605",
+     "https://access.redhat.com/errata/RHSA-2020:0606",
+     "https://access.redhat.com/errata/RHSA-2020:0804",
+     "https://access.redhat.com/errata/RHSA-2020:0805",
+     "https://access.redhat.com/errata/RHSA-2020:0806",
+     "https://access.redhat.com/errata/RHSA-2020:0811",
+     "https://github.com/netty/netty/compare/netty-4.1.43.Final...netty-4.1.44.Final",
+     "https://github.com/netty/netty/issues/9861",
+     "https://lists.apache.org/thread.html/r030beff88aeb6d7a2d6cd21342bd18686153ce6e26a4171d0e035663@%3Cissues.flume.apache.org%3E",
+     "https://lists.apache.org/thread.html/r1b103833cb5bc8466e24ff0ecc5e75b45a705334ab6a444e64e840a0@%3Cissues.bookkeeper.apache.org%3E",
+     "https://lists.apache.org/thread.html/r1fcccf8bdb3531c28bc9aa605a6a1bea7e68cef6fc12e01faafb2fb5@%3Cissues.zookeeper.apache.org%3E",
+     "https://lists.apache.org/thread.html/r205937c85817a911b0c72655c2377e7a2c9322d6ef6ce1b118d34d8d@%3Cdev.geode.apache.org%3E",
+     "https://lists.apache.org/thread.html/r2f2989b7815d809ff3fda8ce330f553e5f133505afd04ffbc135f35f@%3Cissues.spark.apache.org%3E",
+     "https://lists.apache.org/thread.html/r310d2ce22304d5298ff87f10134f918c87919b452734f9841d95682d@%3Ccommits.zookeeper.apache.org%3E",
+     "https://lists.apache.org/thread.html/r36fcf538b28f2029e8b4f6b9a772f3b107913a78f09b095c5b153a62@%3Cissues.zookeeper.apache.org%3E",
+     "https://lists.apache.org/thread.html/r46f93de62b1e199f3f9babb18128681677c53493546f532ed88c359d@%3Creviews.spark.apache.org%3E",
+     "https://lists.apache.org/thread.html/r4d3f1d3e333d9c2b2f6e6ae8ed8750d4de03410ac294bcd12c7eefa3@%3Ccommits.cassandra.apache.org%3E",
+     "https://lists.apache.org/thread.html/r4ff40646e9ccce13560458419accdfc227b8b6ca4ead3a8a91decc74@%3Cissues.flume.apache.org%3E",
+     "https://lists.apache.org/thread.html/r640eb9b3213058a963e18291f903fc1584e577f60035f941e32f760a@%3Cissues.zookeeper.apache.org%3E",
+     "https://lists.apache.org/thread.html/r6945f3c346b7af89bbd3526a7c9b705b1e3569070ebcd0964bcedd7d@%3Cissues.zookeeper.apache.org%3E",
+     "https://lists.apache.org/thread.html/r70b1ff22ee80e8101805b9a473116dd33265709007d2deb6f8c80bf2@%3Ccommits.druid.apache.org%3E",
+     "https://lists.apache.org/thread.html/r7790b9d99696d9eddce8a8c96f13bb68460984294ea6fea3800143e4@%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/r804895eedd72c9ec67898286eb185e04df852b0dd5fe53cf5b6138f9@%3Cissues.zookeeper.apache.org%3E",
+     "https://lists.apache.org/thread.html/r81700644754e66ffea465c869cb477de25f8041e21598e8818fc2c45@%3Cdev.zookeeper.apache.org%3E",
+     "https://lists.apache.org/thread.html/r819aaeb9944bdcfca438dcc51f05650dc728daf64dfd7d774fc2499b@%3Ccommits.zookeeper.apache.org%3E",
+     "https://lists.apache.org/thread.html/r832724df393a7ef25ca4c7c2eb83ad2d6c21c74569acda5233f9f1ec@%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/r959474dcf7f88565ed89f6252ca5a274419006cb71348f14764b183d@%3Ccommits.cassandra.apache.org%3E",
+     "https://lists.apache.org/thread.html/r96e08f929234e8ba1ef4a93a0fd2870f535a1f9ab628fabc46115986@%3Cdev.zookeeper.apache.org%3E",
+     "https://lists.apache.org/thread.html/r9b20cdac704cf9a583400350e2d5b576fa8417c18ddb961201676c60@%3Ccommits.zookeeper.apache.org%3E",
+     "https://lists.apache.org/thread.html/ra1a71b576a45426af5ee65255be9596ff3181a342f4ba73b800db78f@%3Cdev.geode.apache.org%3E",
+     "https://lists.apache.org/thread.html/ra2ace4bcb5cf487f72cbcbfa0f8cc08e755ec2b93d7e69f276148b08@%3Cissues.zookeeper.apache.org%3E",
+     "https://lists.apache.org/thread.html/ra9fbfe7d4830ae675bf34c7c0f8c22fc8a4099f65706c1bc4f54c593@%3Cissues.zookeeper.apache.org%3E",
+     "https://lists.apache.org/thread.html/raaac04b7567c554786132144bea3dcb72568edd410c1e6f0101742e7@%3Cissues.flink.apache.org%3E",
+     "https://lists.apache.org/thread.html/rb5c065e7bd701b0744f9f28ad769943f91745102716c1eb516325f11@%3Cissues.spark.apache.org%3E",
+     "https://lists.apache.org/thread.html/rb84c57670ec48ef23f4d07973b7fa69f629b8e7fcfb48874362feb6f@%3Ccommits.zookeeper.apache.org%3E",
+     "https://lists.apache.org/thread.html/rbdb59c683d666130906a9c05a1d2b034c4cc08cda7ed41322bd54fe2@%3Cissues.flume.apache.org%3E",
+     "https://lists.apache.org/thread.html/rce71d33747010d32d31d90f5d737dae26291d96552f513a266c92fbb@%3Cnotifications.zookeeper.apache.org%3E",
+     "https://lists.apache.org/thread.html/rd0e44e8ef71eeaaa3cf3d1b8b41eb25894372e2995ec908ce7624d26@%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/rd8f72411fb75b98d366400ae789966373b5c3eb3f511e717caf3e49e@%3Cissues.flink.apache.org%3E",
+     "https://lists.apache.org/thread.html/rdb69125652311d0c41f6066ff44072a3642cf33a4b5e3c4f9c1ec9c2@%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/re45ee9256d3233c31d78e59ee59c7dc841c7fbd83d0769285b41e948@%3Ccommits.druid.apache.org%3E",
+     "https://lists.apache.org/thread.html/rf5b2dfb7401666a19915f8eaef3ba9f5c3386e2066fcd2ae66e16a2f@%3Cdev.flink.apache.org%3E",
+     "https://lists.apache.org/thread.html/rfb55f245b08d8a6ec0fb4dc159022227cd22de34c4419c2fbb18802b@%3Cnotifications.zookeeper.apache.org%3E",
+     "https://lists.apache.org/thread.html/rff210a24f3a924829790e69eaefa84820902b7b31f17c3bf2def9114@%3Ccommits.druid.apache.org%3E",
+     "https://lists.debian.org/debian-lts-announce/2020/02/msg00017.html",
+     "https://lists.debian.org/debian-lts-announce/2020/02/msg00018.html",
+     "https://lists.debian.org/debian-lts-announce/2020/09/msg00003.html",
+     "https://lists.debian.org/debian-lts-announce/2020/09/msg00004.html",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/TS6VX7OMXPDJIU5LRGUAHRK6MENAVJ46/",
+     "https://usn.ubuntu.com/4532-1/",
+     "https://www.debian.org/security/2021/dsa-4885"
+    ],
+    "description": "HttpObjectDecoder.java in Netty before 4.1.44 allows a Content-Length header to be accompanied by a second Content-Length header, or by a Transfer-Encoding header.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "2.0",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:N",
+      "metrics": {
+       "baseScore": 6.4,
+       "exploitabilityScore": 10,
+       "impactScore": 4.9
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+      "metrics": {
+       "baseScore": 9.1,
+       "exploitabilityScore": 3.9,
+       "impactScore": 5.2
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:netty:netty:3.10.5.Final:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "netty",
+       "version": "3.10.5.Final"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2019-20445",
+      "versionConstraint": "< 4.1.44 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:netty:netty:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "70b1c14c35eafe79",
+    "name": "netty",
+    "version": "3.10.5.Final",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "/usr/local/zookeeper-3.4.10/lib/netty-3.10.5.Final.jar",
+      "layerID": "sha256:190482cb294ece8fddfe12ca8d05641887763a3955314a5aaa6d23b6587fe452"
+     }
+    ],
+    "language": "java",
+    "licenses": [
+     "http://www.apache.org/licenses/LICENSE-2.0"
+    ],
+    "cpes": [
+     "cpe:2.3:a:NettyBundleActivator:netty:3.10.5.Final:*:*:*:*:*:*:*",
+     "cpe:2.3:a:container:netty:3.10.5.Final:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jboss:netty:3.10.5.Final:*:*:*:*:*:*:*",
+     "cpe:2.3:a:netty:netty:3.10.5.Final:*:*:*:*:*:*:*",
+     "cpe:2.3:a:osgi:netty:3.10.5.Final:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/io.netty/netty@3.10.5.Final",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "/usr/local/zookeeper-3.4.10/lib/netty-3.10.5.Final.jar",
+     "pomArtifactID": "netty",
+     "pomGroupID": "io.netty",
+     "manifestName": "",
+     "archiveDigests": [
+      {
+       "algorithm": "sha1",
+       "value": "9ca7d55d246092bddd29b867706e2f6c7db701a0"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2019-20444",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2019-20444",
+    "namespace": "nvd:cpe",
+    "severity": "Critical",
+    "urls": [
+     "https://access.redhat.com/errata/RHSA-2020:0497",
+     "https://access.redhat.com/errata/RHSA-2020:0567",
+     "https://access.redhat.com/errata/RHSA-2020:0601",
+     "https://access.redhat.com/errata/RHSA-2020:0605",
+     "https://access.redhat.com/errata/RHSA-2020:0606",
+     "https://access.redhat.com/errata/RHSA-2020:0804",
+     "https://access.redhat.com/errata/RHSA-2020:0805",
+     "https://access.redhat.com/errata/RHSA-2020:0806",
+     "https://access.redhat.com/errata/RHSA-2020:0811",
+     "https://github.com/netty/netty/compare/netty-4.1.43.Final...netty-4.1.44.Final",
+     "https://github.com/netty/netty/issues/9866",
+     "https://lists.apache.org/thread.html/r059b042bca47be53ff8a51fd04d95eb01bb683f1afa209db136e8cb7@%3Cdev.zookeeper.apache.org%3E",
+     "https://lists.apache.org/thread.html/r0aa8b28e76ec01c697b15e161e6797e88fc8d406ed762e253401106e@%3Ccommits.camel.apache.org%3E",
+     "https://lists.apache.org/thread.html/r0c3d49bfdbc62fd3915676433cc5899c5506d06da1c552ef1b7923a5@%3Ccommon-issues.hadoop.apache.org%3E",
+     "https://lists.apache.org/thread.html/r0f5e72d5f69b4720dfe64fcbc2da9afae949ed1e9cbffa84bb7d92d7@%3Cnotifications.zookeeper.apache.org%3E",
+     "https://lists.apache.org/thread.html/r1b103833cb5bc8466e24ff0ecc5e75b45a705334ab6a444e64e840a0@%3Cissues.bookkeeper.apache.org%3E",
+     "https://lists.apache.org/thread.html/r1fcccf8bdb3531c28bc9aa605a6a1bea7e68cef6fc12e01faafb2fb5@%3Cissues.zookeeper.apache.org%3E",
+     "https://lists.apache.org/thread.html/r205937c85817a911b0c72655c2377e7a2c9322d6ef6ce1b118d34d8d@%3Cdev.geode.apache.org%3E",
+     "https://lists.apache.org/thread.html/r2f2989b7815d809ff3fda8ce330f553e5f133505afd04ffbc135f35f@%3Cissues.spark.apache.org%3E",
+     "https://lists.apache.org/thread.html/r310d2ce22304d5298ff87f10134f918c87919b452734f9841d95682d@%3Ccommits.zookeeper.apache.org%3E",
+     "https://lists.apache.org/thread.html/r34912a9b1a5c269a77b8be94ef6fb6d1e9b3c69129719dc00f01cf0b@%3Cdev.zookeeper.apache.org%3E",
+     "https://lists.apache.org/thread.html/r36fcf538b28f2029e8b4f6b9a772f3b107913a78f09b095c5b153a62@%3Cissues.zookeeper.apache.org%3E",
+     "https://lists.apache.org/thread.html/r489886fe72a98768eed665474cba13bad8d6fe0654f24987706636c5@%3Cdev.zookeeper.apache.org%3E",
+     "https://lists.apache.org/thread.html/r4c675b2d0cc2a5e506b11ee10d60a378859ee340aca052e4c7ef4749@%3Cnotifications.zookeeper.apache.org%3E",
+     "https://lists.apache.org/thread.html/r4d3f1d3e333d9c2b2f6e6ae8ed8750d4de03410ac294bcd12c7eefa3@%3Ccommits.cassandra.apache.org%3E",
+     "https://lists.apache.org/thread.html/r640eb9b3213058a963e18291f903fc1584e577f60035f941e32f760a@%3Cissues.zookeeper.apache.org%3E",
+     "https://lists.apache.org/thread.html/r6945f3c346b7af89bbd3526a7c9b705b1e3569070ebcd0964bcedd7d@%3Cissues.zookeeper.apache.org%3E",
+     "https://lists.apache.org/thread.html/r70b1ff22ee80e8101805b9a473116dd33265709007d2deb6f8c80bf2@%3Ccommits.druid.apache.org%3E",
+     "https://lists.apache.org/thread.html/r7790b9d99696d9eddce8a8c96f13bb68460984294ea6fea3800143e4@%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/r804895eedd72c9ec67898286eb185e04df852b0dd5fe53cf5b6138f9@%3Cissues.zookeeper.apache.org%3E",
+     "https://lists.apache.org/thread.html/r819aaeb9944bdcfca438dcc51f05650dc728daf64dfd7d774fc2499b@%3Ccommits.zookeeper.apache.org%3E",
+     "https://lists.apache.org/thread.html/r832724df393a7ef25ca4c7c2eb83ad2d6c21c74569acda5233f9f1ec@%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/r8402d67fdfe9cf169f859d52a7670b28a08eff31e54b522cc1432532@%3Ccommon-issues.hadoop.apache.org%3E",
+     "https://lists.apache.org/thread.html/r86befa74c5cd1482c711134104aec339bf7ae879f2c4437d7ec477d4@%3Ccommon-commits.hadoop.apache.org%3E",
+     "https://lists.apache.org/thread.html/r90030b0117490caed526e57271bf4d7f9b012091ac5083c895d16543@%3Ccommon-issues.hadoop.apache.org%3E",
+     "https://lists.apache.org/thread.html/r91e0fa345c86c128b75a4a791b4b503b53173ff4c13049ac7129d319@%3Cnotifications.zookeeper.apache.org%3E",
+     "https://lists.apache.org/thread.html/r959474dcf7f88565ed89f6252ca5a274419006cb71348f14764b183d@%3Ccommits.cassandra.apache.org%3E",
+     "https://lists.apache.org/thread.html/r96e08f929234e8ba1ef4a93a0fd2870f535a1f9ab628fabc46115986@%3Cdev.zookeeper.apache.org%3E",
+     "https://lists.apache.org/thread.html/r9b20cdac704cf9a583400350e2d5b576fa8417c18ddb961201676c60@%3Ccommits.zookeeper.apache.org%3E",
+     "https://lists.apache.org/thread.html/ra1a71b576a45426af5ee65255be9596ff3181a342f4ba73b800db78f@%3Cdev.geode.apache.org%3E",
+     "https://lists.apache.org/thread.html/ra2ace4bcb5cf487f72cbcbfa0f8cc08e755ec2b93d7e69f276148b08@%3Cissues.zookeeper.apache.org%3E",
+     "https://lists.apache.org/thread.html/ra9fbfe7d4830ae675bf34c7c0f8c22fc8a4099f65706c1bc4f54c593@%3Cissues.zookeeper.apache.org%3E",
+     "https://lists.apache.org/thread.html/raaac04b7567c554786132144bea3dcb72568edd410c1e6f0101742e7@%3Cissues.flink.apache.org%3E",
+     "https://lists.apache.org/thread.html/rb3361f6c6a5f834ad3db5e998c352760d393c0891b8d3bea90baa836@%3Ccommon-issues.hadoop.apache.org%3E",
+     "https://lists.apache.org/thread.html/rb84c57670ec48ef23f4d07973b7fa69f629b8e7fcfb48874362feb6f@%3Ccommits.zookeeper.apache.org%3E",
+     "https://lists.apache.org/thread.html/rc7eb5634b71d284483e58665b22bf274a69bd184d9bd7ede52015d91@%3Ccommon-issues.hadoop.apache.org%3E",
+     "https://lists.apache.org/thread.html/rcb2c59428f34d4757702f9ae739a8795bda7bea97b857e708a9c62c6@%3Ccommon-commits.hadoop.apache.org%3E",
+     "https://lists.apache.org/thread.html/rce71d33747010d32d31d90f5d737dae26291d96552f513a266c92fbb@%3Cnotifications.zookeeper.apache.org%3E",
+     "https://lists.apache.org/thread.html/rd0e44e8ef71eeaaa3cf3d1b8b41eb25894372e2995ec908ce7624d26@%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/rd8f72411fb75b98d366400ae789966373b5c3eb3f511e717caf3e49e@%3Cissues.flink.apache.org%3E",
+     "https://lists.apache.org/thread.html/rdb69125652311d0c41f6066ff44072a3642cf33a4b5e3c4f9c1ec9c2@%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/rdd5d243a5f8ed8b83c0104e321aa420e5e98792a95749e3c9a54c0b9@%3Ccommon-commits.hadoop.apache.org%3E",
+     "https://lists.apache.org/thread.html/re0b78a3d0a4ba2cf9f4e14e1d05040bde9051d5c78071177186336c9@%3Ccommon-issues.hadoop.apache.org%3E",
+     "https://lists.apache.org/thread.html/re45ee9256d3233c31d78e59ee59c7dc841c7fbd83d0769285b41e948@%3Ccommits.druid.apache.org%3E",
+     "https://lists.apache.org/thread.html/re78eaef7d01ad65c370df30e45c686fffff00b37f7bfd78b26a08762@%3Ccommon-issues.hadoop.apache.org%3E",
+     "https://lists.apache.org/thread.html/rf2bf8e2eb0a03227f5bc100b544113f8cafea01e887bb068e8d1fa41@%3Ccommon-issues.hadoop.apache.org%3E",
+     "https://lists.apache.org/thread.html/rf5b2dfb7401666a19915f8eaef3ba9f5c3386e2066fcd2ae66e16a2f@%3Cdev.flink.apache.org%3E",
+     "https://lists.apache.org/thread.html/rfb55f245b08d8a6ec0fb4dc159022227cd22de34c4419c2fbb18802b@%3Cnotifications.zookeeper.apache.org%3E",
+     "https://lists.apache.org/thread.html/rff210a24f3a924829790e69eaefa84820902b7b31f17c3bf2def9114@%3Ccommits.druid.apache.org%3E",
+     "https://lists.debian.org/debian-lts-announce/2020/02/msg00017.html",
+     "https://lists.debian.org/debian-lts-announce/2020/02/msg00018.html",
+     "https://lists.debian.org/debian-lts-announce/2020/09/msg00003.html",
+     "https://lists.debian.org/debian-lts-announce/2020/09/msg00004.html",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/TS6VX7OMXPDJIU5LRGUAHRK6MENAVJ46/",
+     "https://usn.ubuntu.com/4532-1/",
+     "https://www.debian.org/security/2021/dsa-4885"
+    ],
+    "description": "HttpObjectDecoder.java in Netty before 4.1.44 allows an HTTP header that lacks a colon, which might be interpreted as a separate header with an incorrect syntax, or might be interpreted as an \"invalid fold.\"",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "2.0",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:N",
+      "metrics": {
+       "baseScore": 6.4,
+       "exploitabilityScore": 10,
+       "impactScore": 4.9
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+      "metrics": {
+       "baseScore": 9.1,
+       "exploitabilityScore": 3.9,
+       "impactScore": 5.2
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:netty:netty:3.10.5.Final:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "netty",
+       "version": "3.10.5.Final"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2019-20444",
+      "versionConstraint": "< 4.1.44 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:netty:netty:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "70b1c14c35eafe79",
+    "name": "netty",
+    "version": "3.10.5.Final",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "/usr/local/zookeeper-3.4.10/lib/netty-3.10.5.Final.jar",
+      "layerID": "sha256:190482cb294ece8fddfe12ca8d05641887763a3955314a5aaa6d23b6587fe452"
+     }
+    ],
+    "language": "java",
+    "licenses": [
+     "http://www.apache.org/licenses/LICENSE-2.0"
+    ],
+    "cpes": [
+     "cpe:2.3:a:NettyBundleActivator:netty:3.10.5.Final:*:*:*:*:*:*:*",
+     "cpe:2.3:a:container:netty:3.10.5.Final:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jboss:netty:3.10.5.Final:*:*:*:*:*:*:*",
+     "cpe:2.3:a:netty:netty:3.10.5.Final:*:*:*:*:*:*:*",
+     "cpe:2.3:a:osgi:netty:3.10.5.Final:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/io.netty/netty@3.10.5.Final",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "/usr/local/zookeeper-3.4.10/lib/netty-3.10.5.Final.jar",
+     "pomArtifactID": "netty",
+     "pomGroupID": "io.netty",
+     "manifestName": "",
+     "archiveDigests": [
+      {
+       "algorithm": "sha1",
+       "value": "9ca7d55d246092bddd29b867706e2f6c7db701a0"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
     "id": "CVE-2019-20444",
     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2019-20444",
     "namespace": "nvd:cpe",
@@ -23109,171 +23279,130 @@
   },
   {
    "vulnerability": {
-    "id": "CVE-2019-20444",
-    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2019-20444",
-    "namespace": "nvd:cpe",
-    "severity": "Critical",
+    "id": "GHSA-grg4-wf29-r9vv",
+    "dataSource": "https://github.com/advisories/GHSA-grg4-wf29-r9vv",
+    "namespace": "github:language:java",
+    "severity": "High",
     "urls": [
-     "https://access.redhat.com/errata/RHSA-2020:0497",
-     "https://access.redhat.com/errata/RHSA-2020:0567",
-     "https://access.redhat.com/errata/RHSA-2020:0601",
-     "https://access.redhat.com/errata/RHSA-2020:0605",
-     "https://access.redhat.com/errata/RHSA-2020:0606",
-     "https://access.redhat.com/errata/RHSA-2020:0804",
-     "https://access.redhat.com/errata/RHSA-2020:0805",
-     "https://access.redhat.com/errata/RHSA-2020:0806",
-     "https://access.redhat.com/errata/RHSA-2020:0811",
-     "https://github.com/netty/netty/compare/netty-4.1.43.Final...netty-4.1.44.Final",
-     "https://github.com/netty/netty/issues/9866",
-     "https://lists.apache.org/thread.html/r059b042bca47be53ff8a51fd04d95eb01bb683f1afa209db136e8cb7@%3Cdev.zookeeper.apache.org%3E",
-     "https://lists.apache.org/thread.html/r0aa8b28e76ec01c697b15e161e6797e88fc8d406ed762e253401106e@%3Ccommits.camel.apache.org%3E",
-     "https://lists.apache.org/thread.html/r0c3d49bfdbc62fd3915676433cc5899c5506d06da1c552ef1b7923a5@%3Ccommon-issues.hadoop.apache.org%3E",
-     "https://lists.apache.org/thread.html/r0f5e72d5f69b4720dfe64fcbc2da9afae949ed1e9cbffa84bb7d92d7@%3Cnotifications.zookeeper.apache.org%3E",
-     "https://lists.apache.org/thread.html/r1b103833cb5bc8466e24ff0ecc5e75b45a705334ab6a444e64e840a0@%3Cissues.bookkeeper.apache.org%3E",
-     "https://lists.apache.org/thread.html/r1fcccf8bdb3531c28bc9aa605a6a1bea7e68cef6fc12e01faafb2fb5@%3Cissues.zookeeper.apache.org%3E",
-     "https://lists.apache.org/thread.html/r205937c85817a911b0c72655c2377e7a2c9322d6ef6ce1b118d34d8d@%3Cdev.geode.apache.org%3E",
-     "https://lists.apache.org/thread.html/r2f2989b7815d809ff3fda8ce330f553e5f133505afd04ffbc135f35f@%3Cissues.spark.apache.org%3E",
-     "https://lists.apache.org/thread.html/r310d2ce22304d5298ff87f10134f918c87919b452734f9841d95682d@%3Ccommits.zookeeper.apache.org%3E",
-     "https://lists.apache.org/thread.html/r34912a9b1a5c269a77b8be94ef6fb6d1e9b3c69129719dc00f01cf0b@%3Cdev.zookeeper.apache.org%3E",
-     "https://lists.apache.org/thread.html/r36fcf538b28f2029e8b4f6b9a772f3b107913a78f09b095c5b153a62@%3Cissues.zookeeper.apache.org%3E",
-     "https://lists.apache.org/thread.html/r489886fe72a98768eed665474cba13bad8d6fe0654f24987706636c5@%3Cdev.zookeeper.apache.org%3E",
-     "https://lists.apache.org/thread.html/r4c675b2d0cc2a5e506b11ee10d60a378859ee340aca052e4c7ef4749@%3Cnotifications.zookeeper.apache.org%3E",
-     "https://lists.apache.org/thread.html/r4d3f1d3e333d9c2b2f6e6ae8ed8750d4de03410ac294bcd12c7eefa3@%3Ccommits.cassandra.apache.org%3E",
-     "https://lists.apache.org/thread.html/r640eb9b3213058a963e18291f903fc1584e577f60035f941e32f760a@%3Cissues.zookeeper.apache.org%3E",
-     "https://lists.apache.org/thread.html/r6945f3c346b7af89bbd3526a7c9b705b1e3569070ebcd0964bcedd7d@%3Cissues.zookeeper.apache.org%3E",
-     "https://lists.apache.org/thread.html/r70b1ff22ee80e8101805b9a473116dd33265709007d2deb6f8c80bf2@%3Ccommits.druid.apache.org%3E",
-     "https://lists.apache.org/thread.html/r7790b9d99696d9eddce8a8c96f13bb68460984294ea6fea3800143e4@%3Ccommits.pulsar.apache.org%3E",
-     "https://lists.apache.org/thread.html/r804895eedd72c9ec67898286eb185e04df852b0dd5fe53cf5b6138f9@%3Cissues.zookeeper.apache.org%3E",
-     "https://lists.apache.org/thread.html/r819aaeb9944bdcfca438dcc51f05650dc728daf64dfd7d774fc2499b@%3Ccommits.zookeeper.apache.org%3E",
-     "https://lists.apache.org/thread.html/r832724df393a7ef25ca4c7c2eb83ad2d6c21c74569acda5233f9f1ec@%3Ccommits.pulsar.apache.org%3E",
-     "https://lists.apache.org/thread.html/r8402d67fdfe9cf169f859d52a7670b28a08eff31e54b522cc1432532@%3Ccommon-issues.hadoop.apache.org%3E",
-     "https://lists.apache.org/thread.html/r86befa74c5cd1482c711134104aec339bf7ae879f2c4437d7ec477d4@%3Ccommon-commits.hadoop.apache.org%3E",
-     "https://lists.apache.org/thread.html/r90030b0117490caed526e57271bf4d7f9b012091ac5083c895d16543@%3Ccommon-issues.hadoop.apache.org%3E",
-     "https://lists.apache.org/thread.html/r91e0fa345c86c128b75a4a791b4b503b53173ff4c13049ac7129d319@%3Cnotifications.zookeeper.apache.org%3E",
-     "https://lists.apache.org/thread.html/r959474dcf7f88565ed89f6252ca5a274419006cb71348f14764b183d@%3Ccommits.cassandra.apache.org%3E",
-     "https://lists.apache.org/thread.html/r96e08f929234e8ba1ef4a93a0fd2870f535a1f9ab628fabc46115986@%3Cdev.zookeeper.apache.org%3E",
-     "https://lists.apache.org/thread.html/r9b20cdac704cf9a583400350e2d5b576fa8417c18ddb961201676c60@%3Ccommits.zookeeper.apache.org%3E",
-     "https://lists.apache.org/thread.html/ra1a71b576a45426af5ee65255be9596ff3181a342f4ba73b800db78f@%3Cdev.geode.apache.org%3E",
-     "https://lists.apache.org/thread.html/ra2ace4bcb5cf487f72cbcbfa0f8cc08e755ec2b93d7e69f276148b08@%3Cissues.zookeeper.apache.org%3E",
-     "https://lists.apache.org/thread.html/ra9fbfe7d4830ae675bf34c7c0f8c22fc8a4099f65706c1bc4f54c593@%3Cissues.zookeeper.apache.org%3E",
-     "https://lists.apache.org/thread.html/raaac04b7567c554786132144bea3dcb72568edd410c1e6f0101742e7@%3Cissues.flink.apache.org%3E",
-     "https://lists.apache.org/thread.html/rb3361f6c6a5f834ad3db5e998c352760d393c0891b8d3bea90baa836@%3Ccommon-issues.hadoop.apache.org%3E",
-     "https://lists.apache.org/thread.html/rb84c57670ec48ef23f4d07973b7fa69f629b8e7fcfb48874362feb6f@%3Ccommits.zookeeper.apache.org%3E",
-     "https://lists.apache.org/thread.html/rc7eb5634b71d284483e58665b22bf274a69bd184d9bd7ede52015d91@%3Ccommon-issues.hadoop.apache.org%3E",
-     "https://lists.apache.org/thread.html/rcb2c59428f34d4757702f9ae739a8795bda7bea97b857e708a9c62c6@%3Ccommon-commits.hadoop.apache.org%3E",
-     "https://lists.apache.org/thread.html/rce71d33747010d32d31d90f5d737dae26291d96552f513a266c92fbb@%3Cnotifications.zookeeper.apache.org%3E",
-     "https://lists.apache.org/thread.html/rd0e44e8ef71eeaaa3cf3d1b8b41eb25894372e2995ec908ce7624d26@%3Ccommits.pulsar.apache.org%3E",
-     "https://lists.apache.org/thread.html/rd8f72411fb75b98d366400ae789966373b5c3eb3f511e717caf3e49e@%3Cissues.flink.apache.org%3E",
-     "https://lists.apache.org/thread.html/rdb69125652311d0c41f6066ff44072a3642cf33a4b5e3c4f9c1ec9c2@%3Ccommits.pulsar.apache.org%3E",
-     "https://lists.apache.org/thread.html/rdd5d243a5f8ed8b83c0104e321aa420e5e98792a95749e3c9a54c0b9@%3Ccommon-commits.hadoop.apache.org%3E",
-     "https://lists.apache.org/thread.html/re0b78a3d0a4ba2cf9f4e14e1d05040bde9051d5c78071177186336c9@%3Ccommon-issues.hadoop.apache.org%3E",
-     "https://lists.apache.org/thread.html/re45ee9256d3233c31d78e59ee59c7dc841c7fbd83d0769285b41e948@%3Ccommits.druid.apache.org%3E",
-     "https://lists.apache.org/thread.html/re78eaef7d01ad65c370df30e45c686fffff00b37f7bfd78b26a08762@%3Ccommon-issues.hadoop.apache.org%3E",
-     "https://lists.apache.org/thread.html/rf2bf8e2eb0a03227f5bc100b544113f8cafea01e887bb068e8d1fa41@%3Ccommon-issues.hadoop.apache.org%3E",
-     "https://lists.apache.org/thread.html/rf5b2dfb7401666a19915f8eaef3ba9f5c3386e2066fcd2ae66e16a2f@%3Cdev.flink.apache.org%3E",
-     "https://lists.apache.org/thread.html/rfb55f245b08d8a6ec0fb4dc159022227cd22de34c4419c2fbb18802b@%3Cnotifications.zookeeper.apache.org%3E",
-     "https://lists.apache.org/thread.html/rff210a24f3a924829790e69eaefa84820902b7b31f17c3bf2def9114@%3Ccommits.druid.apache.org%3E",
-     "https://lists.debian.org/debian-lts-announce/2020/02/msg00017.html",
-     "https://lists.debian.org/debian-lts-announce/2020/02/msg00018.html",
-     "https://lists.debian.org/debian-lts-announce/2020/09/msg00003.html",
-     "https://lists.debian.org/debian-lts-announce/2020/09/msg00004.html",
-     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/TS6VX7OMXPDJIU5LRGUAHRK6MENAVJ46/",
-     "https://usn.ubuntu.com/4532-1/",
-     "https://www.debian.org/security/2021/dsa-4885"
+     "https://github.com/advisories/GHSA-grg4-wf29-r9vv"
     ],
-    "description": "HttpObjectDecoder.java in Netty before 4.1.44 allows an HTTP header that lacks a colon, which might be interpreted as a separate header with an incorrect syntax, or might be interpreted as an \"invalid fold.\"",
+    "description": "Bzip2Decoder doesn't allow setting size restrictions for decompressed data",
     "cvss": [
      {
-      "source": "nvd@nist.gov",
-      "type": "Primary",
-      "version": "2.0",
-      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:N",
-      "metrics": {
-       "baseScore": 6.4,
-       "exploitabilityScore": 10,
-       "impactScore": 4.9
-      },
-      "vendorMetadata": {}
-     },
-     {
-      "source": "nvd@nist.gov",
-      "type": "Primary",
       "version": "3.1",
-      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
       "metrics": {
-       "baseScore": 9.1,
+       "baseScore": 7.5,
        "exploitabilityScore": 3.9,
-       "impactScore": 5.2
+       "impactScore": 3.6
       },
-      "vendorMetadata": {}
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
      }
     ],
     "fix": {
      "versions": [],
-     "state": "unknown"
+     "state": "not-fixed"
     },
     "advisories": []
    },
-   "relatedVulnerabilities": [],
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2021-37136",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-37136",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/netty/netty/security/advisories/GHSA-grg4-wf29-r9vv",
+      "https://lists.apache.org/thread.html/r06a145c9bd41a7344da242cef07977b24abe3349161ede948e30913d@%3Ccommits.druid.apache.org%3E",
+      "https://lists.apache.org/thread.html/r5406eaf3b07577d233b9f07cfc8f26e28369e6bab5edfcab41f28abb@%3Ccommits.druid.apache.org%3E",
+      "https://lists.apache.org/thread.html/r5e05eba32476c580412f9fbdfc9b8782d5b40558018ac4ac07192a04@%3Ccommits.druid.apache.org%3E",
+      "https://lists.apache.org/thread.html/r75490c61c2cb7b6ae2c81238fd52ae13636c60435abcd732d41531a0@%3Ccommits.druid.apache.org%3E",
+      "https://lists.apache.org/thread.html/rd262f59b1586a108e320e5c966feeafbb1b8cdc96965debc7cc10b16@%3Ccommits.druid.apache.org%3E",
+      "https://lists.apache.org/thread.html/rfb2bf8597e53364ccab212fbcbb2a4e9f0a9e1429b1dc08023c6868e@%3Cdev.tinkerpop.apache.org%3E",
+      "https://lists.debian.org/debian-lts-announce/2023/01/msg00008.html",
+      "https://security.netapp.com/advisory/ntap-20220210-0012/",
+      "https://www.debian.org/security/2023/dsa-5316",
+      "https://www.oracle.com/security-alerts/cpuapr2022.html",
+      "https://www.oracle.com/security-alerts/cpujan2022.html",
+      "https://www.oracle.com/security-alerts/cpujul2022.html"
+     ],
+     "description": "The Bzip2 decompression decoder function doesn't allow setting size restrictions on the decompressed output data (which affects the allocation size used during decompression). All users of Bzip2Decoder are affected. The malicious input can trigger an OOME and so a DoS attack",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+       "metrics": {
+        "baseScore": 5,
+        "exploitabilityScore": 10,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
    "matchDetails": [
     {
-     "type": "cpe-match",
+     "type": "exact-direct-match",
      "matcher": "java-matcher",
      "searchedBy": {
-      "namespace": "nvd:cpe",
-      "cpes": [
-       "cpe:2.3:a:netty:netty:3.10.5.Final:*:*:*:*:*:*:*"
-      ],
-      "Package": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
        "name": "netty",
        "version": "3.10.5.Final"
       }
      },
      "found": {
-      "vulnerabilityID": "CVE-2019-20444",
-      "versionConstraint": "< 4.1.44 (unknown)",
-      "cpes": [
-       "cpe:2.3:a:netty:netty:*:*:*:*:*:*:*:*"
-      ]
+      "versionConstraint": "<4.0.0 (unknown)",
+      "vulnerabilityID": "GHSA-grg4-wf29-r9vv"
      }
     }
    ],
    "artifact": {
-    "id": "70b1c14c35eafe79",
+    "id": "e266c69bf9208dbe",
     "name": "netty",
     "version": "3.10.5.Final",
     "type": "java-archive",
     "locations": [
      {
-      "path": "/usr/local/zookeeper-3.4.10/lib/netty-3.10.5.Final.jar",
+      "path": "/usr/local/zookeeper-3.4.10/contrib/fatjar/zookeeper-3.4.10-fatjar.jar",
       "layerID": "sha256:190482cb294ece8fddfe12ca8d05641887763a3955314a5aaa6d23b6587fe452"
      }
     ],
     "language": "java",
-    "licenses": [
-     "http://www.apache.org/licenses/LICENSE-2.0"
-    ],
+    "licenses": [],
     "cpes": [
-     "cpe:2.3:a:NettyBundleActivator:netty:3.10.5.Final:*:*:*:*:*:*:*",
-     "cpe:2.3:a:container:netty:3.10.5.Final:*:*:*:*:*:*:*",
-     "cpe:2.3:a:jboss:netty:3.10.5.Final:*:*:*:*:*:*:*",
+     "cpe:2.3:a:sonatype:netty:3.10.5.Final:*:*:*:*:*:*:*",
      "cpe:2.3:a:netty:netty:3.10.5.Final:*:*:*:*:*:*:*",
-     "cpe:2.3:a:osgi:netty:3.10.5.Final:*:*:*:*:*:*:*"
+     "cpe:2.3:a:oss:netty:3.10.5.Final:*:*:*:*:*:*:*"
     ],
     "purl": "pkg:maven/io.netty/netty@3.10.5.Final",
     "upstreams": [],
     "metadataType": "JavaMetadata",
     "metadata": {
-     "virtualPath": "/usr/local/zookeeper-3.4.10/lib/netty-3.10.5.Final.jar",
+     "virtualPath": "/usr/local/zookeeper-3.4.10/contrib/fatjar/zookeeper-3.4.10-fatjar.jar:io.netty:netty",
      "pomArtifactID": "netty",
      "pomGroupID": "io.netty",
      "manifestName": "",
-     "archiveDigests": [
-      {
-       "algorithm": "sha1",
-       "value": "9ca7d55d246092bddd29b867706e2f6c7db701a0"
-      }
-     ]
+     "archiveDigests": null
     }
    }
   },
@@ -23417,264 +23546,6 @@
   },
   {
    "vulnerability": {
-    "id": "GHSA-grg4-wf29-r9vv",
-    "dataSource": "https://github.com/advisories/GHSA-grg4-wf29-r9vv",
-    "namespace": "github:language:java",
-    "severity": "High",
-    "urls": [
-     "https://github.com/advisories/GHSA-grg4-wf29-r9vv"
-    ],
-    "description": "Bzip2Decoder doesn't allow setting size restrictions for decompressed data",
-    "cvss": [
-     {
-      "version": "3.1",
-      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
-      "metrics": {
-       "baseScore": 7.5,
-       "exploitabilityScore": 3.9,
-       "impactScore": 3.6
-      },
-      "vendorMetadata": {
-       "base_severity": "High",
-       "status": "N/A"
-      }
-     }
-    ],
-    "fix": {
-     "versions": [],
-     "state": "not-fixed"
-    },
-    "advisories": []
-   },
-   "relatedVulnerabilities": [
-    {
-     "id": "CVE-2021-37136",
-     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-37136",
-     "namespace": "nvd:cpe",
-     "severity": "High",
-     "urls": [
-      "https://github.com/netty/netty/security/advisories/GHSA-grg4-wf29-r9vv",
-      "https://lists.apache.org/thread.html/r06a145c9bd41a7344da242cef07977b24abe3349161ede948e30913d@%3Ccommits.druid.apache.org%3E",
-      "https://lists.apache.org/thread.html/r5406eaf3b07577d233b9f07cfc8f26e28369e6bab5edfcab41f28abb@%3Ccommits.druid.apache.org%3E",
-      "https://lists.apache.org/thread.html/r5e05eba32476c580412f9fbdfc9b8782d5b40558018ac4ac07192a04@%3Ccommits.druid.apache.org%3E",
-      "https://lists.apache.org/thread.html/r75490c61c2cb7b6ae2c81238fd52ae13636c60435abcd732d41531a0@%3Ccommits.druid.apache.org%3E",
-      "https://lists.apache.org/thread.html/rd262f59b1586a108e320e5c966feeafbb1b8cdc96965debc7cc10b16@%3Ccommits.druid.apache.org%3E",
-      "https://lists.apache.org/thread.html/rfb2bf8597e53364ccab212fbcbb2a4e9f0a9e1429b1dc08023c6868e@%3Cdev.tinkerpop.apache.org%3E",
-      "https://lists.debian.org/debian-lts-announce/2023/01/msg00008.html",
-      "https://security.netapp.com/advisory/ntap-20220210-0012/",
-      "https://www.debian.org/security/2023/dsa-5316",
-      "https://www.oracle.com/security-alerts/cpuapr2022.html",
-      "https://www.oracle.com/security-alerts/cpujan2022.html",
-      "https://www.oracle.com/security-alerts/cpujul2022.html"
-     ],
-     "description": "The Bzip2 decompression decoder function doesn't allow setting size restrictions on the decompressed output data (which affects the allocation size used during decompression). All users of Bzip2Decoder are affected. The malicious input can trigger an OOME and so a DoS attack",
-     "cvss": [
-      {
-       "source": "nvd@nist.gov",
-       "type": "Primary",
-       "version": "2.0",
-       "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
-       "metrics": {
-        "baseScore": 5,
-        "exploitabilityScore": 10,
-        "impactScore": 2.9
-       },
-       "vendorMetadata": {}
-      },
-      {
-       "source": "nvd@nist.gov",
-       "type": "Primary",
-       "version": "3.1",
-       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
-       "metrics": {
-        "baseScore": 7.5,
-        "exploitabilityScore": 3.9,
-        "impactScore": 3.6
-       },
-       "vendorMetadata": {}
-      }
-     ]
-    }
-   ],
-   "matchDetails": [
-    {
-     "type": "exact-direct-match",
-     "matcher": "java-matcher",
-     "searchedBy": {
-      "language": "java",
-      "namespace": "github:language:java",
-      "package": {
-       "name": "netty",
-       "version": "3.10.5.Final"
-      }
-     },
-     "found": {
-      "versionConstraint": "<4.0.0 (unknown)",
-      "vulnerabilityID": "GHSA-grg4-wf29-r9vv"
-     }
-    }
-   ],
-   "artifact": {
-    "id": "e266c69bf9208dbe",
-    "name": "netty",
-    "version": "3.10.5.Final",
-    "type": "java-archive",
-    "locations": [
-     {
-      "path": "/usr/local/zookeeper-3.4.10/contrib/fatjar/zookeeper-3.4.10-fatjar.jar",
-      "layerID": "sha256:190482cb294ece8fddfe12ca8d05641887763a3955314a5aaa6d23b6587fe452"
-     }
-    ],
-    "language": "java",
-    "licenses": [],
-    "cpes": [
-     "cpe:2.3:a:sonatype:netty:3.10.5.Final:*:*:*:*:*:*:*",
-     "cpe:2.3:a:netty:netty:3.10.5.Final:*:*:*:*:*:*:*",
-     "cpe:2.3:a:oss:netty:3.10.5.Final:*:*:*:*:*:*:*"
-    ],
-    "purl": "pkg:maven/io.netty/netty@3.10.5.Final",
-    "upstreams": [],
-    "metadataType": "JavaMetadata",
-    "metadata": {
-     "virtualPath": "/usr/local/zookeeper-3.4.10/contrib/fatjar/zookeeper-3.4.10-fatjar.jar:io.netty:netty",
-     "pomArtifactID": "netty",
-     "pomGroupID": "io.netty",
-     "manifestName": "",
-     "archiveDigests": null
-    }
-   }
-  },
-  {
-   "vulnerability": {
-    "id": "GHSA-9vjp-v76f-g363",
-    "dataSource": "https://github.com/advisories/GHSA-9vjp-v76f-g363",
-    "namespace": "github:language:java",
-    "severity": "High",
-    "urls": [
-     "https://github.com/advisories/GHSA-9vjp-v76f-g363"
-    ],
-    "description": " SnappyFrameDecoder doesn't restrict chunk length any may buffer skippable chunks in an unnecessary way",
-    "cvss": [
-     {
-      "version": "3.1",
-      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
-      "metrics": {
-       "baseScore": 7.5,
-       "exploitabilityScore": 3.9,
-       "impactScore": 3.6
-      },
-      "vendorMetadata": {
-       "base_severity": "High",
-       "status": "N/A"
-      }
-     }
-    ],
-    "fix": {
-     "versions": [],
-     "state": "not-fixed"
-    },
-    "advisories": []
-   },
-   "relatedVulnerabilities": [
-    {
-     "id": "CVE-2021-37137",
-     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-37137",
-     "namespace": "nvd:cpe",
-     "severity": "High",
-     "urls": [
-      "https://github.com/netty/netty/security/advisories/GHSA-9vjp-v76f-g363",
-      "https://lists.apache.org/thread.html/r06a145c9bd41a7344da242cef07977b24abe3349161ede948e30913d@%3Ccommits.druid.apache.org%3E",
-      "https://lists.apache.org/thread.html/r5406eaf3b07577d233b9f07cfc8f26e28369e6bab5edfcab41f28abb@%3Ccommits.druid.apache.org%3E",
-      "https://lists.apache.org/thread.html/r5e05eba32476c580412f9fbdfc9b8782d5b40558018ac4ac07192a04@%3Ccommits.druid.apache.org%3E",
-      "https://lists.apache.org/thread.html/r75490c61c2cb7b6ae2c81238fd52ae13636c60435abcd732d41531a0@%3Ccommits.druid.apache.org%3E",
-      "https://lists.apache.org/thread.html/rd262f59b1586a108e320e5c966feeafbb1b8cdc96965debc7cc10b16@%3Ccommits.druid.apache.org%3E",
-      "https://lists.apache.org/thread.html/rfb2bf8597e53364ccab212fbcbb2a4e9f0a9e1429b1dc08023c6868e@%3Cdev.tinkerpop.apache.org%3E",
-      "https://lists.debian.org/debian-lts-announce/2023/01/msg00008.html",
-      "https://security.netapp.com/advisory/ntap-20220210-0012/",
-      "https://www.debian.org/security/2023/dsa-5316",
-      "https://www.oracle.com/security-alerts/cpuapr2022.html",
-      "https://www.oracle.com/security-alerts/cpujan2022.html",
-      "https://www.oracle.com/security-alerts/cpujul2022.html"
-     ],
-     "description": "The Snappy frame decoder function doesn't restrict the chunk length which may lead to excessive memory usage. Beside this it also may buffer reserved skippable chunks until the whole chunk was received which may lead to excessive memory usage as well. This vulnerability can be triggered by supplying malicious input that decompresses to a very big size (via a network stream or a file) or by sending a huge skippable chunk.",
-     "cvss": [
-      {
-       "source": "nvd@nist.gov",
-       "type": "Primary",
-       "version": "2.0",
-       "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
-       "metrics": {
-        "baseScore": 5,
-        "exploitabilityScore": 10,
-        "impactScore": 2.9
-       },
-       "vendorMetadata": {}
-      },
-      {
-       "source": "nvd@nist.gov",
-       "type": "Primary",
-       "version": "3.1",
-       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
-       "metrics": {
-        "baseScore": 7.5,
-        "exploitabilityScore": 3.9,
-        "impactScore": 3.6
-       },
-       "vendorMetadata": {}
-      }
-     ]
-    }
-   ],
-   "matchDetails": [
-    {
-     "type": "exact-direct-match",
-     "matcher": "java-matcher",
-     "searchedBy": {
-      "language": "java",
-      "namespace": "github:language:java",
-      "package": {
-       "name": "netty",
-       "version": "3.10.5.Final"
-      }
-     },
-     "found": {
-      "versionConstraint": "<4.0.0 (unknown)",
-      "vulnerabilityID": "GHSA-9vjp-v76f-g363"
-     }
-    }
-   ],
-   "artifact": {
-    "id": "e266c69bf9208dbe",
-    "name": "netty",
-    "version": "3.10.5.Final",
-    "type": "java-archive",
-    "locations": [
-     {
-      "path": "/usr/local/zookeeper-3.4.10/contrib/fatjar/zookeeper-3.4.10-fatjar.jar",
-      "layerID": "sha256:190482cb294ece8fddfe12ca8d05641887763a3955314a5aaa6d23b6587fe452"
-     }
-    ],
-    "language": "java",
-    "licenses": [],
-    "cpes": [
-     "cpe:2.3:a:sonatype:netty:3.10.5.Final:*:*:*:*:*:*:*",
-     "cpe:2.3:a:netty:netty:3.10.5.Final:*:*:*:*:*:*:*",
-     "cpe:2.3:a:oss:netty:3.10.5.Final:*:*:*:*:*:*:*"
-    ],
-    "purl": "pkg:maven/io.netty/netty@3.10.5.Final",
-    "upstreams": [],
-    "metadataType": "JavaMetadata",
-    "metadata": {
-     "virtualPath": "/usr/local/zookeeper-3.4.10/contrib/fatjar/zookeeper-3.4.10-fatjar.jar:io.netty:netty",
-     "pomArtifactID": "netty",
-     "pomGroupID": "io.netty",
-     "manifestName": "",
-     "archiveDigests": null
-    }
-   }
-  },
-  {
-   "vulnerability": {
     "id": "GHSA-9vjp-v76f-g363",
     "dataSource": "https://github.com/advisories/GHSA-9vjp-v76f-g363",
     "namespace": "github:language:java",
@@ -23813,21 +23684,16 @@
   },
   {
    "vulnerability": {
-    "id": "CVE-2022-41881",
-    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-41881",
-    "namespace": "nvd:cpe",
+    "id": "GHSA-9vjp-v76f-g363",
+    "dataSource": "https://github.com/advisories/GHSA-9vjp-v76f-g363",
+    "namespace": "github:language:java",
     "severity": "High",
     "urls": [
-     "https://github.com/netty/netty/security/advisories/GHSA-fx2c-96vj-985v",
-     "https://lists.debian.org/debian-lts-announce/2023/01/msg00008.html",
-     "https://security.netapp.com/advisory/ntap-20230113-0004/",
-     "https://www.debian.org/security/2023/dsa-5316"
+     "https://github.com/advisories/GHSA-9vjp-v76f-g363"
     ],
-    "description": "Netty project is an event-driven asynchronous network application framework. In versions prior to 4.1.86.Final, a StackOverflowError can be raised when parsing a malformed crafted message due to an infinite recursion. This issue is patched in version 4.1.86.Final. There is no workaround, except using a custom HaProxyMessageDecoder.",
+    "description": " SnappyFrameDecoder doesn't restrict chunk length any may buffer skippable chunks in an unnecessary way",
     "cvss": [
      {
-      "source": "nvd@nist.gov",
-      "type": "Primary",
       "version": "3.1",
       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
       "metrics": {
@@ -23835,48 +23701,83 @@
        "exploitabilityScore": 3.9,
        "impactScore": 3.6
       },
-      "vendorMetadata": {}
-     },
-     {
-      "source": "security-advisories@github.com",
-      "type": "Secondary",
-      "version": "3.1",
-      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
-      "metrics": {
-       "baseScore": 5.3,
-       "exploitabilityScore": 3.9,
-       "impactScore": 1.4
-      },
-      "vendorMetadata": {}
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
      }
     ],
     "fix": {
      "versions": [],
-     "state": "unknown"
+     "state": "not-fixed"
     },
     "advisories": []
    },
-   "relatedVulnerabilities": [],
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2021-37137",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-37137",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/netty/netty/security/advisories/GHSA-9vjp-v76f-g363",
+      "https://lists.apache.org/thread.html/r06a145c9bd41a7344da242cef07977b24abe3349161ede948e30913d@%3Ccommits.druid.apache.org%3E",
+      "https://lists.apache.org/thread.html/r5406eaf3b07577d233b9f07cfc8f26e28369e6bab5edfcab41f28abb@%3Ccommits.druid.apache.org%3E",
+      "https://lists.apache.org/thread.html/r5e05eba32476c580412f9fbdfc9b8782d5b40558018ac4ac07192a04@%3Ccommits.druid.apache.org%3E",
+      "https://lists.apache.org/thread.html/r75490c61c2cb7b6ae2c81238fd52ae13636c60435abcd732d41531a0@%3Ccommits.druid.apache.org%3E",
+      "https://lists.apache.org/thread.html/rd262f59b1586a108e320e5c966feeafbb1b8cdc96965debc7cc10b16@%3Ccommits.druid.apache.org%3E",
+      "https://lists.apache.org/thread.html/rfb2bf8597e53364ccab212fbcbb2a4e9f0a9e1429b1dc08023c6868e@%3Cdev.tinkerpop.apache.org%3E",
+      "https://lists.debian.org/debian-lts-announce/2023/01/msg00008.html",
+      "https://security.netapp.com/advisory/ntap-20220210-0012/",
+      "https://www.debian.org/security/2023/dsa-5316",
+      "https://www.oracle.com/security-alerts/cpuapr2022.html",
+      "https://www.oracle.com/security-alerts/cpujan2022.html",
+      "https://www.oracle.com/security-alerts/cpujul2022.html"
+     ],
+     "description": "The Snappy frame decoder function doesn't restrict the chunk length which may lead to excessive memory usage. Beside this it also may buffer reserved skippable chunks until the whole chunk was received which may lead to excessive memory usage as well. This vulnerability can be triggered by supplying malicious input that decompresses to a very big size (via a network stream or a file) or by sending a huge skippable chunk.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+       "metrics": {
+        "baseScore": 5,
+        "exploitabilityScore": 10,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
    "matchDetails": [
     {
-     "type": "cpe-match",
+     "type": "exact-direct-match",
      "matcher": "java-matcher",
      "searchedBy": {
-      "namespace": "nvd:cpe",
-      "cpes": [
-       "cpe:2.3:a:netty:netty:3.10.5.Final:*:*:*:*:*:*:*"
-      ],
-      "Package": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
        "name": "netty",
        "version": "3.10.5.Final"
       }
      },
      "found": {
-      "vulnerabilityID": "CVE-2022-41881",
-      "versionConstraint": "< 4.1.86 (unknown)",
-      "cpes": [
-       "cpe:2.3:a:netty:netty:*:*:*:*:*:*:*:*"
-      ]
+      "versionConstraint": "<4.0.0 (unknown)",
+      "vulnerabilityID": "GHSA-9vjp-v76f-g363"
      }
     }
    ],
@@ -24020,39 +23921,18 @@
   },
   {
    "vulnerability": {
-    "id": "CVE-2021-37137",
-    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-37137",
+    "id": "CVE-2022-41881",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-41881",
     "namespace": "nvd:cpe",
     "severity": "High",
     "urls": [
-     "https://github.com/netty/netty/security/advisories/GHSA-9vjp-v76f-g363",
-     "https://lists.apache.org/thread.html/r06a145c9bd41a7344da242cef07977b24abe3349161ede948e30913d@%3Ccommits.druid.apache.org%3E",
-     "https://lists.apache.org/thread.html/r5406eaf3b07577d233b9f07cfc8f26e28369e6bab5edfcab41f28abb@%3Ccommits.druid.apache.org%3E",
-     "https://lists.apache.org/thread.html/r5e05eba32476c580412f9fbdfc9b8782d5b40558018ac4ac07192a04@%3Ccommits.druid.apache.org%3E",
-     "https://lists.apache.org/thread.html/r75490c61c2cb7b6ae2c81238fd52ae13636c60435abcd732d41531a0@%3Ccommits.druid.apache.org%3E",
-     "https://lists.apache.org/thread.html/rd262f59b1586a108e320e5c966feeafbb1b8cdc96965debc7cc10b16@%3Ccommits.druid.apache.org%3E",
-     "https://lists.apache.org/thread.html/rfb2bf8597e53364ccab212fbcbb2a4e9f0a9e1429b1dc08023c6868e@%3Cdev.tinkerpop.apache.org%3E",
+     "https://github.com/netty/netty/security/advisories/GHSA-fx2c-96vj-985v",
      "https://lists.debian.org/debian-lts-announce/2023/01/msg00008.html",
-     "https://security.netapp.com/advisory/ntap-20220210-0012/",
-     "https://www.debian.org/security/2023/dsa-5316",
-     "https://www.oracle.com/security-alerts/cpuapr2022.html",
-     "https://www.oracle.com/security-alerts/cpujan2022.html",
-     "https://www.oracle.com/security-alerts/cpujul2022.html"
+     "https://security.netapp.com/advisory/ntap-20230113-0004/",
+     "https://www.debian.org/security/2023/dsa-5316"
     ],
-    "description": "The Snappy frame decoder function doesn't restrict the chunk length which may lead to excessive memory usage. Beside this it also may buffer reserved skippable chunks until the whole chunk was received which may lead to excessive memory usage as well. This vulnerability can be triggered by supplying malicious input that decompresses to a very big size (via a network stream or a file) or by sending a huge skippable chunk.",
+    "description": "Netty project is an event-driven asynchronous network application framework. In versions prior to 4.1.86.Final, a StackOverflowError can be raised when parsing a malformed crafted message due to an infinite recursion. This issue is patched in version 4.1.86.Final. There is no workaround, except using a custom HaProxyMessageDecoder.",
     "cvss": [
-     {
-      "source": "nvd@nist.gov",
-      "type": "Primary",
-      "version": "2.0",
-      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
-      "metrics": {
-       "baseScore": 5,
-       "exploitabilityScore": 10,
-       "impactScore": 2.9
-      },
-      "vendorMetadata": {}
-     },
      {
       "source": "nvd@nist.gov",
       "type": "Primary",
@@ -24062,6 +23942,18 @@
        "baseScore": 7.5,
        "exploitabilityScore": 3.9,
        "impactScore": 3.6
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "source": "security-advisories@github.com",
+      "type": "Secondary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+      "metrics": {
+       "baseScore": 5.3,
+       "exploitabilityScore": 3.9,
+       "impactScore": 1.4
       },
       "vendorMetadata": {}
      }
@@ -24088,8 +23980,8 @@
       }
      },
      "found": {
-      "vulnerabilityID": "CVE-2021-37137",
-      "versionConstraint": "< 4.1.68 (unknown)",
+      "vulnerabilityID": "CVE-2022-41881",
+      "versionConstraint": "< 4.1.86 (unknown)",
       "cpes": [
        "cpe:2.3:a:netty:netty:*:*:*:*:*:*:*:*"
       ]
@@ -24240,6 +24132,114 @@
        "value": "9ca7d55d246092bddd29b867706e2f6c7db701a0"
       }
      ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2021-37137",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-37137",
+    "namespace": "nvd:cpe",
+    "severity": "High",
+    "urls": [
+     "https://github.com/netty/netty/security/advisories/GHSA-9vjp-v76f-g363",
+     "https://lists.apache.org/thread.html/r06a145c9bd41a7344da242cef07977b24abe3349161ede948e30913d@%3Ccommits.druid.apache.org%3E",
+     "https://lists.apache.org/thread.html/r5406eaf3b07577d233b9f07cfc8f26e28369e6bab5edfcab41f28abb@%3Ccommits.druid.apache.org%3E",
+     "https://lists.apache.org/thread.html/r5e05eba32476c580412f9fbdfc9b8782d5b40558018ac4ac07192a04@%3Ccommits.druid.apache.org%3E",
+     "https://lists.apache.org/thread.html/r75490c61c2cb7b6ae2c81238fd52ae13636c60435abcd732d41531a0@%3Ccommits.druid.apache.org%3E",
+     "https://lists.apache.org/thread.html/rd262f59b1586a108e320e5c966feeafbb1b8cdc96965debc7cc10b16@%3Ccommits.druid.apache.org%3E",
+     "https://lists.apache.org/thread.html/rfb2bf8597e53364ccab212fbcbb2a4e9f0a9e1429b1dc08023c6868e@%3Cdev.tinkerpop.apache.org%3E",
+     "https://lists.debian.org/debian-lts-announce/2023/01/msg00008.html",
+     "https://security.netapp.com/advisory/ntap-20220210-0012/",
+     "https://www.debian.org/security/2023/dsa-5316",
+     "https://www.oracle.com/security-alerts/cpuapr2022.html",
+     "https://www.oracle.com/security-alerts/cpujan2022.html",
+     "https://www.oracle.com/security-alerts/cpujul2022.html"
+    ],
+    "description": "The Snappy frame decoder function doesn't restrict the chunk length which may lead to excessive memory usage. Beside this it also may buffer reserved skippable chunks until the whole chunk was received which may lead to excessive memory usage as well. This vulnerability can be triggered by supplying malicious input that decompresses to a very big size (via a network stream or a file) or by sending a huge skippable chunk.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "2.0",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+      "metrics": {
+       "baseScore": 5,
+       "exploitabilityScore": 10,
+       "impactScore": 2.9
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:netty:netty:3.10.5.Final:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "netty",
+       "version": "3.10.5.Final"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2021-37137",
+      "versionConstraint": "< 4.1.68 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:netty:netty:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "e266c69bf9208dbe",
+    "name": "netty",
+    "version": "3.10.5.Final",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "/usr/local/zookeeper-3.4.10/contrib/fatjar/zookeeper-3.4.10-fatjar.jar",
+      "layerID": "sha256:190482cb294ece8fddfe12ca8d05641887763a3955314a5aaa6d23b6587fe452"
+     }
+    ],
+    "language": "java",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:sonatype:netty:3.10.5.Final:*:*:*:*:*:*:*",
+     "cpe:2.3:a:netty:netty:3.10.5.Final:*:*:*:*:*:*:*",
+     "cpe:2.3:a:oss:netty:3.10.5.Final:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/io.netty/netty@3.10.5.Final",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "/usr/local/zookeeper-3.4.10/contrib/fatjar/zookeeper-3.4.10-fatjar.jar:io.netty:netty",
+     "pomArtifactID": "netty",
+     "pomGroupID": "io.netty",
+     "manifestName": "",
+     "archiveDigests": null
     }
    }
   },
@@ -24614,32 +24614,41 @@
     }
    ],
    "artifact": {
-    "id": "e266c69bf9208dbe",
+    "id": "70b1c14c35eafe79",
     "name": "netty",
     "version": "3.10.5.Final",
     "type": "java-archive",
     "locations": [
      {
-      "path": "/usr/local/zookeeper-3.4.10/contrib/fatjar/zookeeper-3.4.10-fatjar.jar",
+      "path": "/usr/local/zookeeper-3.4.10/lib/netty-3.10.5.Final.jar",
       "layerID": "sha256:190482cb294ece8fddfe12ca8d05641887763a3955314a5aaa6d23b6587fe452"
      }
     ],
     "language": "java",
-    "licenses": [],
+    "licenses": [
+     "http://www.apache.org/licenses/LICENSE-2.0"
+    ],
     "cpes": [
-     "cpe:2.3:a:sonatype:netty:3.10.5.Final:*:*:*:*:*:*:*",
+     "cpe:2.3:a:NettyBundleActivator:netty:3.10.5.Final:*:*:*:*:*:*:*",
+     "cpe:2.3:a:container:netty:3.10.5.Final:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jboss:netty:3.10.5.Final:*:*:*:*:*:*:*",
      "cpe:2.3:a:netty:netty:3.10.5.Final:*:*:*:*:*:*:*",
-     "cpe:2.3:a:oss:netty:3.10.5.Final:*:*:*:*:*:*:*"
+     "cpe:2.3:a:osgi:netty:3.10.5.Final:*:*:*:*:*:*:*"
     ],
     "purl": "pkg:maven/io.netty/netty@3.10.5.Final",
     "upstreams": [],
     "metadataType": "JavaMetadata",
     "metadata": {
-     "virtualPath": "/usr/local/zookeeper-3.4.10/contrib/fatjar/zookeeper-3.4.10-fatjar.jar:io.netty:netty",
+     "virtualPath": "/usr/local/zookeeper-3.4.10/lib/netty-3.10.5.Final.jar",
      "pomArtifactID": "netty",
      "pomGroupID": "io.netty",
      "manifestName": "",
-     "archiveDigests": null
+     "archiveDigests": [
+      {
+       "algorithm": "sha1",
+       "value": "9ca7d55d246092bddd29b867706e2f6c7db701a0"
+      }
+     ]
     }
    }
   },
@@ -24789,41 +24798,32 @@
     }
    ],
    "artifact": {
-    "id": "70b1c14c35eafe79",
+    "id": "e266c69bf9208dbe",
     "name": "netty",
     "version": "3.10.5.Final",
     "type": "java-archive",
     "locations": [
      {
-      "path": "/usr/local/zookeeper-3.4.10/lib/netty-3.10.5.Final.jar",
+      "path": "/usr/local/zookeeper-3.4.10/contrib/fatjar/zookeeper-3.4.10-fatjar.jar",
       "layerID": "sha256:190482cb294ece8fddfe12ca8d05641887763a3955314a5aaa6d23b6587fe452"
      }
     ],
     "language": "java",
-    "licenses": [
-     "http://www.apache.org/licenses/LICENSE-2.0"
-    ],
+    "licenses": [],
     "cpes": [
-     "cpe:2.3:a:NettyBundleActivator:netty:3.10.5.Final:*:*:*:*:*:*:*",
-     "cpe:2.3:a:container:netty:3.10.5.Final:*:*:*:*:*:*:*",
-     "cpe:2.3:a:jboss:netty:3.10.5.Final:*:*:*:*:*:*:*",
+     "cpe:2.3:a:sonatype:netty:3.10.5.Final:*:*:*:*:*:*:*",
      "cpe:2.3:a:netty:netty:3.10.5.Final:*:*:*:*:*:*:*",
-     "cpe:2.3:a:osgi:netty:3.10.5.Final:*:*:*:*:*:*:*"
+     "cpe:2.3:a:oss:netty:3.10.5.Final:*:*:*:*:*:*:*"
     ],
     "purl": "pkg:maven/io.netty/netty@3.10.5.Final",
     "upstreams": [],
     "metadataType": "JavaMetadata",
     "metadata": {
-     "virtualPath": "/usr/local/zookeeper-3.4.10/lib/netty-3.10.5.Final.jar",
+     "virtualPath": "/usr/local/zookeeper-3.4.10/contrib/fatjar/zookeeper-3.4.10-fatjar.jar:io.netty:netty",
      "pomArtifactID": "netty",
      "pomGroupID": "io.netty",
      "manifestName": "",
-     "archiveDigests": [
-      {
-       "algorithm": "sha1",
-       "value": "9ca7d55d246092bddd29b867706e2f6c7db701a0"
-      }
-     ]
+     "archiveDigests": null
     }
    }
   },
@@ -25296,32 +25296,41 @@
     }
    ],
    "artifact": {
-    "id": "e266c69bf9208dbe",
+    "id": "70b1c14c35eafe79",
     "name": "netty",
     "version": "3.10.5.Final",
     "type": "java-archive",
     "locations": [
      {
-      "path": "/usr/local/zookeeper-3.4.10/contrib/fatjar/zookeeper-3.4.10-fatjar.jar",
+      "path": "/usr/local/zookeeper-3.4.10/lib/netty-3.10.5.Final.jar",
       "layerID": "sha256:190482cb294ece8fddfe12ca8d05641887763a3955314a5aaa6d23b6587fe452"
      }
     ],
     "language": "java",
-    "licenses": [],
+    "licenses": [
+     "http://www.apache.org/licenses/LICENSE-2.0"
+    ],
     "cpes": [
-     "cpe:2.3:a:sonatype:netty:3.10.5.Final:*:*:*:*:*:*:*",
+     "cpe:2.3:a:NettyBundleActivator:netty:3.10.5.Final:*:*:*:*:*:*:*",
+     "cpe:2.3:a:container:netty:3.10.5.Final:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jboss:netty:3.10.5.Final:*:*:*:*:*:*:*",
      "cpe:2.3:a:netty:netty:3.10.5.Final:*:*:*:*:*:*:*",
-     "cpe:2.3:a:oss:netty:3.10.5.Final:*:*:*:*:*:*:*"
+     "cpe:2.3:a:osgi:netty:3.10.5.Final:*:*:*:*:*:*:*"
     ],
     "purl": "pkg:maven/io.netty/netty@3.10.5.Final",
     "upstreams": [],
     "metadataType": "JavaMetadata",
     "metadata": {
-     "virtualPath": "/usr/local/zookeeper-3.4.10/contrib/fatjar/zookeeper-3.4.10-fatjar.jar:io.netty:netty",
+     "virtualPath": "/usr/local/zookeeper-3.4.10/lib/netty-3.10.5.Final.jar",
      "pomArtifactID": "netty",
      "pomGroupID": "io.netty",
      "manifestName": "",
-     "archiveDigests": null
+     "archiveDigests": [
+      {
+       "algorithm": "sha1",
+       "value": "9ca7d55d246092bddd29b867706e2f6c7db701a0"
+      }
+     ]
     }
    }
   },
@@ -25515,171 +25524,6 @@
     }
    ],
    "artifact": {
-    "id": "70b1c14c35eafe79",
-    "name": "netty",
-    "version": "3.10.5.Final",
-    "type": "java-archive",
-    "locations": [
-     {
-      "path": "/usr/local/zookeeper-3.4.10/lib/netty-3.10.5.Final.jar",
-      "layerID": "sha256:190482cb294ece8fddfe12ca8d05641887763a3955314a5aaa6d23b6587fe452"
-     }
-    ],
-    "language": "java",
-    "licenses": [
-     "http://www.apache.org/licenses/LICENSE-2.0"
-    ],
-    "cpes": [
-     "cpe:2.3:a:NettyBundleActivator:netty:3.10.5.Final:*:*:*:*:*:*:*",
-     "cpe:2.3:a:container:netty:3.10.5.Final:*:*:*:*:*:*:*",
-     "cpe:2.3:a:jboss:netty:3.10.5.Final:*:*:*:*:*:*:*",
-     "cpe:2.3:a:netty:netty:3.10.5.Final:*:*:*:*:*:*:*",
-     "cpe:2.3:a:osgi:netty:3.10.5.Final:*:*:*:*:*:*:*"
-    ],
-    "purl": "pkg:maven/io.netty/netty@3.10.5.Final",
-    "upstreams": [],
-    "metadataType": "JavaMetadata",
-    "metadata": {
-     "virtualPath": "/usr/local/zookeeper-3.4.10/lib/netty-3.10.5.Final.jar",
-     "pomArtifactID": "netty",
-     "pomGroupID": "io.netty",
-     "manifestName": "",
-     "archiveDigests": [
-      {
-       "algorithm": "sha1",
-       "value": "9ca7d55d246092bddd29b867706e2f6c7db701a0"
-      }
-     ]
-    }
-   }
-  },
-  {
-   "vulnerability": {
-    "id": "GHSA-p2v9-g2qv-p635",
-    "dataSource": "https://github.com/advisories/GHSA-p2v9-g2qv-p635",
-    "namespace": "github:language:java",
-    "severity": "Medium",
-    "urls": [
-     "https://github.com/advisories/GHSA-p2v9-g2qv-p635"
-    ],
-    "description": "HTTP Request Smuggling in Netty",
-    "cvss": [],
-    "fix": {
-     "versions": [],
-     "state": "not-fixed"
-    },
-    "advisories": []
-   },
-   "relatedVulnerabilities": [
-    {
-     "id": "CVE-2019-20445",
-     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2019-20445",
-     "namespace": "nvd:cpe",
-     "severity": "Critical",
-     "urls": [
-      "https://access.redhat.com/errata/RHSA-2020:0497",
-      "https://access.redhat.com/errata/RHSA-2020:0567",
-      "https://access.redhat.com/errata/RHSA-2020:0601",
-      "https://access.redhat.com/errata/RHSA-2020:0605",
-      "https://access.redhat.com/errata/RHSA-2020:0606",
-      "https://access.redhat.com/errata/RHSA-2020:0804",
-      "https://access.redhat.com/errata/RHSA-2020:0805",
-      "https://access.redhat.com/errata/RHSA-2020:0806",
-      "https://access.redhat.com/errata/RHSA-2020:0811",
-      "https://github.com/netty/netty/compare/netty-4.1.43.Final...netty-4.1.44.Final",
-      "https://github.com/netty/netty/issues/9861",
-      "https://lists.apache.org/thread.html/r030beff88aeb6d7a2d6cd21342bd18686153ce6e26a4171d0e035663@%3Cissues.flume.apache.org%3E",
-      "https://lists.apache.org/thread.html/r1b103833cb5bc8466e24ff0ecc5e75b45a705334ab6a444e64e840a0@%3Cissues.bookkeeper.apache.org%3E",
-      "https://lists.apache.org/thread.html/r1fcccf8bdb3531c28bc9aa605a6a1bea7e68cef6fc12e01faafb2fb5@%3Cissues.zookeeper.apache.org%3E",
-      "https://lists.apache.org/thread.html/r205937c85817a911b0c72655c2377e7a2c9322d6ef6ce1b118d34d8d@%3Cdev.geode.apache.org%3E",
-      "https://lists.apache.org/thread.html/r2f2989b7815d809ff3fda8ce330f553e5f133505afd04ffbc135f35f@%3Cissues.spark.apache.org%3E",
-      "https://lists.apache.org/thread.html/r310d2ce22304d5298ff87f10134f918c87919b452734f9841d95682d@%3Ccommits.zookeeper.apache.org%3E",
-      "https://lists.apache.org/thread.html/r36fcf538b28f2029e8b4f6b9a772f3b107913a78f09b095c5b153a62@%3Cissues.zookeeper.apache.org%3E",
-      "https://lists.apache.org/thread.html/r46f93de62b1e199f3f9babb18128681677c53493546f532ed88c359d@%3Creviews.spark.apache.org%3E",
-      "https://lists.apache.org/thread.html/r4d3f1d3e333d9c2b2f6e6ae8ed8750d4de03410ac294bcd12c7eefa3@%3Ccommits.cassandra.apache.org%3E",
-      "https://lists.apache.org/thread.html/r4ff40646e9ccce13560458419accdfc227b8b6ca4ead3a8a91decc74@%3Cissues.flume.apache.org%3E",
-      "https://lists.apache.org/thread.html/r640eb9b3213058a963e18291f903fc1584e577f60035f941e32f760a@%3Cissues.zookeeper.apache.org%3E",
-      "https://lists.apache.org/thread.html/r6945f3c346b7af89bbd3526a7c9b705b1e3569070ebcd0964bcedd7d@%3Cissues.zookeeper.apache.org%3E",
-      "https://lists.apache.org/thread.html/r70b1ff22ee80e8101805b9a473116dd33265709007d2deb6f8c80bf2@%3Ccommits.druid.apache.org%3E",
-      "https://lists.apache.org/thread.html/r7790b9d99696d9eddce8a8c96f13bb68460984294ea6fea3800143e4@%3Ccommits.pulsar.apache.org%3E",
-      "https://lists.apache.org/thread.html/r804895eedd72c9ec67898286eb185e04df852b0dd5fe53cf5b6138f9@%3Cissues.zookeeper.apache.org%3E",
-      "https://lists.apache.org/thread.html/r81700644754e66ffea465c869cb477de25f8041e21598e8818fc2c45@%3Cdev.zookeeper.apache.org%3E",
-      "https://lists.apache.org/thread.html/r819aaeb9944bdcfca438dcc51f05650dc728daf64dfd7d774fc2499b@%3Ccommits.zookeeper.apache.org%3E",
-      "https://lists.apache.org/thread.html/r832724df393a7ef25ca4c7c2eb83ad2d6c21c74569acda5233f9f1ec@%3Ccommits.pulsar.apache.org%3E",
-      "https://lists.apache.org/thread.html/r959474dcf7f88565ed89f6252ca5a274419006cb71348f14764b183d@%3Ccommits.cassandra.apache.org%3E",
-      "https://lists.apache.org/thread.html/r96e08f929234e8ba1ef4a93a0fd2870f535a1f9ab628fabc46115986@%3Cdev.zookeeper.apache.org%3E",
-      "https://lists.apache.org/thread.html/r9b20cdac704cf9a583400350e2d5b576fa8417c18ddb961201676c60@%3Ccommits.zookeeper.apache.org%3E",
-      "https://lists.apache.org/thread.html/ra1a71b576a45426af5ee65255be9596ff3181a342f4ba73b800db78f@%3Cdev.geode.apache.org%3E",
-      "https://lists.apache.org/thread.html/ra2ace4bcb5cf487f72cbcbfa0f8cc08e755ec2b93d7e69f276148b08@%3Cissues.zookeeper.apache.org%3E",
-      "https://lists.apache.org/thread.html/ra9fbfe7d4830ae675bf34c7c0f8c22fc8a4099f65706c1bc4f54c593@%3Cissues.zookeeper.apache.org%3E",
-      "https://lists.apache.org/thread.html/raaac04b7567c554786132144bea3dcb72568edd410c1e6f0101742e7@%3Cissues.flink.apache.org%3E",
-      "https://lists.apache.org/thread.html/rb5c065e7bd701b0744f9f28ad769943f91745102716c1eb516325f11@%3Cissues.spark.apache.org%3E",
-      "https://lists.apache.org/thread.html/rb84c57670ec48ef23f4d07973b7fa69f629b8e7fcfb48874362feb6f@%3Ccommits.zookeeper.apache.org%3E",
-      "https://lists.apache.org/thread.html/rbdb59c683d666130906a9c05a1d2b034c4cc08cda7ed41322bd54fe2@%3Cissues.flume.apache.org%3E",
-      "https://lists.apache.org/thread.html/rce71d33747010d32d31d90f5d737dae26291d96552f513a266c92fbb@%3Cnotifications.zookeeper.apache.org%3E",
-      "https://lists.apache.org/thread.html/rd0e44e8ef71eeaaa3cf3d1b8b41eb25894372e2995ec908ce7624d26@%3Ccommits.pulsar.apache.org%3E",
-      "https://lists.apache.org/thread.html/rd8f72411fb75b98d366400ae789966373b5c3eb3f511e717caf3e49e@%3Cissues.flink.apache.org%3E",
-      "https://lists.apache.org/thread.html/rdb69125652311d0c41f6066ff44072a3642cf33a4b5e3c4f9c1ec9c2@%3Ccommits.pulsar.apache.org%3E",
-      "https://lists.apache.org/thread.html/re45ee9256d3233c31d78e59ee59c7dc841c7fbd83d0769285b41e948@%3Ccommits.druid.apache.org%3E",
-      "https://lists.apache.org/thread.html/rf5b2dfb7401666a19915f8eaef3ba9f5c3386e2066fcd2ae66e16a2f@%3Cdev.flink.apache.org%3E",
-      "https://lists.apache.org/thread.html/rfb55f245b08d8a6ec0fb4dc159022227cd22de34c4419c2fbb18802b@%3Cnotifications.zookeeper.apache.org%3E",
-      "https://lists.apache.org/thread.html/rff210a24f3a924829790e69eaefa84820902b7b31f17c3bf2def9114@%3Ccommits.druid.apache.org%3E",
-      "https://lists.debian.org/debian-lts-announce/2020/02/msg00017.html",
-      "https://lists.debian.org/debian-lts-announce/2020/02/msg00018.html",
-      "https://lists.debian.org/debian-lts-announce/2020/09/msg00003.html",
-      "https://lists.debian.org/debian-lts-announce/2020/09/msg00004.html",
-      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/TS6VX7OMXPDJIU5LRGUAHRK6MENAVJ46/",
-      "https://usn.ubuntu.com/4532-1/",
-      "https://www.debian.org/security/2021/dsa-4885"
-     ],
-     "description": "HttpObjectDecoder.java in Netty before 4.1.44 allows a Content-Length header to be accompanied by a second Content-Length header, or by a Transfer-Encoding header.",
-     "cvss": [
-      {
-       "source": "nvd@nist.gov",
-       "type": "Primary",
-       "version": "2.0",
-       "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:N",
-       "metrics": {
-        "baseScore": 6.4,
-        "exploitabilityScore": 10,
-        "impactScore": 4.9
-       },
-       "vendorMetadata": {}
-      },
-      {
-       "source": "nvd@nist.gov",
-       "type": "Primary",
-       "version": "3.1",
-       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
-       "metrics": {
-        "baseScore": 9.1,
-        "exploitabilityScore": 3.9,
-        "impactScore": 5.2
-       },
-       "vendorMetadata": {}
-      }
-     ]
-    }
-   ],
-   "matchDetails": [
-    {
-     "type": "exact-direct-match",
-     "matcher": "java-matcher",
-     "searchedBy": {
-      "language": "java",
-      "namespace": "github:language:java",
-      "package": {
-       "name": "netty",
-       "version": "3.10.5.Final"
-      }
-     },
-     "found": {
-      "versionConstraint": "<4.0.0 (unknown)",
-      "vulnerabilityID": "GHSA-p2v9-g2qv-p635"
-     }
-    }
-   ],
-   "artifact": {
     "id": "e266c69bf9208dbe",
     "name": "netty",
     "version": "3.10.5.Final",
@@ -25876,29 +25720,15 @@
   },
   {
    "vulnerability": {
-    "id": "GHSA-f256-j965-7f32",
-    "dataSource": "https://github.com/advisories/GHSA-f256-j965-7f32",
+    "id": "GHSA-p2v9-g2qv-p635",
+    "dataSource": "https://github.com/advisories/GHSA-p2v9-g2qv-p635",
     "namespace": "github:language:java",
     "severity": "Medium",
     "urls": [
-     "https://github.com/advisories/GHSA-f256-j965-7f32"
+     "https://github.com/advisories/GHSA-p2v9-g2qv-p635"
     ],
-    "description": "Possible request smuggling in HTTP/2 due missing validation of content-length",
-    "cvss": [
-     {
-      "version": "3.1",
-      "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N",
-      "metrics": {
-       "baseScore": 5.9,
-       "exploitabilityScore": 2.2,
-       "impactScore": 3.6
-      },
-      "vendorMetadata": {
-       "base_severity": "Medium",
-       "status": "N/A"
-      }
-     }
-    ],
+    "description": "HTTP Request Smuggling in Netty",
+    "cvss": [],
     "fix": {
      "versions": [],
      "state": "not-fixed"
@@ -25907,82 +25737,77 @@
    },
    "relatedVulnerabilities": [
     {
-     "id": "CVE-2021-21409",
-     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-21409",
+     "id": "CVE-2019-20445",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2019-20445",
      "namespace": "nvd:cpe",
-     "severity": "Medium",
+     "severity": "Critical",
      "urls": [
-      "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-21295",
-      "https://github.com/netty/netty/commit/b0fa4d5aab4215f3c22ce6123dd8dd5f38dc0432",
-      "https://github.com/netty/netty/security/advisories/GHSA-f256-j965-7f32",
-      "https://github.com/netty/netty/security/advisories/GHSA-wm47-8v5p-wjpj",
-      "https://lists.apache.org/thread.html/r0b09f3e31e004fe583f677f7afa46bd30110904576c13c5ac818ac2c@%3Cissues.flink.apache.org%3E",
-      "https://lists.apache.org/thread.html/r0ca82fec33334e571fe5b388272260778883e307e15415d7b1443de2@%3Cissues.zookeeper.apache.org%3E",
-      "https://lists.apache.org/thread.html/r101f82d8f3b5af0bf79aecbd5b2dd3b404f6bb51d1a54c2c3d29bed9@%3Cnotifications.zookeeper.apache.org%3E",
-      "https://lists.apache.org/thread.html/r1b3cb056364794f919aaf26ceaf7423de64e7fdd05a914066e7d5219@%3Cissues.zookeeper.apache.org%3E",
-      "https://lists.apache.org/thread.html/r2732aa3884cacfecac4c54cfaa77c279ba815cad44b464a567216f83@%3Cissues.zookeeper.apache.org%3E",
-      "https://lists.apache.org/thread.html/r31044fb995e894749cb821c6fe56f487c16a97028e6e360e59f09d58@%3Cissues.zookeeper.apache.org%3E",
-      "https://lists.apache.org/thread.html/r4a98827bb4a7edbd69ef862f2351391845697c40711820d10df52ca5@%3Ccommits.zookeeper.apache.org%3E",
-      "https://lists.apache.org/thread.html/r4b8be87acf5b9c098a2ee350b5ca5716fe7afeaf0a21a4ee45a90687@%3Cissues.zookeeper.apache.org%3E",
-      "https://lists.apache.org/thread.html/r4ea2f1a9d79d4fc1896e085f31fb60a21b1770d0a26a5250f849372d@%3Cissues.kudu.apache.org%3E",
-      "https://lists.apache.org/thread.html/r584cf871f188c406d8bd447ff4e2fd9817fca862436c064d0951a071@%3Ccommits.pulsar.apache.org%3E",
-      "https://lists.apache.org/thread.html/r5baac01f9e06c40ff7aab209d5751b3b58802c63734e33324b70a06a@%3Cissues.flink.apache.org%3E",
-      "https://lists.apache.org/thread.html/r5cbea8614812289a9b98d0cfc54b47f54cef424ac98d5e315b791795@%3Cnotifications.zookeeper.apache.org%3E",
-      "https://lists.apache.org/thread.html/r5f2f120b2b8d099226473db1832ffb4d7c1d6dc2d228a164bf293a8e@%3Cissues.zookeeper.apache.org%3E",
-      "https://lists.apache.org/thread.html/r602e98daacc98934f097f07f2eed6eb07c18bfc1949c8489dc7bfcf5@%3Cissues.flink.apache.org%3E",
-      "https://lists.apache.org/thread.html/r61564d86a75403b854cdafee67fc69c8b88c5f6802c2c838f4282cc8@%3Ccommits.pulsar.apache.org%3E",
-      "https://lists.apache.org/thread.html/r69efd8ef003f612c43e4154e788ca3b1f837feaacd16d97854402355@%3Ccommits.zookeeper.apache.org%3E",
-      "https://lists.apache.org/thread.html/r6dac9bd799ceac499c7a7e152a9b0dc7f2fe7f89ec5605d129bb047b@%3Cissues.zookeeper.apache.org%3E",
-      "https://lists.apache.org/thread.html/r70c3a7bfa904f06a1902f4df20ee26e4f09a46b8fd3eb304dc57a2de@%3Cdev.zookeeper.apache.org%3E",
-      "https://lists.apache.org/thread.html/r7879ddcb990c835c6b246654770d836f9d031dee982be836744e50ed@%3Ccommits.pulsar.apache.org%3E",
-      "https://lists.apache.org/thread.html/r7b54563abebe3dbbe421e1ba075c2030d8d460372f8c79b7789684b6@%3Cissues.zookeeper.apache.org%3E",
-      "https://lists.apache.org/thread.html/r823d4b27fcba8dad5fe945bdefce3ca5a0031187966eb6ef3cc22ba9@%3Cissues.zookeeper.apache.org%3E",
-      "https://lists.apache.org/thread.html/r855b4b6814ac829ce2d48dd9d8138d07f33387e710de798ee92c011e@%3Cissues.flink.apache.org%3E",
-      "https://lists.apache.org/thread.html/r967002f0939e69bdec58f070735a19dd57c1f2b8f817949ca17cddae@%3Cissues.zookeeper.apache.org%3E",
-      "https://lists.apache.org/thread.html/r9ec78dc409f3f1edff88f21cab53737f36aad46f582a9825389092e0@%3Cissues.zookeeper.apache.org%3E",
-      "https://lists.apache.org/thread.html/r9fe840c36b74f92b8d4a089ada1f9fd1d6293742efa18b10e06b66d2@%3Ccommits.zookeeper.apache.org%3E",
-      "https://lists.apache.org/thread.html/ra64d56a8a331ffd7bdcd24a9aaaeeedeacd5d639f5a683389123f898@%3Cdev.flink.apache.org%3E",
-      "https://lists.apache.org/thread.html/ra655e5cec74d1ddf62adacb71d398abd96f3ea2c588f6bbf048348eb@%3Cissues.kudu.apache.org%3E",
-      "https://lists.apache.org/thread.html/ra66e93703e3f4bd31bdfd0b6fb0c32ae96b528259bb1aa2b6d38e401@%3Cissues.zookeeper.apache.org%3E",
-      "https://lists.apache.org/thread.html/raa413040db6d2197593cc03edecfd168732e697119e6447b0a25d525@%3Cissues.zookeeper.apache.org%3E",
-      "https://lists.apache.org/thread.html/rac8cf45a1bab9ead5c9a860cbadd6faaeb7792203617b6ec3874736d@%3Cissues.zookeeper.apache.org%3E",
-      "https://lists.apache.org/thread.html/rafc77f9f03031297394f3d372ccea751b23576f8a2ae9b6b053894c5@%3Cissues.zookeeper.apache.org%3E",
-      "https://lists.apache.org/thread.html/rba2a9ef1d0af882ab58fadb336a58818495245dda43d32a7d7837187@%3Cissues.zookeeper.apache.org%3E",
-      "https://lists.apache.org/thread.html/rbde2f13daf4911504f0eaea43eee4f42555241b5f6d9d71564b6c5fa@%3Cjira.kafka.apache.org%3E",
-      "https://lists.apache.org/thread.html/rca0978b634a0c3ebee4126ec29c7f570b165fae3f8f3658754c1cbd3@%3Cissues.kudu.apache.org%3E",
-      "https://lists.apache.org/thread.html/rcae42fba06979934208bbd515584b241d3ad01d1bb8b063512644362@%3Cdev.zookeeper.apache.org%3E",
-      "https://lists.apache.org/thread.html/rd4a6b7dec38ea6cd28b6f94bd4b312629a52b80be3786d5fb0e474bc@%3Cissues.kudu.apache.org%3E",
+      "https://access.redhat.com/errata/RHSA-2020:0497",
+      "https://access.redhat.com/errata/RHSA-2020:0567",
+      "https://access.redhat.com/errata/RHSA-2020:0601",
+      "https://access.redhat.com/errata/RHSA-2020:0605",
+      "https://access.redhat.com/errata/RHSA-2020:0606",
+      "https://access.redhat.com/errata/RHSA-2020:0804",
+      "https://access.redhat.com/errata/RHSA-2020:0805",
+      "https://access.redhat.com/errata/RHSA-2020:0806",
+      "https://access.redhat.com/errata/RHSA-2020:0811",
+      "https://github.com/netty/netty/compare/netty-4.1.43.Final...netty-4.1.44.Final",
+      "https://github.com/netty/netty/issues/9861",
+      "https://lists.apache.org/thread.html/r030beff88aeb6d7a2d6cd21342bd18686153ce6e26a4171d0e035663@%3Cissues.flume.apache.org%3E",
+      "https://lists.apache.org/thread.html/r1b103833cb5bc8466e24ff0ecc5e75b45a705334ab6a444e64e840a0@%3Cissues.bookkeeper.apache.org%3E",
+      "https://lists.apache.org/thread.html/r1fcccf8bdb3531c28bc9aa605a6a1bea7e68cef6fc12e01faafb2fb5@%3Cissues.zookeeper.apache.org%3E",
+      "https://lists.apache.org/thread.html/r205937c85817a911b0c72655c2377e7a2c9322d6ef6ce1b118d34d8d@%3Cdev.geode.apache.org%3E",
+      "https://lists.apache.org/thread.html/r2f2989b7815d809ff3fda8ce330f553e5f133505afd04ffbc135f35f@%3Cissues.spark.apache.org%3E",
+      "https://lists.apache.org/thread.html/r310d2ce22304d5298ff87f10134f918c87919b452734f9841d95682d@%3Ccommits.zookeeper.apache.org%3E",
+      "https://lists.apache.org/thread.html/r36fcf538b28f2029e8b4f6b9a772f3b107913a78f09b095c5b153a62@%3Cissues.zookeeper.apache.org%3E",
+      "https://lists.apache.org/thread.html/r46f93de62b1e199f3f9babb18128681677c53493546f532ed88c359d@%3Creviews.spark.apache.org%3E",
+      "https://lists.apache.org/thread.html/r4d3f1d3e333d9c2b2f6e6ae8ed8750d4de03410ac294bcd12c7eefa3@%3Ccommits.cassandra.apache.org%3E",
+      "https://lists.apache.org/thread.html/r4ff40646e9ccce13560458419accdfc227b8b6ca4ead3a8a91decc74@%3Cissues.flume.apache.org%3E",
+      "https://lists.apache.org/thread.html/r640eb9b3213058a963e18291f903fc1584e577f60035f941e32f760a@%3Cissues.zookeeper.apache.org%3E",
+      "https://lists.apache.org/thread.html/r6945f3c346b7af89bbd3526a7c9b705b1e3569070ebcd0964bcedd7d@%3Cissues.zookeeper.apache.org%3E",
+      "https://lists.apache.org/thread.html/r70b1ff22ee80e8101805b9a473116dd33265709007d2deb6f8c80bf2@%3Ccommits.druid.apache.org%3E",
+      "https://lists.apache.org/thread.html/r7790b9d99696d9eddce8a8c96f13bb68460984294ea6fea3800143e4@%3Ccommits.pulsar.apache.org%3E",
+      "https://lists.apache.org/thread.html/r804895eedd72c9ec67898286eb185e04df852b0dd5fe53cf5b6138f9@%3Cissues.zookeeper.apache.org%3E",
+      "https://lists.apache.org/thread.html/r81700644754e66ffea465c869cb477de25f8041e21598e8818fc2c45@%3Cdev.zookeeper.apache.org%3E",
+      "https://lists.apache.org/thread.html/r819aaeb9944bdcfca438dcc51f05650dc728daf64dfd7d774fc2499b@%3Ccommits.zookeeper.apache.org%3E",
+      "https://lists.apache.org/thread.html/r832724df393a7ef25ca4c7c2eb83ad2d6c21c74569acda5233f9f1ec@%3Ccommits.pulsar.apache.org%3E",
+      "https://lists.apache.org/thread.html/r959474dcf7f88565ed89f6252ca5a274419006cb71348f14764b183d@%3Ccommits.cassandra.apache.org%3E",
+      "https://lists.apache.org/thread.html/r96e08f929234e8ba1ef4a93a0fd2870f535a1f9ab628fabc46115986@%3Cdev.zookeeper.apache.org%3E",
+      "https://lists.apache.org/thread.html/r9b20cdac704cf9a583400350e2d5b576fa8417c18ddb961201676c60@%3Ccommits.zookeeper.apache.org%3E",
+      "https://lists.apache.org/thread.html/ra1a71b576a45426af5ee65255be9596ff3181a342f4ba73b800db78f@%3Cdev.geode.apache.org%3E",
+      "https://lists.apache.org/thread.html/ra2ace4bcb5cf487f72cbcbfa0f8cc08e755ec2b93d7e69f276148b08@%3Cissues.zookeeper.apache.org%3E",
+      "https://lists.apache.org/thread.html/ra9fbfe7d4830ae675bf34c7c0f8c22fc8a4099f65706c1bc4f54c593@%3Cissues.zookeeper.apache.org%3E",
+      "https://lists.apache.org/thread.html/raaac04b7567c554786132144bea3dcb72568edd410c1e6f0101742e7@%3Cissues.flink.apache.org%3E",
+      "https://lists.apache.org/thread.html/rb5c065e7bd701b0744f9f28ad769943f91745102716c1eb516325f11@%3Cissues.spark.apache.org%3E",
+      "https://lists.apache.org/thread.html/rb84c57670ec48ef23f4d07973b7fa69f629b8e7fcfb48874362feb6f@%3Ccommits.zookeeper.apache.org%3E",
+      "https://lists.apache.org/thread.html/rbdb59c683d666130906a9c05a1d2b034c4cc08cda7ed41322bd54fe2@%3Cissues.flume.apache.org%3E",
+      "https://lists.apache.org/thread.html/rce71d33747010d32d31d90f5d737dae26291d96552f513a266c92fbb@%3Cnotifications.zookeeper.apache.org%3E",
+      "https://lists.apache.org/thread.html/rd0e44e8ef71eeaaa3cf3d1b8b41eb25894372e2995ec908ce7624d26@%3Ccommits.pulsar.apache.org%3E",
       "https://lists.apache.org/thread.html/rd8f72411fb75b98d366400ae789966373b5c3eb3f511e717caf3e49e@%3Cissues.flink.apache.org%3E",
-      "https://lists.apache.org/thread.html/rdd206d9dd7eb894cc089b37fe6edde2932de88d63a6d8368b44f5101@%3Ccommits.zookeeper.apache.org%3E",
-      "https://lists.apache.org/thread.html/rdd5715f3ee5e3216d5e0083a07994f67da6dbb9731ce9e7a6389b18e@%3Ccommits.zookeeper.apache.org%3E",
-      "https://lists.apache.org/thread.html/re1911e05c08f3ec2bab85744d788773519a0afb27272a31ac2a0b4e8@%3Cnotifications.zookeeper.apache.org%3E",
-      "https://lists.apache.org/thread.html/re39391adcb863f0e9f3f15e7986255948f263f02e4700b82453e7102@%3Cissues.zookeeper.apache.org%3E",
-      "https://lists.apache.org/thread.html/re4b0141939370304d676fe23774d0c6fbc584b648919825402d0cb39@%3Cnotifications.zookeeper.apache.org%3E",
-      "https://lists.apache.org/thread.html/re7c69756a102bebce8b8681882844a53e2f23975a189363e68ad0324@%3Cissues.flink.apache.org%3E",
-      "https://lists.apache.org/thread.html/re9e6ed60941da831675de2f8f733c026757fb4fa28a7b6c9f3dfb575@%3Cdev.zookeeper.apache.org%3E",
-      "https://lists.apache.org/thread.html/redef0fb5474fd686781007de9ddb852b24f1b04131a248d9a4789183@%3Cnotifications.zookeeper.apache.org%3E",
-      "https://lists.apache.org/thread.html/rf148b2bf6c2754153a8629bc7495e216bd0bd4c915695486542a10b4@%3Cnotifications.zookeeper.apache.org%3E",
-      "https://lists.apache.org/thread.html/rf38e4dcdefc7c59f7ba0799a399d6d6e37b555d406a1dfc2fcbf0b35@%3Ccommits.pulsar.apache.org%3E",
-      "https://lists.apache.org/thread.html/rf521ff2be2e2dd38984174d3451e6ee935c845948845c8fccd86371d@%3Cissues.zookeeper.apache.org%3E",
-      "https://lists.apache.org/thread.html/rf934292a4a1c189827f625d567838d2c1001e4739b158638d844105b@%3Cissues.kudu.apache.org%3E",
-      "https://security.netapp.com/advisory/ntap-20210604-0003/",
-      "https://www.debian.org/security/2021/dsa-4885",
-      "https://www.oracle.com//security-alerts/cpujul2021.html",
-      "https://www.oracle.com/security-alerts/cpuapr2022.html",
-      "https://www.oracle.com/security-alerts/cpujan2022.html",
-      "https://www.oracle.com/security-alerts/cpuoct2021.html"
+      "https://lists.apache.org/thread.html/rdb69125652311d0c41f6066ff44072a3642cf33a4b5e3c4f9c1ec9c2@%3Ccommits.pulsar.apache.org%3E",
+      "https://lists.apache.org/thread.html/re45ee9256d3233c31d78e59ee59c7dc841c7fbd83d0769285b41e948@%3Ccommits.druid.apache.org%3E",
+      "https://lists.apache.org/thread.html/rf5b2dfb7401666a19915f8eaef3ba9f5c3386e2066fcd2ae66e16a2f@%3Cdev.flink.apache.org%3E",
+      "https://lists.apache.org/thread.html/rfb55f245b08d8a6ec0fb4dc159022227cd22de34c4419c2fbb18802b@%3Cnotifications.zookeeper.apache.org%3E",
+      "https://lists.apache.org/thread.html/rff210a24f3a924829790e69eaefa84820902b7b31f17c3bf2def9114@%3Ccommits.druid.apache.org%3E",
+      "https://lists.debian.org/debian-lts-announce/2020/02/msg00017.html",
+      "https://lists.debian.org/debian-lts-announce/2020/02/msg00018.html",
+      "https://lists.debian.org/debian-lts-announce/2020/09/msg00003.html",
+      "https://lists.debian.org/debian-lts-announce/2020/09/msg00004.html",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/TS6VX7OMXPDJIU5LRGUAHRK6MENAVJ46/",
+      "https://usn.ubuntu.com/4532-1/",
+      "https://www.debian.org/security/2021/dsa-4885"
      ],
-     "description": "Netty is an open-source, asynchronous event-driven network application framework for rapid development of maintainable high performance protocol servers & clients. In Netty (io.netty:netty-codec-http2) before version 4.1.61.Final there is a vulnerability that enables request smuggling. The content-length header is not correctly validated if the request only uses a single Http2HeaderFrame with the endStream set to to true. This could lead to request smuggling if the request is proxied to a remote peer and translated to HTTP/1.1. This is a followup of GHSA-wm47-8v5p-wjpj/CVE-2021-21295 which did miss to fix this one case. This was fixed as part of 4.1.61.Final.",
+     "description": "HttpObjectDecoder.java in Netty before 4.1.44 allows a Content-Length header to be accompanied by a second Content-Length header, or by a Transfer-Encoding header.",
      "cvss": [
       {
        "source": "nvd@nist.gov",
        "type": "Primary",
        "version": "2.0",
-       "vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+       "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:N",
        "metrics": {
-        "baseScore": 4.3,
-        "exploitabilityScore": 8.6,
-        "impactScore": 2.9
+        "baseScore": 6.4,
+        "exploitabilityScore": 10,
+        "impactScore": 4.9
        },
        "vendorMetadata": {}
       },
@@ -25990,23 +25815,11 @@
        "source": "nvd@nist.gov",
        "type": "Primary",
        "version": "3.1",
-       "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
        "metrics": {
-        "baseScore": 5.9,
-        "exploitabilityScore": 2.2,
-        "impactScore": 3.6
-       },
-       "vendorMetadata": {}
-      },
-      {
-       "source": "security-advisories@github.com",
-       "type": "Secondary",
-       "version": "3.1",
-       "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N",
-       "metrics": {
-        "baseScore": 5.9,
-        "exploitabilityScore": 2.2,
-        "impactScore": 3.6
+        "baseScore": 9.1,
+        "exploitabilityScore": 3.9,
+        "impactScore": 5.2
        },
        "vendorMetadata": {}
       }
@@ -26027,7 +25840,7 @@
      },
      "found": {
       "versionConstraint": "<4.0.0 (unknown)",
-      "vulnerabilityID": "GHSA-f256-j965-7f32"
+      "vulnerabilityID": "GHSA-p2v9-g2qv-p635"
      }
     }
    ],
@@ -26259,21 +26072,21 @@
   },
   {
    "vulnerability": {
-    "id": "GHSA-5mcr-gq6c-3hq2",
-    "dataSource": "https://github.com/advisories/GHSA-5mcr-gq6c-3hq2",
+    "id": "GHSA-f256-j965-7f32",
+    "dataSource": "https://github.com/advisories/GHSA-f256-j965-7f32",
     "namespace": "github:language:java",
     "severity": "Medium",
     "urls": [
-     "https://github.com/advisories/GHSA-5mcr-gq6c-3hq2"
+     "https://github.com/advisories/GHSA-f256-j965-7f32"
     ],
-    "description": "Local Information Disclosure Vulnerability in Netty on Unix-Like systems",
+    "description": "Possible request smuggling in HTTP/2 due missing validation of content-length",
     "cvss": [
      {
       "version": "3.1",
-      "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N",
       "metrics": {
-       "baseScore": 6.2,
-       "exploitabilityScore": 2.5,
+       "baseScore": 5.9,
+       "exploitabilityScore": 2.2,
        "impactScore": 3.6
       },
       "vendorMetadata": {
@@ -26290,61 +26103,81 @@
    },
    "relatedVulnerabilities": [
     {
-     "id": "CVE-2021-21290",
-     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-21290",
+     "id": "CVE-2021-21409",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-21409",
      "namespace": "nvd:cpe",
      "severity": "Medium",
      "urls": [
-      "https://github.com/netty/netty/commit/c735357bf29d07856ad171c6611a2e1a0e0000ec",
-      "https://github.com/netty/netty/security/advisories/GHSA-5mcr-gq6c-3hq2",
-      "https://lists.apache.org/thread.html/r0053443ce19ff125981559f8c51cf66e3ab4350f47812b8cf0733a05@%3Cdev.kafka.apache.org%3E",
-      "https://lists.apache.org/thread.html/r02e467123d45006a1dda20a38349e9c74c3a4b53e2e07be0939ecb3f@%3Cdev.ranger.apache.org%3E",
-      "https://lists.apache.org/thread.html/r0857b613604c696bf9743f0af047360baaded48b1c75cf6945a083c5@%3Cjira.kafka.apache.org%3E",
-      "https://lists.apache.org/thread.html/r10308b625e49d4e9491d7e079606ca0df2f0a4d828f1ad1da64ba47b@%3Cjira.kafka.apache.org%3E",
-      "https://lists.apache.org/thread.html/r1908a34b9cc7120e5c19968a116ddbcffea5e9deb76c2be4fa461904@%3Cdev.zookeeper.apache.org%3E",
-      "https://lists.apache.org/thread.html/r2748097ea4b774292539cf3de6e3b267fc7a88d6c8ec40f4e2e87bd4@%3Cdev.kafka.apache.org%3E",
-      "https://lists.apache.org/thread.html/r2936730ef0a06e724b96539bc7eacfcd3628987c16b1b99c790e7b87@%3Cissues.zookeeper.apache.org%3E",
-      "https://lists.apache.org/thread.html/r2fda4dab73097051977f2ab818f75e04fbcb15bb1003c8530eac1059@%3Cjira.kafka.apache.org%3E",
-      "https://lists.apache.org/thread.html/r326ec431f06eab7cb7113a7a338e59731b8d556d05258457f12bac1b@%3Cdev.kafka.apache.org%3E",
-      "https://lists.apache.org/thread.html/r4efed2c501681cb2e8d629da16e48d9eac429624fd4c9a8c6b8e7020@%3Cdev.tinkerpop.apache.org%3E",
+      "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-21295",
+      "https://github.com/netty/netty/commit/b0fa4d5aab4215f3c22ce6123dd8dd5f38dc0432",
+      "https://github.com/netty/netty/security/advisories/GHSA-f256-j965-7f32",
+      "https://github.com/netty/netty/security/advisories/GHSA-wm47-8v5p-wjpj",
+      "https://lists.apache.org/thread.html/r0b09f3e31e004fe583f677f7afa46bd30110904576c13c5ac818ac2c@%3Cissues.flink.apache.org%3E",
+      "https://lists.apache.org/thread.html/r0ca82fec33334e571fe5b388272260778883e307e15415d7b1443de2@%3Cissues.zookeeper.apache.org%3E",
+      "https://lists.apache.org/thread.html/r101f82d8f3b5af0bf79aecbd5b2dd3b404f6bb51d1a54c2c3d29bed9@%3Cnotifications.zookeeper.apache.org%3E",
+      "https://lists.apache.org/thread.html/r1b3cb056364794f919aaf26ceaf7423de64e7fdd05a914066e7d5219@%3Cissues.zookeeper.apache.org%3E",
+      "https://lists.apache.org/thread.html/r2732aa3884cacfecac4c54cfaa77c279ba815cad44b464a567216f83@%3Cissues.zookeeper.apache.org%3E",
+      "https://lists.apache.org/thread.html/r31044fb995e894749cb821c6fe56f487c16a97028e6e360e59f09d58@%3Cissues.zookeeper.apache.org%3E",
+      "https://lists.apache.org/thread.html/r4a98827bb4a7edbd69ef862f2351391845697c40711820d10df52ca5@%3Ccommits.zookeeper.apache.org%3E",
+      "https://lists.apache.org/thread.html/r4b8be87acf5b9c098a2ee350b5ca5716fe7afeaf0a21a4ee45a90687@%3Cissues.zookeeper.apache.org%3E",
+      "https://lists.apache.org/thread.html/r4ea2f1a9d79d4fc1896e085f31fb60a21b1770d0a26a5250f849372d@%3Cissues.kudu.apache.org%3E",
       "https://lists.apache.org/thread.html/r584cf871f188c406d8bd447ff4e2fd9817fca862436c064d0951a071@%3Ccommits.pulsar.apache.org%3E",
-      "https://lists.apache.org/thread.html/r59bac5c09f7a4179b9e2460e8f41c278aaf3b9a21cc23678eb893e41@%3Cjira.kafka.apache.org%3E",
-      "https://lists.apache.org/thread.html/r5bf303d7c04da78f276765da08559fdc62420f1df539b277ca31f63b@%3Cissues.zookeeper.apache.org%3E",
-      "https://lists.apache.org/thread.html/r5c701840aa2845191721e39821445e1e8c59711e71942b7796a6ec29@%3Cusers.activemq.apache.org%3E",
-      "https://lists.apache.org/thread.html/r5e4a540089760c8ecc2c411309d74264f1dad634ad93ad583ca16214@%3Ccommits.kafka.apache.org%3E",
-      "https://lists.apache.org/thread.html/r5e66e286afb5506cdfe9bbf68a323e8d09614f6d1ddc806ed0224700@%3Cjira.kafka.apache.org%3E",
-      "https://lists.apache.org/thread.html/r71dbb66747ff537640bb91eb0b2b24edef21ac07728097016f58b01f@%3Ccommits.kafka.apache.org%3E",
-      "https://lists.apache.org/thread.html/r743149dcc8db1de473e6bff0b3ddf10140a7357bc2add75f7d1fbb12@%3Cdev.zookeeper.apache.org%3E",
-      "https://lists.apache.org/thread.html/r790c2926efcd062067eb18fde2486527596d7275381cfaff2f7b3890@%3Cissues.bookkeeper.apache.org%3E",
-      "https://lists.apache.org/thread.html/r7bb3cdc192e9a6f863d3ea05422f09fa1ae2b88d4663e63696ee7ef5@%3Cdev.ranger.apache.org%3E",
-      "https://lists.apache.org/thread.html/r9924ef9357537722b28d04c98a189750b80694a19754e5057c34ca48@%3Ccommits.pulsar.apache.org%3E",
-      "https://lists.apache.org/thread.html/ra0fc2b4553dd7aaf75febb61052b7f1243ac3a180a71c01f29093013@%3Cjira.kafka.apache.org%3E",
-      "https://lists.apache.org/thread.html/ra503756ced78fdc2136bd33e87cb7553028645b261b1f5c6186a121e@%3Cjira.kafka.apache.org%3E",
-      "https://lists.apache.org/thread.html/rb06c1e766aa45ee422e8261a8249b561784186483e8f742ea627bda4@%3Cdev.kafka.apache.org%3E",
-      "https://lists.apache.org/thread.html/rb51d6202ff1a773f96eaa694b7da4ad3f44922c40b3d4e1a19c2f325@%3Ccommits.pulsar.apache.org%3E",
-      "https://lists.apache.org/thread.html/rb592033a2462548d061a83ac9449c5ff66098751748fcd1e2d008233@%3Cissues.zookeeper.apache.org%3E",
-      "https://lists.apache.org/thread.html/rc0087125cb15b4b78e44000f841cd37fefedfda942fd7ddf3ad1b528@%3Cissues.zookeeper.apache.org%3E",
-      "https://lists.apache.org/thread.html/rc488f80094872ad925f0c73d283d4c00d32def81977438e27a3dc2bb@%3Cjira.kafka.apache.org%3E",
-      "https://lists.apache.org/thread.html/rcd163e421273e8dca1c71ea298dce3dd11b41d51c3a812e0394e6a5d@%3Ccommits.pulsar.apache.org%3E",
-      "https://lists.apache.org/thread.html/rdba4f78ac55f803893a1a2265181595e79e3aa027e2e651dfba98c18@%3Cjira.kafka.apache.org%3E",
-      "https://lists.debian.org/debian-lts-announce/2021/02/msg00016.html",
-      "https://security.netapp.com/advisory/ntap-20220210-0011/",
+      "https://lists.apache.org/thread.html/r5baac01f9e06c40ff7aab209d5751b3b58802c63734e33324b70a06a@%3Cissues.flink.apache.org%3E",
+      "https://lists.apache.org/thread.html/r5cbea8614812289a9b98d0cfc54b47f54cef424ac98d5e315b791795@%3Cnotifications.zookeeper.apache.org%3E",
+      "https://lists.apache.org/thread.html/r5f2f120b2b8d099226473db1832ffb4d7c1d6dc2d228a164bf293a8e@%3Cissues.zookeeper.apache.org%3E",
+      "https://lists.apache.org/thread.html/r602e98daacc98934f097f07f2eed6eb07c18bfc1949c8489dc7bfcf5@%3Cissues.flink.apache.org%3E",
+      "https://lists.apache.org/thread.html/r61564d86a75403b854cdafee67fc69c8b88c5f6802c2c838f4282cc8@%3Ccommits.pulsar.apache.org%3E",
+      "https://lists.apache.org/thread.html/r69efd8ef003f612c43e4154e788ca3b1f837feaacd16d97854402355@%3Ccommits.zookeeper.apache.org%3E",
+      "https://lists.apache.org/thread.html/r6dac9bd799ceac499c7a7e152a9b0dc7f2fe7f89ec5605d129bb047b@%3Cissues.zookeeper.apache.org%3E",
+      "https://lists.apache.org/thread.html/r70c3a7bfa904f06a1902f4df20ee26e4f09a46b8fd3eb304dc57a2de@%3Cdev.zookeeper.apache.org%3E",
+      "https://lists.apache.org/thread.html/r7879ddcb990c835c6b246654770d836f9d031dee982be836744e50ed@%3Ccommits.pulsar.apache.org%3E",
+      "https://lists.apache.org/thread.html/r7b54563abebe3dbbe421e1ba075c2030d8d460372f8c79b7789684b6@%3Cissues.zookeeper.apache.org%3E",
+      "https://lists.apache.org/thread.html/r823d4b27fcba8dad5fe945bdefce3ca5a0031187966eb6ef3cc22ba9@%3Cissues.zookeeper.apache.org%3E",
+      "https://lists.apache.org/thread.html/r855b4b6814ac829ce2d48dd9d8138d07f33387e710de798ee92c011e@%3Cissues.flink.apache.org%3E",
+      "https://lists.apache.org/thread.html/r967002f0939e69bdec58f070735a19dd57c1f2b8f817949ca17cddae@%3Cissues.zookeeper.apache.org%3E",
+      "https://lists.apache.org/thread.html/r9ec78dc409f3f1edff88f21cab53737f36aad46f582a9825389092e0@%3Cissues.zookeeper.apache.org%3E",
+      "https://lists.apache.org/thread.html/r9fe840c36b74f92b8d4a089ada1f9fd1d6293742efa18b10e06b66d2@%3Ccommits.zookeeper.apache.org%3E",
+      "https://lists.apache.org/thread.html/ra64d56a8a331ffd7bdcd24a9aaaeeedeacd5d639f5a683389123f898@%3Cdev.flink.apache.org%3E",
+      "https://lists.apache.org/thread.html/ra655e5cec74d1ddf62adacb71d398abd96f3ea2c588f6bbf048348eb@%3Cissues.kudu.apache.org%3E",
+      "https://lists.apache.org/thread.html/ra66e93703e3f4bd31bdfd0b6fb0c32ae96b528259bb1aa2b6d38e401@%3Cissues.zookeeper.apache.org%3E",
+      "https://lists.apache.org/thread.html/raa413040db6d2197593cc03edecfd168732e697119e6447b0a25d525@%3Cissues.zookeeper.apache.org%3E",
+      "https://lists.apache.org/thread.html/rac8cf45a1bab9ead5c9a860cbadd6faaeb7792203617b6ec3874736d@%3Cissues.zookeeper.apache.org%3E",
+      "https://lists.apache.org/thread.html/rafc77f9f03031297394f3d372ccea751b23576f8a2ae9b6b053894c5@%3Cissues.zookeeper.apache.org%3E",
+      "https://lists.apache.org/thread.html/rba2a9ef1d0af882ab58fadb336a58818495245dda43d32a7d7837187@%3Cissues.zookeeper.apache.org%3E",
+      "https://lists.apache.org/thread.html/rbde2f13daf4911504f0eaea43eee4f42555241b5f6d9d71564b6c5fa@%3Cjira.kafka.apache.org%3E",
+      "https://lists.apache.org/thread.html/rca0978b634a0c3ebee4126ec29c7f570b165fae3f8f3658754c1cbd3@%3Cissues.kudu.apache.org%3E",
+      "https://lists.apache.org/thread.html/rcae42fba06979934208bbd515584b241d3ad01d1bb8b063512644362@%3Cdev.zookeeper.apache.org%3E",
+      "https://lists.apache.org/thread.html/rd4a6b7dec38ea6cd28b6f94bd4b312629a52b80be3786d5fb0e474bc@%3Cissues.kudu.apache.org%3E",
+      "https://lists.apache.org/thread.html/rd8f72411fb75b98d366400ae789966373b5c3eb3f511e717caf3e49e@%3Cissues.flink.apache.org%3E",
+      "https://lists.apache.org/thread.html/rdd206d9dd7eb894cc089b37fe6edde2932de88d63a6d8368b44f5101@%3Ccommits.zookeeper.apache.org%3E",
+      "https://lists.apache.org/thread.html/rdd5715f3ee5e3216d5e0083a07994f67da6dbb9731ce9e7a6389b18e@%3Ccommits.zookeeper.apache.org%3E",
+      "https://lists.apache.org/thread.html/re1911e05c08f3ec2bab85744d788773519a0afb27272a31ac2a0b4e8@%3Cnotifications.zookeeper.apache.org%3E",
+      "https://lists.apache.org/thread.html/re39391adcb863f0e9f3f15e7986255948f263f02e4700b82453e7102@%3Cissues.zookeeper.apache.org%3E",
+      "https://lists.apache.org/thread.html/re4b0141939370304d676fe23774d0c6fbc584b648919825402d0cb39@%3Cnotifications.zookeeper.apache.org%3E",
+      "https://lists.apache.org/thread.html/re7c69756a102bebce8b8681882844a53e2f23975a189363e68ad0324@%3Cissues.flink.apache.org%3E",
+      "https://lists.apache.org/thread.html/re9e6ed60941da831675de2f8f733c026757fb4fa28a7b6c9f3dfb575@%3Cdev.zookeeper.apache.org%3E",
+      "https://lists.apache.org/thread.html/redef0fb5474fd686781007de9ddb852b24f1b04131a248d9a4789183@%3Cnotifications.zookeeper.apache.org%3E",
+      "https://lists.apache.org/thread.html/rf148b2bf6c2754153a8629bc7495e216bd0bd4c915695486542a10b4@%3Cnotifications.zookeeper.apache.org%3E",
+      "https://lists.apache.org/thread.html/rf38e4dcdefc7c59f7ba0799a399d6d6e37b555d406a1dfc2fcbf0b35@%3Ccommits.pulsar.apache.org%3E",
+      "https://lists.apache.org/thread.html/rf521ff2be2e2dd38984174d3451e6ee935c845948845c8fccd86371d@%3Cissues.zookeeper.apache.org%3E",
+      "https://lists.apache.org/thread.html/rf934292a4a1c189827f625d567838d2c1001e4739b158638d844105b@%3Cissues.kudu.apache.org%3E",
+      "https://security.netapp.com/advisory/ntap-20210604-0003/",
       "https://www.debian.org/security/2021/dsa-4885",
       "https://www.oracle.com//security-alerts/cpujul2021.html",
-      "https://www.oracle.com/security-alerts/cpuApr2021.html",
       "https://www.oracle.com/security-alerts/cpuapr2022.html",
+      "https://www.oracle.com/security-alerts/cpujan2022.html",
       "https://www.oracle.com/security-alerts/cpuoct2021.html"
      ],
-     "description": "Netty is an open-source, asynchronous event-driven network application framework for rapid development of maintainable high performance protocol servers & clients. In Netty before version 4.1.59.Final there is a vulnerability on Unix-like systems involving an insecure temp file. When netty's multipart decoders are used local information disclosure can occur via the local system temporary directory if temporary storing uploads on the disk is enabled. On unix-like systems, the temporary directory is shared between all user. As such, writing to this directory using APIs that do not explicitly set the file/directory permissions can lead to information disclosure. Of note, this does not impact modern MacOS Operating Systems. The method \"File.createTempFile\" on unix-like systems creates a random file, but, by default will create this file with the permissions \"-rw-r--r--\". Thus, if sensitive information is written to this file, other local users can read this information. This is the case in netty's \"AbstractDiskHttpData\" is vulnerable. This has been fixed in version 4.1.59.Final. As a workaround, one may specify your own \"java.io.tmpdir\" when you start the JVM or use \"DefaultHttpDataFactory.setBaseDir(...)\" to set the directory to something that is only readable by the current user.",
+     "description": "Netty is an open-source, asynchronous event-driven network application framework for rapid development of maintainable high performance protocol servers & clients. In Netty (io.netty:netty-codec-http2) before version 4.1.61.Final there is a vulnerability that enables request smuggling. The content-length header is not correctly validated if the request only uses a single Http2HeaderFrame with the endStream set to to true. This could lead to request smuggling if the request is proxied to a remote peer and translated to HTTP/1.1. This is a followup of GHSA-wm47-8v5p-wjpj/CVE-2021-21295 which did miss to fix this one case. This was fixed as part of 4.1.61.Final.",
      "cvss": [
       {
        "source": "nvd@nist.gov",
        "type": "Primary",
        "version": "2.0",
-       "vector": "AV:L/AC:M/Au:N/C:P/I:N/A:N",
+       "vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
        "metrics": {
-        "baseScore": 1.9,
-        "exploitabilityScore": 3.4,
+        "baseScore": 4.3,
+        "exploitabilityScore": 8.6,
         "impactScore": 2.9
        },
        "vendorMetadata": {}
@@ -26353,10 +26186,10 @@
        "source": "nvd@nist.gov",
        "type": "Primary",
        "version": "3.1",
-       "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N",
        "metrics": {
-        "baseScore": 5.5,
-        "exploitabilityScore": 1.8,
+        "baseScore": 5.9,
+        "exploitabilityScore": 2.2,
         "impactScore": 3.6
        },
        "vendorMetadata": {}
@@ -26365,10 +26198,10 @@
        "source": "security-advisories@github.com",
        "type": "Secondary",
        "version": "3.1",
-       "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N",
        "metrics": {
-        "baseScore": 6.2,
-        "exploitabilityScore": 2.5,
+        "baseScore": 5.9,
+        "exploitabilityScore": 2.2,
         "impactScore": 3.6
        },
        "vendorMetadata": {}
@@ -26390,7 +26223,7 @@
      },
      "found": {
       "versionConstraint": "<4.0.0 (unknown)",
-      "vulnerabilityID": "GHSA-5mcr-gq6c-3hq2"
+      "vulnerabilityID": "GHSA-f256-j965-7f32"
      }
     }
    ],
@@ -26597,6 +26430,173 @@
        "value": "9ca7d55d246092bddd29b867706e2f6c7db701a0"
       }
      ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-5mcr-gq6c-3hq2",
+    "dataSource": "https://github.com/advisories/GHSA-5mcr-gq6c-3hq2",
+    "namespace": "github:language:java",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-5mcr-gq6c-3hq2"
+    ],
+    "description": "Local Information Disclosure Vulnerability in Netty on Unix-Like systems",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "metrics": {
+       "baseScore": 6.2,
+       "exploitabilityScore": 2.5,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2021-21290",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-21290",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://github.com/netty/netty/commit/c735357bf29d07856ad171c6611a2e1a0e0000ec",
+      "https://github.com/netty/netty/security/advisories/GHSA-5mcr-gq6c-3hq2",
+      "https://lists.apache.org/thread.html/r0053443ce19ff125981559f8c51cf66e3ab4350f47812b8cf0733a05@%3Cdev.kafka.apache.org%3E",
+      "https://lists.apache.org/thread.html/r02e467123d45006a1dda20a38349e9c74c3a4b53e2e07be0939ecb3f@%3Cdev.ranger.apache.org%3E",
+      "https://lists.apache.org/thread.html/r0857b613604c696bf9743f0af047360baaded48b1c75cf6945a083c5@%3Cjira.kafka.apache.org%3E",
+      "https://lists.apache.org/thread.html/r10308b625e49d4e9491d7e079606ca0df2f0a4d828f1ad1da64ba47b@%3Cjira.kafka.apache.org%3E",
+      "https://lists.apache.org/thread.html/r1908a34b9cc7120e5c19968a116ddbcffea5e9deb76c2be4fa461904@%3Cdev.zookeeper.apache.org%3E",
+      "https://lists.apache.org/thread.html/r2748097ea4b774292539cf3de6e3b267fc7a88d6c8ec40f4e2e87bd4@%3Cdev.kafka.apache.org%3E",
+      "https://lists.apache.org/thread.html/r2936730ef0a06e724b96539bc7eacfcd3628987c16b1b99c790e7b87@%3Cissues.zookeeper.apache.org%3E",
+      "https://lists.apache.org/thread.html/r2fda4dab73097051977f2ab818f75e04fbcb15bb1003c8530eac1059@%3Cjira.kafka.apache.org%3E",
+      "https://lists.apache.org/thread.html/r326ec431f06eab7cb7113a7a338e59731b8d556d05258457f12bac1b@%3Cdev.kafka.apache.org%3E",
+      "https://lists.apache.org/thread.html/r4efed2c501681cb2e8d629da16e48d9eac429624fd4c9a8c6b8e7020@%3Cdev.tinkerpop.apache.org%3E",
+      "https://lists.apache.org/thread.html/r584cf871f188c406d8bd447ff4e2fd9817fca862436c064d0951a071@%3Ccommits.pulsar.apache.org%3E",
+      "https://lists.apache.org/thread.html/r59bac5c09f7a4179b9e2460e8f41c278aaf3b9a21cc23678eb893e41@%3Cjira.kafka.apache.org%3E",
+      "https://lists.apache.org/thread.html/r5bf303d7c04da78f276765da08559fdc62420f1df539b277ca31f63b@%3Cissues.zookeeper.apache.org%3E",
+      "https://lists.apache.org/thread.html/r5c701840aa2845191721e39821445e1e8c59711e71942b7796a6ec29@%3Cusers.activemq.apache.org%3E",
+      "https://lists.apache.org/thread.html/r5e4a540089760c8ecc2c411309d74264f1dad634ad93ad583ca16214@%3Ccommits.kafka.apache.org%3E",
+      "https://lists.apache.org/thread.html/r5e66e286afb5506cdfe9bbf68a323e8d09614f6d1ddc806ed0224700@%3Cjira.kafka.apache.org%3E",
+      "https://lists.apache.org/thread.html/r71dbb66747ff537640bb91eb0b2b24edef21ac07728097016f58b01f@%3Ccommits.kafka.apache.org%3E",
+      "https://lists.apache.org/thread.html/r743149dcc8db1de473e6bff0b3ddf10140a7357bc2add75f7d1fbb12@%3Cdev.zookeeper.apache.org%3E",
+      "https://lists.apache.org/thread.html/r790c2926efcd062067eb18fde2486527596d7275381cfaff2f7b3890@%3Cissues.bookkeeper.apache.org%3E",
+      "https://lists.apache.org/thread.html/r7bb3cdc192e9a6f863d3ea05422f09fa1ae2b88d4663e63696ee7ef5@%3Cdev.ranger.apache.org%3E",
+      "https://lists.apache.org/thread.html/r9924ef9357537722b28d04c98a189750b80694a19754e5057c34ca48@%3Ccommits.pulsar.apache.org%3E",
+      "https://lists.apache.org/thread.html/ra0fc2b4553dd7aaf75febb61052b7f1243ac3a180a71c01f29093013@%3Cjira.kafka.apache.org%3E",
+      "https://lists.apache.org/thread.html/ra503756ced78fdc2136bd33e87cb7553028645b261b1f5c6186a121e@%3Cjira.kafka.apache.org%3E",
+      "https://lists.apache.org/thread.html/rb06c1e766aa45ee422e8261a8249b561784186483e8f742ea627bda4@%3Cdev.kafka.apache.org%3E",
+      "https://lists.apache.org/thread.html/rb51d6202ff1a773f96eaa694b7da4ad3f44922c40b3d4e1a19c2f325@%3Ccommits.pulsar.apache.org%3E",
+      "https://lists.apache.org/thread.html/rb592033a2462548d061a83ac9449c5ff66098751748fcd1e2d008233@%3Cissues.zookeeper.apache.org%3E",
+      "https://lists.apache.org/thread.html/rc0087125cb15b4b78e44000f841cd37fefedfda942fd7ddf3ad1b528@%3Cissues.zookeeper.apache.org%3E",
+      "https://lists.apache.org/thread.html/rc488f80094872ad925f0c73d283d4c00d32def81977438e27a3dc2bb@%3Cjira.kafka.apache.org%3E",
+      "https://lists.apache.org/thread.html/rcd163e421273e8dca1c71ea298dce3dd11b41d51c3a812e0394e6a5d@%3Ccommits.pulsar.apache.org%3E",
+      "https://lists.apache.org/thread.html/rdba4f78ac55f803893a1a2265181595e79e3aa027e2e651dfba98c18@%3Cjira.kafka.apache.org%3E",
+      "https://lists.debian.org/debian-lts-announce/2021/02/msg00016.html",
+      "https://security.netapp.com/advisory/ntap-20220210-0011/",
+      "https://www.debian.org/security/2021/dsa-4885",
+      "https://www.oracle.com//security-alerts/cpujul2021.html",
+      "https://www.oracle.com/security-alerts/cpuApr2021.html",
+      "https://www.oracle.com/security-alerts/cpuapr2022.html",
+      "https://www.oracle.com/security-alerts/cpuoct2021.html"
+     ],
+     "description": "Netty is an open-source, asynchronous event-driven network application framework for rapid development of maintainable high performance protocol servers & clients. In Netty before version 4.1.59.Final there is a vulnerability on Unix-like systems involving an insecure temp file. When netty's multipart decoders are used local information disclosure can occur via the local system temporary directory if temporary storing uploads on the disk is enabled. On unix-like systems, the temporary directory is shared between all user. As such, writing to this directory using APIs that do not explicitly set the file/directory permissions can lead to information disclosure. Of note, this does not impact modern MacOS Operating Systems. The method \"File.createTempFile\" on unix-like systems creates a random file, but, by default will create this file with the permissions \"-rw-r--r--\". Thus, if sensitive information is written to this file, other local users can read this information. This is the case in netty's \"AbstractDiskHttpData\" is vulnerable. This has been fixed in version 4.1.59.Final. As a workaround, one may specify your own \"java.io.tmpdir\" when you start the JVM or use \"DefaultHttpDataFactory.setBaseDir(...)\" to set the directory to something that is only readable by the current user.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:L/AC:M/Au:N/C:P/I:N/A:N",
+       "metrics": {
+        "baseScore": 1.9,
+        "exploitabilityScore": 3.4,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+       "metrics": {
+        "baseScore": 5.5,
+        "exploitabilityScore": 1.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+       "metrics": {
+        "baseScore": 6.2,
+        "exploitabilityScore": 2.5,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "netty",
+       "version": "3.10.5.Final"
+      }
+     },
+     "found": {
+      "versionConstraint": "<4.0.0 (unknown)",
+      "vulnerabilityID": "GHSA-5mcr-gq6c-3hq2"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "e266c69bf9208dbe",
+    "name": "netty",
+    "version": "3.10.5.Final",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "/usr/local/zookeeper-3.4.10/contrib/fatjar/zookeeper-3.4.10-fatjar.jar",
+      "layerID": "sha256:190482cb294ece8fddfe12ca8d05641887763a3955314a5aaa6d23b6587fe452"
+     }
+    ],
+    "language": "java",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:sonatype:netty:3.10.5.Final:*:*:*:*:*:*:*",
+     "cpe:2.3:a:netty:netty:3.10.5.Final:*:*:*:*:*:*:*",
+     "cpe:2.3:a:oss:netty:3.10.5.Final:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/io.netty/netty@3.10.5.Final",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "/usr/local/zookeeper-3.4.10/contrib/fatjar/zookeeper-3.4.10-fatjar.jar:io.netty:netty",
+     "pomArtifactID": "netty",
+     "pomGroupID": "io.netty",
+     "manifestName": "",
+     "archiveDigests": null
     }
    }
   },
@@ -26888,41 +26888,32 @@
     }
    ],
    "artifact": {
-    "id": "70b1c14c35eafe79",
+    "id": "e266c69bf9208dbe",
     "name": "netty",
     "version": "3.10.5.Final",
     "type": "java-archive",
     "locations": [
      {
-      "path": "/usr/local/zookeeper-3.4.10/lib/netty-3.10.5.Final.jar",
+      "path": "/usr/local/zookeeper-3.4.10/contrib/fatjar/zookeeper-3.4.10-fatjar.jar",
       "layerID": "sha256:190482cb294ece8fddfe12ca8d05641887763a3955314a5aaa6d23b6587fe452"
      }
     ],
     "language": "java",
-    "licenses": [
-     "http://www.apache.org/licenses/LICENSE-2.0"
-    ],
+    "licenses": [],
     "cpes": [
-     "cpe:2.3:a:NettyBundleActivator:netty:3.10.5.Final:*:*:*:*:*:*:*",
-     "cpe:2.3:a:container:netty:3.10.5.Final:*:*:*:*:*:*:*",
-     "cpe:2.3:a:jboss:netty:3.10.5.Final:*:*:*:*:*:*:*",
+     "cpe:2.3:a:sonatype:netty:3.10.5.Final:*:*:*:*:*:*:*",
      "cpe:2.3:a:netty:netty:3.10.5.Final:*:*:*:*:*:*:*",
-     "cpe:2.3:a:osgi:netty:3.10.5.Final:*:*:*:*:*:*:*"
+     "cpe:2.3:a:oss:netty:3.10.5.Final:*:*:*:*:*:*:*"
     ],
     "purl": "pkg:maven/io.netty/netty@3.10.5.Final",
     "upstreams": [],
     "metadataType": "JavaMetadata",
     "metadata": {
-     "virtualPath": "/usr/local/zookeeper-3.4.10/lib/netty-3.10.5.Final.jar",
+     "virtualPath": "/usr/local/zookeeper-3.4.10/contrib/fatjar/zookeeper-3.4.10-fatjar.jar:io.netty:netty",
      "pomArtifactID": "netty",
      "pomGroupID": "io.netty",
      "manifestName": "",
-     "archiveDigests": [
-      {
-       "algorithm": "sha1",
-       "value": "9ca7d55d246092bddd29b867706e2f6c7db701a0"
-      }
-     ]
+     "archiveDigests": null
     }
    }
   },
@@ -27009,32 +27000,41 @@
     }
    ],
    "artifact": {
-    "id": "e266c69bf9208dbe",
+    "id": "70b1c14c35eafe79",
     "name": "netty",
     "version": "3.10.5.Final",
     "type": "java-archive",
     "locations": [
      {
-      "path": "/usr/local/zookeeper-3.4.10/contrib/fatjar/zookeeper-3.4.10-fatjar.jar",
+      "path": "/usr/local/zookeeper-3.4.10/lib/netty-3.10.5.Final.jar",
       "layerID": "sha256:190482cb294ece8fddfe12ca8d05641887763a3955314a5aaa6d23b6587fe452"
      }
     ],
     "language": "java",
-    "licenses": [],
+    "licenses": [
+     "http://www.apache.org/licenses/LICENSE-2.0"
+    ],
     "cpes": [
-     "cpe:2.3:a:sonatype:netty:3.10.5.Final:*:*:*:*:*:*:*",
+     "cpe:2.3:a:NettyBundleActivator:netty:3.10.5.Final:*:*:*:*:*:*:*",
+     "cpe:2.3:a:container:netty:3.10.5.Final:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jboss:netty:3.10.5.Final:*:*:*:*:*:*:*",
      "cpe:2.3:a:netty:netty:3.10.5.Final:*:*:*:*:*:*:*",
-     "cpe:2.3:a:oss:netty:3.10.5.Final:*:*:*:*:*:*:*"
+     "cpe:2.3:a:osgi:netty:3.10.5.Final:*:*:*:*:*:*:*"
     ],
     "purl": "pkg:maven/io.netty/netty@3.10.5.Final",
     "upstreams": [],
     "metadataType": "JavaMetadata",
     "metadata": {
-     "virtualPath": "/usr/local/zookeeper-3.4.10/contrib/fatjar/zookeeper-3.4.10-fatjar.jar:io.netty:netty",
+     "virtualPath": "/usr/local/zookeeper-3.4.10/lib/netty-3.10.5.Final.jar",
      "pomArtifactID": "netty",
      "pomGroupID": "io.netty",
      "manifestName": "",
-     "archiveDigests": null
+     "archiveDigests": [
+      {
+       "algorithm": "sha1",
+       "value": "9ca7d55d246092bddd29b867706e2f6c7db701a0"
+      }
+     ]
     }
    }
   },
@@ -27785,32 +27785,41 @@
     }
    ],
    "artifact": {
-    "id": "e266c69bf9208dbe",
+    "id": "70b1c14c35eafe79",
     "name": "netty",
     "version": "3.10.5.Final",
     "type": "java-archive",
     "locations": [
      {
-      "path": "/usr/local/zookeeper-3.4.10/contrib/fatjar/zookeeper-3.4.10-fatjar.jar",
+      "path": "/usr/local/zookeeper-3.4.10/lib/netty-3.10.5.Final.jar",
       "layerID": "sha256:190482cb294ece8fddfe12ca8d05641887763a3955314a5aaa6d23b6587fe452"
      }
     ],
     "language": "java",
-    "licenses": [],
+    "licenses": [
+     "http://www.apache.org/licenses/LICENSE-2.0"
+    ],
     "cpes": [
-     "cpe:2.3:a:sonatype:netty:3.10.5.Final:*:*:*:*:*:*:*",
+     "cpe:2.3:a:NettyBundleActivator:netty:3.10.5.Final:*:*:*:*:*:*:*",
+     "cpe:2.3:a:container:netty:3.10.5.Final:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jboss:netty:3.10.5.Final:*:*:*:*:*:*:*",
      "cpe:2.3:a:netty:netty:3.10.5.Final:*:*:*:*:*:*:*",
-     "cpe:2.3:a:oss:netty:3.10.5.Final:*:*:*:*:*:*:*"
+     "cpe:2.3:a:osgi:netty:3.10.5.Final:*:*:*:*:*:*:*"
     ],
     "purl": "pkg:maven/io.netty/netty@3.10.5.Final",
     "upstreams": [],
     "metadataType": "JavaMetadata",
     "metadata": {
-     "virtualPath": "/usr/local/zookeeper-3.4.10/contrib/fatjar/zookeeper-3.4.10-fatjar.jar:io.netty:netty",
+     "virtualPath": "/usr/local/zookeeper-3.4.10/lib/netty-3.10.5.Final.jar",
      "pomArtifactID": "netty",
      "pomGroupID": "io.netty",
      "manifestName": "",
-     "archiveDigests": null
+     "archiveDigests": [
+      {
+       "algorithm": "sha1",
+       "value": "9ca7d55d246092bddd29b867706e2f6c7db701a0"
+      }
+     ]
     }
    }
   },
@@ -27983,196 +27992,32 @@
     }
    ],
    "artifact": {
-    "id": "70b1c14c35eafe79",
+    "id": "e266c69bf9208dbe",
     "name": "netty",
     "version": "3.10.5.Final",
     "type": "java-archive",
     "locations": [
      {
-      "path": "/usr/local/zookeeper-3.4.10/lib/netty-3.10.5.Final.jar",
+      "path": "/usr/local/zookeeper-3.4.10/contrib/fatjar/zookeeper-3.4.10-fatjar.jar",
       "layerID": "sha256:190482cb294ece8fddfe12ca8d05641887763a3955314a5aaa6d23b6587fe452"
      }
     ],
     "language": "java",
-    "licenses": [
-     "http://www.apache.org/licenses/LICENSE-2.0"
-    ],
+    "licenses": [],
     "cpes": [
-     "cpe:2.3:a:NettyBundleActivator:netty:3.10.5.Final:*:*:*:*:*:*:*",
-     "cpe:2.3:a:container:netty:3.10.5.Final:*:*:*:*:*:*:*",
-     "cpe:2.3:a:jboss:netty:3.10.5.Final:*:*:*:*:*:*:*",
+     "cpe:2.3:a:sonatype:netty:3.10.5.Final:*:*:*:*:*:*:*",
      "cpe:2.3:a:netty:netty:3.10.5.Final:*:*:*:*:*:*:*",
-     "cpe:2.3:a:osgi:netty:3.10.5.Final:*:*:*:*:*:*:*"
+     "cpe:2.3:a:oss:netty:3.10.5.Final:*:*:*:*:*:*:*"
     ],
     "purl": "pkg:maven/io.netty/netty@3.10.5.Final",
     "upstreams": [],
     "metadataType": "JavaMetadata",
     "metadata": {
-     "virtualPath": "/usr/local/zookeeper-3.4.10/lib/netty-3.10.5.Final.jar",
+     "virtualPath": "/usr/local/zookeeper-3.4.10/contrib/fatjar/zookeeper-3.4.10-fatjar.jar:io.netty:netty",
      "pomArtifactID": "netty",
      "pomGroupID": "io.netty",
      "manifestName": "",
-     "archiveDigests": [
-      {
-       "algorithm": "sha1",
-       "value": "9ca7d55d246092bddd29b867706e2f6c7db701a0"
-      }
-     ]
-    }
-   }
-  },
-  {
-   "vulnerability": {
-    "id": "CVE-2021-21290",
-    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-21290",
-    "namespace": "nvd:cpe",
-    "severity": "Medium",
-    "urls": [
-     "https://github.com/netty/netty/commit/c735357bf29d07856ad171c6611a2e1a0e0000ec",
-     "https://github.com/netty/netty/security/advisories/GHSA-5mcr-gq6c-3hq2",
-     "https://lists.apache.org/thread.html/r0053443ce19ff125981559f8c51cf66e3ab4350f47812b8cf0733a05@%3Cdev.kafka.apache.org%3E",
-     "https://lists.apache.org/thread.html/r02e467123d45006a1dda20a38349e9c74c3a4b53e2e07be0939ecb3f@%3Cdev.ranger.apache.org%3E",
-     "https://lists.apache.org/thread.html/r0857b613604c696bf9743f0af047360baaded48b1c75cf6945a083c5@%3Cjira.kafka.apache.org%3E",
-     "https://lists.apache.org/thread.html/r10308b625e49d4e9491d7e079606ca0df2f0a4d828f1ad1da64ba47b@%3Cjira.kafka.apache.org%3E",
-     "https://lists.apache.org/thread.html/r1908a34b9cc7120e5c19968a116ddbcffea5e9deb76c2be4fa461904@%3Cdev.zookeeper.apache.org%3E",
-     "https://lists.apache.org/thread.html/r2748097ea4b774292539cf3de6e3b267fc7a88d6c8ec40f4e2e87bd4@%3Cdev.kafka.apache.org%3E",
-     "https://lists.apache.org/thread.html/r2936730ef0a06e724b96539bc7eacfcd3628987c16b1b99c790e7b87@%3Cissues.zookeeper.apache.org%3E",
-     "https://lists.apache.org/thread.html/r2fda4dab73097051977f2ab818f75e04fbcb15bb1003c8530eac1059@%3Cjira.kafka.apache.org%3E",
-     "https://lists.apache.org/thread.html/r326ec431f06eab7cb7113a7a338e59731b8d556d05258457f12bac1b@%3Cdev.kafka.apache.org%3E",
-     "https://lists.apache.org/thread.html/r4efed2c501681cb2e8d629da16e48d9eac429624fd4c9a8c6b8e7020@%3Cdev.tinkerpop.apache.org%3E",
-     "https://lists.apache.org/thread.html/r584cf871f188c406d8bd447ff4e2fd9817fca862436c064d0951a071@%3Ccommits.pulsar.apache.org%3E",
-     "https://lists.apache.org/thread.html/r59bac5c09f7a4179b9e2460e8f41c278aaf3b9a21cc23678eb893e41@%3Cjira.kafka.apache.org%3E",
-     "https://lists.apache.org/thread.html/r5bf303d7c04da78f276765da08559fdc62420f1df539b277ca31f63b@%3Cissues.zookeeper.apache.org%3E",
-     "https://lists.apache.org/thread.html/r5c701840aa2845191721e39821445e1e8c59711e71942b7796a6ec29@%3Cusers.activemq.apache.org%3E",
-     "https://lists.apache.org/thread.html/r5e4a540089760c8ecc2c411309d74264f1dad634ad93ad583ca16214@%3Ccommits.kafka.apache.org%3E",
-     "https://lists.apache.org/thread.html/r5e66e286afb5506cdfe9bbf68a323e8d09614f6d1ddc806ed0224700@%3Cjira.kafka.apache.org%3E",
-     "https://lists.apache.org/thread.html/r71dbb66747ff537640bb91eb0b2b24edef21ac07728097016f58b01f@%3Ccommits.kafka.apache.org%3E",
-     "https://lists.apache.org/thread.html/r743149dcc8db1de473e6bff0b3ddf10140a7357bc2add75f7d1fbb12@%3Cdev.zookeeper.apache.org%3E",
-     "https://lists.apache.org/thread.html/r790c2926efcd062067eb18fde2486527596d7275381cfaff2f7b3890@%3Cissues.bookkeeper.apache.org%3E",
-     "https://lists.apache.org/thread.html/r7bb3cdc192e9a6f863d3ea05422f09fa1ae2b88d4663e63696ee7ef5@%3Cdev.ranger.apache.org%3E",
-     "https://lists.apache.org/thread.html/r9924ef9357537722b28d04c98a189750b80694a19754e5057c34ca48@%3Ccommits.pulsar.apache.org%3E",
-     "https://lists.apache.org/thread.html/ra0fc2b4553dd7aaf75febb61052b7f1243ac3a180a71c01f29093013@%3Cjira.kafka.apache.org%3E",
-     "https://lists.apache.org/thread.html/ra503756ced78fdc2136bd33e87cb7553028645b261b1f5c6186a121e@%3Cjira.kafka.apache.org%3E",
-     "https://lists.apache.org/thread.html/rb06c1e766aa45ee422e8261a8249b561784186483e8f742ea627bda4@%3Cdev.kafka.apache.org%3E",
-     "https://lists.apache.org/thread.html/rb51d6202ff1a773f96eaa694b7da4ad3f44922c40b3d4e1a19c2f325@%3Ccommits.pulsar.apache.org%3E",
-     "https://lists.apache.org/thread.html/rb592033a2462548d061a83ac9449c5ff66098751748fcd1e2d008233@%3Cissues.zookeeper.apache.org%3E",
-     "https://lists.apache.org/thread.html/rc0087125cb15b4b78e44000f841cd37fefedfda942fd7ddf3ad1b528@%3Cissues.zookeeper.apache.org%3E",
-     "https://lists.apache.org/thread.html/rc488f80094872ad925f0c73d283d4c00d32def81977438e27a3dc2bb@%3Cjira.kafka.apache.org%3E",
-     "https://lists.apache.org/thread.html/rcd163e421273e8dca1c71ea298dce3dd11b41d51c3a812e0394e6a5d@%3Ccommits.pulsar.apache.org%3E",
-     "https://lists.apache.org/thread.html/rdba4f78ac55f803893a1a2265181595e79e3aa027e2e651dfba98c18@%3Cjira.kafka.apache.org%3E",
-     "https://lists.debian.org/debian-lts-announce/2021/02/msg00016.html",
-     "https://security.netapp.com/advisory/ntap-20220210-0011/",
-     "https://www.debian.org/security/2021/dsa-4885",
-     "https://www.oracle.com//security-alerts/cpujul2021.html",
-     "https://www.oracle.com/security-alerts/cpuApr2021.html",
-     "https://www.oracle.com/security-alerts/cpuapr2022.html",
-     "https://www.oracle.com/security-alerts/cpuoct2021.html"
-    ],
-    "description": "Netty is an open-source, asynchronous event-driven network application framework for rapid development of maintainable high performance protocol servers & clients. In Netty before version 4.1.59.Final there is a vulnerability on Unix-like systems involving an insecure temp file. When netty's multipart decoders are used local information disclosure can occur via the local system temporary directory if temporary storing uploads on the disk is enabled. On unix-like systems, the temporary directory is shared between all user. As such, writing to this directory using APIs that do not explicitly set the file/directory permissions can lead to information disclosure. Of note, this does not impact modern MacOS Operating Systems. The method \"File.createTempFile\" on unix-like systems creates a random file, but, by default will create this file with the permissions \"-rw-r--r--\". Thus, if sensitive information is written to this file, other local users can read this information. This is the case in netty's \"AbstractDiskHttpData\" is vulnerable. This has been fixed in version 4.1.59.Final. As a workaround, one may specify your own \"java.io.tmpdir\" when you start the JVM or use \"DefaultHttpDataFactory.setBaseDir(...)\" to set the directory to something that is only readable by the current user.",
-    "cvss": [
-     {
-      "source": "nvd@nist.gov",
-      "type": "Primary",
-      "version": "2.0",
-      "vector": "AV:L/AC:M/Au:N/C:P/I:N/A:N",
-      "metrics": {
-       "baseScore": 1.9,
-       "exploitabilityScore": 3.4,
-       "impactScore": 2.9
-      },
-      "vendorMetadata": {}
-     },
-     {
-      "source": "nvd@nist.gov",
-      "type": "Primary",
-      "version": "3.1",
-      "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
-      "metrics": {
-       "baseScore": 5.5,
-       "exploitabilityScore": 1.8,
-       "impactScore": 3.6
-      },
-      "vendorMetadata": {}
-     },
-     {
-      "source": "security-advisories@github.com",
-      "type": "Secondary",
-      "version": "3.1",
-      "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
-      "metrics": {
-       "baseScore": 6.2,
-       "exploitabilityScore": 2.5,
-       "impactScore": 3.6
-      },
-      "vendorMetadata": {}
-     }
-    ],
-    "fix": {
-     "versions": [],
-     "state": "unknown"
-    },
-    "advisories": []
-   },
-   "relatedVulnerabilities": [],
-   "matchDetails": [
-    {
-     "type": "cpe-match",
-     "matcher": "java-matcher",
-     "searchedBy": {
-      "namespace": "nvd:cpe",
-      "cpes": [
-       "cpe:2.3:a:netty:netty:3.10.5.Final:*:*:*:*:*:*:*"
-      ],
-      "Package": {
-       "name": "netty",
-       "version": "3.10.5.Final"
-      }
-     },
-     "found": {
-      "vulnerabilityID": "CVE-2021-21290",
-      "versionConstraint": "< 4.1.59 (unknown)",
-      "cpes": [
-       "cpe:2.3:a:netty:netty:*:*:*:*:*:*:*:*"
-      ]
-     }
-    }
-   ],
-   "artifact": {
-    "id": "70b1c14c35eafe79",
-    "name": "netty",
-    "version": "3.10.5.Final",
-    "type": "java-archive",
-    "locations": [
-     {
-      "path": "/usr/local/zookeeper-3.4.10/lib/netty-3.10.5.Final.jar",
-      "layerID": "sha256:190482cb294ece8fddfe12ca8d05641887763a3955314a5aaa6d23b6587fe452"
-     }
-    ],
-    "language": "java",
-    "licenses": [
-     "http://www.apache.org/licenses/LICENSE-2.0"
-    ],
-    "cpes": [
-     "cpe:2.3:a:NettyBundleActivator:netty:3.10.5.Final:*:*:*:*:*:*:*",
-     "cpe:2.3:a:container:netty:3.10.5.Final:*:*:*:*:*:*:*",
-     "cpe:2.3:a:jboss:netty:3.10.5.Final:*:*:*:*:*:*:*",
-     "cpe:2.3:a:netty:netty:3.10.5.Final:*:*:*:*:*:*:*",
-     "cpe:2.3:a:osgi:netty:3.10.5.Final:*:*:*:*:*:*:*"
-    ],
-    "purl": "pkg:maven/io.netty/netty@3.10.5.Final",
-    "upstreams": [],
-    "metadataType": "JavaMetadata",
-    "metadata": {
-     "virtualPath": "/usr/local/zookeeper-3.4.10/lib/netty-3.10.5.Final.jar",
-     "pomArtifactID": "netty",
-     "pomGroupID": "io.netty",
-     "manifestName": "",
-     "archiveDigests": [
-      {
-       "algorithm": "sha1",
-       "value": "9ca7d55d246092bddd29b867706e2f6c7db701a0"
-      }
-     ]
+     "archiveDigests": null
     }
    }
   },
@@ -28319,6 +28164,161 @@
      "pomGroupID": "io.netty",
      "manifestName": "",
      "archiveDigests": null
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2021-21290",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-21290",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/netty/netty/commit/c735357bf29d07856ad171c6611a2e1a0e0000ec",
+     "https://github.com/netty/netty/security/advisories/GHSA-5mcr-gq6c-3hq2",
+     "https://lists.apache.org/thread.html/r0053443ce19ff125981559f8c51cf66e3ab4350f47812b8cf0733a05@%3Cdev.kafka.apache.org%3E",
+     "https://lists.apache.org/thread.html/r02e467123d45006a1dda20a38349e9c74c3a4b53e2e07be0939ecb3f@%3Cdev.ranger.apache.org%3E",
+     "https://lists.apache.org/thread.html/r0857b613604c696bf9743f0af047360baaded48b1c75cf6945a083c5@%3Cjira.kafka.apache.org%3E",
+     "https://lists.apache.org/thread.html/r10308b625e49d4e9491d7e079606ca0df2f0a4d828f1ad1da64ba47b@%3Cjira.kafka.apache.org%3E",
+     "https://lists.apache.org/thread.html/r1908a34b9cc7120e5c19968a116ddbcffea5e9deb76c2be4fa461904@%3Cdev.zookeeper.apache.org%3E",
+     "https://lists.apache.org/thread.html/r2748097ea4b774292539cf3de6e3b267fc7a88d6c8ec40f4e2e87bd4@%3Cdev.kafka.apache.org%3E",
+     "https://lists.apache.org/thread.html/r2936730ef0a06e724b96539bc7eacfcd3628987c16b1b99c790e7b87@%3Cissues.zookeeper.apache.org%3E",
+     "https://lists.apache.org/thread.html/r2fda4dab73097051977f2ab818f75e04fbcb15bb1003c8530eac1059@%3Cjira.kafka.apache.org%3E",
+     "https://lists.apache.org/thread.html/r326ec431f06eab7cb7113a7a338e59731b8d556d05258457f12bac1b@%3Cdev.kafka.apache.org%3E",
+     "https://lists.apache.org/thread.html/r4efed2c501681cb2e8d629da16e48d9eac429624fd4c9a8c6b8e7020@%3Cdev.tinkerpop.apache.org%3E",
+     "https://lists.apache.org/thread.html/r584cf871f188c406d8bd447ff4e2fd9817fca862436c064d0951a071@%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/r59bac5c09f7a4179b9e2460e8f41c278aaf3b9a21cc23678eb893e41@%3Cjira.kafka.apache.org%3E",
+     "https://lists.apache.org/thread.html/r5bf303d7c04da78f276765da08559fdc62420f1df539b277ca31f63b@%3Cissues.zookeeper.apache.org%3E",
+     "https://lists.apache.org/thread.html/r5c701840aa2845191721e39821445e1e8c59711e71942b7796a6ec29@%3Cusers.activemq.apache.org%3E",
+     "https://lists.apache.org/thread.html/r5e4a540089760c8ecc2c411309d74264f1dad634ad93ad583ca16214@%3Ccommits.kafka.apache.org%3E",
+     "https://lists.apache.org/thread.html/r5e66e286afb5506cdfe9bbf68a323e8d09614f6d1ddc806ed0224700@%3Cjira.kafka.apache.org%3E",
+     "https://lists.apache.org/thread.html/r71dbb66747ff537640bb91eb0b2b24edef21ac07728097016f58b01f@%3Ccommits.kafka.apache.org%3E",
+     "https://lists.apache.org/thread.html/r743149dcc8db1de473e6bff0b3ddf10140a7357bc2add75f7d1fbb12@%3Cdev.zookeeper.apache.org%3E",
+     "https://lists.apache.org/thread.html/r790c2926efcd062067eb18fde2486527596d7275381cfaff2f7b3890@%3Cissues.bookkeeper.apache.org%3E",
+     "https://lists.apache.org/thread.html/r7bb3cdc192e9a6f863d3ea05422f09fa1ae2b88d4663e63696ee7ef5@%3Cdev.ranger.apache.org%3E",
+     "https://lists.apache.org/thread.html/r9924ef9357537722b28d04c98a189750b80694a19754e5057c34ca48@%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/ra0fc2b4553dd7aaf75febb61052b7f1243ac3a180a71c01f29093013@%3Cjira.kafka.apache.org%3E",
+     "https://lists.apache.org/thread.html/ra503756ced78fdc2136bd33e87cb7553028645b261b1f5c6186a121e@%3Cjira.kafka.apache.org%3E",
+     "https://lists.apache.org/thread.html/rb06c1e766aa45ee422e8261a8249b561784186483e8f742ea627bda4@%3Cdev.kafka.apache.org%3E",
+     "https://lists.apache.org/thread.html/rb51d6202ff1a773f96eaa694b7da4ad3f44922c40b3d4e1a19c2f325@%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/rb592033a2462548d061a83ac9449c5ff66098751748fcd1e2d008233@%3Cissues.zookeeper.apache.org%3E",
+     "https://lists.apache.org/thread.html/rc0087125cb15b4b78e44000f841cd37fefedfda942fd7ddf3ad1b528@%3Cissues.zookeeper.apache.org%3E",
+     "https://lists.apache.org/thread.html/rc488f80094872ad925f0c73d283d4c00d32def81977438e27a3dc2bb@%3Cjira.kafka.apache.org%3E",
+     "https://lists.apache.org/thread.html/rcd163e421273e8dca1c71ea298dce3dd11b41d51c3a812e0394e6a5d@%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/rdba4f78ac55f803893a1a2265181595e79e3aa027e2e651dfba98c18@%3Cjira.kafka.apache.org%3E",
+     "https://lists.debian.org/debian-lts-announce/2021/02/msg00016.html",
+     "https://security.netapp.com/advisory/ntap-20220210-0011/",
+     "https://www.debian.org/security/2021/dsa-4885",
+     "https://www.oracle.com//security-alerts/cpujul2021.html",
+     "https://www.oracle.com/security-alerts/cpuApr2021.html",
+     "https://www.oracle.com/security-alerts/cpuapr2022.html",
+     "https://www.oracle.com/security-alerts/cpuoct2021.html"
+    ],
+    "description": "Netty is an open-source, asynchronous event-driven network application framework for rapid development of maintainable high performance protocol servers & clients. In Netty before version 4.1.59.Final there is a vulnerability on Unix-like systems involving an insecure temp file. When netty's multipart decoders are used local information disclosure can occur via the local system temporary directory if temporary storing uploads on the disk is enabled. On unix-like systems, the temporary directory is shared between all user. As such, writing to this directory using APIs that do not explicitly set the file/directory permissions can lead to information disclosure. Of note, this does not impact modern MacOS Operating Systems. The method \"File.createTempFile\" on unix-like systems creates a random file, but, by default will create this file with the permissions \"-rw-r--r--\". Thus, if sensitive information is written to this file, other local users can read this information. This is the case in netty's \"AbstractDiskHttpData\" is vulnerable. This has been fixed in version 4.1.59.Final. As a workaround, one may specify your own \"java.io.tmpdir\" when you start the JVM or use \"DefaultHttpDataFactory.setBaseDir(...)\" to set the directory to something that is only readable by the current user.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "2.0",
+      "vector": "AV:L/AC:M/Au:N/C:P/I:N/A:N",
+      "metrics": {
+       "baseScore": 1.9,
+       "exploitabilityScore": 3.4,
+       "impactScore": 2.9
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+      "metrics": {
+       "baseScore": 5.5,
+       "exploitabilityScore": 1.8,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "source": "security-advisories@github.com",
+      "type": "Secondary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "metrics": {
+       "baseScore": 6.2,
+       "exploitabilityScore": 2.5,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:netty:netty:3.10.5.Final:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "netty",
+       "version": "3.10.5.Final"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2021-21290",
+      "versionConstraint": "< 4.1.59 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:netty:netty:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "70b1c14c35eafe79",
+    "name": "netty",
+    "version": "3.10.5.Final",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "/usr/local/zookeeper-3.4.10/lib/netty-3.10.5.Final.jar",
+      "layerID": "sha256:190482cb294ece8fddfe12ca8d05641887763a3955314a5aaa6d23b6587fe452"
+     }
+    ],
+    "language": "java",
+    "licenses": [
+     "http://www.apache.org/licenses/LICENSE-2.0"
+    ],
+    "cpes": [
+     "cpe:2.3:a:NettyBundleActivator:netty:3.10.5.Final:*:*:*:*:*:*:*",
+     "cpe:2.3:a:container:netty:3.10.5.Final:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jboss:netty:3.10.5.Final:*:*:*:*:*:*:*",
+     "cpe:2.3:a:netty:netty:3.10.5.Final:*:*:*:*:*:*:*",
+     "cpe:2.3:a:osgi:netty:3.10.5.Final:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/io.netty/netty@3.10.5.Final",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "/usr/local/zookeeper-3.4.10/lib/netty-3.10.5.Final.jar",
+     "pomArtifactID": "netty",
+     "pomGroupID": "io.netty",
+     "manifestName": "",
+     "archiveDigests": [
+      {
+       "algorithm": "sha1",
+       "value": "9ca7d55d246092bddd29b867706e2f6c7db701a0"
+      }
+     ]
     }
    }
   },
@@ -29243,13 +29243,13 @@
     }
    ],
    "artifact": {
-    "id": "76db096bf68bb39f",
+    "id": "92c62bb349702891",
     "name": "zookeeper",
     "version": "3.4.10",
     "type": "java-archive",
     "locations": [
      {
-      "path": "/usr/local/zookeeper-3.4.10/zookeeper-3.4.10.jar",
+      "path": "/usr/local/zookeeper-3.4.10/dist-maven/zookeeper-3.4.10.jar",
       "layerID": "sha256:190482cb294ece8fddfe12ca8d05641887763a3955314a5aaa6d23b6587fe452"
      }
     ],
@@ -29265,14 +29265,14 @@
     "upstreams": [],
     "metadataType": "JavaMetadata",
     "metadata": {
-     "virtualPath": "/usr/local/zookeeper-3.4.10/zookeeper-3.4.10.jar",
+     "virtualPath": "/usr/local/zookeeper-3.4.10/dist-maven/zookeeper-3.4.10.jar",
      "pomArtifactID": "",
      "pomGroupID": "",
      "manifestName": "",
      "archiveDigests": [
       {
        "algorithm": "sha1",
-       "value": "d276cb84ef1ace18245ead2f6b9aa88e21e14993"
+       "value": "eb5fc741f2ac33e1c49eedf0ae49bc530cd111c5"
       }
      ]
     }
@@ -29364,13 +29364,13 @@
     }
    ],
    "artifact": {
-    "id": "92c62bb349702891",
+    "id": "76db096bf68bb39f",
     "name": "zookeeper",
     "version": "3.4.10",
     "type": "java-archive",
     "locations": [
      {
-      "path": "/usr/local/zookeeper-3.4.10/dist-maven/zookeeper-3.4.10.jar",
+      "path": "/usr/local/zookeeper-3.4.10/zookeeper-3.4.10.jar",
       "layerID": "sha256:190482cb294ece8fddfe12ca8d05641887763a3955314a5aaa6d23b6587fe452"
      }
     ],
@@ -29386,14 +29386,14 @@
     "upstreams": [],
     "metadataType": "JavaMetadata",
     "metadata": {
-     "virtualPath": "/usr/local/zookeeper-3.4.10/dist-maven/zookeeper-3.4.10.jar",
+     "virtualPath": "/usr/local/zookeeper-3.4.10/zookeeper-3.4.10.jar",
      "pomArtifactID": "",
      "pomGroupID": "",
      "manifestName": "",
      "archiveDigests": [
       {
        "algorithm": "sha1",
-       "value": "eb5fc741f2ac33e1c49eedf0ae49bc530cd111c5"
+       "value": "d276cb84ef1ace18245ead2f6b9aa88e21e14993"
       }
      ]
     }
@@ -31683,12 +31683,12 @@
    "vex-add": []
   },
   "db": {
-   "built": "2023-10-10T01:23:53Z",
+   "built": "2023-10-11T01:24:08Z",
    "schemaVersion": 5,
    "location": "/home/anon/.cache/grype/db/5",
-   "checksum": "sha256:c1dd693b90da9833fd1716f9d2432de66004be2bd188e882392b0076a589cbf4",
+   "checksum": "sha256:16423ac3a1c3cd30cfe138851c91e7ba24290ec499065e861cb0a90ecb50a059",
    "error": null
   },
-  "timestamp": "2023-10-10T16:38:09.232438155-04:00"
+  "timestamp": "2023-10-11T21:50:05.059858471-04:00"
  }
 }

@@ -820,13 +820,13 @@
     }
    ],
    "artifact": {
-    "id": "57332fa79f17a504",
+    "id": "202bd248dd0cc780",
     "name": "github.com/prometheus/alertmanager",
     "version": "v0.25.0",
     "type": "go-module",
     "locations": [
      {
-      "path": "/opt/bitnami/prometheus/bin/prometheus",
+      "path": "/opt/bitnami/prometheus/bin/promtool",
       "layerID": "sha256:4ee2b20f51b0ed392e9bdc91369017e44ab4d83262e6ce8dd8b4fd8f8e731565"
      }
     ],
@@ -1052,107 +1052,13 @@
     }
    ],
    "artifact": {
-    "id": "202bd248dd0cc780",
+    "id": "57332fa79f17a504",
     "name": "github.com/prometheus/alertmanager",
     "version": "v0.25.0",
     "type": "go-module",
     "locations": [
      {
-      "path": "/opt/bitnami/prometheus/bin/promtool",
-      "layerID": "sha256:4ee2b20f51b0ed392e9bdc91369017e44ab4d83262e6ce8dd8b4fd8f8e731565"
-     }
-    ],
-    "language": "go",
-    "licenses": [],
-    "cpes": [
-     "cpe:2.3:a:prometheus:alertmanager:v0.25.0:*:*:*:*:*:*:*"
-    ],
-    "purl": "pkg:golang/github.com/prometheus/alertmanager@v0.25.0",
-    "upstreams": [],
-    "metadataType": "GolangBinMetadata",
-    "metadata": {
-     "goCompiledVersion": "go1.20.9",
-     "architecture": "amd64",
-     "h1Digest": "h1:vbXKUR6PYRiZPRIKfmXaG+dmCKG52RtPL4Btl8hQGvg=",
-     "mainModule": "github.com/prometheus/prometheus"
-    }
-   }
-  },
-  {
-   "vulnerability": {
-    "id": "CVE-2023-40577",
-    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-40577",
-    "namespace": "nvd:cpe",
-    "severity": "Medium",
-    "urls": [
-     "https://github.com/prometheus/alertmanager/security/advisories/GHSA-v86x-5fm3-5p7j",
-     "https://lists.debian.org/debian-lts-announce/2023/10/msg00011.html"
-    ],
-    "description": "Alertmanager handles alerts sent by client applications such as the Prometheus server. An attacker with the permission to perform POST requests on the /api/v1/alerts endpoint could be able to execute arbitrary JavaScript code on the users of Prometheus Alertmanager. This issue has been fixed in Alertmanager version 0.2.51.",
-    "cvss": [
-     {
-      "source": "nvd@nist.gov",
-      "type": "Primary",
-      "version": "3.1",
-      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
-      "metrics": {
-       "baseScore": 5.4,
-       "exploitabilityScore": 2.3,
-       "impactScore": 2.7
-      },
-      "vendorMetadata": {}
-     },
-     {
-      "source": "security-advisories@github.com",
-      "type": "Secondary",
-      "version": "3.1",
-      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
-      "metrics": {
-       "baseScore": 7.5,
-       "exploitabilityScore": 3.9,
-       "impactScore": 3.6
-      },
-      "vendorMetadata": {}
-     }
-    ],
-    "fix": {
-     "versions": [],
-     "state": "unknown"
-    },
-    "advisories": []
-   },
-   "relatedVulnerabilities": [],
-   "matchDetails": [
-    {
-     "type": "cpe-match",
-     "matcher": "go-module-matcher",
-     "searchedBy": {
-      "namespace": "nvd:cpe",
-      "cpes": [
-       "cpe:2.3:a:prometheus:alertmanager:v0.25.0:*:*:*:*:*:*:*"
-      ],
-      "Package": {
-       "name": "github.com/prometheus/alertmanager",
-       "version": "v0.25.0"
-      }
-     },
-     "found": {
-      "vulnerabilityID": "CVE-2023-40577",
-      "versionConstraint": "= 0.25.0 (unknown)",
-      "cpes": [
-       "cpe:2.3:a:prometheus:alertmanager:0.25.0:*:*:*:*:*:*:*"
-      ]
-     }
-    }
-   ],
-   "artifact": {
-    "id": "202bd248dd0cc780",
-    "name": "github.com/prometheus/alertmanager",
-    "version": "v0.25.0",
-    "type": "go-module",
-    "locations": [
-     {
-      "path": "/opt/bitnami/prometheus/bin/promtool",
+      "path": "/opt/bitnami/prometheus/bin/prometheus",
       "layerID": "sha256:4ee2b20f51b0ed392e9bdc91369017e44ab4d83262e6ce8dd8b4fd8f8e731565"
      }
     ],
@@ -1247,6 +1153,100 @@
     "locations": [
      {
       "path": "/opt/bitnami/prometheus/bin/prometheus",
+      "layerID": "sha256:4ee2b20f51b0ed392e9bdc91369017e44ab4d83262e6ce8dd8b4fd8f8e731565"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:prometheus:alertmanager:v0.25.0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/prometheus/alertmanager@v0.25.0",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.20.9",
+     "architecture": "amd64",
+     "h1Digest": "h1:vbXKUR6PYRiZPRIKfmXaG+dmCKG52RtPL4Btl8hQGvg=",
+     "mainModule": "github.com/prometheus/prometheus"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-40577",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-40577",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/prometheus/alertmanager/security/advisories/GHSA-v86x-5fm3-5p7j",
+     "https://lists.debian.org/debian-lts-announce/2023/10/msg00011.html"
+    ],
+    "description": "Alertmanager handles alerts sent by client applications such as the Prometheus server. An attacker with the permission to perform POST requests on the /api/v1/alerts endpoint could be able to execute arbitrary JavaScript code on the users of Prometheus Alertmanager. This issue has been fixed in Alertmanager version 0.2.51.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+      "metrics": {
+       "baseScore": 5.4,
+       "exploitabilityScore": 2.3,
+       "impactScore": 2.7
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "source": "security-advisories@github.com",
+      "type": "Secondary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:prometheus:alertmanager:v0.25.0:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "github.com/prometheus/alertmanager",
+       "version": "v0.25.0"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2023-40577",
+      "versionConstraint": "= 0.25.0 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:prometheus:alertmanager:0.25.0:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "202bd248dd0cc780",
+    "name": "github.com/prometheus/alertmanager",
+    "version": "v0.25.0",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/opt/bitnami/prometheus/bin/promtool",
       "layerID": "sha256:4ee2b20f51b0ed392e9bdc91369017e44ab4d83262e6ce8dd8b4fd8f8e731565"
      }
     ],
@@ -10767,12 +10767,12 @@
    "vex-add": []
   },
   "db": {
-   "built": "2023-10-10T01:23:53Z",
+   "built": "2023-10-11T01:24:08Z",
    "schemaVersion": 5,
    "location": "/home/anon/.cache/grype/db/5",
-   "checksum": "sha256:c1dd693b90da9833fd1716f9d2432de66004be2bd188e882392b0076a589cbf4",
+   "checksum": "sha256:16423ac3a1c3cd30cfe138851c91e7ba24290ec499065e861cb0a90ecb50a059",
    "error": null
   },
-  "timestamp": "2023-10-10T16:40:01.668277985-04:00"
+  "timestamp": "2023-10-11T21:51:04.787517107-04:00"
  }
 }

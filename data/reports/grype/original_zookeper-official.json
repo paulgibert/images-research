@@ -1714,6 +1714,149 @@
   },
   {
    "vulnerability": {
+    "id": "GHSA-wgh7-54f2-x98r",
+    "dataSource": "https://github.com/advisories/GHSA-wgh7-54f2-x98r",
+    "namespace": "github:language:java",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-wgh7-54f2-x98r"
+    ],
+    "description": "HTTP/2 HPACK integer overflow and buffer allocation",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "9.4.53"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-36478",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-36478",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/eclipse/jetty.project/pull/9634",
+      "https://github.com/eclipse/jetty.project/releases/tag/jetty-10.0.16",
+      "https://github.com/eclipse/jetty.project/releases/tag/jetty-11.0.16",
+      "https://github.com/eclipse/jetty.project/releases/tag/jetty-9.4.53.v20231009",
+      "https://github.com/eclipse/jetty.project/security/advisories/GHSA-wgh7-54f2-x98r"
+     ],
+     "description": "Eclipse Jetty provides a web server and servlet container. In versions 11.0.0 through 11.0.15, 10.0.0 through 10.0.15, and 9.0.0 through 9.4.52, an integer overflow in `MetaDataBuilder.checkSize` allows for HTTP/2 HPACK header values to\nexceed their size limit. `MetaDataBuilder.java` determines if a header name or value exceeds the size limit, and throws an exception if the limit is exceeded. However, when length is very large and huffman is true, the multiplication by 4 in line 295\nwill overflow, and length will become negative. `(_size+length)` will now be negative, and the check on line 296 will not be triggered. Furthermore, `MetaDataBuilder.checkSize` allows for user-entered HPACK header value sizes to be negative, potentially leading to a very large buffer allocation later on when the user-entered size is multiplied by 2. This means that if a user provides a negative length value (or, more precisely, a length value which, when multiplied by the 4/3 fudge factor, is negative), and this length value is a very large positive number when multiplied by 2, then the user can cause a very large buffer to be allocated on the server. Users of HTTP/2 can be impacted by a remote denial of service attack. The issue has been fixed in versions 11.0.16, 10.0.16, and 9.4.53. There are no known workarounds.",
+     "cvss": [
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "jetty-http",
+       "version": "9.4.51.v20230217"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=9.3.0,<=9.4.52 (unknown)",
+      "vulnerabilityID": "GHSA-wgh7-54f2-x98r"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "e2c2a9d71209a150",
+    "name": "jetty-http",
+    "version": "9.4.51.v20230217",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "/apache-zookeeper-3.9.0-bin/lib/jetty-http-9.4.51.v20230217.jar",
+      "layerID": "sha256:d4f4a7cd0578c7b9d30b16ad402fb61e27b157c1b5826c21ad68993518404894"
+     }
+    ],
+    "language": "java",
+    "licenses": [
+     "http://www.apache.org/licenses/LICENSE-2.0, https://www.eclipse.org/org/documents/epl-v10.php"
+    ],
+    "cpes": [
+     "cpe:2.3:a:eclipse-jetty-project:jetty-http:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse-jetty-project:jetty_http:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:jetty-http:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:jetty_http:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse-jetty-project:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse-jetty-project:http:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse_jetty_project:http:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-http:jetty-http:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-http:jetty_http:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_http:jetty-http:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_http:jetty_http:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:jetty-http:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:jetty_http:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-http:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:jetty-http:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:jetty_http:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_http:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:http:jetty-http:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:http:jetty_http:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-http:http:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_http:http:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:http:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:http:jetty:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:http:9.4.51.v20230217:*:*:*:*:*:*:*",
+     "cpe:2.3:a:http:http:9.4.51.v20230217:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/org.eclipse.jetty/jetty-http@9.4.51.v20230217",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "/apache-zookeeper-3.9.0-bin/lib/jetty-http-9.4.51.v20230217.jar",
+     "pomArtifactID": "jetty-http",
+     "pomGroupID": "org.eclipse.jetty",
+     "manifestName": "",
+     "archiveDigests": [
+      {
+       "algorithm": "sha1",
+       "value": "fe37568aded59dd8e437e0f670fe5f809071fe8f"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
     "id": "CVE-2023-41900",
     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-41900",
     "namespace": "nvd:cpe",
@@ -6950,7 +7093,7 @@
      "id": "CVE-2023-4586",
      "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-4586",
      "namespace": "nvd:cpe",
-     "severity": "Medium",
+     "severity": "High",
      "urls": [
       "https://access.redhat.com/security/cve/CVE-2023-4586",
       "https://bugzilla.redhat.com/show_bug.cgi?id=2235564",
@@ -6958,6 +7101,18 @@
      ],
      "description": "A vulnerability was found in the Hot Rod client. This security issue occurs as the Hot Rod client does not enable hostname validation when using TLS, possibly resulting in a man-in-the-middle (MITM) attack.",
      "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+       "metrics": {
+        "baseScore": 7.4,
+        "exploitabilityScore": 2.2,
+        "impactScore": 5.2
+       },
+       "vendorMetadata": {}
+      },
       {
        "source": "secalert@redhat.com",
        "type": "Secondary",
@@ -8037,12 +8192,12 @@
    "vex-add": []
   },
   "db": {
-   "built": "2023-10-10T01:23:53Z",
+   "built": "2023-10-11T01:24:08Z",
    "schemaVersion": 5,
    "location": "/home/anon/.cache/grype/db/5",
-   "checksum": "sha256:c1dd693b90da9833fd1716f9d2432de66004be2bd188e882392b0076a589cbf4",
+   "checksum": "sha256:16423ac3a1c3cd30cfe138851c91e7ba24290ec499065e861cb0a90ecb50a059",
    "error": null
   },
-  "timestamp": "2023-10-10T16:37:59.700021658-04:00"
+  "timestamp": "2023-10-11T21:49:56.424253894-04:00"
  }
 }

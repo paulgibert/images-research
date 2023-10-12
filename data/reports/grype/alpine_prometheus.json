@@ -1697,13 +1697,13 @@
     }
    ],
    "artifact": {
-    "id": "b109601bec1ed934",
+    "id": "61b40562c317373e",
     "name": "github.com/containerd/containerd",
     "version": "v1.5.4",
     "type": "go-module",
     "locations": [
      {
-      "path": "/usr/local/bin/prometheus",
+      "path": "/usr/local/bin/promtool",
       "layerID": "sha256:f5e982aa0dde23ccfc710640ca0d8f43cedffd71a043c22f0b8388e03c05b742"
      }
     ],
@@ -1830,13 +1830,13 @@
     }
    ],
    "artifact": {
-    "id": "61b40562c317373e",
+    "id": "b109601bec1ed934",
     "name": "github.com/containerd/containerd",
     "version": "v1.5.4",
     "type": "go-module",
     "locations": [
      {
-      "path": "/usr/local/bin/promtool",
+      "path": "/usr/local/bin/prometheus",
       "layerID": "sha256:f5e982aa0dde23ccfc710640ca0d8f43cedffd71a043c22f0b8388e03c05b742"
      }
     ],
@@ -2231,13 +2231,13 @@
     }
    ],
    "artifact": {
-    "id": "b109601bec1ed934",
+    "id": "61b40562c317373e",
     "name": "github.com/containerd/containerd",
     "version": "v1.5.4",
     "type": "go-module",
     "locations": [
      {
-      "path": "/usr/local/bin/prometheus",
+      "path": "/usr/local/bin/promtool",
       "layerID": "sha256:f5e982aa0dde23ccfc710640ca0d8f43cedffd71a043c22f0b8388e03c05b742"
      }
     ],
@@ -2358,13 +2358,13 @@
     }
    ],
    "artifact": {
-    "id": "61b40562c317373e",
+    "id": "b109601bec1ed934",
     "name": "github.com/containerd/containerd",
     "version": "v1.5.4",
     "type": "go-module",
     "locations": [
      {
-      "path": "/usr/local/bin/promtool",
+      "path": "/usr/local/bin/prometheus",
       "layerID": "sha256:f5e982aa0dde23ccfc710640ca0d8f43cedffd71a043c22f0b8388e03c05b742"
      }
     ],
@@ -2757,13 +2757,13 @@
     }
    ],
    "artifact": {
-    "id": "b109601bec1ed934",
+    "id": "61b40562c317373e",
     "name": "github.com/containerd/containerd",
     "version": "v1.5.4",
     "type": "go-module",
     "locations": [
      {
-      "path": "/usr/local/bin/prometheus",
+      "path": "/usr/local/bin/promtool",
       "layerID": "sha256:f5e982aa0dde23ccfc710640ca0d8f43cedffd71a043c22f0b8388e03c05b742"
      }
     ],
@@ -2890,13 +2890,13 @@
     }
    ],
    "artifact": {
-    "id": "61b40562c317373e",
+    "id": "b109601bec1ed934",
     "name": "github.com/containerd/containerd",
     "version": "v1.5.4",
     "type": "go-module",
     "locations": [
      {
-      "path": "/usr/local/bin/promtool",
+      "path": "/usr/local/bin/prometheus",
       "layerID": "sha256:f5e982aa0dde23ccfc710640ca0d8f43cedffd71a043c22f0b8388e03c05b742"
      }
     ],
@@ -3441,13 +3441,13 @@
     }
    ],
    "artifact": {
-    "id": "61b40562c317373e",
+    "id": "b109601bec1ed934",
     "name": "github.com/containerd/containerd",
     "version": "v1.5.4",
     "type": "go-module",
     "locations": [
      {
-      "path": "/usr/local/bin/promtool",
+      "path": "/usr/local/bin/prometheus",
       "layerID": "sha256:f5e982aa0dde23ccfc710640ca0d8f43cedffd71a043c22f0b8388e03c05b742"
      }
     ],
@@ -3520,13 +3520,13 @@
     }
    ],
    "artifact": {
-    "id": "b109601bec1ed934",
+    "id": "61b40562c317373e",
     "name": "github.com/containerd/containerd",
     "version": "v1.5.4",
     "type": "go-module",
     "locations": [
      {
-      "path": "/usr/local/bin/prometheus",
+      "path": "/usr/local/bin/promtool",
       "layerID": "sha256:f5e982aa0dde23ccfc710640ca0d8f43cedffd71a043c22f0b8388e03c05b742"
      }
     ],
@@ -3625,13 +3625,13 @@
     }
    ],
    "artifact": {
-    "id": "a066184e2ec18c19",
+    "id": "f9ddcce852a4c13f",
     "name": "github.com/docker/distribution",
     "version": "v2.7.1+incompatible",
     "type": "go-module",
     "locations": [
      {
-      "path": "/usr/local/bin/prometheus",
+      "path": "/usr/local/bin/promtool",
       "layerID": "sha256:f5e982aa0dde23ccfc710640ca0d8f43cedffd71a043c22f0b8388e03c05b742"
      }
     ],
@@ -3730,13 +3730,13 @@
     }
    ],
    "artifact": {
-    "id": "f9ddcce852a4c13f",
+    "id": "a066184e2ec18c19",
     "name": "github.com/docker/distribution",
     "version": "v2.7.1+incompatible",
     "type": "go-module",
     "locations": [
      {
-      "path": "/usr/local/bin/promtool",
+      "path": "/usr/local/bin/prometheus",
       "layerID": "sha256:f5e982aa0dde23ccfc710640ca0d8f43cedffd71a043c22f0b8388e03c05b742"
      }
     ],
@@ -4715,13 +4715,13 @@
     }
    ],
    "artifact": {
-    "id": "e3514eec7176faae",
+    "id": "d07d5eec03a9e2d7",
     "name": "github.com/opencontainers/image-spec",
     "version": "v1.0.1",
     "type": "go-module",
     "locations": [
      {
-      "path": "/usr/local/bin/promtool",
+      "path": "/usr/local/bin/prometheus",
       "layerID": "sha256:f5e982aa0dde23ccfc710640ca0d8f43cedffd71a043c22f0b8388e03c05b742"
      }
     ],
@@ -4795,13 +4795,13 @@
     }
    ],
    "artifact": {
-    "id": "d07d5eec03a9e2d7",
+    "id": "e3514eec7176faae",
     "name": "github.com/opencontainers/image-spec",
     "version": "v1.0.1",
     "type": "go-module",
     "locations": [
      {
-      "path": "/usr/local/bin/prometheus",
+      "path": "/usr/local/bin/promtool",
       "layerID": "sha256:f5e982aa0dde23ccfc710640ca0d8f43cedffd71a043c22f0b8388e03c05b742"
      }
     ],
@@ -5062,13 +5062,13 @@
     }
    ],
    "artifact": {
-    "id": "c3f48c2f35a70854",
+    "id": "f7007c3a469ff007",
     "name": "github.com/prometheus/client_golang",
     "version": "v1.11.0",
     "type": "go-module",
     "locations": [
      {
-      "path": "/usr/local/bin/prometheus",
+      "path": "/usr/local/bin/promtool",
       "layerID": "sha256:f5e982aa0dde23ccfc710640ca0d8f43cedffd71a043c22f0b8388e03c05b742"
      }
     ],
@@ -5212,13 +5212,13 @@
     }
    ],
    "artifact": {
-    "id": "f7007c3a469ff007",
+    "id": "c3f48c2f35a70854",
     "name": "github.com/prometheus/client_golang",
     "version": "v1.11.0",
     "type": "go-module",
     "locations": [
      {
-      "path": "/usr/local/bin/promtool",
+      "path": "/usr/local/bin/prometheus",
       "layerID": "sha256:f5e982aa0dde23ccfc710640ca0d8f43cedffd71a043c22f0b8388e03c05b742"
      }
     ],
@@ -5792,13 +5792,13 @@
     }
    ],
    "artifact": {
-    "id": "8310b7a0a3b617c1",
+    "id": "70d18413a6769358",
     "name": "github.com/prometheus/exporter-toolkit",
     "version": "v0.6.1",
     "type": "go-module",
     "locations": [
      {
-      "path": "/usr/local/bin/prometheus",
+      "path": "/usr/local/bin/promtool",
       "layerID": "sha256:f5e982aa0dde23ccfc710640ca0d8f43cedffd71a043c22f0b8388e03c05b742"
      }
     ],
@@ -5916,13 +5916,13 @@
     }
    ],
    "artifact": {
-    "id": "70d18413a6769358",
+    "id": "8310b7a0a3b617c1",
     "name": "github.com/prometheus/exporter-toolkit",
     "version": "v0.6.1",
     "type": "go-module",
     "locations": [
      {
-      "path": "/usr/local/bin/promtool",
+      "path": "/usr/local/bin/prometheus",
       "layerID": "sha256:f5e982aa0dde23ccfc710640ca0d8f43cedffd71a043c22f0b8388e03c05b742"
      }
     ],
@@ -6497,13 +6497,13 @@
     }
    ],
    "artifact": {
-    "id": "13f7bf15c4144ff5",
+    "id": "fbe77794bfcbb2cf",
     "name": "golang.org/x/net",
     "version": "v0.0.0-20210726213435-c6fcb2dbf985",
     "type": "go-module",
     "locations": [
      {
-      "path": "/usr/local/bin/prometheus",
+      "path": "/usr/local/bin/promtool",
       "layerID": "sha256:f5e982aa0dde23ccfc710640ca0d8f43cedffd71a043c22f0b8388e03c05b742"
      }
     ],
@@ -6609,13 +6609,13 @@
     }
    ],
    "artifact": {
-    "id": "fbe77794bfcbb2cf",
+    "id": "13f7bf15c4144ff5",
     "name": "golang.org/x/net",
     "version": "v0.0.0-20210726213435-c6fcb2dbf985",
     "type": "go-module",
     "locations": [
      {
-      "path": "/usr/local/bin/promtool",
+      "path": "/usr/local/bin/prometheus",
       "layerID": "sha256:f5e982aa0dde23ccfc710640ca0d8f43cedffd71a043c22f0b8388e03c05b742"
      }
     ],
@@ -7396,13 +7396,13 @@
     }
    ],
    "artifact": {
-    "id": "0d35e6d57a2fc02e",
+    "id": "02ac4702793a6e1d",
     "name": "golang.org/x/text",
     "version": "v0.3.6",
     "type": "go-module",
     "locations": [
      {
-      "path": "/usr/local/bin/prometheus",
+      "path": "/usr/local/bin/promtool",
       "layerID": "sha256:f5e982aa0dde23ccfc710640ca0d8f43cedffd71a043c22f0b8388e03c05b742"
      }
     ],
@@ -7503,13 +7503,13 @@
     }
    ],
    "artifact": {
-    "id": "02ac4702793a6e1d",
+    "id": "0d35e6d57a2fc02e",
     "name": "golang.org/x/text",
     "version": "v0.3.6",
     "type": "go-module",
     "locations": [
      {
-      "path": "/usr/local/bin/promtool",
+      "path": "/usr/local/bin/prometheus",
       "layerID": "sha256:f5e982aa0dde23ccfc710640ca0d8f43cedffd71a043c22f0b8388e03c05b742"
      }
     ],
@@ -7620,13 +7620,13 @@
     }
    ],
    "artifact": {
-    "id": "a8d9b6275d6ad2db",
+    "id": "4436c4c37ef76a9b",
     "name": "gopkg.in/yaml.v3",
     "version": "v3.0.0-20210107192922-496545a6307b",
     "type": "go-module",
     "locations": [
      {
-      "path": "/usr/local/bin/prometheus",
+      "path": "/usr/local/bin/promtool",
       "layerID": "sha256:f5e982aa0dde23ccfc710640ca0d8f43cedffd71a043c22f0b8388e03c05b742"
      }
     ],
@@ -7735,13 +7735,13 @@
     }
    ],
    "artifact": {
-    "id": "4436c4c37ef76a9b",
+    "id": "a8d9b6275d6ad2db",
     "name": "gopkg.in/yaml.v3",
     "version": "v3.0.0-20210107192922-496545a6307b",
     "type": "go-module",
     "locations": [
      {
-      "path": "/usr/local/bin/promtool",
+      "path": "/usr/local/bin/prometheus",
       "layerID": "sha256:f5e982aa0dde23ccfc710640ca0d8f43cedffd71a043c22f0b8388e03c05b742"
      }
     ],
@@ -12841,12 +12841,12 @@
    "vex-add": []
   },
   "db": {
-   "built": "2023-10-10T01:23:53Z",
+   "built": "2023-10-11T01:24:08Z",
    "schemaVersion": 5,
    "location": "/home/anon/.cache/grype/db/5",
-   "checksum": "sha256:c1dd693b90da9833fd1716f9d2432de66004be2bd188e882392b0076a589cbf4",
+   "checksum": "sha256:16423ac3a1c3cd30cfe138851c91e7ba24290ec499065e861cb0a90ecb50a059",
    "error": null
   },
-  "timestamp": "2023-10-10T16:40:13.515273658-04:00"
+  "timestamp": "2023-10-11T21:51:10.727477926-04:00"
  }
 }

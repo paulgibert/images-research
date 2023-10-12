@@ -821,13 +821,13 @@
     }
    ],
    "artifact": {
-    "id": "400d4525ac6b1e70",
+    "id": "c8e71ef2bdc8393b",
     "name": "github.com/nats-io/nats-server/v2",
     "version": "(devel)",
     "type": "go-module",
     "locations": [
      {
-      "path": "/opt/bitnami/nats/.spdx-nats.spdx",
+      "path": "/opt/bitnami/nats/bin/nats-server",
       "layerID": "sha256:3d6e625003c1a52eb1a53d6df95b3c337878ce256c7c21b76f45ab5106a0facc"
      }
     ],
@@ -845,8 +845,9 @@
     "upstreams": [],
     "metadataType": "GolangBinMetadata",
     "metadata": {
-     "goCompiledVersion": "",
-     "architecture": ""
+     "goCompiledVersion": "go1.21.2",
+     "architecture": "amd64",
+     "mainModule": "command-line-arguments"
     }
    }
   },
@@ -942,13 +943,13 @@
     }
    ],
    "artifact": {
-    "id": "c8e71ef2bdc8393b",
+    "id": "400d4525ac6b1e70",
     "name": "github.com/nats-io/nats-server/v2",
     "version": "(devel)",
     "type": "go-module",
     "locations": [
      {
-      "path": "/opt/bitnami/nats/bin/nats-server",
+      "path": "/opt/bitnami/nats/.spdx-nats.spdx",
       "layerID": "sha256:3d6e625003c1a52eb1a53d6df95b3c337878ce256c7c21b76f45ab5106a0facc"
      }
     ],
@@ -966,9 +967,8 @@
     "upstreams": [],
     "metadataType": "GolangBinMetadata",
     "metadata": {
-     "goCompiledVersion": "go1.21.2",
-     "architecture": "amd64",
-     "mainModule": "command-line-arguments"
+     "goCompiledVersion": "",
+     "architecture": ""
     }
    }
   },
@@ -1700,13 +1700,13 @@
     }
    ],
    "artifact": {
-    "id": "c8e71ef2bdc8393b",
+    "id": "400d4525ac6b1e70",
     "name": "github.com/nats-io/nats-server/v2",
     "version": "(devel)",
     "type": "go-module",
     "locations": [
      {
-      "path": "/opt/bitnami/nats/bin/nats-server",
+      "path": "/opt/bitnami/nats/.spdx-nats.spdx",
       "layerID": "sha256:3d6e625003c1a52eb1a53d6df95b3c337878ce256c7c21b76f45ab5106a0facc"
      }
     ],
@@ -1724,9 +1724,8 @@
     "upstreams": [],
     "metadataType": "GolangBinMetadata",
     "metadata": {
-     "goCompiledVersion": "go1.21.2",
-     "architecture": "amd64",
-     "mainModule": "command-line-arguments"
+     "goCompiledVersion": "",
+     "architecture": ""
     }
    }
   },
@@ -1783,13 +1782,13 @@
     }
    ],
    "artifact": {
-    "id": "400d4525ac6b1e70",
+    "id": "c8e71ef2bdc8393b",
     "name": "github.com/nats-io/nats-server/v2",
     "version": "(devel)",
     "type": "go-module",
     "locations": [
      {
-      "path": "/opt/bitnami/nats/.spdx-nats.spdx",
+      "path": "/opt/bitnami/nats/bin/nats-server",
       "layerID": "sha256:3d6e625003c1a52eb1a53d6df95b3c337878ce256c7c21b76f45ab5106a0facc"
      }
     ],
@@ -1807,8 +1806,9 @@
     "upstreams": [],
     "metadataType": "GolangBinMetadata",
     "metadata": {
-     "goCompiledVersion": "",
-     "architecture": ""
+     "goCompiledVersion": "go1.21.2",
+     "architecture": "amd64",
+     "mainModule": "command-line-arguments"
     }
    }
   },
@@ -2333,13 +2333,13 @@
     }
    ],
    "artifact": {
-    "id": "c8e71ef2bdc8393b",
+    "id": "400d4525ac6b1e70",
     "name": "github.com/nats-io/nats-server/v2",
     "version": "(devel)",
     "type": "go-module",
     "locations": [
      {
-      "path": "/opt/bitnami/nats/bin/nats-server",
+      "path": "/opt/bitnami/nats/.spdx-nats.spdx",
       "layerID": "sha256:3d6e625003c1a52eb1a53d6df95b3c337878ce256c7c21b76f45ab5106a0facc"
      }
     ],
@@ -2357,9 +2357,8 @@
     "upstreams": [],
     "metadataType": "GolangBinMetadata",
     "metadata": {
-     "goCompiledVersion": "go1.21.2",
-     "architecture": "amd64",
-     "mainModule": "command-line-arguments"
+     "goCompiledVersion": "",
+     "architecture": ""
     }
    }
   },
@@ -2402,88 +2401,6 @@
     }
    ],
    "artifact": {
-    "id": "400d4525ac6b1e70",
-    "name": "github.com/nats-io/nats-server/v2",
-    "version": "(devel)",
-    "type": "go-module",
-    "locations": [
-     {
-      "path": "/opt/bitnami/nats/.spdx-nats.spdx",
-      "layerID": "sha256:3d6e625003c1a52eb1a53d6df95b3c337878ce256c7c21b76f45ab5106a0facc"
-     }
-    ],
-    "language": "go",
-    "licenses": [],
-    "cpes": [
-     "cpe:2.3:a:nats-io:nats-server/v2:(devel):*:*:*:*:*:*:*",
-     "cpe:2.3:a:nats-io:nats_server/v2:(devel):*:*:*:*:*:*:*",
-     "cpe:2.3:a:nats_io:nats-server/v2:(devel):*:*:*:*:*:*:*",
-     "cpe:2.3:a:nats_io:nats_server/v2:(devel):*:*:*:*:*:*:*",
-     "cpe:2.3:a:nats:nats-server/v2:(devel):*:*:*:*:*:*:*",
-     "cpe:2.3:a:nats:nats_server/v2:(devel):*:*:*:*:*:*:*"
-    ],
-    "purl": "pkg:golang/github.com/nats-io/nats-server/v2@(devel)",
-    "upstreams": [],
-    "metadataType": "GolangBinMetadata",
-    "metadata": {
-     "goCompiledVersion": "",
-     "architecture": ""
-    }
-   }
-  },
-  {
-   "vulnerability": {
-    "id": "GHSA-gwj5-3vfq-q992",
-    "dataSource": "https://github.com/advisories/GHSA-gwj5-3vfq-q992",
-    "namespace": "github:language:go",
-    "severity": "Low",
-    "urls": [
-     "https://github.com/advisories/GHSA-gwj5-3vfq-q992"
-    ],
-    "description": "Import loops in account imports, nats-server DoS",
-    "cvss": [
-     {
-      "version": "3.1",
-      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
-      "metrics": {
-       "baseScore": 7.5,
-       "exploitabilityScore": 3.9,
-       "impactScore": 3.6
-      },
-      "vendorMetadata": {
-       "base_severity": "High",
-       "status": "N/A"
-      }
-     }
-    ],
-    "fix": {
-     "versions": [
-      "2.2.0"
-     ],
-     "state": "fixed"
-    },
-    "advisories": []
-   },
-   "relatedVulnerabilities": [],
-   "matchDetails": [
-    {
-     "type": "exact-direct-match",
-     "matcher": "go-module-matcher",
-     "searchedBy": {
-      "language": "go",
-      "namespace": "github:language:go",
-      "package": {
-       "name": "github.com/nats-io/nats-server/v2",
-       "version": "(devel)"
-      }
-     },
-     "found": {
-      "versionConstraint": "<2.2.0 (unknown)",
-      "vulnerabilityID": "GHSA-gwj5-3vfq-q992"
-     }
-    }
-   ],
-   "artifact": {
     "id": "c8e71ef2bdc8393b",
     "name": "github.com/nats-io/nats-server/v2",
     "version": "(devel)",
@@ -2593,6 +2510,89 @@
     "metadata": {
      "goCompiledVersion": "",
      "architecture": ""
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-gwj5-3vfq-q992",
+    "dataSource": "https://github.com/advisories/GHSA-gwj5-3vfq-q992",
+    "namespace": "github:language:go",
+    "severity": "Low",
+    "urls": [
+     "https://github.com/advisories/GHSA-gwj5-3vfq-q992"
+    ],
+    "description": "Import loops in account imports, nats-server DoS",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "2.2.0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/nats-io/nats-server/v2",
+       "version": "(devel)"
+      }
+     },
+     "found": {
+      "versionConstraint": "<2.2.0 (unknown)",
+      "vulnerabilityID": "GHSA-gwj5-3vfq-q992"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "c8e71ef2bdc8393b",
+    "name": "github.com/nats-io/nats-server/v2",
+    "version": "(devel)",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/opt/bitnami/nats/bin/nats-server",
+      "layerID": "sha256:3d6e625003c1a52eb1a53d6df95b3c337878ce256c7c21b76f45ab5106a0facc"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:nats-io:nats-server/v2:(devel):*:*:*:*:*:*:*",
+     "cpe:2.3:a:nats-io:nats_server/v2:(devel):*:*:*:*:*:*:*",
+     "cpe:2.3:a:nats_io:nats-server/v2:(devel):*:*:*:*:*:*:*",
+     "cpe:2.3:a:nats_io:nats_server/v2:(devel):*:*:*:*:*:*:*",
+     "cpe:2.3:a:nats:nats-server/v2:(devel):*:*:*:*:*:*:*",
+     "cpe:2.3:a:nats:nats_server/v2:(devel):*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/nats-io/nats-server/v2@(devel)",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.21.2",
+     "architecture": "amd64",
+     "mainModule": "command-line-arguments"
     }
    }
   },
@@ -12005,12 +12005,12 @@
    "vex-add": []
   },
   "db": {
-   "built": "2023-10-10T01:23:53Z",
+   "built": "2023-10-11T01:24:08Z",
    "schemaVersion": 5,
    "location": "/home/anon/.cache/grype/db/5",
-   "checksum": "sha256:c1dd693b90da9833fd1716f9d2432de66004be2bd188e882392b0076a589cbf4",
+   "checksum": "sha256:16423ac3a1c3cd30cfe138851c91e7ba24290ec499065e861cb0a90ecb50a059",
    "error": null
   },
-  "timestamp": "2023-10-10T16:39:09.244794157-04:00"
+  "timestamp": "2023-10-11T21:50:37.860326442-04:00"
  }
 }

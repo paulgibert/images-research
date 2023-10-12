@@ -77,6 +77,7 @@ negligible,deb,rapidfort,rabbitmq
 negligible,deb,rapidfort,rabbitmq
 negligible,deb,rapidfort,rabbitmq
 negligible,deb,rapidfort,rabbitmq
+unknown,deb,rapidfort,rabbitmq
 negligible,deb,rapidfort,rabbitmq
 negligible,deb,rapidfort,rabbitmq
 negligible,deb,rapidfort,rabbitmq
@@ -150,6 +151,7 @@ low,apk,alpine,influxdb
 critical,apk,alpine,influxdb
 low,apk,alpine,influxdb
 high,apk,alpine,influxdb
+unknown,apk,alpine,influxdb
 low,deb,original,cassandra-official
 medium,java-archive,original,cassandra-official
 high,go-module,original,cassandra-official
@@ -954,6 +956,9 @@ negligible,deb,rapidfort,nginx
 unknown,deb,rapidfort,nginx
 negligible,deb,rapidfort,nginx
 negligible,deb,rapidfort,nginx
+unknown,apk,alpine,nginx-official
+medium,apk,alpine,nginx-official
+medium,apk,alpine,nginx-official
 medium,apk,alpine,nginx-official
 high,deb,rapidfort,consul
 high,binary,rapidfort,consul
@@ -1253,6 +1258,7 @@ unknown,deb,original,memcached-official
 unknown,deb,original,memcached-official
 unknown,deb,original,memcached-official
 unknown,deb,original,memcached-official
+unknown,deb,original,memcached-official
 low,deb,original,memcached-official
 negligible,deb,original,memcached-official
 negligible,deb,original,memcached-official
@@ -1500,6 +1506,7 @@ negligible,deb,original,fluentd
 unknown,deb,original,fluentd
 unknown,deb,original,fluentd
 unknown,deb,original,fluentd
+unknown,deb,original,fluentd
 low,deb,original,fluentd
 negligible,deb,original,fluentd
 negligible,deb,original,fluentd
@@ -1536,6 +1543,7 @@ negligible,deb,original,fluentd
 medium,gem,original,fluentd
 high,binary,rapidfort,zookeper
 medium,java-archive,rapidfort,zookeper
+high,java-archive,rapidfort,zookeper
 medium,java-archive,rapidfort,zookeper
 medium,java-archive,rapidfort,zookeper
 medium,java-archive,rapidfort,zookeper
@@ -1563,6 +1571,7 @@ high,java-archive,rapidfort,zookeper
 low,deb,rapidfort,zookeper-official
 low,deb,rapidfort,zookeper-official
 medium,java-archive,rapidfort,zookeper-official
+high,java-archive,rapidfort,zookeper-official
 medium,java-archive,rapidfort,zookeper-official
 medium,java-archive,rapidfort,zookeper-official
 medium,java-archive,rapidfort,zookeper-official
@@ -1590,6 +1599,9 @@ negligible,deb,rapidfort,zookeper-official
 medium,java-archive,rapidfort,zookeper-official
 high,java-archive,rapidfort,zookeper-official
 high,java-archive,rapidfort,zookeper-official
+unknown,apk,alpine,nginx
+medium,apk,alpine,nginx
+medium,apk,alpine,nginx
 medium,apk,alpine,nginx
 high,go-module,rapidfort,cassandra-official
 medium,go-module,rapidfort,cassandra-official
@@ -1638,6 +1650,7 @@ medium,go-module,alpine,consul
 medium,go-module,alpine,consul
 high,apk,alpine,consul
 critical,apk,alpine,consul
+unknown,apk,alpine,curl
 medium,unknownpackage,original,haproxy
 medium,unknownpackage,original,haproxy
 negligible,deb,original,haproxy
@@ -2461,6 +2474,7 @@ negligible,deb,original,zookeper
 negligible,deb,original,zookeper
 negligible,deb,original,zookeper
 negligible,deb,original,zookeper
+unknown,deb,original,zookeper
 negligible,deb,original,zookeper
 negligible,deb,original,zookeper
 negligible,deb,original,zookeper
@@ -2532,6 +2546,7 @@ low,deb,original,zookeper-official
 low,deb,original,zookeper-official
 low,deb,original,zookeper-official
 medium,java-archive,original,zookeper-official
+high,java-archive,original,zookeper-official
 medium,java-archive,original,zookeper-official
 medium,java-archive,original,zookeper-official
 medium,java-archive,original,zookeper-official
@@ -2952,6 +2967,7 @@ medium,deb,rapidfort,mariadb
 high,deb,rapidfort,mariadb
 negligible,deb,rapidfort,mariadb
 negligible,deb,rapidfort,mariadb
+unknown,apk,alpine,mariadb
 high,apk,alpine,mariadb
 high,apk,alpine,mariadb
 high,deb,rapidfort,nats
@@ -3163,6 +3179,7 @@ unknown,deb,rapidfort,nginx-official
 negligible,deb,rapidfort,nginx-official
 low,deb,rapidfort,nginx-official
 negligible,deb,rapidfort,nginx-official
+unknown,deb,rapidfort,nginx-official
 negligible,deb,rapidfort,nginx-official
 negligible,deb,rapidfort,nginx-official
 negligible,deb,original,redis-official
@@ -3339,6 +3356,7 @@ unknown,deb,original,redis-official
 unknown,deb,original,redis-official
 unknown,deb,original,redis-official
 unknown,deb,original,redis-official
+unknown,deb,original,redis-official
 low,deb,original,redis-official
 negligible,deb,original,redis-official
 negligible,deb,original,redis-official
@@ -3413,6 +3431,7 @@ negligible,deb,rapidfort,influxdb
 negligible,deb,rapidfort,influxdb
 negligible,deb,rapidfort,influxdb
 negligible,deb,rapidfort,influxdb
+unknown,deb,rapidfort,influxdb
 negligible,deb,rapidfort,influxdb
 negligible,deb,rapidfort,influxdb
 negligible,deb,rapidfort,influxdb
@@ -3750,6 +3769,7 @@ negligible,deb,original,rabbitmq
 negligible,deb,original,rabbitmq
 high,deb,original,rabbitmq
 high,deb,original,rabbitmq
+unknown,deb,original,rabbitmq
 negligible,deb,original,rabbitmq
 negligible,deb,original,rabbitmq
 negligible,deb,original,rabbitmq
@@ -3816,6 +3836,8 @@ negligible,deb,original,rabbitmq
 negligible,deb,original,rabbitmq
 high,apk,original,curl
 medium,apk,original,curl
+unknown,apk,original,curl
+unknown,apk,original,curl
 high,deb,rapidfort,postgres-official
 high,binary,rapidfort,postgres-official
 low,deb,rapidfort,postgres-official
@@ -3947,6 +3969,7 @@ negligible,deb,original,nginx-official
 negligible,deb,original,nginx-official
 negligible,deb,original,nginx-official
 negligible,deb,original,nginx-official
+unknown,deb,original,nginx-official
 negligible,deb,original,nginx-official
 negligible,deb,original,nginx-official
 medium,deb,original,nginx-official
@@ -4000,6 +4023,7 @@ unknown,deb,original,nginx-official
 negligible,deb,original,nginx-official
 low,deb,original,nginx-official
 negligible,deb,original,nginx-official
+unknown,deb,original,nginx-official
 medium,deb,original,nginx-official
 medium,deb,original,nginx-official
 medium,deb,original,nginx-official
@@ -4360,6 +4384,7 @@ negligible,deb,original,consul
 unknown,deb,original,consul
 unknown,deb,original,consul
 unknown,deb,original,consul
+unknown,deb,original,consul
 low,deb,original,consul
 negligible,deb,original,consul
 negligible,deb,original,consul
@@ -4445,6 +4470,7 @@ negligible,deb,original,influxdb
 negligible,deb,original,influxdb
 negligible,deb,original,influxdb
 negligible,deb,original,influxdb
+unknown,deb,original,influxdb
 negligible,deb,original,influxdb
 negligible,deb,original,influxdb
 negligible,deb,original,influxdb

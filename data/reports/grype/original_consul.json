@@ -14596,6 +14596,8 @@
      "urls": [
       "https://access.redhat.com/security/cve/CVE-2023-42756",
       "https://bugzilla.redhat.com/show_bug.cgi?id=2239848",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/GISYSL3F6WIEVGHJGLC2MFNTUXHPTKQH/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/GPMICQ2HVZO5UAM5KPXHAZKA2U3ZDOO6/",
       "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/V5PDNWPKAP3WL5RQZ4RIDS6MG32OHH5R/",
       "https://seclists.org/oss-sec/2023/q3/242"
      ],
@@ -14843,6 +14845,8 @@
      "urls": [
       "https://access.redhat.com/security/cve/CVE-2023-42754",
       "https://bugzilla.redhat.com/show_bug.cgi?id=2239845",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/GISYSL3F6WIEVGHJGLC2MFNTUXHPTKQH/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/GPMICQ2HVZO5UAM5KPXHAZKA2U3ZDOO6/",
       "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/V5PDNWPKAP3WL5RQZ4RIDS6MG32OHH5R/",
       "https://seclists.org/oss-sec/2023/q4/14"
      ],
@@ -27599,6 +27603,93 @@
   },
   {
    "vulnerability": {
+    "id": "CVE-2023-34324",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2023-34324",
+    "namespace": "debian:distro:debian:11",
+    "severity": "Unknown",
+    "urls": [
+     "https://security-tracker.debian.org/tracker/CVE-2023-34324"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "debian",
+       "version": "11"
+      },
+      "namespace": "debian:distro:debian:11",
+      "package": {
+       "name": "linux",
+       "version": "5.10.191-1"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2023-34324"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "4d3e30fa893c93fb",
+    "name": "linux-libc-dev",
+    "version": "5.10.191-1",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/linux-libc-dev/copyright",
+      "layerID": "sha256:7701f86b0405f6580f4fe2525c39668c2c83bc37704905bb86badf38351c0d8e"
+     },
+     {
+      "path": "/var/lib/dpkg/info/linux-libc-dev:amd64.md5sums",
+      "layerID": "sha256:7701f86b0405f6580f4fe2525c39668c2c83bc37704905bb86badf38351c0d8e"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:7701f86b0405f6580f4fe2525c39668c2c83bc37704905bb86badf38351c0d8e"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "BSD-2-clause",
+     "CRYPTOGAMS",
+     "GPL-2",
+     "GPL-2+",
+     "LGPL-2.1",
+     "Unicode-data",
+     "Xen-interface"
+    ],
+    "cpes": [
+     "cpe:2.3:a:linux-libc-dev:linux-libc-dev:5.10.191-1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:linux-libc-dev:linux_libc_dev:5.10.191-1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:linux_libc_dev:linux-libc-dev:5.10.191-1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:linux_libc_dev:linux_libc_dev:5.10.191-1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:linux-libc:linux-libc-dev:5.10.191-1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:linux-libc:linux_libc_dev:5.10.191-1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:linux_libc:linux-libc-dev:5.10.191-1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:linux_libc:linux_libc_dev:5.10.191-1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:linux:linux-libc-dev:5.10.191-1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:linux:linux_libc_dev:5.10.191-1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/debian/linux-libc-dev@5.10.191-1?arch=amd64&upstream=linux&distro=debian-11",
+    "upstreams": [
+     {
+      "name": "linux"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
     "id": "CVE-2023-3397",
     "dataSource": "https://security-tracker.debian.org/tracker/CVE-2023-3397",
     "namespace": "debian:distro:debian:11",
@@ -30591,12 +30682,12 @@
    "vex-add": []
   },
   "db": {
-   "built": "2023-10-10T01:23:53Z",
+   "built": "2023-10-11T01:24:08Z",
    "schemaVersion": 5,
    "location": "/home/anon/.cache/grype/db/5",
-   "checksum": "sha256:c1dd693b90da9833fd1716f9d2432de66004be2bd188e882392b0076a589cbf4",
+   "checksum": "sha256:16423ac3a1c3cd30cfe138851c91e7ba24290ec499065e861cb0a90ecb50a059",
    "error": null
   },
-  "timestamp": "2023-10-10T16:38:35.504013487-04:00"
+  "timestamp": "2023-10-11T21:50:21.2222428-04:00"
  }
 }

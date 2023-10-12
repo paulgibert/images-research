@@ -1,19 +1,38 @@
 # images-research
 
-lab/
-    data/
-        images.json
-        grype/
-        syft/
-        out/
+### Description
 
-    scan_images.py  - pulls, scans, and removes images
-    build_ds.py     - builds the final csv from scan data
-    scanner.py      - interfaces for grype and syft
-    viz.py          - helpers for data visualization
+Data collection and analysis pipeline for container security research.
+### Usage
 
-    figures/
-        image size by registry
-        image n_comp by registry
-        image n_vulns by registry
-        
+**Setup**
+
+Install dependencies
+```
+./install_deps.sh
+```
+
+Setup python virtual environment
+```
+python -m venv env
+source env/bin/activate
+pip install -r requirements.txt
+```
+
+**Run script method**
+Use run_all.sh to run all stages automatically. Output will be stored in a directory called `data`.
+```
+./run_all.sh
+```
+
+**Manually run each stage**
+Run each stage manually. You will have to create the data directory yourself.
+```
+mkdir data
+mkdir data/reports
+python scripts/1_scan_images.py -r data/reports
+mkdir data/datasets
+python scripts/2_build_datasets.py -r data/reports -o data/datasets
+```
+
+

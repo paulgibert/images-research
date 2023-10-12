@@ -139,7 +139,7 @@
      "id": "CVE-2023-4586",
      "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-4586",
      "namespace": "nvd:cpe",
-     "severity": "Medium",
+     "severity": "High",
      "urls": [
       "https://access.redhat.com/security/cve/CVE-2023-4586",
       "https://bugzilla.redhat.com/show_bug.cgi?id=2235564",
@@ -147,6 +147,18 @@
      ],
      "description": "A vulnerability was found in the Hot Rod client. This security issue occurs as the Hot Rod client does not enable hostname validation when using TLS, possibly resulting in a man-in-the-middle (MITM) attack.",
      "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+       "metrics": {
+        "baseScore": 7.4,
+        "exploitabilityScore": 2.2,
+        "impactScore": 5.2
+       },
+       "vendorMetadata": {}
+      },
       {
        "source": "secalert@redhat.com",
        "type": "Secondary",
@@ -341,12 +353,12 @@
    "vex-add": []
   },
   "db": {
-   "built": "2023-10-10T01:23:53Z",
+   "built": "2023-10-11T01:24:08Z",
    "schemaVersion": 5,
    "location": "/home/anon/.cache/grype/db/5",
-   "checksum": "sha256:c1dd693b90da9833fd1716f9d2432de66004be2bd188e882392b0076a589cbf4",
+   "checksum": "sha256:16423ac3a1c3cd30cfe138851c91e7ba24290ec499065e861cb0a90ecb50a059",
    "error": null
   },
-  "timestamp": "2023-10-10T16:36:39.850129016-04:00"
+  "timestamp": "2023-10-11T21:49:03.497648651-04:00"
  }
 }
