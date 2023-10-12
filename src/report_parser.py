@@ -58,16 +58,23 @@ class MetadataReportParser(ReportParser):
         except KeyError:
             return 0
     
+    def image_digest(self, n=6) -> str:
+        try:
+            digest = self.report["source"]["target"]["manifestDigest"]
+            return digest.split(":")[1][:n]
+        except KeyError:
+            return "None"
+    
     def ds(self) -> pd.DataFrame:
         """
         Returns parsed image size data as a pandas DataFrame.
 
         The DataFrame takes the form
 
-        | image_provider | image_flavor | image_size_bytes |
-        ====================================================
-        |   chainguard   |     nginx    |     180123891    |
-        |   rapidfort    |     nginx    |     140233827    |
+        | image_provider | image_flavor | image_size_bytes | image_digest |
+        ===================================================================
+        |   chainguard   |     nginx    |     180123891    |     f012b1   |
+        |   rapidfort    |     nginx    |     140233827    |     cd6dc2   |
         ...
 
         """
@@ -75,6 +82,7 @@ class MetadataReportParser(ReportParser):
             "image_provider": self.image_provider(),
             "image_flavor": self.image_flavor(),
             "image_size_bytes": self.image_size(),
+            "image_digest": self.image_digest()
         }
         
         return pd.DataFrame(metadata, index=[0])

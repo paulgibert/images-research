@@ -12,7 +12,9 @@ import matplotlib.pyplot as plt
 from matplotlib.axes import Axes
 import numpy as np
 from scipy import stats
+from tabulate import tabulate
 from src.plot import plot_hline_chart
+import src.utils as utils
 
 
 def get_column(df: pd.DataFrame, provider: str, column: str) -> np.ndarray:
@@ -101,6 +103,23 @@ def save_stats_summary(df: pd.DataFrame, out_path: str):
         json.dump(data, fp, indent=4)
 
 
+def save_digests(df: pd.DataFrame, out_path: str):
+    data = df[["image_provider", "image_flavor", "image_digest"]] \
+           .sort_values("image_flavor")
+    tab = tabulate(data, headers="keys", showindex=False)
+    with open(out_path, "w") as fp:
+        fp.write(tab)
+
+
+def save_scanner_info(out_path: str):
+    grype_v = utils.bash("grype --version").split(" ")[1]
+    syft_v = utils.bash("syft --version").split(" ")[1]
+    with open(out_path, "w") as fp:
+        fp.write(tabulate([
+            ["grype version", grype_v],
+            ["syft version", syft_v]
+        ], showindex=False))
+
 def parse_args() -> Tuple[str, str]:
     parser = argparse.ArgumentParser(
                     prog='3_analyze.py',
@@ -134,7 +153,8 @@ def main():
     save_n_comps_fig(df, os.path.join(fig_path, "n_comps.png"))
 
     save_stats_summary(df, os.path.join(out_dir, "summary.json"))
-    
+    save_digests(df, os.path.join(out_dir, "digests.txt"))
+    save_scanner_info(os.path.join(out_dir, "info.txt"))
 
 if __name__ == "__main__":
     main()
