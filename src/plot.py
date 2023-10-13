@@ -5,13 +5,14 @@ import seaborn as sns
 import numpy as np
 
 
-COLOR_CHAINGUARD = "#3443f4"
-COLOR_RAPIDFORT = "#8dc7c7"
-COLOR_NULL = "#949494"
+LABLES = {
+    "Baseline": "#949494",
+    "Chainguard": "#9745E6",
+    "RapidFort": "#8dc7c7"
+}
 
 LINE_WIDTH = 1.2
 MARKER_SZ = 30
-XSTEP = 50
 YLABEL_FONT_SZ = 8
 XLABEL_FONT_SZ = 10
 LEGEND_FONT_SZ = 10
@@ -23,8 +24,9 @@ def apply_style(ax: Axes):
     matplotlib.rcParams["font.family"] = "serif"
 
 
-def plot_hline_chart(ax: Axes, org: np.ndarray, cg: np.ndarray, rf: np.ndarray,
-                     flavors: List[str], title: str, xlabel: str):
+def plot_hline_chart(ax: Axes, baseline: np.ndarray, chainguard: np.ndarray,
+                     rapidfort: np.ndarray, flavors: List[str], title: str,
+                     xlabel: str):
     """
     Plot provider data as points on a horizontal lines represetning the original.
 
@@ -36,38 +38,36 @@ def plot_hline_chart(ax: Axes, org: np.ndarray, cg: np.ndarray, rf: np.ndarray,
     """
     n_flavors = len(flavors)
 
-    if len(org) != n_flavors:
-        raise ValueError(f"Length of Original data does not match number of flavors: {len(org)} != {n_flavors}")
-    if len(cg) != n_flavors:
-        raise ValueError(f"Length of Chainguard data does not match number of flavors: {len(cg)} != {n_flavors}")
-    if len(rf) != n_flavors:
-        raise ValueError(f"Length of RapidFort data does not match number of flavors: {len(cg)} != {n_flavors}")
+    if len(baseline) != n_flavors:
+        raise ValueError(f"Length of Original data does not match number of flavors: {len(baseline)} != {n_flavors}")
+    if len(chainguard) != n_flavors:
+        raise ValueError(f"Length of Chainguard data does not match number of flavors: {len(chainguard)} != {n_flavors}")
+    if len(rapidfort) != n_flavors:
+        raise ValueError(f"Length of RapidFort data does not match number of flavors: {len(chainguard)} != {n_flavors}")
 
     apply_style(ax)
 
-    providers = [cg, rf, org]
-    colors = [COLOR_CHAINGUARD, COLOR_RAPIDFORT, COLOR_NULL]
+    vendors = [baseline, chainguard, rapidfort]
     
     labeled = False
     for y in range(n_flavors):
-        labels = [None] * 3
-        if not labeled:
-            labels = ["Chainguard", "RapidFort", "Original"]
-
-        for pr, clr, lb in zip(providers, colors, labels):
-            ax.scatter(pr[y], y, color=clr, s=MARKER_SZ,
-                       label=lb)
+        for pr, (lb, clr) in zip(vendors, LABLES.items()):
             if not labeled:
+                ax.scatter(pr[y], y, color=clr, s=MARKER_SZ,
+                        label=lb)
                 ax.vlines(np.mean(pr), 0, n_flavors-1, linewidth=LINE_WIDTH,
-                          color=clr, zorder=-1, linestyle="--")
+                            color=clr, zorder=-1, linestyle="--")
+            else:
+                ax.scatter(pr[y], y, color=clr, s=MARKER_SZ)
         labeled = True
     
     ax.set_title(title, pad=TITLE_PADDING)
     ax.legend(loc='upper right', ncols=1, fontsize=LEGEND_FONT_SZ)
 
-    xticks = np.arange(0, 500, XSTEP)
+    xticks = ax.get_xticks()
     xticks_labels = [str(int(t)) for t in xticks]
     ax.set_xticks(xticks, xticks_labels, fontsize=XLABEL_FONT_SZ)
+    ax.margins(x=0)
     ax.set_xlabel(xlabel, fontsize=XLABEL_FONT_SZ)
     
     ax.set_yticks(np.arange(n_flavors), flavors, fontsize=YLABEL_FONT_SZ)

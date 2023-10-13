@@ -32,7 +32,7 @@ def get_providers(df: pd.DataFrame, column: str) ->Tuple[np.ndarray,
     return org, cg, rf
 
 def _make_fig(ax: Axes, df: pd.DataFrame, column: str,
-             title: str, xlabel: str):
+              title: str, xlabel: str):
     flavors = df["image_flavor"].unique()
     org, cg, rf = get_providers(df, column)
     plot_hline_chart(ax, org, cg, rf, flavors, title, xlabel)
@@ -56,11 +56,29 @@ def save_n_vulns_fig(df: pd.DataFrame, out_path: str):
     fig.savefig(out_path)
 
 
+def save_n_vulns_severe_fig(df: pd.DataFrame, out_path: str):
+    fig, ax = plt.subplots(figsize=(8,6))
+    _make_fig(ax, df, "n_vulnerabilities_severe",
+              title="Number of \"High\" and \"Critical\" Vulnerabilities per Image",
+              xlabel="Num Vulnerabilities")
+    fig.tight_layout()
+    fig.savefig(out_path)
+
+
 def save_n_comps_fig(df: pd.DataFrame, out_path: str):
     fig, ax = plt.subplots(figsize=(8,6))
     _make_fig(ax, df, "n_components",
               title="Number of Components per Image",
               xlabel="Num Components")
+    fig.tight_layout()
+    fig.savefig(out_path)
+
+
+def save_vulns_p_comp_fig(df: pd.DataFrame, out_path: str):
+    fig, ax = plt.subplots(figsize=(8,6))
+    _make_fig(ax, df, "vulns_per_comp",
+              title="Number of Vulnerabilites per Component per Image",
+              xlabel="Vulnerabilites per Component")
     fig.tight_layout()
     fig.savefig(out_path)
 
@@ -79,9 +97,19 @@ def summerize(data: np.ndarray) -> Dict[str, float]:
     }
 
 
+def reduction(data: np.ndarray, original: np.ndarray) -> float:
+    data_mean = np.mean(data)
+    original_mean = np.mean(original)
+    return float((original_mean - data_mean) / original_mean)
+
+
 def _stats_summary(df: pd.DataFrame) -> Dict[str, any]:
     summary = {}
-    for col in ["image_size_mb", "n_vulnerabilities", "n_components"]:
+    for col in ["image_size_mb",
+                "n_vulnerabilities",
+                "n_vulnerabilities_severe",
+                "n_components",
+                "vulns_per_comp"]:
         _smry = {}
         org, cg, rf = get_providers(df, col)
         _smry["original"] = summerize(org)
@@ -91,6 +119,8 @@ def _stats_summary(df: pd.DataFrame) -> Dict[str, any]:
         t_stat, p_val = paired_ttest(cg, rf)
         _smry["t_stat"] = t_stat
         _smry["p_val"] = p_val
+        _smry["chainguard_reduction"] = reduction(cg, org)
+        _smry["rapidfort_reduction"] = reduction(rf, org)
 
         summary[col] = _smry
     
@@ -150,7 +180,9 @@ def main():
 
     save_image_sz_fig(df, os.path.join(fig_path, "img_sz.png"))
     save_n_vulns_fig(df, os.path.join(fig_path, "n_vulns.png"))
+    save_n_vulns_severe_fig(df, os.path.join(fig_path, "n_vulns_severe.png"))
     save_n_comps_fig(df, os.path.join(fig_path, "n_comps.png"))
+    save_vulns_p_comp_fig(df, os.path.join(fig_path, "n_vulns_p_comp.png"))
 
     save_stats_summary(df, os.path.join(out_dir, "summary.json"))
     save_digests(df, os.path.join(out_dir, "digests.txt"))

@@ -54,11 +54,20 @@ def build_syft_ds(reports_path: str) -> pd.DataFrame:
 def agg_ds(meta_df: pd.DataFrame, grype_df: pd.DataFrame,
            syft_df: pd.DataFrame) -> pd.DataFrame:
     
+    
     vulns_df = grype_df.drop("severity", axis=1) \
                        .groupby(["image_provider", "image_flavor"]) \
                        .count() \
                        .reset_index() \
                        .rename(columns={"type": "n_vulnerabilities"})
+
+    grype_df_severe = grype_df[(grype_df["severity"] == "high") 
+                               | (grype_df["severity"] == "critical")]
+    vulns_df_severe = grype_df_severe.drop("severity", axis=1) \
+                                     .groupby(["image_provider", "image_flavor"]) \
+                                     .count() \
+                                     .reset_index() \
+                                     .rename(columns={"type": "n_vulnerabilities_severe"})
     
     comps_df = syft_df.drop("type", axis=1) \
                        .groupby(["image_provider", "image_flavor"]) \
@@ -67,6 +76,8 @@ def agg_ds(meta_df: pd.DataFrame, grype_df: pd.DataFrame,
                        .reset_index()
     
     agg_df = meta_df.merge(vulns_df, how="outer",
+                           on=["image_provider", "image_flavor"]) \
+                    .merge(vulns_df_severe, how="outer",
                            on=["image_provider", "image_flavor"]) \
                     .merge(comps_df, how="outer",
                            on=["image_provider", "image_flavor"]) \
