@@ -14415,6 +14415,33 @@
    }
   },
   {
+   "id": "c4d94a07b9204188",
+   "name": "stdlib",
+   "version": "go1.21.2",
+   "type": "go-module",
+   "foundBy": "",
+   "locations": [
+    {
+     "path": "/usr/bin/vault",
+     "layerID": "sha256:e5290b46bc3e1279f00bebb6ec7dfb9d0901363e09c79f872b663602468f675e",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "go",
+   "cpes": [
+    "cpe:2.3:a:golang:go:1.21.2:-:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:golang/stdlib@1.21.2",
+   "metadataType": "GolangBinMetadata",
+   "metadata": {
+    "goCompiledVersion": "go1.21.2",
+    "architecture": ""
+   }
+  },
+  {
    "id": "fee8f964a4c8f013",
    "name": "su-exec",
    "version": "0.2-r2",
@@ -20532,6 +20559,16 @@
   },
   {
    "parent": "94e01628a572a1d2",
+   "child": "c4d94a07b9204188",
+   "type": "ownership-by-file-overlap",
+   "metadata": {
+    "files": [
+     "/usr/bin/vault"
+    ]
+   }
+  },
+  {
+   "parent": "94e01628a572a1d2",
    "child": "c502bcc0f50f4e22",
    "type": "ownership-by-file-overlap",
    "metadata": {
@@ -21942,6 +21979,11 @@
   },
   {
    "parent": "c4c2ca0a4586a565",
+   "child": "558ec3681b462184",
+   "type": "evident-by"
+  },
+  {
+   "parent": "c4d94a07b9204188",
    "child": "558ec3681b462184",
    "type": "evident-by"
   },
@@ -24537,6 +24579,11 @@
   },
   {
    "parent": "fec514cbac019f33ce640e86c220ccc43b350c8239272a2fcd33898b7bb2838c",
+   "child": "c4d94a07b9204188",
+   "type": "contains"
+  },
+  {
+   "parent": "fec514cbac019f33ce640e86c220ccc43b350c8239272a2fcd33898b7bb2838c",
    "child": "c502bcc0f50f4e22",
    "type": "contains"
   },
@@ -25659,7 +25706,7 @@
  },
  "descriptor": {
   "name": "syft",
-  "version": "0.92.0",
+  "version": "0.93.0",
   "configuration": {
    "catalogers": null,
    "package": {

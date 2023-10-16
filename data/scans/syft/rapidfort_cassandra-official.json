@@ -81,7 +81,7 @@
    }
   },
   {
-   "id": "daede8b3eea68a9f",
+   "id": "7ebaad410968ad32",
    "name": "ST4",
    "version": "4.0.8",
    "type": "java-archive",
@@ -95,7 +95,25 @@
      }
     }
    ],
-   "licenses": [],
+   "licenses": [
+    {
+     "value": "BSD licence",
+     "spdxExpression": "",
+     "type": "declared",
+     "urls": [
+      "http://antlr.org/license.html"
+     ],
+     "locations": [
+      {
+       "path": "/opt/cassandra/lib/ST4-4.0.8.jar",
+       "layerID": "sha256:07850820e5b4c4dc34c7ab86578c73ca61bf7a105f6315a4644b3d9a4c9924e7",
+       "annotations": {
+        "evidence": "primary"
+       }
+      }
+     ]
+    }
+   ],
    "language": "java",
    "cpes": [
     "cpe:2.3:a:antlr:ST4:4.0.8:*:*:*:*:*:*:*",
@@ -1284,7 +1302,7 @@
    }
   },
   {
-   "id": "0fba83eaab68053d",
+   "id": "76bc145c611ba0d2",
    "name": "concurrent-trees",
    "version": "2.4.0",
    "type": "java-archive",
@@ -1298,7 +1316,25 @@
      }
     }
    ],
-   "licenses": [],
+   "licenses": [
+    {
+     "value": "The Apache Software License, Version 2.0",
+     "spdxExpression": "",
+     "type": "declared",
+     "urls": [
+      "http://www.apache.org/licenses/LICENSE-2.0.txt"
+     ],
+     "locations": [
+      {
+       "path": "/opt/cassandra/lib/concurrent-trees-2.4.0.jar",
+       "layerID": "sha256:07850820e5b4c4dc34c7ab86578c73ca61bf7a105f6315a4644b3d9a4c9924e7",
+       "annotations": {
+        "evidence": "primary"
+       }
+      }
+     ]
+    }
+   ],
    "language": "java",
    "cpes": [
     "cpe:2.3:a:concurrent-trees:concurrent-trees:2.4.0:*:*:*:*:*:*:*",
@@ -1588,7 +1624,7 @@
    }
   },
   {
-   "id": "5d249983be6ac375",
+   "id": "7eb95d5391b2e936",
    "name": "high-scale-lib",
    "version": "1.0.6",
    "type": "java-archive",
@@ -1602,7 +1638,25 @@
      }
     }
    ],
-   "licenses": [],
+   "licenses": [
+    {
+     "value": "MIT License",
+     "spdxExpression": "",
+     "type": "declared",
+     "urls": [
+      "http://www.opensource.org/licenses/mit-license.php"
+     ],
+     "locations": [
+      {
+       "path": "/opt/cassandra/lib/high-scale-lib-1.0.6.jar",
+       "layerID": "sha256:07850820e5b4c4dc34c7ab86578c73ca61bf7a105f6315a4644b3d9a4c9924e7",
+       "annotations": {
+        "evidence": "primary"
+       }
+      }
+     ]
+    }
+   ],
    "language": "java",
    "cpes": [
     "cpe:2.3:a:high-scale-lib:high-scale-lib:1.0.6:*:*:*:*:*:*:*",
@@ -1724,7 +1778,7 @@
    }
   },
   {
-   "id": "32f4e8ba95e417a1",
+   "id": "738e3b36f443b231",
    "name": "j2objc-annotations",
    "version": "1.3",
    "type": "java-archive",
@@ -1738,7 +1792,25 @@
      }
     }
    ],
-   "licenses": [],
+   "licenses": [
+    {
+     "value": "The Apache Software License, Version 2.0",
+     "spdxExpression": "",
+     "type": "declared",
+     "urls": [
+      "http://www.apache.org/licenses/LICENSE-2.0.txt"
+     ],
+     "locations": [
+      {
+       "path": "/opt/cassandra/lib/j2objc-annotations-1.3.jar",
+       "layerID": "sha256:07850820e5b4c4dc34c7ab86578c73ca61bf7a105f6315a4644b3d9a4c9924e7",
+       "annotations": {
+        "evidence": "primary"
+       }
+      }
+     ]
+    }
+   ],
    "language": "java",
    "cpes": [
     "cpe:2.3:a:j2objc-annotations:j2objc-annotations:1.3:*:*:*:*:*:*:*",
@@ -2175,7 +2247,7 @@
    }
   },
   {
-   "id": "85ea90bd6d60a419",
+   "id": "712c0951164e3cfb",
    "name": "java-cup-runtime",
    "version": "11b-20160615",
    "type": "java-archive",
@@ -2189,7 +2261,25 @@
      }
     }
    ],
-   "licenses": [],
+   "licenses": [
+    {
+     "value": "CUP Parser Generator Copyright Notice, License, and Disclaimer",
+     "spdxExpression": "",
+     "type": "declared",
+     "urls": [
+      "http://www2.cs.tum.edu/projects/cup/install.php"
+     ],
+     "locations": [
+      {
+       "path": "/opt/cassandra/lib/java-cup-runtime-11b-20160615.jar",
+       "layerID": "sha256:07850820e5b4c4dc34c7ab86578c73ca61bf7a105f6315a4644b3d9a4c9924e7",
+       "annotations": {
+        "evidence": "primary"
+       }
+      }
+     ]
+    }
+   ],
    "language": "java",
    "cpes": [
     "cpe:2.3:a:java-cup-runtime:java-cup-runtime:11b-20160615:*:*:*:*:*:*:*",
@@ -2236,7 +2326,7 @@
    }
   },
   {
-   "id": "26487c59db223021",
+   "id": "d055f82b545e5488",
    "name": "jbcrypt",
    "version": "0.4",
    "type": "java-archive",
@@ -2250,7 +2340,25 @@
      }
     }
    ],
-   "licenses": [],
+   "licenses": [
+    {
+     "value": "ISC",
+     "spdxExpression": "ISC",
+     "type": "declared",
+     "urls": [
+      "https://opensource.org/licenses/isc-license"
+     ],
+     "locations": [
+      {
+       "path": "/opt/cassandra/lib/jbcrypt-0.4.jar",
+       "layerID": "sha256:07850820e5b4c4dc34c7ab86578c73ca61bf7a105f6315a4644b3d9a4c9924e7",
+       "annotations": {
+        "evidence": "primary"
+       }
+      }
+     ]
+    }
+   ],
    "language": "java",
    "cpes": [
     "cpe:2.3:a:jbcrypt:jbcrypt:0.4:*:*:*:*:*:*:*",
@@ -2432,7 +2540,7 @@
    }
   },
   {
-   "id": "a927f92050d355e2",
+   "id": "3bd405ad3fbbce06",
    "name": "jctools-core",
    "version": "2.1.1",
    "type": "java-archive",
@@ -2446,7 +2554,25 @@
      }
     }
    ],
-   "licenses": [],
+   "licenses": [
+    {
+     "value": "Apache License, Version 2.0",
+     "spdxExpression": "",
+     "type": "declared",
+     "urls": [
+      "http://www.apache.org/licenses/LICENSE-2.0.txt"
+     ],
+     "locations": [
+      {
+       "path": "/opt/cassandra/lib/cassandra-driver-core-3.11.0-shaded.jar",
+       "layerID": "sha256:07850820e5b4c4dc34c7ab86578c73ca61bf7a105f6315a4644b3d9a4c9924e7",
+       "annotations": {
+        "evidence": "primary"
+       }
+      }
+     ]
+    }
+   ],
    "language": "java",
    "cpes": [
     "cpe:2.3:a:jctools-core:jctools-core:2.1.1:*:*:*:*:*:*:*",
@@ -2719,7 +2845,7 @@
    }
   },
   {
-   "id": "04a68095eab460f7",
+   "id": "fec85aef39c246be",
    "name": "jvm-attach-api",
    "version": "1.5",
    "type": "java-archive",
@@ -2733,7 +2859,25 @@
      }
     }
    ],
-   "licenses": [],
+   "licenses": [
+    {
+     "value": "The Apache Software License, Version 2.0",
+     "spdxExpression": "",
+     "type": "declared",
+     "urls": [
+      "http://www.apache.org/licenses/LICENSE-2.0.txt"
+     ],
+     "locations": [
+      {
+       "path": "/opt/cassandra/lib/jvm-attach-api-1.5.jar",
+       "layerID": "sha256:07850820e5b4c4dc34c7ab86578c73ca61bf7a105f6315a4644b3d9a4c9924e7",
+       "annotations": {
+        "evidence": "primary"
+       }
+      }
+     ]
+    }
+   ],
    "language": "java",
    "cpes": [
     "cpe:2.3:a:jvm-attach-api:jvm-attach-api:1.5:*:*:*:*:*:*:*",
@@ -3545,7 +3689,7 @@
    }
   },
   {
-   "id": "5b39f3e807969f4d",
+   "id": "b18c2fbd8fc4ada3",
    "name": "ohc-core",
    "version": "0.5.1",
    "type": "java-archive",
@@ -3559,7 +3703,25 @@
      }
     }
    ],
-   "licenses": [],
+   "licenses": [
+    {
+     "value": "Apache 2",
+     "spdxExpression": "",
+     "type": "declared",
+     "urls": [
+      "http://www.apache.org/licenses/LICENSE-2.0.txt"
+     ],
+     "locations": [
+      {
+       "path": "/opt/cassandra/lib/ohc-core-0.5.1.jar",
+       "layerID": "sha256:07850820e5b4c4dc34c7ab86578c73ca61bf7a105f6315a4644b3d9a4c9924e7",
+       "annotations": {
+        "evidence": "primary"
+       }
+      }
+     ]
+    }
+   ],
    "language": "java",
    "cpes": [
     "cpe:2.3:a:caffinitas:ohc-core:0.5.1:*:*:*:*:*:*:*",
@@ -3604,7 +3766,7 @@
    }
   },
   {
-   "id": "53cc3375f9591415",
+   "id": "38184902698a4d16",
    "name": "ohc-core-j8",
    "version": "0.5.1",
    "type": "java-archive",
@@ -3618,7 +3780,25 @@
      }
     }
    ],
-   "licenses": [],
+   "licenses": [
+    {
+     "value": "Apache 2",
+     "spdxExpression": "",
+     "type": "declared",
+     "urls": [
+      "http://www.apache.org/licenses/LICENSE-2.0.txt"
+     ],
+     "locations": [
+      {
+       "path": "/opt/cassandra/lib/ohc-core-j8-0.5.1.jar",
+       "layerID": "sha256:07850820e5b4c4dc34c7ab86578c73ca61bf7a105f6315a4644b3d9a4c9924e7",
+       "annotations": {
+        "evidence": "primary"
+       }
+      }
+     ]
+    }
+   ],
    "language": "java",
    "cpes": [
     "cpe:2.3:a:ohc-core-j8:ohc-core-j8:0.5.1:*:*:*:*:*:*:*",
@@ -3669,7 +3849,7 @@
    }
   },
   {
-   "id": "bed4e189a3cf9c69",
+   "id": "7bba62f18d713845",
    "name": "psjava",
    "version": "0.1.19",
    "type": "java-archive",
@@ -3683,7 +3863,25 @@
      }
     }
    ],
-   "licenses": [],
+   "licenses": [
+    {
+     "value": "The MIT License (MIT)",
+     "spdxExpression": "",
+     "type": "declared",
+     "urls": [
+      "http://opensource.org/licenses/MIT"
+     ],
+     "locations": [
+      {
+       "path": "/opt/cassandra/lib/psjava-0.1.19.jar",
+       "layerID": "sha256:07850820e5b4c4dc34c7ab86578c73ca61bf7a105f6315a4644b3d9a4c9924e7",
+       "annotations": {
+        "evidence": "primary"
+       }
+      }
+     ]
+    }
+   ],
    "language": "java",
    "cpes": [
     "cpe:2.3:a:psjava:psjava:0.1.19:*:*:*:*:*:*:*"
@@ -4456,7 +4654,34 @@
    }
   },
   {
-   "id": "2ec04e029007acb8",
+   "id": "f336378bc4d56099",
+   "name": "stdlib",
+   "version": "go1.18.2",
+   "type": "go-module",
+   "foundBy": "",
+   "locations": [
+    {
+     "path": "/usr/local/bin/gosu",
+     "layerID": "sha256:07850820e5b4c4dc34c7ab86578c73ca61bf7a105f6315a4644b3d9a4c9924e7",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "go",
+   "cpes": [
+    "cpe:2.3:a:golang:go:1.18.2:-:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:golang/stdlib@1.18.2",
+   "metadataType": "GolangBinMetadata",
+   "metadata": {
+    "goCompiledVersion": "go1.18.2",
+    "architecture": ""
+   }
+  },
+  {
+   "id": "4b7ae226e77d810c",
    "name": "stream",
    "version": "2.5.2",
    "type": "java-archive",
@@ -4470,7 +4695,25 @@
      }
     }
    ],
-   "licenses": [],
+   "licenses": [
+    {
+     "value": "Apache License, Version 2.0",
+     "spdxExpression": "",
+     "type": "declared",
+     "urls": [
+      "http://www.apache.org/licenses/LICENSE-2.0.txt"
+     ],
+     "locations": [
+      {
+       "path": "/opt/cassandra/lib/stream-2.5.2.jar",
+       "layerID": "sha256:07850820e5b4c4dc34c7ab86578c73ca61bf7a105f6315a4644b3d9a4c9924e7",
+       "annotations": {
+        "evidence": "primary"
+       }
+      }
+     ]
+    }
+   ],
    "language": "java",
    "cpes": [
     "cpe:2.3:a:clearspring:stream:2.5.2:*:*:*:*:*:*:*",
@@ -4613,18 +4856,8 @@
    "type": "evident-by"
   },
   {
-   "parent": "04a68095eab460f7",
-   "child": "6a2a14329a1aae71",
-   "type": "evident-by"
-  },
-  {
    "parent": "04f1311277d95f62",
    "child": "8c8ae42ad5b296a0",
-   "type": "evident-by"
-  },
-  {
-   "parent": "0fba83eaab68053d",
-   "child": "f2eef5582227bc18",
    "type": "evident-by"
   },
   {
@@ -4648,11 +4881,6 @@
    "type": "evident-by"
   },
   {
-   "parent": "26487c59db223021",
-   "child": "6219947a84058fb3",
-   "type": "evident-by"
-  },
-  {
    "parent": "2907d27858e906b6",
    "child": "66a028f241de25d0",
    "type": "evident-by"
@@ -4660,11 +4888,6 @@
   {
    "parent": "2ad659b33ddd8700",
    "child": "c6a6070849e635fd",
-   "type": "evident-by"
-  },
-  {
-   "parent": "2ec04e029007acb8",
-   "child": "8dbdd4b05b24d7bf",
    "type": "evident-by"
   },
   {
@@ -4678,18 +4901,23 @@
    "type": "evident-by"
   },
   {
-   "parent": "32f4e8ba95e417a1",
-   "child": "d9392664fbf019ff",
-   "type": "evident-by"
-  },
-  {
    "parent": "35e828b12443a7d2",
    "child": "19cf1ac032ce43c5",
    "type": "evident-by"
   },
   {
+   "parent": "38184902698a4d16",
+   "child": "43a62e7e938f8380",
+   "type": "evident-by"
+  },
+  {
    "parent": "39c271d74c77951a",
    "child": "07c64aa6d03cfef6",
+   "type": "evident-by"
+  },
+  {
+   "parent": "3bd405ad3fbbce06",
+   "child": "66a028f241de25d0",
    "type": "evident-by"
   },
   {
@@ -4733,6 +4961,11 @@
    "type": "evident-by"
   },
   {
+   "parent": "4b7ae226e77d810c",
+   "child": "8dbdd4b05b24d7bf",
+   "type": "evident-by"
+  },
+  {
    "parent": "50c3b1d8416c0179",
    "child": "c276995f495bd639",
    "type": "evident-by"
@@ -4743,23 +4976,8 @@
    "type": "evident-by"
   },
   {
-   "parent": "53cc3375f9591415",
-   "child": "43a62e7e938f8380",
-   "type": "evident-by"
-  },
-  {
    "parent": "5a5fb8168b564872",
    "child": "e0e6b69be1699d8b",
-   "type": "evident-by"
-  },
-  {
-   "parent": "5b39f3e807969f4d",
-   "child": "bed639f3f7035464",
-   "type": "evident-by"
-  },
-  {
-   "parent": "5d249983be6ac375",
-   "child": "5e807d544073d080",
    "type": "evident-by"
   },
   {
@@ -4773,8 +4991,18 @@
    "type": "evident-by"
   },
   {
+   "parent": "712c0951164e3cfb",
+   "child": "95d63407c517426c",
+   "type": "evident-by"
+  },
+  {
    "parent": "7255384fb4c2bca3",
    "child": "a669c3e075bf9265",
+   "type": "evident-by"
+  },
+  {
+   "parent": "738e3b36f443b231",
+   "child": "d9392664fbf019ff",
    "type": "evident-by"
   },
   {
@@ -4798,8 +5026,18 @@
    "type": "evident-by"
   },
   {
+   "parent": "76bc145c611ba0d2",
+   "child": "f2eef5582227bc18",
+   "type": "evident-by"
+  },
+  {
    "parent": "79b8c64ca1cc1d07",
    "child": "98e2029ec96325c5",
+   "type": "evident-by"
+  },
+  {
+   "parent": "7bba62f18d713845",
+   "child": "c601a7f856d66677",
    "type": "evident-by"
   },
   {
@@ -4819,17 +5057,7 @@
   },
   {
    "parent": "7c8450c231157ec825fd7498f59fed51d8bded72aa8232ddf1cfb7313bc579b5",
-   "child": "04a68095eab460f7",
-   "type": "contains"
-  },
-  {
-   "parent": "7c8450c231157ec825fd7498f59fed51d8bded72aa8232ddf1cfb7313bc579b5",
    "child": "04f1311277d95f62",
-   "type": "contains"
-  },
-  {
-   "parent": "7c8450c231157ec825fd7498f59fed51d8bded72aa8232ddf1cfb7313bc579b5",
-   "child": "0fba83eaab68053d",
    "type": "contains"
   },
   {
@@ -4854,22 +5082,12 @@
   },
   {
    "parent": "7c8450c231157ec825fd7498f59fed51d8bded72aa8232ddf1cfb7313bc579b5",
-   "child": "26487c59db223021",
-   "type": "contains"
-  },
-  {
-   "parent": "7c8450c231157ec825fd7498f59fed51d8bded72aa8232ddf1cfb7313bc579b5",
    "child": "2907d27858e906b6",
    "type": "contains"
   },
   {
    "parent": "7c8450c231157ec825fd7498f59fed51d8bded72aa8232ddf1cfb7313bc579b5",
    "child": "2ad659b33ddd8700",
-   "type": "contains"
-  },
-  {
-   "parent": "7c8450c231157ec825fd7498f59fed51d8bded72aa8232ddf1cfb7313bc579b5",
-   "child": "2ec04e029007acb8",
    "type": "contains"
   },
   {
@@ -4884,17 +5102,22 @@
   },
   {
    "parent": "7c8450c231157ec825fd7498f59fed51d8bded72aa8232ddf1cfb7313bc579b5",
-   "child": "32f4e8ba95e417a1",
-   "type": "contains"
-  },
-  {
-   "parent": "7c8450c231157ec825fd7498f59fed51d8bded72aa8232ddf1cfb7313bc579b5",
    "child": "35e828b12443a7d2",
    "type": "contains"
   },
   {
    "parent": "7c8450c231157ec825fd7498f59fed51d8bded72aa8232ddf1cfb7313bc579b5",
+   "child": "38184902698a4d16",
+   "type": "contains"
+  },
+  {
+   "parent": "7c8450c231157ec825fd7498f59fed51d8bded72aa8232ddf1cfb7313bc579b5",
    "child": "39c271d74c77951a",
+   "type": "contains"
+  },
+  {
+   "parent": "7c8450c231157ec825fd7498f59fed51d8bded72aa8232ddf1cfb7313bc579b5",
+   "child": "3bd405ad3fbbce06",
    "type": "contains"
   },
   {
@@ -4939,6 +5162,11 @@
   },
   {
    "parent": "7c8450c231157ec825fd7498f59fed51d8bded72aa8232ddf1cfb7313bc579b5",
+   "child": "4b7ae226e77d810c",
+   "type": "contains"
+  },
+  {
+   "parent": "7c8450c231157ec825fd7498f59fed51d8bded72aa8232ddf1cfb7313bc579b5",
    "child": "50c3b1d8416c0179",
    "type": "contains"
   },
@@ -4949,22 +5177,7 @@
   },
   {
    "parent": "7c8450c231157ec825fd7498f59fed51d8bded72aa8232ddf1cfb7313bc579b5",
-   "child": "53cc3375f9591415",
-   "type": "contains"
-  },
-  {
-   "parent": "7c8450c231157ec825fd7498f59fed51d8bded72aa8232ddf1cfb7313bc579b5",
    "child": "5a5fb8168b564872",
-   "type": "contains"
-  },
-  {
-   "parent": "7c8450c231157ec825fd7498f59fed51d8bded72aa8232ddf1cfb7313bc579b5",
-   "child": "5b39f3e807969f4d",
-   "type": "contains"
-  },
-  {
-   "parent": "7c8450c231157ec825fd7498f59fed51d8bded72aa8232ddf1cfb7313bc579b5",
-   "child": "5d249983be6ac375",
    "type": "contains"
   },
   {
@@ -4979,7 +5192,17 @@
   },
   {
    "parent": "7c8450c231157ec825fd7498f59fed51d8bded72aa8232ddf1cfb7313bc579b5",
+   "child": "712c0951164e3cfb",
+   "type": "contains"
+  },
+  {
+   "parent": "7c8450c231157ec825fd7498f59fed51d8bded72aa8232ddf1cfb7313bc579b5",
    "child": "7255384fb4c2bca3",
+   "type": "contains"
+  },
+  {
+   "parent": "7c8450c231157ec825fd7498f59fed51d8bded72aa8232ddf1cfb7313bc579b5",
+   "child": "738e3b36f443b231",
    "type": "contains"
   },
   {
@@ -5004,7 +5227,27 @@
   },
   {
    "parent": "7c8450c231157ec825fd7498f59fed51d8bded72aa8232ddf1cfb7313bc579b5",
+   "child": "76bc145c611ba0d2",
+   "type": "contains"
+  },
+  {
+   "parent": "7c8450c231157ec825fd7498f59fed51d8bded72aa8232ddf1cfb7313bc579b5",
    "child": "79b8c64ca1cc1d07",
+   "type": "contains"
+  },
+  {
+   "parent": "7c8450c231157ec825fd7498f59fed51d8bded72aa8232ddf1cfb7313bc579b5",
+   "child": "7bba62f18d713845",
+   "type": "contains"
+  },
+  {
+   "parent": "7c8450c231157ec825fd7498f59fed51d8bded72aa8232ddf1cfb7313bc579b5",
+   "child": "7eb95d5391b2e936",
+   "type": "contains"
+  },
+  {
+   "parent": "7c8450c231157ec825fd7498f59fed51d8bded72aa8232ddf1cfb7313bc579b5",
+   "child": "7ebaad410968ad32",
    "type": "contains"
   },
   {
@@ -5020,11 +5263,6 @@
   {
    "parent": "7c8450c231157ec825fd7498f59fed51d8bded72aa8232ddf1cfb7313bc579b5",
    "child": "82c36490533db64b",
-   "type": "contains"
-  },
-  {
-   "parent": "7c8450c231157ec825fd7498f59fed51d8bded72aa8232ddf1cfb7313bc579b5",
-   "child": "85ea90bd6d60a419",
    "type": "contains"
   },
   {
@@ -5059,12 +5297,12 @@
   },
   {
    "parent": "7c8450c231157ec825fd7498f59fed51d8bded72aa8232ddf1cfb7313bc579b5",
-   "child": "a927f92050d355e2",
+   "child": "af0e6a851ad5a433",
    "type": "contains"
   },
   {
    "parent": "7c8450c231157ec825fd7498f59fed51d8bded72aa8232ddf1cfb7313bc579b5",
-   "child": "af0e6a851ad5a433",
+   "child": "b18c2fbd8fc4ada3",
    "type": "contains"
   },
   {
@@ -5075,11 +5313,6 @@
   {
    "parent": "7c8450c231157ec825fd7498f59fed51d8bded72aa8232ddf1cfb7313bc579b5",
    "child": "b608ce2e21f90f75",
-   "type": "contains"
-  },
-  {
-   "parent": "7c8450c231157ec825fd7498f59fed51d8bded72aa8232ddf1cfb7313bc579b5",
-   "child": "bed4e189a3cf9c69",
    "type": "contains"
   },
   {
@@ -5104,17 +5337,17 @@
   },
   {
    "parent": "7c8450c231157ec825fd7498f59fed51d8bded72aa8232ddf1cfb7313bc579b5",
+   "child": "d055f82b545e5488",
+   "type": "contains"
+  },
+  {
+   "parent": "7c8450c231157ec825fd7498f59fed51d8bded72aa8232ddf1cfb7313bc579b5",
    "child": "d0db063dc5d12e63",
    "type": "contains"
   },
   {
    "parent": "7c8450c231157ec825fd7498f59fed51d8bded72aa8232ddf1cfb7313bc579b5",
    "child": "d74215a5ccc7e807",
-   "type": "contains"
-  },
-  {
-   "parent": "7c8450c231157ec825fd7498f59fed51d8bded72aa8232ddf1cfb7313bc579b5",
-   "child": "daede8b3eea68a9f",
    "type": "contains"
   },
   {
@@ -5144,8 +5377,28 @@
   },
   {
    "parent": "7c8450c231157ec825fd7498f59fed51d8bded72aa8232ddf1cfb7313bc579b5",
+   "child": "f336378bc4d56099",
+   "type": "contains"
+  },
+  {
+   "parent": "7c8450c231157ec825fd7498f59fed51d8bded72aa8232ddf1cfb7313bc579b5",
    "child": "f9d1acf136976ed3",
    "type": "contains"
+  },
+  {
+   "parent": "7c8450c231157ec825fd7498f59fed51d8bded72aa8232ddf1cfb7313bc579b5",
+   "child": "fec85aef39c246be",
+   "type": "contains"
+  },
+  {
+   "parent": "7eb95d5391b2e936",
+   "child": "5e807d544073d080",
+   "type": "evident-by"
+  },
+  {
+   "parent": "7ebaad410968ad32",
+   "child": "24787024c53f3218",
+   "type": "evident-by"
   },
   {
    "parent": "80d2f28324f425be",
@@ -5160,11 +5413,6 @@
   {
    "parent": "82c36490533db64b",
    "child": "fa0366ece00d2b09",
-   "type": "evident-by"
-  },
-  {
-   "parent": "85ea90bd6d60a419",
-   "child": "95d63407c517426c",
    "type": "evident-by"
   },
   {
@@ -5198,13 +5446,13 @@
    "type": "evident-by"
   },
   {
-   "parent": "a927f92050d355e2",
-   "child": "66a028f241de25d0",
+   "parent": "af0e6a851ad5a433",
+   "child": "abab5fb9ac95ba0c",
    "type": "evident-by"
   },
   {
-   "parent": "af0e6a851ad5a433",
-   "child": "abab5fb9ac95ba0c",
+   "parent": "b18c2fbd8fc4ada3",
+   "child": "bed639f3f7035464",
    "type": "evident-by"
   },
   {
@@ -5215,11 +5463,6 @@
   {
    "parent": "b608ce2e21f90f75",
    "child": "fb364490132dc183",
-   "type": "evident-by"
-  },
-  {
-   "parent": "bed4e189a3cf9c69",
-   "child": "c601a7f856d66677",
    "type": "evident-by"
   },
   {
@@ -5243,6 +5486,11 @@
    "type": "evident-by"
   },
   {
+   "parent": "d055f82b545e5488",
+   "child": "6219947a84058fb3",
+   "type": "evident-by"
+  },
+  {
    "parent": "d0db063dc5d12e63",
    "child": "ca26ba69be39e631",
    "type": "evident-by"
@@ -5250,11 +5498,6 @@
   {
    "parent": "d74215a5ccc7e807",
    "child": "ee29bad7761b37f7",
-   "type": "evident-by"
-  },
-  {
-   "parent": "daede8b3eea68a9f",
-   "child": "24787024c53f3218",
    "type": "evident-by"
   },
   {
@@ -5283,8 +5526,18 @@
    "type": "evident-by"
   },
   {
+   "parent": "f336378bc4d56099",
+   "child": "fa0366ece00d2b09",
+   "type": "evident-by"
+  },
+  {
    "parent": "f9d1acf136976ed3",
    "child": "ef72489a7dcbf4e2",
+   "type": "evident-by"
+  },
+  {
+   "parent": "fec85aef39c246be",
+   "child": "6a2a14329a1aae71",
    "type": "evident-by"
   }
  ],
@@ -5799,7 +6052,7 @@
  },
  "descriptor": {
   "name": "syft",
-  "version": "0.92.0",
+  "version": "0.93.0",
   "configuration": {
    "catalogers": null,
    "package": {

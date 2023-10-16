@@ -18586,6 +18586,33 @@
    }
   },
   {
+   "id": "415bb46a0d3482a1",
+   "name": "stdlib",
+   "version": "go1.21.1",
+   "type": "go-module",
+   "foundBy": "",
+   "locations": [
+    {
+     "path": "/usr/bin/telegraf",
+     "layerID": "sha256:2a30b0419c03aadf7ba54200ed9993593b13278f845bb547dc93165796e607c5",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "go",
+   "cpes": [
+    "cpe:2.3:a:golang:go:1.21.1:-:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:golang/stdlib@1.21.1",
+   "metadataType": "GolangBinMetadata",
+   "metadata": {
+    "goCompiledVersion": "go1.21.1",
+    "architecture": ""
+   }
+  },
+  {
    "id": "1a111ddc010ab102",
    "name": "su-exec",
    "version": "0.2-r3",
@@ -31852,6 +31879,11 @@
    "type": "evident-by"
   },
   {
+   "parent": "415bb46a0d3482a1",
+   "child": "d38ecf7898b0aee6",
+   "type": "evident-by"
+  },
+  {
    "parent": "41ce3a9e33ba8f83",
    "child": "d38ecf7898b0aee6",
    "type": "evident-by"
@@ -36054,6 +36086,11 @@
   {
    "parent": "fbd2440dab6a5d21220bc696c9cb741eafc1ea2069188bf4c50382b987a0d3b6",
    "child": "4135cef983fac616",
+   "type": "contains"
+  },
+  {
+   "parent": "fbd2440dab6a5d21220bc696c9cb741eafc1ea2069188bf4c50382b987a0d3b6",
+   "child": "415bb46a0d3482a1",
    "type": "contains"
   },
   {
@@ -45554,7 +45591,7 @@
  },
  "descriptor": {
   "name": "syft",
-  "version": "0.92.0",
+  "version": "0.93.0",
   "configuration": {
    "catalogers": null,
    "package": {

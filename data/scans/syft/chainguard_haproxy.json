@@ -5139,6 +5139,33 @@
    }
   },
   {
+   "id": "b59876de84589448",
+   "name": "stdlib",
+   "version": "go1.21.2",
+   "type": "go-module",
+   "foundBy": "",
+   "locations": [
+    {
+     "path": "/usr/bin/dataplaneapi",
+     "layerID": "sha256:56d226663c6634fbca4840da94058f7ebc177dd6318db0774ec6383feb5f591c",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "go",
+   "cpes": [
+    "cpe:2.3:a:golang:go:1.21.2:-:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:golang/stdlib@1.21.2",
+   "metadataType": "GolangBinMetadata",
+   "metadata": {
+    "goCompiledVersion": "go1.21.2",
+    "architecture": ""
+   }
+  },
+  {
    "id": "d113004b447fb691",
    "name": "wolfi-baselayout",
    "version": "20230201-r6",
@@ -6366,6 +6393,16 @@
   },
   {
    "parent": "4352e582d21a9604",
+   "child": "b59876de84589448",
+   "type": "ownership-by-file-overlap",
+   "metadata": {
+    "files": [
+     "/usr/bin/dataplaneapi"
+    ]
+   }
+  },
+  {
+   "parent": "4352e582d21a9604",
    "child": "be5860122d7a1544",
    "type": "ownership-by-file-overlap",
    "metadata": {
@@ -7007,6 +7044,11 @@
   {
    "parent": "850ba8b312d1dae58ecb7c7739753611fb690fdb2275539891e272269a097494",
    "child": "ae0382d81cd38b09",
+   "type": "contains"
+  },
+  {
+   "parent": "850ba8b312d1dae58ecb7c7739753611fb690fdb2275539891e272269a097494",
+   "child": "b59876de84589448",
    "type": "contains"
   },
   {
@@ -7728,6 +7770,11 @@
    "parent": "ae0382d81cd38b09",
    "child": "cc744a167ead10ac",
    "type": "dependency-of"
+  },
+  {
+   "parent": "b59876de84589448",
+   "child": "1168cf07f9054a46",
+   "type": "evident-by"
   },
   {
    "parent": "ba17f6cb2d847566",
@@ -9141,7 +9188,7 @@
  },
  "descriptor": {
   "name": "syft",
-  "version": "0.92.0",
+  "version": "0.93.0",
   "configuration": {
    "catalogers": null,
    "package": {

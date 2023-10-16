@@ -6744,7 +6744,7 @@
    }
   },
   {
-   "id": "8a12fec3247f7baf",
+   "id": "9bc6aa906924dd6a",
    "name": "jctools-core",
    "version": "3.1.0",
    "type": "java-archive",
@@ -6758,7 +6758,25 @@
      }
     }
    ],
-   "licenses": [],
+   "licenses": [
+    {
+     "value": "Apache License, Version 2.0",
+     "spdxExpression": "",
+     "type": "declared",
+     "urls": [
+      "http://www.apache.org/licenses/LICENSE-2.0.txt"
+     ],
+     "locations": [
+      {
+       "path": "/usr/share/java/zookeeper/lib/netty-common-4.1.94.Final.jar",
+       "layerID": "sha256:2ddf457d99a3caa1c5d03f3130987a2602cdd171167bf50226caf2cb583a75d7",
+       "annotations": {
+        "evidence": "primary"
+       }
+      }
+     ]
+    }
+   ],
    "language": "java",
    "cpes": [
     "cpe:2.3:a:jctools-core:jctools-core:3.1.0:*:*:*:*:*:*:*",
@@ -24229,16 +24247,6 @@
   },
   {
    "parent": "3af0bf50fdfa1d55",
-   "child": "8a12fec3247f7baf",
-   "type": "ownership-by-file-overlap",
-   "metadata": {
-    "files": [
-     "/usr/share/java/zookeeper/lib/netty-common-4.1.94.Final.jar"
-    ]
-   }
-  },
-  {
-   "parent": "3af0bf50fdfa1d55",
    "child": "8a8862b23bf1b1d2",
    "type": "contains"
   },
@@ -24291,6 +24299,16 @@
    "parent": "3af0bf50fdfa1d55",
    "child": "9b8d67e466a2f8b8",
    "type": "contains"
+  },
+  {
+   "parent": "3af0bf50fdfa1d55",
+   "child": "9bc6aa906924dd6a",
+   "type": "ownership-by-file-overlap",
+   "metadata": {
+    "files": [
+     "/usr/share/java/zookeeper/lib/netty-common-4.1.94.Final.jar"
+    ]
+   }
   },
   {
    "parent": "3af0bf50fdfa1d55",
@@ -28143,11 +28161,6 @@
    "type": "contains"
   },
   {
-   "parent": "8a12fec3247f7baf",
-   "child": "8348952d8563cd5e",
-   "type": "evident-by"
-  },
-  {
    "parent": "8bb0d32946d48704cd92c215b2f1dd5c4c219121385f262c3bc64ce30755f106",
    "child": "005169faaf812658",
    "type": "contains"
@@ -28424,11 +28437,6 @@
   },
   {
    "parent": "8bb0d32946d48704cd92c215b2f1dd5c4c219121385f262c3bc64ce30755f106",
-   "child": "8a12fec3247f7baf",
-   "type": "contains"
-  },
-  {
-   "parent": "8bb0d32946d48704cd92c215b2f1dd5c4c219121385f262c3bc64ce30755f106",
    "child": "8d87e01ed5f1c10d",
    "type": "contains"
   },
@@ -28440,6 +28448,11 @@
   {
    "parent": "8bb0d32946d48704cd92c215b2f1dd5c4c219121385f262c3bc64ce30755f106",
    "child": "97d22130c86ed284",
+   "type": "contains"
+  },
+  {
+   "parent": "8bb0d32946d48704cd92c215b2f1dd5c4c219121385f262c3bc64ce30755f106",
+   "child": "9bc6aa906924dd6a",
    "type": "contains"
   },
   {
@@ -28751,6 +28764,11 @@
    "parent": "97d22130c86ed284",
    "child": "f8fabec0347066ff",
    "type": "contains"
+  },
+  {
+   "parent": "9bc6aa906924dd6a",
+   "child": "8348952d8563cd5e",
+   "type": "evident-by"
   },
   {
    "parent": "9d6c996687f876cd",
@@ -39475,7 +39493,7 @@
  },
  "descriptor": {
   "name": "syft",
-  "version": "0.92.0",
+  "version": "0.93.0",
   "configuration": {
    "catalogers": null,
    "package": {

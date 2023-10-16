@@ -109,107 +109,77 @@
   },
   {
    "vulnerability": {
-    "id": "CVE-2020-13946",
-    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2020-13946",
-    "namespace": "nvd:cpe",
-    "severity": "Medium",
+    "id": "CVE-2023-38546",
+    "dataSource": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2023-38546",
+    "namespace": "ubuntu:distro:ubuntu:20.04",
+    "severity": "Low",
     "urls": [
-     "https://lists.apache.org/thread.html/r1fd117082b992e7d43c1286e966c285f98aa362e685695d999ff42f7@%3Cuser.cassandra.apache.org%3E",
-     "https://lists.apache.org/thread.html/r718e01f61b35409a4f7a3ccbc1cb5136a1558a9f9c2cb8d4ca9be1ce@%3Cuser.cassandra.apache.org%3E",
-     "https://lists.apache.org/thread.html/rab8d90d28f944d84e4d7852f355a25c89451ae02c2decc4d355a9cfc@%3Cuser.cassandra.apache.org%3E",
-     "https://lists.apache.org/thread.html/rcd7544b24d8fc32b7950ec4c117052410b661babaa857fb1fc641152%40%3Cuser.cassandra.apache.org%3E",
-     "https://security.netapp.com/advisory/ntap-20210521-0005/"
+     "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2023-38546"
     ],
-    "description": "In Apache Cassandra, all versions prior to 2.1.22, 2.2.18, 3.0.22, 3.11.8 and 4.0-beta2, it is possible for a local attacker without access to the Apache Cassandra process or configuration files to manipulate the RMI registry to perform a man-in-the-middle attack and capture user names and passwords used to access the JMX interface. The attacker can then use these credentials to access the JMX interface and perform unauthorised operations. Users should also be aware of CVE-2019-2684, a JRE vulnerability that enables this issue to be exploited remotely.",
-    "cvss": [
-     {
-      "source": "nvd@nist.gov",
-      "type": "Primary",
-      "version": "2.0",
-      "vector": "AV:N/AC:M/Au:N/C:P/I:N/A:N",
-      "metrics": {
-       "baseScore": 4.3,
-       "exploitabilityScore": 8.6,
-       "impactScore": 2.9
-      },
-      "vendorMetadata": {}
-     },
-     {
-      "source": "nvd@nist.gov",
-      "type": "Primary",
-      "version": "3.1",
-      "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
-      "metrics": {
-       "baseScore": 5.9,
-       "exploitabilityScore": 2.2,
-       "impactScore": 3.6
-      },
-      "vendorMetadata": {}
-     }
-    ],
+    "cvss": [],
     "fix": {
-     "versions": [],
-     "state": "unknown"
+     "versions": [
+      "7.68.0-1ubuntu2.20"
+     ],
+     "state": "fixed"
     },
     "advisories": []
    },
    "relatedVulnerabilities": [],
    "matchDetails": [
     {
-     "type": "cpe-match",
-     "matcher": "java-matcher",
+     "type": "exact-direct-match",
+     "matcher": "dpkg-matcher",
      "searchedBy": {
-      "namespace": "nvd:cpe",
-      "cpes": [
-       "cpe:2.3:a:apache:cassandra:*:*:*:*:*:*:*:*"
-      ],
-      "Package": {
-       "name": "fqltool",
-       "version": ""
+      "distro": {
+       "type": "ubuntu",
+       "version": "20.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:20.04",
+      "package": {
+       "name": "curl",
+       "version": "7.68.0-1ubuntu2.19"
       }
      },
      "found": {
-      "vulnerabilityID": "CVE-2020-13946",
-      "versionConstraint": "< 2.1.22 || >= 2.2.0, < 2.2.18 || >= 3.0.0, < 3.0.22 || >= 3.11.0, < 3.11.8 || = 4.0.0-alpha1 || = 4.0.0-alpha2 || = 4.0.0-alpha3 || = 4.0.0-alpha4 || = 4.0.0-beta1 (unknown)",
-      "cpes": [
-       "cpe:2.3:a:apache:cassandra:*:*:*:*:*:*:*:*"
-      ]
+      "versionConstraint": "< 7.68.0-1ubuntu2.20 (deb)",
+      "vulnerabilityID": "CVE-2023-38546"
      }
     }
    ],
    "artifact": {
-    "id": "58898b4226fce924",
-    "name": "fqltool",
-    "version": "",
-    "type": "java-archive",
+    "id": "ff1c69f360a6d2a5",
+    "name": "curl",
+    "version": "7.68.0-1ubuntu2.19",
+    "type": "deb",
     "locations": [
      {
-      "path": "/opt/cassandra/tools/lib/fqltool.jar",
+      "path": "/usr/share/doc/curl/copyright",
+      "layerID": "sha256:0b4923f16514fbdf96c8a0ca9eec9282449776e30840066e2a848a0fe324de5f"
+     },
+     {
+      "path": "/var/lib/dpkg/info/curl.md5sums",
+      "layerID": "sha256:0b4923f16514fbdf96c8a0ca9eec9282449776e30840066e2a848a0fe324de5f"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
       "layerID": "sha256:54c7196bcbc00ea3011bd71835ef5496b9229c3773e7c09d1ef1a0c02ac32256"
      }
     ],
-    "language": "java",
-    "licenses": [],
-    "cpes": [
-     "cpe:2.3:a:apache:FullQueryLogTool:*:*:*:*:*:*:*:*",
-     "cpe:2.3:a:apache:cassandra:*:*:*:*:*:*:*:*",
-     "cpe:2.3:a:apache:fqltool:*:*:*:*:*:*:*:*"
+    "language": "",
+    "licenses": [
+     "BSD-3-Clause",
+     "BSD-4-Clause",
+     "ISC",
+     "curl",
+     "other",
+     "public-domain"
     ],
-    "purl": "pkg:maven/org.apache.cassandra.fqltool.FullQueryLogTool/fqltool",
-    "upstreams": [],
-    "metadataType": "JavaMetadata",
-    "metadata": {
-     "virtualPath": "/opt/cassandra/tools/lib/fqltool.jar",
-     "pomArtifactID": "",
-     "pomGroupID": "",
-     "manifestName": "",
-     "archiveDigests": [
-      {
-       "algorithm": "sha1",
-       "value": "21a8f0383f9f068c7698744300b38fd63221de71"
-      }
-     ]
-    }
+    "cpes": [
+     "cpe:2.3:a:curl:curl:7.68.0-1ubuntu2.19:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/curl@7.68.0-1ubuntu2.19?arch=amd64&distro=ubuntu-20.04",
+    "upstreams": []
    }
   },
   {
@@ -807,109 +777,6 @@
   },
   {
    "vulnerability": {
-    "id": "CVE-2023-2976",
-    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-2976",
-    "namespace": "nvd:cpe",
-    "severity": "High",
-    "urls": [
-     "https://github.com/google/guava/issues/2575",
-     "https://security.netapp.com/advisory/ntap-20230818-0008/"
-    ],
-    "description": "Use of Java's default temporary directory for file creation in `FileBackedOutputStream` in Google Guava versions 1.0 to 31.1 on Unix systems and Android Ice Cream Sandwich allows other users and apps on the machine with access to the default Java temporary directory to be able to access the files created by the class.\n\nEven though the security vulnerability is fixed in version 32.0.0, we recommend using version 32.0.1 as version 32.0.0 breaks some functionality under Windows.\n\n",
-    "cvss": [
-     {
-      "source": "nvd@nist.gov",
-      "type": "Primary",
-      "version": "3.1",
-      "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
-      "metrics": {
-       "baseScore": 7.1,
-       "exploitabilityScore": 1.8,
-       "impactScore": 5.2
-      },
-      "vendorMetadata": {}
-     },
-     {
-      "source": "cve-coordination@google.com",
-      "type": "Secondary",
-      "version": "3.1",
-      "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
-      "metrics": {
-       "baseScore": 5.5,
-       "exploitabilityScore": 1.8,
-       "impactScore": 3.6
-      },
-      "vendorMetadata": {}
-     }
-    ],
-    "fix": {
-     "versions": [],
-     "state": "unknown"
-    },
-    "advisories": []
-   },
-   "relatedVulnerabilities": [],
-   "matchDetails": [
-    {
-     "type": "cpe-match",
-     "matcher": "java-matcher",
-     "searchedBy": {
-      "namespace": "nvd:cpe",
-      "cpes": [
-       "cpe:2.3:a:google:guava:27.0-jre:*:*:*:*:*:*:*"
-      ],
-      "Package": {
-       "name": "guava",
-       "version": "27.0-jre"
-      }
-     },
-     "found": {
-      "vulnerabilityID": "CVE-2023-2976",
-      "versionConstraint": "< 32.0.0 (unknown)",
-      "cpes": [
-       "cpe:2.3:a:google:guava:*:*:*:*:*:*:*:*"
-      ]
-     }
-    }
-   ],
-   "artifact": {
-    "id": "754735db56ec4df4",
-    "name": "guava",
-    "version": "27.0-jre",
-    "type": "java-archive",
-    "locations": [
-     {
-      "path": "/opt/cassandra/lib/guava-27.0-jre.jar",
-      "layerID": "sha256:54c7196bcbc00ea3011bd71835ef5496b9229c3773e7c09d1ef1a0c02ac32256"
-     }
-    ],
-    "language": "java",
-    "licenses": [
-     "http://www.apache.org/licenses/LICENSE-2.0.txt"
-    ],
-    "cpes": [
-     "cpe:2.3:a:google:guava:27.0-jre:*:*:*:*:*:*:*",
-     "cpe:2.3:a:guava:guava:27.0-jre:*:*:*:*:*:*:*"
-    ],
-    "purl": "pkg:maven/com.google.guava/guava@27.0-jre",
-    "upstreams": [],
-    "metadataType": "JavaMetadata",
-    "metadata": {
-     "virtualPath": "/opt/cassandra/lib/guava-27.0-jre.jar",
-     "pomArtifactID": "guava",
-     "pomGroupID": "com.google.guava",
-     "manifestName": "",
-     "archiveDigests": [
-      {
-       "algorithm": "sha1",
-       "value": "c6ad87d2575af8ac8ec38e28e75aefa882cc3a1f"
-      }
-     ]
-    }
-   }
-  },
-  {
-   "vulnerability": {
     "id": "GHSA-7g45-4rm6-3mm3",
     "dataSource": "https://github.com/advisories/GHSA-7g45-4rm6-3mm3",
     "namespace": "github:language:java",
@@ -1215,162 +1082,6 @@
   },
   {
    "vulnerability": {
-    "id": "CVE-2020-8908",
-    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2020-8908",
-    "namespace": "nvd:cpe",
-    "severity": "Low",
-    "urls": [
-     "https://github.com/google/guava/commit/fec0dbc4634006a6162cfd4d0d09c962073ddf40",
-     "https://github.com/google/guava/issues/4011",
-     "https://lists.apache.org/thread.html/r007add131977f4f576c232b25e024249a3d16f66aad14a4b52819d21%40%3Ccommon-issues.hadoop.apache.org%3E",
-     "https://lists.apache.org/thread.html/r07ed3e4417ad043a27bee7bb33322e9bfc7d7e6d1719b8e3dfd95c14%40%3Cdev.drill.apache.org%3E",
-     "https://lists.apache.org/thread.html/r161b87f8037bbaff400194a63cd2016c9a69f5949f06dcc79beeab54%40%3Cdev.drill.apache.org%3E",
-     "https://lists.apache.org/thread.html/r215b3d50f56faeb2f9383505f3e62faa9f549bb23e8a9848b78a968e%40%3Ccommits.ws.apache.org%3E",
-     "https://lists.apache.org/thread.html/r294be9d31c0312d2c0837087204b5d4bf49d0552890e6eec716fa6a6%40%3Cyarn-issues.hadoop.apache.org%3E",
-     "https://lists.apache.org/thread.html/r2fe45d96eea8434b91592ca08109118f6308d60f6d0e21d52438cfb4%40%3Cdev.drill.apache.org%3E",
-     "https://lists.apache.org/thread.html/r3c3b33ee5bef0c67391d27a97cbfd89d44f328cf072b601b58d4e748%40%3Ccommits.pulsar.apache.org%3E",
-     "https://lists.apache.org/thread.html/r3dd8881de891598d622227e9840dd7c2ef1d08abbb49e9690c7ae1bc%40%3Cissues.geode.apache.org%3E",
-     "https://lists.apache.org/thread.html/r4776f62dfae4a0006658542f43034a7fc199350e35a66d4e18164ee6%40%3Ccommits.cxf.apache.org%3E",
-     "https://lists.apache.org/thread.html/r49549a8322f62cd3acfa4490d25bfba0be04f3f9ff4d14fe36199d27%40%3Cyarn-dev.hadoop.apache.org%3E",
-     "https://lists.apache.org/thread.html/r58a8775205ab1839dba43054b09a9ab3b25b423a4170b2413c4067ac%40%3Ccommon-issues.hadoop.apache.org%3E",
-     "https://lists.apache.org/thread.html/r5b3d93dfdfb7708e796e8762ab40edbde8ff8add48aba53e5ea26f44%40%3Cissues.geode.apache.org%3E",
-     "https://lists.apache.org/thread.html/r5d61b98ceb7bba939a651de5900dbd67be3817db6bfcc41c6e04e199%40%3Cyarn-issues.hadoop.apache.org%3E",
-     "https://lists.apache.org/thread.html/r6874dfe26eefc41b7c9a5e4a0487846fc4accf8c78ff948b24a1104a%40%3Cdev.drill.apache.org%3E",
-     "https://lists.apache.org/thread.html/r68d86f4b06c808204f62bcb254fcb5b0432528ee8d37a07ef4bc8222%40%3Ccommits.ws.apache.org%3E",
-     "https://lists.apache.org/thread.html/r79e47ed555bdb1180e528420a7a2bb898541367a29a3bc6bbf0baf2c%40%3Cissues.hive.apache.org%3E",
-     "https://lists.apache.org/thread.html/r7b0e81d8367264d6cad98766a469d64d11248eb654417809bfdacf09%40%3Cyarn-issues.hadoop.apache.org%3E",
-     "https://lists.apache.org/thread.html/r841c5e14e1b55281523ebcde661ece00b38a0569e00ef5e12bd5f6ba%40%3Cissues.maven.apache.org%3E",
-     "https://lists.apache.org/thread.html/ra7ab308481ee729f998691e8e3e02e93b1dedfc98f6b1cd3d86923b3%40%3Cyarn-issues.hadoop.apache.org%3E",
-     "https://lists.apache.org/thread.html/rb2364f4cf4d274eab5a7ecfaf64bf575cedf8b0173551997c749d322%40%3Cgitbox.hive.apache.org%3E",
-     "https://lists.apache.org/thread.html/rb8c0f1b7589864396690fe42a91a71dea9412e86eec66dc85bbacaaf%40%3Ccommits.cxf.apache.org%3E",
-     "https://lists.apache.org/thread.html/rbc7642b9800249553f13457e46b813bea1aec99d2bc9106510e00ff3%40%3Ctorque-dev.db.apache.org%3E",
-     "https://lists.apache.org/thread.html/rc2dbc4633a6eea1fcbce6831876cfa17b73759a98c65326d1896cb1a%40%3Ctorque-dev.db.apache.org%3E",
-     "https://lists.apache.org/thread.html/rc607bc52f3507b8b9c28c6a747c3122f51ac24afe80af2a670785b97%40%3Cissues.geode.apache.org%3E",
-     "https://lists.apache.org/thread.html/rcafc3a637d82bdc9a24036b2ddcad1e519dd0e6f848fcc3d606fd78f%40%3Cdev.hive.apache.org%3E",
-     "https://lists.apache.org/thread.html/rd01f5ff0164c468ec7abc96ff7646cea3cce6378da2e4aa29c6bcb95%40%3Cgithub.arrow.apache.org%3E",
-     "https://lists.apache.org/thread.html/rd2704306ec729ccac726e50339b8a8f079515cc29ccb77713b16e7c5%40%3Cissues.hive.apache.org%3E",
-     "https://lists.apache.org/thread.html/rd5d58088812cf8e677d99b07f73c654014c524c94e7fedbdee047604%40%3Ctorque-dev.db.apache.org%3E",
-     "https://lists.apache.org/thread.html/rd7e12d56d49d73e2b8549694974b07561b79b05455f7f781954231bf%40%3Cdev.pig.apache.org%3E",
-     "https://lists.apache.org/thread.html/re120f6b3d2f8222121080342c5801fdafca2f5188ceeb3b49c8a1d27%40%3Cyarn-issues.hadoop.apache.org%3E",
-     "https://lists.apache.org/thread.html/reebbd63c25bc1a946caa419cec2be78079f8449d1af48e52d47c9e85%40%3Cissues.geode.apache.org%3E",
-     "https://lists.apache.org/thread.html/rf00b688ffa620c990597f829ff85fdbba8bf73ee7bfb34783e1f0d4e%40%3Cyarn-dev.hadoop.apache.org%3E",
-     "https://lists.apache.org/thread.html/rf9f0fa84b8ae1a285f0210bafec6de2a9eba083007d04640b82aa625%40%3Cissues.geode.apache.org%3E",
-     "https://lists.apache.org/thread.html/rfc27e2727a20a574f39273e0432aa97486a332f9b3068f6ac1346594%40%3Cdev.myfaces.apache.org%3E",
-     "https://security.netapp.com/advisory/ntap-20220210-0003/",
-     "https://snyk.io/vuln/SNYK-JAVA-COMGOOGLEGUAVA-1015415",
-     "https://www.oracle.com//security-alerts/cpujul2021.html",
-     "https://www.oracle.com/security-alerts/cpuApr2021.html",
-     "https://www.oracle.com/security-alerts/cpuapr2022.html",
-     "https://www.oracle.com/security-alerts/cpujan2022.html",
-     "https://www.oracle.com/security-alerts/cpuoct2021.html"
-    ],
-    "description": "A temp directory creation vulnerability exists in all versions of Guava, allowing an attacker with access to the machine to potentially access data in a temporary directory created by the Guava API com.google.common.io.Files.createTempDir(). By default, on unix-like systems, the created directory is world-readable (readable by an attacker with access to the system). The method in question has been marked @Deprecated in versions 30.0 and later and should not be used. For Android developers, we recommend choosing a temporary directory API provided by Android, such as context.getCacheDir(). For other Java developers, we recommend migrating to the Java 7 API java.nio.file.Files.createTempDirectory() which explicitly configures permissions of 700, or configuring the Java runtime's java.io.tmpdir system property to point to a location whose permissions are appropriately configured.\n\n",
-    "cvss": [
-     {
-      "source": "nvd@nist.gov",
-      "type": "Primary",
-      "version": "2.0",
-      "vector": "AV:L/AC:L/Au:N/C:P/I:N/A:N",
-      "metrics": {
-       "baseScore": 2.1,
-       "exploitabilityScore": 3.9,
-       "impactScore": 2.9
-      },
-      "vendorMetadata": {}
-     },
-     {
-      "source": "nvd@nist.gov",
-      "type": "Primary",
-      "version": "3.1",
-      "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N",
-      "metrics": {
-       "baseScore": 3.3,
-       "exploitabilityScore": 1.8,
-       "impactScore": 1.4
-      },
-      "vendorMetadata": {}
-     },
-     {
-      "source": "cve-coordination@google.com",
-      "type": "Secondary",
-      "version": "3.1",
-      "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N",
-      "metrics": {
-       "baseScore": 3.3,
-       "exploitabilityScore": 1.8,
-       "impactScore": 1.4
-      },
-      "vendorMetadata": {}
-     }
-    ],
-    "fix": {
-     "versions": [],
-     "state": "unknown"
-    },
-    "advisories": []
-   },
-   "relatedVulnerabilities": [],
-   "matchDetails": [
-    {
-     "type": "cpe-match",
-     "matcher": "java-matcher",
-     "searchedBy": {
-      "namespace": "nvd:cpe",
-      "cpes": [
-       "cpe:2.3:a:google:guava:27.0-jre:*:*:*:*:*:*:*"
-      ],
-      "Package": {
-       "name": "guava",
-       "version": "27.0-jre"
-      }
-     },
-     "found": {
-      "vulnerabilityID": "CVE-2020-8908",
-      "versionConstraint": "< 32.0.0 (unknown)",
-      "cpes": [
-       "cpe:2.3:a:google:guava:*:*:*:*:*:*:*:*"
-      ]
-     }
-    }
-   ],
-   "artifact": {
-    "id": "754735db56ec4df4",
-    "name": "guava",
-    "version": "27.0-jre",
-    "type": "java-archive",
-    "locations": [
-     {
-      "path": "/opt/cassandra/lib/guava-27.0-jre.jar",
-      "layerID": "sha256:54c7196bcbc00ea3011bd71835ef5496b9229c3773e7c09d1ef1a0c02ac32256"
-     }
-    ],
-    "language": "java",
-    "licenses": [
-     "http://www.apache.org/licenses/LICENSE-2.0.txt"
-    ],
-    "cpes": [
-     "cpe:2.3:a:google:guava:27.0-jre:*:*:*:*:*:*:*",
-     "cpe:2.3:a:guava:guava:27.0-jre:*:*:*:*:*:*:*"
-    ],
-    "purl": "pkg:maven/com.google.guava/guava@27.0-jre",
-    "upstreams": [],
-    "metadataType": "JavaMetadata",
-    "metadata": {
-     "virtualPath": "/opt/cassandra/lib/guava-27.0-jre.jar",
-     "pomArtifactID": "guava",
-     "pomGroupID": "com.google.guava",
-     "manifestName": "",
-     "archiveDigests": [
-      {
-       "algorithm": "sha1",
-       "value": "c6ad87d2575af8ac8ec38e28e75aefa882cc3a1f"
-      }
-     ]
-    }
-   }
-  },
-  {
-   "vulnerability": {
     "id": "GHSA-rgv9-q543-rqg4",
     "dataSource": "https://github.com/advisories/GHSA-rgv9-q543-rqg4",
     "namespace": "github:language:java",
@@ -1581,327 +1292,6 @@
      "found": {
       "versionConstraint": ">=2.13.0,<2.13.4.2 (unknown)",
       "vulnerabilityID": "GHSA-jjjh-jjxp-wpff"
-     }
-    }
-   ],
-   "artifact": {
-    "id": "c3b2fce422ef224e",
-    "name": "jackson-databind",
-    "version": "2.13.2.2",
-    "type": "java-archive",
-    "locations": [
-     {
-      "path": "/opt/cassandra/lib/jackson-databind-2.13.2.2.jar",
-      "layerID": "sha256:54c7196bcbc00ea3011bd71835ef5496b9229c3773e7c09d1ef1a0c02ac32256"
-     }
-    ],
-    "language": "java",
-    "licenses": [
-     "http://www.apache.org/licenses/LICENSE-2.0.txt"
-    ],
-    "cpes": [
-     "cpe:2.3:a:jackson-databind:jackson-databind:2.13.2.2:*:*:*:*:*:*:*",
-     "cpe:2.3:a:jackson-databind:jackson_databind:2.13.2.2:*:*:*:*:*:*:*",
-     "cpe:2.3:a:jackson_databind:jackson-databind:2.13.2.2:*:*:*:*:*:*:*",
-     "cpe:2.3:a:jackson_databind:jackson_databind:2.13.2.2:*:*:*:*:*:*:*",
-     "cpe:2.3:a:fasterxml:jackson-databind:2.13.2.2:*:*:*:*:*:*:*",
-     "cpe:2.3:a:fasterxml:jackson_databind:2.13.2.2:*:*:*:*:*:*:*",
-     "cpe:2.3:a:jackson-databind:jackson:2.13.2.2:*:*:*:*:*:*:*",
-     "cpe:2.3:a:jackson:jackson-databind:2.13.2.2:*:*:*:*:*:*:*",
-     "cpe:2.3:a:jackson:jackson_databind:2.13.2.2:*:*:*:*:*:*:*",
-     "cpe:2.3:a:jackson_databind:jackson:2.13.2.2:*:*:*:*:*:*:*",
-     "cpe:2.3:a:core:jackson-databind:2.13.2.2:*:*:*:*:*:*:*",
-     "cpe:2.3:a:core:jackson_databind:2.13.2.2:*:*:*:*:*:*:*",
-     "cpe:2.3:a:fasterxml:jackson:2.13.2.2:*:*:*:*:*:*:*",
-     "cpe:2.3:a:jackson:jackson:2.13.2.2:*:*:*:*:*:*:*",
-     "cpe:2.3:a:core:jackson:2.13.2.2:*:*:*:*:*:*:*"
-    ],
-    "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.13.2.2",
-    "upstreams": [],
-    "metadataType": "JavaMetadata",
-    "metadata": {
-     "virtualPath": "/opt/cassandra/lib/jackson-databind-2.13.2.2.jar",
-     "pomArtifactID": "jackson-databind",
-     "pomGroupID": "com.fasterxml.jackson.core",
-     "manifestName": "",
-     "archiveDigests": [
-      {
-       "algorithm": "sha1",
-       "value": "ffeb635597d093509f33e1e94274d14be610f933"
-      }
-     ]
-    }
-   }
-  },
-  {
-   "vulnerability": {
-    "id": "CVE-2022-42004",
-    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-42004",
-    "namespace": "nvd:cpe",
-    "severity": "High",
-    "urls": [
-     "https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50490",
-     "https://github.com/FasterXML/jackson-databind/commit/063183589218fec19a9293ed2f17ec53ea80ba88",
-     "https://github.com/FasterXML/jackson-databind/issues/3582",
-     "https://lists.debian.org/debian-lts-announce/2022/11/msg00035.html",
-     "https://security.gentoo.org/glsa/202210-21",
-     "https://security.netapp.com/advisory/ntap-20221118-0008/",
-     "https://www.debian.org/security/2022/dsa-5283"
-    ],
-    "description": "In FasterXML jackson-databind before 2.13.4, resource exhaustion can occur because of a lack of a check in BeanDeserializer._deserializeFromArray to prevent use of deeply nested arrays. An application is vulnerable only with certain customized choices for deserialization.",
-    "cvss": [
-     {
-      "source": "nvd@nist.gov",
-      "type": "Primary",
-      "version": "3.1",
-      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
-      "metrics": {
-       "baseScore": 7.5,
-       "exploitabilityScore": 3.9,
-       "impactScore": 3.6
-      },
-      "vendorMetadata": {}
-     }
-    ],
-    "fix": {
-     "versions": [],
-     "state": "unknown"
-    },
-    "advisories": []
-   },
-   "relatedVulnerabilities": [],
-   "matchDetails": [
-    {
-     "type": "cpe-match",
-     "matcher": "java-matcher",
-     "searchedBy": {
-      "namespace": "nvd:cpe",
-      "cpes": [
-       "cpe:2.3:a:fasterxml:jackson-databind:2.13.2.2:*:*:*:*:*:*:*"
-      ],
-      "Package": {
-       "name": "jackson-databind",
-       "version": "2.13.2.2"
-      }
-     },
-     "found": {
-      "vulnerabilityID": "CVE-2022-42004",
-      "versionConstraint": "< 2.12.7.1 || >= 2.13.0, < 2.13.4 (unknown)",
-      "cpes": [
-       "cpe:2.3:a:fasterxml:jackson-databind:*:*:*:*:*:*:*:*"
-      ]
-     }
-    }
-   ],
-   "artifact": {
-    "id": "c3b2fce422ef224e",
-    "name": "jackson-databind",
-    "version": "2.13.2.2",
-    "type": "java-archive",
-    "locations": [
-     {
-      "path": "/opt/cassandra/lib/jackson-databind-2.13.2.2.jar",
-      "layerID": "sha256:54c7196bcbc00ea3011bd71835ef5496b9229c3773e7c09d1ef1a0c02ac32256"
-     }
-    ],
-    "language": "java",
-    "licenses": [
-     "http://www.apache.org/licenses/LICENSE-2.0.txt"
-    ],
-    "cpes": [
-     "cpe:2.3:a:jackson-databind:jackson-databind:2.13.2.2:*:*:*:*:*:*:*",
-     "cpe:2.3:a:jackson-databind:jackson_databind:2.13.2.2:*:*:*:*:*:*:*",
-     "cpe:2.3:a:jackson_databind:jackson-databind:2.13.2.2:*:*:*:*:*:*:*",
-     "cpe:2.3:a:jackson_databind:jackson_databind:2.13.2.2:*:*:*:*:*:*:*",
-     "cpe:2.3:a:fasterxml:jackson-databind:2.13.2.2:*:*:*:*:*:*:*",
-     "cpe:2.3:a:fasterxml:jackson_databind:2.13.2.2:*:*:*:*:*:*:*",
-     "cpe:2.3:a:jackson-databind:jackson:2.13.2.2:*:*:*:*:*:*:*",
-     "cpe:2.3:a:jackson:jackson-databind:2.13.2.2:*:*:*:*:*:*:*",
-     "cpe:2.3:a:jackson:jackson_databind:2.13.2.2:*:*:*:*:*:*:*",
-     "cpe:2.3:a:jackson_databind:jackson:2.13.2.2:*:*:*:*:*:*:*",
-     "cpe:2.3:a:core:jackson-databind:2.13.2.2:*:*:*:*:*:*:*",
-     "cpe:2.3:a:core:jackson_databind:2.13.2.2:*:*:*:*:*:*:*",
-     "cpe:2.3:a:fasterxml:jackson:2.13.2.2:*:*:*:*:*:*:*",
-     "cpe:2.3:a:jackson:jackson:2.13.2.2:*:*:*:*:*:*:*",
-     "cpe:2.3:a:core:jackson:2.13.2.2:*:*:*:*:*:*:*"
-    ],
-    "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.13.2.2",
-    "upstreams": [],
-    "metadataType": "JavaMetadata",
-    "metadata": {
-     "virtualPath": "/opt/cassandra/lib/jackson-databind-2.13.2.2.jar",
-     "pomArtifactID": "jackson-databind",
-     "pomGroupID": "com.fasterxml.jackson.core",
-     "manifestName": "",
-     "archiveDigests": [
-      {
-       "algorithm": "sha1",
-       "value": "ffeb635597d093509f33e1e94274d14be610f933"
-      }
-     ]
-    }
-   }
-  },
-  {
-   "vulnerability": {
-    "id": "CVE-2022-42003",
-    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-42003",
-    "namespace": "nvd:cpe",
-    "severity": "High",
-    "urls": [
-     "https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51020",
-     "https://github.com/FasterXML/jackson-databind/commit/d78d00ee7b5245b93103fef3187f70543d67ca33",
-     "https://github.com/FasterXML/jackson-databind/issues/3590",
-     "https://lists.debian.org/debian-lts-announce/2022/11/msg00035.html",
-     "https://security.gentoo.org/glsa/202210-21",
-     "https://security.netapp.com/advisory/ntap-20221124-0004/",
-     "https://www.debian.org/security/2022/dsa-5283"
-    ],
-    "description": "In FasterXML jackson-databind before 2.14.0-rc1, resource exhaustion can occur because of a lack of a check in primitive value deserializers to avoid deep wrapper array nesting, when the UNWRAP_SINGLE_VALUE_ARRAYS feature is enabled. Additional fix version in 2.13.4.1 and 2.12.17.1",
-    "cvss": [
-     {
-      "source": "nvd@nist.gov",
-      "type": "Primary",
-      "version": "3.1",
-      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
-      "metrics": {
-       "baseScore": 7.5,
-       "exploitabilityScore": 3.9,
-       "impactScore": 3.6
-      },
-      "vendorMetadata": {}
-     }
-    ],
-    "fix": {
-     "versions": [],
-     "state": "unknown"
-    },
-    "advisories": []
-   },
-   "relatedVulnerabilities": [],
-   "matchDetails": [
-    {
-     "type": "cpe-match",
-     "matcher": "java-matcher",
-     "searchedBy": {
-      "namespace": "nvd:cpe",
-      "cpes": [
-       "cpe:2.3:a:fasterxml:jackson-databind:2.13.2.2:*:*:*:*:*:*:*"
-      ],
-      "Package": {
-       "name": "jackson-databind",
-       "version": "2.13.2.2"
-      }
-     },
-     "found": {
-      "vulnerabilityID": "CVE-2022-42003",
-      "versionConstraint": "< 2.12.7.1 || >= 2.13.0, < 2.13.4.1 (unknown)",
-      "cpes": [
-       "cpe:2.3:a:fasterxml:jackson-databind:*:*:*:*:*:*:*:*"
-      ]
-     }
-    }
-   ],
-   "artifact": {
-    "id": "c3b2fce422ef224e",
-    "name": "jackson-databind",
-    "version": "2.13.2.2",
-    "type": "java-archive",
-    "locations": [
-     {
-      "path": "/opt/cassandra/lib/jackson-databind-2.13.2.2.jar",
-      "layerID": "sha256:54c7196bcbc00ea3011bd71835ef5496b9229c3773e7c09d1ef1a0c02ac32256"
-     }
-    ],
-    "language": "java",
-    "licenses": [
-     "http://www.apache.org/licenses/LICENSE-2.0.txt"
-    ],
-    "cpes": [
-     "cpe:2.3:a:jackson-databind:jackson-databind:2.13.2.2:*:*:*:*:*:*:*",
-     "cpe:2.3:a:jackson-databind:jackson_databind:2.13.2.2:*:*:*:*:*:*:*",
-     "cpe:2.3:a:jackson_databind:jackson-databind:2.13.2.2:*:*:*:*:*:*:*",
-     "cpe:2.3:a:jackson_databind:jackson_databind:2.13.2.2:*:*:*:*:*:*:*",
-     "cpe:2.3:a:fasterxml:jackson-databind:2.13.2.2:*:*:*:*:*:*:*",
-     "cpe:2.3:a:fasterxml:jackson_databind:2.13.2.2:*:*:*:*:*:*:*",
-     "cpe:2.3:a:jackson-databind:jackson:2.13.2.2:*:*:*:*:*:*:*",
-     "cpe:2.3:a:jackson:jackson-databind:2.13.2.2:*:*:*:*:*:*:*",
-     "cpe:2.3:a:jackson:jackson_databind:2.13.2.2:*:*:*:*:*:*:*",
-     "cpe:2.3:a:jackson_databind:jackson:2.13.2.2:*:*:*:*:*:*:*",
-     "cpe:2.3:a:core:jackson-databind:2.13.2.2:*:*:*:*:*:*:*",
-     "cpe:2.3:a:core:jackson_databind:2.13.2.2:*:*:*:*:*:*:*",
-     "cpe:2.3:a:fasterxml:jackson:2.13.2.2:*:*:*:*:*:*:*",
-     "cpe:2.3:a:jackson:jackson:2.13.2.2:*:*:*:*:*:*:*",
-     "cpe:2.3:a:core:jackson:2.13.2.2:*:*:*:*:*:*:*"
-    ],
-    "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.13.2.2",
-    "upstreams": [],
-    "metadataType": "JavaMetadata",
-    "metadata": {
-     "virtualPath": "/opt/cassandra/lib/jackson-databind-2.13.2.2.jar",
-     "pomArtifactID": "jackson-databind",
-     "pomGroupID": "com.fasterxml.jackson.core",
-     "manifestName": "",
-     "archiveDigests": [
-      {
-       "algorithm": "sha1",
-       "value": "ffeb635597d093509f33e1e94274d14be610f933"
-      }
-     ]
-    }
-   }
-  },
-  {
-   "vulnerability": {
-    "id": "CVE-2023-35116",
-    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-35116",
-    "namespace": "nvd:cpe",
-    "severity": "Medium",
-    "urls": [
-     "https://github.com/FasterXML/jackson-databind/issues/3972"
-    ],
-    "description": "** DISPUTED ** jackson-databind through 2.15.2 allows attackers to cause a denial of service or other unspecified impact via a crafted object that uses cyclic dependencies. NOTE: the vendor's perspective is that this is not a valid vulnerability report, because the steps of constructing a cyclic data structure and trying to serialize it cannot be achieved by an external attacker.",
-    "cvss": [
-     {
-      "source": "nvd@nist.gov",
-      "type": "Primary",
-      "version": "3.1",
-      "vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:H",
-      "metrics": {
-       "baseScore": 4.7,
-       "exploitabilityScore": 1,
-       "impactScore": 3.6
-      },
-      "vendorMetadata": {}
-     }
-    ],
-    "fix": {
-     "versions": [],
-     "state": "unknown"
-    },
-    "advisories": []
-   },
-   "relatedVulnerabilities": [],
-   "matchDetails": [
-    {
-     "type": "cpe-match",
-     "matcher": "java-matcher",
-     "searchedBy": {
-      "namespace": "nvd:cpe",
-      "cpes": [
-       "cpe:2.3:a:fasterxml:jackson-databind:2.13.2.2:*:*:*:*:*:*:*"
-      ],
-      "Package": {
-       "name": "jackson-databind",
-       "version": "2.13.2.2"
-      }
-     },
-     "found": {
-      "vulnerabilityID": "CVE-2023-35116",
-      "versionConstraint": "<= 2.15.2 (unknown)",
-      "cpes": [
-       "cpe:2.3:a:fasterxml:jackson-databind:*:*:*:*:*:*:*:*"
-      ]
      }
     }
    ],
@@ -2187,6 +1577,85 @@
     "upstreams": [
      {
       "name": "glibc"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-38546",
+    "dataSource": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2023-38546",
+    "namespace": "ubuntu:distro:ubuntu:20.04",
+    "severity": "Low",
+    "urls": [
+     "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2023-38546"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "7.68.0-1ubuntu2.20"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "20.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:20.04",
+      "package": {
+       "name": "curl",
+       "version": "7.68.0-1ubuntu2.19"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 7.68.0-1ubuntu2.20 (deb)",
+      "vulnerabilityID": "CVE-2023-38546"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "8a2a98819f7adab1",
+    "name": "libcurl4",
+    "version": "7.68.0-1ubuntu2.19",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/libcurl4/copyright",
+      "layerID": "sha256:0b4923f16514fbdf96c8a0ca9eec9282449776e30840066e2a848a0fe324de5f"
+     },
+     {
+      "path": "/var/lib/dpkg/info/libcurl4:amd64.md5sums",
+      "layerID": "sha256:0b4923f16514fbdf96c8a0ca9eec9282449776e30840066e2a848a0fe324de5f"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:54c7196bcbc00ea3011bd71835ef5496b9229c3773e7c09d1ef1a0c02ac32256"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "BSD-3-Clause",
+     "BSD-4-Clause",
+     "ISC",
+     "curl",
+     "other",
+     "public-domain"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libcurl4:libcurl4:7.68.0-1ubuntu2.19:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/libcurl4@7.68.0-1ubuntu2.19?arch=amd64&upstream=curl&distro=ubuntu-20.04",
+    "upstreams": [
+     {
+      "name": "curl"
      }
     ]
    }
@@ -6143,240 +5612,6 @@
   },
   {
    "vulnerability": {
-    "id": "CVE-2023-43642",
-    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-43642",
-    "namespace": "nvd:cpe",
-    "severity": "High",
-    "urls": [
-     "https://github.com/xerial/snappy-java/commit/9f8c3cf74223ed0a8a834134be9c917b9f10ceb5",
-     "https://github.com/xerial/snappy-java/security/advisories/GHSA-55g7-9cwv-5qfv"
-    ],
-    "description": "snappy-java is a Java port of the snappy, a fast C++ compresser/decompresser developed by Google. The SnappyInputStream was found to be vulnerable to Denial of Service (DoS) attacks when decompressing data with a too large chunk size. Due to missing upper bound check on chunk length, an unrecoverable fatal error can occur. All versions of snappy-java including the latest released version 1.1.10.3 are vulnerable to this issue. A fix has been introduced in commit `9f8c3cf74` which will be included in the 1.1.10.4 release. Users are advised to upgrade. Users unable to upgrade should only accept compressed data from trusted sources.",
-    "cvss": [
-     {
-      "source": "nvd@nist.gov",
-      "type": "Primary",
-      "version": "3.1",
-      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
-      "metrics": {
-       "baseScore": 7.5,
-       "exploitabilityScore": 3.9,
-       "impactScore": 3.6
-      },
-      "vendorMetadata": {}
-     },
-     {
-      "source": "security-advisories@github.com",
-      "type": "Secondary",
-      "version": "3.1",
-      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
-      "metrics": {
-       "baseScore": 7.5,
-       "exploitabilityScore": 3.9,
-       "impactScore": 3.6
-      },
-      "vendorMetadata": {}
-     }
-    ],
-    "fix": {
-     "versions": [],
-     "state": "unknown"
-    },
-    "advisories": []
-   },
-   "relatedVulnerabilities": [],
-   "matchDetails": [
-    {
-     "type": "cpe-match",
-     "matcher": "java-matcher",
-     "searchedBy": {
-      "namespace": "nvd:cpe",
-      "cpes": [
-       "cpe:2.3:a:xerial:snappy-java:1.1.10.1:*:*:*:*:*:*:*"
-      ],
-      "Package": {
-       "name": "snappy-java",
-       "version": "1.1.10.1"
-      }
-     },
-     "found": {
-      "vulnerabilityID": "CVE-2023-43642",
-      "versionConstraint": "< 1.1.10.4 (unknown)",
-      "cpes": [
-       "cpe:2.3:a:xerial:snappy-java:*:*:*:*:*:*:*:*"
-      ]
-     }
-    }
-   ],
-   "artifact": {
-    "id": "5a5fb8168b564872",
-    "name": "snappy-java",
-    "version": "1.1.10.1",
-    "type": "java-archive",
-    "locations": [
-     {
-      "path": "/opt/cassandra/lib/snappy-java-1.1.10.1.jar",
-      "layerID": "sha256:54c7196bcbc00ea3011bd71835ef5496b9229c3773e7c09d1ef1a0c02ac32256"
-     }
-    ],
-    "language": "java",
-    "licenses": [
-     "http://www.apache.org/licenses/LICENSE-2.0.txt"
-    ],
-    "cpes": [
-     "cpe:2.3:a:SnappyBundleActivator:SnappyBundleActivator:1.1.10.1:*:*:*:*:*:*:*",
-     "cpe:2.3:a:SnappyBundleActivator:snappy-java:1.1.10.1:*:*:*:*:*:*:*",
-     "cpe:2.3:a:SnappyBundleActivator:snappy_java:1.1.10.1:*:*:*:*:*:*:*",
-     "cpe:2.3:a:snappy-java:SnappyBundleActivator:1.1.10.1:*:*:*:*:*:*:*",
-     "cpe:2.3:a:snappy_java:SnappyBundleActivator:1.1.10.1:*:*:*:*:*:*:*",
-     "cpe:2.3:a:xerial-org:SnappyBundleActivator:1.1.10.1:*:*:*:*:*:*:*",
-     "cpe:2.3:a:xerial_org:SnappyBundleActivator:1.1.10.1:*:*:*:*:*:*:*",
-     "cpe:2.3:a:SnappyBundleActivator:snappy:1.1.10.1:*:*:*:*:*:*:*",
-     "cpe:2.3:a:snappy:SnappyBundleActivator:1.1.10.1:*:*:*:*:*:*:*",
-     "cpe:2.3:a:xerial:SnappyBundleActivator:1.1.10.1:*:*:*:*:*:*:*",
-     "cpe:2.3:a:snappy-java:snappy-java:1.1.10.1:*:*:*:*:*:*:*",
-     "cpe:2.3:a:snappy-java:snappy_java:1.1.10.1:*:*:*:*:*:*:*",
-     "cpe:2.3:a:snappy_java:snappy-java:1.1.10.1:*:*:*:*:*:*:*",
-     "cpe:2.3:a:snappy_java:snappy_java:1.1.10.1:*:*:*:*:*:*:*",
-     "cpe:2.3:a:xerial-org:snappy-java:1.1.10.1:*:*:*:*:*:*:*",
-     "cpe:2.3:a:xerial-org:snappy_java:1.1.10.1:*:*:*:*:*:*:*",
-     "cpe:2.3:a:xerial_org:snappy-java:1.1.10.1:*:*:*:*:*:*:*",
-     "cpe:2.3:a:xerial_org:snappy_java:1.1.10.1:*:*:*:*:*:*:*",
-     "cpe:2.3:a:snappy-java:snappy:1.1.10.1:*:*:*:*:*:*:*",
-     "cpe:2.3:a:snappy:snappy-java:1.1.10.1:*:*:*:*:*:*:*",
-     "cpe:2.3:a:snappy:snappy_java:1.1.10.1:*:*:*:*:*:*:*",
-     "cpe:2.3:a:snappy_java:snappy:1.1.10.1:*:*:*:*:*:*:*",
-     "cpe:2.3:a:xerial:snappy-java:1.1.10.1:*:*:*:*:*:*:*",
-     "cpe:2.3:a:xerial:snappy_java:1.1.10.1:*:*:*:*:*:*:*",
-     "cpe:2.3:a:xerial-org:snappy:1.1.10.1:*:*:*:*:*:*:*",
-     "cpe:2.3:a:xerial_org:snappy:1.1.10.1:*:*:*:*:*:*:*",
-     "cpe:2.3:a:snappy:snappy:1.1.10.1:*:*:*:*:*:*:*",
-     "cpe:2.3:a:xerial:snappy:1.1.10.1:*:*:*:*:*:*:*"
-    ],
-    "purl": "pkg:maven/org.xerial.snappy/snappy-java@1.1.10.1",
-    "upstreams": [],
-    "metadataType": "JavaMetadata",
-    "metadata": {
-     "virtualPath": "/opt/cassandra/lib/snappy-java-1.1.10.1.jar",
-     "pomArtifactID": "",
-     "pomGroupID": "",
-     "manifestName": "",
-     "archiveDigests": [
-      {
-       "algorithm": "sha1",
-       "value": "4a1e1a22cba39145dfa20f2fef4e1ca38c8e02a1"
-      }
-     ]
-    }
-   }
-  },
-  {
-   "vulnerability": {
-    "id": "CVE-2020-13946",
-    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2020-13946",
-    "namespace": "nvd:cpe",
-    "severity": "Medium",
-    "urls": [
-     "https://lists.apache.org/thread.html/r1fd117082b992e7d43c1286e966c285f98aa362e685695d999ff42f7@%3Cuser.cassandra.apache.org%3E",
-     "https://lists.apache.org/thread.html/r718e01f61b35409a4f7a3ccbc1cb5136a1558a9f9c2cb8d4ca9be1ce@%3Cuser.cassandra.apache.org%3E",
-     "https://lists.apache.org/thread.html/rab8d90d28f944d84e4d7852f355a25c89451ae02c2decc4d355a9cfc@%3Cuser.cassandra.apache.org%3E",
-     "https://lists.apache.org/thread.html/rcd7544b24d8fc32b7950ec4c117052410b661babaa857fb1fc641152%40%3Cuser.cassandra.apache.org%3E",
-     "https://security.netapp.com/advisory/ntap-20210521-0005/"
-    ],
-    "description": "In Apache Cassandra, all versions prior to 2.1.22, 2.2.18, 3.0.22, 3.11.8 and 4.0-beta2, it is possible for a local attacker without access to the Apache Cassandra process or configuration files to manipulate the RMI registry to perform a man-in-the-middle attack and capture user names and passwords used to access the JMX interface. The attacker can then use these credentials to access the JMX interface and perform unauthorised operations. Users should also be aware of CVE-2019-2684, a JRE vulnerability that enables this issue to be exploited remotely.",
-    "cvss": [
-     {
-      "source": "nvd@nist.gov",
-      "type": "Primary",
-      "version": "2.0",
-      "vector": "AV:N/AC:M/Au:N/C:P/I:N/A:N",
-      "metrics": {
-       "baseScore": 4.3,
-       "exploitabilityScore": 8.6,
-       "impactScore": 2.9
-      },
-      "vendorMetadata": {}
-     },
-     {
-      "source": "nvd@nist.gov",
-      "type": "Primary",
-      "version": "3.1",
-      "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
-      "metrics": {
-       "baseScore": 5.9,
-       "exploitabilityScore": 2.2,
-       "impactScore": 3.6
-      },
-      "vendorMetadata": {}
-     }
-    ],
-    "fix": {
-     "versions": [],
-     "state": "unknown"
-    },
-    "advisories": []
-   },
-   "relatedVulnerabilities": [],
-   "matchDetails": [
-    {
-     "type": "cpe-match",
-     "matcher": "java-matcher",
-     "searchedBy": {
-      "namespace": "nvd:cpe",
-      "cpes": [
-       "cpe:2.3:a:apache:cassandra:*:*:*:*:*:*:*:*"
-      ],
-      "Package": {
-       "name": "stress",
-       "version": ""
-      }
-     },
-     "found": {
-      "vulnerabilityID": "CVE-2020-13946",
-      "versionConstraint": "< 2.1.22 || >= 2.2.0, < 2.2.18 || >= 3.0.0, < 3.0.22 || >= 3.11.0, < 3.11.8 || = 4.0.0-alpha1 || = 4.0.0-alpha2 || = 4.0.0-alpha3 || = 4.0.0-alpha4 || = 4.0.0-beta1 (unknown)",
-      "cpes": [
-       "cpe:2.3:a:apache:cassandra:*:*:*:*:*:*:*:*"
-      ]
-     }
-    }
-   ],
-   "artifact": {
-    "id": "c55e990a18573bfb",
-    "name": "stress",
-    "version": "",
-    "type": "java-archive",
-    "locations": [
-     {
-      "path": "/opt/cassandra/tools/lib/stress.jar",
-      "layerID": "sha256:54c7196bcbc00ea3011bd71835ef5496b9229c3773e7c09d1ef1a0c02ac32256"
-     }
-    ],
-    "language": "java",
-    "licenses": [],
-    "cpes": [
-     "cpe:2.3:a:apache:cassandra:*:*:*:*:*:*:*:*",
-     "cpe:2.3:a:apache:Stress:*:*:*:*:*:*:*:*",
-     "cpe:2.3:a:apache:stress:*:*:*:*:*:*:*:*"
-    ],
-    "purl": "pkg:maven/org.apache.cassandra.stress.Stress/stress",
-    "upstreams": [],
-    "metadataType": "JavaMetadata",
-    "metadata": {
-     "virtualPath": "/opt/cassandra/tools/lib/stress.jar",
-     "pomArtifactID": "",
-     "pomGroupID": "",
-     "manifestName": "",
-     "archiveDigests": [
-      {
-       "algorithm": "sha1",
-       "value": "600f9f96f0c9fa98aa9c11c1ef81cc386a3dd606"
-      }
-     ]
-    }
-   }
-  },
-  {
-   "vulnerability": {
     "id": "CVE-2021-31879",
     "dataSource": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2021-31879",
     "namespace": "ubuntu:distro:ubuntu:20.04",
@@ -6567,8 +5802,8 @@
   ]
  },
  "descriptor": {
-  "name": "",
-  "version": "",
+  "name": "grype",
+  "version": "0.71.0",
   "configuration": {
    "output": [
     "json"
@@ -6606,22 +5841,25 @@
    },
    "match": {
     "java": {
-     "using-cpes": true
+     "using-cpes": false
     },
     "dotnet": {
-     "using-cpes": true
+     "using-cpes": false
     },
     "golang": {
-     "using-cpes": true
+     "using-cpes": false
     },
     "javascript": {
-     "using-cpes": true
+     "using-cpes": false
     },
     "python": {
-     "using-cpes": true
+     "using-cpes": false
     },
     "ruby": {
-     "using-cpes": true
+     "using-cpes": false
+    },
+    "rust": {
+     "using-cpes": false
     },
     "stock": {
      "using-cpes": true
@@ -6642,12 +5880,12 @@
    "vex-add": []
   },
   "db": {
-   "built": "2023-10-11T01:24:08Z",
+   "built": "2023-10-13T01:25:27Z",
    "schemaVersion": 5,
    "location": "/home/anon/.cache/grype/db/5",
-   "checksum": "sha256:16423ac3a1c3cd30cfe138851c91e7ba24290ec499065e861cb0a90ecb50a059",
+   "checksum": "sha256:b4a890ba7a0e7dd7336493427223a1fbf8b4c0b45f972ae68dcd61106667f31b",
    "error": null
   },
-  "timestamp": "2023-10-11T21:52:02.542012036-04:00"
+  "timestamp": "2023-10-13T11:51:24.674264567-04:00"
  }
 }

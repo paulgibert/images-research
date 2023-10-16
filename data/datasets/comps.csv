@@ -304,6 +304,7 @@ sigs.k8s.io/json,go-module,original,traefik
 sigs.k8s.io/structured-merge-diff/v4,go-module,original,traefik
 sigs.k8s.io/yaml,go-module,original,traefik
 ssl_client,apk,original,traefik
+stdlib,go-module,original,traefik
 traefik,binary,original,traefik
 tzdata,apk,original,traefik
 zlib,apk,original,traefik
@@ -571,6 +572,9 @@ gopkg.in/yaml.v2,go-module,chainguard,etcd
 ld-linux,apk,chainguard,etcd
 ld-linux,apk,chainguard,etcd
 sigs.k8s.io/yaml,go-module,chainguard,etcd
+stdlib,go-module,chainguard,etcd
+stdlib,go-module,chainguard,etcd
+stdlib,go-module,chainguard,etcd
 wolfi-baselayout,apk,chainguard,etcd
 wolfi-baselayout,apk,chainguard,etcd
 cloud.google.com/go,go-module,rapidfort,telegraf
@@ -986,6 +990,7 @@ sed,deb,rapidfort,telegraf
 sigs.k8s.io/json,go-module,rapidfort,telegraf
 sigs.k8s.io/structured-merge-diff/v4,go-module,rapidfort,telegraf
 sigs.k8s.io/yaml,go-module,rapidfort,telegraf
+stdlib,go-module,rapidfort,telegraf
 tar,deb,rapidfort,telegraf
 .memcached-rundeps,apk,alpine,memcached-official
 alpine-baselayout,apk,alpine,memcached-official
@@ -1262,6 +1267,9 @@ ncurses,apk,chainguard,influxdb
 ncurses,apk,chainguard,influxdb
 ncurses-terminfo-base,apk,chainguard,influxdb
 ncurses-terminfo-base,apk,chainguard,influxdb
+stdlib,go-module,chainguard,influxdb
+stdlib,go-module,chainguard,influxdb
+stdlib,go-module,chainguard,influxdb
 wolfi-baselayout,apk,chainguard,influxdb
 wolfi-baselayout,apk,chainguard,influxdb
 yq,apk,chainguard,influxdb
@@ -1574,6 +1582,10 @@ run-parts,apk,alpine,influxdb
 scanelf,apk,alpine,influxdb
 sqlite-libs,apk,alpine,influxdb
 ssl_client,apk,alpine,influxdb
+stdlib,go-module,alpine,influxdb
+stdlib,go-module,alpine,influxdb
+stdlib,go-module,alpine,influxdb
+stdlib,go-module,alpine,influxdb
 su-exec,apk,alpine,influxdb
 tzdata,apk,alpine,influxdb
 zlib,apk,alpine,influxdb
@@ -1795,6 +1807,7 @@ slf4j-api,java-archive,original,cassandra-official
 snakeyaml,java-archive,original,cassandra-official
 snappy-java,java-archive,original,cassandra-official
 snowball-stemmer,java-archive,original,cassandra-official
+stdlib,go-module,original,cassandra-official
 stream,java-archive,original,cassandra-official
 stress,java-archive,original,cassandra-official
 sysvinit-utils,deb,original,cassandra-official
@@ -2734,6 +2747,7 @@ sigs.k8s.io/structured-merge-diff/v4,go-module,original,telegraf
 sigs.k8s.io/yaml,go-module,original,telegraf
 sigs.k8s.io/yaml,go-module,original,telegraf
 startpar,deb,original,telegraf
+stdlib,go-module,original,telegraf
 sysv-rc,deb,original,telegraf
 sysvinit-utils,deb,original,telegraf
 tar,deb,original,telegraf
@@ -2929,6 +2943,7 @@ ld-linux,apk,chainguard,nats
 ld-linux,apk,chainguard,nats
 nats-server,apk,chainguard,nats
 nats-server,apk,chainguard,nats
+stdlib,go-module,chainguard,nats
 wolfi-baselayout,apk,chainguard,nats
 wolfi-baselayout,apk,chainguard,nats
 alpine-baselayout,apk,alpine,prometheus
@@ -3188,6 +3203,8 @@ sigs.k8s.io/structured-merge-diff/v4,go-module,alpine,prometheus
 sigs.k8s.io/yaml,go-module,alpine,prometheus
 sigs.k8s.io/yaml,go-module,alpine,prometheus
 ssl_client,apk,alpine,prometheus
+stdlib,go-module,alpine,prometheus
+stdlib,go-module,alpine,prometheus
 zlib,apk,alpine,prometheus
 busybox,apk,rapidfort,traefik
 busybox-binsh,apk,rapidfort,traefik
@@ -3468,6 +3485,7 @@ sigs.k8s.io/gateway-api,go-module,rapidfort,traefik
 sigs.k8s.io/json,go-module,rapidfort,traefik
 sigs.k8s.io/structured-merge-diff/v4,go-module,rapidfort,traefik
 sigs.k8s.io/yaml,go-module,rapidfort,traefik
+stdlib,go-module,rapidfort,traefik
 traefik,binary,rapidfort,traefik
 busybox,apk,chainguard,envoy
 busybox,apk,chainguard,envoy
@@ -3770,6 +3788,7 @@ openssl-config,apk,chainguard,consul
 sigs.k8s.io/json,go-module,chainguard,consul
 sigs.k8s.io/structured-merge-diff/v4,go-module,chainguard,consul
 sigs.k8s.io/yaml,go-module,chainguard,consul
+stdlib,go-module,chainguard,consul
 su-exec,apk,chainguard,consul
 su-exec,apk,chainguard,consul
 wolfi-baselayout,apk,chainguard,consul
@@ -4037,6 +4056,7 @@ procps,deb,original,nginx
 render-template,unknownpackage,original,nginx
 sed,deb,original,nginx
 startpar,deb,original,nginx
+stdlib,go-module,original,nginx
 sysv-rc,deb,original,nginx
 sysvinit-utils,deb,original,nginx
 tar,deb,original,nginx
@@ -4399,6 +4419,8 @@ passwd,deb,rapidfort,consul
 sed,deb,rapidfort,consul
 sigs.k8s.io/structured-merge-diff/v3,go-module,rapidfort,consul
 sigs.k8s.io/yaml,go-module,rapidfort,consul
+stdlib,go-module,rapidfort,consul
+stdlib,go-module,rapidfort,consul
 tar,deb,rapidfort,consul
 coreutils,deb,rapidfort,haproxy
 dash,deb,rapidfort,haproxy
@@ -5081,6 +5103,7 @@ go.uber.org/automaxprocs,go-module,original,nats-official
 golang.org/x/crypto,go-module,original,nats-official
 golang.org/x/sys,go-module,original,nats-official
 golang.org/x/time,go-module,original,nats-official
+stdlib,go-module,original,nats-official
 audience-annotations,java-archive,rapidfort,zookeper-official
 bash,deb,rapidfort,zookeper-official
 bash,binary,rapidfort,zookeper-official
@@ -5267,6 +5290,7 @@ slf4j-api,java-archive,rapidfort,cassandra-official
 snakeyaml,java-archive,rapidfort,cassandra-official
 snappy-java,java-archive,rapidfort,cassandra-official
 snowball-stemmer,java-archive,rapidfort,cassandra-official
+stdlib,go-module,rapidfort,cassandra-official
 stream,java-archive,rapidfort,cassandra-official
 zstd-jni,java-archive,rapidfort,cassandra-official
 ./api,go-module,original,vault
@@ -5729,6 +5753,7 @@ sigs.k8s.io/json,go-module,original,vault
 sigs.k8s.io/structured-merge-diff/v4,go-module,original,vault
 sigs.k8s.io/yaml,go-module,original,vault
 ssl_client,apk,original,vault
+stdlib,go-module,original,vault
 su-exec,apk,original,vault
 tzdata,apk,original,vault
 zlib,apk,original,vault
@@ -5901,6 +5926,7 @@ libssl3,apk,chainguard,haproxy-official
 libssl3,apk,chainguard,haproxy-official
 openssl-config,apk,chainguard,haproxy-official
 openssl-config,apk,chainguard,haproxy-official
+stdlib,go-module,chainguard,haproxy-official
 wolfi-baselayout,apk,chainguard,haproxy-official
 wolfi-baselayout,apk,chainguard,haproxy-official
 busybox,apk,chainguard,envoy-official
@@ -6166,6 +6192,7 @@ scanelf,apk,alpine,consul
 sigs.k8s.io/structured-merge-diff/v3,go-module,alpine,consul
 sigs.k8s.io/yaml,go-module,alpine,consul
 ssl_client,apk,alpine,consul
+stdlib,go-module,alpine,consul
 su-exec,apk,alpine,consul
 tzdata,apk,alpine,consul
 zlib,apk,alpine,consul
@@ -6415,6 +6442,7 @@ procps,deb,original,haproxy
 readline-common,deb,original,haproxy
 sed,deb,original,haproxy
 startpar,deb,original,haproxy
+stdlib,go-module,original,haproxy
 sysv-rc,deb,original,haproxy
 sysvinit-utils,deb,original,haproxy
 tar,deb,original,haproxy
@@ -6978,6 +7006,10 @@ sed,deb,original,etcd
 sigs.k8s.io/yaml,go-module,original,etcd
 sigs.k8s.io/yaml,go-module,original,etcd
 startpar,deb,original,etcd
+stdlib,go-module,original,etcd
+stdlib,go-module,original,etcd
+stdlib,go-module,original,etcd
+stdlib,go-module,original,etcd
 sysv-rc,deb,original,etcd
 sysvinit-utils,deb,original,etcd
 tar,deb,original,etcd
@@ -7086,6 +7118,7 @@ perl-base,deb,original,redis
 procps,deb,original,redis
 sed,deb,original,redis
 startpar,deb,original,redis
+stdlib,go-module,original,redis
 sysv-rc,deb,original,redis
 sysvinit-utils,deb,original,redis
 tar,deb,original,redis
@@ -7905,6 +7938,7 @@ layeh.com/radius,go-module,rapidfort,vault
 musl,apk,rapidfort,vault
 sigs.k8s.io/structured-merge-diff/v4,go-module,rapidfort,vault
 sigs.k8s.io/yaml,go-module,rapidfort,vault
+stdlib,go-module,rapidfort,vault
 abbrev,gem,chainguard,fluentd-official
 base64,gem,chainguard,fluentd-official
 benchmark,gem,chainguard,fluentd-official
@@ -8365,6 +8399,7 @@ sigs.k8s.io/gateway-api,go-module,chainguard,traefik
 sigs.k8s.io/json,go-module,chainguard,traefik
 sigs.k8s.io/structured-merge-diff/v4,go-module,chainguard,traefik
 sigs.k8s.io/yaml,go-module,chainguard,traefik
+stdlib,go-module,chainguard,traefik
 traefik,apk,chainguard,traefik
 traefik,apk,chainguard,traefik
 wolfi-baselayout,apk,chainguard,traefik
@@ -8373,6 +8408,7 @@ bash,binary,rapidfort,redis
 github.com/bitnami/wait-for-port,go-module,rapidfort,redis
 github.com/jessevdk/go-flags,go-module,rapidfort,redis
 golang.org/x/sys,go-module,rapidfort,redis
+stdlib,go-module,rapidfort,redis
 github.com/klauspost/compress,go-module,rapidfort,nats-official
 github.com/minio/highwayhash,go-module,rapidfort,nats-official
 github.com/nats-io/jwt/v2,go-module,rapidfort,nats-official
@@ -8383,6 +8419,7 @@ go.uber.org/automaxprocs,go-module,rapidfort,nats-official
 golang.org/x/crypto,go-module,rapidfort,nats-official
 golang.org/x/sys,go-module,rapidfort,nats-official
 golang.org/x/time,go-module,rapidfort,nats-official
+stdlib,go-module,rapidfort,nats-official
 ca-certificates-bundle,apk,chainguard,memcached
 ca-certificates-bundle,apk,chainguard,memcached
 cyrus-sasl,apk,chainguard,memcached
@@ -8746,6 +8783,7 @@ simpleclient_servlet,java-archive,original,zookeper
 slf4j-api,java-archive,original,zookeper
 snappy-java,java-archive,original,zookeper
 startpar,deb,original,zookeper
+stdlib,go-module,original,zookeper
 sysv-rc,deb,original,zookeper
 sysvinit-utils,deb,original,zookeper
 tar,deb,original,zookeper
@@ -9666,6 +9704,7 @@ modernc.org/sqlite,go-module,chainguard,telegraf
 sigs.k8s.io/json,go-module,chainguard,telegraf
 sigs.k8s.io/structured-merge-diff/v4,go-module,chainguard,telegraf
 sigs.k8s.io/yaml,go-module,chainguard,telegraf
+stdlib,go-module,chainguard,telegraf
 telegraf-1.27,apk,chainguard,telegraf
 telegraf-1.27,apk,chainguard,telegraf
 wolfi-baselayout,apk,chainguard,telegraf
@@ -9930,6 +9969,7 @@ musl,apk,alpine,nats
 musl-utils,apk,alpine,nats
 scanelf,apk,alpine,nats
 ssl_client,apk,alpine,nats
+stdlib,go-module,alpine,nats
 tzdata,apk,alpine,nats
 zlib,apk,alpine,nats
 adduser,deb,original,mariadb
@@ -10080,6 +10120,7 @@ rsync,deb,original,mariadb
 sed,deb,original,mariadb
 sensible-utils,deb,original,mariadb
 socat,deb,original,mariadb
+stdlib,go-module,original,mariadb
 sysvinit-utils,deb,original,mariadb
 tar,deb,original,mariadb
 tzdata,deb,original,mariadb
@@ -10182,6 +10223,7 @@ libssl3,apk,chainguard,haproxy
 libssl3,apk,chainguard,haproxy
 openssl-config,apk,chainguard,haproxy
 openssl-config,apk,chainguard,haproxy
+stdlib,go-module,chainguard,haproxy
 wolfi-baselayout,apk,chainguard,haproxy
 wolfi-baselayout,apk,chainguard,haproxy
 ../api,go-module,rapidfort,etcd
@@ -10321,6 +10363,8 @@ mawk,deb,rapidfort,etcd
 procps,deb,rapidfort,etcd
 sed,deb,rapidfort,etcd
 sigs.k8s.io/yaml,go-module,rapidfort,etcd
+stdlib,go-module,rapidfort,etcd
+stdlib,go-module,rapidfort,etcd
 tar,deb,rapidfort,etcd
 bash,deb,rapidfort,memcached
 bash,binary,rapidfort,memcached
@@ -10885,6 +10929,7 @@ nhooyr.io/websocket,go-module,chainguard,vault
 sigs.k8s.io/json,go-module,chainguard,vault
 sigs.k8s.io/structured-merge-diff/v4,go-module,chainguard,vault
 sigs.k8s.io/yaml,go-module,chainguard,vault
+stdlib,go-module,chainguard,vault
 su-exec,apk,chainguard,vault
 su-exec,apk,chainguard,vault
 vault-1.14,apk,chainguard,vault
@@ -10982,6 +11027,7 @@ libstdc++6,deb,rapidfort,mariadb
 libtinfo6,deb,rapidfort,mariadb
 psmisc,deb,rapidfort,mariadb
 sed,deb,rapidfort,mariadb
+stdlib,go-module,rapidfort,mariadb
 tar,deb,rapidfort,mariadb
 zlib1g,deb,rapidfort,mariadb
 alpine-baselayout,apk,alpine,mariadb
@@ -11064,6 +11110,8 @@ libssl1.1,deb,rapidfort,nats
 libtinfo6,deb,rapidfort,nats
 openssl,deb,rapidfort,nats
 sed,deb,rapidfort,nats
+stdlib,go-module,rapidfort,nats
+stdlib,go-module,rapidfort,nats
 tar,deb,rapidfort,nats
 Prometheus,,rapidfort,prometheus
 cloud.google.com/go/compute/metadata,go-module,rapidfort,prometheus
@@ -11540,6 +11588,8 @@ sigs.k8s.io/structured-merge-diff/v4,go-module,rapidfort,prometheus
 sigs.k8s.io/yaml,go-module,rapidfort,prometheus
 sigs.k8s.io/yaml,go-module,rapidfort,prometheus
 sigs.k8s.io/yaml,go-module,rapidfort,prometheus
+stdlib,go-module,rapidfort,prometheus
+stdlib,go-module,rapidfort,prometheus
 tar,deb,rapidfort,prometheus
 coreutils,deb,rapidfort,haproxy-official
 dash,deb,rapidfort,haproxy-official
@@ -11603,6 +11653,7 @@ musl,apk,alpine,nats-official
 musl-utils,apk,alpine,nats-official
 scanelf,apk,alpine,nats-official
 ssl_client,apk,alpine,nats-official
+stdlib,go-module,alpine,nats-official
 tzdata,apk,alpine,nats-official
 zlib,apk,alpine,nats-official
 ca-certificates-bundle,apk,chainguard,prometheus
@@ -11948,6 +11999,8 @@ sigs.k8s.io/structured-merge-diff/v4,go-module,chainguard,prometheus
 sigs.k8s.io/structured-merge-diff/v4,go-module,chainguard,prometheus
 sigs.k8s.io/yaml,go-module,chainguard,prometheus
 sigs.k8s.io/yaml,go-module,chainguard,prometheus
+stdlib,go-module,chainguard,prometheus
+stdlib,go-module,chainguard,prometheus
 wolfi-baselayout,apk,chainguard,prometheus
 wolfi-baselayout,apk,chainguard,prometheus
 coreutils,deb,rapidfort,nginx-official
@@ -12118,6 +12171,7 @@ passwd,deb,original,redis-official
 perl-base,deb,original,redis-official
 rpcsvc-proto,deb,original,redis-official
 sed,deb,original,redis-official
+stdlib,go-module,original,redis-official
 sysvinit-utils,deb,original,redis-official
 tar,deb,original,redis-official
 tzdata,deb,original,redis-official
@@ -12586,6 +12640,7 @@ sigs.k8s.io/json,go-module,alpine,telegraf
 sigs.k8s.io/structured-merge-diff/v4,go-module,alpine,telegraf
 sigs.k8s.io/yaml,go-module,alpine,telegraf
 ssl_client,apk,alpine,telegraf
+stdlib,go-module,alpine,telegraf
 su-exec,apk,alpine,telegraf
 sysfsutils,apk,alpine,telegraf
 tzdata,apk,alpine,telegraf
@@ -12849,6 +12904,9 @@ libunistring2,deb,rapidfort,influxdb
 libzstd1,deb,rapidfort,influxdb
 procps,deb,rapidfort,influxdb
 sed,deb,rapidfort,influxdb
+stdlib,go-module,rapidfort,influxdb
+stdlib,go-module,rapidfort,influxdb
+stdlib,go-module,rapidfort,influxdb
 tar,deb,rapidfort,influxdb
 zlib1g,deb,rapidfort,influxdb
 adduser,deb,original,postgres-official
@@ -12988,6 +13046,7 @@ readline-common,deb,original,postgres-official
 sed,deb,original,postgres-official
 sensible-utils,deb,original,postgres-official
 ssl-cert,deb,original,postgres-official
+stdlib,go-module,original,postgres-official
 sysvinit-utils,deb,original,postgres-official
 tar,deb,original,postgres-official
 tzdata,deb,original,postgres-official
@@ -13599,6 +13658,8 @@ sigs.k8s.io/yaml,go-module,original,prometheus
 sigs.k8s.io/yaml,go-module,original,prometheus
 sigs.k8s.io/yaml,go-module,original,prometheus
 startpar,deb,original,prometheus
+stdlib,go-module,original,prometheus
+stdlib,go-module,original,prometheus
 sysv-rc,deb,original,prometheus
 sysvinit-utils,deb,original,prometheus
 tar,deb,original,prometheus
@@ -13738,6 +13799,7 @@ ld-linux,apk,chainguard,nats-official
 ld-linux,apk,chainguard,nats-official
 nats-server,apk,chainguard,nats-official
 nats-server,apk,chainguard,nats-official
+stdlib,go-module,chainguard,nats-official
 wolfi-baselayout,apk,chainguard,nats-official
 wolfi-baselayout,apk,chainguard,nats-official
 alpine-baselayout,apk,original,curl
@@ -13830,6 +13892,7 @@ postgresql-client-15,deb,rapidfort,postgres-official
 postgresql-client-common,deb,rapidfort,postgres-official
 postgresql-common,deb,rapidfort,postgres-official
 sed,deb,rapidfort,postgres-official
+stdlib,go-module,rapidfort,postgres-official
 tar,deb,rapidfort,postgres-official
 tzdata,deb,rapidfort,postgres-official
 zlib1g,deb,rapidfort,postgres-official
@@ -14172,6 +14235,8 @@ procps,deb,original,nats
 render-template,unknownpackage,original,nats
 sed,deb,original,nats
 startpar,deb,original,nats
+stdlib,go-module,original,nats
+stdlib,go-module,original,nats
 sysv-rc,deb,original,nats
 sysvinit-utils,deb,original,nats
 tar,deb,original,nats
@@ -14592,6 +14657,7 @@ sigs.k8s.io/json,go-module,alpine,vault
 sigs.k8s.io/structured-merge-diff/v4,go-module,alpine,vault
 sigs.k8s.io/yaml,go-module,alpine,vault
 ssl_client,apk,alpine,vault
+stdlib,go-module,alpine,vault
 su-exec,apk,alpine,vault
 tzdata,apk,alpine,vault
 zlib,apk,alpine,vault
@@ -15195,6 +15261,8 @@ sigs.k8s.io/structured-merge-diff/v4,go-module,original,consul
 sigs.k8s.io/yaml,go-module,original,consul
 sigs.k8s.io/yaml,go-module,original,consul
 startpar,deb,original,consul
+stdlib,go-module,original,consul
+stdlib,go-module,original,consul
 sysv-rc,deb,original,consul
 sysvinit-utils,deb,original,consul
 tar,deb,original,consul
@@ -15848,6 +15916,9 @@ perl-base,deb,original,influxdb
 procps,deb,original,influxdb
 sed,deb,original,influxdb
 startpar,deb,original,influxdb
+stdlib,go-module,original,influxdb
+stdlib,go-module,original,influxdb
+stdlib,go-module,original,influxdb
 sysv-rc,deb,original,influxdb
 sysvinit-utils,deb,original,influxdb
 tar,deb,original,influxdb

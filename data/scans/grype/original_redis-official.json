@@ -8615,132 +8615,6 @@
   },
   {
    "vulnerability": {
-    "id": "CVE-2023-5197",
-    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2023-5197",
-    "namespace": "debian:distro:debian:12",
-    "severity": "High",
-    "urls": [
-     "https://security-tracker.debian.org/tracker/CVE-2023-5197"
-    ],
-    "description": "A use-after-free vulnerability in the Linux kernel's netfilter: nf_tables component can be exploited to achieve local privilege escalation.\n\nAddition and removal of rules from chain bindings within the same transaction causes leads to use-after-free.\n\nWe recommend upgrading past commit f15f29fd4779be8a418b66e9d52979bb6d6c2325.\n\n",
-    "cvss": [],
-    "fix": {
-     "versions": [],
-     "state": "not-fixed"
-    },
-    "advisories": []
-   },
-   "relatedVulnerabilities": [
-    {
-     "id": "CVE-2023-5197",
-     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-5197",
-     "namespace": "nvd:cpe",
-     "severity": "High",
-     "urls": [
-      "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=f15f29fd4779be8a418b66e9d52979bb6d6c2325",
-      "https://kernel.dance/f15f29fd4779be8a418b66e9d52979bb6d6c2325"
-     ],
-     "description": "A use-after-free vulnerability in the Linux kernel's netfilter: nf_tables component can be exploited to achieve local privilege escalation.\n\nAddition and removal of rules from chain bindings within the same transaction causes leads to use-after-free.\n\nWe recommend upgrading past commit f15f29fd4779be8a418b66e9d52979bb6d6c2325.\n\n",
-     "cvss": [
-      {
-       "source": "nvd@nist.gov",
-       "type": "Primary",
-       "version": "3.1",
-       "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
-       "metrics": {
-        "baseScore": 7.8,
-        "exploitabilityScore": 1.8,
-        "impactScore": 5.9
-       },
-       "vendorMetadata": {}
-      },
-      {
-       "source": "cve-coordination@google.com",
-       "type": "Secondary",
-       "version": "3.1",
-       "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
-       "metrics": {
-        "baseScore": 7.8,
-        "exploitabilityScore": 1.8,
-        "impactScore": 5.9
-       },
-       "vendorMetadata": {}
-      }
-     ]
-    }
-   ],
-   "matchDetails": [
-    {
-     "type": "exact-indirect-match",
-     "matcher": "dpkg-matcher",
-     "searchedBy": {
-      "distro": {
-       "type": "debian",
-       "version": "12"
-      },
-      "namespace": "debian:distro:debian:12",
-      "package": {
-       "name": "linux",
-       "version": "6.1.52-1"
-      }
-     },
-     "found": {
-      "versionConstraint": "none (deb)",
-      "vulnerabilityID": "CVE-2023-5197"
-     }
-    }
-   ],
-   "artifact": {
-    "id": "5e7addc95dfaf1b1",
-    "name": "linux-libc-dev",
-    "version": "6.1.52-1",
-    "type": "deb",
-    "locations": [
-     {
-      "path": "/usr/share/doc/linux-libc-dev/copyright",
-      "layerID": "sha256:33409257a91d96349661eaddb3e954a3f6891bc6a760fea8ce77fae50966ed3a"
-     },
-     {
-      "path": "/var/lib/dpkg/info/linux-libc-dev:amd64.md5sums",
-      "layerID": "sha256:33409257a91d96349661eaddb3e954a3f6891bc6a760fea8ce77fae50966ed3a"
-     },
-     {
-      "path": "/var/lib/dpkg/status",
-      "layerID": "sha256:33409257a91d96349661eaddb3e954a3f6891bc6a760fea8ce77fae50966ed3a"
-     }
-    ],
-    "language": "",
-    "licenses": [
-     "BSD-2-clause",
-     "CRYPTOGAMS",
-     "GPL-2",
-     "GPL-2+-or-X11",
-     "LGPL-2.1",
-     "Unicode-data",
-     "Xen-interface"
-    ],
-    "cpes": [
-     "cpe:2.3:a:linux-libc-dev:linux-libc-dev:6.1.52-1:*:*:*:*:*:*:*",
-     "cpe:2.3:a:linux-libc-dev:linux_libc_dev:6.1.52-1:*:*:*:*:*:*:*",
-     "cpe:2.3:a:linux_libc_dev:linux-libc-dev:6.1.52-1:*:*:*:*:*:*:*",
-     "cpe:2.3:a:linux_libc_dev:linux_libc_dev:6.1.52-1:*:*:*:*:*:*:*",
-     "cpe:2.3:a:linux-libc:linux-libc-dev:6.1.52-1:*:*:*:*:*:*:*",
-     "cpe:2.3:a:linux-libc:linux_libc_dev:6.1.52-1:*:*:*:*:*:*:*",
-     "cpe:2.3:a:linux_libc:linux-libc-dev:6.1.52-1:*:*:*:*:*:*:*",
-     "cpe:2.3:a:linux_libc:linux_libc_dev:6.1.52-1:*:*:*:*:*:*:*",
-     "cpe:2.3:a:linux:linux-libc-dev:6.1.52-1:*:*:*:*:*:*:*",
-     "cpe:2.3:a:linux:linux_libc_dev:6.1.52-1:*:*:*:*:*:*:*"
-    ],
-    "purl": "pkg:deb/debian/linux-libc-dev@6.1.52-1?arch=amd64&upstream=linux&distro=debian-12",
-    "upstreams": [
-     {
-      "name": "linux"
-     }
-    ]
-   }
-  },
-  {
-   "vulnerability": {
     "id": "CVE-2023-4921",
     "dataSource": "https://security-tracker.debian.org/tracker/CVE-2023-4921",
     "namespace": "debian:distro:debian:12",
@@ -10220,6 +10094,132 @@
   },
   {
    "vulnerability": {
+    "id": "CVE-2023-5197",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2023-5197",
+    "namespace": "debian:distro:debian:12",
+    "severity": "Medium",
+    "urls": [
+     "https://security-tracker.debian.org/tracker/CVE-2023-5197"
+    ],
+    "description": "A use-after-free vulnerability in the Linux kernel's netfilter: nf_tables component can be exploited to achieve local privilege escalation.\n\nAddition and removal of rules from chain bindings within the same transaction causes leads to use-after-free.\n\nWe recommend upgrading past commit f15f29fd4779be8a418b66e9d52979bb6d6c2325.\n\n",
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-5197",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-5197",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=f15f29fd4779be8a418b66e9d52979bb6d6c2325",
+      "https://kernel.dance/f15f29fd4779be8a418b66e9d52979bb6d6c2325"
+     ],
+     "description": "A use-after-free vulnerability in the Linux kernel's netfilter: nf_tables component can be exploited to achieve local privilege escalation.\n\nAddition and removal of rules from chain bindings within the same transaction causes leads to use-after-free.\n\nWe recommend upgrading past commit f15f29fd4779be8a418b66e9d52979bb6d6c2325.\n\n",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:H",
+       "metrics": {
+        "baseScore": 6.6,
+        "exploitabilityScore": 1.8,
+        "impactScore": 4.7
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "cve-coordination@google.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 7.8,
+        "exploitabilityScore": 1.8,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "debian",
+       "version": "12"
+      },
+      "namespace": "debian:distro:debian:12",
+      "package": {
+       "name": "linux",
+       "version": "6.1.52-1"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2023-5197"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "5e7addc95dfaf1b1",
+    "name": "linux-libc-dev",
+    "version": "6.1.52-1",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/linux-libc-dev/copyright",
+      "layerID": "sha256:33409257a91d96349661eaddb3e954a3f6891bc6a760fea8ce77fae50966ed3a"
+     },
+     {
+      "path": "/var/lib/dpkg/info/linux-libc-dev:amd64.md5sums",
+      "layerID": "sha256:33409257a91d96349661eaddb3e954a3f6891bc6a760fea8ce77fae50966ed3a"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:33409257a91d96349661eaddb3e954a3f6891bc6a760fea8ce77fae50966ed3a"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "BSD-2-clause",
+     "CRYPTOGAMS",
+     "GPL-2",
+     "GPL-2+-or-X11",
+     "LGPL-2.1",
+     "Unicode-data",
+     "Xen-interface"
+    ],
+    "cpes": [
+     "cpe:2.3:a:linux-libc-dev:linux-libc-dev:6.1.52-1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:linux-libc-dev:linux_libc_dev:6.1.52-1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:linux_libc_dev:linux-libc-dev:6.1.52-1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:linux_libc_dev:linux_libc_dev:6.1.52-1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:linux-libc:linux-libc-dev:6.1.52-1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:linux-libc:linux_libc_dev:6.1.52-1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:linux_libc:linux-libc-dev:6.1.52-1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:linux_libc:linux_libc_dev:6.1.52-1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:linux:linux-libc-dev:6.1.52-1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:linux:linux_libc_dev:6.1.52-1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/debian/linux-libc-dev@6.1.52-1?arch=amd64&upstream=linux&distro=debian-12",
+    "upstreams": [
+     {
+      "name": "linux"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
     "id": "CVE-2023-5158",
     "dataSource": "https://security-tracker.debian.org/tracker/CVE-2023-5158",
     "namespace": "debian:distro:debian:12",
@@ -10509,6 +10509,18 @@
      "description": "A flaw was found in the IPv4 Resource Reservation Protocol (RSVP) classifier in the Linux kernel. The xprt pointer may go beyond the linear part of the skb, leading to an out-of-bounds read in the `rsvp_classify` function. This issue may allow a local user to crash the system and cause a denial of service.",
      "cvss": [
       {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 5.5,
+        "exploitabilityScore": 1.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      },
+      {
        "source": "secalert@redhat.com",
        "type": "Secondary",
        "version": "3.1",
@@ -10628,6 +10640,18 @@
      ],
      "description": "A NULL pointer dereference flaw was found in the Linux kernel ipv4 stack. The socket buffer (skb) was assumed to be associated with a device before calling __ip_options_compile, which is not always the case if the skb is re-routed by ipvs. This issue may allow a local user with CAP_NET_ADMIN privileges to crash the system.",
      "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 5.5,
+        "exploitabilityScore": 1.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      },
       {
        "source": "secalert@redhat.com",
        "type": "Secondary",
@@ -10975,6 +10999,7 @@
     "urls": [
      "https://security-tracker.debian.org/tracker/CVE-2023-39193"
     ],
+    "description": "A flaw was found in the Netfilter subsystem in the Linux kernel. The sctp_mt_check did not validate the flag_count field. This flaw allows a local privileged (CAP_NET_ADMIN) attacker to trigger an out-of-bounds read, leading to a crash or information disclosure.",
     "cvss": [],
     "fix": {
      "versions": [
@@ -10997,6 +11022,18 @@
      ],
      "description": "A flaw was found in the Netfilter subsystem in the Linux kernel. The sctp_mt_check did not validate the flag_count field. This flaw allows a local privileged (CAP_NET_ADMIN) attacker to trigger an out-of-bounds read, leading to a crash or information disclosure.",
      "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:N/A:H",
+       "metrics": {
+        "baseScore": 6,
+        "exploitabilityScore": 0.8,
+        "impactScore": 5.2
+       },
+       "vendorMetadata": {}
+      },
       {
        "source": "secalert@redhat.com",
        "type": "Secondary",
@@ -11091,6 +11128,7 @@
     "urls": [
      "https://security-tracker.debian.org/tracker/CVE-2023-39192"
     ],
+    "description": "A flaw was found in the Netfilter subsystem in the Linux kernel. The xt_u32 module did not validate the fields in the xt_u32 structure. This flaw allows a local privileged attacker to trigger an out-of-bounds read by setting the size fields with a value beyond the array boundaries, leading to a crash or information disclosure.",
     "cvss": [],
     "fix": {
      "versions": [
@@ -11113,6 +11151,18 @@
      ],
      "description": "A flaw was found in the Netfilter subsystem in the Linux kernel. The xt_u32 module did not validate the fields in the xt_u32 structure. This flaw allows a local privileged attacker to trigger an out-of-bounds read by setting the size fields with a value beyond the array boundaries, leading to a crash or information disclosure.",
      "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:N/A:H",
+       "metrics": {
+        "baseScore": 6,
+        "exploitabilityScore": 0.8,
+        "impactScore": 5.2
+       },
+       "vendorMetadata": {}
+      },
       {
        "source": "secalert@redhat.com",
        "type": "Secondary",
@@ -11207,6 +11257,7 @@
     "urls": [
      "https://security-tracker.debian.org/tracker/CVE-2023-39189"
     ],
+    "description": "A flaw was found in the Netfilter subsystem in the Linux kernel. The nfnl_osf_add_callback function did not validate the user mode controlled opt_num field. This flaw allows a local privileged (CAP_NET_ADMIN) attacker to trigger an out-of-bounds read, leading to a crash or information disclosure.",
     "cvss": [],
     "fix": {
      "versions": [],
@@ -11226,6 +11277,18 @@
      ],
      "description": "A flaw was found in the Netfilter subsystem in the Linux kernel. The nfnl_osf_add_callback function did not validate the user mode controlled opt_num field. This flaw allows a local privileged (CAP_NET_ADMIN) attacker to trigger an out-of-bounds read, leading to a crash or information disclosure.",
      "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:N/A:H",
+       "metrics": {
+        "baseScore": 6,
+        "exploitabilityScore": 0.8,
+        "impactScore": 5.2
+       },
+       "vendorMetadata": {}
+      },
       {
        "source": "secalert@redhat.com",
        "type": "Secondary",
@@ -22906,8 +22969,8 @@
   "idLike": []
  },
  "descriptor": {
-  "name": "",
-  "version": "",
+  "name": "grype",
+  "version": "0.71.0",
   "configuration": {
    "output": [
     "json"
@@ -22945,22 +23008,25 @@
    },
    "match": {
     "java": {
-     "using-cpes": true
+     "using-cpes": false
     },
     "dotnet": {
-     "using-cpes": true
+     "using-cpes": false
     },
     "golang": {
-     "using-cpes": true
+     "using-cpes": false
     },
     "javascript": {
-     "using-cpes": true
+     "using-cpes": false
     },
     "python": {
-     "using-cpes": true
+     "using-cpes": false
     },
     "ruby": {
-     "using-cpes": true
+     "using-cpes": false
+    },
+    "rust": {
+     "using-cpes": false
     },
     "stock": {
      "using-cpes": true
@@ -22981,12 +23047,12 @@
    "vex-add": []
   },
   "db": {
-   "built": "2023-10-11T01:24:08Z",
+   "built": "2023-10-13T01:25:27Z",
    "schemaVersion": 5,
    "location": "/home/anon/.cache/grype/db/5",
-   "checksum": "sha256:16423ac3a1c3cd30cfe138851c91e7ba24290ec499065e861cb0a90ecb50a059",
+   "checksum": "sha256:b4a890ba7a0e7dd7336493427223a1fbf8b4c0b45f972ae68dcd61106667f31b",
    "error": null
   },
-  "timestamp": "2023-10-11T21:45:20.681453425-04:00"
+  "timestamp": "2023-10-13T11:44:56.59144193-04:00"
  }
 }

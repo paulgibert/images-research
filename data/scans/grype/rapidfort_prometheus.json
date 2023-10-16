@@ -321,6 +321,109 @@
     }
    ],
    "artifact": {
+    "id": "c43febbd083ab82b",
+    "name": "github.com/docker/distribution",
+    "version": "v2.8.1+incompatible",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/opt/bitnami/prometheus/.spdx-prometheus.spdx",
+      "layerID": "sha256:06126c693b47d73f6eb2838763aae3279c174fe31a09166052f7588561c1dc76"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:docker:distribution:v2.8.1+incompatible:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/docker/distribution@v2.8.1+incompatible",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "",
+     "architecture": ""
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-hqxw-f8mx-cpmw",
+    "dataSource": "https://github.com/advisories/GHSA-hqxw-f8mx-cpmw",
+    "namespace": "github:language:go",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-hqxw-f8mx-cpmw"
+    ],
+    "description": "distribution catalog API endpoint can lead to OOM via malicious user input",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "2.8.2-beta.1"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-2253",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-2253",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://bugzilla.redhat.com/show_bug.cgi?id=2189886",
+      "https://lists.debian.org/debian-lts-announce/2023/06/msg00035.html"
+     ],
+     "description": "A flaw was found in the `/v2/_catalog` endpoint in distribution/distribution, which accepts a parameter to control the maximum number of records returned (query string: `n`). This vulnerability allows a malicious user to submit an unreasonably large value for `n,` causing the allocation of a massive string array, possibly causing a denial of service through excessive use of memory.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 6.5,
+        "exploitabilityScore": 2.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/docker/distribution",
+       "version": "v2.8.1+incompatible"
+      }
+     },
+     "found": {
+      "versionConstraint": "<2.8.2-beta.1 (unknown)",
+      "vulnerabilityID": "GHSA-hqxw-f8mx-cpmw"
+     }
+    }
+   ],
+   "artifact": {
     "id": "5d0acd3ac3c55fbd",
     "name": "github.com/docker/distribution",
     "version": "v2.8.1+incompatible",
@@ -454,32 +557,32 @@
   },
   {
    "vulnerability": {
-    "id": "GHSA-hqxw-f8mx-cpmw",
-    "dataSource": "https://github.com/advisories/GHSA-hqxw-f8mx-cpmw",
+    "id": "GHSA-v86x-5fm3-5p7j",
+    "dataSource": "https://github.com/advisories/GHSA-v86x-5fm3-5p7j",
     "namespace": "github:language:go",
-    "severity": "High",
+    "severity": "Medium",
     "urls": [
-     "https://github.com/advisories/GHSA-hqxw-f8mx-cpmw"
+     "https://github.com/advisories/GHSA-v86x-5fm3-5p7j"
     ],
-    "description": "distribution catalog API endpoint can lead to OOM via malicious user input",
+    "description": "Alertmanager UI is vulnerable to stored XSS via the /api/v1/alerts endpoint",
     "cvss": [
      {
       "version": "3.1",
-      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
       "metrics": {
-       "baseScore": 7.5,
-       "exploitabilityScore": 3.9,
-       "impactScore": 3.6
+       "baseScore": 5.4,
+       "exploitabilityScore": 2.3,
+       "impactScore": 2.7
       },
       "vendorMetadata": {
-       "base_severity": "High",
+       "base_severity": "Medium",
        "status": "N/A"
       }
      }
     ],
     "fix": {
      "versions": [
-      "2.8.2-beta.1"
+      "0.25.1"
      ],
      "state": "fixed"
     },
@@ -487,142 +590,615 @@
    },
    "relatedVulnerabilities": [
     {
-     "id": "CVE-2023-2253",
-     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-2253",
+     "id": "CVE-2023-40577",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-40577",
      "namespace": "nvd:cpe",
      "severity": "Medium",
      "urls": [
-      "https://bugzilla.redhat.com/show_bug.cgi?id=2189886",
-      "https://lists.debian.org/debian-lts-announce/2023/06/msg00035.html"
+      "https://github.com/prometheus/alertmanager/security/advisories/GHSA-v86x-5fm3-5p7j",
+      "https://lists.debian.org/debian-lts-announce/2023/10/msg00011.html"
      ],
-     "description": "A flaw was found in the `/v2/_catalog` endpoint in distribution/distribution, which accepts a parameter to control the maximum number of records returned (query string: `n`). This vulnerability allows a malicious user to submit an unreasonably large value for `n,` causing the allocation of a massive string array, possibly causing a denial of service through excessive use of memory.",
+     "description": "Alertmanager handles alerts sent by client applications such as the Prometheus server. An attacker with the permission to perform POST requests on the /api/v1/alerts endpoint could be able to execute arbitrary JavaScript code on the users of Prometheus Alertmanager. This issue has been fixed in Alertmanager version 0.2.51.",
      "cvss": [
       {
        "source": "nvd@nist.gov",
        "type": "Primary",
        "version": "3.1",
-       "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
        "metrics": {
-        "baseScore": 6.5,
+        "baseScore": 5.4,
+        "exploitabilityScore": 2.3,
+        "impactScore": 2.7
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/prometheus/alertmanager",
+       "version": "v0.25.0"
+      }
+     },
+     "found": {
+      "versionConstraint": "<=0.25.0 (unknown)",
+      "vulnerabilityID": "GHSA-v86x-5fm3-5p7j"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "f8c5475bbc8d15ea",
+    "name": "github.com/prometheus/alertmanager",
+    "version": "v0.25.0",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/opt/bitnami/prometheus/.spdx-prometheus.spdx",
+      "layerID": "sha256:06126c693b47d73f6eb2838763aae3279c174fe31a09166052f7588561c1dc76"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:prometheus:alertmanager:v0.25.0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/prometheus/alertmanager@v0.25.0",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "",
+     "architecture": ""
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-v86x-5fm3-5p7j",
+    "dataSource": "https://github.com/advisories/GHSA-v86x-5fm3-5p7j",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-v86x-5fm3-5p7j"
+    ],
+    "description": "Alertmanager UI is vulnerable to stored XSS via the /api/v1/alerts endpoint",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+      "metrics": {
+       "baseScore": 5.4,
+       "exploitabilityScore": 2.3,
+       "impactScore": 2.7
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "0.25.1"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-40577",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-40577",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://github.com/prometheus/alertmanager/security/advisories/GHSA-v86x-5fm3-5p7j",
+      "https://lists.debian.org/debian-lts-announce/2023/10/msg00011.html"
+     ],
+     "description": "Alertmanager handles alerts sent by client applications such as the Prometheus server. An attacker with the permission to perform POST requests on the /api/v1/alerts endpoint could be able to execute arbitrary JavaScript code on the users of Prometheus Alertmanager. This issue has been fixed in Alertmanager version 0.2.51.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+       "metrics": {
+        "baseScore": 5.4,
+        "exploitabilityScore": 2.3,
+        "impactScore": 2.7
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/prometheus/alertmanager",
+       "version": "v0.25.0"
+      }
+     },
+     "found": {
+      "versionConstraint": "<=0.25.0 (unknown)",
+      "vulnerabilityID": "GHSA-v86x-5fm3-5p7j"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "d4e7f1e52cd5c08e",
+    "name": "github.com/prometheus/alertmanager",
+    "version": "v0.25.0",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/opt/bitnami/prometheus/bin/promtool",
+      "layerID": "sha256:06126c693b47d73f6eb2838763aae3279c174fe31a09166052f7588561c1dc76"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:prometheus:alertmanager:v0.25.0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/prometheus/alertmanager@v0.25.0",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.20.4",
+     "architecture": "amd64",
+     "h1Digest": "h1:vbXKUR6PYRiZPRIKfmXaG+dmCKG52RtPL4Btl8hQGvg=",
+     "mainModule": "github.com/prometheus/prometheus"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-v86x-5fm3-5p7j",
+    "dataSource": "https://github.com/advisories/GHSA-v86x-5fm3-5p7j",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-v86x-5fm3-5p7j"
+    ],
+    "description": "Alertmanager UI is vulnerable to stored XSS via the /api/v1/alerts endpoint",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+      "metrics": {
+       "baseScore": 5.4,
+       "exploitabilityScore": 2.3,
+       "impactScore": 2.7
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "0.25.1"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-40577",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-40577",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://github.com/prometheus/alertmanager/security/advisories/GHSA-v86x-5fm3-5p7j",
+      "https://lists.debian.org/debian-lts-announce/2023/10/msg00011.html"
+     ],
+     "description": "Alertmanager handles alerts sent by client applications such as the Prometheus server. An attacker with the permission to perform POST requests on the /api/v1/alerts endpoint could be able to execute arbitrary JavaScript code on the users of Prometheus Alertmanager. This issue has been fixed in Alertmanager version 0.2.51.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+       "metrics": {
+        "baseScore": 5.4,
+        "exploitabilityScore": 2.3,
+        "impactScore": 2.7
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/prometheus/alertmanager",
+       "version": "v0.25.0"
+      }
+     },
+     "found": {
+      "versionConstraint": "<=0.25.0 (unknown)",
+      "vulnerabilityID": "GHSA-v86x-5fm3-5p7j"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "ad3d986e417999ee",
+    "name": "github.com/prometheus/alertmanager",
+    "version": "v0.25.0",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/opt/bitnami/prometheus/bin/prometheus",
+      "layerID": "sha256:06126c693b47d73f6eb2838763aae3279c174fe31a09166052f7588561c1dc76"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:prometheus:alertmanager:v0.25.0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/prometheus/alertmanager@v0.25.0",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.20.4",
+     "architecture": "amd64",
+     "h1Digest": "h1:vbXKUR6PYRiZPRIKfmXaG+dmCKG52RtPL4Btl8hQGvg=",
+     "mainModule": "github.com/prometheus/prometheus"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-4374-p667-p6c8",
+    "dataSource": "https://github.com/advisories/GHSA-4374-p667-p6c8",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-4374-p667-p6c8"
+    ],
+    "description": "HTTP/2 rapid reset can cause excessive work in net/http",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "0.17.0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-39325",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-39325",
+     "namespace": "nvd:cpe",
+     "urls": [
+      "https://go.dev/cl/534215",
+      "https://go.dev/cl/534235",
+      "https://go.dev/issue/63417",
+      "https://groups.google.com/g/golang-announce/c/iNNxDTCjZvo/m/UDd7VKQuAAAJ",
+      "https://pkg.go.dev/vuln/GO-2023-2102"
+     ],
+     "description": "A malicious HTTP/2 client which rapidly creates requests and immediately resets them can cause excessive server resource consumption. While the total number of requests is bounded by the http2.Server.MaxConcurrentStreams setting, resetting an in-progress request allows the attacker to create a new request while the existing one is still executing. With the fix applied, HTTP/2 servers now bound the number of simultaneously executing handler goroutines to the stream concurrency limit (MaxConcurrentStreams). New requests arriving when at the limit (which can only happen after the client has reset an existing, in-flight request) will be queued until a handler exits. If the request queue grows too large, the server will terminate the connection. This issue is also fixed in golang.org/x/net/http2 for users manually configuring HTTP/2. The default stream concurrency limit is 250 streams (requests) per HTTP/2 connection. This value may be adjusted using the golang.org/x/net/http2 package; see the Server.MaxConcurrentStreams setting and the ConfigureServer function.",
+     "cvss": []
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "golang.org/x/net",
+       "version": "v0.9.0"
+      }
+     },
+     "found": {
+      "versionConstraint": "<0.17.0 (unknown)",
+      "vulnerabilityID": "GHSA-4374-p667-p6c8"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "a8cc80bca2fe401e",
+    "name": "golang.org/x/net",
+    "version": "v0.9.0",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/opt/bitnami/prometheus/bin/prometheus",
+      "layerID": "sha256:06126c693b47d73f6eb2838763aae3279c174fe31a09166052f7588561c1dc76"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:golang:x/net:v0.9.0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/golang.org/x/net@v0.9.0",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.20.4",
+     "architecture": "amd64",
+     "h1Digest": "h1:aWJ/m6xSmxWBx+V0XRHTlrYrPG56jKsLdTFmsSsCzOM=",
+     "mainModule": "github.com/prometheus/prometheus"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-4374-p667-p6c8",
+    "dataSource": "https://github.com/advisories/GHSA-4374-p667-p6c8",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-4374-p667-p6c8"
+    ],
+    "description": "HTTP/2 rapid reset can cause excessive work in net/http",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "0.17.0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-39325",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-39325",
+     "namespace": "nvd:cpe",
+     "urls": [
+      "https://go.dev/cl/534215",
+      "https://go.dev/cl/534235",
+      "https://go.dev/issue/63417",
+      "https://groups.google.com/g/golang-announce/c/iNNxDTCjZvo/m/UDd7VKQuAAAJ",
+      "https://pkg.go.dev/vuln/GO-2023-2102"
+     ],
+     "description": "A malicious HTTP/2 client which rapidly creates requests and immediately resets them can cause excessive server resource consumption. While the total number of requests is bounded by the http2.Server.MaxConcurrentStreams setting, resetting an in-progress request allows the attacker to create a new request while the existing one is still executing. With the fix applied, HTTP/2 servers now bound the number of simultaneously executing handler goroutines to the stream concurrency limit (MaxConcurrentStreams). New requests arriving when at the limit (which can only happen after the client has reset an existing, in-flight request) will be queued until a handler exits. If the request queue grows too large, the server will terminate the connection. This issue is also fixed in golang.org/x/net/http2 for users manually configuring HTTP/2. The default stream concurrency limit is 250 streams (requests) per HTTP/2 connection. This value may be adjusted using the golang.org/x/net/http2 package; see the Server.MaxConcurrentStreams setting and the ConfigureServer function.",
+     "cvss": []
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "golang.org/x/net",
+       "version": "v0.9.0"
+      }
+     },
+     "found": {
+      "versionConstraint": "<0.17.0 (unknown)",
+      "vulnerabilityID": "GHSA-4374-p667-p6c8"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "1e4fc247f8f64bff",
+    "name": "golang.org/x/net",
+    "version": "v0.9.0",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/opt/bitnami/prometheus/bin/promtool",
+      "layerID": "sha256:06126c693b47d73f6eb2838763aae3279c174fe31a09166052f7588561c1dc76"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:golang:x/net:v0.9.0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/golang.org/x/net@v0.9.0",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.20.4",
+     "architecture": "amd64",
+     "h1Digest": "h1:aWJ/m6xSmxWBx+V0XRHTlrYrPG56jKsLdTFmsSsCzOM=",
+     "mainModule": "github.com/prometheus/prometheus"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-4374-p667-p6c8",
+    "dataSource": "https://github.com/advisories/GHSA-4374-p667-p6c8",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-4374-p667-p6c8"
+    ],
+    "description": "HTTP/2 rapid reset can cause excessive work in net/http",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "0.17.0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-39325",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-39325",
+     "namespace": "nvd:cpe",
+     "urls": [
+      "https://go.dev/cl/534215",
+      "https://go.dev/cl/534235",
+      "https://go.dev/issue/63417",
+      "https://groups.google.com/g/golang-announce/c/iNNxDTCjZvo/m/UDd7VKQuAAAJ",
+      "https://pkg.go.dev/vuln/GO-2023-2102"
+     ],
+     "description": "A malicious HTTP/2 client which rapidly creates requests and immediately resets them can cause excessive server resource consumption. While the total number of requests is bounded by the http2.Server.MaxConcurrentStreams setting, resetting an in-progress request allows the attacker to create a new request while the existing one is still executing. With the fix applied, HTTP/2 servers now bound the number of simultaneously executing handler goroutines to the stream concurrency limit (MaxConcurrentStreams). New requests arriving when at the limit (which can only happen after the client has reset an existing, in-flight request) will be queued until a handler exits. If the request queue grows too large, the server will terminate the connection. This issue is also fixed in golang.org/x/net/http2 for users manually configuring HTTP/2. The default stream concurrency limit is 250 streams (requests) per HTTP/2 connection. This value may be adjusted using the golang.org/x/net/http2 package; see the Server.MaxConcurrentStreams setting and the ConfigureServer function.",
+     "cvss": []
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "golang.org/x/net",
+       "version": "v0.9.0"
+      }
+     },
+     "found": {
+      "versionConstraint": "<0.17.0 (unknown)",
+      "vulnerabilityID": "GHSA-4374-p667-p6c8"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "c86b1f1b60966560",
+    "name": "golang.org/x/net",
+    "version": "v0.9.0",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/opt/bitnami/prometheus/.spdx-prometheus.spdx",
+      "layerID": "sha256:06126c693b47d73f6eb2838763aae3279c174fe31a09166052f7588561c1dc76"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:golang:x/net:v0.9.0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/golang.org/x/net@v0.9.0",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "",
+     "architecture": ""
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-2wrh-6pvc-2jm9",
+    "dataSource": "https://github.com/advisories/GHSA-2wrh-6pvc-2jm9",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-2wrh-6pvc-2jm9"
+    ],
+    "description": "Improper rendering of text nodes in golang.org/x/net/html",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+      "metrics": {
+       "baseScore": 6.1,
+       "exploitabilityScore": 2.8,
+       "impactScore": 2.7
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "0.13.0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-3978",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-3978",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://go.dev/cl/514896",
+      "https://go.dev/issue/61615",
+      "https://pkg.go.dev/vuln/GO-2023-1988"
+     ],
+     "description": "Text nodes not in the HTML namespace are incorrectly literally rendered, causing text which should be escaped to not be. This could lead to an XSS attack.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+       "metrics": {
+        "baseScore": 6.1,
         "exploitabilityScore": 2.8,
-        "impactScore": 3.6
-       },
-       "vendorMetadata": {}
-      }
-     ]
-    }
-   ],
-   "matchDetails": [
-    {
-     "type": "exact-direct-match",
-     "matcher": "go-module-matcher",
-     "searchedBy": {
-      "language": "go",
-      "namespace": "github:language:go",
-      "package": {
-       "name": "github.com/docker/distribution",
-       "version": "v2.8.1+incompatible"
-      }
-     },
-     "found": {
-      "versionConstraint": "<2.8.2-beta.1 (unknown)",
-      "vulnerabilityID": "GHSA-hqxw-f8mx-cpmw"
-     }
-    }
-   ],
-   "artifact": {
-    "id": "c43febbd083ab82b",
-    "name": "github.com/docker/distribution",
-    "version": "v2.8.1+incompatible",
-    "type": "go-module",
-    "locations": [
-     {
-      "path": "/opt/bitnami/prometheus/.spdx-prometheus.spdx",
-      "layerID": "sha256:06126c693b47d73f6eb2838763aae3279c174fe31a09166052f7588561c1dc76"
-     }
-    ],
-    "language": "go",
-    "licenses": [],
-    "cpes": [
-     "cpe:2.3:a:docker:distribution:v2.8.1+incompatible:*:*:*:*:*:*:*"
-    ],
-    "purl": "pkg:golang/github.com/docker/distribution@v2.8.1+incompatible",
-    "upstreams": [],
-    "metadataType": "GolangBinMetadata",
-    "metadata": {
-     "goCompiledVersion": "",
-     "architecture": ""
-    }
-   }
-  },
-  {
-   "vulnerability": {
-    "id": "GHSA-v86x-5fm3-5p7j",
-    "dataSource": "https://github.com/advisories/GHSA-v86x-5fm3-5p7j",
-    "namespace": "github:language:go",
-    "severity": "Medium",
-    "urls": [
-     "https://github.com/advisories/GHSA-v86x-5fm3-5p7j"
-    ],
-    "description": "Alertmanager UI is vulnerable to stored XSS via the /api/v1/alerts endpoint",
-    "cvss": [
-     {
-      "version": "3.1",
-      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
-      "metrics": {
-       "baseScore": 5.4,
-       "exploitabilityScore": 2.3,
-       "impactScore": 2.7
-      },
-      "vendorMetadata": {
-       "base_severity": "Medium",
-       "status": "N/A"
-      }
-     }
-    ],
-    "fix": {
-     "versions": [
-      "0.25.1"
-     ],
-     "state": "fixed"
-    },
-    "advisories": []
-   },
-   "relatedVulnerabilities": [
-    {
-     "id": "CVE-2023-40577",
-     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-40577",
-     "namespace": "nvd:cpe",
-     "severity": "Medium",
-     "urls": [
-      "https://github.com/prometheus/alertmanager/security/advisories/GHSA-v86x-5fm3-5p7j",
-      "https://lists.debian.org/debian-lts-announce/2023/10/msg00011.html"
-     ],
-     "description": "Alertmanager handles alerts sent by client applications such as the Prometheus server. An attacker with the permission to perform POST requests on the /api/v1/alerts endpoint could be able to execute arbitrary JavaScript code on the users of Prometheus Alertmanager. This issue has been fixed in Alertmanager version 0.2.51.",
-     "cvss": [
-      {
-       "source": "nvd@nist.gov",
-       "type": "Primary",
-       "version": "3.1",
-       "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
-       "metrics": {
-        "baseScore": 5.4,
-        "exploitabilityScore": 2.3,
         "impactScore": 2.7
        },
        "vendorMetadata": {}
-      },
-      {
-       "source": "security-advisories@github.com",
-       "type": "Secondary",
-       "version": "3.1",
-       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
-       "metrics": {
-        "baseScore": 7.5,
-        "exploitabilityScore": 3.9,
-        "impactScore": 3.6
-       },
-       "vendorMetadata": {}
       }
      ]
     }
@@ -635,252 +1211,20 @@
       "language": "go",
       "namespace": "github:language:go",
       "package": {
-       "name": "github.com/prometheus/alertmanager",
-       "version": "v0.25.0"
+       "name": "golang.org/x/net",
+       "version": "v0.9.0"
       }
      },
      "found": {
-      "versionConstraint": "<=0.25.0 (unknown)",
-      "vulnerabilityID": "GHSA-v86x-5fm3-5p7j"
+      "versionConstraint": "<0.13.0 (unknown)",
+      "vulnerabilityID": "GHSA-2wrh-6pvc-2jm9"
      }
     }
    ],
    "artifact": {
-    "id": "d4e7f1e52cd5c08e",
-    "name": "github.com/prometheus/alertmanager",
-    "version": "v0.25.0",
-    "type": "go-module",
-    "locations": [
-     {
-      "path": "/opt/bitnami/prometheus/bin/promtool",
-      "layerID": "sha256:06126c693b47d73f6eb2838763aae3279c174fe31a09166052f7588561c1dc76"
-     }
-    ],
-    "language": "go",
-    "licenses": [],
-    "cpes": [
-     "cpe:2.3:a:prometheus:alertmanager:v0.25.0:*:*:*:*:*:*:*"
-    ],
-    "purl": "pkg:golang/github.com/prometheus/alertmanager@v0.25.0",
-    "upstreams": [],
-    "metadataType": "GolangBinMetadata",
-    "metadata": {
-     "goCompiledVersion": "go1.20.4",
-     "architecture": "amd64",
-     "h1Digest": "h1:vbXKUR6PYRiZPRIKfmXaG+dmCKG52RtPL4Btl8hQGvg=",
-     "mainModule": "github.com/prometheus/prometheus"
-    }
-   }
-  },
-  {
-   "vulnerability": {
-    "id": "GHSA-v86x-5fm3-5p7j",
-    "dataSource": "https://github.com/advisories/GHSA-v86x-5fm3-5p7j",
-    "namespace": "github:language:go",
-    "severity": "Medium",
-    "urls": [
-     "https://github.com/advisories/GHSA-v86x-5fm3-5p7j"
-    ],
-    "description": "Alertmanager UI is vulnerable to stored XSS via the /api/v1/alerts endpoint",
-    "cvss": [
-     {
-      "version": "3.1",
-      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
-      "metrics": {
-       "baseScore": 5.4,
-       "exploitabilityScore": 2.3,
-       "impactScore": 2.7
-      },
-      "vendorMetadata": {
-       "base_severity": "Medium",
-       "status": "N/A"
-      }
-     }
-    ],
-    "fix": {
-     "versions": [
-      "0.25.1"
-     ],
-     "state": "fixed"
-    },
-    "advisories": []
-   },
-   "relatedVulnerabilities": [
-    {
-     "id": "CVE-2023-40577",
-     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-40577",
-     "namespace": "nvd:cpe",
-     "severity": "Medium",
-     "urls": [
-      "https://github.com/prometheus/alertmanager/security/advisories/GHSA-v86x-5fm3-5p7j",
-      "https://lists.debian.org/debian-lts-announce/2023/10/msg00011.html"
-     ],
-     "description": "Alertmanager handles alerts sent by client applications such as the Prometheus server. An attacker with the permission to perform POST requests on the /api/v1/alerts endpoint could be able to execute arbitrary JavaScript code on the users of Prometheus Alertmanager. This issue has been fixed in Alertmanager version 0.2.51.",
-     "cvss": [
-      {
-       "source": "nvd@nist.gov",
-       "type": "Primary",
-       "version": "3.1",
-       "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
-       "metrics": {
-        "baseScore": 5.4,
-        "exploitabilityScore": 2.3,
-        "impactScore": 2.7
-       },
-       "vendorMetadata": {}
-      },
-      {
-       "source": "security-advisories@github.com",
-       "type": "Secondary",
-       "version": "3.1",
-       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
-       "metrics": {
-        "baseScore": 7.5,
-        "exploitabilityScore": 3.9,
-        "impactScore": 3.6
-       },
-       "vendorMetadata": {}
-      }
-     ]
-    }
-   ],
-   "matchDetails": [
-    {
-     "type": "exact-direct-match",
-     "matcher": "go-module-matcher",
-     "searchedBy": {
-      "language": "go",
-      "namespace": "github:language:go",
-      "package": {
-       "name": "github.com/prometheus/alertmanager",
-       "version": "v0.25.0"
-      }
-     },
-     "found": {
-      "versionConstraint": "<=0.25.0 (unknown)",
-      "vulnerabilityID": "GHSA-v86x-5fm3-5p7j"
-     }
-    }
-   ],
-   "artifact": {
-    "id": "f8c5475bbc8d15ea",
-    "name": "github.com/prometheus/alertmanager",
-    "version": "v0.25.0",
-    "type": "go-module",
-    "locations": [
-     {
-      "path": "/opt/bitnami/prometheus/.spdx-prometheus.spdx",
-      "layerID": "sha256:06126c693b47d73f6eb2838763aae3279c174fe31a09166052f7588561c1dc76"
-     }
-    ],
-    "language": "go",
-    "licenses": [],
-    "cpes": [
-     "cpe:2.3:a:prometheus:alertmanager:v0.25.0:*:*:*:*:*:*:*"
-    ],
-    "purl": "pkg:golang/github.com/prometheus/alertmanager@v0.25.0",
-    "upstreams": [],
-    "metadataType": "GolangBinMetadata",
-    "metadata": {
-     "goCompiledVersion": "",
-     "architecture": ""
-    }
-   }
-  },
-  {
-   "vulnerability": {
-    "id": "GHSA-v86x-5fm3-5p7j",
-    "dataSource": "https://github.com/advisories/GHSA-v86x-5fm3-5p7j",
-    "namespace": "github:language:go",
-    "severity": "Medium",
-    "urls": [
-     "https://github.com/advisories/GHSA-v86x-5fm3-5p7j"
-    ],
-    "description": "Alertmanager UI is vulnerable to stored XSS via the /api/v1/alerts endpoint",
-    "cvss": [
-     {
-      "version": "3.1",
-      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
-      "metrics": {
-       "baseScore": 5.4,
-       "exploitabilityScore": 2.3,
-       "impactScore": 2.7
-      },
-      "vendorMetadata": {
-       "base_severity": "Medium",
-       "status": "N/A"
-      }
-     }
-    ],
-    "fix": {
-     "versions": [
-      "0.25.1"
-     ],
-     "state": "fixed"
-    },
-    "advisories": []
-   },
-   "relatedVulnerabilities": [
-    {
-     "id": "CVE-2023-40577",
-     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-40577",
-     "namespace": "nvd:cpe",
-     "severity": "Medium",
-     "urls": [
-      "https://github.com/prometheus/alertmanager/security/advisories/GHSA-v86x-5fm3-5p7j",
-      "https://lists.debian.org/debian-lts-announce/2023/10/msg00011.html"
-     ],
-     "description": "Alertmanager handles alerts sent by client applications such as the Prometheus server. An attacker with the permission to perform POST requests on the /api/v1/alerts endpoint could be able to execute arbitrary JavaScript code on the users of Prometheus Alertmanager. This issue has been fixed in Alertmanager version 0.2.51.",
-     "cvss": [
-      {
-       "source": "nvd@nist.gov",
-       "type": "Primary",
-       "version": "3.1",
-       "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
-       "metrics": {
-        "baseScore": 5.4,
-        "exploitabilityScore": 2.3,
-        "impactScore": 2.7
-       },
-       "vendorMetadata": {}
-      },
-      {
-       "source": "security-advisories@github.com",
-       "type": "Secondary",
-       "version": "3.1",
-       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
-       "metrics": {
-        "baseScore": 7.5,
-        "exploitabilityScore": 3.9,
-        "impactScore": 3.6
-       },
-       "vendorMetadata": {}
-      }
-     ]
-    }
-   ],
-   "matchDetails": [
-    {
-     "type": "exact-direct-match",
-     "matcher": "go-module-matcher",
-     "searchedBy": {
-      "language": "go",
-      "namespace": "github:language:go",
-      "package": {
-       "name": "github.com/prometheus/alertmanager",
-       "version": "v0.25.0"
-      }
-     },
-     "found": {
-      "versionConstraint": "<=0.25.0 (unknown)",
-      "vulnerabilityID": "GHSA-v86x-5fm3-5p7j"
-     }
-    }
-   ],
-   "artifact": {
-    "id": "ad3d986e417999ee",
-    "name": "github.com/prometheus/alertmanager",
-    "version": "v0.25.0",
+    "id": "a8cc80bca2fe401e",
+    "name": "golang.org/x/net",
+    "version": "v0.9.0",
     "type": "go-module",
     "locations": [
      {
@@ -891,278 +1235,102 @@
     "language": "go",
     "licenses": [],
     "cpes": [
-     "cpe:2.3:a:prometheus:alertmanager:v0.25.0:*:*:*:*:*:*:*"
+     "cpe:2.3:a:golang:x/net:v0.9.0:*:*:*:*:*:*:*"
     ],
-    "purl": "pkg:golang/github.com/prometheus/alertmanager@v0.25.0",
+    "purl": "pkg:golang/golang.org/x/net@v0.9.0",
     "upstreams": [],
     "metadataType": "GolangBinMetadata",
     "metadata": {
      "goCompiledVersion": "go1.20.4",
      "architecture": "amd64",
-     "h1Digest": "h1:vbXKUR6PYRiZPRIKfmXaG+dmCKG52RtPL4Btl8hQGvg=",
+     "h1Digest": "h1:aWJ/m6xSmxWBx+V0XRHTlrYrPG56jKsLdTFmsSsCzOM=",
      "mainModule": "github.com/prometheus/prometheus"
     }
    }
   },
   {
    "vulnerability": {
-    "id": "CVE-2023-40577",
-    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-40577",
-    "namespace": "nvd:cpe",
+    "id": "GHSA-2wrh-6pvc-2jm9",
+    "dataSource": "https://github.com/advisories/GHSA-2wrh-6pvc-2jm9",
+    "namespace": "github:language:go",
     "severity": "Medium",
     "urls": [
-     "https://github.com/prometheus/alertmanager/security/advisories/GHSA-v86x-5fm3-5p7j",
-     "https://lists.debian.org/debian-lts-announce/2023/10/msg00011.html"
+     "https://github.com/advisories/GHSA-2wrh-6pvc-2jm9"
     ],
-    "description": "Alertmanager handles alerts sent by client applications such as the Prometheus server. An attacker with the permission to perform POST requests on the /api/v1/alerts endpoint could be able to execute arbitrary JavaScript code on the users of Prometheus Alertmanager. This issue has been fixed in Alertmanager version 0.2.51.",
+    "description": "Improper rendering of text nodes in golang.org/x/net/html",
     "cvss": [
      {
-      "source": "nvd@nist.gov",
-      "type": "Primary",
       "version": "3.1",
-      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
       "metrics": {
-       "baseScore": 5.4,
-       "exploitabilityScore": 2.3,
+       "baseScore": 6.1,
+       "exploitabilityScore": 2.8,
        "impactScore": 2.7
       },
-      "vendorMetadata": {}
-     },
-     {
-      "source": "security-advisories@github.com",
-      "type": "Secondary",
-      "version": "3.1",
-      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
-      "metrics": {
-       "baseScore": 7.5,
-       "exploitabilityScore": 3.9,
-       "impactScore": 3.6
-      },
-      "vendorMetadata": {}
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
      }
     ],
     "fix": {
-     "versions": [],
-     "state": "unknown"
+     "versions": [
+      "0.13.0"
+     ],
+     "state": "fixed"
     },
     "advisories": []
    },
-   "relatedVulnerabilities": [],
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-3978",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-3978",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://go.dev/cl/514896",
+      "https://go.dev/issue/61615",
+      "https://pkg.go.dev/vuln/GO-2023-1988"
+     ],
+     "description": "Text nodes not in the HTML namespace are incorrectly literally rendered, causing text which should be escaped to not be. This could lead to an XSS attack.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+       "metrics": {
+        "baseScore": 6.1,
+        "exploitabilityScore": 2.8,
+        "impactScore": 2.7
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
    "matchDetails": [
     {
-     "type": "cpe-match",
+     "type": "exact-direct-match",
      "matcher": "go-module-matcher",
      "searchedBy": {
-      "namespace": "nvd:cpe",
-      "cpes": [
-       "cpe:2.3:a:prometheus:alertmanager:v0.25.0:*:*:*:*:*:*:*"
-      ],
-      "Package": {
-       "name": "github.com/prometheus/alertmanager",
-       "version": "v0.25.0"
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "golang.org/x/net",
+       "version": "v0.9.0"
       }
      },
      "found": {
-      "vulnerabilityID": "CVE-2023-40577",
-      "versionConstraint": "= 0.25.0 (unknown)",
-      "cpes": [
-       "cpe:2.3:a:prometheus:alertmanager:0.25.0:*:*:*:*:*:*:*"
-      ]
+      "versionConstraint": "<0.13.0 (unknown)",
+      "vulnerabilityID": "GHSA-2wrh-6pvc-2jm9"
      }
     }
    ],
    "artifact": {
-    "id": "d4e7f1e52cd5c08e",
-    "name": "github.com/prometheus/alertmanager",
-    "version": "v0.25.0",
-    "type": "go-module",
-    "locations": [
-     {
-      "path": "/opt/bitnami/prometheus/bin/promtool",
-      "layerID": "sha256:06126c693b47d73f6eb2838763aae3279c174fe31a09166052f7588561c1dc76"
-     }
-    ],
-    "language": "go",
-    "licenses": [],
-    "cpes": [
-     "cpe:2.3:a:prometheus:alertmanager:v0.25.0:*:*:*:*:*:*:*"
-    ],
-    "purl": "pkg:golang/github.com/prometheus/alertmanager@v0.25.0",
-    "upstreams": [],
-    "metadataType": "GolangBinMetadata",
-    "metadata": {
-     "goCompiledVersion": "go1.20.4",
-     "architecture": "amd64",
-     "h1Digest": "h1:vbXKUR6PYRiZPRIKfmXaG+dmCKG52RtPL4Btl8hQGvg=",
-     "mainModule": "github.com/prometheus/prometheus"
-    }
-   }
-  },
-  {
-   "vulnerability": {
-    "id": "CVE-2023-40577",
-    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-40577",
-    "namespace": "nvd:cpe",
-    "severity": "Medium",
-    "urls": [
-     "https://github.com/prometheus/alertmanager/security/advisories/GHSA-v86x-5fm3-5p7j",
-     "https://lists.debian.org/debian-lts-announce/2023/10/msg00011.html"
-    ],
-    "description": "Alertmanager handles alerts sent by client applications such as the Prometheus server. An attacker with the permission to perform POST requests on the /api/v1/alerts endpoint could be able to execute arbitrary JavaScript code on the users of Prometheus Alertmanager. This issue has been fixed in Alertmanager version 0.2.51.",
-    "cvss": [
-     {
-      "source": "nvd@nist.gov",
-      "type": "Primary",
-      "version": "3.1",
-      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
-      "metrics": {
-       "baseScore": 5.4,
-       "exploitabilityScore": 2.3,
-       "impactScore": 2.7
-      },
-      "vendorMetadata": {}
-     },
-     {
-      "source": "security-advisories@github.com",
-      "type": "Secondary",
-      "version": "3.1",
-      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
-      "metrics": {
-       "baseScore": 7.5,
-       "exploitabilityScore": 3.9,
-       "impactScore": 3.6
-      },
-      "vendorMetadata": {}
-     }
-    ],
-    "fix": {
-     "versions": [],
-     "state": "unknown"
-    },
-    "advisories": []
-   },
-   "relatedVulnerabilities": [],
-   "matchDetails": [
-    {
-     "type": "cpe-match",
-     "matcher": "go-module-matcher",
-     "searchedBy": {
-      "namespace": "nvd:cpe",
-      "cpes": [
-       "cpe:2.3:a:prometheus:alertmanager:v0.25.0:*:*:*:*:*:*:*"
-      ],
-      "Package": {
-       "name": "github.com/prometheus/alertmanager",
-       "version": "v0.25.0"
-      }
-     },
-     "found": {
-      "vulnerabilityID": "CVE-2023-40577",
-      "versionConstraint": "= 0.25.0 (unknown)",
-      "cpes": [
-       "cpe:2.3:a:prometheus:alertmanager:0.25.0:*:*:*:*:*:*:*"
-      ]
-     }
-    }
-   ],
-   "artifact": {
-    "id": "ad3d986e417999ee",
-    "name": "github.com/prometheus/alertmanager",
-    "version": "v0.25.0",
-    "type": "go-module",
-    "locations": [
-     {
-      "path": "/opt/bitnami/prometheus/bin/prometheus",
-      "layerID": "sha256:06126c693b47d73f6eb2838763aae3279c174fe31a09166052f7588561c1dc76"
-     }
-    ],
-    "language": "go",
-    "licenses": [],
-    "cpes": [
-     "cpe:2.3:a:prometheus:alertmanager:v0.25.0:*:*:*:*:*:*:*"
-    ],
-    "purl": "pkg:golang/github.com/prometheus/alertmanager@v0.25.0",
-    "upstreams": [],
-    "metadataType": "GolangBinMetadata",
-    "metadata": {
-     "goCompiledVersion": "go1.20.4",
-     "architecture": "amd64",
-     "h1Digest": "h1:vbXKUR6PYRiZPRIKfmXaG+dmCKG52RtPL4Btl8hQGvg=",
-     "mainModule": "github.com/prometheus/prometheus"
-    }
-   }
-  },
-  {
-   "vulnerability": {
-    "id": "CVE-2023-40577",
-    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-40577",
-    "namespace": "nvd:cpe",
-    "severity": "Medium",
-    "urls": [
-     "https://github.com/prometheus/alertmanager/security/advisories/GHSA-v86x-5fm3-5p7j",
-     "https://lists.debian.org/debian-lts-announce/2023/10/msg00011.html"
-    ],
-    "description": "Alertmanager handles alerts sent by client applications such as the Prometheus server. An attacker with the permission to perform POST requests on the /api/v1/alerts endpoint could be able to execute arbitrary JavaScript code on the users of Prometheus Alertmanager. This issue has been fixed in Alertmanager version 0.2.51.",
-    "cvss": [
-     {
-      "source": "nvd@nist.gov",
-      "type": "Primary",
-      "version": "3.1",
-      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
-      "metrics": {
-       "baseScore": 5.4,
-       "exploitabilityScore": 2.3,
-       "impactScore": 2.7
-      },
-      "vendorMetadata": {}
-     },
-     {
-      "source": "security-advisories@github.com",
-      "type": "Secondary",
-      "version": "3.1",
-      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
-      "metrics": {
-       "baseScore": 7.5,
-       "exploitabilityScore": 3.9,
-       "impactScore": 3.6
-      },
-      "vendorMetadata": {}
-     }
-    ],
-    "fix": {
-     "versions": [],
-     "state": "unknown"
-    },
-    "advisories": []
-   },
-   "relatedVulnerabilities": [],
-   "matchDetails": [
-    {
-     "type": "cpe-match",
-     "matcher": "go-module-matcher",
-     "searchedBy": {
-      "namespace": "nvd:cpe",
-      "cpes": [
-       "cpe:2.3:a:prometheus:alertmanager:v0.25.0:*:*:*:*:*:*:*"
-      ],
-      "Package": {
-       "name": "github.com/prometheus/alertmanager",
-       "version": "v0.25.0"
-      }
-     },
-     "found": {
-      "vulnerabilityID": "CVE-2023-40577",
-      "versionConstraint": "= 0.25.0 (unknown)",
-      "cpes": [
-       "cpe:2.3:a:prometheus:alertmanager:0.25.0:*:*:*:*:*:*:*"
-      ]
-     }
-    }
-   ],
-   "artifact": {
-    "id": "f8c5475bbc8d15ea",
-    "name": "github.com/prometheus/alertmanager",
-    "version": "v0.25.0",
+    "id": "c86b1f1b60966560",
+    "name": "golang.org/x/net",
+    "version": "v0.9.0",
     "type": "go-module",
     "locations": [
      {
@@ -1173,14 +1341,120 @@
     "language": "go",
     "licenses": [],
     "cpes": [
-     "cpe:2.3:a:prometheus:alertmanager:v0.25.0:*:*:*:*:*:*:*"
+     "cpe:2.3:a:golang:x/net:v0.9.0:*:*:*:*:*:*:*"
     ],
-    "purl": "pkg:golang/github.com/prometheus/alertmanager@v0.25.0",
+    "purl": "pkg:golang/golang.org/x/net@v0.9.0",
     "upstreams": [],
     "metadataType": "GolangBinMetadata",
     "metadata": {
      "goCompiledVersion": "",
      "architecture": ""
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-2wrh-6pvc-2jm9",
+    "dataSource": "https://github.com/advisories/GHSA-2wrh-6pvc-2jm9",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-2wrh-6pvc-2jm9"
+    ],
+    "description": "Improper rendering of text nodes in golang.org/x/net/html",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+      "metrics": {
+       "baseScore": 6.1,
+       "exploitabilityScore": 2.8,
+       "impactScore": 2.7
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "0.13.0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-3978",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-3978",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://go.dev/cl/514896",
+      "https://go.dev/issue/61615",
+      "https://pkg.go.dev/vuln/GO-2023-1988"
+     ],
+     "description": "Text nodes not in the HTML namespace are incorrectly literally rendered, causing text which should be escaped to not be. This could lead to an XSS attack.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+       "metrics": {
+        "baseScore": 6.1,
+        "exploitabilityScore": 2.8,
+        "impactScore": 2.7
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "golang.org/x/net",
+       "version": "v0.9.0"
+      }
+     },
+     "found": {
+      "versionConstraint": "<0.13.0 (unknown)",
+      "vulnerabilityID": "GHSA-2wrh-6pvc-2jm9"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "1e4fc247f8f64bff",
+    "name": "golang.org/x/net",
+    "version": "v0.9.0",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/opt/bitnami/prometheus/bin/promtool",
+      "layerID": "sha256:06126c693b47d73f6eb2838763aae3279c174fe31a09166052f7588561c1dc76"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:golang:x/net:v0.9.0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/golang.org/x/net@v0.9.0",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.20.4",
+     "architecture": "amd64",
+     "h1Digest": "h1:aWJ/m6xSmxWBx+V0XRHTlrYrPG56jKsLdTFmsSsCzOM=",
+     "mainModule": "github.com/prometheus/prometheus"
     }
    }
   },
@@ -3063,8 +3337,8 @@
   "idLike": []
  },
  "descriptor": {
-  "name": "",
-  "version": "",
+  "name": "grype",
+  "version": "0.71.0",
   "configuration": {
    "output": [
     "json"
@@ -3102,22 +3376,25 @@
    },
    "match": {
     "java": {
-     "using-cpes": true
+     "using-cpes": false
     },
     "dotnet": {
-     "using-cpes": true
+     "using-cpes": false
     },
     "golang": {
-     "using-cpes": true
+     "using-cpes": false
     },
     "javascript": {
-     "using-cpes": true
+     "using-cpes": false
     },
     "python": {
-     "using-cpes": true
+     "using-cpes": false
     },
     "ruby": {
-     "using-cpes": true
+     "using-cpes": false
+    },
+    "rust": {
+     "using-cpes": false
     },
     "stock": {
      "using-cpes": true
@@ -3138,12 +3415,12 @@
    "vex-add": []
   },
   "db": {
-   "built": "2023-10-11T01:24:08Z",
+   "built": "2023-10-13T01:25:27Z",
    "schemaVersion": 5,
    "location": "/home/anon/.cache/grype/db/5",
-   "checksum": "sha256:16423ac3a1c3cd30cfe138851c91e7ba24290ec499065e861cb0a90ecb50a059",
+   "checksum": "sha256:b4a890ba7a0e7dd7336493427223a1fbf8b4c0b45f972ae68dcd61106667f31b",
    "error": null
   },
-  "timestamp": "2023-10-11T21:50:58.053392735-04:00"
+  "timestamp": "2023-10-13T11:50:21.697861058-04:00"
  }
 }

@@ -65,7 +65,10 @@ def plot_hline_chart(ax: Axes, baseline: np.ndarray, chainguard: np.ndarray,
     ax.legend(loc='upper right', ncols=1, fontsize=LEGEND_FONT_SZ)
 
     xticks = ax.get_xticks()
-    xticks_labels = [str(int(t)) for t in xticks]
+    if xticks[0] % 1 != 0: # Preseve decimal in float labels
+        xticks_labels = [str(t) for t in xticks]
+    else:
+        xticks_labels = [str(int(t)) for t in xticks]
     ax.set_xticks(xticks, xticks_labels, fontsize=XLABEL_FONT_SZ)
     ax.margins(x=0)
     ax.set_xlabel(xlabel, fontsize=XLABEL_FONT_SZ)

@@ -6162,6 +6162,87 @@
    }
   },
   {
+   "id": "41f3211030947893",
+   "name": "stdlib",
+   "version": "go1.21.2",
+   "type": "go-module",
+   "foundBy": "",
+   "locations": [
+    {
+     "path": "/usr/bin/etcd",
+     "layerID": "sha256:88a6f6f7ace710a1a5b0eb8483cb6e3e1ba2517644650c5312858ebcf5919001",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "go",
+   "cpes": [
+    "cpe:2.3:a:golang:go:1.21.2:-:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:golang/stdlib@1.21.2",
+   "metadataType": "GolangBinMetadata",
+   "metadata": {
+    "goCompiledVersion": "go1.21.2",
+    "architecture": ""
+   }
+  },
+  {
+   "id": "51a8858d8ac161d9",
+   "name": "stdlib",
+   "version": "go1.21.2",
+   "type": "go-module",
+   "foundBy": "",
+   "locations": [
+    {
+     "path": "/usr/bin/etcdctl",
+     "layerID": "sha256:88a6f6f7ace710a1a5b0eb8483cb6e3e1ba2517644650c5312858ebcf5919001",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "go",
+   "cpes": [
+    "cpe:2.3:a:golang:go:1.21.2:-:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:golang/stdlib@1.21.2",
+   "metadataType": "GolangBinMetadata",
+   "metadata": {
+    "goCompiledVersion": "go1.21.2",
+    "architecture": ""
+   }
+  },
+  {
+   "id": "3422e69b87ce9770",
+   "name": "stdlib",
+   "version": "go1.21.2",
+   "type": "go-module",
+   "foundBy": "",
+   "locations": [
+    {
+     "path": "/usr/bin/etcdutl",
+     "layerID": "sha256:88a6f6f7ace710a1a5b0eb8483cb6e3e1ba2517644650c5312858ebcf5919001",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "go",
+   "cpes": [
+    "cpe:2.3:a:golang:go:1.21.2:-:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:golang/stdlib@1.21.2",
+   "metadataType": "GolangBinMetadata",
+   "metadata": {
+    "goCompiledVersion": "go1.21.2",
+    "architecture": ""
+   }
+  },
+  {
    "id": "d113004b447fb691",
    "name": "wolfi-baselayout",
    "version": "20230201-r6",
@@ -7129,6 +7210,16 @@
   },
   {
    "parent": "2e3274bb6be412bf",
+   "child": "3422e69b87ce9770",
+   "type": "ownership-by-file-overlap",
+   "metadata": {
+    "files": [
+     "/usr/bin/etcdutl"
+    ]
+   }
+  },
+  {
+   "parent": "2e3274bb6be412bf",
    "child": "35c9c01b3fab4bab",
    "type": "ownership-by-file-overlap",
    "metadata": {
@@ -7160,6 +7251,16 @@
   {
    "parent": "2e3274bb6be412bf",
    "child": "41c4b68d04871e92",
+   "type": "ownership-by-file-overlap",
+   "metadata": {
+    "files": [
+     "/usr/bin/etcd"
+    ]
+   }
+  },
+  {
+   "parent": "2e3274bb6be412bf",
+   "child": "41f3211030947893",
    "type": "ownership-by-file-overlap",
    "metadata": {
     "files": [
@@ -7251,6 +7352,16 @@
    "parent": "2e3274bb6be412bf",
    "child": "5191892305cdc7a0",
    "type": "contains"
+  },
+  {
+   "parent": "2e3274bb6be412bf",
+   "child": "51a8858d8ac161d9",
+   "type": "ownership-by-file-overlap",
+   "metadata": {
+    "files": [
+     "/usr/bin/etcdctl"
+    ]
+   }
   },
   {
    "parent": "2e3274bb6be412bf",
@@ -8438,6 +8549,11 @@
    "type": "contains"
   },
   {
+   "parent": "3422e69b87ce9770",
+   "child": "c65e5a3135a740e1",
+   "type": "evident-by"
+  },
+  {
    "parent": "35c9c01b3fab4bab",
    "child": "bf70831d0fb19422",
    "type": "evident-by"
@@ -8454,6 +8570,11 @@
   },
   {
    "parent": "41c4b68d04871e92",
+   "child": "bf70831d0fb19422",
+   "type": "evident-by"
+  },
+  {
+   "parent": "41f3211030947893",
    "child": "bf70831d0fb19422",
    "type": "evident-by"
   },
@@ -8495,6 +8616,11 @@
   {
    "parent": "4f95a66dce4ba4b5",
    "child": "bf70831d0fb19422",
+   "type": "evident-by"
+  },
+  {
+   "parent": "51a8858d8ac161d9",
+   "child": "5191892305cdc7a0",
    "type": "evident-by"
   },
   {
@@ -9724,6 +9850,11 @@
   },
   {
    "parent": "e8b654afd0b98f6ebd108014058aa52911955c52b0107292ca04c07823d3bd9e",
+   "child": "3422e69b87ce9770",
+   "type": "contains"
+  },
+  {
+   "parent": "e8b654afd0b98f6ebd108014058aa52911955c52b0107292ca04c07823d3bd9e",
    "child": "35c9c01b3fab4bab",
    "type": "contains"
   },
@@ -9740,6 +9871,11 @@
   {
    "parent": "e8b654afd0b98f6ebd108014058aa52911955c52b0107292ca04c07823d3bd9e",
    "child": "41c4b68d04871e92",
+   "type": "contains"
+  },
+  {
+   "parent": "e8b654afd0b98f6ebd108014058aa52911955c52b0107292ca04c07823d3bd9e",
+   "child": "41f3211030947893",
    "type": "contains"
   },
   {
@@ -9780,6 +9916,11 @@
   {
    "parent": "e8b654afd0b98f6ebd108014058aa52911955c52b0107292ca04c07823d3bd9e",
    "child": "4f95a66dce4ba4b5",
+   "type": "contains"
+  },
+  {
+   "parent": "e8b654afd0b98f6ebd108014058aa52911955c52b0107292ca04c07823d3bd9e",
+   "child": "51a8858d8ac161d9",
    "type": "contains"
   },
   {
@@ -10860,7 +11001,7 @@
  },
  "descriptor": {
   "name": "syft",
-  "version": "0.92.0",
+  "version": "0.93.0",
   "configuration": {
    "catalogers": null,
    "package": {

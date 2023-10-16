@@ -137,11 +137,43 @@
     "h1Digest": "h1:ljd4t30dBnAvMZaQCevtY0xLLD0A+bRZXbgLMLU1F/A=",
     "mainModule": "github.com/bitnami/wait-for-port"
    }
+  },
+  {
+   "id": "365b966d23faab11",
+   "name": "stdlib",
+   "version": "go1.19.12",
+   "type": "go-module",
+   "foundBy": "",
+   "locations": [
+    {
+     "path": "/opt/bitnami/common/bin/wait-for-port",
+     "layerID": "sha256:cb030352b20867c72de554dda59927c1382ce9dbdc2f2e05c9a4815de7d66ca1",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "go",
+   "cpes": [
+    "cpe:2.3:a:golang:go:1.19.12:-:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:golang/stdlib@1.19.12",
+   "metadataType": "GolangBinMetadata",
+   "metadata": {
+    "goCompiledVersion": "go1.19.12",
+    "architecture": ""
+   }
   }
  ],
  "artifactRelationships": [
   {
    "parent": "0b7385d7fa6d523e",
+   "child": "90427d53657ce3b8",
+   "type": "evident-by"
+  },
+  {
+   "parent": "365b966d23faab11",
    "child": "90427d53657ce3b8",
    "type": "evident-by"
   },
@@ -158,6 +190,11 @@
   {
    "parent": "aeb8ba887ce4233f106a0e2548e745a2adaaabd462cffae801dcf5df72237286",
    "child": "0b7385d7fa6d523e",
+   "type": "contains"
+  },
+  {
+   "parent": "aeb8ba887ce4233f106a0e2548e745a2adaaabd462cffae801dcf5df72237286",
+   "child": "365b966d23faab11",
    "type": "contains"
   },
   {
@@ -240,7 +277,7 @@
  },
  "descriptor": {
   "name": "syft",
-  "version": "0.92.0",
+  "version": "0.93.0",
   "configuration": {
    "catalogers": null,
    "package": {

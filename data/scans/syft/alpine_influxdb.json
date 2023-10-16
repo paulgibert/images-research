@@ -15780,6 +15780,114 @@
    }
   },
   {
+   "id": "f995b867da2a5292",
+   "name": "stdlib",
+   "version": "go1.20.1",
+   "type": "go-module",
+   "foundBy": "",
+   "locations": [
+    {
+     "path": "/usr/local/bin/influxd",
+     "layerID": "sha256:f1e7b47be52d35ff3fbb66d984648ac643665b1f87e63082a5cb6fb181e7f88d",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "go",
+   "cpes": [
+    "cpe:2.3:a:golang:go:1.20.1:-:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:golang/stdlib@1.20.1",
+   "metadataType": "GolangBinMetadata",
+   "metadata": {
+    "goCompiledVersion": "go1.20.1",
+    "architecture": ""
+   }
+  },
+  {
+   "id": "1f85b138ea432cc0",
+   "name": "stdlib",
+   "version": "go1.20.2",
+   "type": "go-module",
+   "foundBy": "",
+   "locations": [
+    {
+     "path": "/usr/local/bin/dasel",
+     "layerID": "sha256:31c455d5aa48984e03dc31afce81b45741df98fdc7f812cefe327879ffe5fd0a",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "go",
+   "cpes": [
+    "cpe:2.3:a:golang:go:1.20.2:-:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:golang/stdlib@1.20.2",
+   "metadataType": "GolangBinMetadata",
+   "metadata": {
+    "goCompiledVersion": "go1.20.2",
+    "architecture": ""
+   }
+  },
+  {
+   "id": "4a49738f7f03dcc1",
+   "name": "stdlib",
+   "version": "go1.20.3",
+   "type": "go-module",
+   "foundBy": "",
+   "locations": [
+    {
+     "path": "/influx",
+     "layerID": "sha256:b4c1e19f76d6a46e78faa9fa79913dcdd81f42b754b4ffedd9d50a7ae5c35b52",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "go",
+   "cpes": [
+    "cpe:2.3:a:golang:go:1.20.3:-:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:golang/stdlib@1.20.3",
+   "metadataType": "GolangBinMetadata",
+   "metadata": {
+    "goCompiledVersion": "go1.20.3",
+    "architecture": ""
+   }
+  },
+  {
+   "id": "75740ba7d92b5c20",
+   "name": "stdlib",
+   "version": "go1.20.3",
+   "type": "go-module",
+   "foundBy": "",
+   "locations": [
+    {
+     "path": "/usr/local/bin/influx",
+     "layerID": "sha256:b4c1e19f76d6a46e78faa9fa79913dcdd81f42b754b4ffedd9d50a7ae5c35b52",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "go",
+   "cpes": [
+    "cpe:2.3:a:golang:go:1.20.3:-:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:golang/stdlib@1.20.3",
+   "metadataType": "GolangBinMetadata",
+   "metadata": {
+    "goCompiledVersion": "go1.20.3",
+    "architecture": ""
+   }
+  },
+  {
    "id": "4136b2f61f4dd26c",
    "name": "su-exec",
    "version": "0.2-r2",
@@ -24935,6 +25043,11 @@
    "type": "evident-by"
   },
   {
+   "parent": "1f85b138ea432cc0",
+   "child": "3bfd6d07589a06a0",
+   "type": "evident-by"
+  },
+  {
    "parent": "1fa0cc5ababbc224",
    "child": "260ccc4936de92af",
    "type": "evident-by"
@@ -25197,6 +25310,11 @@
   {
    "parent": "2a04db9456261b30637fa9b7633fa22ce39fced248decdd925529850e4a98b4f",
    "child": "1e7fc1366794ff0a",
+   "type": "contains"
+  },
+  {
+   "parent": "2a04db9456261b30637fa9b7633fa22ce39fced248decdd925529850e4a98b4f",
+   "child": "1f85b138ea432cc0",
    "type": "contains"
   },
   {
@@ -25471,6 +25589,11 @@
   },
   {
    "parent": "2a04db9456261b30637fa9b7633fa22ce39fced248decdd925529850e4a98b4f",
+   "child": "4a49738f7f03dcc1",
+   "type": "contains"
+  },
+  {
+   "parent": "2a04db9456261b30637fa9b7633fa22ce39fced248decdd925529850e4a98b4f",
    "child": "4cfaebfa05f1b414",
    "type": "contains"
   },
@@ -25727,6 +25850,11 @@
   {
    "parent": "2a04db9456261b30637fa9b7633fa22ce39fced248decdd925529850e4a98b4f",
    "child": "7300d2e18c3a68d0",
+   "type": "contains"
+  },
+  {
+   "parent": "2a04db9456261b30637fa9b7633fa22ce39fced248decdd925529850e4a98b4f",
+   "child": "75740ba7d92b5c20",
    "type": "contains"
   },
   {
@@ -26526,6 +26654,11 @@
   },
   {
    "parent": "2a04db9456261b30637fa9b7633fa22ce39fced248decdd925529850e4a98b4f",
+   "child": "f995b867da2a5292",
+   "type": "contains"
+  },
+  {
+   "parent": "2a04db9456261b30637fa9b7633fa22ce39fced248decdd925529850e4a98b4f",
    "child": "f9feb709905caec8",
    "type": "contains"
   },
@@ -27037,6 +27170,11 @@
   {
    "parent": "4878e9bf270413b3",
    "child": "260ccc4936de92af",
+   "type": "evident-by"
+  },
+  {
+   "parent": "4a49738f7f03dcc1",
+   "child": "fef97a2d8808da4b",
    "type": "evident-by"
   },
   {
@@ -31265,6 +31403,11 @@
    "type": "evident-by"
   },
   {
+   "parent": "75740ba7d92b5c20",
+   "child": "ba43b8e5c762a349",
+   "type": "evident-by"
+  },
+  {
    "parent": "7620c3071f118836",
    "child": "fef97a2d8808da4b",
    "type": "evident-by"
@@ -33751,6 +33894,11 @@
   },
   {
    "parent": "f8a973fb57390ac1",
+   "child": "260ccc4936de92af",
+   "type": "evident-by"
+  },
+  {
+   "parent": "f995b867da2a5292",
    "child": "260ccc4936de92af",
    "type": "evident-by"
   },
@@ -41434,7 +41582,7 @@
  },
  "descriptor": {
   "name": "syft",
-  "version": "0.92.0",
+  "version": "0.93.0",
   "configuration": {
    "catalogers": null,
    "package": {

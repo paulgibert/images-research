@@ -702,7 +702,7 @@
    }
   },
   {
-   "id": "89386da27ced9b80",
+   "id": "244b8637fd26cb9c",
    "name": "jctools-core",
    "version": "3.1.0",
    "type": "java-archive",
@@ -716,7 +716,25 @@
      }
     }
    ],
-   "licenses": [],
+   "licenses": [
+    {
+     "value": "Apache License, Version 2.0",
+     "spdxExpression": "",
+     "type": "declared",
+     "urls": [
+      "http://www.apache.org/licenses/LICENSE-2.0.txt"
+     ],
+     "locations": [
+      {
+       "path": "/opt/bitnami/zookeeper/lib/netty-common-4.1.94.Final.jar",
+       "layerID": "sha256:d0c0776d273036023f33ba746336f47d418134be100a1fae11a6587c4a0c5f7e",
+       "annotations": {
+        "evidence": "primary"
+       }
+      }
+     ]
+    }
+   ],
    "language": "java",
    "cpes": [
     "cpe:2.3:a:jctools-core:jctools-core:3.1.0:*:*:*:*:*:*:*",
@@ -4577,6 +4595,11 @@
    "type": "evident-by"
   },
   {
+   "parent": "244b8637fd26cb9c",
+   "child": "6d01964eb1485429",
+   "type": "evident-by"
+  },
+  {
    "parent": "401cdd4a4376d5b2",
    "child": "31d078630c24f080",
    "type": "evident-by"
@@ -4659,11 +4682,6 @@
   {
    "parent": "876aaee97799c6ce",
    "child": "59602199d55ac76c",
-   "type": "evident-by"
-  },
-  {
-   "parent": "89386da27ced9b80",
-   "child": "6d01964eb1485429",
    "type": "evident-by"
   },
   {
@@ -4803,6 +4821,11 @@
   },
   {
    "parent": "e2897b053415ccd689ecb862646fae277df30a9c7138c1bf1c0d14835aaea3bd",
+   "child": "244b8637fd26cb9c",
+   "type": "contains"
+  },
+  {
+   "parent": "e2897b053415ccd689ecb862646fae277df30a9c7138c1bf1c0d14835aaea3bd",
    "child": "401cdd4a4376d5b2",
    "type": "contains"
   },
@@ -4884,11 +4907,6 @@
   {
    "parent": "e2897b053415ccd689ecb862646fae277df30a9c7138c1bf1c0d14835aaea3bd",
    "child": "876aaee97799c6ce",
-   "type": "contains"
-  },
-  {
-   "parent": "e2897b053415ccd689ecb862646fae277df30a9c7138c1bf1c0d14835aaea3bd",
-   "child": "89386da27ced9b80",
    "type": "contains"
   },
   {
@@ -5342,7 +5360,7 @@
  },
  "descriptor": {
   "name": "syft",
-  "version": "0.92.0",
+  "version": "0.93.0",
   "configuration": {
    "catalogers": null,
    "package": {

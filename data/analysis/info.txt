@@ -1,4 +1,4 @@
 -------------  ------
-grype version  0.69.1
-syft version   0.92.0
+grype version  0.71.0
+syft version   0.93.0
 -------------  ------

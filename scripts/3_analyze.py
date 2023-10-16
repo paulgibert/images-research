@@ -18,9 +18,9 @@ import src.utils as utils
 
 
 def get_column(df: pd.DataFrame, provider: str, column: str) -> np.ndarray:
-    data = df[df["image_provider"] == provider]
-    return np.array(
-        data.sort_values(by=["image_flavor"])[column])
+    data = df[df["image_provider"] == provider] \
+           .sort_values(by="image_flavor", ascending=False)
+    return np.array(data[column])
 
 
 def get_providers(df: pd.DataFrame, column: str) ->Tuple[np.ndarray,
@@ -33,7 +33,7 @@ def get_providers(df: pd.DataFrame, column: str) ->Tuple[np.ndarray,
 
 def _make_fig(ax: Axes, df: pd.DataFrame, column: str,
               title: str, xlabel: str):
-    flavors = df["image_flavor"].unique()
+    flavors = np.flip(np.sort(df["image_flavor"].unique()))
     org, cg, rf = get_providers(df, column)
     plot_hline_chart(ax, org, cg, rf, flavors, title, xlabel)
 
@@ -133,14 +133,6 @@ def save_stats_summary(df: pd.DataFrame, out_path: str):
         json.dump(data, fp, indent=4)
 
 
-def save_digests(df: pd.DataFrame, out_path: str):
-    data = df[["image_provider", "image_flavor", "image_digest"]] \
-           .sort_values("image_flavor")
-    tab = tabulate(data, headers="keys", showindex=False)
-    with open(out_path, "w") as fp:
-        fp.write(tab)
-
-
 def save_scanner_info(out_path: str):
     grype_v = utils.bash("grype --version").split(" ")[1]
     syft_v = utils.bash("syft --version").split(" ")[1]
@@ -185,7 +177,6 @@ def main():
     save_vulns_p_comp_fig(df, os.path.join(fig_path, "n_vulns_p_comp.png"))
 
     save_stats_summary(df, os.path.join(out_dir, "summary.json"))
-    save_digests(df, os.path.join(out_dir, "digests.txt"))
     save_scanner_info(os.path.join(out_dir, "info.txt"))
 
 if __name__ == "__main__":

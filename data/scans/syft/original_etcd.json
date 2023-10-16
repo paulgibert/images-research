@@ -45275,6 +45275,114 @@
    }
   },
   {
+   "id": "d8b5c6c95858836f",
+   "name": "stdlib",
+   "version": "go1.20.8",
+   "type": "go-module",
+   "foundBy": "",
+   "locations": [
+    {
+     "path": "/opt/bitnami/common/bin/yq",
+     "layerID": "sha256:c095e32b9ebb85360ce5a9d7044eefb8a541d638c5c31f57015a4b6070b41455",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "go",
+   "cpes": [
+    "cpe:2.3:a:golang:go:1.20.8:-:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:golang/stdlib@1.20.8",
+   "metadataType": "GolangBinMetadata",
+   "metadata": {
+    "goCompiledVersion": "go1.20.8",
+    "architecture": ""
+   }
+  },
+  {
+   "id": "2ff3183b51d61d95",
+   "name": "stdlib",
+   "version": "go1.20.9",
+   "type": "go-module",
+   "foundBy": "",
+   "locations": [
+    {
+     "path": "/opt/bitnami/etcd/bin/etcd",
+     "layerID": "sha256:c095e32b9ebb85360ce5a9d7044eefb8a541d638c5c31f57015a4b6070b41455",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "go",
+   "cpes": [
+    "cpe:2.3:a:golang:go:1.20.9:-:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:golang/stdlib@1.20.9",
+   "metadataType": "GolangBinMetadata",
+   "metadata": {
+    "goCompiledVersion": "go1.20.9",
+    "architecture": ""
+   }
+  },
+  {
+   "id": "c506b961befa756c",
+   "name": "stdlib",
+   "version": "go1.20.9",
+   "type": "go-module",
+   "foundBy": "",
+   "locations": [
+    {
+     "path": "/opt/bitnami/etcd/bin/etcdctl",
+     "layerID": "sha256:c095e32b9ebb85360ce5a9d7044eefb8a541d638c5c31f57015a4b6070b41455",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "go",
+   "cpes": [
+    "cpe:2.3:a:golang:go:1.20.9:-:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:golang/stdlib@1.20.9",
+   "metadataType": "GolangBinMetadata",
+   "metadata": {
+    "goCompiledVersion": "go1.20.9",
+    "architecture": ""
+   }
+  },
+  {
+   "id": "c0ae291b193178e6",
+   "name": "stdlib",
+   "version": "go1.20.9",
+   "type": "go-module",
+   "foundBy": "",
+   "locations": [
+    {
+     "path": "/opt/bitnami/etcd/bin/etcdutl",
+     "layerID": "sha256:c095e32b9ebb85360ce5a9d7044eefb8a541d638c5c31f57015a4b6070b41455",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "go",
+   "cpes": [
+    "cpe:2.3:a:golang:go:1.20.9:-:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:golang/stdlib@1.20.9",
+   "metadataType": "GolangBinMetadata",
+   "metadata": {
+    "goCompiledVersion": "go1.20.9",
+    "architecture": ""
+   }
+  },
+  {
    "id": "e5a100eb1e30f20e",
    "name": "sysv-rc",
    "version": "2.96-7+deb11u1",
@@ -59614,6 +59722,11 @@
    "type": "contains"
   },
   {
+   "parent": "2ff3183b51d61d95",
+   "child": "719f81218f79f292",
+   "type": "evident-by"
+  },
+  {
    "parent": "3048e0f8d9c77128",
    "child": "8256f0f8c74737a9",
    "type": "evident-by"
@@ -69449,6 +69562,11 @@
    "type": "evident-by"
   },
   {
+   "parent": "c0ae291b193178e6",
+   "child": "324ff98c2bd150c6",
+   "type": "evident-by"
+  },
+  {
    "parent": "c1d44600031016c6",
    "child": "8256f0f8c74737a9",
    "type": "evident-by"
@@ -69691,6 +69809,11 @@
   {
    "parent": "c4c92fb9fcfca98e",
    "child": "324ff98c2bd150c6",
+   "type": "evident-by"
+  },
+  {
+   "parent": "c506b961befa756c",
+   "child": "8256f0f8c74737a9",
    "type": "evident-by"
   },
   {
@@ -70225,6 +70348,11 @@
   },
   {
    "parent": "d7e6bf8348f8d7e1",
+   "child": "d680b5725bdac63f",
+   "type": "evident-by"
+  },
+  {
+   "parent": "d8b5c6c95858836f",
    "child": "d680b5725bdac63f",
    "type": "evident-by"
   },
@@ -77325,6 +77453,11 @@
   },
   {
    "parent": "ea4e32f91df35d146cfbc101649d1cbf60702f5c6eb9496fd0167f40500cb0a7",
+   "child": "2ff3183b51d61d95",
+   "type": "contains"
+  },
+  {
+   "parent": "ea4e32f91df35d146cfbc101649d1cbf60702f5c6eb9496fd0167f40500cb0a7",
    "child": "3048e0f8d9c77128",
    "type": "contains"
   },
@@ -78365,6 +78498,11 @@
   },
   {
    "parent": "ea4e32f91df35d146cfbc101649d1cbf60702f5c6eb9496fd0167f40500cb0a7",
+   "child": "c0ae291b193178e6",
+   "type": "contains"
+  },
+  {
+   "parent": "ea4e32f91df35d146cfbc101649d1cbf60702f5c6eb9496fd0167f40500cb0a7",
    "child": "c1d44600031016c6",
    "type": "contains"
   },
@@ -78406,6 +78544,11 @@
   {
    "parent": "ea4e32f91df35d146cfbc101649d1cbf60702f5c6eb9496fd0167f40500cb0a7",
    "child": "c4c92fb9fcfca98e",
+   "type": "contains"
+  },
+  {
+   "parent": "ea4e32f91df35d146cfbc101649d1cbf60702f5c6eb9496fd0167f40500cb0a7",
+   "child": "c506b961befa756c",
    "type": "contains"
   },
   {
@@ -78546,6 +78689,11 @@
   {
    "parent": "ea4e32f91df35d146cfbc101649d1cbf60702f5c6eb9496fd0167f40500cb0a7",
    "child": "d7e6bf8348f8d7e1",
+   "type": "contains"
+  },
+  {
+   "parent": "ea4e32f91df35d146cfbc101649d1cbf60702f5c6eb9496fd0167f40500cb0a7",
+   "child": "d8b5c6c95858836f",
    "type": "contains"
   },
   {
@@ -101366,7 +101514,7 @@
  },
  "descriptor": {
   "name": "syft",
-  "version": "0.92.0",
+  "version": "0.93.0",
   "configuration": {
    "catalogers": null,
    "package": {

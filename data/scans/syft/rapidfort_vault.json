@@ -12197,6 +12197,33 @@
      "standard-crypto"
     ]
    }
+  },
+  {
+   "id": "89239eb8922a0ab5",
+   "name": "stdlib",
+   "version": "go1.19.1",
+   "type": "go-module",
+   "foundBy": "",
+   "locations": [
+    {
+     "path": "/bin/vault",
+     "layerID": "sha256:9afb558de8e297fad19313e48054eb42d144c57834a447975f800bff37e1c5bf",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "go",
+   "cpes": [
+    "cpe:2.3:a:golang:go:1.19.1:-:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:golang/stdlib@1.19.1",
+   "metadataType": "GolangBinMetadata",
+   "metadata": {
+    "goCompiledVersion": "go1.19.1",
+    "architecture": ""
+   }
   }
  ],
  "artifactRelationships": [
@@ -13142,6 +13169,11 @@
   },
   {
    "parent": "8886ab338e6723d3",
+   "child": "f3a9e36da6445842",
+   "type": "evident-by"
+  },
+  {
+   "parent": "89239eb8922a0ab5",
    "child": "f3a9e36da6445842",
    "type": "evident-by"
   },
@@ -14233,6 +14265,11 @@
   {
    "parent": "9e8731e4700c7469ddb5c912e295f10b5c9213b32c1841acaa77dba8ac44fd3c",
    "child": "8886ab338e6723d3",
+   "type": "contains"
+  },
+  {
+   "parent": "9e8731e4700c7469ddb5c912e295f10b5c9213b32c1841acaa77dba8ac44fd3c",
+   "child": "89239eb8922a0ab5",
    "type": "contains"
   },
   {
@@ -15968,7 +16005,7 @@
  },
  "descriptor": {
   "name": "syft",
-  "version": "0.92.0",
+  "version": "0.93.0",
   "configuration": {
    "catalogers": null,
    "package": {

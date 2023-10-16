@@ -11487,6 +11487,33 @@
    }
   },
   {
+   "id": "970853078e34d53a",
+   "name": "stdlib",
+   "version": "go1.21.2",
+   "type": "go-module",
+   "foundBy": "",
+   "locations": [
+    {
+     "path": "/bin/consul",
+     "layerID": "sha256:a251a24ef6ae1190ff54bdc1ffab2e35bd2aef35d75df5204d760619709c064c",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "go",
+   "cpes": [
+    "cpe:2.3:a:golang:go:1.21.2:-:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:golang/stdlib@1.21.2",
+   "metadataType": "GolangBinMetadata",
+   "metadata": {
+    "goCompiledVersion": "go1.21.2",
+    "architecture": ""
+   }
+  },
+  {
    "id": "fee8f964a4c8f013",
    "name": "su-exec",
    "version": "0.2-r2",
@@ -14492,6 +14519,16 @@
   },
   {
    "parent": "702650dc68bc26b6",
+   "child": "970853078e34d53a",
+   "type": "ownership-by-file-overlap",
+   "metadata": {
+    "files": [
+     "/bin/consul"
+    ]
+   }
+  },
+  {
+   "parent": "702650dc68bc26b6",
    "child": "97cdb0491b9910d2",
    "type": "ownership-by-file-overlap",
    "metadata": {
@@ -16081,6 +16118,11 @@
    "type": "evident-by"
   },
   {
+   "parent": "970853078e34d53a",
+   "child": "ea1bb2ba87c02969",
+   "type": "evident-by"
+  },
+  {
    "parent": "97cdb0491b9910d2",
    "child": "ea1bb2ba87c02969",
    "type": "evident-by"
@@ -17268,6 +17310,11 @@
   {
    "parent": "beadb872f2eeb0da4ce36e0657e3dfaa84c2b294a330a160b6b2c403efeea767",
    "child": "95b9b4723f693cd7",
+   "type": "contains"
+  },
+  {
+   "parent": "beadb872f2eeb0da4ce36e0657e3dfaa84c2b294a330a160b6b2c403efeea767",
+   "child": "970853078e34d53a",
    "type": "contains"
   },
   {
@@ -19539,7 +19586,7 @@
  },
  "descriptor": {
   "name": "syft",
-  "version": "0.92.0",
+  "version": "0.93.0",
   "configuration": {
    "catalogers": null,
    "package": {

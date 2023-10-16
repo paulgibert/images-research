@@ -3928,7 +3928,7 @@
    }
   },
   {
-   "id": "deb16bddd5aa729f",
+   "id": "ff6ce423502e461f",
    "name": "checkstyle",
    "version": "6.1.1",
    "type": "java-archive",
@@ -3942,7 +3942,25 @@
      }
     }
    ],
-   "licenses": [],
+   "licenses": [
+    {
+     "value": "GNU Lesser General Public License",
+     "spdxExpression": "",
+     "type": "declared",
+     "urls": [
+      "http://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt"
+     ],
+     "locations": [
+      {
+       "path": "/usr/local/zookeeper-3.4.10/contrib/fatjar/zookeeper-3.4.10-fatjar.jar",
+       "layerID": "sha256:190482cb294ece8fddfe12ca8d05641887763a3955314a5aaa6d23b6587fe452",
+       "annotations": {
+        "evidence": "primary"
+       }
+      }
+     ]
+    }
+   ],
    "language": "java",
    "cpes": [
     "cpe:2.3:a:checkstyle:checkstyle:6.1.1:*:*:*:*:*:*:*",
@@ -4350,7 +4368,7 @@
    }
   },
   {
-   "id": "aeede90dd3ca4a72",
+   "id": "775bdfd27871b58b",
    "name": "ehcache-core",
    "version": "2.4.4",
    "type": "java-archive",
@@ -4364,7 +4382,25 @@
      }
     }
    ],
-   "licenses": [],
+   "licenses": [
+    {
+     "value": "The Apache Software License, Version 2.0",
+     "spdxExpression": "",
+     "type": "declared",
+     "urls": [
+      "src/assemble/EHCACHE-CORE-LICENSE.txt"
+     ],
+     "locations": [
+      {
+       "path": "/usr/local/zookeeper-3.4.10/contrib/fatjar/zookeeper-3.4.10-fatjar.jar",
+       "layerID": "sha256:190482cb294ece8fddfe12ca8d05641887763a3955314a5aaa6d23b6587fe452",
+       "annotations": {
+        "evidence": "primary"
+       }
+      }
+     ]
+    }
+   ],
    "language": "java",
    "cpes": [
     "cpe:2.3:a:ehcache-core:ehcache-core:2.4.4:*:*:*:*:*:*:*",
@@ -6063,7 +6099,7 @@
    }
   },
   {
-   "id": "b2dc1c1c89cad460",
+   "id": "cf8433f48e8c3655",
    "name": "jline",
    "version": "0.9.94",
    "type": "java-archive",
@@ -6077,7 +6113,25 @@
      }
     }
    ],
-   "licenses": [],
+   "licenses": [
+    {
+     "value": "BSD",
+     "spdxExpression": "",
+     "type": "declared",
+     "urls": [
+      "LICENSE.txt"
+     ],
+     "locations": [
+      {
+       "path": "/usr/local/zookeeper-3.4.10/contrib/fatjar/zookeeper-3.4.10-fatjar.jar",
+       "layerID": "sha256:190482cb294ece8fddfe12ca8d05641887763a3955314a5aaa6d23b6587fe452",
+       "annotations": {
+        "evidence": "primary"
+       }
+      }
+     ]
+    }
+   ],
    "language": "java",
    "cpes": [
     "cpe:2.3:a:jline:jline:0.9.94:*:*:*:*:*:*:*"
@@ -6105,7 +6159,7 @@
    }
   },
   {
-   "id": "efb96230a0b23302",
+   "id": "8f49bd19f8169761",
    "name": "jline",
    "version": "0.9.94",
    "type": "java-archive",
@@ -6119,7 +6173,25 @@
      }
     }
    ],
-   "licenses": [],
+   "licenses": [
+    {
+     "value": "BSD",
+     "spdxExpression": "",
+     "type": "declared",
+     "urls": [
+      "LICENSE.txt"
+     ],
+     "locations": [
+      {
+       "path": "/usr/local/zookeeper-3.4.10/lib/jline-0.9.94.jar",
+       "layerID": "sha256:190482cb294ece8fddfe12ca8d05641887763a3955314a5aaa6d23b6587fe452",
+       "annotations": {
+        "evidence": "primary"
+       }
+      }
+     ]
+    }
+   ],
    "language": "java",
    "cpes": [
     "cpe:2.3:a:jline:jline:0.9.94:*:*:*:*:*:*:*"
@@ -10032,7 +10104,7 @@
    }
   },
   {
-   "id": "431be1b291ecc8f0",
+   "id": "d2a87052d736dc94",
    "name": "log4j",
    "version": "1.2.15",
    "type": "java-archive",
@@ -10046,7 +10118,25 @@
      }
     }
    ],
-   "licenses": [],
+   "licenses": [
+    {
+     "value": "The Apache Software License, Version 2.0",
+     "spdxExpression": "",
+     "type": "declared",
+     "urls": [
+      "http://www.apache.org/licenses/LICENSE-2.0.txt"
+     ],
+     "locations": [
+      {
+       "path": "/usr/local/zookeeper-3.4.10/contrib/rest/lib/log4j-1.2.15.jar",
+       "layerID": "sha256:190482cb294ece8fddfe12ca8d05641887763a3955314a5aaa6d23b6587fe452",
+       "annotations": {
+        "evidence": "primary"
+       }
+      }
+     ]
+    }
+   ],
    "language": "java",
    "cpes": [
     "cpe:2.3:a:apache:log4j:1.2.15:*:*:*:*:*:*:*"
@@ -10169,7 +10259,7 @@
    }
   },
   {
-   "id": "3dd3a23242ad73ce",
+   "id": "c10f02b2b10e86af",
    "name": "log4j",
    "version": "1.2.17",
    "type": "java-archive",
@@ -10183,7 +10273,25 @@
      }
     }
    ],
-   "licenses": [],
+   "licenses": [
+    {
+     "value": "The Apache Software License, Version 2.0",
+     "spdxExpression": "",
+     "type": "declared",
+     "urls": [
+      "http://www.apache.org/licenses/LICENSE-2.0.txt"
+     ],
+     "locations": [
+      {
+       "path": "/usr/local/zookeeper-3.4.10/contrib/fatjar/zookeeper-3.4.10-fatjar.jar",
+       "layerID": "sha256:190482cb294ece8fddfe12ca8d05641887763a3955314a5aaa6d23b6587fe452",
+       "annotations": {
+        "evidence": "primary"
+       }
+      }
+     ]
+    }
+   ],
    "language": "java",
    "cpes": [
     "cpe:2.3:a:apache:log4j:1.2.17:*:*:*:*:*:*:*"
@@ -30017,7 +30125,7 @@
    }
   },
   {
-   "id": "e266c69bf9208dbe",
+   "id": "40a5d5e369764f73",
    "name": "netty",
    "version": "3.10.5.Final",
    "type": "java-archive",
@@ -30031,7 +30139,25 @@
      }
     }
    ],
-   "licenses": [],
+   "licenses": [
+    {
+     "value": "Apache License, Version 2.0",
+     "spdxExpression": "",
+     "type": "declared",
+     "urls": [
+      "http://www.apache.org/licenses/LICENSE-2.0"
+     ],
+     "locations": [
+      {
+       "path": "/usr/local/zookeeper-3.4.10/contrib/fatjar/zookeeper-3.4.10-fatjar.jar",
+       "layerID": "sha256:190482cb294ece8fddfe12ca8d05641887763a3955314a5aaa6d23b6587fe452",
+       "annotations": {
+        "evidence": "primary"
+       }
+      }
+     ]
+    }
+   ],
    "language": "java",
    "cpes": [
     "cpe:2.3:a:sonatype:netty:3.10.5.Final:*:*:*:*:*:*:*",
@@ -31675,7 +31801,7 @@
    }
   },
   {
-   "id": "68f2162ccd849453",
+   "id": "7daa7fe2141e5b3f",
    "name": "org.abego.treelayout.core",
    "version": "1.0.1",
    "type": "java-archive",
@@ -31689,7 +31815,25 @@
      }
     }
    ],
-   "licenses": [],
+   "licenses": [
+    {
+     "value": "BSD 3-Clause \"New\" or \"Revised\" License (BSD-3-Clause)",
+     "spdxExpression": "",
+     "type": "declared",
+     "urls": [
+      "http://treelayout.googlecode.com/files/LICENSE.TXT"
+     ],
+     "locations": [
+      {
+       "path": "/usr/local/zookeeper-3.4.10/contrib/fatjar/zookeeper-3.4.10-fatjar.jar",
+       "layerID": "sha256:190482cb294ece8fddfe12ca8d05641887763a3955314a5aaa6d23b6587fe452",
+       "annotations": {
+        "evidence": "primary"
+       }
+      }
+     ]
+    }
+   ],
    "language": "java",
    "cpes": [
     "cpe:2.3:a:org.abego.treelayout.core:org.abego.treelayout.core:1.0.1:*:*:*:*:*:*:*",
@@ -34712,11 +34856,6 @@
   },
   {
    "parent": "35a85c9d1f10844078d7e0570207d01576d74fcbade89888bfc2dd8bf104a240",
-   "child": "3dd3a23242ad73ce",
-   "type": "contains"
-  },
-  {
-   "parent": "35a85c9d1f10844078d7e0570207d01576d74fcbade89888bfc2dd8bf104a240",
    "child": "3f411cfe0dd3ec48",
    "type": "contains"
   },
@@ -34732,7 +34871,7 @@
   },
   {
    "parent": "35a85c9d1f10844078d7e0570207d01576d74fcbade89888bfc2dd8bf104a240",
-   "child": "431be1b291ecc8f0",
+   "child": "40a5d5e369764f73",
    "type": "contains"
   },
   {
@@ -34827,11 +34966,6 @@
   },
   {
    "parent": "35a85c9d1f10844078d7e0570207d01576d74fcbade89888bfc2dd8bf104a240",
-   "child": "68f2162ccd849453",
-   "type": "contains"
-  },
-  {
-   "parent": "35a85c9d1f10844078d7e0570207d01576d74fcbade89888bfc2dd8bf104a240",
    "child": "6e096e7240eaec16",
    "type": "contains"
   },
@@ -34867,6 +35001,11 @@
   },
   {
    "parent": "35a85c9d1f10844078d7e0570207d01576d74fcbade89888bfc2dd8bf104a240",
+   "child": "775bdfd27871b58b",
+   "type": "contains"
+  },
+  {
+   "parent": "35a85c9d1f10844078d7e0570207d01576d74fcbade89888bfc2dd8bf104a240",
    "child": "7784b2e2abc6c8c2",
    "type": "contains"
   },
@@ -34888,6 +35027,11 @@
   {
    "parent": "35a85c9d1f10844078d7e0570207d01576d74fcbade89888bfc2dd8bf104a240",
    "child": "7c08beaed9dcac27",
+   "type": "contains"
+  },
+  {
+   "parent": "35a85c9d1f10844078d7e0570207d01576d74fcbade89888bfc2dd8bf104a240",
+   "child": "7daa7fe2141e5b3f",
    "type": "contains"
   },
   {
@@ -34928,6 +35072,11 @@
   {
    "parent": "35a85c9d1f10844078d7e0570207d01576d74fcbade89888bfc2dd8bf104a240",
    "child": "8c263638a67de71c",
+   "type": "contains"
+  },
+  {
+   "parent": "35a85c9d1f10844078d7e0570207d01576d74fcbade89888bfc2dd8bf104a240",
+   "child": "8f49bd19f8169761",
    "type": "contains"
   },
   {
@@ -35007,22 +35156,12 @@
   },
   {
    "parent": "35a85c9d1f10844078d7e0570207d01576d74fcbade89888bfc2dd8bf104a240",
-   "child": "aeede90dd3ca4a72",
-   "type": "contains"
-  },
-  {
-   "parent": "35a85c9d1f10844078d7e0570207d01576d74fcbade89888bfc2dd8bf104a240",
    "child": "b036e60439faf853",
    "type": "contains"
   },
   {
    "parent": "35a85c9d1f10844078d7e0570207d01576d74fcbade89888bfc2dd8bf104a240",
    "child": "b28715eb264e15b8",
-   "type": "contains"
-  },
-  {
-   "parent": "35a85c9d1f10844078d7e0570207d01576d74fcbade89888bfc2dd8bf104a240",
-   "child": "b2dc1c1c89cad460",
    "type": "contains"
   },
   {
@@ -35053,6 +35192,11 @@
   {
    "parent": "35a85c9d1f10844078d7e0570207d01576d74fcbade89888bfc2dd8bf104a240",
    "child": "c0ac973b0606434a",
+   "type": "contains"
+  },
+  {
+   "parent": "35a85c9d1f10844078d7e0570207d01576d74fcbade89888bfc2dd8bf104a240",
+   "child": "c10f02b2b10e86af",
    "type": "contains"
   },
   {
@@ -35112,7 +35256,17 @@
   },
   {
    "parent": "35a85c9d1f10844078d7e0570207d01576d74fcbade89888bfc2dd8bf104a240",
+   "child": "cf8433f48e8c3655",
+   "type": "contains"
+  },
+  {
+   "parent": "35a85c9d1f10844078d7e0570207d01576d74fcbade89888bfc2dd8bf104a240",
    "child": "d095f44d038822d9",
+   "type": "contains"
+  },
+  {
+   "parent": "35a85c9d1f10844078d7e0570207d01576d74fcbade89888bfc2dd8bf104a240",
+   "child": "d2a87052d736dc94",
    "type": "contains"
   },
   {
@@ -35147,17 +35301,7 @@
   },
   {
    "parent": "35a85c9d1f10844078d7e0570207d01576d74fcbade89888bfc2dd8bf104a240",
-   "child": "deb16bddd5aa729f",
-   "type": "contains"
-  },
-  {
-   "parent": "35a85c9d1f10844078d7e0570207d01576d74fcbade89888bfc2dd8bf104a240",
    "child": "e18549b4a4612cd0",
-   "type": "contains"
-  },
-  {
-   "parent": "35a85c9d1f10844078d7e0570207d01576d74fcbade89888bfc2dd8bf104a240",
-   "child": "e266c69bf9208dbe",
    "type": "contains"
   },
   {
@@ -35193,11 +35337,6 @@
   {
    "parent": "35a85c9d1f10844078d7e0570207d01576d74fcbade89888bfc2dd8bf104a240",
    "child": "ef0599f77d813c35",
-   "type": "contains"
-  },
-  {
-   "parent": "35a85c9d1f10844078d7e0570207d01576d74fcbade89888bfc2dd8bf104a240",
-   "child": "efb96230a0b23302",
    "type": "contains"
   },
   {
@@ -35246,13 +35385,13 @@
    "type": "contains"
   },
   {
-   "parent": "378b05608c87016b",
-   "child": "f21a8b8cb147d7ec",
-   "type": "evident-by"
+   "parent": "35a85c9d1f10844078d7e0570207d01576d74fcbade89888bfc2dd8bf104a240",
+   "child": "ff6ce423502e461f",
+   "type": "contains"
   },
   {
-   "parent": "3dd3a23242ad73ce",
-   "child": "f947f275a385c3e2",
+   "parent": "378b05608c87016b",
+   "child": "f21a8b8cb147d7ec",
    "type": "evident-by"
   },
   {
@@ -43626,8 +43765,8 @@
    "type": "contains"
   },
   {
-   "parent": "431be1b291ecc8f0",
-   "child": "9933bba315dba06b",
+   "parent": "40a5d5e369764f73",
+   "child": "f947f275a385c3e2",
    "type": "evident-by"
   },
   {
@@ -44051,11 +44190,6 @@
    "type": "evident-by"
   },
   {
-   "parent": "68f2162ccd849453",
-   "child": "f947f275a385c3e2",
-   "type": "evident-by"
-  },
-  {
    "parent": "6e096e7240eaec16",
    "child": "f947f275a385c3e2",
    "type": "evident-by"
@@ -44141,6 +44275,11 @@
    "type": "evident-by"
   },
   {
+   "parent": "775bdfd27871b58b",
+   "child": "f947f275a385c3e2",
+   "type": "evident-by"
+  },
+  {
    "parent": "7784b2e2abc6c8c2",
    "child": "f947f275a385c3e2",
    "type": "evident-by"
@@ -44173,6 +44312,11 @@
   {
    "parent": "7c08beaed9dcac27",
    "child": "5288f4470c66bc26",
+   "type": "evident-by"
+  },
+  {
+   "parent": "7daa7fe2141e5b3f",
+   "child": "f947f275a385c3e2",
    "type": "evident-by"
   },
   {
@@ -45481,6 +45625,11 @@
    "type": "evident-by"
   },
   {
+   "parent": "8f49bd19f8169761",
+   "child": "4b32cea97c6a560a",
+   "type": "evident-by"
+  },
+  {
    "parent": "92257da12f601ab0",
    "child": "1eeab13a37972eae",
    "type": "dependency-of"
@@ -45688,11 +45837,6 @@
   {
    "parent": "ae1ff916be6f482f",
    "child": "5d001507f07e5cf8",
-   "type": "evident-by"
-  },
-  {
-   "parent": "aeede90dd3ca4a72",
-   "child": "f947f275a385c3e2",
    "type": "evident-by"
   },
   {
@@ -46296,11 +46440,6 @@
    "type": "evident-by"
   },
   {
-   "parent": "b2dc1c1c89cad460",
-   "child": "f947f275a385c3e2",
-   "type": "evident-by"
-  },
-  {
    "parent": "b4abb8305e258db5",
    "child": "11aafefad9098540",
    "type": "evident-by"
@@ -46358,6 +46497,11 @@
   {
    "parent": "c0ac973b0606434a",
    "child": "52978d30c44f7913",
+   "type": "evident-by"
+  },
+  {
+   "parent": "c10f02b2b10e86af",
+   "child": "f947f275a385c3e2",
    "type": "evident-by"
   },
   {
@@ -46451,8 +46595,18 @@
    "type": "evident-by"
   },
   {
+   "parent": "cf8433f48e8c3655",
+   "child": "f947f275a385c3e2",
+   "type": "evident-by"
+  },
+  {
    "parent": "d095f44d038822d9",
    "child": "480629f45b759a82",
+   "type": "evident-by"
+  },
+  {
+   "parent": "d2a87052d736dc94",
+   "child": "9933bba315dba06b",
    "type": "evident-by"
   },
   {
@@ -46516,17 +46670,7 @@
    "type": "evident-by"
   },
   {
-   "parent": "deb16bddd5aa729f",
-   "child": "f947f275a385c3e2",
-   "type": "evident-by"
-  },
-  {
    "parent": "e18549b4a4612cd0",
-   "child": "f947f275a385c3e2",
-   "type": "evident-by"
-  },
-  {
-   "parent": "e266c69bf9208dbe",
    "child": "f947f275a385c3e2",
    "type": "evident-by"
   },
@@ -47716,11 +47860,6 @@
    "type": "contains"
   },
   {
-   "parent": "efb96230a0b23302",
-   "child": "4b32cea97c6a560a",
-   "type": "evident-by"
-  },
-  {
    "parent": "f03150c8892cf440",
    "child": "05ae90a88aed7a5c",
    "type": "dependency-of"
@@ -47853,6 +47992,11 @@
   {
    "parent": "fde95b2af15d3732",
    "child": "96f966271fc638a8",
+   "type": "evident-by"
+  },
+  {
+   "parent": "ff6ce423502e461f",
+   "child": "f947f275a385c3e2",
    "type": "evident-by"
   }
  ],
@@ -65036,7 +65180,7 @@
  },
  "descriptor": {
   "name": "syft",
-  "version": "0.92.0",
+  "version": "0.93.0",
   "configuration": {
    "catalogers": null,
    "package": {

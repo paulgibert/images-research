@@ -8770,6 +8770,33 @@
    }
   },
   {
+   "id": "e5312395078e3344",
+   "name": "stdlib",
+   "version": "go1.20.7",
+   "type": "go-module",
+   "foundBy": "",
+   "locations": [
+    {
+     "path": "/usr/bin/traefik",
+     "layerID": "sha256:765e9c228d928ce22ca988b3e484ae8854195099f36cb0b224e9ce005687a9f3",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "go",
+   "cpes": [
+    "cpe:2.3:a:golang:go:1.20.7:-:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:golang/stdlib@1.20.7",
+   "metadataType": "GolangBinMetadata",
+   "metadata": {
+    "goCompiledVersion": "go1.20.7",
+    "architecture": ""
+   }
+  },
+  {
    "id": "afc6f88ae5b97ef3",
    "name": "traefik",
    "version": "2.10.4-r1",
@@ -11188,6 +11215,11 @@
   {
    "parent": "5c83060dbb71986c95aa6dc8ffc12203dd993bb8631966323da75d0c28d2450b",
    "child": "e40f03874d681d8a",
+   "type": "contains"
+  },
+  {
+   "parent": "5c83060dbb71986c95aa6dc8ffc12203dd993bb8631966323da75d0c28d2450b",
+   "child": "e5312395078e3344",
    "type": "contains"
   },
   {
@@ -14457,6 +14489,16 @@
   },
   {
    "parent": "afc6f88ae5b97ef3",
+   "child": "e5312395078e3344",
+   "type": "ownership-by-file-overlap",
+   "metadata": {
+    "files": [
+     "/usr/bin/traefik"
+    ]
+   }
+  },
+  {
+   "parent": "afc6f88ae5b97ef3",
    "child": "e776003651fb1df7",
    "type": "ownership-by-file-overlap",
    "metadata": {
@@ -15186,6 +15228,11 @@
    "type": "evident-by"
   },
   {
+   "parent": "e5312395078e3344",
+   "child": "4d596ace3a200119",
+   "type": "evident-by"
+  },
+  {
    "parent": "e776003651fb1df7",
    "child": "4d596ace3a200119",
    "type": "evident-by"
@@ -15480,7 +15527,7 @@
  },
  "descriptor": {
   "name": "syft",
-  "version": "0.92.0",
+  "version": "0.93.0",
   "configuration": {
    "catalogers": null,
    "package": {

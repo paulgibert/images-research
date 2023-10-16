@@ -219,192 +219,6 @@
     "purl": "pkg:gem/uri@0.12.1",
     "upstreams": []
    }
-  },
-  {
-   "vulnerability": {
-    "id": "CVE-2023-36617",
-    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-36617",
-    "namespace": "nvd:cpe",
-    "severity": "Medium",
-    "urls": [
-     "https://security.netapp.com/advisory/ntap-20230725-0002/",
-     "https://www.ruby-lang.org/en/news/2023/06/29/redos-in-uri-CVE-2023-36617/"
-    ],
-    "description": "A ReDoS issue was discovered in the URI component before 0.12.2 for Ruby. The URI parser mishandles invalid URLs that have specific characters. There is an increase in execution time for parsing strings to URI objects with rfc2396_parser.rb and rfc3986_parser.rb. NOTE: this issue exists becuse of an incomplete fix for CVE-2023-28755. Version 0.10.3 is also a fixed version.",
-    "cvss": [
-     {
-      "source": "nvd@nist.gov",
-      "type": "Primary",
-      "version": "3.1",
-      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
-      "metrics": {
-       "baseScore": 5.3,
-       "exploitabilityScore": 3.9,
-       "impactScore": 1.4
-      },
-      "vendorMetadata": {}
-     }
-    ],
-    "fix": {
-     "versions": [],
-     "state": "unknown"
-    },
-    "advisories": []
-   },
-   "relatedVulnerabilities": [],
-   "matchDetails": [
-    {
-     "type": "cpe-match",
-     "matcher": "ruby-gem-matcher",
-     "searchedBy": {
-      "namespace": "nvd:cpe",
-      "cpes": [
-       "cpe:2.3:a:ruby-lang:uri:0.12.1:*:*:*:*:ruby:*:*"
-      ],
-      "Package": {
-       "name": "uri",
-       "version": "0.12.1"
-      }
-     },
-     "found": {
-      "vulnerabilityID": "CVE-2023-36617",
-      "versionConstraint": "< 0.10.3 || >= 0.11.0, < 0.12.2 (unknown)",
-      "cpes": [
-       "cpe:2.3:a:ruby-lang:uri:*:*:*:*:*:ruby:*:*"
-      ]
-     }
-    }
-   ],
-   "artifact": {
-    "id": "11053801697dc7d9",
-    "name": "uri",
-    "version": "0.12.1",
-    "type": "gem",
-    "locations": [
-     {
-      "path": "/usr/lib/ruby/gems/3.1.0/specifications/default/uri-0.12.1.gemspec",
-      "layerID": "sha256:5164c8f4b54c278c31ef5f740406c8827e53fa6ff665162e0e99e885426c6ab6"
-     }
-    ],
-    "language": "ruby",
-    "licenses": [
-     "BSD-2-Clause",
-     "Ruby"
-    ],
-    "cpes": [
-     "cpe:2.3:a:ruby-lang:uri:0.12.1:*:*:*:*:ruby:*:*"
-    ],
-    "purl": "pkg:gem/uri@0.12.1",
-    "upstreams": []
-   }
-  },
-  {
-   "vulnerability": {
-    "id": "CVE-2008-1145",
-    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2008-1145",
-    "namespace": "nvd:cpe",
-    "severity": "Medium",
-    "urls": [
-     "http://lists.apple.com/archives/security-announce/2008//Jun/msg00002.html",
-     "http://lists.opensuse.org/opensuse-security-announce/2008-08/msg00006.html",
-     "http://support.apple.com/kb/HT2163",
-     "http://wiki.rpath.com/Advisories:rPSA-2008-0123",
-     "http://wiki.rpath.com/wiki/Advisories:rPSA-2008-0123",
-     "http://www.kb.cert.org/vuls/id/404515",
-     "http://www.mandriva.com/security/advisories?name=MDVSA-2008:141",
-     "http://www.mandriva.com/security/advisories?name=MDVSA-2008:142",
-     "http://www.redhat.com/support/errata/RHSA-2008-0897.html",
-     "http://www.ruby-lang.org/en/news/2008/03/03/webrick-file-access-vulnerability/",
-     "http://www.securityfocus.com/archive/1/489205/100/0/threaded",
-     "http://www.securityfocus.com/archive/1/489218/100/0/threaded",
-     "http://www.securityfocus.com/archive/1/490056/100/0/threaded",
-     "http://www.securityfocus.com/bid/28123",
-     "http://www.securitytracker.com/id?1019562",
-     "http://www.vupen.com/english/advisories/2008/0787",
-     "http://www.vupen.com/english/advisories/2008/1981/references",
-     "https://exchange.xforce.ibmcloud.com/vulnerabilities/41010",
-     "https://issues.rpath.com/browse/RPL-2338",
-     "https://oval.cisecurity.org/repository/search/definition/oval%3Aorg.mitre.oval%3Adef%3A10937",
-     "https://www.exploit-db.com/exploits/5215",
-     "https://www.redhat.com/archives/fedora-package-announce/2008-March/msg00338.html",
-     "https://www.redhat.com/archives/fedora-package-announce/2008-March/msg00354.html"
-    ],
-    "description": "Directory traversal vulnerability in WEBrick in Ruby 1.8 before 1.8.5-p115 and 1.8.6-p114, and 1.9 through 1.9.0-1, when running on systems that support backslash (\\) path separators or case-insensitive file names, allows remote attackers to access arbitrary files via (1) \"..%5c\" (encoded backslash) sequences or (2) filenames that match patterns in the :NondisclosureName option.",
-    "cvss": [
-     {
-      "source": "nvd@nist.gov",
-      "type": "Primary",
-      "version": "2.0",
-      "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
-      "metrics": {
-       "baseScore": 5,
-       "exploitabilityScore": 10,
-       "impactScore": 2.9
-      },
-      "vendorMetadata": {}
-     }
-    ],
-    "fix": {
-     "versions": [],
-     "state": "unknown"
-    },
-    "advisories": []
-   },
-   "relatedVulnerabilities": [],
-   "matchDetails": [
-    {
-     "type": "cpe-match",
-     "matcher": "ruby-gem-matcher",
-     "searchedBy": {
-      "namespace": "nvd:cpe",
-      "cpes": [
-       "cpe:2.3:a:ruby-lang:webrick:1.7.0:*:*:*:*:*:*:*"
-      ],
-      "Package": {
-       "name": "webrick",
-       "version": "1.7.0"
-      }
-     },
-     "found": {
-      "vulnerabilityID": "CVE-2008-1145",
-      "versionConstraint": "none (unknown)",
-      "cpes": [
-       "cpe:2.3:a:ruby-lang:webrick:-:*:*:*:*:ruby:*:*"
-      ]
-     }
-    }
-   ],
-   "artifact": {
-    "id": "b740505836402693",
-    "name": "webrick",
-    "version": "1.7.0",
-    "type": "gem",
-    "locations": [
-     {
-      "path": "/usr/lib/ruby/gems/3.1.0/specifications/webrick-1.7.0.gemspec",
-      "layerID": "sha256:5164c8f4b54c278c31ef5f740406c8827e53fa6ff665162e0e99e885426c6ab6"
-     }
-    ],
-    "language": "ruby",
-    "licenses": [
-     "BSD-2-Clause",
-     "Ruby"
-    ],
-    "cpes": [
-     "cpe:2.3:a:takahashi-masayoshi:webrick:1.7.0:*:*:*:*:*:*:*",
-     "cpe:2.3:a:takahashi_masayoshi:webrick:1.7.0:*:*:*:*:*:*:*",
-     "cpe:2.3:a:gotou-yuuzou:webrick:1.7.0:*:*:*:*:*:*:*",
-     "cpe:2.3:a:gotou_yuuzou:webrick:1.7.0:*:*:*:*:*:*:*",
-     "cpe:2.3:a:eric-wong:webrick:1.7.0:*:*:*:*:*:*:*",
-     "cpe:2.3:a:eric_wong:webrick:1.7.0:*:*:*:*:*:*:*",
-     "cpe:2.3:a:ruby-lang:webrick:1.7.0:*:*:*:*:*:*:*",
-     "cpe:2.3:a:ruby_lang:webrick:1.7.0:*:*:*:*:*:*:*",
-     "cpe:2.3:a:webrick:webrick:1.7.0:*:*:*:*:*:*:*",
-     "cpe:2.3:a:ruby:webrick:1.7.0:*:*:*:*:*:*:*"
-    ],
-    "purl": "pkg:gem/webrick@1.7.0",
-    "upstreams": []
-   }
   }
  ],
  "source": {
@@ -460,8 +274,8 @@
   "idLike": []
  },
  "descriptor": {
-  "name": "",
-  "version": "",
+  "name": "grype",
+  "version": "0.71.0",
   "configuration": {
    "output": [
     "json"
@@ -499,22 +313,25 @@
    },
    "match": {
     "java": {
-     "using-cpes": true
+     "using-cpes": false
     },
     "dotnet": {
-     "using-cpes": true
+     "using-cpes": false
     },
     "golang": {
-     "using-cpes": true
+     "using-cpes": false
     },
     "javascript": {
-     "using-cpes": true
+     "using-cpes": false
     },
     "python": {
-     "using-cpes": true
+     "using-cpes": false
     },
     "ruby": {
-     "using-cpes": true
+     "using-cpes": false
+    },
+    "rust": {
+     "using-cpes": false
     },
     "stock": {
      "using-cpes": true
@@ -535,12 +352,12 @@
    "vex-add": []
   },
   "db": {
-   "built": "2023-10-11T01:24:08Z",
+   "built": "2023-10-13T01:25:27Z",
    "schemaVersion": 5,
    "location": "/home/anon/.cache/grype/db/5",
-   "checksum": "sha256:16423ac3a1c3cd30cfe138851c91e7ba24290ec499065e861cb0a90ecb50a059",
+   "checksum": "sha256:b4a890ba7a0e7dd7336493427223a1fbf8b4c0b45f972ae68dcd61106667f31b",
    "error": null
   },
-  "timestamp": "2023-10-11T21:47:09.285419714-04:00"
+  "timestamp": "2023-10-13T11:46:47.238505953-04:00"
  }
 }

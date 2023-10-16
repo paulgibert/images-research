@@ -40395,6 +40395,33 @@
    }
   },
   {
+   "id": "2b75a15b78cf10b9",
+   "name": "stdlib",
+   "version": "go1.21.2",
+   "type": "go-module",
+   "foundBy": "",
+   "locations": [
+    {
+     "path": "/opt/bitnami/common/bin/render-template",
+     "layerID": "sha256:4e1324199d008e06d9401999f65cbbbbdb8f7cd5ed475c1979b0931ac5566ec0",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "go",
+   "cpes": [
+    "cpe:2.3:a:golang:go:1.21.2:-:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:golang/stdlib@1.21.2",
+   "metadataType": "GolangBinMetadata",
+   "metadata": {
+    "goCompiledVersion": "go1.21.2",
+    "architecture": ""
+   }
+  },
+  {
    "id": "e5a100eb1e30f20e",
    "name": "sysv-rc",
    "version": "2.96-7+deb11u1",
@@ -55116,6 +55143,11 @@
   },
   {
    "parent": "23dcca3e9ca411fc557d976fba52c985b6d3aa0f3ca6c0cfbc86fcb385c139bb",
+   "child": "2b75a15b78cf10b9",
+   "type": "contains"
+  },
+  {
+   "parent": "23dcca3e9ca411fc557d976fba52c985b6d3aa0f3ca6c0cfbc86fcb385c139bb",
    "child": "2c7867e571c97356",
    "type": "contains"
   },
@@ -55661,6 +55693,11 @@
   },
   {
    "parent": "292470c93ec582b0",
+   "child": "7dd1f9141572f60b",
+   "type": "evident-by"
+  },
+  {
+   "parent": "2b75a15b78cf10b9",
    "child": "7dd1f9141572f60b",
    "type": "evident-by"
   },
@@ -95602,7 +95639,7 @@
  },
  "descriptor": {
   "name": "syft",
-  "version": "0.92.0",
+  "version": "0.93.0",
   "configuration": {
    "catalogers": null,
    "package": {

@@ -1448,6 +1448,33 @@
    }
   },
   {
+   "id": "7288d339dfcfe356",
+   "name": "stdlib",
+   "version": "go1.21.2",
+   "type": "go-module",
+   "foundBy": "",
+   "locations": [
+    {
+     "path": "/usr/bin/nats-server",
+     "layerID": "sha256:8d49ce7f864dcff144d51e6195c5e1ed8ff1e47e863233c70d43c7296841c2f1",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "go",
+   "cpes": [
+    "cpe:2.3:a:golang:go:1.21.2:-:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:golang/stdlib@1.21.2",
+   "metadataType": "GolangBinMetadata",
+   "metadata": {
+    "goCompiledVersion": "go1.21.2",
+    "architecture": ""
+   }
+  },
+  {
    "id": "d113004b447fb691",
    "name": "wolfi-baselayout",
    "version": "20230201-r6",
@@ -1970,6 +1997,11 @@
   },
   {
    "parent": "56847525e97a5f48c9a0cf745f5c65e31a2aba36c8773be18b54e9c4eac59694",
+   "child": "7288d339dfcfe356",
+   "type": "contains"
+  },
+  {
+   "parent": "56847525e97a5f48c9a0cf745f5c65e31a2aba36c8773be18b54e9c4eac59694",
    "child": "73302102ad9ececc",
    "type": "contains"
   },
@@ -2042,6 +2074,11 @@
    "parent": "56847525e97a5f48c9a0cf745f5c65e31a2aba36c8773be18b54e9c4eac59694",
    "child": "f061b78646ffad48",
    "type": "contains"
+  },
+  {
+   "parent": "7288d339dfcfe356",
+   "child": "bd245bf5bc76b0d4",
+   "type": "evident-by"
   },
   {
    "parent": "73302102ad9ececc",
@@ -2366,6 +2403,16 @@
   {
    "parent": "c501d9333e62a32b",
    "child": "49fb12b7e641655a",
+   "type": "ownership-by-file-overlap",
+   "metadata": {
+    "files": [
+     "/usr/bin/nats-server"
+    ]
+   }
+  },
+  {
+   "parent": "c501d9333e62a32b",
+   "child": "7288d339dfcfe356",
    "type": "ownership-by-file-overlap",
    "metadata": {
     "files": [
@@ -3174,7 +3221,7 @@
  },
  "descriptor": {
   "name": "syft",
-  "version": "0.92.0",
+  "version": "0.93.0",
   "configuration": {
    "catalogers": null,
    "package": {

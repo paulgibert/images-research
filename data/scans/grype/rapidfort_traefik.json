@@ -481,92 +481,6 @@
   },
   {
    "vulnerability": {
-    "id": "CVE-2021-41803",
-    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-41803",
-    "namespace": "nvd:cpe",
-    "severity": "High",
-    "urls": [
-     "https://discuss.hashicorp.com/t/hcsec-2022-19-consul-auto-config-jwt-authorization-missing-input-validation/44627",
-     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/LYZOKMMVX4SIEHPJW3SJUQGMO5YZCPHC/",
-     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/XNF4OLYZRQE75EB5TW5N42FSXHBXGWFE/",
-     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ZTE4ITXXPIWZEQ4HYQCB6N6GZIMWXDAI/",
-     "https://www.hashicorp.com/blog/category/consul"
-    ],
-    "description": "HashiCorp Consul 1.8.1 up to 1.11.8, 1.12.4, and 1.13.1 do not properly validate the node or segment names prior to interpolation and usage in JWT claim assertions with the auto config RPC. Fixed in 1.11.9, 1.12.5, and 1.13.2.\"",
-    "cvss": [
-     {
-      "source": "nvd@nist.gov",
-      "type": "Primary",
-      "version": "3.1",
-      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:H",
-      "metrics": {
-       "baseScore": 7.1,
-       "exploitabilityScore": 2.8,
-       "impactScore": 4.2
-      },
-      "vendorMetadata": {}
-     }
-    ],
-    "fix": {
-     "versions": [],
-     "state": "unknown"
-    },
-    "advisories": []
-   },
-   "relatedVulnerabilities": [],
-   "matchDetails": [
-    {
-     "type": "cpe-match",
-     "matcher": "go-module-matcher",
-     "searchedBy": {
-      "namespace": "nvd:cpe",
-      "cpes": [
-       "cpe:2.3:a:hashicorp:consul:v1.10.12:*:*:*:*:*:*:*"
-      ],
-      "Package": {
-       "name": "github.com/hashicorp/consul",
-       "version": "v1.10.12"
-      }
-     },
-     "found": {
-      "vulnerabilityID": "CVE-2021-41803",
-      "versionConstraint": ">= 1.8.1, < 1.11.9 || >= 1.8.1, < 1.11.9 || = 1.12.4 || = 1.12.4 || = 1.13.1 || = 1.13.1 (unknown)",
-      "cpes": [
-       "cpe:2.3:a:hashicorp:consul:*:*:*:*:-:*:*:*",
-       "cpe:2.3:a:hashicorp:consul:*:*:*:*:enterprise:*:*:*"
-      ]
-     }
-    }
-   ],
-   "artifact": {
-    "id": "a719a6e456f58752",
-    "name": "github.com/hashicorp/consul",
-    "version": "v1.10.12",
-    "type": "go-module",
-    "locations": [
-     {
-      "path": "/usr/local/bin/traefik",
-      "layerID": "sha256:992a97cd608608f5ca01fb9d089852ed770d56a89c185bdd58bb41e5488c0725"
-     }
-    ],
-    "language": "go",
-    "licenses": [],
-    "cpes": [
-     "cpe:2.3:a:hashicorp:consul:v1.10.12:*:*:*:*:*:*:*"
-    ],
-    "purl": "pkg:golang/github.com/hashicorp/consul@v1.10.12",
-    "upstreams": [],
-    "metadataType": "GolangBinMetadata",
-    "metadata": {
-     "goCompiledVersion": "go1.20.3",
-     "architecture": "amd64",
-     "h1Digest": "h1:xMazys3KaH5JsZS4Ra6KEAXO0nAj20EsTpsDyhd/3Do=",
-     "mainModule": "github.com/traefik/traefik/v2"
-    }
-   }
-  },
-  {
-   "vulnerability": {
     "id": "GHSA-m69r-9g56-7mv8",
     "dataSource": "https://github.com/advisories/GHSA-m69r-9g56-7mv8",
     "namespace": "github:language:go",
@@ -791,77 +705,61 @@
   },
   {
    "vulnerability": {
-    "id": "CVE-2023-0845",
-    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-0845",
-    "namespace": "nvd:cpe",
+    "id": "GHSA-4374-p667-p6c8",
+    "dataSource": "https://github.com/advisories/GHSA-4374-p667-p6c8",
+    "namespace": "github:language:go",
     "severity": "Medium",
     "urls": [
-     "https://discuss.hashicorp.com/t/hcsec-2023-06-consul-server-panic-when-ingress-and-api-gateways-configured-with-peering-connections/51197",
-     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/LYZOKMMVX4SIEHPJW3SJUQGMO5YZCPHC/",
-     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/XNF4OLYZRQE75EB5TW5N42FSXHBXGWFE/",
-     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ZTE4ITXXPIWZEQ4HYQCB6N6GZIMWXDAI/"
+     "https://github.com/advisories/GHSA-4374-p667-p6c8"
     ],
-    "description": "Consul and Consul Enterprise allowed an authenticated user with service:write permissions to trigger a workflow that causes Consul server and client agents to crash under certain circumstances. This vulnerability was fixed in Consul 1.14.5.",
-    "cvss": [
-     {
-      "source": "nvd@nist.gov",
-      "type": "Primary",
-      "version": "3.1",
-      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
-      "metrics": {
-       "baseScore": 6.5,
-       "exploitabilityScore": 2.8,
-       "impactScore": 3.6
-      },
-      "vendorMetadata": {}
-     },
-     {
-      "source": "security@hashicorp.com",
-      "type": "Secondary",
-      "version": "3.1",
-      "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
-      "metrics": {
-       "baseScore": 4.9,
-       "exploitabilityScore": 1.2,
-       "impactScore": 3.6
-      },
-      "vendorMetadata": {}
-     }
-    ],
+    "description": "HTTP/2 rapid reset can cause excessive work in net/http",
+    "cvss": [],
     "fix": {
-     "versions": [],
-     "state": "unknown"
+     "versions": [
+      "0.17.0"
+     ],
+     "state": "fixed"
     },
     "advisories": []
    },
-   "relatedVulnerabilities": [],
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-39325",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-39325",
+     "namespace": "nvd:cpe",
+     "urls": [
+      "https://go.dev/cl/534215",
+      "https://go.dev/cl/534235",
+      "https://go.dev/issue/63417",
+      "https://groups.google.com/g/golang-announce/c/iNNxDTCjZvo/m/UDd7VKQuAAAJ",
+      "https://pkg.go.dev/vuln/GO-2023-2102"
+     ],
+     "description": "A malicious HTTP/2 client which rapidly creates requests and immediately resets them can cause excessive server resource consumption. While the total number of requests is bounded by the http2.Server.MaxConcurrentStreams setting, resetting an in-progress request allows the attacker to create a new request while the existing one is still executing. With the fix applied, HTTP/2 servers now bound the number of simultaneously executing handler goroutines to the stream concurrency limit (MaxConcurrentStreams). New requests arriving when at the limit (which can only happen after the client has reset an existing, in-flight request) will be queued until a handler exits. If the request queue grows too large, the server will terminate the connection. This issue is also fixed in golang.org/x/net/http2 for users manually configuring HTTP/2. The default stream concurrency limit is 250 streams (requests) per HTTP/2 connection. This value may be adjusted using the golang.org/x/net/http2 package; see the Server.MaxConcurrentStreams setting and the ConfigureServer function.",
+     "cvss": []
+    }
+   ],
    "matchDetails": [
     {
-     "type": "cpe-match",
+     "type": "exact-direct-match",
      "matcher": "go-module-matcher",
      "searchedBy": {
-      "namespace": "nvd:cpe",
-      "cpes": [
-       "cpe:2.3:a:hashicorp:consul:v1.10.12:*:*:*:*:*:*:*"
-      ],
-      "Package": {
-       "name": "github.com/hashicorp/consul",
-       "version": "v1.10.12"
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "golang.org/x/net",
+       "version": "v0.7.0"
       }
      },
      "found": {
-      "vulnerabilityID": "CVE-2023-0845",
-      "versionConstraint": "< 1.14.5 (unknown)",
-      "cpes": [
-       "cpe:2.3:a:hashicorp:consul:*:*:*:*:-:*:*:*"
-      ]
+      "versionConstraint": "<0.17.0 (unknown)",
+      "vulnerabilityID": "GHSA-4374-p667-p6c8"
      }
     }
    ],
    "artifact": {
-    "id": "a719a6e456f58752",
-    "name": "github.com/hashicorp/consul",
-    "version": "v1.10.12",
+    "id": "e5000923082ea8b4",
+    "name": "golang.org/x/net",
+    "version": "v0.7.0",
     "type": "go-module",
     "locations": [
      {
@@ -872,82 +770,102 @@
     "language": "go",
     "licenses": [],
     "cpes": [
-     "cpe:2.3:a:hashicorp:consul:v1.10.12:*:*:*:*:*:*:*"
+     "cpe:2.3:a:golang:x/net:v0.7.0:*:*:*:*:*:*:*"
     ],
-    "purl": "pkg:golang/github.com/hashicorp/consul@v1.10.12",
+    "purl": "pkg:golang/golang.org/x/net@v0.7.0",
     "upstreams": [],
     "metadataType": "GolangBinMetadata",
     "metadata": {
      "goCompiledVersion": "go1.20.3",
      "architecture": "amd64",
-     "h1Digest": "h1:xMazys3KaH5JsZS4Ra6KEAXO0nAj20EsTpsDyhd/3Do=",
+     "h1Digest": "h1:rJrUqqhjsgNp7KqAIc25s9pZnjU7TUcSY7HcVZjdn1g=",
      "mainModule": "github.com/traefik/traefik/v2"
     }
    }
   },
   {
    "vulnerability": {
-    "id": "CVE-2022-40716",
-    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-40716",
-    "namespace": "nvd:cpe",
+    "id": "GHSA-2wrh-6pvc-2jm9",
+    "dataSource": "https://github.com/advisories/GHSA-2wrh-6pvc-2jm9",
+    "namespace": "github:language:go",
     "severity": "Medium",
     "urls": [
-     "https://discuss.hashicorp.com",
-     "https://discuss.hashicorp.com/t/hcsec-2022-20-consul-service-mesh-intention-bypass-with-malicious-certificate-signing-request/44628",
-     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/LYZOKMMVX4SIEHPJW3SJUQGMO5YZCPHC/",
-     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/XNF4OLYZRQE75EB5TW5N42FSXHBXGWFE/",
-     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ZTE4ITXXPIWZEQ4HYQCB6N6GZIMWXDAI/"
+     "https://github.com/advisories/GHSA-2wrh-6pvc-2jm9"
     ],
-    "description": "HashiCorp Consul and Consul Enterprise up to 1.11.8, 1.12.4, and 1.13.1 do not check for multiple SAN URI values in a CSR on the internal RPC endpoint, enabling leverage of privileged access to bypass service mesh intentions. Fixed in 1.11.9, 1.12.5, and 1.13.2.\"",
+    "description": "Improper rendering of text nodes in golang.org/x/net/html",
     "cvss": [
      {
-      "source": "nvd@nist.gov",
-      "type": "Primary",
       "version": "3.1",
-      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
       "metrics": {
-       "baseScore": 6.5,
+       "baseScore": 6.1,
        "exploitabilityScore": 2.8,
-       "impactScore": 3.6
+       "impactScore": 2.7
       },
-      "vendorMetadata": {}
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
      }
     ],
     "fix": {
-     "versions": [],
-     "state": "unknown"
+     "versions": [
+      "0.13.0"
+     ],
+     "state": "fixed"
     },
     "advisories": []
    },
-   "relatedVulnerabilities": [],
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-3978",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-3978",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://go.dev/cl/514896",
+      "https://go.dev/issue/61615",
+      "https://pkg.go.dev/vuln/GO-2023-1988"
+     ],
+     "description": "Text nodes not in the HTML namespace are incorrectly literally rendered, causing text which should be escaped to not be. This could lead to an XSS attack.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+       "metrics": {
+        "baseScore": 6.1,
+        "exploitabilityScore": 2.8,
+        "impactScore": 2.7
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
    "matchDetails": [
     {
-     "type": "cpe-match",
+     "type": "exact-direct-match",
      "matcher": "go-module-matcher",
      "searchedBy": {
-      "namespace": "nvd:cpe",
-      "cpes": [
-       "cpe:2.3:a:hashicorp:consul:v1.10.12:*:*:*:*:*:*:*"
-      ],
-      "Package": {
-       "name": "github.com/hashicorp/consul",
-       "version": "v1.10.12"
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "golang.org/x/net",
+       "version": "v0.7.0"
       }
      },
      "found": {
-      "vulnerabilityID": "CVE-2022-40716",
-      "versionConstraint": "< 1.11.9 || < 1.11.9 || >= 1.12.0, < 1.12.5 || >= 1.12.0, < 1.12.5 || >= 1.13.0, < 1.13.2 || >= 1.13.0, < 1.13.2 (unknown)",
-      "cpes": [
-       "cpe:2.3:a:hashicorp:consul:*:*:*:*:-:*:*:*",
-       "cpe:2.3:a:hashicorp:consul:*:*:*:*:enterprise:*:*:*"
-      ]
+      "versionConstraint": "<0.13.0 (unknown)",
+      "vulnerabilityID": "GHSA-2wrh-6pvc-2jm9"
      }
     }
    ],
    "artifact": {
-    "id": "a719a6e456f58752",
-    "name": "github.com/hashicorp/consul",
-    "version": "v1.10.12",
+    "id": "e5000923082ea8b4",
+    "name": "golang.org/x/net",
+    "version": "v0.7.0",
     "type": "go-module",
     "locations": [
      {
@@ -958,15 +876,15 @@
     "language": "go",
     "licenses": [],
     "cpes": [
-     "cpe:2.3:a:hashicorp:consul:v1.10.12:*:*:*:*:*:*:*"
+     "cpe:2.3:a:golang:x/net:v0.7.0:*:*:*:*:*:*:*"
     ],
-    "purl": "pkg:golang/github.com/hashicorp/consul@v1.10.12",
+    "purl": "pkg:golang/golang.org/x/net@v0.7.0",
     "upstreams": [],
     "metadataType": "GolangBinMetadata",
     "metadata": {
      "goCompiledVersion": "go1.20.3",
      "architecture": "amd64",
-     "h1Digest": "h1:xMazys3KaH5JsZS4Ra6KEAXO0nAj20EsTpsDyhd/3Do=",
+     "h1Digest": "h1:rJrUqqhjsgNp7KqAIc25s9pZnjU7TUcSY7HcVZjdn1g=",
      "mainModule": "github.com/traefik/traefik/v2"
     }
    }
@@ -1005,8 +923,8 @@
   "idLike": []
  },
  "descriptor": {
-  "name": "",
-  "version": "",
+  "name": "grype",
+  "version": "0.71.0",
   "configuration": {
    "output": [
     "json"
@@ -1044,22 +962,25 @@
    },
    "match": {
     "java": {
-     "using-cpes": true
+     "using-cpes": false
     },
     "dotnet": {
-     "using-cpes": true
+     "using-cpes": false
     },
     "golang": {
-     "using-cpes": true
+     "using-cpes": false
     },
     "javascript": {
-     "using-cpes": true
+     "using-cpes": false
     },
     "python": {
-     "using-cpes": true
+     "using-cpes": false
     },
     "ruby": {
-     "using-cpes": true
+     "using-cpes": false
+    },
+    "rust": {
+     "using-cpes": false
     },
     "stock": {
      "using-cpes": true
@@ -1080,12 +1001,12 @@
    "vex-add": []
   },
   "db": {
-   "built": "2023-10-11T01:24:08Z",
+   "built": "2023-10-13T01:25:27Z",
    "schemaVersion": 5,
    "location": "/home/anon/.cache/grype/db/5",
-   "checksum": "sha256:16423ac3a1c3cd30cfe138851c91e7ba24290ec499065e861cb0a90ecb50a059",
+   "checksum": "sha256:b4a890ba7a0e7dd7336493427223a1fbf8b4c0b45f972ae68dcd61106667f31b",
    "error": null
   },
-  "timestamp": "2023-10-11T21:52:30.526625379-04:00"
+  "timestamp": "2023-10-13T11:51:54.976434512-04:00"
  }
 }

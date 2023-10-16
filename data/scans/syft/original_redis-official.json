@@ -53476,6 +53476,33 @@
    }
   },
   {
+   "id": "f336378bc4d56099",
+   "name": "stdlib",
+   "version": "go1.18.2",
+   "type": "go-module",
+   "foundBy": "",
+   "locations": [
+    {
+     "path": "/usr/local/bin/gosu",
+     "layerID": "sha256:7c13dd56eefcebbc2db0dc0084725a0e42fa6bbc4145fe098149aa1f3c5fca6f",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "go",
+   "cpes": [
+    "cpe:2.3:a:golang:go:1.18.2:-:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:golang/stdlib@1.18.2",
+   "metadataType": "GolangBinMetadata",
+   "metadata": {
+    "goCompiledVersion": "go1.18.2",
+    "architecture": ""
+   }
+  },
+  {
    "id": "dd3ff4eb541b80f1",
    "name": "sysvinit-utils",
    "version": "3.06-4",
@@ -86736,6 +86763,11 @@
   },
   {
    "parent": "eda2f5a286a03468501e58c8a07a3d54c0ec5ec265f9a28f1a25486acb6dc94e",
+   "child": "f336378bc4d56099",
+   "type": "contains"
+  },
+  {
+   "parent": "eda2f5a286a03468501e58c8a07a3d54c0ec5ec265f9a28f1a25486acb6dc94e",
    "child": "f3c05d1ed354d18d",
    "type": "contains"
   },
@@ -86993,6 +87025,11 @@
    "parent": "f141f9c08f6ebc12",
    "child": "e6d53bba31b1c7dd",
    "type": "contains"
+  },
+  {
+   "parent": "f336378bc4d56099",
+   "child": "524ed9b256fcdab2",
+   "type": "evident-by"
   },
   {
    "parent": "f3c05d1ed354d18d",
@@ -117504,7 +117541,7 @@
  },
  "descriptor": {
   "name": "syft",
-  "version": "0.92.0",
+  "version": "0.93.0",
   "configuration": {
    "catalogers": null,
    "package": {

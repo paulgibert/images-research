@@ -1,5 +1,731 @@
 {
- "matches": [],
+ "matches": [
+  {
+   "vulnerability": {
+    "id": "CVE-2023-38546",
+    "dataSource": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-38546",
+    "namespace": "wolfi:distro:wolfi:rolling",
+    "severity": "Unknown",
+    "urls": [
+     "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-38546"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "8.4.0-r0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "wolfi",
+       "version": "20230201"
+      },
+      "namespace": "wolfi:distro:wolfi:rolling",
+      "package": {
+       "name": "curl",
+       "version": "8.3.0-r1"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 8.4.0-r0 (apk)",
+      "vulnerabilityID": "CVE-2023-38546"
+     }
+    },
+    {
+     "type": "exact-indirect-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "wolfi",
+       "version": "20230201"
+      },
+      "namespace": "wolfi:distro:wolfi:rolling",
+      "package": {
+       "name": "curl",
+       "version": "8.3.0-r1"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 8.4.0-r0 (apk)",
+      "vulnerabilityID": "CVE-2023-38546"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "ee02b4ef8cfb1672",
+    "name": "curl",
+    "version": "8.3.0-r1",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:a251a24ef6ae1190ff54bdc1ffab2e35bd2aef35d75df5204d760619709c064c"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "MIT"
+    ],
+    "cpes": [
+     "cpe:2.3:a:curl:curl:8.3.0-r1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:haxx:curl:8.3.0-r1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/wolfi/curl@8.3.0-r1?arch=x86_64&distro=wolfi-20230201",
+    "upstreams": [
+     {
+      "name": "curl"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-38546",
+    "dataSource": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-38546",
+    "namespace": "wolfi:distro:wolfi:rolling",
+    "severity": "Unknown",
+    "urls": [
+     "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-38546"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "8.4.0-r0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "wolfi",
+       "version": "20230201"
+      },
+      "namespace": "wolfi:distro:wolfi:rolling",
+      "package": {
+       "name": "curl",
+       "version": "8.3.0-r1"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 8.4.0-r0 (apk)",
+      "vulnerabilityID": "CVE-2023-38546"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "ae48d15761e1b49b",
+    "name": "curl",
+    "version": "8.3.0-r1",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/var/lib/db/sbom/curl-8.3.0-r1.spdx.json",
+      "layerID": "sha256:a251a24ef6ae1190ff54bdc1ffab2e35bd2aef35d75df5204d760619709c064c"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "MIT"
+    ],
+    "cpes": [
+     "cpe:2.3:a:curl:curl:8.3.0-r1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:haxx:curl:8.3.0-r1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/wolfi/curl@8.3.0-r1?arch=x86_64",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-38545",
+    "dataSource": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-38545",
+    "namespace": "wolfi:distro:wolfi:rolling",
+    "severity": "Unknown",
+    "urls": [
+     "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-38545"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "8.4.0-r0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "wolfi",
+       "version": "20230201"
+      },
+      "namespace": "wolfi:distro:wolfi:rolling",
+      "package": {
+       "name": "curl",
+       "version": "8.3.0-r1"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 8.4.0-r0 (apk)",
+      "vulnerabilityID": "CVE-2023-38545"
+     }
+    },
+    {
+     "type": "exact-direct-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "wolfi",
+       "version": "20230201"
+      },
+      "namespace": "wolfi:distro:wolfi:rolling",
+      "package": {
+       "name": "curl",
+       "version": "8.3.0-r1"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 8.4.0-r0 (apk)",
+      "vulnerabilityID": "CVE-2023-38545"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "ee02b4ef8cfb1672",
+    "name": "curl",
+    "version": "8.3.0-r1",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:a251a24ef6ae1190ff54bdc1ffab2e35bd2aef35d75df5204d760619709c064c"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "MIT"
+    ],
+    "cpes": [
+     "cpe:2.3:a:curl:curl:8.3.0-r1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:haxx:curl:8.3.0-r1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/wolfi/curl@8.3.0-r1?arch=x86_64&distro=wolfi-20230201",
+    "upstreams": [
+     {
+      "name": "curl"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-38545",
+    "dataSource": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-38545",
+    "namespace": "wolfi:distro:wolfi:rolling",
+    "severity": "Unknown",
+    "urls": [
+     "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-38545"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "8.4.0-r0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "wolfi",
+       "version": "20230201"
+      },
+      "namespace": "wolfi:distro:wolfi:rolling",
+      "package": {
+       "name": "curl",
+       "version": "8.3.0-r1"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 8.4.0-r0 (apk)",
+      "vulnerabilityID": "CVE-2023-38545"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "ae48d15761e1b49b",
+    "name": "curl",
+    "version": "8.3.0-r1",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/var/lib/db/sbom/curl-8.3.0-r1.spdx.json",
+      "layerID": "sha256:a251a24ef6ae1190ff54bdc1ffab2e35bd2aef35d75df5204d760619709c064c"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "MIT"
+    ],
+    "cpes": [
+     "cpe:2.3:a:curl:curl:8.3.0-r1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:haxx:curl:8.3.0-r1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/wolfi/curl@8.3.0-r1?arch=x86_64",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-4374-p667-p6c8",
+    "dataSource": "https://github.com/advisories/GHSA-4374-p667-p6c8",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-4374-p667-p6c8"
+    ],
+    "description": "HTTP/2 rapid reset can cause excessive work in net/http",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "0.17.0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-39325",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-39325",
+     "namespace": "nvd:cpe",
+     "urls": [
+      "https://go.dev/cl/534215",
+      "https://go.dev/cl/534235",
+      "https://go.dev/issue/63417",
+      "https://groups.google.com/g/golang-announce/c/iNNxDTCjZvo/m/UDd7VKQuAAAJ",
+      "https://pkg.go.dev/vuln/GO-2023-2102"
+     ],
+     "description": "A malicious HTTP/2 client which rapidly creates requests and immediately resets them can cause excessive server resource consumption. While the total number of requests is bounded by the http2.Server.MaxConcurrentStreams setting, resetting an in-progress request allows the attacker to create a new request while the existing one is still executing. With the fix applied, HTTP/2 servers now bound the number of simultaneously executing handler goroutines to the stream concurrency limit (MaxConcurrentStreams). New requests arriving when at the limit (which can only happen after the client has reset an existing, in-flight request) will be queued until a handler exits. If the request queue grows too large, the server will terminate the connection. This issue is also fixed in golang.org/x/net/http2 for users manually configuring HTTP/2. The default stream concurrency limit is 250 streams (requests) per HTTP/2 connection. This value may be adjusted using the golang.org/x/net/http2 package; see the Server.MaxConcurrentStreams setting and the ConfigureServer function.",
+     "cvss": []
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "golang.org/x/net",
+       "version": "v0.13.0"
+      }
+     },
+     "found": {
+      "versionConstraint": "<0.17.0 (unknown)",
+      "vulnerabilityID": "GHSA-4374-p667-p6c8"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "53ca841a7d0c580a",
+    "name": "golang.org/x/net",
+    "version": "v0.13.0",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/bin/consul",
+      "layerID": "sha256:a251a24ef6ae1190ff54bdc1ffab2e35bd2aef35d75df5204d760619709c064c"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:golang:x/net:v0.13.0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/golang.org/x/net@v0.13.0",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.21.2",
+     "architecture": "amd64",
+     "h1Digest": "h1:Nvo8UFsZ8X3BhAC9699Z1j7XQ3rsZnUUm7jfBEk1ueY=",
+     "mainModule": "github.com/hashicorp/consul"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-38546",
+    "dataSource": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-38546",
+    "namespace": "wolfi:distro:wolfi:rolling",
+    "severity": "Unknown",
+    "urls": [
+     "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-38546"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "8.4.0-r0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "wolfi",
+       "version": "20230201"
+      },
+      "namespace": "wolfi:distro:wolfi:rolling",
+      "package": {
+       "name": "curl",
+       "version": "8.3.0-r1"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 8.4.0-r0 (apk)",
+      "vulnerabilityID": "CVE-2023-38546"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "fa2886f1d718a7c6",
+    "name": "libcurl-openssl4",
+    "version": "8.3.0-r1",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:a251a24ef6ae1190ff54bdc1ffab2e35bd2aef35d75df5204d760619709c064c"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "MIT"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libcurl-openssl4:libcurl-openssl4:8.3.0-r1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libcurl-openssl4:libcurl_openssl4:8.3.0-r1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libcurl_openssl4:libcurl-openssl4:8.3.0-r1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libcurl_openssl4:libcurl_openssl4:8.3.0-r1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libcurl-openssl4:libcurl-openssl:8.3.0-r1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libcurl-openssl4:libcurl_openssl:8.3.0-r1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libcurl-openssl:libcurl-openssl4:8.3.0-r1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libcurl-openssl:libcurl_openssl4:8.3.0-r1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libcurl_openssl4:libcurl-openssl:8.3.0-r1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libcurl_openssl4:libcurl_openssl:8.3.0-r1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libcurl_openssl:libcurl-openssl4:8.3.0-r1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libcurl_openssl:libcurl_openssl4:8.3.0-r1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libcurl-openssl:libcurl-openssl:8.3.0-r1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libcurl-openssl:libcurl_openssl:8.3.0-r1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libcurl_openssl:libcurl-openssl:8.3.0-r1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libcurl_openssl:libcurl_openssl:8.3.0-r1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libcurl:libcurl-openssl4:8.3.0-r1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libcurl:libcurl_openssl4:8.3.0-r1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libcurl:libcurl-openssl:8.3.0-r1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libcurl:libcurl_openssl:8.3.0-r1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/wolfi/libcurl-openssl4@8.3.0-r1?arch=x86_64&upstream=curl&distro=wolfi-20230201",
+    "upstreams": [
+     {
+      "name": "curl"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-38545",
+    "dataSource": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-38545",
+    "namespace": "wolfi:distro:wolfi:rolling",
+    "severity": "Unknown",
+    "urls": [
+     "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-38545"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "8.4.0-r0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "wolfi",
+       "version": "20230201"
+      },
+      "namespace": "wolfi:distro:wolfi:rolling",
+      "package": {
+       "name": "curl",
+       "version": "8.3.0-r1"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 8.4.0-r0 (apk)",
+      "vulnerabilityID": "CVE-2023-38545"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "fa2886f1d718a7c6",
+    "name": "libcurl-openssl4",
+    "version": "8.3.0-r1",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:a251a24ef6ae1190ff54bdc1ffab2e35bd2aef35d75df5204d760619709c064c"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "MIT"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libcurl-openssl4:libcurl-openssl4:8.3.0-r1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libcurl-openssl4:libcurl_openssl4:8.3.0-r1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libcurl_openssl4:libcurl-openssl4:8.3.0-r1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libcurl_openssl4:libcurl_openssl4:8.3.0-r1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libcurl-openssl4:libcurl-openssl:8.3.0-r1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libcurl-openssl4:libcurl_openssl:8.3.0-r1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libcurl-openssl:libcurl-openssl4:8.3.0-r1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libcurl-openssl:libcurl_openssl4:8.3.0-r1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libcurl_openssl4:libcurl-openssl:8.3.0-r1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libcurl_openssl4:libcurl_openssl:8.3.0-r1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libcurl_openssl:libcurl-openssl4:8.3.0-r1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libcurl_openssl:libcurl_openssl4:8.3.0-r1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libcurl-openssl:libcurl-openssl:8.3.0-r1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libcurl-openssl:libcurl_openssl:8.3.0-r1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libcurl_openssl:libcurl-openssl:8.3.0-r1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libcurl_openssl:libcurl_openssl:8.3.0-r1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libcurl:libcurl-openssl4:8.3.0-r1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libcurl:libcurl_openssl4:8.3.0-r1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libcurl:libcurl-openssl:8.3.0-r1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libcurl:libcurl_openssl:8.3.0-r1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/wolfi/libcurl-openssl4@8.3.0-r1?arch=x86_64&upstream=curl&distro=wolfi-20230201",
+    "upstreams": [
+     {
+      "name": "curl"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-44487",
+    "dataSource": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-44487",
+    "namespace": "wolfi:distro:wolfi:rolling",
+    "severity": "Unknown",
+    "urls": [
+     "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-44487"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "1.57.0-r0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-44487",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-44487",
+     "namespace": "nvd:cpe",
+     "urls": [
+      "https://access.redhat.com/security/cve/cve-2023-44487",
+      "https://aws.amazon.com/security/security-bulletins/AWS-2023-011/",
+      "https://blog.cloudflare.com/technical-breakdown-http2-rapid-reset-ddos-attack/",
+      "https://blog.cloudflare.com/zero-day-rapid-reset-http2-record-breaking-ddos-attack/",
+      "https://blog.litespeedtech.com/2023/10/11/rapid-reset-http-2-vulnerablilty/",
+      "https://blog.qualys.com/vulnerabilities-threat-research/2023/10/10/cve-2023-44487-http-2-rapid-reset-attack",
+      "https://blog.vespa.ai/cve-2023-44487/",
+      "https://bugzilla.proxmox.com/show_bug.cgi?id=4988",
+      "https://bugzilla.redhat.com/show_bug.cgi?id=2242803",
+      "https://bugzilla.suse.com/show_bug.cgi?id=1216123",
+      "https://cgit.freebsd.org/ports/commit/?id=c64c329c2c1752f46b73e3e6ce9f4329be6629f9",
+      "https://cloud.google.com/blog/products/identity-security/google-cloud-mitigated-largest-ddos-attack-peaking-above-398-million-rps/",
+      "https://cloud.google.com/blog/products/identity-security/how-it-works-the-novel-http2-rapid-reset-ddos-attack",
+      "https://community.traefik.io/t/is-traefik-vulnerable-to-cve-2023-44487/20125",
+      "https://edg.io/lp/blog/resets-leaks-ddos-and-the-tale-of-a-hidden-cve",
+      "https://forums.swift.org/t/swift-nio-http2-security-update-cve-2023-44487-http-2-dos/67764",
+      "https://gist.github.com/adulau/7c2bfb8e9cdbe4b35a5e131c66a0c088",
+      "https://github.com/Azure/AKS/issues/3947",
+      "https://github.com/Kong/kong/discussions/11741",
+      "https://github.com/advisories/GHSA-qppj-fm5r-hxr3",
+      "https://github.com/advisories/GHSA-vx74-f528-fxqg",
+      "https://github.com/advisories/GHSA-xpw8-rcwv-8f8p",
+      "https://github.com/akka/akka-http/issues/4323",
+      "https://github.com/alibaba/tengine/issues/1872",
+      "https://github.com/apache/apisix/issues/10320",
+      "https://github.com/apache/httpd-site/pull/10",
+      "https://github.com/apache/httpd/blob/afcdbeebbff4b0c50ea26cdd16e178c0d1f24152/modules/http2/h2_mplx.c#L1101-L1113",
+      "https://github.com/apache/tomcat/tree/main/java/org/apache/coyote/http2",
+      "https://github.com/apache/trafficserver/pull/10564",
+      "https://github.com/arkrwn/PoC/tree/main/CVE-2023-44487",
+      "https://github.com/bcdannyboy/CVE-2023-44487",
+      "https://github.com/caddyserver/caddy/issues/5877",
+      "https://github.com/caddyserver/caddy/releases/tag/v2.7.5",
+      "https://github.com/dotnet/announcements/issues/277",
+      "https://github.com/dotnet/core/blob/e4613450ea0da7fd2fc6b61dfb2c1c1dec1ce9ec/release-notes/6.0/6.0.23/6.0.23.md?plain=1#L73",
+      "https://github.com/eclipse/jetty.project/issues/10679",
+      "https://github.com/envoyproxy/envoy/pull/30055",
+      "https://github.com/etcd-io/etcd/issues/16740",
+      "https://github.com/facebook/proxygen/pull/466",
+      "https://github.com/golang/go/issues/63417",
+      "https://github.com/grpc/grpc-go/pull/6703",
+      "https://github.com/h2o/h2o/pull/3291",
+      "https://github.com/h2o/h2o/security/advisories/GHSA-2m7v-gc89-fjqf",
+      "https://github.com/haproxy/haproxy/issues/2312",
+      "https://github.com/icing/mod_h2/blob/0a864782af0a942aa2ad4ed960a6b32cd35bcf0a/mod_http2/README.md?plain=1#L239-L244",
+      "https://github.com/junkurihara/rust-rpxy/issues/97",
+      "https://github.com/kazu-yamamoto/http2/commit/f61d41a502bd0f60eb24e1ce14edc7b6df6722a1",
+      "https://github.com/kazu-yamamoto/http2/issues/93",
+      "https://github.com/kubernetes/kubernetes/pull/121120",
+      "https://github.com/line/armeria/pull/5232",
+      "https://github.com/linkerd/website/pull/1695/commits/4b9c6836471bc8270ab48aae6fd2181bc73fd632",
+      "https://github.com/micrictor/http2-rst-stream",
+      "https://github.com/microsoft/CBL-Mariner/pull/6381",
+      "https://github.com/netty/netty/commit/58f75f665aa81a8cbcf6ffa74820042a285c5e61",
+      "https://github.com/nghttp2/nghttp2/pull/1961",
+      "https://github.com/nghttp2/nghttp2/releases/tag/v1.57.0",
+      "https://github.com/ninenines/cowboy/issues/1615",
+      "https://github.com/nodejs/node/pull/50121",
+      "https://github.com/openresty/openresty/issues/930",
+      "https://github.com/opensearch-project/data-prepper/issues/3474",
+      "https://github.com/oqtane/oqtane.framework/discussions/3367",
+      "https://github.com/projectcontour/contour/pull/5826",
+      "https://github.com/tempesta-tech/tempesta/issues/1986",
+      "https://github.com/varnishcache/varnish-cache/issues/3996",
+      "https://groups.google.com/g/golang-announce/c/iNNxDTCjZvo",
+      "https://istio.io/latest/news/security/istio-security-2023-004/",
+      "https://lists.apache.org/thread/5py8h42mxfsn8l1wy6o41xwhsjlsd87q",
+      "https://mailman.nginx.org/pipermail/nginx-devel/2023-October/S36Q5HBXR7CAIMPLLPRSSSYR4PCMWILK.html",
+      "https://martinthomson.github.io/h2-stream-limits/draft-thomson-httpbis-h2-stream-limits.html",
+      "https://msrc.microsoft.com/blog/2023/10/microsoft-response-to-distributed-denial-of-service-ddos-attacks-against-http/2/",
+      "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-44487",
+      "https://my.f5.com/manage/s/article/K000137106",
+      "https://netty.io/news/2023/10/10/4-1-100-Final.html",
+      "https://news.ycombinator.com/item?id=37830987",
+      "https://news.ycombinator.com/item?id=37830998",
+      "https://news.ycombinator.com/item?id=37831062",
+      "https://news.ycombinator.com/item?id=37837043",
+      "https://openssf.org/blog/2023/10/10/http-2-rapid-reset-vulnerability-highlights-need-for-rapid-response/",
+      "https://seanmonstar.com/post/730794151136935936/hyper-http2-rapid-reset-unaffected",
+      "https://security.paloaltonetworks.com/CVE-2023-44487",
+      "https://tomcat.apache.org/security-10.html#Fixed_in_Apache_Tomcat_10.1.14",
+      "https://ubuntu.com/security/CVE-2023-44487",
+      "https://www.bleepingcomputer.com/news/security/new-http-2-rapid-reset-zero-day-attack-breaks-ddos-records/",
+      "https://www.cisa.gov/news-events/alerts/2023/10/10/http2-rapid-reset-vulnerability-cve-2023-44487",
+      "https://www.darkreading.com/cloud/internet-wide-zero-day-bug-fuels-largest-ever-ddos-event",
+      "https://www.debian.org/security/2023/dsa-5521",
+      "https://www.debian.org/security/2023/dsa-5522",
+      "https://www.haproxy.com/blog/haproxy-is-not-affected-by-the-http-2-rapid-reset-attack-cve-2023-44487",
+      "https://www.netlify.com/blog/netlify-successfully-mitigates-cve-2023-44487/",
+      "https://www.nginx.com/blog/http-2-rapid-reset-attack-impacting-f5-nginx-products/",
+      "https://www.openwall.com/lists/oss-security/2023/10/10/6",
+      "https://www.phoronix.com/news/HTTP2-Rapid-Reset-Attack",
+      "https://www.theregister.com/2023/10/10/http2_rapid_reset_zeroday/"
+     ],
+     "description": "The HTTP/2 protocol allows a denial of service (server resource consumption) because request cancellation can reset many streams quickly, as exploited in the wild in August through October 2023.",
+     "cvss": []
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "wolfi",
+       "version": "20230201"
+      },
+      "namespace": "wolfi:distro:wolfi:rolling",
+      "package": {
+       "name": "nghttp2",
+       "version": "1.56.0-r0"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 1.57.0-r0 (apk)",
+      "vulnerabilityID": "CVE-2023-44487"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "8f96e9b8d310593f",
+    "name": "libnghttp2-14",
+    "version": "1.56.0-r0",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:a251a24ef6ae1190ff54bdc1ffab2e35bd2aef35d75df5204d760619709c064c"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "MIT"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libnghttp2-14:libnghttp2-14:1.56.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libnghttp2-14:libnghttp2_14:1.56.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libnghttp2_14:libnghttp2-14:1.56.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libnghttp2_14:libnghttp2_14:1.56.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libnghttp2-14:libnghttp2:1.56.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libnghttp2:libnghttp2-14:1.56.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libnghttp2:libnghttp2_14:1.56.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libnghttp2_14:libnghttp2:1.56.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libnghttp2:libnghttp2:1.56.0-r0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/wolfi/libnghttp2-14@1.56.0-r0?arch=x86_64&upstream=nghttp2&distro=wolfi-20230201",
+    "upstreams": [
+     {
+      "name": "nghttp2"
+     }
+    ]
+   }
+  }
+ ],
  "source": {
   "type": "image",
   "target": {
@@ -33,8 +759,8 @@
   "idLike": []
  },
  "descriptor": {
-  "name": "",
-  "version": "",
+  "name": "grype",
+  "version": "0.71.0",
   "configuration": {
    "output": [
     "json"
@@ -72,22 +798,25 @@
    },
    "match": {
     "java": {
-     "using-cpes": true
+     "using-cpes": false
     },
     "dotnet": {
-     "using-cpes": true
+     "using-cpes": false
     },
     "golang": {
-     "using-cpes": true
+     "using-cpes": false
     },
     "javascript": {
-     "using-cpes": true
+     "using-cpes": false
     },
     "python": {
-     "using-cpes": true
+     "using-cpes": false
     },
     "ruby": {
-     "using-cpes": true
+     "using-cpes": false
+    },
+    "rust": {
+     "using-cpes": false
     },
     "stock": {
      "using-cpes": true
@@ -108,12 +837,12 @@
    "vex-add": []
   },
   "db": {
-   "built": "2023-10-11T01:24:08Z",
+   "built": "2023-10-13T01:25:27Z",
    "schemaVersion": 5,
    "location": "/home/anon/.cache/grype/db/5",
-   "checksum": "sha256:16423ac3a1c3cd30cfe138851c91e7ba24290ec499065e861cb0a90ecb50a059",
+   "checksum": "sha256:b4a890ba7a0e7dd7336493427223a1fbf8b4c0b45f972ae68dcd61106667f31b",
    "error": null
   },
-  "timestamp": "2023-10-11T21:50:11.212296748-04:00"
+  "timestamp": "2023-10-13T11:49:34.871156795-04:00"
  }
 }

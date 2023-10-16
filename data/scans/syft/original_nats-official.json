@@ -341,6 +341,33 @@
      "standard-crypto"
     ]
    }
+  },
+  {
+   "id": "b97e9b185b1cc817",
+   "name": "stdlib",
+   "version": "go1.21.2",
+   "type": "go-module",
+   "foundBy": "",
+   "locations": [
+    {
+     "path": "/nats-server",
+     "layerID": "sha256:33dadedb0d6b959a38deadd840ab29f22be11edf0264a407908b1eb517cca538",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "go",
+   "cpes": [
+    "cpe:2.3:a:golang:go:1.21.2:-:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:golang/stdlib@1.21.2",
+   "metadataType": "GolangBinMetadata",
+   "metadata": {
+    "goCompiledVersion": "go1.21.2",
+    "architecture": ""
+   }
   }
  ],
  "artifactRelationships": [
@@ -426,6 +453,11 @@
   },
   {
    "parent": "85ba1bc7966c6a16c34af37b9ef12ece3ebbf77269b9baa5a1557fd8236ee90c",
+   "child": "b97e9b185b1cc817",
+   "type": "contains"
+  },
+  {
+   "parent": "85ba1bc7966c6a16c34af37b9ef12ece3ebbf77269b9baa5a1557fd8236ee90c",
    "child": "be5cb2174431d260",
    "type": "contains"
   },
@@ -436,6 +468,11 @@
   },
   {
    "parent": "9894a2621cf67f2e",
+   "child": "532d0eacfb90d854",
+   "type": "evident-by"
+  },
+  {
+   "parent": "b97e9b185b1cc817",
    "child": "532d0eacfb90d854",
    "type": "evident-by"
   },
@@ -492,7 +529,7 @@
  "distro": {},
  "descriptor": {
   "name": "syft",
-  "version": "0.92.0",
+  "version": "0.93.0",
   "configuration": {
    "catalogers": null,
    "package": {

@@ -81,7 +81,7 @@
    }
   },
   {
-   "id": "daede8b3eea68a9f",
+   "id": "7ebaad410968ad32",
    "name": "ST4",
    "version": "4.0.8",
    "type": "java-archive",
@@ -95,7 +95,25 @@
      }
     }
    ],
-   "licenses": [],
+   "licenses": [
+    {
+     "value": "BSD licence",
+     "spdxExpression": "",
+     "type": "declared",
+     "urls": [
+      "http://antlr.org/license.html"
+     ],
+     "locations": [
+      {
+       "path": "/opt/cassandra/lib/ST4-4.0.8.jar",
+       "layerID": "sha256:861d3ed2db5a5c18dfb555426bb41ed250cf129bbb00911a9f258082e8f017e4",
+       "annotations": {
+        "evidence": "primary"
+       }
+      }
+     ]
+    }
+   ],
    "language": "java",
    "cpes": [
     "cpe:2.3:a:antlr:ST4:4.0.8:*:*:*:*:*:*:*",
@@ -5122,7 +5140,7 @@
    }
   },
   {
-   "id": "0fba83eaab68053d",
+   "id": "76bc145c611ba0d2",
    "name": "concurrent-trees",
    "version": "2.4.0",
    "type": "java-archive",
@@ -5136,7 +5154,25 @@
      }
     }
    ],
-   "licenses": [],
+   "licenses": [
+    {
+     "value": "The Apache Software License, Version 2.0",
+     "spdxExpression": "",
+     "type": "declared",
+     "urls": [
+      "http://www.apache.org/licenses/LICENSE-2.0.txt"
+     ],
+     "locations": [
+      {
+       "path": "/opt/cassandra/lib/concurrent-trees-2.4.0.jar",
+       "layerID": "sha256:861d3ed2db5a5c18dfb555426bb41ed250cf129bbb00911a9f258082e8f017e4",
+       "annotations": {
+        "evidence": "primary"
+       }
+      }
+     ]
+    }
+   ],
    "language": "java",
    "cpes": [
     "cpe:2.3:a:concurrent-trees:concurrent-trees:2.4.0:*:*:*:*:*:*:*",
@@ -6883,7 +6919,7 @@
    }
   },
   {
-   "id": "5d249983be6ac375",
+   "id": "7eb95d5391b2e936",
    "name": "high-scale-lib",
    "version": "1.0.6",
    "type": "java-archive",
@@ -6897,7 +6933,25 @@
      }
     }
    ],
-   "licenses": [],
+   "licenses": [
+    {
+     "value": "MIT License",
+     "spdxExpression": "",
+     "type": "declared",
+     "urls": [
+      "http://www.opensource.org/licenses/mit-license.php"
+     ],
+     "locations": [
+      {
+       "path": "/opt/cassandra/lib/high-scale-lib-1.0.6.jar",
+       "layerID": "sha256:861d3ed2db5a5c18dfb555426bb41ed250cf129bbb00911a9f258082e8f017e4",
+       "annotations": {
+        "evidence": "primary"
+       }
+      }
+     ]
+    }
+   ],
    "language": "java",
    "cpes": [
     "cpe:2.3:a:high-scale-lib:high-scale-lib:1.0.6:*:*:*:*:*:*:*",
@@ -7075,7 +7129,7 @@
    }
   },
   {
-   "id": "32f4e8ba95e417a1",
+   "id": "738e3b36f443b231",
    "name": "j2objc-annotations",
    "version": "1.3",
    "type": "java-archive",
@@ -7089,7 +7143,25 @@
      }
     }
    ],
-   "licenses": [],
+   "licenses": [
+    {
+     "value": "The Apache Software License, Version 2.0",
+     "spdxExpression": "",
+     "type": "declared",
+     "urls": [
+      "http://www.apache.org/licenses/LICENSE-2.0.txt"
+     ],
+     "locations": [
+      {
+       "path": "/opt/cassandra/lib/j2objc-annotations-1.3.jar",
+       "layerID": "sha256:861d3ed2db5a5c18dfb555426bb41ed250cf129bbb00911a9f258082e8f017e4",
+       "annotations": {
+        "evidence": "primary"
+       }
+      }
+     ]
+    }
+   ],
    "language": "java",
    "cpes": [
     "cpe:2.3:a:j2objc-annotations:j2objc-annotations:1.3:*:*:*:*:*:*:*",
@@ -8270,7 +8342,7 @@
    }
   },
   {
-   "id": "26487c59db223021",
+   "id": "d055f82b545e5488",
    "name": "jbcrypt",
    "version": "0.4",
    "type": "java-archive",
@@ -8284,7 +8356,25 @@
      }
     }
    ],
-   "licenses": [],
+   "licenses": [
+    {
+     "value": "ISC",
+     "spdxExpression": "ISC",
+     "type": "declared",
+     "urls": [
+      "https://opensource.org/licenses/isc-license"
+     ],
+     "locations": [
+      {
+       "path": "/opt/cassandra/lib/jbcrypt-0.4.jar",
+       "layerID": "sha256:861d3ed2db5a5c18dfb555426bb41ed250cf129bbb00911a9f258082e8f017e4",
+       "annotations": {
+        "evidence": "primary"
+       }
+      }
+     ]
+    }
+   ],
    "language": "java",
    "cpes": [
     "cpe:2.3:a:jbcrypt:jbcrypt:0.4:*:*:*:*:*:*:*",
@@ -8555,7 +8645,7 @@
    }
   },
   {
-   "id": "a927f92050d355e2",
+   "id": "3bd405ad3fbbce06",
    "name": "jctools-core",
    "version": "2.1.1",
    "type": "java-archive",
@@ -8569,7 +8659,25 @@
      }
     }
    ],
-   "licenses": [],
+   "licenses": [
+    {
+     "value": "Apache License, Version 2.0",
+     "spdxExpression": "",
+     "type": "declared",
+     "urls": [
+      "http://www.apache.org/licenses/LICENSE-2.0.txt"
+     ],
+     "locations": [
+      {
+       "path": "/opt/cassandra/lib/cassandra-driver-core-3.11.0-shaded.jar",
+       "layerID": "sha256:861d3ed2db5a5c18dfb555426bb41ed250cf129bbb00911a9f258082e8f017e4",
+       "annotations": {
+        "evidence": "primary"
+       }
+      }
+     ]
+    }
+   ],
    "language": "java",
    "cpes": [
     "cpe:2.3:a:jctools-core:jctools-core:2.1.1:*:*:*:*:*:*:*",
@@ -8925,7 +9033,7 @@
    }
   },
   {
-   "id": "04a68095eab460f7",
+   "id": "fec85aef39c246be",
    "name": "jvm-attach-api",
    "version": "1.5",
    "type": "java-archive",
@@ -8939,7 +9047,25 @@
      }
     }
    ],
-   "licenses": [],
+   "licenses": [
+    {
+     "value": "The Apache Software License, Version 2.0",
+     "spdxExpression": "",
+     "type": "declared",
+     "urls": [
+      "http://www.apache.org/licenses/LICENSE-2.0.txt"
+     ],
+     "locations": [
+      {
+       "path": "/opt/cassandra/lib/jvm-attach-api-1.5.jar",
+       "layerID": "sha256:861d3ed2db5a5c18dfb555426bb41ed250cf129bbb00911a9f258082e8f017e4",
+       "annotations": {
+        "evidence": "primary"
+       }
+      }
+     ]
+    }
+   ],
    "language": "java",
    "cpes": [
     "cpe:2.3:a:jvm-attach-api:jvm-attach-api:1.5:*:*:*:*:*:*:*",
@@ -21401,7 +21527,7 @@
    }
   },
   {
-   "id": "5b39f3e807969f4d",
+   "id": "b18c2fbd8fc4ada3",
    "name": "ohc-core",
    "version": "0.5.1",
    "type": "java-archive",
@@ -21415,7 +21541,25 @@
      }
     }
    ],
-   "licenses": [],
+   "licenses": [
+    {
+     "value": "Apache 2",
+     "spdxExpression": "",
+     "type": "declared",
+     "urls": [
+      "http://www.apache.org/licenses/LICENSE-2.0.txt"
+     ],
+     "locations": [
+      {
+       "path": "/opt/cassandra/lib/ohc-core-0.5.1.jar",
+       "layerID": "sha256:861d3ed2db5a5c18dfb555426bb41ed250cf129bbb00911a9f258082e8f017e4",
+       "annotations": {
+        "evidence": "primary"
+       }
+      }
+     ]
+    }
+   ],
    "language": "java",
    "cpes": [
     "cpe:2.3:a:caffinitas:ohc-core:0.5.1:*:*:*:*:*:*:*",
@@ -21460,7 +21604,7 @@
    }
   },
   {
-   "id": "53cc3375f9591415",
+   "id": "38184902698a4d16",
    "name": "ohc-core-j8",
    "version": "0.5.1",
    "type": "java-archive",
@@ -21474,7 +21618,25 @@
      }
     }
    ],
-   "licenses": [],
+   "licenses": [
+    {
+     "value": "Apache 2",
+     "spdxExpression": "",
+     "type": "declared",
+     "urls": [
+      "http://www.apache.org/licenses/LICENSE-2.0.txt"
+     ],
+     "locations": [
+      {
+       "path": "/opt/cassandra/lib/ohc-core-j8-0.5.1.jar",
+       "layerID": "sha256:861d3ed2db5a5c18dfb555426bb41ed250cf129bbb00911a9f258082e8f017e4",
+       "annotations": {
+        "evidence": "primary"
+       }
+      }
+     ]
+    }
+   ],
    "language": "java",
    "cpes": [
     "cpe:2.3:a:ohc-core-j8:ohc-core-j8:0.5.1:*:*:*:*:*:*:*",
@@ -23423,7 +23585,7 @@
    }
   },
   {
-   "id": "bed4e189a3cf9c69",
+   "id": "7bba62f18d713845",
    "name": "psjava",
    "version": "0.1.19",
    "type": "java-archive",
@@ -23437,7 +23599,25 @@
      }
     }
    ],
-   "licenses": [],
+   "licenses": [
+    {
+     "value": "The MIT License (MIT)",
+     "spdxExpression": "",
+     "type": "declared",
+     "urls": [
+      "http://opensource.org/licenses/MIT"
+     ],
+     "locations": [
+      {
+       "path": "/opt/cassandra/lib/psjava-0.1.19.jar",
+       "layerID": "sha256:861d3ed2db5a5c18dfb555426bb41ed250cf129bbb00911a9f258082e8f017e4",
+       "annotations": {
+        "evidence": "primary"
+       }
+      }
+     ]
+    }
+   ],
    "language": "java",
    "cpes": [
     "cpe:2.3:a:psjava:psjava:0.1.19:*:*:*:*:*:*:*"
@@ -31706,7 +31886,7 @@
    }
   },
   {
-   "id": "2ec04e029007acb8",
+   "id": "4b7ae226e77d810c",
    "name": "stream",
    "version": "2.5.2",
    "type": "java-archive",
@@ -31720,7 +31900,25 @@
      }
     }
    ],
-   "licenses": [],
+   "licenses": [
+    {
+     "value": "Apache License, Version 2.0",
+     "spdxExpression": "",
+     "type": "declared",
+     "urls": [
+      "http://www.apache.org/licenses/LICENSE-2.0.txt"
+     ],
+     "locations": [
+      {
+       "path": "/opt/cassandra/lib/stream-2.5.2.jar",
+       "layerID": "sha256:861d3ed2db5a5c18dfb555426bb41ed250cf129bbb00911a9f258082e8f017e4",
+       "annotations": {
+        "evidence": "primary"
+       }
+      }
+     ]
+    }
+   ],
    "language": "java",
    "cpes": [
     "cpe:2.3:a:clearspring:stream:2.5.2:*:*:*:*:*:*:*",
@@ -34496,11 +34694,6 @@
    "type": "evident-by"
   },
   {
-   "parent": "04a68095eab460f7",
-   "child": "ace618a0ce5796d4",
-   "type": "evident-by"
-  },
-  {
    "parent": "04f1311277d95f62",
    "child": "258ee4892fa8e4bd",
    "type": "evident-by"
@@ -34594,11 +34787,6 @@
    "parent": "0e27321b35d514c9",
    "child": "ea2c28892557a19a",
    "type": "contains"
-  },
-  {
-   "parent": "0fba83eaab68053d",
-   "child": "eaa10d19a03a2e19",
-   "type": "evident-by"
   },
   {
    "parent": "11c59ee763306690",
@@ -38386,11 +38574,6 @@
    "type": "contains"
   },
   {
-   "parent": "26487c59db223021",
-   "child": "ecee211a62b7b522",
-   "type": "evident-by"
-  },
-  {
    "parent": "2690336b98b5dc48",
    "child": "60a3d01cf3b35d4d",
    "type": "evident-by"
@@ -38946,11 +39129,6 @@
    "type": "contains"
   },
   {
-   "parent": "2ec04e029007acb8",
-   "child": "95b57132e1829c76",
-   "type": "evident-by"
-  },
-  {
    "parent": "2f19e6679b037175",
    "child": "f23f30a846729f31",
    "type": "evident-by"
@@ -38998,11 +39176,6 @@
   {
    "parent": "31f5c7182fc36ccd",
    "child": "6528192d0e2c5835",
-   "type": "evident-by"
-  },
-  {
-   "parent": "32f4e8ba95e417a1",
-   "child": "c6c1d157b62a7fb6",
    "type": "evident-by"
   },
   {
@@ -39096,6 +39269,11 @@
    "type": "evident-by"
   },
   {
+   "parent": "38184902698a4d16",
+   "child": "01c217757c8d1eb1",
+   "type": "evident-by"
+  },
+  {
    "parent": "39c66522f012fd90",
    "child": "92ccb13efb489bd3",
    "type": "evident-by"
@@ -39103,6 +39281,11 @@
   {
    "parent": "3a9a1e82f968d149",
    "child": "10dd75619bd02fc8",
+   "type": "evident-by"
+  },
+  {
+   "parent": "3bd405ad3fbbce06",
+   "child": "5cb7941778827e0d",
    "type": "evident-by"
   },
   {
@@ -40693,6 +40876,11 @@
   {
    "parent": "4abd4c842e44bf9c",
    "child": "7d0e1dcbf849d9a5",
+   "type": "evident-by"
+  },
+  {
+   "parent": "4b7ae226e77d810c",
+   "child": "95b57132e1829c76",
    "type": "evident-by"
   },
   {
@@ -45576,11 +45764,6 @@
    "type": "evident-by"
   },
   {
-   "parent": "53cc3375f9591415",
-   "child": "01c217757c8d1eb1",
-   "type": "evident-by"
-  },
-  {
    "parent": "554183f1b09924fb",
    "child": "db8b590b9dd345bd",
    "type": "evident-by"
@@ -45679,16 +45862,6 @@
    "parent": "5a08b138111f3d3d",
    "child": "fa165aaa3091b1c7",
    "type": "dependency-of"
-  },
-  {
-   "parent": "5b39f3e807969f4d",
-   "child": "a6d1356af92c1cb9",
-   "type": "evident-by"
-  },
-  {
-   "parent": "5d249983be6ac375",
-   "child": "92a890302e224fbd",
-   "type": "evident-by"
   },
   {
    "parent": "5d467f9387cc54ec",
@@ -46011,6 +46184,11 @@
    "type": "evident-by"
   },
   {
+   "parent": "738e3b36f443b231",
+   "child": "c6c1d157b62a7fb6",
+   "type": "evident-by"
+  },
+  {
    "parent": "7390ce46fa02ea33",
    "child": "0e6fb8a9226ace40",
    "type": "contains"
@@ -46111,6 +46289,11 @@
    "type": "evident-by"
   },
   {
+   "parent": "76bc145c611ba0d2",
+   "child": "eaa10d19a03a2e19",
+   "type": "evident-by"
+  },
+  {
    "parent": "77d118b139587d49",
    "child": "31f5c7182fc36ccd",
    "type": "ownership-by-file-overlap",
@@ -46151,6 +46334,11 @@
    "type": "evident-by"
   },
   {
+   "parent": "7bba62f18d713845",
+   "child": "46e073cd5d06d95e",
+   "type": "evident-by"
+  },
+  {
    "parent": "7bc765c2d2faea3f",
    "child": "12bd7d2594455e32",
    "type": "ownership-by-file-overlap",
@@ -46184,6 +46372,16 @@
    "parent": "7bc765c2d2faea3f",
    "child": "f66b2b9727ef1883",
    "type": "contains"
+  },
+  {
+   "parent": "7eb95d5391b2e936",
+   "child": "92a890302e224fbd",
+   "type": "evident-by"
+  },
+  {
+   "parent": "7ebaad410968ad32",
+   "child": "0a68e5c5bf48c1b9",
+   "type": "evident-by"
   },
   {
    "parent": "80d2f28324f425be",
@@ -47686,11 +47884,6 @@
    "type": "evident-by"
   },
   {
-   "parent": "a927f92050d355e2",
-   "child": "5cb7941778827e0d",
-   "type": "evident-by"
-  },
-  {
    "parent": "aa8fb20e24057035",
    "child": "bf6da58825a18034",
    "type": "contains"
@@ -47803,6 +47996,11 @@
   {
    "parent": "af0e6a851ad5a433",
    "child": "50ef07a6e2847b49",
+   "type": "evident-by"
+  },
+  {
+   "parent": "b18c2fbd8fc4ada3",
+   "child": "a6d1356af92c1cb9",
    "type": "evident-by"
   },
   {
@@ -48004,11 +48202,6 @@
    "parent": "bb8be3d875f7d788",
    "child": "f8435ece8ba8fa03",
    "type": "contains"
-  },
-  {
-   "parent": "bed4e189a3cf9c69",
-   "child": "46e073cd5d06d95e",
-   "type": "evident-by"
   },
   {
    "parent": "bfa600caeb8d7ae2",
@@ -55036,6 +55229,11 @@
    "type": "evident-by"
   },
   {
+   "parent": "d055f82b545e5488",
+   "child": "ecee211a62b7b522",
+   "type": "evident-by"
+  },
+  {
    "parent": "d0db063dc5d12e63",
    "child": "06f8163ea7a91a34",
    "type": "evident-by"
@@ -55167,11 +55365,6 @@
   },
   {
    "parent": "d26b965f813516e6972fa8c5a3ad9d2cae88e7f443527cab6d3a85bc7d0f9bca",
-   "child": "04a68095eab460f7",
-   "type": "contains"
-  },
-  {
-   "parent": "d26b965f813516e6972fa8c5a3ad9d2cae88e7f443527cab6d3a85bc7d0f9bca",
    "child": "04f1311277d95f62",
    "type": "contains"
   },
@@ -55188,11 +55381,6 @@
   {
    "parent": "d26b965f813516e6972fa8c5a3ad9d2cae88e7f443527cab6d3a85bc7d0f9bca",
    "child": "0e27321b35d514c9",
-   "type": "contains"
-  },
-  {
-   "parent": "d26b965f813516e6972fa8c5a3ad9d2cae88e7f443527cab6d3a85bc7d0f9bca",
-   "child": "0fba83eaab68053d",
    "type": "contains"
   },
   {
@@ -55302,11 +55490,6 @@
   },
   {
    "parent": "d26b965f813516e6972fa8c5a3ad9d2cae88e7f443527cab6d3a85bc7d0f9bca",
-   "child": "26487c59db223021",
-   "type": "contains"
-  },
-  {
-   "parent": "d26b965f813516e6972fa8c5a3ad9d2cae88e7f443527cab6d3a85bc7d0f9bca",
    "child": "2690336b98b5dc48",
    "type": "contains"
   },
@@ -55357,11 +55540,6 @@
   },
   {
    "parent": "d26b965f813516e6972fa8c5a3ad9d2cae88e7f443527cab6d3a85bc7d0f9bca",
-   "child": "2ec04e029007acb8",
-   "type": "contains"
-  },
-  {
-   "parent": "d26b965f813516e6972fa8c5a3ad9d2cae88e7f443527cab6d3a85bc7d0f9bca",
    "child": "2f19e6679b037175",
    "type": "contains"
   },
@@ -55378,11 +55556,6 @@
   {
    "parent": "d26b965f813516e6972fa8c5a3ad9d2cae88e7f443527cab6d3a85bc7d0f9bca",
    "child": "31f5c7182fc36ccd",
-   "type": "contains"
-  },
-  {
-   "parent": "d26b965f813516e6972fa8c5a3ad9d2cae88e7f443527cab6d3a85bc7d0f9bca",
-   "child": "32f4e8ba95e417a1",
    "type": "contains"
   },
   {
@@ -55407,12 +55580,22 @@
   },
   {
    "parent": "d26b965f813516e6972fa8c5a3ad9d2cae88e7f443527cab6d3a85bc7d0f9bca",
+   "child": "38184902698a4d16",
+   "type": "contains"
+  },
+  {
+   "parent": "d26b965f813516e6972fa8c5a3ad9d2cae88e7f443527cab6d3a85bc7d0f9bca",
    "child": "39c66522f012fd90",
    "type": "contains"
   },
   {
    "parent": "d26b965f813516e6972fa8c5a3ad9d2cae88e7f443527cab6d3a85bc7d0f9bca",
    "child": "3a9a1e82f968d149",
+   "type": "contains"
+  },
+  {
+   "parent": "d26b965f813516e6972fa8c5a3ad9d2cae88e7f443527cab6d3a85bc7d0f9bca",
+   "child": "3bd405ad3fbbce06",
    "type": "contains"
   },
   {
@@ -55492,6 +55675,11 @@
   },
   {
    "parent": "d26b965f813516e6972fa8c5a3ad9d2cae88e7f443527cab6d3a85bc7d0f9bca",
+   "child": "4b7ae226e77d810c",
+   "type": "contains"
+  },
+  {
+   "parent": "d26b965f813516e6972fa8c5a3ad9d2cae88e7f443527cab6d3a85bc7d0f9bca",
    "child": "4c406855d3fa47c5",
    "type": "contains"
   },
@@ -55527,27 +55715,12 @@
   },
   {
    "parent": "d26b965f813516e6972fa8c5a3ad9d2cae88e7f443527cab6d3a85bc7d0f9bca",
-   "child": "53cc3375f9591415",
-   "type": "contains"
-  },
-  {
-   "parent": "d26b965f813516e6972fa8c5a3ad9d2cae88e7f443527cab6d3a85bc7d0f9bca",
    "child": "554183f1b09924fb",
    "type": "contains"
   },
   {
    "parent": "d26b965f813516e6972fa8c5a3ad9d2cae88e7f443527cab6d3a85bc7d0f9bca",
    "child": "5a08b138111f3d3d",
-   "type": "contains"
-  },
-  {
-   "parent": "d26b965f813516e6972fa8c5a3ad9d2cae88e7f443527cab6d3a85bc7d0f9bca",
-   "child": "5b39f3e807969f4d",
-   "type": "contains"
-  },
-  {
-   "parent": "d26b965f813516e6972fa8c5a3ad9d2cae88e7f443527cab6d3a85bc7d0f9bca",
-   "child": "5d249983be6ac375",
    "type": "contains"
   },
   {
@@ -55617,6 +55790,11 @@
   },
   {
    "parent": "d26b965f813516e6972fa8c5a3ad9d2cae88e7f443527cab6d3a85bc7d0f9bca",
+   "child": "738e3b36f443b231",
+   "type": "contains"
+  },
+  {
+   "parent": "d26b965f813516e6972fa8c5a3ad9d2cae88e7f443527cab6d3a85bc7d0f9bca",
    "child": "7390ce46fa02ea33",
    "type": "contains"
   },
@@ -55642,6 +55820,11 @@
   },
   {
    "parent": "d26b965f813516e6972fa8c5a3ad9d2cae88e7f443527cab6d3a85bc7d0f9bca",
+   "child": "76bc145c611ba0d2",
+   "type": "contains"
+  },
+  {
+   "parent": "d26b965f813516e6972fa8c5a3ad9d2cae88e7f443527cab6d3a85bc7d0f9bca",
    "child": "77d118b139587d49",
    "type": "contains"
   },
@@ -55657,7 +55840,22 @@
   },
   {
    "parent": "d26b965f813516e6972fa8c5a3ad9d2cae88e7f443527cab6d3a85bc7d0f9bca",
+   "child": "7bba62f18d713845",
+   "type": "contains"
+  },
+  {
+   "parent": "d26b965f813516e6972fa8c5a3ad9d2cae88e7f443527cab6d3a85bc7d0f9bca",
    "child": "7bc765c2d2faea3f",
+   "type": "contains"
+  },
+  {
+   "parent": "d26b965f813516e6972fa8c5a3ad9d2cae88e7f443527cab6d3a85bc7d0f9bca",
+   "child": "7eb95d5391b2e936",
+   "type": "contains"
+  },
+  {
+   "parent": "d26b965f813516e6972fa8c5a3ad9d2cae88e7f443527cab6d3a85bc7d0f9bca",
+   "child": "7ebaad410968ad32",
    "type": "contains"
   },
   {
@@ -55827,11 +56025,6 @@
   },
   {
    "parent": "d26b965f813516e6972fa8c5a3ad9d2cae88e7f443527cab6d3a85bc7d0f9bca",
-   "child": "a927f92050d355e2",
-   "type": "contains"
-  },
-  {
-   "parent": "d26b965f813516e6972fa8c5a3ad9d2cae88e7f443527cab6d3a85bc7d0f9bca",
    "child": "aa8fb20e24057035",
    "type": "contains"
   },
@@ -55843,6 +56036,11 @@
   {
    "parent": "d26b965f813516e6972fa8c5a3ad9d2cae88e7f443527cab6d3a85bc7d0f9bca",
    "child": "af0e6a851ad5a433",
+   "type": "contains"
+  },
+  {
+   "parent": "d26b965f813516e6972fa8c5a3ad9d2cae88e7f443527cab6d3a85bc7d0f9bca",
+   "child": "b18c2fbd8fc4ada3",
    "type": "contains"
   },
   {
@@ -55883,11 +56081,6 @@
   {
    "parent": "d26b965f813516e6972fa8c5a3ad9d2cae88e7f443527cab6d3a85bc7d0f9bca",
    "child": "bb8be3d875f7d788",
-   "type": "contains"
-  },
-  {
-   "parent": "d26b965f813516e6972fa8c5a3ad9d2cae88e7f443527cab6d3a85bc7d0f9bca",
-   "child": "bed4e189a3cf9c69",
    "type": "contains"
   },
   {
@@ -55947,6 +56140,11 @@
   },
   {
    "parent": "d26b965f813516e6972fa8c5a3ad9d2cae88e7f443527cab6d3a85bc7d0f9bca",
+   "child": "d055f82b545e5488",
+   "type": "contains"
+  },
+  {
+   "parent": "d26b965f813516e6972fa8c5a3ad9d2cae88e7f443527cab6d3a85bc7d0f9bca",
    "child": "d0db063dc5d12e63",
    "type": "contains"
   },
@@ -55998,11 +56196,6 @@
   {
    "parent": "d26b965f813516e6972fa8c5a3ad9d2cae88e7f443527cab6d3a85bc7d0f9bca",
    "child": "da6da7fb79b3c88f",
-   "type": "contains"
-  },
-  {
-   "parent": "d26b965f813516e6972fa8c5a3ad9d2cae88e7f443527cab6d3a85bc7d0f9bca",
-   "child": "daede8b3eea68a9f",
    "type": "contains"
   },
   {
@@ -56118,6 +56311,11 @@
   {
    "parent": "d26b965f813516e6972fa8c5a3ad9d2cae88e7f443527cab6d3a85bc7d0f9bca",
    "child": "fec0a421efd0f1f1",
+   "type": "contains"
+  },
+  {
+   "parent": "d26b965f813516e6972fa8c5a3ad9d2cae88e7f443527cab6d3a85bc7d0f9bca",
+   "child": "fec85aef39c246be",
    "type": "contains"
   },
   {
@@ -56824,11 +57022,6 @@
    "parent": "da6da7fb79b3c88f",
    "child": "e1185078ffb58d97",
    "type": "contains"
-  },
-  {
-   "parent": "daede8b3eea68a9f",
-   "child": "0a68e5c5bf48c1b9",
-   "type": "evident-by"
   },
   {
    "parent": "dea6a1060896c510",
@@ -59052,16 +59245,6 @@
   },
   {
    "parent": "f959392d7ff92ac6",
-   "child": "04a68095eab460f7",
-   "type": "ownership-by-file-overlap",
-   "metadata": {
-    "files": [
-     "/opt/cassandra/lib/jvm-attach-api-1.5.jar"
-    ]
-   }
-  },
-  {
-   "parent": "f959392d7ff92ac6",
    "child": "04f1311277d95f62",
    "type": "ownership-by-file-overlap",
    "metadata": {
@@ -59104,16 +59287,6 @@
    "parent": "f959392d7ff92ac6",
    "child": "0f32fa1effdcd7d4",
    "type": "contains"
-  },
-  {
-   "parent": "f959392d7ff92ac6",
-   "child": "0fba83eaab68053d",
-   "type": "ownership-by-file-overlap",
-   "metadata": {
-    "files": [
-     "/opt/cassandra/lib/concurrent-trees-2.4.0.jar"
-    ]
-   }
   },
   {
    "parent": "f959392d7ff92ac6",
@@ -59252,16 +59425,6 @@
   },
   {
    "parent": "f959392d7ff92ac6",
-   "child": "26487c59db223021",
-   "type": "ownership-by-file-overlap",
-   "metadata": {
-    "files": [
-     "/opt/cassandra/lib/jbcrypt-0.4.jar"
-    ]
-   }
-  },
-  {
-   "parent": "f959392d7ff92ac6",
    "child": "27106eff94573cf8",
    "type": "ownership-by-file-overlap",
    "metadata": {
@@ -59347,16 +59510,6 @@
   },
   {
    "parent": "f959392d7ff92ac6",
-   "child": "2ec04e029007acb8",
-   "type": "ownership-by-file-overlap",
-   "metadata": {
-    "files": [
-     "/opt/cassandra/lib/stream-2.5.2.jar"
-    ]
-   }
-  },
-  {
-   "parent": "f959392d7ff92ac6",
    "child": "2f19e6679b037175",
    "type": "ownership-by-file-overlap",
    "metadata": {
@@ -59412,16 +59565,6 @@
   },
   {
    "parent": "f959392d7ff92ac6",
-   "child": "32f4e8ba95e417a1",
-   "type": "ownership-by-file-overlap",
-   "metadata": {
-    "files": [
-     "/opt/cassandra/lib/j2objc-annotations-1.3.jar"
-    ]
-   }
-  },
-  {
-   "parent": "f959392d7ff92ac6",
    "child": "33234866ba1d39f1",
    "type": "contains"
   },
@@ -59457,11 +59600,31 @@
   },
   {
    "parent": "f959392d7ff92ac6",
+   "child": "38184902698a4d16",
+   "type": "ownership-by-file-overlap",
+   "metadata": {
+    "files": [
+     "/opt/cassandra/lib/ohc-core-j8-0.5.1.jar"
+    ]
+   }
+  },
+  {
+   "parent": "f959392d7ff92ac6",
    "child": "3a9a1e82f968d149",
    "type": "ownership-by-file-overlap",
    "metadata": {
     "files": [
      "/opt/cassandra/lib/jackson-databind-2.13.4.2.jar"
+    ]
+   }
+  },
+  {
+   "parent": "f959392d7ff92ac6",
+   "child": "3bd405ad3fbbce06",
+   "type": "ownership-by-file-overlap",
+   "metadata": {
+    "files": [
+     "/opt/cassandra/lib/cassandra-driver-core-3.11.0-shaded.jar"
     ]
    }
   },
@@ -59642,6 +59805,16 @@
   },
   {
    "parent": "f959392d7ff92ac6",
+   "child": "4b7ae226e77d810c",
+   "type": "ownership-by-file-overlap",
+   "metadata": {
+    "files": [
+     "/opt/cassandra/lib/stream-2.5.2.jar"
+    ]
+   }
+  },
+  {
+   "parent": "f959392d7ff92ac6",
    "child": "4be7ae885ff31614",
    "type": "contains"
   },
@@ -59707,16 +59880,6 @@
   },
   {
    "parent": "f959392d7ff92ac6",
-   "child": "53cc3375f9591415",
-   "type": "ownership-by-file-overlap",
-   "metadata": {
-    "files": [
-     "/opt/cassandra/lib/ohc-core-j8-0.5.1.jar"
-    ]
-   }
-  },
-  {
-   "parent": "f959392d7ff92ac6",
    "child": "540dc3c1b8276061",
    "type": "contains"
   },
@@ -59762,16 +59925,6 @@
   },
   {
    "parent": "f959392d7ff92ac6",
-   "child": "5b39f3e807969f4d",
-   "type": "ownership-by-file-overlap",
-   "metadata": {
-    "files": [
-     "/opt/cassandra/lib/ohc-core-0.5.1.jar"
-    ]
-   }
-  },
-  {
-   "parent": "f959392d7ff92ac6",
    "child": "5c2bde6f6e47061f",
    "type": "contains"
   },
@@ -59779,16 +59932,6 @@
    "parent": "f959392d7ff92ac6",
    "child": "5cb7941778827e0d",
    "type": "contains"
-  },
-  {
-   "parent": "f959392d7ff92ac6",
-   "child": "5d249983be6ac375",
-   "type": "ownership-by-file-overlap",
-   "metadata": {
-    "files": [
-     "/opt/cassandra/lib/high-scale-lib-1.0.6.jar"
-    ]
-   }
   },
   {
    "parent": "f959392d7ff92ac6",
@@ -59902,6 +60045,16 @@
   },
   {
    "parent": "f959392d7ff92ac6",
+   "child": "738e3b36f443b231",
+   "type": "ownership-by-file-overlap",
+   "metadata": {
+    "files": [
+     "/opt/cassandra/lib/j2objc-annotations-1.3.jar"
+    ]
+   }
+  },
+  {
+   "parent": "f959392d7ff92ac6",
    "child": "73d55669ee21dcd1",
    "type": "ownership-by-file-overlap",
    "metadata": {
@@ -59937,6 +60090,16 @@
   },
   {
    "parent": "f959392d7ff92ac6",
+   "child": "76bc145c611ba0d2",
+   "type": "ownership-by-file-overlap",
+   "metadata": {
+    "files": [
+     "/opt/cassandra/lib/concurrent-trees-2.4.0.jar"
+    ]
+   }
+  },
+  {
+   "parent": "f959392d7ff92ac6",
    "child": "79b8c64ca1cc1d07",
    "type": "ownership-by-file-overlap",
    "metadata": {
@@ -59952,6 +60115,16 @@
   },
   {
    "parent": "f959392d7ff92ac6",
+   "child": "7bba62f18d713845",
+   "type": "ownership-by-file-overlap",
+   "metadata": {
+    "files": [
+     "/opt/cassandra/lib/psjava-0.1.19.jar"
+    ]
+   }
+  },
+  {
+   "parent": "f959392d7ff92ac6",
    "child": "7c13e1ca65ff5594",
    "type": "contains"
   },
@@ -59964,6 +60137,26 @@
    "parent": "f959392d7ff92ac6",
    "child": "7d8af1a97da0306b",
    "type": "contains"
+  },
+  {
+   "parent": "f959392d7ff92ac6",
+   "child": "7eb95d5391b2e936",
+   "type": "ownership-by-file-overlap",
+   "metadata": {
+    "files": [
+     "/opt/cassandra/lib/high-scale-lib-1.0.6.jar"
+    ]
+   }
+  },
+  {
+   "parent": "f959392d7ff92ac6",
+   "child": "7ebaad410968ad32",
+   "type": "ownership-by-file-overlap",
+   "metadata": {
+    "files": [
+     "/opt/cassandra/lib/ST4-4.0.8.jar"
+    ]
+   }
   },
   {
    "parent": "f959392d7ff92ac6",
@@ -60207,16 +60400,6 @@
   },
   {
    "parent": "f959392d7ff92ac6",
-   "child": "a927f92050d355e2",
-   "type": "ownership-by-file-overlap",
-   "metadata": {
-    "files": [
-     "/opt/cassandra/lib/cassandra-driver-core-3.11.0-shaded.jar"
-    ]
-   }
-  },
-  {
-   "parent": "f959392d7ff92ac6",
    "child": "a9da7a18a6f680b3",
    "type": "contains"
   },
@@ -60247,6 +60430,16 @@
    "metadata": {
     "files": [
      "/opt/cassandra/lib/jcl-over-slf4j-1.7.25.jar"
+    ]
+   }
+  },
+  {
+   "parent": "f959392d7ff92ac6",
+   "child": "b18c2fbd8fc4ada3",
+   "type": "ownership-by-file-overlap",
+   "metadata": {
+    "files": [
+     "/opt/cassandra/lib/ohc-core-0.5.1.jar"
     ]
    }
   },
@@ -60342,16 +60535,6 @@
   },
   {
    "parent": "f959392d7ff92ac6",
-   "child": "bed4e189a3cf9c69",
-   "type": "ownership-by-file-overlap",
-   "metadata": {
-    "files": [
-     "/opt/cassandra/lib/psjava-0.1.19.jar"
-    ]
-   }
-  },
-  {
-   "parent": "f959392d7ff92ac6",
    "child": "bf79d05c7eb41f4b",
    "type": "contains"
   },
@@ -60437,6 +60620,16 @@
   },
   {
    "parent": "f959392d7ff92ac6",
+   "child": "d055f82b545e5488",
+   "type": "ownership-by-file-overlap",
+   "metadata": {
+    "files": [
+     "/opt/cassandra/lib/jbcrypt-0.4.jar"
+    ]
+   }
+  },
+  {
+   "parent": "f959392d7ff92ac6",
    "child": "d0db063dc5d12e63",
    "type": "ownership-by-file-overlap",
    "metadata": {
@@ -60494,16 +60687,6 @@
    "parent": "f959392d7ff92ac6",
    "child": "da8d4c4640e8ad03",
    "type": "contains"
-  },
-  {
-   "parent": "f959392d7ff92ac6",
-   "child": "daede8b3eea68a9f",
-   "type": "ownership-by-file-overlap",
-   "metadata": {
-    "files": [
-     "/opt/cassandra/lib/ST4-4.0.8.jar"
-    ]
-   }
   },
   {
    "parent": "f959392d7ff92ac6",
@@ -60679,6 +60862,16 @@
    "parent": "f959392d7ff92ac6",
    "child": "fc2832f0915a69bd",
    "type": "contains"
+  },
+  {
+   "parent": "f959392d7ff92ac6",
+   "child": "fec85aef39c246be",
+   "type": "ownership-by-file-overlap",
+   "metadata": {
+    "files": [
+     "/opt/cassandra/lib/jvm-attach-api-1.5.jar"
+    ]
+   }
   },
   {
    "parent": "f959392d7ff92ac6",
@@ -61789,6 +61982,11 @@
    "parent": "fec0a421efd0f1f1",
    "child": "fecd0a5778033085",
    "type": "contains"
+  },
+  {
+   "parent": "fec85aef39c246be",
+   "child": "ace618a0ce5796d4",
+   "type": "evident-by"
   },
   {
    "parent": "ffb9e682a5167b88",
@@ -78515,7 +78713,7 @@
  },
  "descriptor": {
   "name": "syft",
-  "version": "0.92.0",
+  "version": "0.93.0",
   "configuration": {
    "catalogers": null,
    "package": {

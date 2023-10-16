@@ -17108,7 +17108,7 @@
    }
   },
   {
-   "id": "63e9393a5b3ed985",
+   "id": "8e68c1467614587b",
    "name": "jctools-core",
    "version": "3.1.0",
    "type": "java-archive",
@@ -17122,7 +17122,25 @@
      }
     }
    ],
-   "licenses": [],
+   "licenses": [
+    {
+     "value": "Apache License, Version 2.0",
+     "spdxExpression": "",
+     "type": "declared",
+     "urls": [
+      "http://www.apache.org/licenses/LICENSE-2.0.txt"
+     ],
+     "locations": [
+      {
+       "path": "/apache-zookeeper-3.9.0-bin/lib/netty-common-4.1.94.Final.jar",
+       "layerID": "sha256:d4f4a7cd0578c7b9d30b16ad402fb61e27b157c1b5826c21ad68993518404894",
+       "annotations": {
+        "evidence": "primary"
+       }
+      }
+     ]
+    }
+   ],
    "language": "java",
    "cpes": [
     "cpe:2.3:a:jctools-core:jctools-core:3.1.0:*:*:*:*:*:*:*",
@@ -74268,11 +74286,6 @@
   },
   {
    "parent": "1d115d5c3eff96bb1981127a8270adcd48ffaf28d556693af549cc39f3d376e1",
-   "child": "63e9393a5b3ed985",
-   "type": "contains"
-  },
-  {
-   "parent": "1d115d5c3eff96bb1981127a8270adcd48ffaf28d556693af549cc39f3d376e1",
    "child": "6524ace344e63539",
    "type": "contains"
   },
@@ -74439,6 +74452,11 @@
   {
    "parent": "1d115d5c3eff96bb1981127a8270adcd48ffaf28d556693af549cc39f3d376e1",
    "child": "8d9f32c54663f3c2",
+   "type": "contains"
+  },
+  {
+   "parent": "1d115d5c3eff96bb1981127a8270adcd48ffaf28d556693af549cc39f3d376e1",
+   "child": "8e68c1467614587b",
    "type": "contains"
   },
   {
@@ -79707,11 +79725,6 @@
    "type": "evident-by"
   },
   {
-   "parent": "63e9393a5b3ed985",
-   "child": "03db5f257b178586",
-   "type": "evident-by"
-  },
-  {
    "parent": "6524ace344e63539",
    "child": "4a1e66c9b471c48a",
    "type": "contains"
@@ -83545,6 +83558,11 @@
    "parent": "8d9f32c54663f3c2",
    "child": "cdf04d6310792c4b",
    "type": "contains"
+  },
+  {
+   "parent": "8e68c1467614587b",
+   "child": "03db5f257b178586",
+   "type": "evident-by"
   },
   {
    "parent": "8e73a05ab9b9653f",
@@ -126308,7 +126326,7 @@
  },
  "descriptor": {
   "name": "syft",
-  "version": "0.92.0",
+  "version": "0.93.0",
   "configuration": {
    "catalogers": null,
    "package": {

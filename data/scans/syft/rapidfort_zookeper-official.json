@@ -910,7 +910,7 @@
    }
   },
   {
-   "id": "1e55b982acaeb7d9",
+   "id": "e4f7bd9b15fa2085",
    "name": "jctools-core",
    "version": "3.1.0",
    "type": "java-archive",
@@ -924,7 +924,25 @@
      }
     }
    ],
-   "licenses": [],
+   "licenses": [
+    {
+     "value": "Apache License, Version 2.0",
+     "spdxExpression": "",
+     "type": "declared",
+     "urls": [
+      "http://www.apache.org/licenses/LICENSE-2.0.txt"
+     ],
+     "locations": [
+      {
+       "path": "/apache-zookeeper-3.8.2-bin/lib/netty-common-4.1.94.Final.jar",
+       "layerID": "sha256:e378604b6e0da12b45835695c40f6d58371319c7828de793f933c7e343078a71",
+       "annotations": {
+        "evidence": "primary"
+       }
+      }
+     ]
+    }
+   ],
    "language": "java",
    "cpes": [
     "cpe:2.3:a:jctools-core:jctools-core:3.1.0:*:*:*:*:*:*:*",
@@ -4196,11 +4214,6 @@
    "type": "evident-by"
   },
   {
-   "parent": "1e55b982acaeb7d9",
-   "child": "1799aa64d544fa83",
-   "type": "evident-by"
-  },
-  {
    "parent": "2210606b0ac5ab9a",
    "child": "c2754f00a0d34072",
    "type": "evident-by"
@@ -4452,11 +4465,6 @@
   },
   {
    "parent": "d9c1279c18434763224812f0f8e76b96ca0a680ea13227d40356f6b2abf9f78a",
-   "child": "1e55b982acaeb7d9",
-   "type": "contains"
-  },
-  {
-   "parent": "d9c1279c18434763224812f0f8e76b96ca0a680ea13227d40356f6b2abf9f78a",
    "child": "2210606b0ac5ab9a",
    "type": "contains"
   },
@@ -4682,6 +4690,11 @@
   },
   {
    "parent": "d9c1279c18434763224812f0f8e76b96ca0a680ea13227d40356f6b2abf9f78a",
+   "child": "e4f7bd9b15fa2085",
+   "type": "contains"
+  },
+  {
+   "parent": "d9c1279c18434763224812f0f8e76b96ca0a680ea13227d40356f6b2abf9f78a",
    "child": "e7f792a931924676",
    "type": "contains"
   },
@@ -4703,6 +4716,11 @@
   {
    "parent": "e3a299179d522d46",
    "child": "340ecf496355ffec",
+   "type": "evident-by"
+  },
+  {
+   "parent": "e4f7bd9b15fa2085",
+   "child": "1799aa64d544fa83",
    "type": "evident-by"
   },
   {
@@ -5050,7 +5068,7 @@
  },
  "descriptor": {
   "name": "syft",
-  "version": "0.92.0",
+  "version": "0.93.0",
   "configuration": {
    "catalogers": null,
    "package": {

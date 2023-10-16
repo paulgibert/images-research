@@ -43849,6 +43849,33 @@
    }
   },
   {
+   "id": "8733b80e059c7b03",
+   "name": "stdlib",
+   "version": "go1.21.1",
+   "type": "go-module",
+   "foundBy": "",
+   "locations": [
+    {
+     "path": "/opt/bitnami/haproxy-dataplaneapi/bin/dataplaneapi",
+     "layerID": "sha256:3490b743b6fffbc2911add2d2b2e5cd900a0bced6b71d9385c37b33556d9744b",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "go",
+   "cpes": [
+    "cpe:2.3:a:golang:go:1.21.1:-:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:golang/stdlib@1.21.1",
+   "metadataType": "GolangBinMetadata",
+   "metadata": {
+    "goCompiledVersion": "go1.21.1",
+    "architecture": ""
+   }
+  },
+  {
    "id": "e5a100eb1e30f20e",
    "name": "sysv-rc",
    "version": "2.96-7+deb11u1",
@@ -66029,6 +66056,11 @@
    "type": "evident-by"
   },
   {
+   "parent": "8733b80e059c7b03",
+   "child": "fcb5a343ec629e4c",
+   "type": "evident-by"
+  },
+  {
    "parent": "87415c1e7f3d1ec2",
    "child": "fcb5a343ec629e4c",
    "type": "evident-by"
@@ -67846,6 +67878,11 @@
   {
    "parent": "b1f51ead4e3f72b0bd177a69ee3ab42aa3d7b4d00b64a541a205814493c19c02",
    "child": "86f92f29eff81255",
+   "type": "contains"
+  },
+  {
+   "parent": "b1f51ead4e3f72b0bd177a69ee3ab42aa3d7b4d00b64a541a205814493c19c02",
+   "child": "8733b80e059c7b03",
    "type": "contains"
   },
   {
@@ -100946,7 +100983,7 @@
  },
  "descriptor": {
   "name": "syft",
-  "version": "0.92.0",
+  "version": "0.93.0",
   "configuration": {
    "catalogers": null,
    "package": {
