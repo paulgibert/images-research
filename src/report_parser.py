@@ -1,3 +1,8 @@
+"""
+Objects for parsing Grype and Syft scan reports.
+"""
+
+
 import json
 import pandas as pd
 
@@ -6,72 +11,84 @@ class ReportParserError(Exception):
     """
     An Exception class for errors related to report parsing.
     """
-    pass
 
 
 class ReportParser:
+    """
+        A generic base class for report parsing.
+    """
+
     def __init__(self, report_path: str):
         """
-        A generic base class for report parsing.
+        @param report_path: The path of the report to parse
         """
         self.report_path = report_path
         self.report_file_name = report_path.split("/")[-1]
-        with open(report_path, "r") as fp:
+        with open(report_path, "r", encoding="utf-8") as fp:
             try:
                 self.report = json.load(fp)
-            except json.decoder.JSONDecodeError:
-                raise ReportParserError
-    
-    def image_provider(self) -> str:
+            except json.decoder.JSONDecodeError as e:
+                raise ReportParserError from e
+
+    def image_vendor(self) -> str:
         """
-        Returns the image provider.
+        @returns the image vendor. Ex. chainguard
         """
         return self.report_file_name.split("_")[0]
-    
-    def image_flavor(self) -> str:
+
+    def image_type(self) -> str:
         """
-        Returns the image flavor.
+        @returns the image type. Ex. nginx
         """
         return self.report_file_name.split("_")[1].split(".")[0]
-    
+
     def ds(self) -> pd.DataFrame:
         """
         Abstract method that returns parsed report data as a pandas
         DataFrame. Override this method in children.
+
+        @returns parsed report in a pandas DataFrame
         """
         raise NotImplementedError
 
 
-class MetadataReportParser(ReportParser):
-    def __init__(self, report_path: str):
-        """
-        A class for parsing metadata from Grpye reports.
-        """
-        super().__init__(report_path)
-    
+class GrypeMetadataReportParser(ReportParser):
+    """
+    A class for parsing metadata, such as image size,
+    from Grpye reports. This parser does not provide
+    vulnerability data.
+    """
+
     def image_size(self) -> int:
         """
-        Returns the image size.
+        @returns the image size.
         """
         try:
             return self.report["source"]["target"]["imageSize"]
         except KeyError:
             return 0
-    
-    def image_digest(self, n=6) -> str:
+
+    def image_digest(self, n: int=None) -> str:
+        """
+        @param n: Only return the first n characters of the digest.
+        @returns the image digest.
+        """
         try:
             digest = self.report["source"]["target"]["manifestDigest"]
-            return digest.split(":")[1][:n]
+            digest = digest.split(":")[1]
+            if n is None:
+                return digest
+            return digest[:n]
         except KeyError:
-            return "None"
-    
+            return "???"
+
     def ds(self) -> pd.DataFrame:
         """
-        Returns parsed image size data as a pandas DataFrame.
+        @returns parsed image size data as a pandas DataFrame.
 
         The DataFrame takes the form
 
-        | image_provider | image_flavor | image_size_bytes | image_digest |
+        |  image_vendor  |  image_type  | image_size_bytes | image_digest |
         ===================================================================
         |   chainguard   |     nginx    |     180123891    |     f012b1   |
         |   rapidfort    |     nginx    |     140233827    |     cd6dc2   |
@@ -79,29 +96,27 @@ class MetadataReportParser(ReportParser):
 
         """
         metadata = {
-            "image_provider": self.image_provider(),
-            "image_flavor": self.image_flavor(),
+            "image_vendor": self.image_vendor(),
+            "image_type": self.image_type(),
             "image_size_bytes": self.image_size(),
-            "image_digest": self.image_digest()
+            "image_digest": self.image_digest(n=6)
         }
-        
+
         return pd.DataFrame(metadata, index=[0])
-    
+
 
 class GrypeReportParser(ReportParser):
-    def __init__(self, report_path: str):
-        """
-        A class for parsing Grpye reports.
-        """
-        super().__init__(report_path)
-    
+    """
+    A class for parsing Grpye reports.
+    """
+
     def ds(self) -> pd.DataFrame:
         """
-        Returns parsed vulnerability data as a pandas DataFrame.
+        @returns parsed vulnerability data as a pandas DataFrame.
 
         The DataFrame takes the form
 
-        | image_provider | image_flavor | severity | type |
+        |   image_vendor |  image_type  | severity | type |
         ===================================================
         |   chainguard   |     nginx    |   high   |  apk |
         |   rapidfort    |     nginx    |   low    |  deb |
@@ -116,8 +131,8 @@ class GrypeReportParser(ReportParser):
             }
 
             vdata.update({
-                "image_provider": self.image_provider(),
-                "image_flavor": self.image_flavor(),
+                "image_vendor": self.image_vendor(),
+                "image_type": self.image_type(),
             })
 
             df = pd.concat([df, pd.DataFrame(vdata, index=[0])],
@@ -126,19 +141,17 @@ class GrypeReportParser(ReportParser):
 
 
 class SyftReportParser(ReportParser):
-    def __init__(self, report_path: str):
-        """
-        A class for parsing Syft reports.
-        """
-        super().__init__(report_path)
-    
+    """
+    A class for parsing Syft reports.
+    """
+
     def ds(self) -> pd.DataFrame:
         """
         Returns parsed vulnerability data as a pandas DataFrame.
 
         The DataFrame takes the form
 
-        | image_provider | image_flavor |       name        | type |
+        |  image_vendor  |  image_type  |       name        | type |
         ============================================================
         |   chainguard   |     nginx    | alpine-baselayout | apk  | 
         |   chainguard   |     redis    |    alpine-keys    | apk  |
@@ -148,20 +161,13 @@ class SyftReportParser(ReportParser):
         df = pd.DataFrame()
         for art in self.report["artifacts"]:
             cdata = {
-                "component_name": art["name"],
+                "name": art["name"],
                 "type": art["type"].lower()
             }
-            
-            # Skip for now: Few components have size data
-            # if ("metadata" in art.keys()) and ("size" in art.keys()):
-            #     cdata.update({
-            #         "size": art["metadata"]["size"],
-            #         "installedSize": art["metadata"]["installedSize"]
-            #     })
 
             cdata.update({
-                "image_provider": self.image_provider(),
-                "image_flavor": self.image_flavor(),
+                "image_vendor": self.image_vendor(),
+                "image_type": self.image_type(),
             })
 
             df = pd.concat([df, pd.DataFrame(cdata, index=[0])],

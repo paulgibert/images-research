@@ -1,98 +1,157 @@
+"""
+Stage 2 script.
+Generates data sets from Grype and Syft scans.
+
+Creates 4 data sets:
+
+vulns.csv   -   A collection of every vulnerability per image across vendors
+comps.csv   -   A collection of every component per image across vendors
+sizes.csv   -   A collection of image sizes across vendors
+agg.csv     -   Aggregated number of vulnerabilities, components, and image size per image across vendors.
+
+Usage:
+    2_build_datasets.py -r [directory of scan reports] -o [directory to save data sets]
+
+Example:
+    1_scan_images.py -r data/reports -o data/data-sets
+
+Note: The reports directory is expected to be of the form
+    
+    [dir name]/
+        grype/
+            - chainguard_nginx.json
+            - rapidfort_nginx.json
+            - baseline_nginx.json
+            ...
+        syft/
+            - chainguard_nginx.json
+            - rapidfort_nginx.json
+            - baseline_nginx.json
+            ...
+"""
+
+
+from typing import Tuple
 import os
 import sys
+import argparse
+import pandas as pd
 
 # Add parent dir to path
 sys.path.append("/".join(os.path.dirname(__file__).split("/")[0:-1]))
 
-from typing import Tuple
-import argparse
-import pandas as pd
 from src.report_parser import (
     ReportParserError,
-    MetadataReportParser,
+    GrypeMetadataReportParser,
     GrypeReportParser,
-    SyftReportParser
-    )
+    SyftReportParser)
 
 
-METADATA_CSV = "sizes.csv"
-VULNS_CSV = "vulns.csv"
-COMPONENTS_CSV = "comps.csv"
-AGG_CSV = "agg.csv"
+BYTES_PER_MB = 1000000
+SIZES_FILENAME = "sizes.csv"
+VULNS_FILENAME = "vulns.csv"
+COMPS_FILENAME = "comps.csv"
+AGG_FILENAME = "agg.csv"
 
 
-def _build_ds(reports_path: str, parser_type: type) -> pd.DataFrame:
+def build_ds(reports_dir: str, parser_type: type) -> pd.DataFrame:
+    """
+    Method for building data sets from Grype and Syft reports.
+
+    @param reports_dir: The directory containing scan reports.
+    @param parser_type: The type of parser to use
+    @returns the pandas DataFrame returned by the parser
+    """
     df = pd.DataFrame()
-    for file_name in os.listdir(reports_path):
-        file_path = os.path.join(reports_path, file_name)
+
+    # Loop over all files in the directory and apply parser
+    for report_name in os.listdir(reports_dir):
+        report_path = os.path.join(reports_dir, report_name)
         try:
-            parser = parser_type(file_path)
+            parser = parser_type(report_path)
         except ReportParserError:
-            print(f"Failed to parse {file_path}!")
+            print(f"Failed to parse {report_path}!!")
             continue
 
         _df = parser.ds()
 
+        # Concat report DataFrame to aggregate DataFrame of all reports
         df = pd.concat([df, _df],
                        axis=0, ignore_index=True)
-    
+
     return df
 
 
-def build_metadata_ds(reports_path: str) -> pd.DataFrame:
-    return _build_ds(reports_path, MetadataReportParser)
+def build_agg_ds(sizes_df: pd.DataFrame, vulns_df: pd.DataFrame,
+                 comps_df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Method for building aggregate data set from Grype and Syft reports.
+    Counts the number of vulnerabilities and components per image across vendors
+    and creates the following columns:
 
+        image_vendor                The image vendor. Ex chainguard
+        image_type                  The image type. Ex nginx
+        n_vulnerabilities           Number of vulnerabilities
+        n_vulnerabilities_severe    Number of "high" and "critical" vulnerabilities
+        n_components                Number of components
+        image_size_bytes            Image size in bytes
+        image_size_mb               Image size in MB
+        vulns_per_comp              Vulnerabilities per component
+        vulns_per_comp_severe       "high" and "critical" vulnerabilities per component
 
-def build_grype_ds(reports_path: str) -> pd.DataFrame:
-    return _build_ds(reports_path, GrypeReportParser)
+    @param sizes_df: The DataFrame from GrypeMetadataReportParser
+    @param vulns_df: The DataFrame from GrypeReportParser
+    @param comps_df: The DataFrame from SyftReportParser
+    @returns an aggregated DataFrame of vulnerability and component data
+    """
+    keys = ["image_vendor", "image_type"]
 
-
-def build_syft_ds(reports_path: str) -> pd.DataFrame:
-    return _build_ds(reports_path, SyftReportParser)
-
-
-def agg_ds(meta_df: pd.DataFrame, grype_df: pd.DataFrame,
-           syft_df: pd.DataFrame) -> pd.DataFrame:
-    
-    
-    vulns_df = grype_df.drop("severity", axis=1) \
-                       .groupby(["image_provider", "image_flavor"]) \
+    # Count vulnerabilities
+    vuln_count_df = vulns_df.drop("severity", axis=1) \
+                       .groupby(keys) \
                        .count() \
                        .reset_index() \
                        .rename(columns={"type": "n_vulnerabilities"})
 
-    grype_df_severe = grype_df[(grype_df["severity"] == "high") 
-                               | (grype_df["severity"] == "critical")]
-    vulns_df_severe = grype_df_severe.drop("severity", axis=1) \
-                                     .groupby(["image_provider", "image_flavor"]) \
-                                     .count() \
-                                     .reset_index() \
-                                     .rename(columns={"type": "n_vulnerabilities_severe"})
-    
-    comps_df = syft_df.drop("type", axis=1) \
-                       .groupby(["image_provider", "image_flavor"]) \
+    # Count severe vulnerabilities
+    mask = (vulns_df["severity"] == "high") | (vulns_df["severity"] == "critical")
+    sev_vuln_count_df = vulns_df[mask]
+    sev_vuln_count_df = sev_vuln_count_df.drop("severity", axis=1) \
+                                         .groupby(keys) \
+                                         .count() \
+                                         .reset_index() \
+                                         .rename(columns={"type": "n_vulnerabilities_severe"})
+
+    # Count components
+    comps_df = comps_df.drop("type", axis=1) \
+                       .groupby(keys) \
                        .count() \
                        .rename(columns={"component_name": "n_components"}) \
                        .reset_index()
-    
-    agg_df = meta_df.merge(vulns_df, how="outer",
-                           on=["image_provider", "image_flavor"]) \
-                    .merge(vulns_df_severe, how="outer",
-                           on=["image_provider", "image_flavor"]) \
-                    .merge(comps_df, how="outer",
-                           on=["image_provider", "image_flavor"]) \
-                    .fillna(0)
-    
+
+    # Aggregate into one DataFrame
+    agg_df = sizes_df.merge(vuln_count_df, how="outer",
+                            on=keys) \
+                     .merge(sev_vuln_count_df, how="outer",
+                            on=keys) \
+                     .merge(comps_df, how="outer",
+                           on=keys) \
+                     .fillna(0)
+
     agg_df["n_vulnerabilities"].astype("int")
-    agg_df["image_size_mb"] = agg_df["image_size_bytes"] / 1000000
+    agg_df["image_size_mb"] = agg_df["image_size_bytes"] / BYTES_PER_MB
     agg_df["vulns_per_comp"] = agg_df["n_vulnerabilities"] / agg_df["n_components"]
+    agg_df["severe_vulns_per_comp"] = agg_df["n_vulnerabilities_severe"] / agg_df["n_components"]
 
     return agg_df
 
 
 def parse_args() -> Tuple[str, str]:
+    """
+    Parses script args.
+    """
     parser = argparse.ArgumentParser(
-                    prog='2_build_datasets.py',
+                    prog=os.path.basename(__file__),
                     description='Builds datasets from grype and syft reports.')
     
     parser.add_argument("--reports-dir", "-r",
@@ -110,19 +169,36 @@ def parse_args() -> Tuple[str, str]:
 
 
 def main():
+    """
+    The main method of the script.
+    Parses scan reports from Grpye and Syft, builds data sets,
+    and saves the results to csv files.
+    """
     reports_dir, out_dir = parse_args()
 
-    meta_df = build_metadata_ds(os.path.join(reports_dir, "grype"))
-    meta_df.to_csv(os.path.join(out_dir, METADATA_CSV), index=False)
+    grype_reports_path = os.path.join(reports_dir, "grype")
+    syft_reports_path = os.path.join(reports_dir, "syft")
 
-    grype_df = build_grype_ds(os.path.join(reports_dir, "grype"))
-    grype_df.to_csv(os.path.join(out_dir, VULNS_CSV), index=False)
+    # Build data sets
+    sizes_df = build_ds(grype_reports_path, GrypeMetadataReportParser)
+    vulns_df = build_ds(grype_reports_path, GrypeReportParser)
+    comps_df = build_ds(syft_reports_path, SyftReportParser)
+    agg_df = build_agg_ds(sizes_df=sizes_df,
+                          vulns_df=vulns_df,
+                          comps_df=comps_df)
 
-    syft_df = build_syft_ds(os.path.join(reports_dir, "syft"))
-    syft_df.to_csv(os.path.join(out_dir, COMPONENTS_CSV), index=False)
+    # Save data sets
+    sizes_df_path = os.path.join(out_dir, SIZES_FILENAME)
+    sizes_df.to_csv(sizes_df_path, index=False)
 
-    agg_df = agg_ds(meta_df, grype_df, syft_df)
-    agg_df.to_csv(os.path.join(out_dir, AGG_CSV), index=False)
+    vulns_df_path = os.path.join(out_dir, VULNS_FILENAME)
+    vulns_df.to_csv(vulns_df_path, index=False)
+
+    comps_df_path = os.path.join(out_dir, COMPS_FILENAME)
+    comps_df.to_csv(comps_df_path, index=False)
+
+    agg_df_path = os.path.join(out_dir, AGG_FILENAME)
+    agg_df.to_csv(agg_df_path, index=False)
 
 
 if __name__ == "__main__":

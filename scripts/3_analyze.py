@@ -1,183 +1,229 @@
 import os
 import sys
-
-# Add parent dir to path
-sys.path.append("/".join(os.path.dirname(__file__).split("/")[0:-1]))
-
-from typing import Tuple, Dict
+from typing import Tuple, List
 import argparse
-import json
+from dataclasses import dataclass
 import pandas as pd
 import matplotlib.pyplot as plt
 from matplotlib.axes import Axes
 import numpy as np
-from scipy import stats
 from tabulate import tabulate
-from src.plot import plot_hline_chart
-import src.utils as utils
+
+# Add parent dir to path
+sys.path.append("/".join(os.path.dirname(__file__).split("/")[0:-1]))
+
+from src.plot import MetricData, plot_hline_chart
+from src import utils
+from src.stats import MetricStats
 
 
-def get_column(df: pd.DataFrame, provider: str, column: str) -> np.ndarray:
-    data = df[df["image_provider"] == provider] \
-           .sort_values(by="image_flavor", ascending=False)
-    return np.array(data[column])
+@dataclass
+class FigureParams:
+    """
+    A dataclass for figure parameters
+    """
+    column: str
+    title: str
+    xlabel: str
+    filename: str
 
 
-def get_providers(df: pd.DataFrame, column: str) ->Tuple[np.ndarray,
-                                                         np.ndarray,
-                                                         np.ndarray]:
-    org = get_column(df, "original", column)
-    cg = get_column(df, "chainguard", column)
-    rf = get_column(df, "rapidfort", column)
-    return org, cg, rf
-
-def _make_fig(ax: Axes, df: pd.DataFrame, column: str,
-              title: str, xlabel: str):
-    flavors = np.flip(np.sort(df["image_flavor"].unique()))
-    org, cg, rf = get_providers(df, column)
-    plot_hline_chart(ax, org, cg, rf, flavors, title, xlabel)
-
-
-def save_image_sz_fig(df: pd.DataFrame, out_path: str):
-    fig, ax = plt.subplots(figsize=(8,6))
-    _make_fig(ax, df, "image_size_mb",
-              title="Image Size per Image",
-              xlabel="Size (MB)")
-    fig.tight_layout()
-    fig.savefig(out_path)
-
-
-def save_n_vulns_fig(df: pd.DataFrame, out_path: str):
-    fig, ax = plt.subplots(figsize=(8,6))
-    _make_fig(ax, df, "n_vulnerabilities",
-              title="Number of Vulnerabilities per Image",
-              xlabel="Num Vulnerabilities")
-    fig.tight_layout()
-    fig.savefig(out_path)
-
-
-def save_n_vulns_severe_fig(df: pd.DataFrame, out_path: str):
-    fig, ax = plt.subplots(figsize=(8,6))
-    _make_fig(ax, df, "n_vulnerabilities_severe",
-              title="Number of \"High\" and \"Critical\" Vulnerabilities per Image",
-              xlabel="Num Vulnerabilities")
-    fig.tight_layout()
-    fig.savefig(out_path)
-
-
-def save_n_comps_fig(df: pd.DataFrame, out_path: str):
-    fig, ax = plt.subplots(figsize=(8,6))
-    _make_fig(ax, df, "n_components",
-              title="Number of Components per Image",
-              xlabel="Num Components")
-    fig.tight_layout()
-    fig.savefig(out_path)
+FIGSIZE = (8,6)
+FIGURES = [
+    FigureParams(
+        column="image_sz_mb",
+        title="MB per Image",
+        xlabel="Size (MB)",
+        filename="sizes_fig.png"
+    ),
+    FigureParams(
+        column="n_vulnerabilities",
+        title="Number of Vulnerabilities per Image",
+        xlabel="Num Vulnerabilities",
+        filename="vulns_fig.png"
+    ),
+    FigureParams(
+        column="n_vulnerabilities_severe",
+        title="Number of \"High\" and \"Critical\" Vulnerabilities per Image",
+        xlabel="Num Vulnerabilities",
+        filename="vulns_severe_fig.png"
+    ),
+    FigureParams(
+        column="n_components",
+        title="Number of Components per Image",
+        xlabel="Num Vulnerabilities",
+        filename="comps_fig.png"
+    ),
+    FigureParams(
+        column="vulns_per_comp",
+        title="Number of Vulnerabilites per Component per Image",
+        xlabel="Vulnerabilites per Component",
+        filename="vulns_p_comp_fig.png"
+    ),
+    FigureParams(
+        column="vulns_per_comp_severe",
+        title="Number of \"High\" and \"Critical\" Vulnerabilites per Component per Image",
+        xlabel="Vulnerabilites per Component",
+        filename="vulns_p_comp_severe_fig.png"
+    )
+]
 
 
-def save_vulns_p_comp_fig(df: pd.DataFrame, out_path: str):
-    fig, ax = plt.subplots(figsize=(8,6))
-    _make_fig(ax, df, "vulns_per_comp",
-              title="Number of Vulnerabilites per Component per Image",
-              xlabel="Vulnerabilites per Component")
-    fig.tight_layout()
-    fig.savefig(out_path)
+def _get_column(agg_df: pd.DataFrame, vendor: str, column: str) -> Tuple[np.ndarray, List[str]]:
+    """
+    Get data of a vendor by column. The data should come from the aggregated
+    data set build in the stage 2 script.
+
+    @param agg_df: A pandas DataFrame containing the aggregate data
+    @param vendor: The vendor to get data of
+    @param column: The column to get data from
+    @returns A Tuple of the vendor data and coresponding image types (data, types)
+    """
+    mask = agg_df["image_vendor"] == vendor
+    by = "image_type"
+    # Sort image_type in reverse alphabetical order
+    # (This will plot in alphabetical order)
+    data = agg_df[mask].sort_values(by=by, ascending=False)
+    types = list(data["image_type"])
+    return np.array(data[column]), types
 
 
-def paired_ttest(cg: np.ndarray, rf: np.ndarray) -> Tuple[float, float]:
-    t_stat, p_val = stats.ttest_rel(cg, rf)
-    return float(t_stat), float(p_val)
+def _get_data(agg_df: pd.DataFrame, column: str) -> MetricData:
+    """
+    Get a MetricData object containing data for all vendors
+    of a specefic column.
+
+    @param agg_df: A pandas DataFrame containing the aggregate data
+    @param column: The column to get data from
+    @returns: A MetricData object of the provided column
+    """
+    baseline, baseline_types = _get_column(agg_df, "original", column)
+    rapidfort, rapidfort_types = _get_column(agg_df, "rapidfort", column)
+    chainguard, chainguard_types = _get_column(agg_df, "chainguard", column)
+
+    # Sanity check to ensure all data is aligned
+    utils.check_equal_contents([baseline_types,
+                                rapidfort_types,
+                                chainguard_types])
+
+    return MetricData(baseline=baseline,
+                      rapidfort=rapidfort,
+                      chainguard=chainguard,
+                      image_types=baseline_types)
 
 
-def summerize(data: np.ndarray) -> Dict[str, float]:
-    return {
-        "mean": float(np.mean(data)),
-        "std": float(np.std(data)),
-        "min": float(np.min(data)),
-        "max": float(np.max(data))
-    }
+def _build_figure(ax: Axes, agg_df: pd.DataFrame, params: FigureParams):
+    """
+    A helper function for building figures.
+
+    @param ax: The matplotlib axis to plot on
+    @param agg_df: A pandas DataFrame containing the aggregate data
+    @param params: A FigureParams object describing the figure
+    """
+    data = _get_data(agg_df, params.column)
+    plot_hline_chart(ax=ax,
+                     data=data,
+                     title=params.title,
+                     xlabel=params.xlabel)
 
 
-def reduction(data: np.ndarray, original: np.ndarray) -> float:
-    data_mean = np.mean(data)
-    original_mean = np.mean(original)
-    return float((original_mean - data_mean) / original_mean)
+def build_and_save_figures(agg_df: pd.DataFrame, out_dir: str):
+    """
+    Builds and saves all the of the figures in the study.
+
+    @param agg_df: A pandas DataFrame containing the aggregate data
+    @param out_dir: The directory to save all figures
+    """
+    for params in FIGURES:
+        fig, ax = plt.subplots(figsize=FIGSIZE)
+        _build_figure(ax, agg_df, params)
+        fig.tight_layout()
+        out_path = os.path.join(out_dir, params.filename)
+        fig.savefig(out_path)
 
 
-def _stats_summary(df: pd.DataFrame) -> Dict[str, any]:
-    summary = {}
-    for col in ["image_size_mb",
-                "n_vulnerabilities",
-                "n_vulnerabilities_severe",
-                "n_components",
-                "vulns_per_comp"]:
-        _smry = {}
-        org, cg, rf = get_providers(df, col)
-        _smry["original"] = summerize(org)
-        _smry["chainguard"] = summerize(cg)
-        _smry["rapidfort"] = summerize(rf)
-        
-        t_stat, p_val = paired_ttest(cg, rf)
-        _smry["t_stat"] = t_stat
-        _smry["p_val"] = p_val
-        _smry["chainguard_reduction"] = reduction(cg, org)
-        _smry["rapidfort_reduction"] = reduction(rf, org)
+def calculate_and_save_stats(agg_df: pd.DataFrame, out_path: str):
+    """
+    Calculates summary statistics for each vendor across all columns.
 
-        summary[col] = _smry
+    @param agg_df: A pandas DataFrame containing the aggregate data
+    @param out_path: The path to save the summary
+    """
+    table = [[
+        "Figure Title",
+        "Column",
+        "Baseline Mean",
+        "Chainguard Mean",
+        "Chainguard % Reduction",
+        "Chainguard < RapidFort Pval",
+        "RapidFort Mean",
+        "RapidFort % Reduction",
+        "RapidFort < Chainguard Pval"]]
+
+    for params in FIGURES:
+        data = _get_data(agg_df, params.column)
+        stats = MetricStats(data)
+        # Metadata
+        row = [params.title, params.column]
+        # Baseline stats
+        row.append(np.mean(data.baseline))
+        # Chainguard stats
+        row.append(np.mean(data.chainguard))
+        row.append(stats.chainguard_reduction())
+        row.append(stats.test_chainguard_lt_rapidfort()[1])
+        # RapidFort stats
+        row.append(np.mean(data.rapidfort))
+        row.append(stats.rapidfort_reduction())
+        row.append(stats.test_rapidfort_lt_chainguard()[1])
+
+        table.append(row)
     
-    return summary
+    with open(out_path, "r", encoding="utf-8") as fp:
+        fp.write(tabulate(table, headers="firstrow"))
 
-
-def save_stats_summary(df: pd.DataFrame, out_path: str):
-    with open(out_path, "w") as fp:
-        data = _stats_summary(df)
-        json.dump(data, fp, indent=4)
-
-
-def save_scanner_info(out_path: str):
-    grype_v = utils.bash("grype --version").split(" ")[1]
-    syft_v = utils.bash("syft --version").split(" ")[1]
-    with open(out_path, "w") as fp:
-        fp.write(tabulate([
-            ["grype version", grype_v],
-            ["syft version", syft_v]
-        ], showindex=False))
 
 def parse_args() -> Tuple[str, str]:
+    """
+    Parses script args.
+    """
     parser = argparse.ArgumentParser(
                     prog='3_analyze.py',
                     description='Outputs figures and reports of analyzed data.')
-    
+
     parser.add_argument("--dataset", "-d",
                         required=True,
                         help="Path of aggregated dataset (agg.csv).")
-    
+
     parser.add_argument("--output-dir", "-o",
                         required=True,
                         help="The directory to save reports and figures.")
 
     ds_path = parser.parse_args().dataset
     out_dir = parser.parse_args().output_dir
-    
+
     return ds_path, out_dir
 
 
 def main():
-
+    """
+    The main method of the script.
+    Builds figures and summary statistics
+    from aggregate data set.
+    """
     ds_path, out_dir = parse_args()
 
-    df = pd.read_csv(ds_path)
+    # Read aggregate data set
+    agg_df = pd.read_csv(ds_path)
 
-    fig_path = os.path.join(out_dir, "figures")
-    os.mkdir(fig_path)
+    # Build and save all figures
+    fig_dir = os.path.join(out_dir, "figures")
+    utils.mkdir(fig_dir)
+    build_and_save_figures(agg_df, fig_dir)
 
-    save_image_sz_fig(df, os.path.join(fig_path, "img_sz.png"))
-    save_n_vulns_fig(df, os.path.join(fig_path, "n_vulns.png"))
-    save_n_vulns_severe_fig(df, os.path.join(fig_path, "n_vulns_severe.png"))
-    save_n_comps_fig(df, os.path.join(fig_path, "n_comps.png"))
-    save_vulns_p_comp_fig(df, os.path.join(fig_path, "n_vulns_p_comp.png"))
+    # Calculate and save stats
+    stats_path = os.path.join(out_dir, "summary.txt")
+    calculate_and_save_stats(agg_df, stats_path)
 
-    save_stats_summary(df, os.path.join(out_dir, "summary.json"))
-    save_scanner_info(os.path.join(out_dir, "info.txt"))
 
 if __name__ == "__main__":
     main()

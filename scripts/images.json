@@ -1,8 +1,8 @@
 {
-    "flavors": [
+    "images": [
         {
         "name": "mariadb",
-        "providers": [
+        "vendors": [
             {
             "name": "chainguard",
             "domain": "cgr.dev",
@@ -33,7 +33,7 @@
         },
         {
         "name": "postgres-official",
-        "providers": [
+        "vendors": [
             {
             "name": "chainguard",
             "domain": "cgr.dev",
@@ -63,7 +63,7 @@
         },
         {
         "name": "redis",
-        "providers": [
+        "vendors": [
             {
             "name": "chainguard",
             "domain": "cgr.dev",
@@ -93,7 +93,7 @@
         },
         {
         "name": "redis-official",
-        "providers": [
+        "vendors": [
             {
             "name": "chainguard",
             "domain": "cgr.dev",
@@ -122,7 +122,7 @@
         },
         {
         "name": "nginx",
-        "providers": [
+        "vendors": [
             {
             "name": "chainguard",
             "domain": "cgr.dev",
@@ -151,7 +151,7 @@
         },
         {
         "name": "nginx-official",
-        "providers": [
+        "vendors": [
             {
             "name": "chainguard",
             "domain": "cgr.dev",
@@ -180,7 +180,7 @@
         },
         {
         "name": "envoy",
-        "providers": [
+        "vendors": [
             {
             "name": "chainguard",
             "domain": "cgr.dev",
@@ -209,7 +209,7 @@
         },
         {
         "name": "envoy-official",
-        "providers": [
+        "vendors": [
             {
             "name": "chainguard",
             "domain": "cgr.dev",
@@ -238,7 +238,7 @@
         },
         {
         "name": "etcd",
-        "providers": [
+        "vendors": [
             {
             "name": "chainguard",
             "domain": "cgr.dev",
@@ -261,7 +261,7 @@
         },
         {
         "name": "fluentd",
-        "providers": [
+        "vendors": [
             {
             "name": "chainguard",
             "domain": "cgr.dev",
@@ -290,7 +290,7 @@
         },
         {
         "name": "fluentd-official",
-        "providers": [
+        "vendors": [
             {
             "name": "chainguard",
             "domain": "cgr.dev",
@@ -319,7 +319,7 @@
         },
         {
         "name": "haproxy",
-        "providers": [
+        "vendors": [
             {
             "name": "chainguard",
             "domain": "cgr.dev",
@@ -348,7 +348,7 @@
         },
         {
         "name": "haproxy-official",
-        "providers": [
+        "vendors": [
             {
             "name": "chainguard",
             "domain": "cgr.dev",
@@ -377,7 +377,7 @@
         },
         {
         "name": "influxdb",
-        "providers": [
+        "vendors": [
             {
             "name": "chainguard",
             "domain": "cgr.dev",
@@ -406,7 +406,7 @@
         },
         {
         "name": "rabbitmq",
-        "providers": [
+        "vendors": [
             {
             "name": "chainguard",
             "domain": "cgr.dev",
@@ -435,7 +435,7 @@
         },
         {
         "name": "zookeper",
-        "providers": [
+        "vendors": [
             {
             "name": "chainguard",
             "domain": "cgr.dev",
@@ -464,7 +464,7 @@
         },
         {
         "name": "zookeper-official",
-        "providers": [
+        "vendors": [
             {
             "name": "chainguard",
             "domain": "cgr.dev",
@@ -493,7 +493,7 @@
         },
         {
         "name": "consul",
-        "providers": [
+        "vendors": [
             {
             "name": "chainguard",
             "domain": "cgr.dev",
@@ -522,7 +522,7 @@
         },
         {
         "name": "nats",
-        "providers": [
+        "vendors": [
             {
             "name": "chainguard",
             "domain": "cgr.dev",
@@ -551,7 +551,7 @@
         },
         {
         "name": "nats-official",
-        "providers": [
+        "vendors": [
             {
             "name": "chainguard",
             "domain": "cgr.dev",
@@ -580,7 +580,7 @@
         },
         {
         "name": "prometheus",
-        "providers": [
+        "vendors": [
             {
             "name": "chainguard",
             "domain": "cgr.dev",
@@ -609,7 +609,7 @@
         },
         {
         "name": "memcached",
-        "providers": [
+        "vendors": [
             {
             "name": "chainguard",
             "domain": "cgr.dev",
@@ -638,7 +638,7 @@
         },
         {
         "name": "memcached-official",
-        "providers": [
+        "vendors": [
             {
             "name": "chainguard",
             "domain": "cgr.dev",
@@ -667,7 +667,7 @@
         },
         {
         "name": "cassandra-official",
-        "providers": [
+        "vendors": [
             {
             "name": "chainguard",
             "domain": "cgr.dev",
@@ -690,7 +690,7 @@
         },
         {
         "name": "curl",
-        "providers": [
+        "vendors": [
             {
             "name": "chainguard",
             "domain": "cgr.dev",
@@ -719,7 +719,7 @@
         },
         {
         "name": "traefik",
-        "providers": [
+        "vendors": [
             {
             "name": "chainguard",
             "domain": "cgr.dev",
@@ -748,7 +748,7 @@
         },
         {
         "name": "vault",
-        "providers": [
+        "vendors": [
             {
             "name": "chainguard",
             "domain": "cgr.dev",
@@ -777,7 +777,7 @@
         },
         {
         "name": "telegraf",
-        "providers": [
+        "vendors": [
             {
             "name": "chainguard",
             "domain": "cgr.dev",
