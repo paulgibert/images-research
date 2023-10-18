@@ -7,7 +7,7 @@ Usage:
     1_scan_images.py -r [report directory]
 
 Example:
-    1_scan_images.py -r data/scans
+    1_scan_images.py -r data/reports
 """
 
 

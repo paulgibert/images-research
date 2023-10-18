@@ -1,3 +1,31 @@
+"""
+Stage 3 script.
+Generates figures and saves summary statistics of the aggregated data set
+from Stage 2.
+
+Figures:
+
+figures/
+    sizes_fig.png
+    vulns_fig.png
+    vulns_severe_fig.png
+    comps_fig.png
+    vulns_p_comp_fig.png
+    vulns_p_comp_severe_fig.png
+
+    All figures are titled and labeled to be self explanatory.
+
+Summary Statistics
+    summary.txt
+
+    The summary statistics are also self explanatory. The p value
+    columns refer to a one-taled paired t test where the alternate
+    hypothesis is the column name.
+
+    For example, the \"Chainguard < RapidFort Pval\" column is the p value
+    for running a test where \"The Chainguard data has a smaller mean
+    than the RapidFort data\" is the alternate hypothesis.
+"""
 import os
 import sys
 from typing import Tuple, List
@@ -28,6 +56,18 @@ class FigureParams:
     filename: str
 
 
+STATS_FILENAME = "summary.txt"
+STATS_HEADERS = [
+        "Figure Title",
+        "Column",
+        "Baseline Mean",
+        "Chainguard Mean",
+        "Chainguard % Reduction",
+        "Chainguard < RapidFort Pval",
+        "RapidFort Mean",
+        "RapidFort % Reduction",
+        "RapidFort < Chainguard Pval"]
+FIGURES_DIR = "figures"
 FIGSIZE = (8,6)
 FIGURES = [
     FigureParams(
@@ -149,16 +189,7 @@ def calculate_and_save_stats(agg_df: pd.DataFrame, out_path: str):
     @param agg_df: A pandas DataFrame containing the aggregate data
     @param out_path: The path to save the summary
     """
-    table = [[
-        "Figure Title",
-        "Column",
-        "Baseline Mean",
-        "Chainguard Mean",
-        "Chainguard % Reduction",
-        "Chainguard < RapidFort Pval",
-        "RapidFort Mean",
-        "RapidFort % Reduction",
-        "RapidFort < Chainguard Pval"]]
+    table = [STATS_HEADERS]
 
     for params in FIGURES:
         data = _get_data(agg_df, params.column)
@@ -216,12 +247,12 @@ def main():
     agg_df = pd.read_csv(ds_path)
 
     # Build and save all figures
-    fig_dir = os.path.join(out_dir, "figures")
+    fig_dir = os.path.join(out_dir, FIGURES_DIR)
     utils.mkdir(fig_dir)
     build_and_save_figures(agg_df, fig_dir)
 
     # Calculate and save stats
-    stats_path = os.path.join(out_dir, "summary.txt")
+    stats_path = os.path.join(out_dir, STATS_FILENAME)
     calculate_and_save_stats(agg_df, stats_path)
 
 

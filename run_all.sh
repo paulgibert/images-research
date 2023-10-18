@@ -12,4 +12,4 @@ python scripts/2_build_datasets.py -r data/reports -o data/data-sets
 
 # Stage 3 - Generate figures and summary statistics from data sets
 mkdir data/analysis
-python scripts/3_analyze.py -d data/datasets/agg.csv -o data/analysis
+python scripts/3_analyze.py -d data/data-sets/agg.csv -o data/analysis
