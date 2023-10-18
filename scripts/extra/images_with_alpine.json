@@ -7,18 +7,26 @@
             "name": "chainguard",
             "domain": "cgr.dev",
             "path": "chainguard/mariadb",
-            "tag": "latest"
+            "tag": "latest",
+            "pulls": "?"
             },
             {
             "name": "rapidfort",
             "domain": "docker.io",
             "path": "rapidfort/mariadb",
-            "tag": "latest"
+            "tag": "latest",
+            "pulls": "100K+"
             },
             {
             "name": "original",
             "domain": "docker.io",
             "path": "mariadb",
+            "tag": "latest"
+            },
+            {
+            "name": "alpine",
+            "domain": "docker.io",
+            "path": "yobasystems/alpine-mariadb",
             "tag": "latest"
             }
         ]
@@ -36,13 +44,20 @@
             "name": "rapidfort",
             "domain": "docker.io",
             "path": "rapidfort/postgresql-official",
-            "tag": "latest"
+            "tag": "latest",
+            "downloads": "100k+"
             },
             {
             "name": "original",
             "domain": "docker.io",
             "path": "postgres",
             "tag": "latest"
+            },
+            {
+            "name": "alpine",
+            "domain": "docker.io",
+            "path": "postgres",
+            "tag": "alpine"
             }
         ]
         },
@@ -59,13 +74,20 @@
             "name": "rapidfort",
             "domain": "docker.io",
             "path": "rapidfort/redis",
-            "tag": "latest"
+            "tag": "latest",
+            "pulls": "100K+"
             },
             {
             "name": "original",
             "domain": "docker.io",
             "path": "bitnami/redis",
             "tag": "latest"
+            },
+            {
+            "name": "alpine",
+            "domain": "docker.io",
+            "path": "redis",
+            "tag": "alpine"
             }
         ]
         },
@@ -89,6 +111,12 @@
             "domain": "docker.io",
             "path": "redis",
             "tag": "latest"
+            },
+            {
+            "name": "alpine",
+            "domain": "docker.io",
+            "path": "redis",
+            "tag": "alpine"
             }
         ]
         },
@@ -112,6 +140,12 @@
             "domain": "docker.io",
             "path": "bitnami/nginx",
             "tag": "latest"
+            },
+            {
+            "name": "alpine",
+            "domain": "docker.io",
+            "path": "nginx",
+            "tag": "alpine"
             }
         ]
         },
@@ -135,6 +169,12 @@
             "domain": "docker.io",
             "path": "nginx",
             "tag": "latest"
+            },
+            {
+            "name": "alpine",
+            "domain": "docker.io",
+            "path": "nginx",
+            "tag": "alpine"
             }
         ]
         },
@@ -158,6 +198,12 @@
             "domain": "docker.io",
             "path": "bitnami/envoy",
             "tag": "latest"
+            },
+            {
+            "name": "alpine",
+            "domain": "docker.io",
+            "path": "envoyproxy/envoy-alpine",
+            "tag": "v1.21-latest"
             }
         ]
         },
@@ -181,6 +227,12 @@
             "domain": "docker.io",
             "path": "envoyproxy/envoy",
             "tag": "v1.27-latest"
+            },
+            {
+            "name": "alpine",
+            "domain": "docker.io",
+            "path": "envoyproxy/envoy-alpine",
+            "tag": "v1.21-latest"
             }
         ]
         },
@@ -227,6 +279,12 @@
             "domain": "docker.io",
             "path": "bitnami/fluentd",
             "tag": "latest"
+            },
+            {
+            "name": "alpine",
+            "domain": "docker.io",
+            "path": "fluent/fluentd",
+            "tag": "edge"
             }
         ]
         },
@@ -250,6 +308,12 @@
             "domain": "docker.io",
             "path": "fluentd",
             "tag": "latest"
+            },
+            {
+            "name": "alpine",
+            "domain": "docker.io",
+            "path": "fluent/fluentd",
+            "tag": "edge"
             }
         ]
         },
@@ -273,6 +337,12 @@
             "domain": "docker.io",
             "path": "bitnami/haproxy",
             "tag": "latest"
+            },
+            {
+            "name": "alpine",
+            "domain": "docker.io",
+            "path": "haproxy",
+            "tag": "alpine"
             }
         ]
         },
@@ -296,6 +366,12 @@
             "domain": "docker.io",
             "path": "haproxy",
             "tag": "latest"
+            },
+            {
+            "name": "alpine",
+            "domain": "docker.io",
+            "path": "haproxy",
+            "tag": "alpine"
             }
         ]
         },
@@ -319,6 +395,12 @@
             "domain": "docker.io",
             "path": "bitnami/influxdb",
             "tag": "latest"
+            },
+            {
+            "name": "alpine",
+            "domain": "docker.io",
+            "path": "influxdb",
+            "tag": "alpine"
             }
         ]
         },
@@ -342,6 +424,12 @@
             "domain": "docker.io",
             "path": "bitnami/rabbitmq",
             "tag": "latest"
+            },
+            {
+            "name": "alpine",
+            "domain": "docker.io",
+            "path": "rabbitmq",
+            "tag": "alpine"
             }
         ]
         },
@@ -364,6 +452,12 @@
             "name": "original",
             "domain": "docker.io",
             "path": "bitnami/zookeeper",
+            "tag": "latest"
+            },
+            {
+            "name": "alpine",
+            "domain": "docker.io",
+            "path": "smizy/zookeeper",
             "tag": "latest"
             }
         ]
@@ -388,6 +482,12 @@
             "domain": "docker.io",
             "path": "zookeeper",
             "tag": "latest"
+            },
+            {
+            "name": "alpine",
+            "domain": "docker.io",
+            "path": "smizy/zookeeper",
+            "tag": "latest"
             }
         ]
         },
@@ -411,6 +511,12 @@
             "domain": "docker.io",
             "path": "bitnami/consul",
             "tag": "latest"
+            },
+            {
+            "name": "alpine",
+            "domain": "docker.io",
+            "path": "consul",
+            "tag": "1.15.4"
             }
         ]
         },
@@ -434,6 +540,12 @@
             "domain": "docker.io",
             "path": "bitnami/nats",
             "tag": "latest"
+            },
+            {
+            "name": "alpine",
+            "domain": "docker.io",
+            "path": "nats",
+            "tag": "alpine"
             }
         ]
         },
@@ -457,6 +569,12 @@
             "domain": "docker.io",
             "path": "nats",
             "tag": "latest"
+            },
+            {
+            "name": "alpine",
+            "domain": "docker.io",
+            "path": "nats",
+            "tag": "alpine"
             }
         ]
         },
@@ -479,6 +597,12 @@
             "name": "original",
             "domain": "docker.io",
             "path": "bitnami/prometheus",
+            "tag": "latest"
+            },
+            {
+            "name": "alpine",
+            "domain": "docker.io",
+            "path": "secureimages/prometheus",
             "tag": "latest"
             }
         ]
@@ -503,6 +627,12 @@
             "domain": "docker.io",
             "path": "bitnami/memcached",
             "tag": "latest"
+            },
+            {
+            "name": "alpine",
+            "domain": "docker.io",
+            "path": "memcached",
+            "tag": "alpine"
             }
         ]
         },
@@ -526,6 +656,12 @@
             "domain": "docker.io",
             "path": "memcached",
             "tag": "latest"
+            },
+            {
+            "name": "alpine",
+            "domain": "docker.io",
+            "path": "memcached",
+            "tag": "alpine"
             }
         ]
         },
@@ -572,6 +708,12 @@
             "domain": "docker.io",
             "path": "curlimages/curl",
             "tag": "latest"
+            },
+            {
+            "name": "alpine",
+            "domain": "docker.io",
+            "path": "alpine/curl",
+            "tag": "latest"
             }
         ]
         },
@@ -595,6 +737,12 @@
             "domain": "docker.io",
             "path": "traefik",
             "tag": "latest"
+            },
+            {
+            "name": "alpine",
+            "domain": "docker.io",
+            "path": "traefik",
+            "tag": "alpine"
             }
         ]
         },
@@ -618,6 +766,12 @@
             "domain": "docker.io",
             "path": "hashicorp/vault",
             "tag": "latest"
+            },
+            {
+            "name": "alpine",
+            "domain": "docker.io",
+            "path": "vault",
+            "tag": "1.13.3"
             }
         ]
         },
@@ -641,6 +795,12 @@
             "domain": "docker.io",
             "path": "bitnami/telegraf",
             "tag": "latest"
+            },
+            {
+            "name": "alpine",
+            "domain": "docker.io",
+            "path": "telegraf",
+            "tag": "alpine"
             }
         ]
         }

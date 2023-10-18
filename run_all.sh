@@ -1,11 +1,15 @@
 #!/bin/bash
 
+# Stage 1 - Perform Grype and Syft scans
+rm -rf data
 mkdir data
-mkdir data/scans
-python scripts/1_scan_images.py -r data/scans
+mkdir data/reports
+python scripts/1_scan_images.py -r data/reports
 
-mkdir data/datasets
-python scripts/2_build_datasets.py -r data/scans -o data/datasets
+# Stage 2 - Build data sets from scan reports
+mkdir data/data-sets
+python scripts/2_build_datasets.py -r data/reports -o data/data-sets
 
+# Stage 3 - Generate figures and summary statistics from data sets
 mkdir data/analysis
 python scripts/3_analyze.py -d data/datasets/agg.csv -o data/analysis

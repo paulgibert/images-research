@@ -21,6 +21,7 @@ class ReportParser:
     def __init__(self, report_path: str):
         """
         @param report_path: The path of the report to parse
+        @raises ReportParserError if report cannot be decoded by json
         """
         self.report_path = report_path
         self.report_file_name = report_path.split("/")[-1]

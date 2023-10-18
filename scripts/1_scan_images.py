@@ -52,6 +52,16 @@ def get_image_fullname(domain: str, path: str,
     return f"{domain}/{path}:{tag}"
 
 
+def _rm_image(image_fullname: str):
+    """
+    Removes an image locally
+
+    @param image_fullname: The full name of an image. Ex. cgr.dev/chianguard/nginx:latest
+    """
+    cmd = f"docker image rm {image_fullname}"
+    utils.bash(cmd)
+
+
 def process_image(vendor: str, image_type: str,
                   image_fullname: str, scanners: List=None):
     """
@@ -74,6 +84,7 @@ def process_image(vendor: str, image_type: str,
         sc.scan_and_save(vendor=vendor,
                          image_type=image_type,
                          image_fullname=image_fullname)
+        _rm_image(image_fullname)
 
 
 def parse_args() -> str:
