@@ -1,0 +1,363 @@
+{
+ "matches": [
+  {
+   "vulnerability": {
+    "id": "CVE-2008-1145",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2008-1145",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "http://lists.apple.com/archives/security-announce/2008//Jun/msg00002.html",
+     "http://lists.opensuse.org/opensuse-security-announce/2008-08/msg00006.html",
+     "http://support.apple.com/kb/HT2163",
+     "http://wiki.rpath.com/Advisories:rPSA-2008-0123",
+     "http://wiki.rpath.com/wiki/Advisories:rPSA-2008-0123",
+     "http://www.kb.cert.org/vuls/id/404515",
+     "http://www.mandriva.com/security/advisories?name=MDVSA-2008:141",
+     "http://www.mandriva.com/security/advisories?name=MDVSA-2008:142",
+     "http://www.redhat.com/support/errata/RHSA-2008-0897.html",
+     "http://www.ruby-lang.org/en/news/2008/03/03/webrick-file-access-vulnerability/",
+     "http://www.securityfocus.com/archive/1/489205/100/0/threaded",
+     "http://www.securityfocus.com/archive/1/489218/100/0/threaded",
+     "http://www.securityfocus.com/archive/1/490056/100/0/threaded",
+     "http://www.securityfocus.com/bid/28123",
+     "http://www.securitytracker.com/id?1019562",
+     "http://www.vupen.com/english/advisories/2008/0787",
+     "http://www.vupen.com/english/advisories/2008/1981/references",
+     "https://exchange.xforce.ibmcloud.com/vulnerabilities/41010",
+     "https://issues.rpath.com/browse/RPL-2338",
+     "https://oval.cisecurity.org/repository/search/definition/oval%3Aorg.mitre.oval%3Adef%3A10937",
+     "https://www.exploit-db.com/exploits/5215",
+     "https://www.redhat.com/archives/fedora-package-announce/2008-March/msg00338.html",
+     "https://www.redhat.com/archives/fedora-package-announce/2008-March/msg00354.html"
+    ],
+    "description": "Directory traversal vulnerability in WEBrick in Ruby 1.8 before 1.8.5-p115 and 1.8.6-p114, and 1.9 through 1.9.0-1, when running on systems that support backslash (\\) path separators or case-insensitive file names, allows remote attackers to access arbitrary files via (1) \"..%5c\" (encoded backslash) sequences or (2) filenames that match patterns in the :NondisclosureName option.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "2.0",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+      "metrics": {
+       "baseScore": 5,
+       "exploitabilityScore": 10,
+       "impactScore": 2.9
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:ruby-lang:webrick:1.7.0-r1:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "ruby-webrick",
+       "version": "1.7.0-r1"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2008-1145",
+      "versionConstraint": "none (unknown)",
+      "cpes": [
+       "cpe:2.3:a:ruby-lang:webrick:-:*:*:*:*:ruby:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "6b1229bbc09784f6",
+    "name": "ruby-webrick",
+    "version": "1.7.0-r1",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:19433a33d632c353bba17a23820308404a6ca39524ecf9fad2a2b68ee053f833"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "BSD-2-Clause"
+    ],
+    "cpes": [
+     "cpe:2.3:a:ruby-webrick:ruby-webrick:1.7.0-r1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ruby-webrick:ruby_webrick:1.7.0-r1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ruby_webrick:ruby-webrick:1.7.0-r1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ruby_webrick:ruby_webrick:1.7.0-r1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ruby-lang:ruby-webrick:1.7.0-r1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ruby-lang:ruby_webrick:1.7.0-r1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ruby_lang:ruby-webrick:1.7.0-r1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ruby_lang:ruby_webrick:1.7.0-r1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ruby-webrick:webrick:1.7.0-r1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ruby_webrick:webrick:1.7.0-r1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:webrick:ruby-webrick:1.7.0-r1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:webrick:ruby_webrick:1.7.0-r1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ruby-lang:webrick:1.7.0-r1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ruby:ruby-webrick:1.7.0-r1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ruby:ruby_webrick:1.7.0-r1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ruby_lang:webrick:1.7.0-r1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:webrick:webrick:1.7.0-r1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ruby:webrick:1.7.0-r1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/ruby-webrick@1.7.0-r1?arch=x86_64&distro=alpine-3.17.5",
+    "upstreams": [
+     {
+      "name": "ruby-webrick"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-hww2-5g85-429m",
+    "dataSource": "https://github.com/advisories/GHSA-hww2-5g85-429m",
+    "namespace": "github:language:ruby",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-hww2-5g85-429m"
+    ],
+    "description": "URI gem has ReDoS vulnerability",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+      "metrics": {
+       "baseScore": 5.3,
+       "exploitabilityScore": 3.9,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "0.12.2"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-36617",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-36617",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://security.netapp.com/advisory/ntap-20230725-0002/",
+      "https://www.ruby-lang.org/en/news/2023/06/29/redos-in-uri-CVE-2023-36617/"
+     ],
+     "description": "A ReDoS issue was discovered in the URI component before 0.12.2 for Ruby. The URI parser mishandles invalid URLs that have specific characters. There is an increase in execution time for parsing strings to URI objects with rfc2396_parser.rb and rfc3986_parser.rb. NOTE: this issue exists becuse of an incomplete fix for CVE-2023-28755. Version 0.10.3 is also a fixed version.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+       "metrics": {
+        "baseScore": 5.3,
+        "exploitabilityScore": 3.9,
+        "impactScore": 1.4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "ruby-gem-matcher",
+     "searchedBy": {
+      "language": "ruby",
+      "namespace": "github:language:ruby",
+      "package": {
+       "name": "uri",
+       "version": "0.12.1"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=0.11.0,<0.12.2 (unknown)",
+      "vulnerabilityID": "GHSA-hww2-5g85-429m"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "11053801697dc7d9",
+    "name": "uri",
+    "version": "0.12.1",
+    "type": "gem",
+    "locations": [
+     {
+      "path": "/usr/lib/ruby/gems/3.1.0/specifications/default/uri-0.12.1.gemspec",
+      "layerID": "sha256:19433a33d632c353bba17a23820308404a6ca39524ecf9fad2a2b68ee053f833"
+     }
+    ],
+    "language": "ruby",
+    "licenses": [
+     "BSD-2-Clause",
+     "Ruby"
+    ],
+    "cpes": [
+     "cpe:2.3:a:ruby-lang:uri:0.12.1:*:*:*:*:ruby:*:*"
+    ],
+    "purl": "pkg:gem/uri@0.12.1",
+    "upstreams": []
+   }
+  }
+ ],
+ "source": {
+  "type": "image",
+  "target": {
+   "userInput": "docker.io/fluentd:latest",
+   "imageID": "sha256:0c6e2964bb824f2aacb86d0ca3170997802f000be1eff97299b1188ec8611aa4",
+   "manifestDigest": "sha256:dc11fede6fb2542bc259b9aaa3f8bcbfb9c44efaf9c78051ca6cdf8ce83066dd",
+   "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+   "tags": [
+    "fluentd:latest"
+   ],
+   "imageSize": 58907968,
+   "layers": [
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:36b50b131297b8860da51b2d2b24bb4c08dfbdf2789b08e3cc0f187c98637a19",
+     "size": 7053405
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:19433a33d632c353bba17a23820308404a6ca39524ecf9fad2a2b68ee053f833",
+     "size": 51848554
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:b4830aa821461248818bc8e806beb1b637f908d315774ae297d92fc99a317393",
+     "size": 4702
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:cbe3fae863436abbbdcd1476a8966b3d2b4fe770de54a4e072aad2833e7bc72f",
+     "size": 676
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:849e0110256ae7b93d94bbbbac4366b55547dc0f84b195aa521c022b69d263d4",
+     "size": 631
+    }
+   ],
+   "manifest": "eyJzY2hlbWFWZXJzaW9uIjoyLCJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmRpc3RyaWJ1dGlvbi5tYW5pZmVzdC52Mitqc29uIiwiY29uZmlnIjp7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuY29udGFpbmVyLmltYWdlLnYxK2pzb24iLCJzaXplIjo0OTA3LCJkaWdlc3QiOiJzaGEyNTY6MGM2ZTI5NjRiYjgyNGYyYWFjYjg2ZDBjYTMxNzA5OTc4MDJmMDAwYmUxZWZmOTcyOTliMTE4OGVjODYxMWFhNCJ9LCJsYXllcnMiOlt7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjo3MzQ2MTc2LCJkaWdlc3QiOiJzaGEyNTY6MzZiNTBiMTMxMjk3Yjg4NjBkYTUxYjJkMmIyNGJiNGMwOGRmYmRmMjc4OWIwOGUzY2MwZjE4N2M5ODYzN2ExOSJ9LHsibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vdm5kLmRvY2tlci5pbWFnZS5yb290ZnMuZGlmZi50YXIuZ3ppcCIsInNpemUiOjU1MTk2MTYwLCJkaWdlc3QiOiJzaGEyNTY6MTk0MzNhMzNkNjMyYzM1M2JiYTE3YTIzODIwMzA4NDA0YTZjYTM5NTI0ZWNmOWZhZDJhMmI2OGVlMDUzZjgzMyJ9LHsibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vdm5kLmRvY2tlci5pbWFnZS5yb290ZnMuZGlmZi50YXIuZ3ppcCIsInNpemUiOjE0ODQ4LCJkaWdlc3QiOiJzaGEyNTY6YjQ4MzBhYTgyMTQ2MTI0ODgxOGJjOGU4MDZiZWIxYjYzN2Y5MDhkMzE1Nzc0YWUyOTdkOTJmYzk5YTMxNzM5MyJ9LHsibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vdm5kLmRvY2tlci5pbWFnZS5yb290ZnMuZGlmZi50YXIuZ3ppcCIsInNpemUiOjM1ODQsImRpZ2VzdCI6InNoYTI1NjpjYmUzZmFlODYzNDM2YWJiYmRjZDE0NzZhODk2NmIzZDJiNGZlNzcwZGU1NGE0ZTA3MmFhZDI4MzNlN2JjNzJmIn0seyJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmltYWdlLnJvb3Rmcy5kaWZmLnRhci5nemlwIiwic2l6ZSI6MzA3MiwiZGlnZXN0Ijoic2hhMjU2Ojg0OWUwMTEwMjU2YWU3YjkzZDk0YmJiYmFjNDM2NmI1NTU0N2RjMGY4NGIxOTVhYTUyMWMwMjJiNjlkMjYzZDQifV19",
+   "config": "eyJhcmNoaXRlY3R1cmUiOiJhbWQ2NCIsImNvbmZpZyI6eyJIb3N0bmFtZSI6IiIsIkRvbWFpbm5hbWUiOiIiLCJVc2VyIjoiZmx1ZW50IiwiQXR0YWNoU3RkaW4iOmZhbHNlLCJBdHRhY2hTdGRvdXQiOmZhbHNlLCJBdHRhY2hTdGRlcnIiOmZhbHNlLCJFeHBvc2VkUG9ydHMiOnsiMjQyMjQvdGNwIjp7fSwiNTE0MC90Y3AiOnt9fSwiVHR5IjpmYWxzZSwiT3BlblN0ZGluIjpmYWxzZSwiU3RkaW5PbmNlIjpmYWxzZSwiRW52IjpbIlBBVEg9L3Vzci9sb2NhbC9zYmluOi91c3IvbG9jYWwvYmluOi91c3Ivc2JpbjovdXNyL2Jpbjovc2JpbjovYmluIiwiRkxVRU5URF9DT05GPWZsdWVudC5jb25mIiwiTERfUFJFTE9BRD0iXSwiQ21kIjpbImZsdWVudGQiXSwiSW1hZ2UiOiJzaGEyNTY6M2ZhYzY4YjQ2MmM4NzBmZDE1NWFmMWIzNTAzMjMxNjJlYzgwOTdmYTY2MjY1NGMzODVmYWFiNDBjODE1NWJmYiIsIlZvbHVtZXMiOm51bGwsIldvcmtpbmdEaXIiOiIiLCJFbnRyeXBvaW50IjpbInRpbmkiLCItLSIsIi9iaW4vZW50cnlwb2ludC5zaCJdLCJPbkJ1aWxkIjpudWxsLCJMYWJlbHMiOnsiRGVzY3JpcHRpb24iOiJGbHVlbnRkIGRvY2tlciBpbWFnZSIsIlZlbmRvciI6IkZsdWVudCBPcmdhbml6YXRpb24iLCJWZXJzaW9uIjoiMS4xNi4yIiwibWFpbnRhaW5lciI6IkZsdWVudGQgZGV2ZWxvcGVycyBcdTAwM2NmbHVlbnRkQGdvb2dsZWdyb3Vwcy5jb21cdTAwM2UifX0sImNvbnRhaW5lciI6IjY5ODJkODYyMjQ0OTVlZTc3NjA3ZGU4OTZlYmYwZDE0OWJkYWVmMmNkM2U0MDUwYjBkNjdkOTUyMTUxZjMzODYiLCJjb250YWluZXJfY29uZmlnIjp7Ikhvc3RuYW1lIjoiNjk4MmQ4NjIyNDQ5IiwiRG9tYWlubmFtZSI6IiIsIlVzZXIiOiJmbHVlbnQiLCJBdHRhY2hTdGRpbiI6ZmFsc2UsIkF0dGFjaFN0ZG91dCI6ZmFsc2UsIkF0dGFjaFN0ZGVyciI6ZmFsc2UsIkV4cG9zZWRQb3J0cyI6eyIyNDIyNC90Y3AiOnt9LCI1MTQwL3RjcCI6e319LCJUdHkiOmZhbHNlLCJPcGVuU3RkaW4iOmZhbHNlLCJTdGRpbk9uY2UiOmZhbHNlLCJFbnYiOlsiUEFUSD0vdXNyL2xvY2FsL3NiaW46L3Vzci9sb2NhbC9iaW46L3Vzci9zYmluOi91c3IvYmluOi9zYmluOi9iaW4iLCJGTFVFTlREX0NPTkY9Zmx1ZW50LmNvbmYiLCJMRF9QUkVMT0FEPSJdLCJDbWQiOlsiL2Jpbi9zaCIsIi1jIiwiIyhub3ApICIsIkNNRCBbXCJmbHVlbnRkXCJdIl0sIkltYWdlIjoic2hhMjU2OjNmYWM2OGI0NjJjODcwZmQxNTVhZjFiMzUwMzIzMTYyZWM4MDk3ZmE2NjI2NTRjMzg1ZmFhYjQwYzgxNTViZmIiLCJWb2x1bWVzIjpudWxsLCJXb3JraW5nRGlyIjoiIiwiRW50cnlwb2ludCI6WyJ0aW5pIiwiLS0iLCIvYmluL2VudHJ5cG9pbnQuc2giXSwiT25CdWlsZCI6bnVsbCwiTGFiZWxzIjp7IkRlc2NyaXB0aW9uIjoiRmx1ZW50ZCBkb2NrZXIgaW1hZ2UiLCJWZW5kb3IiOiJGbHVlbnQgT3JnYW5pemF0aW9uIiwiVmVyc2lvbiI6IjEuMTYuMiIsIm1haW50YWluZXIiOiJGbHVlbnRkIGRldmVsb3BlcnMgXHUwMDNjZmx1ZW50ZEBnb29nbGVncm91cHMuY29tXHUwMDNlIn19LCJjcmVhdGVkIjoiMjAyMy0xMC0wNFQyMToyMDoyOC4xNzQ3MzY1MTRaIiwiZG9ja2VyX3ZlcnNpb24iOiIyMC4xMC4yMyIsImhpc3RvcnkiOlt7ImNyZWF0ZWQiOiIyMDIzLTA4LTA3VDE5OjIwOjI2LjMyNjcwNzg0M1oiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgQUREIGZpbGU6NmRkODczNDZiOGJlMjQwYjIxYjRmNGQ5Mjk2MjUzYmYwZDI4YjY1NzlhYTUyZDIxMTg4NzJlMzkzNjk2M2I2YiBpbiAvICJ9LHsiY3JlYXRlZCI6IjIwMjMtMDgtMDdUMTk6MjA6MjYuNDI2ODU3OTYxWiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSAgQ01EIFtcIi9iaW4vc2hcIl0iLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyMy0wOC0wOVQxMDowODozMS4zMzI1ODk5NjlaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApICBMQUJFTCBtYWludGFpbmVyPUZsdWVudGQgZGV2ZWxvcGVycyBcdTAwM2NmbHVlbnRkQGdvb2dsZWdyb3Vwcy5jb21cdTAwM2UiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyMy0xMC0wNFQyMToxOTozMi4wODcyNDYzMzFaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApICBMQUJFTCBEZXNjcmlwdGlvbj1GbHVlbnRkIGRvY2tlciBpbWFnZSBWZW5kb3I9Rmx1ZW50IE9yZ2FuaXphdGlvbiBWZXJzaW9uPTEuMTYuMiIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDIzLTEwLTA0VDIxOjIwOjI2Ljc2NDA2MDM0OVoiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyBhcGsgdXBkYXRlICBcdTAwMjZcdTAwMjYgYXBrIGFkZCAtLW5vLWNhY2hlICAgICAgICAgY2EtY2VydGlmaWNhdGVzICAgICAgICAgcnVieSBydWJ5LWlyYiBydWJ5LWV0YyBydWJ5LXdlYnJpY2sgICAgICAgICB0aW5pICBcdTAwMjZcdTAwMjYgYXBrIGFkZCAtLW5vLWNhY2hlIC0tdmlydHVhbCAuYnVpbGQtZGVwcyAgICAgICAgIGJ1aWxkLWJhc2UgbGludXgtaGVhZGVycyAgICAgICAgIHJ1YnktZGV2IGdudXBnICBcdTAwMjZcdTAwMjYgZWNobyAnZ2VtOiAtLW5vLWRvY3VtZW50JyBcdTAwM2VcdTAwM2UgL2V0Yy9nZW1yYyAgXHUwMDI2XHUwMDI2IGdlbSBpbnN0YWxsIG9qIC12IDMuMTYuMSAgXHUwMDI2XHUwMDI2IGdlbSBpbnN0YWxsIGpzb24gLXYgMi42LjMgIFx1MDAyNlx1MDAyNiBnZW0gaW5zdGFsbCByZXhtbCAtdiAzLjIuNiAgXHUwMDI2XHUwMDI2IGdlbSBpbnN0YWxsIGFzeW5jIC12IDEuMzEuMCAgXHUwMDI2XHUwMDI2IGdlbSBpbnN0YWxsIGFzeW5jLWh0dHAgLXYgMC42MC4yIFx1MDAyNlx1MDAyNiBnZW0gaW5zdGFsbCB1cmkgLXYgMC4xMi4yICBcdTAwMjZcdTAwMjYgZ2VtIGluc3RhbGwgZmx1ZW50ZCAtdiAxLjE2LjIgIFx1MDAyNlx1MDAyNiBnZW0gaW5zdGFsbCBiaWdkZWNpbWFsIC12IDEuNC40ICBcdTAwMjZcdTAwMjYgYXBrIGRlbCAuYnVpbGQtZGVwcyAgXHUwMDI2XHUwMDI2IHJtIC1yZiAvdG1wLyogL3Zhci90bXAvKiAvdXNyL2xpYi9ydWJ5L2dlbXMvKi9jYWNoZS8qLmdlbSAvdXNyL2xpYi9ydWJ5L2dlbXMvMy4qL2dlbXMvZmx1ZW50ZC0qL3Rlc3QifSx7ImNyZWF0ZWQiOiIyMDIzLTEwLTA0VDIxOjIwOjI3LjQ4ODIzNDE3NFoiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyBhZGRncm91cCAtUyBmbHVlbnQgXHUwMDI2XHUwMDI2IGFkZHVzZXIgLVMgLUcgZmx1ZW50IGZsdWVudCAgICAgXHUwMDI2XHUwMDI2IG1rZGlyIC1wIC9mbHVlbnRkL2xvZyAgICAgXHUwMDI2XHUwMDI2IG1rZGlyIC1wIC9mbHVlbnRkL2V0YyAvZmx1ZW50ZC9wbHVnaW5zICAgICBcdTAwMjZcdTAwMjYgY2hvd24gLVIgZmx1ZW50IC9mbHVlbnRkIFx1MDAyNlx1MDAyNiBjaGdycCAtUiBmbHVlbnQgL2ZsdWVudGQifSx7ImNyZWF0ZWQiOiIyMDIzLTEwLTA0VDIxOjIwOjI3LjU4NDM4MjIwOFoiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgQ09QWSBmaWxlOjA2ZDlhODRiOWI0MjhiNGUwZWY1YTllMzY5OTc5ODc1OGRjOTcxNjkwOGQ4MjA5MTIzOWZiOWY4NWRkMzBkNzAgaW4gL2ZsdWVudGQvZXRjLyAifSx7ImNyZWF0ZWQiOiIyMDIzLTEwLTA0VDIxOjIwOjI3LjY3MzY5Mzg3MVoiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgQ09QWSBmaWxlOjk3NzY3MGQ5ZDI5OGQ2MDIwOGRiNmU1MTEwYTU5MTliZmRlMTllZTdkYTljMTlkZjY5MzE2M2VjZDA3Y2FlYTYgaW4gL2Jpbi8gIn0seyJjcmVhdGVkIjoiMjAyMy0xMC0wNFQyMToyMDoyNy43NTExNDA5ODJaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApICBFTlYgRkxVRU5URF9DT05GPWZsdWVudC5jb25mIiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjMtMTAtMDRUMjE6MjA6MjcuODM3Mjc2ODU0WiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSAgRU5WIExEX1BSRUxPQUQ9IiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjMtMTAtMDRUMjE6MjA6MjcuOTE5NjM0MTk0WiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSAgRVhQT1NFIDI0MjI0IDUxNDAiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyMy0xMC0wNFQyMToyMDoyOC4wMDU4NTc1MTFaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApICBVU0VSIGZsdWVudCIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDIzLTEwLTA0VDIxOjIwOjI4LjA4OTA2MjA1NVoiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgIEVOVFJZUE9JTlQgW1widGluaVwiIFwiLS1cIiBcIi9iaW4vZW50cnlwb2ludC5zaFwiXSIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDIzLTEwLTA0VDIxOjIwOjI4LjE3NDczNjUxNFoiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgIENNRCBbXCJmbHVlbnRkXCJdIiwiZW1wdHlfbGF5ZXIiOnRydWV9XSwib3MiOiJsaW51eCIsInJvb3RmcyI6eyJ0eXBlIjoibGF5ZXJzIiwiZGlmZl9pZHMiOlsic2hhMjU2OjM2YjUwYjEzMTI5N2I4ODYwZGE1MWIyZDJiMjRiYjRjMDhkZmJkZjI3ODliMDhlM2NjMGYxODdjOTg2MzdhMTkiLCJzaGEyNTY6MTk0MzNhMzNkNjMyYzM1M2JiYTE3YTIzODIwMzA4NDA0YTZjYTM5NTI0ZWNmOWZhZDJhMmI2OGVlMDUzZjgzMyIsInNoYTI1NjpiNDgzMGFhODIxNDYxMjQ4ODE4YmM4ZTgwNmJlYjFiNjM3ZjkwOGQzMTU3NzRhZTI5N2Q5MmZjOTlhMzE3MzkzIiwic2hhMjU2OmNiZTNmYWU4NjM0MzZhYmJiZGNkMTQ3NmE4OTY2YjNkMmI0ZmU3NzBkZTU0YTRlMDcyYWFkMjgzM2U3YmM3MmYiLCJzaGEyNTY6ODQ5ZTAxMTAyNTZhZTdiOTNkOTRiYmJiYWM0MzY2YjU1NTQ3ZGMwZjg0YjE5NWFhNTIxYzAyMmI2OWQyNjNkNCJdfX0=",
+   "repoDigests": [
+    "fluentd@sha256:0e1090ed3901b0f4a5a4faabb10f91c4fa680da2e2a6503c23832ade8212bfc5"
+   ],
+   "architecture": "amd64",
+   "os": "linux"
+  }
+ },
+ "distro": {
+  "name": "alpine",
+  "version": "3.17.5",
+  "idLike": []
+ },
+ "descriptor": {
+  "name": "grype",
+  "version": "0.71.0",
+  "configuration": {
+   "output": [
+    "json"
+   ],
+   "file": "",
+   "distro": "",
+   "add-cpes-if-none": false,
+   "output-template-file": "",
+   "check-for-app-update": true,
+   "only-fixed": false,
+   "only-notfixed": false,
+   "platform": "",
+   "search": {
+    "scope": "Squashed",
+    "unindexed-archives": false,
+    "indexed-archives": true
+   },
+   "ignore": null,
+   "exclude": [],
+   "db": {
+    "cache-dir": "/home/anon/.cache/grype/db",
+    "update-url": "https://toolbox-data.anchore.io/grype/databases/listing.json",
+    "ca-cert": "",
+    "auto-update": true,
+    "validate-by-hash-on-start": false,
+    "validate-age": true,
+    "max-allowed-built-age": 432000000000000
+   },
+   "externalSources": {
+    "enable": false,
+    "maven": {
+     "searchUpstreamBySha1": true,
+     "baseUrl": "https://search.maven.org/solrsearch/select"
+    }
+   },
+   "match": {
+    "java": {
+     "using-cpes": false
+    },
+    "dotnet": {
+     "using-cpes": false
+    },
+    "golang": {
+     "using-cpes": false
+    },
+    "javascript": {
+     "using-cpes": false
+    },
+    "python": {
+     "using-cpes": false
+    },
+    "ruby": {
+     "using-cpes": false
+    },
+    "rust": {
+     "using-cpes": false
+    },
+    "stock": {
+     "using-cpes": true
+    }
+   },
+   "fail-on-severity": "",
+   "registry": {
+    "insecure-skip-tls-verify": false,
+    "insecure-use-http": false,
+    "auth": null,
+    "ca-cert": ""
+   },
+   "show-suppressed": false,
+   "by-cve": false,
+   "name": "",
+   "default-image-pull-source": "",
+   "vex-documents": [],
+   "vex-add": []
+  },
+  "db": {
+   "built": "2023-10-18T01:27:01Z",
+   "schemaVersion": 5,
+   "location": "/home/anon/.cache/grype/db/5",
+   "checksum": "sha256:3d645110a85196185e04ca12f42bb7ca46c6946833db616c7db1c751f261ab04",
+   "error": null
+  },
+  "timestamp": "2023-10-18T17:40:47.625135461-04:00"
+ }
+}

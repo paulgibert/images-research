@@ -126,7 +126,7 @@ def build_agg_ds(sizes_df: pd.DataFrame, vulns_df: pd.DataFrame,
     comps_df = comps_df.drop("type", axis=1) \
                        .groupby(keys) \
                        .count() \
-                       .rename(columns={"component_name": "n_components"}) \
+                       .rename(columns={"name": "n_components"}) \
                        .reset_index()
 
     # Aggregate into one DataFrame
@@ -174,6 +174,8 @@ def main():
     Parses scan reports from Grpye and Syft, builds data sets,
     and saves the results to csv files.
     """
+    print("STAGE 2: Building data sets")
+    
     reports_dir, out_dir = parse_args()
 
     grype_reports_path = os.path.join(reports_dir, "grype")

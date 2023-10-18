@@ -59,7 +59,7 @@ class MetricData:
         self.image_types = image_types
 
 
-    def vendors_iter(self) -> Tuple(np.ndarray, str, str):
+    def vendors_iter(self) -> Tuple[np.ndarray, str, str]:
         """
         @returns an iter over the data, label, and color of each vendor
 
@@ -111,17 +111,17 @@ def plot_hline_chart(ax: Axes, data: MetricData, title: str,
     
     is_labeled = False # Control flag to ensure vendors only get labeled once each
     # Loop over each y value (image type index)
-    for y in range(data.num_image_types()):
-        # Loop over each vendor. We zip this with the label and color for each vendor.
-        for x, label, color in data.vendors_iter():
-            if not is_labeled:
-                ax.scatter(x, y, color=color, s=MARKER_SZ,
-                           label=label)
-                ax.vlines(np.mean(x), 0, n_types-1, linewidth=LINE_WIDTH,
-                          color=color, zorder=-1, linestyle="--")
-            else:
-                ax.scatter(x, y, color=color, s=MARKER_SZ)
-        is_labeled = True
+    # Loop over each vendor. We zip this with the label and color for each vendor.
+    y = np.arange(0, n_types)
+    for x, label, color in data.vendors_iter():
+        if not is_labeled:
+            ax.scatter(x, y, color=color, s=MARKER_SZ,
+                        label=label)
+            ax.vlines(np.mean(x), 0, n_types-1, linewidth=LINE_WIDTH,
+                      color=color, zorder=-1, linestyle="--")
+        else:
+            ax.scatter(x, y, color=color, s=MARKER_SZ)
+    is_labeled = True
 
     # Set title and legend
     ax.set_title(title, pad=TITLE_PADDING)

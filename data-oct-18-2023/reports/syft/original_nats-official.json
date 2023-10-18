@@ -1,0 +1,617 @@
+{
+ "artifacts": [
+  {
+   "id": "634cc0b67da9fd34",
+   "name": "github.com/klauspost/compress",
+   "version": "v1.17.0",
+   "type": "go-module",
+   "foundBy": "go-module-binary-cataloger",
+   "locations": [
+    {
+     "path": "/nats-server",
+     "layerID": "sha256:64770748062886b44c48ac71935c045f212fb80b11fd5c12cb5ff732b5359339",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "go",
+   "cpes": [
+    "cpe:2.3:a:klauspost:compress:v1.17.0:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:golang/github.com/klauspost/compress@v1.17.0",
+   "metadataType": "GolangBinMetadata",
+   "metadata": {
+    "goCompiledVersion": "go1.21.3",
+    "architecture": "amd64",
+    "h1Digest": "h1:Rnbp4K9EjcDuVuHtd0dgA4qNuv9yKDYKK1ulpJwgrqM=",
+    "mainModule": "github.com/nats-io/nats-server/v2",
+    "goCryptoSettings": [
+     "standard-crypto"
+    ]
+   }
+  },
+  {
+   "id": "9b118999c0e9e4ca",
+   "name": "github.com/minio/highwayhash",
+   "version": "v1.0.2",
+   "type": "go-module",
+   "foundBy": "go-module-binary-cataloger",
+   "locations": [
+    {
+     "path": "/nats-server",
+     "layerID": "sha256:64770748062886b44c48ac71935c045f212fb80b11fd5c12cb5ff732b5359339",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "go",
+   "cpes": [
+    "cpe:2.3:a:minio:highwayhash:v1.0.2:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:golang/github.com/minio/highwayhash@v1.0.2",
+   "metadataType": "GolangBinMetadata",
+   "metadata": {
+    "goCompiledVersion": "go1.21.3",
+    "architecture": "amd64",
+    "h1Digest": "h1:Aak5U0nElisjDCfPSG79Tgzkn2gl66NxOMspRrKnA/g=",
+    "mainModule": "github.com/nats-io/nats-server/v2",
+    "goCryptoSettings": [
+     "standard-crypto"
+    ]
+   }
+  },
+  {
+   "id": "9a233d0c6549b6b9",
+   "name": "github.com/nats-io/jwt/v2",
+   "version": "v2.5.2",
+   "type": "go-module",
+   "foundBy": "go-module-binary-cataloger",
+   "locations": [
+    {
+     "path": "/nats-server",
+     "layerID": "sha256:64770748062886b44c48ac71935c045f212fb80b11fd5c12cb5ff732b5359339",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "go",
+   "cpes": [
+    "cpe:2.3:a:nats-io:jwt\\/v2:v2.5.2:*:*:*:*:*:*:*",
+    "cpe:2.3:a:nats_io:jwt\\/v2:v2.5.2:*:*:*:*:*:*:*",
+    "cpe:2.3:a:nats:jwt\\/v2:v2.5.2:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:golang/github.com/nats-io/jwt/v2@v2.5.2",
+   "metadataType": "GolangBinMetadata",
+   "metadata": {
+    "goCompiledVersion": "go1.21.3",
+    "architecture": "amd64",
+    "h1Digest": "h1:DhGH+nKt+wIkDxM6qnVSKjokq5t59AZV5HRcFW0zJwU=",
+    "mainModule": "github.com/nats-io/nats-server/v2",
+    "goCryptoSettings": [
+     "standard-crypto"
+    ]
+   }
+  },
+  {
+   "id": "ddc0e0991e0a40bb",
+   "name": "github.com/nats-io/nats-server/v2",
+   "version": "v0.0.0-20231012213025-1528434431bb",
+   "type": "go-module",
+   "foundBy": "go-module-binary-cataloger",
+   "locations": [
+    {
+     "path": "/nats-server",
+     "layerID": "sha256:64770748062886b44c48ac71935c045f212fb80b11fd5c12cb5ff732b5359339",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "go",
+   "cpes": [
+    "cpe:2.3:a:nats-io:nats-server\\/v2:v0.0.0-20231012213025-1528434431bb:*:*:*:*:*:*:*",
+    "cpe:2.3:a:nats-io:nats_server\\/v2:v0.0.0-20231012213025-1528434431bb:*:*:*:*:*:*:*",
+    "cpe:2.3:a:nats_io:nats-server\\/v2:v0.0.0-20231012213025-1528434431bb:*:*:*:*:*:*:*",
+    "cpe:2.3:a:nats_io:nats_server\\/v2:v0.0.0-20231012213025-1528434431bb:*:*:*:*:*:*:*",
+    "cpe:2.3:a:nats:nats-server\\/v2:v0.0.0-20231012213025-1528434431bb:*:*:*:*:*:*:*",
+    "cpe:2.3:a:nats:nats_server\\/v2:v0.0.0-20231012213025-1528434431bb:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:golang/github.com/nats-io/nats-server/v2@v0.0.0-20231012213025-1528434431bb",
+   "metadataType": "GolangBinMetadata",
+   "metadata": {
+    "goBuildSettings": {
+     "-buildmode": "exe",
+     "-compiler": "gc",
+     "-trimpath": "true",
+     "CGO_ENABLED": "0",
+     "DefaultGODEBUG": "panicnil=1",
+     "GOAMD64": "v1",
+     "GOARCH": "amd64",
+     "GOOS": "linux",
+     "vcs": "git",
+     "vcs.modified": "false",
+     "vcs.revision": "1528434431bbd57635b817c615ebe6d764deec6f",
+     "vcs.time": "2023-10-12T21:30:25Z"
+    },
+    "goCompiledVersion": "go1.21.3",
+    "architecture": "amd64",
+    "mainModule": "github.com/nats-io/nats-server/v2",
+    "goCryptoSettings": [
+     "standard-crypto"
+    ]
+   }
+  },
+  {
+   "id": "0f79158c715ef87b",
+   "name": "github.com/nats-io/nkeys",
+   "version": "v0.4.5",
+   "type": "go-module",
+   "foundBy": "go-module-binary-cataloger",
+   "locations": [
+    {
+     "path": "/nats-server",
+     "layerID": "sha256:64770748062886b44c48ac71935c045f212fb80b11fd5c12cb5ff732b5359339",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "go",
+   "cpes": [
+    "cpe:2.3:a:nats-io:nkeys:v0.4.5:*:*:*:*:*:*:*",
+    "cpe:2.3:a:nats_io:nkeys:v0.4.5:*:*:*:*:*:*:*",
+    "cpe:2.3:a:nats:nkeys:v0.4.5:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:golang/github.com/nats-io/nkeys@v0.4.5",
+   "metadataType": "GolangBinMetadata",
+   "metadata": {
+    "goCompiledVersion": "go1.21.3",
+    "architecture": "amd64",
+    "h1Digest": "h1:Zdz2BUlFm4fJlierwvGK+yl20IAKUm7eV6AAZXEhkPk=",
+    "mainModule": "github.com/nats-io/nats-server/v2",
+    "goCryptoSettings": [
+     "standard-crypto"
+    ]
+   }
+  },
+  {
+   "id": "9428408c1ea95fe9",
+   "name": "github.com/nats-io/nuid",
+   "version": "v1.0.1",
+   "type": "go-module",
+   "foundBy": "go-module-binary-cataloger",
+   "locations": [
+    {
+     "path": "/nats-server",
+     "layerID": "sha256:64770748062886b44c48ac71935c045f212fb80b11fd5c12cb5ff732b5359339",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "go",
+   "cpes": [
+    "cpe:2.3:a:nats-io:nuid:v1.0.1:*:*:*:*:*:*:*",
+    "cpe:2.3:a:nats_io:nuid:v1.0.1:*:*:*:*:*:*:*",
+    "cpe:2.3:a:nats:nuid:v1.0.1:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:golang/github.com/nats-io/nuid@v1.0.1",
+   "metadataType": "GolangBinMetadata",
+   "metadata": {
+    "goCompiledVersion": "go1.21.3",
+    "architecture": "amd64",
+    "h1Digest": "h1:5iA8DT8V7q8WK2EScv2padNa/rTESc1KdnPw4TC2paw=",
+    "mainModule": "github.com/nats-io/nats-server/v2",
+    "goCryptoSettings": [
+     "standard-crypto"
+    ]
+   }
+  },
+  {
+   "id": "8c3babfa341f9ba9",
+   "name": "go.uber.org/automaxprocs",
+   "version": "v1.5.3",
+   "type": "go-module",
+   "foundBy": "go-module-binary-cataloger",
+   "locations": [
+    {
+     "path": "/nats-server",
+     "layerID": "sha256:64770748062886b44c48ac71935c045f212fb80b11fd5c12cb5ff732b5359339",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "go",
+   "cpes": [],
+   "purl": "pkg:golang/go.uber.org/automaxprocs@v1.5.3",
+   "metadataType": "GolangBinMetadata",
+   "metadata": {
+    "goCompiledVersion": "go1.21.3",
+    "architecture": "amd64",
+    "h1Digest": "h1:kWazyxZUrS3Gs4qUpbwo5kEIMGe/DAvi5Z4tl2NW4j8=",
+    "mainModule": "github.com/nats-io/nats-server/v2",
+    "goCryptoSettings": [
+     "standard-crypto"
+    ]
+   }
+  },
+  {
+   "id": "4a7eac5aebe0ffe1",
+   "name": "golang.org/x/crypto",
+   "version": "v0.13.0",
+   "type": "go-module",
+   "foundBy": "go-module-binary-cataloger",
+   "locations": [
+    {
+     "path": "/nats-server",
+     "layerID": "sha256:64770748062886b44c48ac71935c045f212fb80b11fd5c12cb5ff732b5359339",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "go",
+   "cpes": [
+    "cpe:2.3:a:golang:x\\/crypto:v0.13.0:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:golang/golang.org/x/crypto@v0.13.0",
+   "metadataType": "GolangBinMetadata",
+   "metadata": {
+    "goCompiledVersion": "go1.21.3",
+    "architecture": "amd64",
+    "h1Digest": "h1:mvySKfSWJ+UKUii46M40LOvyWfN0s2U+46/jDd0e6Ck=",
+    "mainModule": "github.com/nats-io/nats-server/v2",
+    "goCryptoSettings": [
+     "standard-crypto"
+    ]
+   }
+  },
+  {
+   "id": "51552c5e29d0b0cc",
+   "name": "golang.org/x/sys",
+   "version": "v0.12.0",
+   "type": "go-module",
+   "foundBy": "go-module-binary-cataloger",
+   "locations": [
+    {
+     "path": "/nats-server",
+     "layerID": "sha256:64770748062886b44c48ac71935c045f212fb80b11fd5c12cb5ff732b5359339",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "go",
+   "cpes": [
+    "cpe:2.3:a:golang:x\\/sys:v0.12.0:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:golang/golang.org/x/sys@v0.12.0",
+   "metadataType": "GolangBinMetadata",
+   "metadata": {
+    "goCompiledVersion": "go1.21.3",
+    "architecture": "amd64",
+    "h1Digest": "h1:CM0HF96J0hcLAwsHPJZjfdNzs0gftsLfgKt57wWHJ0o=",
+    "mainModule": "github.com/nats-io/nats-server/v2",
+    "goCryptoSettings": [
+     "standard-crypto"
+    ]
+   }
+  },
+  {
+   "id": "62576a36f76babbd",
+   "name": "golang.org/x/time",
+   "version": "v0.3.0",
+   "type": "go-module",
+   "foundBy": "go-module-binary-cataloger",
+   "locations": [
+    {
+     "path": "/nats-server",
+     "layerID": "sha256:64770748062886b44c48ac71935c045f212fb80b11fd5c12cb5ff732b5359339",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "go",
+   "cpes": [
+    "cpe:2.3:a:golang:x\\/time:v0.3.0:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:golang/golang.org/x/time@v0.3.0",
+   "metadataType": "GolangBinMetadata",
+   "metadata": {
+    "goCompiledVersion": "go1.21.3",
+    "architecture": "amd64",
+    "h1Digest": "h1:rg5rLMjNzMS1RkNLzCG38eapWhnYLFYXDXj2gOlr8j4=",
+    "mainModule": "github.com/nats-io/nats-server/v2",
+    "goCryptoSettings": [
+     "standard-crypto"
+    ]
+   }
+  },
+  {
+   "id": "b65a6f26a7316b6e",
+   "name": "stdlib",
+   "version": "go1.21.3",
+   "type": "go-module",
+   "foundBy": "",
+   "locations": [
+    {
+     "path": "/nats-server",
+     "layerID": "sha256:64770748062886b44c48ac71935c045f212fb80b11fd5c12cb5ff732b5359339",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "go",
+   "cpes": [
+    "cpe:2.3:a:golang:go:1.21.3:-:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:golang/stdlib@1.21.3",
+   "metadataType": "GolangBinMetadata",
+   "metadata": {
+    "goCompiledVersion": "go1.21.3",
+    "architecture": ""
+   }
+  }
+ ],
+ "artifactRelationships": [
+  {
+   "parent": "0f79158c715ef87b",
+   "child": "8292f2c137f9c3f9",
+   "type": "evident-by"
+  },
+  {
+   "parent": "4a7eac5aebe0ffe1",
+   "child": "8292f2c137f9c3f9",
+   "type": "evident-by"
+  },
+  {
+   "parent": "51552c5e29d0b0cc",
+   "child": "8292f2c137f9c3f9",
+   "type": "evident-by"
+  },
+  {
+   "parent": "62576a36f76babbd",
+   "child": "8292f2c137f9c3f9",
+   "type": "evident-by"
+  },
+  {
+   "parent": "634cc0b67da9fd34",
+   "child": "8292f2c137f9c3f9",
+   "type": "evident-by"
+  },
+  {
+   "parent": "8c3babfa341f9ba9",
+   "child": "8292f2c137f9c3f9",
+   "type": "evident-by"
+  },
+  {
+   "parent": "9428408c1ea95fe9",
+   "child": "8292f2c137f9c3f9",
+   "type": "evident-by"
+  },
+  {
+   "parent": "9a233d0c6549b6b9",
+   "child": "8292f2c137f9c3f9",
+   "type": "evident-by"
+  },
+  {
+   "parent": "9b118999c0e9e4ca",
+   "child": "8292f2c137f9c3f9",
+   "type": "evident-by"
+  },
+  {
+   "parent": "a8d7d534e25da55208941c0a51a84d28246d3ad27cbe7077c61c8c5fc59fbf97",
+   "child": "0f79158c715ef87b",
+   "type": "contains"
+  },
+  {
+   "parent": "a8d7d534e25da55208941c0a51a84d28246d3ad27cbe7077c61c8c5fc59fbf97",
+   "child": "4a7eac5aebe0ffe1",
+   "type": "contains"
+  },
+  {
+   "parent": "a8d7d534e25da55208941c0a51a84d28246d3ad27cbe7077c61c8c5fc59fbf97",
+   "child": "51552c5e29d0b0cc",
+   "type": "contains"
+  },
+  {
+   "parent": "a8d7d534e25da55208941c0a51a84d28246d3ad27cbe7077c61c8c5fc59fbf97",
+   "child": "62576a36f76babbd",
+   "type": "contains"
+  },
+  {
+   "parent": "a8d7d534e25da55208941c0a51a84d28246d3ad27cbe7077c61c8c5fc59fbf97",
+   "child": "634cc0b67da9fd34",
+   "type": "contains"
+  },
+  {
+   "parent": "a8d7d534e25da55208941c0a51a84d28246d3ad27cbe7077c61c8c5fc59fbf97",
+   "child": "8c3babfa341f9ba9",
+   "type": "contains"
+  },
+  {
+   "parent": "a8d7d534e25da55208941c0a51a84d28246d3ad27cbe7077c61c8c5fc59fbf97",
+   "child": "9428408c1ea95fe9",
+   "type": "contains"
+  },
+  {
+   "parent": "a8d7d534e25da55208941c0a51a84d28246d3ad27cbe7077c61c8c5fc59fbf97",
+   "child": "9a233d0c6549b6b9",
+   "type": "contains"
+  },
+  {
+   "parent": "a8d7d534e25da55208941c0a51a84d28246d3ad27cbe7077c61c8c5fc59fbf97",
+   "child": "9b118999c0e9e4ca",
+   "type": "contains"
+  },
+  {
+   "parent": "a8d7d534e25da55208941c0a51a84d28246d3ad27cbe7077c61c8c5fc59fbf97",
+   "child": "b65a6f26a7316b6e",
+   "type": "contains"
+  },
+  {
+   "parent": "a8d7d534e25da55208941c0a51a84d28246d3ad27cbe7077c61c8c5fc59fbf97",
+   "child": "ddc0e0991e0a40bb",
+   "type": "contains"
+  },
+  {
+   "parent": "b65a6f26a7316b6e",
+   "child": "8292f2c137f9c3f9",
+   "type": "evident-by"
+  },
+  {
+   "parent": "ddc0e0991e0a40bb",
+   "child": "8292f2c137f9c3f9",
+   "type": "evident-by"
+  }
+ ],
+ "files": [
+  {
+   "id": "8292f2c137f9c3f9",
+   "location": {
+    "path": "/nats-server",
+    "layerID": "sha256:64770748062886b44c48ac71935c045f212fb80b11fd5c12cb5ff732b5359339"
+   }
+  }
+ ],
+ "source": {
+  "id": "a8d7d534e25da55208941c0a51a84d28246d3ad27cbe7077c61c8c5fc59fbf97",
+  "name": "docker.io/nats",
+  "version": "sha256:a8d7d534e25da55208941c0a51a84d28246d3ad27cbe7077c61c8c5fc59fbf97",
+  "type": "image",
+  "metadata": {
+   "userInput": "docker.io/nats:latest",
+   "imageID": "sha256:0a627248b7b1c4d5c4c34458f79a9a3c8c3a9376ce38d013717a4f7c46e1be7c",
+   "manifestDigest": "sha256:a8d7d534e25da55208941c0a51a84d28246d3ad27cbe7077c61c8c5fc59fbf97",
+   "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+   "tags": [
+    "nats:latest"
+   ],
+   "imageSize": 14025093,
+   "layers": [
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:64770748062886b44c48ac71935c045f212fb80b11fd5c12cb5ff732b5359339",
+     "size": 14024353
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:7e4563e371fc9af49623a0831a3d4aaeaa256ca509af73011f20b44f8a20e487",
+     "size": 740
+    }
+   ],
+   "manifest": "eyJzY2hlbWFWZXJzaW9uIjoyLCJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmRpc3RyaWJ1dGlvbi5tYW5pZmVzdC52Mitqc29uIiwiY29uZmlnIjp7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuY29udGFpbmVyLmltYWdlLnYxK2pzb24iLCJzaXplIjoyMzU3LCJkaWdlc3QiOiJzaGEyNTY6MGE2MjcyNDhiN2IxYzRkNWM0YzM0NDU4Zjc5YTlhM2M4YzNhOTM3NmNlMzhkMDEzNzE3YTRmN2M0NmUxYmU3YyJ9LCJsYXllcnMiOlt7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjoxNDAyNjI0MCwiZGlnZXN0Ijoic2hhMjU2OjY0NzcwNzQ4MDYyODg2YjQ0YzQ4YWM3MTkzNWMwNDVmMjEyZmI4MGIxMWZkNWMxMmNiNWZmNzMyYjUzNTkzMzkifSx7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjoyNTYwLCJkaWdlc3QiOiJzaGEyNTY6N2U0NTYzZTM3MWZjOWFmNDk2MjNhMDgzMWEzZDRhYWVhYTI1NmNhNTA5YWY3MzAxMWYyMGI0NGY4YTIwZTQ4NyJ9XX0=",
+   "config": "eyJhcmNoaXRlY3R1cmUiOiJhbWQ2NCIsImNvbmZpZyI6eyJIb3N0bmFtZSI6IiIsIkRvbWFpbm5hbWUiOiIiLCJVc2VyIjoiIiwiQXR0YWNoU3RkaW4iOmZhbHNlLCJBdHRhY2hTdGRvdXQiOmZhbHNlLCJBdHRhY2hTdGRlcnIiOmZhbHNlLCJFeHBvc2VkUG9ydHMiOnsiNDIyMi90Y3AiOnt9LCI2MjIyL3RjcCI6e30sIjgyMjIvdGNwIjp7fX0sIlR0eSI6ZmFsc2UsIk9wZW5TdGRpbiI6ZmFsc2UsIlN0ZGluT25jZSI6ZmFsc2UsIkVudiI6WyJQQVRIPS91c3IvbG9jYWwvc2JpbjovdXNyL2xvY2FsL2JpbjovdXNyL3NiaW46L3Vzci9iaW46L3NiaW46L2JpbjovIl0sIkNtZCI6WyItLWNvbmZpZyIsIm5hdHMtc2VydmVyLmNvbmYiXSwiSW1hZ2UiOiJzaGEyNTY6ZWI0OGYxNGQ0NWM5MTE2NzdmYTVkYWE0MjQ4YzhmYmQ2YzFlOGIwMzZhNmE5YTE4NTYyMDk2NGU1MDBlNzFlZSIsIlZvbHVtZXMiOm51bGwsIldvcmtpbmdEaXIiOiIiLCJFbnRyeXBvaW50IjpbIi9uYXRzLXNlcnZlciJdLCJPbkJ1aWxkIjpudWxsLCJMYWJlbHMiOm51bGx9LCJjb250YWluZXIiOiI5Yzc5ODI3ZDk1NzkyZDY3YjljMWE2NGZkZTZkNmM2OTBjZjNkZDVlOGI4YzljZGRkOWQxMzJmNzNjYWIyOTU1IiwiY29udGFpbmVyX2NvbmZpZyI6eyJIb3N0bmFtZSI6IjljNzk4MjdkOTU3OSIsIkRvbWFpbm5hbWUiOiIiLCJVc2VyIjoiIiwiQXR0YWNoU3RkaW4iOmZhbHNlLCJBdHRhY2hTdGRvdXQiOmZhbHNlLCJBdHRhY2hTdGRlcnIiOmZhbHNlLCJFeHBvc2VkUG9ydHMiOnsiNDIyMi90Y3AiOnt9LCI2MjIyL3RjcCI6e30sIjgyMjIvdGNwIjp7fX0sIlR0eSI6ZmFsc2UsIk9wZW5TdGRpbiI6ZmFsc2UsIlN0ZGluT25jZSI6ZmFsc2UsIkVudiI6WyJQQVRIPS91c3IvbG9jYWwvc2JpbjovdXNyL2xvY2FsL2JpbjovdXNyL3NiaW46L3Vzci9iaW46L3NiaW46L2JpbjovIl0sIkNtZCI6WyIvYmluL3NoIiwiLWMiLCIjKG5vcCkgIiwiQ01EIFtcIi0tY29uZmlnXCIgXCJuYXRzLXNlcnZlci5jb25mXCJdIl0sIkltYWdlIjoic2hhMjU2OmViNDhmMTRkNDVjOTExNjc3ZmE1ZGFhNDI0OGM4ZmJkNmMxZThiMDM2YTZhOWExODU2MjA5NjRlNTAwZTcxZWUiLCJWb2x1bWVzIjpudWxsLCJXb3JraW5nRGlyIjoiIiwiRW50cnlwb2ludCI6WyIvbmF0cy1zZXJ2ZXIiXSwiT25CdWlsZCI6bnVsbCwiTGFiZWxzIjp7fX0sImNyZWF0ZWQiOiIyMDIzLTEwLTEzVDIwOjIwOjU3LjIwMDMzOTAxWiIsImRvY2tlcl92ZXJzaW9uIjoiMjAuMTAuMjMiLCJoaXN0b3J5IjpbeyJjcmVhdGVkIjoiMjAyMy0wOS0yMFQwMDo0OToxNy4wMjY1NzE0MDNaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApICBFTlYgUEFUSD0vdXNyL2xvY2FsL3NiaW46L3Vzci9sb2NhbC9iaW46L3Vzci9zYmluOi91c3IvYmluOi9zYmluOi9iaW46LyIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDIzLTEwLTEzVDIwOjIwOjU2Ljc2MjE3MTcxMVoiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgQ09QWSBmaWxlOjgzNDhiYmE4ZmVmZTU5NGRlYWZmMjNhOGU4ZDA1YzVmZThiMjA2MzQzMDkwMTZjZDE1Nzc0NGQ0N2IwMWU3NTEgaW4gL25hdHMtc2VydmVyICJ9LHsiY3JlYXRlZCI6IjIwMjMtMTAtMTNUMjA6MjA6NTYuOTMzNjE2NzE1WiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSBDT1BZIGZpbGU6MmM1MTE2NmYzMzA2NjM1MWYzY2ZlMzczNGY4ODRjNDFmMzZmYjY2NTc1YmRkZTQ1M2M1YzkzZTgxOWNmYWUzNSBpbiAvbmF0cy1zZXJ2ZXIuY29uZiAifSx7ImNyZWF0ZWQiOiIyMDIzLTEwLTEzVDIwOjIwOjU3LjAxNzQzNTUyWiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSAgRVhQT1NFIDQyMjIgNjIyMiA4MjIyIiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjMtMTAtMTNUMjA6MjA6NTcuMTA1ODAyMzNaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApICBFTlRSWVBPSU5UIFtcIi9uYXRzLXNlcnZlclwiXSIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDIzLTEwLTEzVDIwOjIwOjU3LjIwMDMzOTAxWiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSAgQ01EIFtcIi0tY29uZmlnXCIgXCJuYXRzLXNlcnZlci5jb25mXCJdIiwiZW1wdHlfbGF5ZXIiOnRydWV9XSwib3MiOiJsaW51eCIsInJvb3RmcyI6eyJ0eXBlIjoibGF5ZXJzIiwiZGlmZl9pZHMiOlsic2hhMjU2OjY0NzcwNzQ4MDYyODg2YjQ0YzQ4YWM3MTkzNWMwNDVmMjEyZmI4MGIxMWZkNWMxMmNiNWZmNzMyYjUzNTkzMzkiLCJzaGEyNTY6N2U0NTYzZTM3MWZjOWFmNDk2MjNhMDgzMWEzZDRhYWVhYTI1NmNhNTA5YWY3MzAxMWYyMGI0NGY4YTIwZTQ4NyJdfX0=",
+   "repoDigests": [
+    "nats@sha256:a7896fa3caaffacae323f1777007005298abd0524c6aced0af5c48a39e49062f"
+   ],
+   "architecture": "amd64",
+   "os": "linux"
+  }
+ },
+ "distro": {},
+ "descriptor": {
+  "name": "syft",
+  "version": "0.93.0",
+  "configuration": {
+   "catalogers": null,
+   "package": {
+    "cataloger": {
+     "enabled": true,
+     "scope": "Squashed"
+    },
+    "search-unindexed-archives": false,
+    "search-indexed-archives": true
+   },
+   "golang": {
+    "search-local-mod-cache-licenses": false,
+    "local-mod-cache-dir": "",
+    "search-remote-licenses": false,
+    "proxy": "",
+    "no-proxy": ""
+   },
+   "linux-kernel": {
+    "catalog-modules": true
+   },
+   "python": {
+    "guess-unpinned-requirements": false
+   },
+   "file-metadata": {
+    "cataloger": {
+     "enabled": false,
+     "scope": "Squashed"
+    },
+    "digests": [
+     "sha256"
+    ]
+   },
+   "file-classification": {
+    "cataloger": {
+     "enabled": false,
+     "scope": "Squashed"
+    }
+   },
+   "file-contents": {
+    "cataloger": {
+     "enabled": false,
+     "scope": "Squashed"
+    },
+    "skip-files-above-size": 1048576,
+    "globs": null
+   },
+   "secrets": {
+    "cataloger": {
+     "enabled": false,
+     "scope": "AllLayers"
+    },
+    "additional-patterns": null,
+    "exclude-pattern-names": null,
+    "reveal-values": false,
+    "skip-files-above-size": 1048576
+   },
+   "registry": {
+    "insecure-skip-tls-verify": false,
+    "insecure-use-http": false,
+    "auth": null,
+    "ca-cert": ""
+   },
+   "exclude": [],
+   "platform": "",
+   "name": "",
+   "source": {
+    "name": "",
+    "version": "",
+    "file": {
+     "digests": [
+      "sha256"
+     ]
+    }
+   },
+   "parallelism": 1,
+   "default-image-pull-source": "",
+   "base-path": "",
+   "exclude-binary-overlap-by-ownership": true
+  }
+ },
+ "schema": {
+  "version": "11.0.0",
+  "url": "https://raw.githubusercontent.com/anchore/syft/main/schema/json/schema-11.0.0.json"
+ }
+}

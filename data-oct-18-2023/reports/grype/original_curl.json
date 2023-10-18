@@ -1,0 +1,314 @@
+{
+ "matches": [
+  {
+   "vulnerability": {
+    "id": "CVE-2020-22218",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2020-22218",
+    "namespace": "nvd:cpe",
+    "severity": "High",
+    "urls": [
+     "https://github.com/libssh2/libssh2/pull/476",
+     "https://lists.debian.org/debian-lts-announce/2023/09/msg00006.html",
+     "https://security.netapp.com/advisory/ntap-20231006-0002/"
+    ],
+    "description": "An issue was discovered in function _libssh2_packet_add in libssh2 1.10.0 allows attackers to access out of bounds memory.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:libssh2:libssh2:1.10.0-r4:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "libssh2",
+       "version": "1.10.0-r4"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2020-22218",
+      "versionConstraint": "= 1.10.0 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:libssh2:libssh2:1.10.0:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "a08a553fe61ca0f0",
+    "name": "libssh2",
+    "version": "1.10.0-r4",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:268a32fe36be5ff9f357a4fb147b304f2dd03a1327fd4213aa98382f4fe0617d"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "BSD-3-Clause"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libssh2:libssh2:1.10.0-r4:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libssh2:libssh:1.10.0-r4:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libssh:libssh2:1.10.0-r4:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libssh:libssh:1.10.0-r4:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/libssh2@1.10.0-r4?arch=x86_64&distro=alpine-3.18.4",
+    "upstreams": [
+     {
+      "name": "libssh2"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-3603",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-3603",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://access.redhat.com/security/cve/CVE-2023-3603",
+     "https://bugzilla.redhat.com/show_bug.cgi?id=2221791"
+    ],
+    "description": "A missing allocation check in sftp server processing read requests may cause a NULL dereference on low-memory conditions. The malicious client can request up to 4GB SFTP reads, causing allocation of up to 4GB buffers, which was not being checked for failure. This will likely crash the authenticated user's sftp server connection (if implemented as forking as recommended). For thread-based servers, this might also cause DoS for legitimate users.\r\n\r\nGiven this code is not in any released versions, no security releases have been issued.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 6.5,
+       "exploitabilityScore": 2.8,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "source": "secalert@redhat.com",
+      "type": "Secondary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:L",
+      "metrics": {
+       "baseScore": 3.1,
+       "exploitabilityScore": 1.6,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:libssh:libssh:1.10.0-r4:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "libssh2",
+       "version": "1.10.0-r4"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2023-3603",
+      "versionConstraint": "none (unknown)",
+      "cpes": [
+       "cpe:2.3:a:libssh:libssh:-:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "a08a553fe61ca0f0",
+    "name": "libssh2",
+    "version": "1.10.0-r4",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:268a32fe36be5ff9f357a4fb147b304f2dd03a1327fd4213aa98382f4fe0617d"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "BSD-3-Clause"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libssh2:libssh2:1.10.0-r4:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libssh2:libssh:1.10.0-r4:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libssh:libssh2:1.10.0-r4:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libssh:libssh:1.10.0-r4:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/libssh2@1.10.0-r4?arch=x86_64&distro=alpine-3.18.4",
+    "upstreams": [
+     {
+      "name": "libssh2"
+     }
+    ]
+   }
+  }
+ ],
+ "source": {
+  "type": "image",
+  "target": {
+   "userInput": "docker.io/curlimages/curl:latest",
+   "imageID": "sha256:e5da2657681780567a06d03fa480dda5b16cdd91bfbe269fe9a1d9adcdc0fc4d",
+   "manifestDigest": "sha256:d00fa0a84c13442a597f10704e94381b52af65e143d2e3c82f08c866804840c0",
+   "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+   "tags": [
+    "curlimages/curl:latest"
+   ],
+   "imageSize": 18328621,
+   "layers": [
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:cc2447e1835a40530975ab80bb1f872fbab0f2a0faecf2ab16fbbb89b3589438",
+     "size": 7330497
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:268a32fe36be5ff9f357a4fb147b304f2dd03a1327fd4213aa98382f4fe0617d",
+     "size": 10998124
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+     "size": 0
+    }
+   ],
+   "manifest": "eyJzY2hlbWFWZXJzaW9uIjoyLCJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmRpc3RyaWJ1dGlvbi5tYW5pZmVzdC52Mitqc29uIiwiY29uZmlnIjp7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuY29udGFpbmVyLmltYWdlLnYxK2pzb24iLCJzaXplIjoxNDcwLCJkaWdlc3QiOiJzaGEyNTY6ZTVkYTI2NTc2ODE3ODA1NjdhMDZkMDNmYTQ4MGRkYTViMTZjZGQ5MWJmYmUyNjlmZTlhMWQ5YWRjZGMwZmM0ZCJ9LCJsYXllcnMiOlt7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjo3NjI1NzI4LCJkaWdlc3QiOiJzaGEyNTY6Y2MyNDQ3ZTE4MzVhNDA1MzA5NzVhYjgwYmIxZjg3MmZiYWIwZjJhMGZhZWNmMmFiMTZmYmJiODliMzU4OTQzOCJ9LHsibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vdm5kLmRvY2tlci5pbWFnZS5yb290ZnMuZGlmZi50YXIuZ3ppcCIsInNpemUiOjExMTM0NDY0LCJkaWdlc3QiOiJzaGEyNTY6MjY4YTMyZmUzNmJlNWZmOWYzNTdhNGZiMTQ3YjMwNGYyZGQwM2ExMzI3ZmQ0MjEzYWE5ODM4MmY0ZmUwNjE3ZCJ9LHsibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vdm5kLmRvY2tlci5pbWFnZS5yb290ZnMuZGlmZi50YXIuZ3ppcCIsInNpemUiOjEwMjQsImRpZ2VzdCI6InNoYTI1Njo1ZjcwYmYxOGEwODYwMDcwMTZlOTQ4YjA0YWVkM2I4MjEwM2EzNmJlYTQxNzU1YjZjZGRmYWYxMGFjZTNjNmVmIn1dfQ==",
+   "config": "eyJjcmVhdGVkIjoiMjAyMy0xMC0xMVQwOTo0ODoyNS4wNTQ5NTgzNDNaIiwiYXJjaGl0ZWN0dXJlIjoiYW1kNjQiLCJvcyI6ImxpbnV4IiwiY29uZmlnIjp7IlVzZXIiOiJjdXJsX3VzZXIiLCJFbnYiOlsiUEFUSD0vdXNyL2xvY2FsL3NiaW46L3Vzci9sb2NhbC9iaW46L3Vzci9zYmluOi91c3IvYmluOi9zYmluOi9iaW4iLCJDVVJMX0NBX0JVTkRMRT0vY2FjZXJ0LnBlbSJdLCJFbnRyeXBvaW50IjpbIi9lbnRyeXBvaW50LnNoIl0sIkNtZCI6WyJjdXJsIl0sIldvcmtpbmdEaXIiOiIvaG9tZS9jdXJsX3VzZXIiLCJMYWJlbHMiOnsiZG9ja2VyLmNtZCI6InBvZG1hbiBydW4gLWl0IHF1YXkuaW8vY3VybC86OC40LjAiLCJpby5idWlsZGFoLnZlcnNpb24iOiIxLjIzLjQiLCJtYWludGFpbmVyIjoiSmFtZXMgRnVsbGVyIFx1MDAzY2ppbS5mdWxsZXJAd2ViY29tcG9zaXRlLmNvbVx1MDAzZSIsIm5hbWUiOiJjdXJsLWxpbnV4LWFtZDY0OjguNC4wIiwib3JnLm9wZW5jb250YWluZXJzLmltYWdlLmRlc2NyaXB0aW9uIjoibWluaW1hbCBpbWFnZSBmb3IgY3VybCIsIm9yZy5vcGVuY29udGFpbmVycy5pbWFnZS5saWNlbnNlcyI6Ik1JVCIsIm9yZy5vcGVuY29udGFpbmVycy5pbWFnZS5zb3VyY2UiOiJodHRwczovL2dpdGh1Yi5jb20vY3VybC9jdXJsLWNvbnRhaW5lciIsInZlcnNpb24iOiI4LjQuMCJ9fSwicm9vdGZzIjp7InR5cGUiOiJsYXllcnMiLCJkaWZmX2lkcyI6WyJzaGEyNTY6Y2MyNDQ3ZTE4MzVhNDA1MzA5NzVhYjgwYmIxZjg3MmZiYWIwZjJhMGZhZWNmMmFiMTZmYmJiODliMzU4OTQzOCIsInNoYTI1NjoyNjhhMzJmZTM2YmU1ZmY5ZjM1N2E0ZmIxNDdiMzA0ZjJkZDAzYTEzMjdmZDQyMTNhYTk4MzgyZjRmZTA2MTdkIiwic2hhMjU2OjVmNzBiZjE4YTA4NjAwNzAxNmU5NDhiMDRhZWQzYjgyMTAzYTM2YmVhNDE3NTViNmNkZGZhZjEwYWNlM2M2ZWYiXX0sImhpc3RvcnkiOlt7ImNyZWF0ZWQiOiIyMDIzLTA5LTI4VDIxOjE5OjI3LjY4NjExMDA2M1oiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgQUREIGZpbGU6NzU2MTgzYmJhOWM3ZjQ1OTNjMmIyMTZlOThlNDIwOGI5MTYzYzRjOTYyZWEwODM3ZWY4OGJkOTE3NjA5ZDAwMSBpbiAvICJ9LHsiY3JlYXRlZCI6IjIwMjMtMDktMjhUMjE6MTk6MjcuODAxNDc5NDA5WiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSAgQ01EIFtcIi9iaW4vc2hcIl0iLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyMy0xMC0xMVQwOTo0ODoyMy45ODE5OTEyOVoiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCIsImNvbW1lbnQiOiJGUk9NIGRvY2tlci5pby9saWJyYXJ5L2FscGluZTozLjE4LjQifSx7ImNyZWF0ZWQiOiIyMDIzLTEwLTExVDA5OjQ4OjI1LjA1NTY5NzEwNloiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCIsImNvbW1lbnQiOiJGUk9NIGxvY2FsaG9zdC9jdXJsLWJhc2UtbGludXgtYW1kNjQ6OC40LjAifV19",
+   "repoDigests": [
+    "curlimages/curl@sha256:4a3396ae573c44932d06ba33f8696db4429c419da87cbdc82965ee96a37dd0af"
+   ],
+   "architecture": "amd64",
+   "os": "linux"
+  }
+ },
+ "distro": {
+  "name": "alpine",
+  "version": "3.18.4",
+  "idLike": []
+ },
+ "descriptor": {
+  "name": "grype",
+  "version": "0.71.0",
+  "configuration": {
+   "output": [
+    "json"
+   ],
+   "file": "",
+   "distro": "",
+   "add-cpes-if-none": false,
+   "output-template-file": "",
+   "check-for-app-update": true,
+   "only-fixed": false,
+   "only-notfixed": false,
+   "platform": "",
+   "search": {
+    "scope": "Squashed",
+    "unindexed-archives": false,
+    "indexed-archives": true
+   },
+   "ignore": null,
+   "exclude": [],
+   "db": {
+    "cache-dir": "/home/anon/.cache/grype/db",
+    "update-url": "https://toolbox-data.anchore.io/grype/databases/listing.json",
+    "ca-cert": "",
+    "auto-update": true,
+    "validate-by-hash-on-start": false,
+    "validate-age": true,
+    "max-allowed-built-age": 432000000000000
+   },
+   "externalSources": {
+    "enable": false,
+    "maven": {
+     "searchUpstreamBySha1": true,
+     "baseUrl": "https://search.maven.org/solrsearch/select"
+    }
+   },
+   "match": {
+    "java": {
+     "using-cpes": false
+    },
+    "dotnet": {
+     "using-cpes": false
+    },
+    "golang": {
+     "using-cpes": false
+    },
+    "javascript": {
+     "using-cpes": false
+    },
+    "python": {
+     "using-cpes": false
+    },
+    "ruby": {
+     "using-cpes": false
+    },
+    "rust": {
+     "using-cpes": false
+    },
+    "stock": {
+     "using-cpes": true
+    }
+   },
+   "fail-on-severity": "",
+   "registry": {
+    "insecure-skip-tls-verify": false,
+    "insecure-use-http": false,
+    "auth": null,
+    "ca-cert": ""
+   },
+   "show-suppressed": false,
+   "by-cve": false,
+   "name": "",
+   "default-image-pull-source": "",
+   "vex-documents": [],
+   "vex-add": []
+  },
+  "db": {
+   "built": "2023-10-18T01:27:01Z",
+   "schemaVersion": 5,
+   "location": "/home/anon/.cache/grype/db/5",
+   "checksum": "sha256:3d645110a85196185e04ca12f42bb7ca46c6946833db616c7db1c751f261ab04",
+   "error": null
+  },
+  "timestamp": "2023-10-18T17:51:25.560895785-04:00"
+ }
+}

@@ -1,0 +1,3973 @@
+{
+ "matches": [
+  {
+   "vulnerability": {
+    "id": "GHSA-vpvm-3wq2-2wvm",
+    "dataSource": "https://github.com/advisories/GHSA-vpvm-3wq2-2wvm",
+    "namespace": "github:language:go",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-vpvm-3wq2-2wvm"
+    ],
+    "description": "Opencontainers runc Incorrect Authorization vulnerability",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 7,
+       "exploitabilityScore": 1,
+       "impactScore": 5.9
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "1.1.5"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-27561",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-27561",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://gist.github.com/LiveOverflow/c937820b688922eb127fb760ce06dab9",
+      "https://github.com/opencontainers/runc/issues/2197#issuecomment-1437617334",
+      "https://github.com/opencontainers/runc/issues/3751",
+      "https://lists.debian.org/debian-lts-announce/2023/03/msg00023.html",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ANUGDBJ7NBUMSUFZUSKU3ZMQYZ2Z3STN/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/DHGVGGMKGZSJ7YO67TGGPFEHBYMS63VF/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/FNB2UEDIIJCRQW4WJLZOPQJZXCVSXMLD/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/FYVE3GB4OG3BNT5DLQHYO4M5SXX33AQ5/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/I6BF24VCZRFTYBTT3T7HDZUOTKOTNPLZ/"
+     ],
+     "description": "runc through 1.1.4 has Incorrect Access Control leading to Escalation of Privileges, related to libcontainer/rootfs_linux.go. To exploit this, an attacker must be able to spawn two containers with custom volume-mount configurations, and be able to run custom images. NOTE: this issue exists because of a CVE-2019-19921 regression.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 7,
+        "exploitabilityScore": 1,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/opencontainers/runc",
+       "version": "v1.1.0"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=1.0.0-rc95,<1.1.5 (unknown)",
+      "vulnerabilityID": "GHSA-vpvm-3wq2-2wvm"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "82c36490533db64b",
+    "name": "github.com/opencontainers/runc",
+    "version": "v1.1.0",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/usr/local/bin/gosu",
+      "layerID": "sha256:07850820e5b4c4dc34c7ab86578c73ca61bf7a105f6315a4644b3d9a4c9924e7"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:opencontainers:runc:v1.1.0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/opencontainers/runc@v1.1.0",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.18.2",
+     "architecture": "amd64",
+     "h1Digest": "h1:O9+X96OcDjkmmZyfaG996kV7yq8HsoU2h1XRRQcefG8=",
+     "mainModule": "github.com/tianon/gosu"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-g2j6-57v7-gm8c",
+    "dataSource": "https://github.com/advisories/GHSA-g2j6-57v7-gm8c",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-g2j6-57v7-gm8c"
+    ],
+    "description": "runc AppArmor bypass with symlinked /proc",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+      "metrics": {
+       "baseScore": 6.1,
+       "exploitabilityScore": 1.8,
+       "impactScore": 3.7
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "1.1.5"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-28642",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-28642",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/opencontainers/runc/pull/3785",
+      "https://github.com/opencontainers/runc/security/advisories/GHSA-g2j6-57v7-gm8c"
+     ],
+     "description": "runc is a CLI tool for spawning and running containers according to the OCI specification. It was found that AppArmor can be bypassed when `/proc` inside the container is symlinked with a specific mount configuration. This issue has been fixed in runc version 1.1.5, by prohibiting symlinked `/proc`. See PR #3785 for details. users are advised to upgrade. Users unable to upgrade should avoid using an untrusted container image.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 7.8,
+        "exploitabilityScore": 1.8,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+       "metrics": {
+        "baseScore": 6.1,
+        "exploitabilityScore": 1.8,
+        "impactScore": 3.7
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/opencontainers/runc",
+       "version": "v1.1.0"
+      }
+     },
+     "found": {
+      "versionConstraint": "<1.1.5 (unknown)",
+      "vulnerabilityID": "GHSA-g2j6-57v7-gm8c"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "82c36490533db64b",
+    "name": "github.com/opencontainers/runc",
+    "version": "v1.1.0",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/usr/local/bin/gosu",
+      "layerID": "sha256:07850820e5b4c4dc34c7ab86578c73ca61bf7a105f6315a4644b3d9a4c9924e7"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:opencontainers:runc:v1.1.0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/opencontainers/runc@v1.1.0",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.18.2",
+     "architecture": "amd64",
+     "h1Digest": "h1:O9+X96OcDjkmmZyfaG996kV7yq8HsoU2h1XRRQcefG8=",
+     "mainModule": "github.com/tianon/gosu"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-f3fp-gc8g-vw66",
+    "dataSource": "https://github.com/advisories/GHSA-f3fp-gc8g-vw66",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-f3fp-gc8g-vw66"
+    ],
+    "description": "Default inheritable capabilities for linux container should be empty",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "metrics": {
+       "baseScore": 5.9,
+       "exploitabilityScore": 2.5,
+       "impactScore": 3.4
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "1.1.2"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-29162",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-29162",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/opencontainers/runc/commit/d04de3a9b72d7a2455c1885fc75eb36d02cd17b5",
+      "https://github.com/opencontainers/runc/releases/tag/v1.1.2",
+      "https://github.com/opencontainers/runc/security/advisories/GHSA-f3fp-gc8g-vw66",
+      "https://lists.debian.org/debian-lts-announce/2023/03/msg00023.html",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/AVPZBV7ISA7QKRPTC7ZXWKMIQI2HZEBB/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/D77CKD3AXPMU4PMQIQI5Q74SI4JATNND/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/GPQU4YC4AAY54JDXGDQHJEYKSXXG5T2Y/"
+     ],
+     "description": "runc is a CLI tool for spawning and running containers on Linux according to the OCI specification. A bug was found in runc prior to version 1.1.2 where `runc exec --cap` created processes with non-empty inheritable Linux process capabilities, creating an atypical Linux environment and enabling programs with inheritable file capabilities to elevate those capabilities to the permitted set during execve(2). This bug did not affect the container security sandbox as the inheritable set never contained more capabilities than were included in the container's bounding set. This bug has been fixed in runc 1.1.2. This fix changes `runc exec --cap` behavior such that the additional capabilities granted to the process being executed (as specified via `--cap` arguments) do not include inheritable capabilities. In addition, `runc spec` is changed to not set any inheritable capabilities in the created example OCI spec (`config.json`) file.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:L/AC:L/Au:N/C:P/I:P/A:P",
+       "metrics": {
+        "baseScore": 4.6,
+        "exploitabilityScore": 3.9,
+        "impactScore": 6.4
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 7.8,
+        "exploitabilityScore": 1.8,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+       "metrics": {
+        "baseScore": 5.9,
+        "exploitabilityScore": 2.5,
+        "impactScore": 3.4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/opencontainers/runc",
+       "version": "v1.1.0"
+      }
+     },
+     "found": {
+      "versionConstraint": "<1.1.2 (unknown)",
+      "vulnerabilityID": "GHSA-f3fp-gc8g-vw66"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "82c36490533db64b",
+    "name": "github.com/opencontainers/runc",
+    "version": "v1.1.0",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/usr/local/bin/gosu",
+      "layerID": "sha256:07850820e5b4c4dc34c7ab86578c73ca61bf7a105f6315a4644b3d9a4c9924e7"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:opencontainers:runc:v1.1.0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/opencontainers/runc@v1.1.0",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.18.2",
+     "architecture": "amd64",
+     "h1Digest": "h1:O9+X96OcDjkmmZyfaG996kV7yq8HsoU2h1XRRQcefG8=",
+     "mainModule": "github.com/tianon/gosu"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-m8cg-xc2p-r3fc",
+    "dataSource": "https://github.com/advisories/GHSA-m8cg-xc2p-r3fc",
+    "namespace": "github:language:go",
+    "severity": "Low",
+    "urls": [
+     "https://github.com/advisories/GHSA-m8cg-xc2p-r3fc"
+    ],
+    "description": "rootless: `/sys/fs/cgroup` is writable when cgroupns isn't unshared in runc",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:C/C:N/I:N/A:L",
+      "metrics": {
+       "baseScore": 2.5,
+       "exploitabilityScore": 0.8,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {
+       "base_severity": "Low",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "1.1.5"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-25809",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-25809",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://github.com/opencontainers/runc/commit/0d62b950e60f6980b54fe3bafd9a9c608dc1df17",
+      "https://github.com/opencontainers/runc/security/advisories/GHSA-m8cg-xc2p-r3fc"
+     ],
+     "description": "runc is a CLI tool for spawning and running containers according to the OCI specification. In affected versions it was found that rootless runc makes `/sys/fs/cgroup` writable in following conditons: 1. when runc is executed inside the user namespace, and the `config.json` does not specify the cgroup namespace to be unshared (e.g.., `(docker|podman|nerdctl) run --cgroupns=host`, with Rootless Docker/Podman/nerdctl) or 2. when runc is executed outside the user namespace, and `/sys` is mounted with `rbind, ro` (e.g., `runc spec --rootless`; this condition is very rare). A container may gain the write access to user-owned cgroup hierarchy `/sys/fs/cgroup/user.slice/...` on the host . Other users's cgroup hierarchies are not affected. Users are advised to upgrade to version 1.1.5. Users unable to upgrade may unshare the cgroup namespace (`(docker|podman|nerdctl) run --cgroupns=private)`. This is the default behavior of Docker/Podman/nerdctl on cgroup v2 hosts. or add `/sys/fs/cgroup` to `maskedPaths`.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:L",
+       "metrics": {
+        "baseScore": 6.3,
+        "exploitabilityScore": 2,
+        "impactScore": 3.7
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:C/C:L/I:L/A:L",
+       "metrics": {
+        "baseScore": 5,
+        "exploitabilityScore": 0.8,
+        "impactScore": 3.7
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/opencontainers/runc",
+       "version": "v1.1.0"
+      }
+     },
+     "found": {
+      "versionConstraint": "<1.1.5 (unknown)",
+      "vulnerabilityID": "GHSA-m8cg-xc2p-r3fc"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "82c36490533db64b",
+    "name": "github.com/opencontainers/runc",
+    "version": "v1.1.0",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/usr/local/bin/gosu",
+      "layerID": "sha256:07850820e5b4c4dc34c7ab86578c73ca61bf7a105f6315a4644b3d9a4c9924e7"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:opencontainers:runc:v1.1.0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/opencontainers/runc@v1.1.0",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.18.2",
+     "architecture": "amd64",
+     "h1Digest": "h1:O9+X96OcDjkmmZyfaG996kV7yq8HsoU2h1XRRQcefG8=",
+     "mainModule": "github.com/tianon/gosu"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-7g45-4rm6-3mm3",
+    "dataSource": "https://github.com/advisories/GHSA-7g45-4rm6-3mm3",
+    "namespace": "github:language:java",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-7g45-4rm6-3mm3"
+    ],
+    "description": "Guava vulnerable to insecure use of temporary directory",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+      "metrics": {
+       "baseScore": 5.5,
+       "exploitabilityScore": 1.8,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "32.0.0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-2976",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-2976",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/google/guava/issues/2575",
+      "https://security.netapp.com/advisory/ntap-20230818-0008/"
+     ],
+     "description": "Use of Java's default temporary directory for file creation in `FileBackedOutputStream` in Google Guava versions 1.0 to 31.1 on Unix systems and Android Ice Cream Sandwich allows other users and apps on the machine with access to the default Java temporary directory to be able to access the files created by the class.\n\nEven though the security vulnerability is fixed in version 32.0.0, we recommend using version 32.0.1 as version 32.0.0 breaks some functionality under Windows.\n\n",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
+       "metrics": {
+        "baseScore": 7.1,
+        "exploitabilityScore": 1.8,
+        "impactScore": 5.2
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "cve-coordination@google.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+       "metrics": {
+        "baseScore": 5.5,
+        "exploitabilityScore": 1.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "guava",
+       "version": "27.0-jre"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=1.0,<32.0.0 (unknown)",
+      "vulnerabilityID": "GHSA-7g45-4rm6-3mm3"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "754735db56ec4df4",
+    "name": "guava",
+    "version": "27.0-jre",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "/opt/cassandra/lib/guava-27.0-jre.jar",
+      "layerID": "sha256:07850820e5b4c4dc34c7ab86578c73ca61bf7a105f6315a4644b3d9a4c9924e7"
+     }
+    ],
+    "language": "java",
+    "licenses": [
+     "http://www.apache.org/licenses/LICENSE-2.0.txt"
+    ],
+    "cpes": [
+     "cpe:2.3:a:google:guava:27.0-jre:*:*:*:*:*:*:*",
+     "cpe:2.3:a:guava:guava:27.0-jre:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/com.google.guava/guava@27.0-jre",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "/opt/cassandra/lib/guava-27.0-jre.jar",
+     "pomArtifactID": "guava",
+     "pomGroupID": "com.google.guava",
+     "manifestName": "",
+     "archiveDigests": [
+      {
+       "algorithm": "sha1",
+       "value": "c6ad87d2575af8ac8ec38e28e75aefa882cc3a1f"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-5mg8-w23w-74h3",
+    "dataSource": "https://github.com/advisories/GHSA-5mg8-w23w-74h3",
+    "namespace": "github:language:java",
+    "severity": "Low",
+    "urls": [
+     "https://github.com/advisories/GHSA-5mg8-w23w-74h3"
+    ],
+    "description": "Information Disclosure in Guava",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N",
+      "metrics": {
+       "baseScore": 3.3,
+       "exploitabilityScore": 1.8,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {
+       "base_severity": "Low",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "32.0.0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2020-8908",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2020-8908",
+     "namespace": "nvd:cpe",
+     "severity": "Low",
+     "urls": [
+      "https://github.com/google/guava/commit/fec0dbc4634006a6162cfd4d0d09c962073ddf40",
+      "https://github.com/google/guava/issues/4011",
+      "https://lists.apache.org/thread.html/r007add131977f4f576c232b25e024249a3d16f66aad14a4b52819d21%40%3Ccommon-issues.hadoop.apache.org%3E",
+      "https://lists.apache.org/thread.html/r07ed3e4417ad043a27bee7bb33322e9bfc7d7e6d1719b8e3dfd95c14%40%3Cdev.drill.apache.org%3E",
+      "https://lists.apache.org/thread.html/r161b87f8037bbaff400194a63cd2016c9a69f5949f06dcc79beeab54%40%3Cdev.drill.apache.org%3E",
+      "https://lists.apache.org/thread.html/r215b3d50f56faeb2f9383505f3e62faa9f549bb23e8a9848b78a968e%40%3Ccommits.ws.apache.org%3E",
+      "https://lists.apache.org/thread.html/r294be9d31c0312d2c0837087204b5d4bf49d0552890e6eec716fa6a6%40%3Cyarn-issues.hadoop.apache.org%3E",
+      "https://lists.apache.org/thread.html/r2fe45d96eea8434b91592ca08109118f6308d60f6d0e21d52438cfb4%40%3Cdev.drill.apache.org%3E",
+      "https://lists.apache.org/thread.html/r3c3b33ee5bef0c67391d27a97cbfd89d44f328cf072b601b58d4e748%40%3Ccommits.pulsar.apache.org%3E",
+      "https://lists.apache.org/thread.html/r3dd8881de891598d622227e9840dd7c2ef1d08abbb49e9690c7ae1bc%40%3Cissues.geode.apache.org%3E",
+      "https://lists.apache.org/thread.html/r4776f62dfae4a0006658542f43034a7fc199350e35a66d4e18164ee6%40%3Ccommits.cxf.apache.org%3E",
+      "https://lists.apache.org/thread.html/r49549a8322f62cd3acfa4490d25bfba0be04f3f9ff4d14fe36199d27%40%3Cyarn-dev.hadoop.apache.org%3E",
+      "https://lists.apache.org/thread.html/r58a8775205ab1839dba43054b09a9ab3b25b423a4170b2413c4067ac%40%3Ccommon-issues.hadoop.apache.org%3E",
+      "https://lists.apache.org/thread.html/r5b3d93dfdfb7708e796e8762ab40edbde8ff8add48aba53e5ea26f44%40%3Cissues.geode.apache.org%3E",
+      "https://lists.apache.org/thread.html/r5d61b98ceb7bba939a651de5900dbd67be3817db6bfcc41c6e04e199%40%3Cyarn-issues.hadoop.apache.org%3E",
+      "https://lists.apache.org/thread.html/r6874dfe26eefc41b7c9a5e4a0487846fc4accf8c78ff948b24a1104a%40%3Cdev.drill.apache.org%3E",
+      "https://lists.apache.org/thread.html/r68d86f4b06c808204f62bcb254fcb5b0432528ee8d37a07ef4bc8222%40%3Ccommits.ws.apache.org%3E",
+      "https://lists.apache.org/thread.html/r79e47ed555bdb1180e528420a7a2bb898541367a29a3bc6bbf0baf2c%40%3Cissues.hive.apache.org%3E",
+      "https://lists.apache.org/thread.html/r7b0e81d8367264d6cad98766a469d64d11248eb654417809bfdacf09%40%3Cyarn-issues.hadoop.apache.org%3E",
+      "https://lists.apache.org/thread.html/r841c5e14e1b55281523ebcde661ece00b38a0569e00ef5e12bd5f6ba%40%3Cissues.maven.apache.org%3E",
+      "https://lists.apache.org/thread.html/ra7ab308481ee729f998691e8e3e02e93b1dedfc98f6b1cd3d86923b3%40%3Cyarn-issues.hadoop.apache.org%3E",
+      "https://lists.apache.org/thread.html/rb2364f4cf4d274eab5a7ecfaf64bf575cedf8b0173551997c749d322%40%3Cgitbox.hive.apache.org%3E",
+      "https://lists.apache.org/thread.html/rb8c0f1b7589864396690fe42a91a71dea9412e86eec66dc85bbacaaf%40%3Ccommits.cxf.apache.org%3E",
+      "https://lists.apache.org/thread.html/rbc7642b9800249553f13457e46b813bea1aec99d2bc9106510e00ff3%40%3Ctorque-dev.db.apache.org%3E",
+      "https://lists.apache.org/thread.html/rc2dbc4633a6eea1fcbce6831876cfa17b73759a98c65326d1896cb1a%40%3Ctorque-dev.db.apache.org%3E",
+      "https://lists.apache.org/thread.html/rc607bc52f3507b8b9c28c6a747c3122f51ac24afe80af2a670785b97%40%3Cissues.geode.apache.org%3E",
+      "https://lists.apache.org/thread.html/rcafc3a637d82bdc9a24036b2ddcad1e519dd0e6f848fcc3d606fd78f%40%3Cdev.hive.apache.org%3E",
+      "https://lists.apache.org/thread.html/rd01f5ff0164c468ec7abc96ff7646cea3cce6378da2e4aa29c6bcb95%40%3Cgithub.arrow.apache.org%3E",
+      "https://lists.apache.org/thread.html/rd2704306ec729ccac726e50339b8a8f079515cc29ccb77713b16e7c5%40%3Cissues.hive.apache.org%3E",
+      "https://lists.apache.org/thread.html/rd5d58088812cf8e677d99b07f73c654014c524c94e7fedbdee047604%40%3Ctorque-dev.db.apache.org%3E",
+      "https://lists.apache.org/thread.html/rd7e12d56d49d73e2b8549694974b07561b79b05455f7f781954231bf%40%3Cdev.pig.apache.org%3E",
+      "https://lists.apache.org/thread.html/re120f6b3d2f8222121080342c5801fdafca2f5188ceeb3b49c8a1d27%40%3Cyarn-issues.hadoop.apache.org%3E",
+      "https://lists.apache.org/thread.html/reebbd63c25bc1a946caa419cec2be78079f8449d1af48e52d47c9e85%40%3Cissues.geode.apache.org%3E",
+      "https://lists.apache.org/thread.html/rf00b688ffa620c990597f829ff85fdbba8bf73ee7bfb34783e1f0d4e%40%3Cyarn-dev.hadoop.apache.org%3E",
+      "https://lists.apache.org/thread.html/rf9f0fa84b8ae1a285f0210bafec6de2a9eba083007d04640b82aa625%40%3Cissues.geode.apache.org%3E",
+      "https://lists.apache.org/thread.html/rfc27e2727a20a574f39273e0432aa97486a332f9b3068f6ac1346594%40%3Cdev.myfaces.apache.org%3E",
+      "https://security.netapp.com/advisory/ntap-20220210-0003/",
+      "https://snyk.io/vuln/SNYK-JAVA-COMGOOGLEGUAVA-1015415",
+      "https://www.oracle.com//security-alerts/cpujul2021.html",
+      "https://www.oracle.com/security-alerts/cpuApr2021.html",
+      "https://www.oracle.com/security-alerts/cpuapr2022.html",
+      "https://www.oracle.com/security-alerts/cpujan2022.html",
+      "https://www.oracle.com/security-alerts/cpuoct2021.html"
+     ],
+     "description": "A temp directory creation vulnerability exists in all versions of Guava, allowing an attacker with access to the machine to potentially access data in a temporary directory created by the Guava API com.google.common.io.Files.createTempDir(). By default, on unix-like systems, the created directory is world-readable (readable by an attacker with access to the system). The method in question has been marked @Deprecated in versions 30.0 and later and should not be used. For Android developers, we recommend choosing a temporary directory API provided by Android, such as context.getCacheDir(). For other Java developers, we recommend migrating to the Java 7 API java.nio.file.Files.createTempDirectory() which explicitly configures permissions of 700, or configuring the Java runtime's java.io.tmpdir system property to point to a location whose permissions are appropriately configured.\n\n",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:L/AC:L/Au:N/C:P/I:N/A:N",
+       "metrics": {
+        "baseScore": 2.1,
+        "exploitabilityScore": 3.9,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N",
+       "metrics": {
+        "baseScore": 3.3,
+        "exploitabilityScore": 1.8,
+        "impactScore": 1.4
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "cve-coordination@google.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N",
+       "metrics": {
+        "baseScore": 3.3,
+        "exploitabilityScore": 1.8,
+        "impactScore": 1.4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "guava",
+       "version": "27.0-jre"
+      }
+     },
+     "found": {
+      "versionConstraint": "<32.0.0 (unknown)",
+      "vulnerabilityID": "GHSA-5mg8-w23w-74h3"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "754735db56ec4df4",
+    "name": "guava",
+    "version": "27.0-jre",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "/opt/cassandra/lib/guava-27.0-jre.jar",
+      "layerID": "sha256:07850820e5b4c4dc34c7ab86578c73ca61bf7a105f6315a4644b3d9a4c9924e7"
+     }
+    ],
+    "language": "java",
+    "licenses": [
+     "http://www.apache.org/licenses/LICENSE-2.0.txt"
+    ],
+    "cpes": [
+     "cpe:2.3:a:google:guava:27.0-jre:*:*:*:*:*:*:*",
+     "cpe:2.3:a:guava:guava:27.0-jre:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/com.google.guava/guava@27.0-jre",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "/opt/cassandra/lib/guava-27.0-jre.jar",
+     "pomArtifactID": "guava",
+     "pomGroupID": "com.google.guava",
+     "manifestName": "",
+     "archiveDigests": [
+      {
+       "algorithm": "sha1",
+       "value": "c6ad87d2575af8ac8ec38e28e75aefa882cc3a1f"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-rgv9-q543-rqg4",
+    "dataSource": "https://github.com/advisories/GHSA-rgv9-q543-rqg4",
+    "namespace": "github:language:java",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-rgv9-q543-rqg4"
+    ],
+    "description": "Uncontrolled Resource Consumption in FasterXML jackson-databind",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "2.13.4"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-42004",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-42004",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50490",
+      "https://github.com/FasterXML/jackson-databind/commit/063183589218fec19a9293ed2f17ec53ea80ba88",
+      "https://github.com/FasterXML/jackson-databind/issues/3582",
+      "https://lists.debian.org/debian-lts-announce/2022/11/msg00035.html",
+      "https://security.gentoo.org/glsa/202210-21",
+      "https://security.netapp.com/advisory/ntap-20221118-0008/",
+      "https://www.debian.org/security/2022/dsa-5283"
+     ],
+     "description": "In FasterXML jackson-databind before 2.13.4, resource exhaustion can occur because of a lack of a check in BeanDeserializer._deserializeFromArray to prevent use of deeply nested arrays. An application is vulnerable only with certain customized choices for deserialization.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "jackson-databind",
+       "version": "2.13.2.2"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=2.13.0,<2.13.4 (unknown)",
+      "vulnerabilityID": "GHSA-rgv9-q543-rqg4"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "c3b2fce422ef224e",
+    "name": "jackson-databind",
+    "version": "2.13.2.2",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "/opt/cassandra/lib/jackson-databind-2.13.2.2.jar",
+      "layerID": "sha256:07850820e5b4c4dc34c7ab86578c73ca61bf7a105f6315a4644b3d9a4c9924e7"
+     }
+    ],
+    "language": "java",
+    "licenses": [
+     "http://www.apache.org/licenses/LICENSE-2.0.txt"
+    ],
+    "cpes": [
+     "cpe:2.3:a:jackson-databind:jackson-databind:2.13.2.2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jackson-databind:jackson_databind:2.13.2.2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jackson_databind:jackson-databind:2.13.2.2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jackson_databind:jackson_databind:2.13.2.2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:fasterxml:jackson-databind:2.13.2.2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:fasterxml:jackson_databind:2.13.2.2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jackson-databind:jackson:2.13.2.2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jackson:jackson-databind:2.13.2.2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jackson:jackson_databind:2.13.2.2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jackson_databind:jackson:2.13.2.2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:core:jackson-databind:2.13.2.2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:core:jackson_databind:2.13.2.2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:fasterxml:jackson:2.13.2.2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jackson:jackson:2.13.2.2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:core:jackson:2.13.2.2:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.13.2.2",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "/opt/cassandra/lib/jackson-databind-2.13.2.2.jar",
+     "pomArtifactID": "jackson-databind",
+     "pomGroupID": "com.fasterxml.jackson.core",
+     "manifestName": "",
+     "archiveDigests": [
+      {
+       "algorithm": "sha1",
+       "value": "ffeb635597d093509f33e1e94274d14be610f933"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-jjjh-jjxp-wpff",
+    "dataSource": "https://github.com/advisories/GHSA-jjjh-jjxp-wpff",
+    "namespace": "github:language:java",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-jjjh-jjxp-wpff"
+    ],
+    "description": "Uncontrolled Resource Consumption in Jackson-databind",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "2.13.4.2"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-42003",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-42003",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51020",
+      "https://github.com/FasterXML/jackson-databind/commit/d78d00ee7b5245b93103fef3187f70543d67ca33",
+      "https://github.com/FasterXML/jackson-databind/issues/3590",
+      "https://lists.debian.org/debian-lts-announce/2022/11/msg00035.html",
+      "https://security.gentoo.org/glsa/202210-21",
+      "https://security.netapp.com/advisory/ntap-20221124-0004/",
+      "https://www.debian.org/security/2022/dsa-5283"
+     ],
+     "description": "In FasterXML jackson-databind before 2.14.0-rc1, resource exhaustion can occur because of a lack of a check in primitive value deserializers to avoid deep wrapper array nesting, when the UNWRAP_SINGLE_VALUE_ARRAYS feature is enabled. Additional fix version in 2.13.4.1 and 2.12.17.1",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "jackson-databind",
+       "version": "2.13.2.2"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=2.13.0,<2.13.4.2 (unknown)",
+      "vulnerabilityID": "GHSA-jjjh-jjxp-wpff"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "c3b2fce422ef224e",
+    "name": "jackson-databind",
+    "version": "2.13.2.2",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "/opt/cassandra/lib/jackson-databind-2.13.2.2.jar",
+      "layerID": "sha256:07850820e5b4c4dc34c7ab86578c73ca61bf7a105f6315a4644b3d9a4c9924e7"
+     }
+    ],
+    "language": "java",
+    "licenses": [
+     "http://www.apache.org/licenses/LICENSE-2.0.txt"
+    ],
+    "cpes": [
+     "cpe:2.3:a:jackson-databind:jackson-databind:2.13.2.2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jackson-databind:jackson_databind:2.13.2.2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jackson_databind:jackson-databind:2.13.2.2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jackson_databind:jackson_databind:2.13.2.2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:fasterxml:jackson-databind:2.13.2.2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:fasterxml:jackson_databind:2.13.2.2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jackson-databind:jackson:2.13.2.2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jackson:jackson-databind:2.13.2.2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jackson:jackson_databind:2.13.2.2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jackson_databind:jackson:2.13.2.2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:core:jackson-databind:2.13.2.2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:core:jackson_databind:2.13.2.2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:fasterxml:jackson:2.13.2.2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jackson:jackson:2.13.2.2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:core:jackson:2.13.2.2:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.13.2.2",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "/opt/cassandra/lib/jackson-databind-2.13.2.2.jar",
+     "pomArtifactID": "jackson-databind",
+     "pomGroupID": "com.fasterxml.jackson.core",
+     "manifestName": "",
+     "archiveDigests": [
+      {
+       "algorithm": "sha1",
+       "value": "ffeb635597d093509f33e1e94274d14be610f933"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2022-37454",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-37454",
+    "namespace": "nvd:cpe",
+    "severity": "Critical",
+    "urls": [
+     "https://csrc.nist.gov/projects/hash-functions/sha-3-project",
+     "https://eprint.iacr.org/2023/331",
+     "https://github.com/XKCP/XKCP/security/advisories/GHSA-6w4m-2xhg-2658",
+     "https://lists.debian.org/debian-lts-announce/2022/10/msg00041.html",
+     "https://lists.debian.org/debian-lts-announce/2022/11/msg00000.html",
+     "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/3ALQ6BDDPX5HU5YBQOBMDVAA2TSGDKIJ/",
+     "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/CMIEXLMTW5GO36HTFFWIPB3OHZXCT3G4/",
+     "https://mouha.be/sha-3-buffer-overflow/",
+     "https://news.ycombinator.com/item?id=33281106",
+     "https://news.ycombinator.com/item?id=35050307",
+     "https://security.gentoo.org/glsa/202305-02",
+     "https://www.debian.org/security/2022/dsa-5267",
+     "https://www.debian.org/security/2022/dsa-5269"
+    ],
+    "description": "The Keccak XKCP SHA-3 reference implementation before fdc6fef has an integer overflow and resultant buffer overflow that allows attackers to execute arbitrary code or eliminate expected cryptographic properties. This occurs in the sponge function interface.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 9.8,
+       "exploitabilityScore": 3.9,
+       "impactScore": 5.9
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "stock-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:python:python:3.8.10:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "python",
+       "version": "3.8.10"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2022-37454",
+      "versionConstraint": ">= 3.6.0, < 3.7.16 || >= 3.8.0, < 3.8.16 || >= 3.9.0, < 3.9.16 || >= 3.10.0, < 3.10.9 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:python:python:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "cfa3877f3ffc7b08",
+    "name": "python",
+    "version": "3.8.10",
+    "type": "binary",
+    "locations": [
+     {
+      "path": "/usr/bin/python3.8",
+      "layerID": "sha256:07850820e5b4c4dc34c7ab86578c73ca61bf7a105f6315a4644b3d9a4c9924e7"
+     }
+    ],
+    "language": "",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:python_software_foundation:python:3.8.10:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python:python:3.8.10:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python:python:3.8.10:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:generic/python@3.8.10",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2021-29921",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-29921",
+    "namespace": "nvd:cpe",
+    "severity": "Critical",
+    "urls": [
+     "https://bugs.python.org/issue36384",
+     "https://docs.python.org/3/library/ipaddress.html",
+     "https://github.com/python/cpython/blob/63298930fb531ba2bb4f23bc3b915dbf1e17e9e1/Misc/NEWS.d/3.8.0a4.rst",
+     "https://github.com/python/cpython/pull/12577",
+     "https://github.com/python/cpython/pull/25099",
+     "https://github.com/sickcodes",
+     "https://github.com/sickcodes/security/blob/master/advisories/SICK-2021-014.md",
+     "https://python-security.readthedocs.io/vuln/ipaddress-ipv4-leading-zeros.html",
+     "https://security.gentoo.org/glsa/202305-02",
+     "https://security.netapp.com/advisory/ntap-20210622-0003/",
+     "https://sick.codes/sick-2021-014",
+     "https://www.oracle.com//security-alerts/cpujul2021.html",
+     "https://www.oracle.com/security-alerts/cpuapr2022.html",
+     "https://www.oracle.com/security-alerts/cpujan2022.html",
+     "https://www.oracle.com/security-alerts/cpujul2022.html",
+     "https://www.oracle.com/security-alerts/cpuoct2021.html"
+    ],
+    "description": "In Python before 3,9,5, the ipaddress library mishandles leading zero characters in the octets of an IP address string. This (in some situations) allows attackers to bypass access control that is based on IP addresses.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "2.0",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 10,
+       "impactScore": 6.4
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 9.8,
+       "exploitabilityScore": 3.9,
+       "impactScore": 5.9
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "stock-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:python:python:3.8.10:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "python",
+       "version": "3.8.10"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2021-29921",
+      "versionConstraint": ">= 3.8.0, < 3.8.12 || >= 3.9.0, < 3.9.5 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:python:python:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "cfa3877f3ffc7b08",
+    "name": "python",
+    "version": "3.8.10",
+    "type": "binary",
+    "locations": [
+     {
+      "path": "/usr/bin/python3.8",
+      "layerID": "sha256:07850820e5b4c4dc34c7ab86578c73ca61bf7a105f6315a4644b3d9a4c9924e7"
+     }
+    ],
+    "language": "",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:python_software_foundation:python:3.8.10:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python:python:3.8.10:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python:python:3.8.10:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:generic/python@3.8.10",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2019-12900",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2019-12900",
+    "namespace": "nvd:cpe",
+    "severity": "Critical",
+    "urls": [
+     "http://lists.opensuse.org/opensuse-security-announce/2019-07/msg00040.html",
+     "http://lists.opensuse.org/opensuse-security-announce/2019-08/msg00050.html",
+     "http://lists.opensuse.org/opensuse-security-announce/2019-11/msg00078.html",
+     "http://lists.opensuse.org/opensuse-security-announce/2019-12/msg00000.html",
+     "http://packetstormsecurity.com/files/153644/Slackware-Security-Advisory-bzip2-Updates.html",
+     "http://packetstormsecurity.com/files/153957/FreeBSD-Security-Advisory-FreeBSD-SA-19-18.bzip2.html",
+     "https://gitlab.com/federicomenaquintero/bzip2/commit/74de1e2e6ffc9d51ef9824db71a8ffee5962cdbc",
+     "https://lists.apache.org/thread.html/ra0adb9653c7de9539b93cc8434143b655f753b9f60580ff260becb2b@%3Cusers.kafka.apache.org%3E",
+     "https://lists.apache.org/thread.html/rce8cd8c30f60604b580ea01bebda8a671a25c9a1629f409fc24e7774@%3Cuser.flink.apache.org%3E",
+     "https://lists.apache.org/thread.html/rda98305669476c4d90cc8527c4deda7e449019dd1fe9936b56671dd4@%3Cuser.flink.apache.org%3E",
+     "https://lists.debian.org/debian-lts-announce/2019/06/msg00021.html",
+     "https://lists.debian.org/debian-lts-announce/2019/07/msg00014.html",
+     "https://lists.debian.org/debian-lts-announce/2019/10/msg00012.html",
+     "https://lists.debian.org/debian-lts-announce/2019/10/msg00018.html",
+     "https://seclists.org/bugtraq/2019/Aug/4",
+     "https://seclists.org/bugtraq/2019/Jul/22",
+     "https://security.FreeBSD.org/advisories/FreeBSD-SA-19:18.bzip2.asc",
+     "https://support.f5.com/csp/article/K68713584?utm_source=f5support&amp;utm_medium=RSS",
+     "https://usn.ubuntu.com/4038-1/",
+     "https://usn.ubuntu.com/4038-2/",
+     "https://usn.ubuntu.com/4146-1/",
+     "https://usn.ubuntu.com/4146-2/",
+     "https://www.oracle.com/security-alerts/cpuoct2020.html"
+    ],
+    "description": "BZ2_decompress in decompress.c in bzip2 through 1.0.6 has an out-of-bounds write when there are many selectors.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "2.0",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 10,
+       "impactScore": 6.4
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 9.8,
+       "exploitabilityScore": 3.9,
+       "impactScore": 5.9
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "stock-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:python:python:3.8.10:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "python",
+       "version": "3.8.10"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2019-12900",
+      "versionConstraint": ">= 3.7.0, < 3.7.13 || >= 3.8.0, < 3.8.13 || >= 3.9.0, < 3.9.11 || >= 3.10.0, < 3.10.3 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:python:python:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "cfa3877f3ffc7b08",
+    "name": "python",
+    "version": "3.8.10",
+    "type": "binary",
+    "locations": [
+     {
+      "path": "/usr/bin/python3.8",
+      "layerID": "sha256:07850820e5b4c4dc34c7ab86578c73ca61bf7a105f6315a4644b3d9a4c9924e7"
+     }
+    ],
+    "language": "",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:python_software_foundation:python:3.8.10:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python:python:3.8.10:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python:python:3.8.10:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:generic/python@3.8.10",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-36632",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-36632",
+    "namespace": "nvd:cpe",
+    "severity": "High",
+    "urls": [
+     "https://docs.python.org/3/library/email.html",
+     "https://docs.python.org/3/library/email.utils.html",
+     "https://github.com/Daybreak2019/PoC_python3.9_Vul/blob/main/RecursionError-email.utils.parseaddr.py",
+     "https://github.com/python/cpython/issues/103800"
+    ],
+    "description": "** DISPUTED ** The legacy email.utils.parseaddr function in Python through 3.11.4 allows attackers to trigger \"RecursionError: maximum recursion depth exceeded while calling a Python object\" via a crafted argument. This argument is plausibly an untrusted value from an application's input data that was supposed to contain a name and an e-mail address. NOTE: email.utils.parseaddr is categorized as a Legacy API in the documentation of the Python email package. Applications should instead use the email.parser.BytesParser or email.parser.Parser class. NOTE: the vendor's perspective is that this is neither a vulnerability nor a bug. The email package is intended to have size limits and to throw an exception when limits are exceeded; they were exceeded by the example demonstration code.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "stock-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:python:python:3.8.10:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "python",
+       "version": "3.8.10"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2023-36632",
+      "versionConstraint": "<= 3.11.4 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:python:python:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "cfa3877f3ffc7b08",
+    "name": "python",
+    "version": "3.8.10",
+    "type": "binary",
+    "locations": [
+     {
+      "path": "/usr/bin/python3.8",
+      "layerID": "sha256:07850820e5b4c4dc34c7ab86578c73ca61bf7a105f6315a4644b3d9a4c9924e7"
+     }
+    ],
+    "language": "",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:python_software_foundation:python:3.8.10:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python:python:3.8.10:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python:python:3.8.10:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:generic/python@3.8.10",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-24329",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-24329",
+    "namespace": "nvd:cpe",
+    "severity": "High",
+    "urls": [
+     "https://github.com/python/cpython/issues/102153",
+     "https://github.com/python/cpython/pull/99421",
+     "https://lists.debian.org/debian-lts-announce/2023/09/msg00022.html",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6PEVICI7YNGGMSL3UCMWGE66QFLATH72/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/DSL6NSOAXWBJJ67XPLSSC74MNKZF3BBO/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/EM2XLZSTXG44TMFXF4E6VTGKR2MQCW3G/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/F2NY75GFDZ5T6YPN44D3VMFT5SUVTOTG/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/GR5US3BYILYJ4SKBV6YBNPRUBAL5P2CN/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/H23OSKC6UG6IWOQAUPW74YUHWRWVXJP7/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/JZTLGV2HYFF4AMYJL25VDIGAIHCU7UPA/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/LWC4WGXER5P6Q75RFGL7QUTPP3N5JR7T/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/MZEHSXSCMA4WWQKXT6QV7AAR6SWNZ2VP/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/O5SP4RT3RRS434ZS2HQKQJ3VZW7YPKYR/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/OHHJHJRLEF3TDT2K3676CAUVRDD4CCMR/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/PEUN6T22UJFXR7J5F6UUHCXXPKJ2DVHI/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/PURM5CFDABEWAIWZFD2MQ7ZJGCPYSQ44/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/Q3J5N24ECS4B6MJDRO6UAYU6GPLYBDCL/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/QRQHN7RWJQJHYP6E5EKESOYP5VDSHZG4/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RA2MBEEES6L46OD64OBSVUUMGKNGMOWW/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/T4IDB5OAR5Y4UK3HLMZBW4WEL2B7YFMJ/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/TZH26JGNZ5XYPZ5SAU3NKSBSPRE5OHTG/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/U2MZOJYGFCB5PPT6AKMAU72N7QOYWLBP/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UONZWLB4QVLQIY5CPDLEUEKH6WX4VQMC/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/WTOAUJNDWZDRWVSXJ354AYZYKRMT56HU/",
+     "https://pointernull.com/security/python-url-parse-problem.html",
+     "https://security.netapp.com/advisory/ntap-20230324-0004/",
+     "https://www.kb.cert.org/vuls/id/127587"
+    ],
+    "description": "An issue in the urllib.parse component of Python before 3.11.4 allows attackers to bypass blocklisting methods by supplying a URL that starts with blank characters.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "stock-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:python:python:3.8.10:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "python",
+       "version": "3.8.10"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2023-24329",
+      "versionConstraint": "< 3.7.17 || >= 3.8.0, < 3.8.17 || >= 3.9.0, < 3.9.17 || >= 3.10.0, < 3.10.12 || >= 3.11.0, < 3.11.4 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:python:python:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "cfa3877f3ffc7b08",
+    "name": "python",
+    "version": "3.8.10",
+    "type": "binary",
+    "locations": [
+     {
+      "path": "/usr/bin/python3.8",
+      "layerID": "sha256:07850820e5b4c4dc34c7ab86578c73ca61bf7a105f6315a4644b3d9a4c9924e7"
+     }
+    ],
+    "language": "",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:python_software_foundation:python:3.8.10:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python:python:3.8.10:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python:python:3.8.10:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:generic/python@3.8.10",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2022-45061",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-45061",
+    "namespace": "nvd:cpe",
+    "severity": "High",
+    "urls": [
+     "https://github.com/python/cpython/issues/98433",
+     "https://lists.debian.org/debian-lts-announce/2023/05/msg00024.html",
+     "https://lists.debian.org/debian-lts-announce/2023/06/msg00039.html",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/2AOUKI72ACV6CHY2QUFO6VK2DNMVJ2MB/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/35YDIWCUMWTMDBWFRAVENFH6BLB65D6S/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/4WBZJNSALFGMPYTINIF57HAAK46U72WQ/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/63FS6VHY4DCS74HBTEINUDOECQ2X6ZCH/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/7WQPHKGNXUJC3TC3BDW5RKGROWRJVSFR/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/B3YI6JYARWU6GULWOHNUROSACT54XFFS/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/B4MYQ3IV6NWA4CKSXEHW45CH2YNDHEPH/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/BWJREJHWVRBYDP43YB5WRL3QC7UBA7BR/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/GTPVDZDATRQFE6KAT6B4BQIQ4GRHIIIJ/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/IN26PWZTYG6IF3APLRXQJBVACQHZUPT2/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/JCDJXNBHWXNYUTOEV4H2HCFSRKV3SYL3/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/JTYVESWVBPD57ZJC35G5722Q6TS37WSB/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/KNE4GMD45RGC2HWUAAIGTDHT5VJ2E4O4/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/LKWAMPURWUV3DCCT4J7VHRF4NT2CFVBR/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/O67LRHDTJWH544KXB6KY4HMHQLYDXFPK/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ORVCQGJCCAVLN4DJDTWGREFCUWXKQRML/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/PLQ2BNZVBBAQPV3SPRU24ZD37UYJJS7W/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/QCKD4AFBHXIMHS64ZER2U7QRT33HNE7L/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/QLUGZSEAO3MBWGKCUSMKQIRYJZKJCIOB/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RDK3ZZBRYFO47ET3N4BNTKVXN47U6ICY/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RH57BNT4VQERGEJ5SXNXSVMDYP66YD4H/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RTN2OOLKYTG34DODUEJGT5MLC2PFGPBA/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/T3D5TX4TDJPXHXD2QICKTY3OCQC3JARP/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UHVW73QZJMHA4MK7JBT7CXX7XSNYQEGF/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/VCMDX6IFKLOA3NXUQEV524L5LHTPI2JI/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/X3EJ6J7PXVQOULBQZQGBXCXY6LFF6LZD/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/XXZJL3CNAFS5PAIR7K4RL62S3Y7THR7O/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/YPNWZKXPKTNHS5FVMN7UQZ2UPCSEFJUK/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ZB5YCMIRVX35RUB6XPOWKENCVCJEVDRK/",
+     "https://security.gentoo.org/glsa/202305-02",
+     "https://security.netapp.com/advisory/ntap-20221209-0007/"
+    ],
+    "description": "An issue was discovered in Python before 3.11.1. An unnecessary quadratic algorithm exists in one path when processing some inputs to the IDNA (RFC 3490) decoder, such that a crafted, unreasonably long name being presented to the decoder could lead to a CPU denial of service. Hostnames are often supplied by remote servers that could be controlled by a malicious actor; in such a scenario, they could trigger excessive CPU consumption on the client attempting to make use of an attacker-supplied supposed hostname. For example, the attack payload could be placed in the Location header of an HTTP response with status code 302. A fix is planned in 3.11.1, 3.10.9, 3.9.16, 3.8.16, and 3.7.16.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "stock-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:python:python:3.8.10:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "python",
+       "version": "3.8.10"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2022-45061",
+      "versionConstraint": "<= 3.7.15 || >= 3.8.0, <= 3.8.15 || >= 3.9.0, <= 3.9.15 || >= 3.10.0, <= 3.10.8 || = 3.11.0 || = 3.11.0-alpha1 || = 3.11.0-alpha2 || = 3.11.0-alpha3 || = 3.11.0-alpha4 || = 3.11.0-alpha5 || = 3.11.0-alpha6 || = 3.11.0-alpha7 || = 3.11.0-beta1 || = 3.11.0-beta2 || = 3.11.0-beta3 || = 3.11.0-beta4 || = 3.11.0-beta5 || = 3.11.0-rc1 || = 3.11.0-rc2 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:python:python:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "cfa3877f3ffc7b08",
+    "name": "python",
+    "version": "3.8.10",
+    "type": "binary",
+    "locations": [
+     {
+      "path": "/usr/bin/python3.8",
+      "layerID": "sha256:07850820e5b4c4dc34c7ab86578c73ca61bf7a105f6315a4644b3d9a4c9924e7"
+     }
+    ],
+    "language": "",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:python_software_foundation:python:3.8.10:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python:python:3.8.10:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python:python:3.8.10:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:generic/python@3.8.10",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2022-42919",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-42919",
+    "namespace": "nvd:cpe",
+    "severity": "High",
+    "urls": [
+     "https://github.com/python/cpython/compare/v3.10.8...v3.10.9",
+     "https://github.com/python/cpython/compare/v3.9.15...v3.9.16",
+     "https://github.com/python/cpython/issues/97514",
+     "https://github.com/python/cpython/issues/97514#issuecomment-1310277840",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/FKGCQPIVHEAIJ77R3RSNSQWYBUDVWDKU/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/P2LHWWEI5OBQ6RELULMVU6KMDYG4WZXH/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/PI5DYIED6U26BGX5IRZWNCP6TY4M2ZGZ/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/QLUGZSEAO3MBWGKCUSMKQIRYJZKJCIOB/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/R6KGIRHSENZ4QAB234Z36HVIDTRJ3MFI/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RDK3ZZBRYFO47ET3N4BNTKVXN47U6ICY/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/VCRKBB5Y5EWTJUNC7LK665WO64DDXSTN/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/XX6LLAXGZVZ327REY6MDZRMMP47LJ53P/",
+     "https://security.gentoo.org/glsa/202305-02",
+     "https://security.netapp.com/advisory/ntap-20221209-0006/"
+    ],
+    "description": "Python 3.9.x before 3.9.16 and 3.10.x before 3.10.9 on Linux allows local privilege escalation in a non-default configuration. The Python multiprocessing library, when used with the forkserver start method on Linux, allows pickles to be deserialized from any user in the same machine local network namespace, which in many system configurations means any user on the same machine. Pickles can execute arbitrary code. Thus, this allows for local user privilege escalation to the user that any forkserver process is running as. Setting multiprocessing.util.abstract_sockets_supported to False is a workaround. The forkserver start method for multiprocessing is not the default start method. This issue is Linux specific because only Linux supports abstract namespace sockets. CPython before 3.9 does not make use of Linux abstract namespace sockets by default. Support for users manually specifying an abstract namespace socket was added as a bugfix in 3.7.8 and 3.8.3, but users would need to make specific uncommon API calls in order to do that in CPython before 3.9.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 7.8,
+       "exploitabilityScore": 1.8,
+       "impactScore": 5.9
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "stock-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:python:python:3.8.10:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "python",
+       "version": "3.8.10"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2022-42919",
+      "versionConstraint": ">= 3.7.3, <= 3.7.15 || >= 3.8.3, <= 3.8.15 || >= 3.9.0, < 3.9.16 || >= 3.10.0, < 3.10.9 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:python:python:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "cfa3877f3ffc7b08",
+    "name": "python",
+    "version": "3.8.10",
+    "type": "binary",
+    "locations": [
+     {
+      "path": "/usr/bin/python3.8",
+      "layerID": "sha256:07850820e5b4c4dc34c7ab86578c73ca61bf7a105f6315a4644b3d9a4c9924e7"
+     }
+    ],
+    "language": "",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:python_software_foundation:python:3.8.10:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python:python:3.8.10:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python:python:3.8.10:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:generic/python@3.8.10",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2022-0391",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-0391",
+    "namespace": "nvd:cpe",
+    "severity": "High",
+    "urls": [
+     "https://bugs.python.org/issue43882",
+     "https://lists.debian.org/debian-lts-announce/2023/09/msg00022.html",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/CSD2YBXP3ZF44E44QMIIAR5VTO35KTRB/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UDBDBAU6HUPZHISBOARTXZ5GKHF2VH5U/",
+     "https://security.gentoo.org/glsa/202305-02",
+     "https://security.netapp.com/advisory/ntap-20220225-0009/",
+     "https://www.oracle.com/security-alerts/cpuapr2022.html"
+    ],
+    "description": "A flaw was found in Python, specifically within the urllib.parse module. This module helps break Uniform Resource Locator (URL) strings into components. The issue involves how the urlparse method does not sanitize input and allows characters like '\\r' and '\\n' in the URL path. This flaw allows an attacker to input a crafted URL, leading to injection attacks. This flaw affects Python versions prior to 3.10.0b1, 3.9.5, 3.8.11, 3.7.11 and 3.6.14.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "2.0",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N",
+      "metrics": {
+       "baseScore": 5,
+       "exploitabilityScore": 10,
+       "impactScore": 2.9
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "stock-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:python:python:3.8.10:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "python",
+       "version": "3.8.10"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2022-0391",
+      "versionConstraint": "< 3.6.14 || >= 3.7.0, < 3.7.11 || >= 3.8.0, < 3.8.11 || >= 3.9.0, < 3.9.5 || = 3.10.0-alpha1 || = 3.10.0-alpha2 || = 3.10.0-alpha3 || = 3.10.0-alpha4 || = 3.10.0-alpha5 || = 3.10.0-alpha6 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:python:python:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "cfa3877f3ffc7b08",
+    "name": "python",
+    "version": "3.8.10",
+    "type": "binary",
+    "locations": [
+     {
+      "path": "/usr/bin/python3.8",
+      "layerID": "sha256:07850820e5b4c4dc34c7ab86578c73ca61bf7a105f6315a4644b3d9a4c9924e7"
+     }
+    ],
+    "language": "",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:python_software_foundation:python:3.8.10:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python:python:3.8.10:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python:python:3.8.10:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:generic/python@3.8.10",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2021-3737",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-3737",
+    "namespace": "nvd:cpe",
+    "severity": "High",
+    "urls": [
+     "https://bugs.python.org/issue44022",
+     "https://bugzilla.redhat.com/show_bug.cgi?id=1995162",
+     "https://github.com/python/cpython/pull/25916",
+     "https://github.com/python/cpython/pull/26503",
+     "https://lists.debian.org/debian-lts-announce/2023/05/msg00024.html",
+     "https://lists.debian.org/debian-lts-announce/2023/06/msg00039.html",
+     "https://python-security.readthedocs.io/vuln/urllib-100-continue-loop.html",
+     "https://security.netapp.com/advisory/ntap-20220407-0009/",
+     "https://ubuntu.com/security/CVE-2021-3737",
+     "https://www.oracle.com/security-alerts/cpujul2022.html"
+    ],
+    "description": "A flaw was found in python. An improperly handled HTTP response in the HTTP client code of python may allow a remote attacker, who controls the HTTP server, to make the client script enter an infinite loop, consuming CPU time. The highest threat from this vulnerability is to system availability.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "2.0",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:N/A:C",
+      "metrics": {
+       "baseScore": 7.1,
+       "exploitabilityScore": 8.6,
+       "impactScore": 6.9
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "stock-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:python:python:3.8.10:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "python",
+       "version": "3.8.10"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2021-3737",
+      "versionConstraint": ">= 3.6.0, < 3.6.14 || >= 3.7.0, < 3.7.11 || >= 3.8.0, < 3.8.11 || >= 3.9.0, < 3.9.6 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:python:python:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "cfa3877f3ffc7b08",
+    "name": "python",
+    "version": "3.8.10",
+    "type": "binary",
+    "locations": [
+     {
+      "path": "/usr/bin/python3.8",
+      "layerID": "sha256:07850820e5b4c4dc34c7ab86578c73ca61bf7a105f6315a4644b3d9a4c9924e7"
+     }
+    ],
+    "language": "",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:python_software_foundation:python:3.8.10:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python:python:3.8.10:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python:python:3.8.10:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:generic/python@3.8.10",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2021-28861",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-28861",
+    "namespace": "nvd:cpe",
+    "severity": "High",
+    "urls": [
+     "https://bugs.python.org/issue43223",
+     "https://github.com/python/cpython/pull/24848",
+     "https://github.com/python/cpython/pull/93879",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/2TRINJE3INWDVIHIABW4L2NP3RUSK7BJ/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/5LTSPFIULY2GZJN3QYNFVM4JSU6H4D6J/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/5OABQ5CMPQETJLFHROAXDIDXCMDTNVYG/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/DISZAFSIQ7IAPAEQTC7G2Z5QUA2V2PSW/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/HPX4XHT2FGVQYLY2STT2MRVENILNZTTU/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/I3MQT5ZE3QH5PVDJMERTBOCILHK35CBE/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/IFGV7P2PYFBMK32OKHCAC2ZPJQV5AUDF/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/KRGKPYA5YHIXQAMRIXO5DSCX7D4UUW4Q/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/OKYE2DOI2X7WZXAWTQJZAXYIWM37HDCY/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/QLE5INSVJUZJGY5OJXV6JREXWD7UDHYN/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/S7G66SRWUM36ENQ3X6LAIG7HAB27D4XJ/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/TZEPOPUFC42KXXSLFPZ47ZZRGPOR7SQE/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/WXF6MQ74HVIDDSR5AE2UDR24I6D4FEPC/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/X46T4EFTIBXZRYTGASBDEZGYJINH2OWV/",
+     "https://security.gentoo.org/glsa/202305-02"
+    ],
+    "description": "** DISPUTED ** Python 3.x through 3.10 has an open redirection vulnerability in lib/http/server.py due to no protection against multiple (/) at the beginning of URI path which may leads to information disclosure. NOTE: this is disputed by a third party because the http.server.html documentation page states \"Warning: http.server is not recommended for production. It only implements basic security checks.\"",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:N/A:N",
+      "metrics": {
+       "baseScore": 7.4,
+       "exploitabilityScore": 2.8,
+       "impactScore": 4
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "stock-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:python:python:3.8.10:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "python",
+       "version": "3.8.10"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2021-28861",
+      "versionConstraint": ">= 3.0.0, < 3.7.14 || >= 3.8.0, < 3.8.14 || >= 3.9.0, < 3.9.14 || >= 3.10.0, < 3.10.6 || = 3.11.0-alpha1 || = 3.11.0-alpha2 || = 3.11.0-alpha3 || = 3.11.0-alpha4 || = 3.11.0-alpha5 || = 3.11.0-alpha6 || = 3.11.0-alpha7 || = 3.11.0-beta1 || = 3.11.0-beta2 || = 3.11.0-beta3 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:python:python:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "cfa3877f3ffc7b08",
+    "name": "python",
+    "version": "3.8.10",
+    "type": "binary",
+    "locations": [
+     {
+      "path": "/usr/bin/python3.8",
+      "layerID": "sha256:07850820e5b4c4dc34c7ab86578c73ca61bf7a105f6315a4644b3d9a4c9924e7"
+     }
+    ],
+    "language": "",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:python_software_foundation:python:3.8.10:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python:python:3.8.10:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python:python:3.8.10:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:generic/python@3.8.10",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2020-10735",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2020-10735",
+    "namespace": "nvd:cpe",
+    "severity": "High",
+    "urls": [
+     "http://www.openwall.com/lists/oss-security/2022/09/21/1",
+     "http://www.openwall.com/lists/oss-security/2022/09/21/4",
+     "https://access.redhat.com/security/cve/CVE-2020-10735",
+     "https://bugzilla.redhat.com/show_bug.cgi?id=1834423",
+     "https://docs.google.com/document/d/1KjuF_aXlzPUxTK4BMgezGJ2Pn7uevfX7g0_mvgHlL7Y",
+     "https://github.com/python/cpython/issues/95778",
+     "https://lists.debian.org/debian-lts-announce/2023/06/msg00039.html",
+     "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/2VCU6EVQDIXNCEDJUCTFIER2WVNNDTYZ/",
+     "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/32AAQKABEKFCB5DDV5OONRZK6BS23HPW/",
+     "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/4EWKR2SPX3JORLWCXFY3KN2U5B5CIUQQ/",
+     "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/6XL6E5A3I36TRR73VNBOXNIQP4AMZDFZ/",
+     "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/76YE7AM37MRU76XJV4M27CWDAMUGNRYK/",
+     "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/HSRPVJZL6DJFWKYRHMNJB7VCEUCBKRF5/",
+     "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/IFGV7P2PYFBMK32OKHCAC2ZPJQV5AUDF/",
+     "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/NHC6IUU7CLRQ3QLPWUXLONSG3SXFTR47/",
+     "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/OKYE2DOI2X7WZXAWTQJZAXYIWM37HDCY/",
+     "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/OT5U223OE5ZOUHZAZYSYSWVJQIKDE73E/",
+     "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/OT5WQB7Z3CXOWVBD2AFAHYPA5ONYFFZ4/",
+     "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/PD7FTLJOIGMUSCDR3JAN6WRFHJEE4PH5/",
+     "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/SZYJSGLSCQOKXXFVJVJQAXLEOJBIWGEL/",
+     "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/TD7JDDKJXK6D26XAN3YRFNM2LAJHT5UO/",
+     "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/TMWPRAAJS7I6U3U45V7GZVXWNSECI22M/",
+     "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/U4ZZV4CDFRMTPDBI7C5L43RFL3XLIGUY/",
+     "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/UBPDVCDIUCEBE7C4NAGNA2KQJYOTPBAZ/",
+     "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/V7ZUJDHK7KNG6SLIFXW7MNZ6O2PUJYK6/",
+     "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/WXF6MQ74HVIDDSR5AE2UDR24I6D4FEPC/",
+     "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/ZEOAJWGGY55QU35UM2OVZATBW5MX2OZD/"
+    ],
+    "description": "A flaw was found in python. In algorithms with quadratic time complexity using non-binary bases, when using int(\"text\"), a system could take 50ms to parse an int string with 100,000 digits and 5s for 1,000,000 digits (float, decimal, int.from_bytes(), and int() for binary bases 2, 4, 8, 16, and 32 are not affected). The highest threat from this vulnerability is to system availability.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "stock-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:python:python:3.8.10:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "python",
+       "version": "3.8.10"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2020-10735",
+      "versionConstraint": ">= 3.7.0, < 3.7.14 || >= 3.8.0, < 3.8.14 || >= 3.9.0, < 3.9.14 || >= 3.10.0, < 3.10.7 || = 3.11.0-alpha1 || = 3.11.0-alpha2 || = 3.11.0-alpha3 || = 3.11.0-alpha4 || = 3.11.0-alpha5 || = 3.11.0-alpha6 || = 3.11.0-alpha7 || = 3.11.0-beta1 || = 3.11.0-beta2 || = 3.11.0-beta3 || = 3.11.0-beta4 || = 3.11.0-beta5 || = 3.11.0-rc1 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:python:python:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "cfa3877f3ffc7b08",
+    "name": "python",
+    "version": "3.8.10",
+    "type": "binary",
+    "locations": [
+     {
+      "path": "/usr/bin/python3.8",
+      "layerID": "sha256:07850820e5b4c4dc34c7ab86578c73ca61bf7a105f6315a4644b3d9a4c9924e7"
+     }
+    ],
+    "language": "",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:python_software_foundation:python:3.8.10:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python:python:3.8.10:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python:python:3.8.10:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:generic/python@3.8.10",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2018-25032",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2018-25032",
+    "namespace": "nvd:cpe",
+    "severity": "High",
+    "urls": [
+     "http://seclists.org/fulldisclosure/2022/May/33",
+     "http://seclists.org/fulldisclosure/2022/May/35",
+     "http://seclists.org/fulldisclosure/2022/May/38",
+     "http://www.openwall.com/lists/oss-security/2022/03/25/2",
+     "http://www.openwall.com/lists/oss-security/2022/03/26/1",
+     "https://cert-portal.siemens.com/productcert/pdf/ssa-333517.pdf",
+     "https://github.com/madler/zlib/commit/5c44459c3b28a9bd3283aaceab7c615f8020c531",
+     "https://github.com/madler/zlib/compare/v1.2.11...v1.2.12",
+     "https://github.com/madler/zlib/issues/605",
+     "https://lists.debian.org/debian-lts-announce/2022/04/msg00000.html",
+     "https://lists.debian.org/debian-lts-announce/2022/05/msg00008.html",
+     "https://lists.debian.org/debian-lts-announce/2022/09/msg00023.html",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/DCZFIJBJTZ7CL5QXBFKTQ22Q26VINRUF/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/DF62MVMH3QUGMBDCB3DY2ERQ6EBHTADB/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/JZZPTWRYQULAOL3AW7RZJNVZ2UONXCV4/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/NS2D2GFPFGOJUL4WQ3DUAY7HF4VWQ77F/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/VOKNP2L734AEL47NRYGVZIKEFOUBQY5Y/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/XOKFMSNQ5D5WGMALBNBXU3GE442V74WU/",
+     "https://security.gentoo.org/glsa/202210-42",
+     "https://security.netapp.com/advisory/ntap-20220526-0009/",
+     "https://security.netapp.com/advisory/ntap-20220729-0004/",
+     "https://support.apple.com/kb/HT213255",
+     "https://support.apple.com/kb/HT213256",
+     "https://support.apple.com/kb/HT213257",
+     "https://www.debian.org/security/2022/dsa-5111",
+     "https://www.openwall.com/lists/oss-security/2022/03/24/1",
+     "https://www.openwall.com/lists/oss-security/2022/03/28/1",
+     "https://www.openwall.com/lists/oss-security/2022/03/28/3",
+     "https://www.oracle.com/security-alerts/cpujul2022.html"
+    ],
+    "description": "zlib before 1.2.12 allows memory corruption when deflating (i.e., when compressing) if the input has many distant matches.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "2.0",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+      "metrics": {
+       "baseScore": 5,
+       "exploitabilityScore": 10,
+       "impactScore": 2.9
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "stock-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:python:python:3.8.10:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "python",
+       "version": "3.8.10"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2018-25032",
+      "versionConstraint": ">= 3.7.0, < 3.7.14 || >= 3.8.0, < 3.8.14 || >= 3.9.0, < 3.9.13 || >= 3.10.0, < 3.10.5 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:python:python:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "cfa3877f3ffc7b08",
+    "name": "python",
+    "version": "3.8.10",
+    "type": "binary",
+    "locations": [
+     {
+      "path": "/usr/bin/python3.8",
+      "layerID": "sha256:07850820e5b4c4dc34c7ab86578c73ca61bf7a105f6315a4644b3d9a4c9924e7"
+     }
+    ],
+    "language": "",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:python_software_foundation:python:3.8.10:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python:python:3.8.10:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python:python:3.8.10:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:generic/python@3.8.10",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2015-20107",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2015-20107",
+    "namespace": "nvd:cpe",
+    "severity": "High",
+    "urls": [
+     "https://bugs.python.org/issue24778",
+     "https://github.com/python/cpython/issues/68966",
+     "https://lists.debian.org/debian-lts-announce/2023/05/msg00024.html",
+     "https://lists.debian.org/debian-lts-announce/2023/06/msg00039.html",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/46KWPTI72SSEOF53DOYQBQOCN4QQB2GE/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/53TQZFLS6O3FLIMVSXFEEPZSWLDZLBOX/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/57NECACX333A3BBZM2TR2VZ4ZE3UG3SN/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/5DBVY4YC2P6EPZZ2DROOXHDOWZ4BJFLW/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6QIKVSW3H6W2GQGDE5DTIWLGFNH6KKEW/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/AKGMYDVKI3XNM27B6I6RQ6QV3TVJAUCG/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ERYMM2QVDPOJLX4LYXWYIQN5FOIJLDRY/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/F3LNY2NHM6J22O6Q5ANOE3SZRK3OACKR/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/FCIO2W4DUVVMI6L52QCC4TT2B3K5VWHS/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/FIRUTX47BJD2HYJDLMI7JJBVCYFAPKAQ/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/GPCLGZZJPVXFWUWVV5WCD5FNUAFLKBDN/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/HAI2GBC7WKH7J5NH6J2IW5RT3VF2SF5M/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/IFGV7P2PYFBMK32OKHCAC2ZPJQV5AUDF/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/KAY6VBNVEFUXKJF37WFHYXUSRDEK34N3/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/MYG3EMFR7ZHC46TDNM7SNWO64A3W7EUF/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ONXSGLASNLGFL57YU6WT6Y5YURSFV43U/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/PTTZGLD2YBMMG6U6F5HOTPOGGPBIURMA/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UIOJUZ5JMEMGSKNISTOVI4PDP36FDL5Y/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/W5664BGZVTA46LQDNTYX5THG6CN4FYJX/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/WXF6MQ74HVIDDSR5AE2UDR24I6D4FEPC/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/XO2H6CKWLRGTTZCGUQVELW6LUH437Q3O/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/Y4E2WBEJ42CGLGDHD6ZXOLZ2W6G3YOVD/",
+     "https://python-security.readthedocs.io/vuln/mailcap-shell-injection.html",
+     "https://security.gentoo.org/glsa/202305-02",
+     "https://security.netapp.com/advisory/ntap-20220616-0001/"
+    ],
+    "description": "In Python (aka CPython) up to 3.10.8, the mailcap module does not add escape characters into commands discovered in the system mailcap file. This may allow attackers to inject shell commands into applications that call mailcap.findmatch with untrusted input (if they lack validation of user-provided filenames or arguments). The fix is also back-ported to 3.7, 3.8, 3.9",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "2.0",
+      "vector": "AV:N/AC:L/Au:S/C:P/I:C/A:P",
+      "metrics": {
+       "baseScore": 8,
+       "exploitabilityScore": 8,
+       "impactScore": 8.5
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:H/A:L",
+      "metrics": {
+       "baseScore": 7.6,
+       "exploitabilityScore": 2.8,
+       "impactScore": 4.7
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "stock-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:python:python:3.8.10:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "python",
+       "version": "3.8.10"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2015-20107",
+      "versionConstraint": ">= 3.7.0, <= 3.7.15 || >= 3.8.0, <= 3.8.15 || >= 3.9.0, <= 3.9.15 || >= 3.10.0, < 3.10.8 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:python:python:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "cfa3877f3ffc7b08",
+    "name": "python",
+    "version": "3.8.10",
+    "type": "binary",
+    "locations": [
+     {
+      "path": "/usr/bin/python3.8",
+      "layerID": "sha256:07850820e5b4c4dc34c7ab86578c73ca61bf7a105f6315a4644b3d9a4c9924e7"
+     }
+    ],
+    "language": "",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:python_software_foundation:python:3.8.10:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python:python:3.8.10:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python:python:3.8.10:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:generic/python@3.8.10",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-40217",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-40217",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://lists.debian.org/debian-lts-announce/2023/09/msg00022.html",
+     "https://lists.debian.org/debian-lts-announce/2023/10/msg00017.html",
+     "https://mail.python.org/archives/list/security-announce@python.org/thread/PEPLII27KYHLF4AK3ZQGKYNCRERG4YXY/",
+     "https://security.netapp.com/advisory/ntap-20231006-0014/",
+     "https://www.python.org/dev/security/"
+    ],
+    "description": "An issue was discovered in Python before 3.8.18, 3.9.x before 3.9.18, 3.10.x before 3.10.13, and 3.11.x before 3.11.5. It primarily affects servers (such as HTTP servers) that use TLS client authentication. If a TLS server-side socket is created, receives data into the socket buffer, and then is closed quickly, there is a brief window where the SSLSocket instance will detect the socket as \"not connected\" and won't initiate a handshake, but buffered data will still be readable from the socket buffer. This data will not be authenticated if the server-side TLS peer is expecting client certificate authentication, and is indistinguishable from valid TLS stream data. Data is limited in size to the amount that will fit in the buffer. (The TLS connection cannot directly be used for data exfiltration because the vulnerable code path requires that the connection be closed on initialization of the SSLSocket.)",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+      "metrics": {
+       "baseScore": 5.3,
+       "exploitabilityScore": 3.9,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "stock-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:python:python:3.8.10:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "python",
+       "version": "3.8.10"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2023-40217",
+      "versionConstraint": "< 3.8.18 || >= 3.9.0, < 3.9.18 || >= 3.10.0, < 3.10.13 || >= 3.11.0, < 3.11.5 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:python:python:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "cfa3877f3ffc7b08",
+    "name": "python",
+    "version": "3.8.10",
+    "type": "binary",
+    "locations": [
+     {
+      "path": "/usr/bin/python3.8",
+      "layerID": "sha256:07850820e5b4c4dc34c7ab86578c73ca61bf7a105f6315a4644b3d9a4c9924e7"
+     }
+    ],
+    "language": "",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:python_software_foundation:python:3.8.10:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python:python:3.8.10:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python:python:3.8.10:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:generic/python@3.8.10",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-27043",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-27043",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "http://python.org",
+     "https://github.com/python/cpython/issues/102988",
+     "https://python-security.readthedocs.io/vuln/email-parseaddr-realname.html",
+     "https://security.netapp.com/advisory/ntap-20230601-0003/"
+    ],
+    "description": "The email module of Python through 3.11.3 incorrectly parses e-mail addresses that contain a special character. The wrong portion of an RFC2822 header is identified as the value of the addr-spec. In some applications, an attacker can bypass a protection mechanism in which application access is granted only after verifying receipt of e-mail to a specific domain (e.g., only @company.example.com addresses may be used for signup). This occurs in email/_parseaddr.py in recent versions of Python.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+      "metrics": {
+       "baseScore": 5.3,
+       "exploitabilityScore": 3.9,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "stock-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:python:python:3.8.10:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "python",
+       "version": "3.8.10"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2023-27043",
+      "versionConstraint": "<= 2.7.18 || >= 3.0, <= 3.11 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:python:python:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "cfa3877f3ffc7b08",
+    "name": "python",
+    "version": "3.8.10",
+    "type": "binary",
+    "locations": [
+     {
+      "path": "/usr/bin/python3.8",
+      "layerID": "sha256:07850820e5b4c4dc34c7ab86578c73ca61bf7a105f6315a4644b3d9a4c9924e7"
+     }
+    ],
+    "language": "",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:python_software_foundation:python:3.8.10:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python:python:3.8.10:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python:python:3.8.10:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:generic/python@3.8.10",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2016-3189",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2016-3189",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "http://packetstormsecurity.com/files/153644/Slackware-Security-Advisory-bzip2-Updates.html",
+     "http://packetstormsecurity.com/files/153957/FreeBSD-Security-Advisory-FreeBSD-SA-19-18.bzip2.html",
+     "http://www.openwall.com/lists/oss-security/2016/06/20/1",
+     "http://www.oracle.com/technetwork/topics/security/bulletinjul2016-3090568.html",
+     "http://www.securityfocus.com/bid/91297",
+     "http://www.securitytracker.com/id/1036132",
+     "https://bugzilla.redhat.com/show_bug.cgi?id=1319648",
+     "https://lists.apache.org/thread.html/r19b4a70ac52093115fd71d773a7a4f579599e6275a13cfcf6252c3e3@%3Cjira.kafka.apache.org%3E",
+     "https://lists.apache.org/thread.html/r1dc4c9b3bd559301bdb1557245f78b8910146efb1ee534b774c5f6af@%3Cdev.kafka.apache.org%3E",
+     "https://lists.apache.org/thread.html/r481cda41fefb03e04c51484ed14421d812e5ce9e0972edff10f37260@%3Cjira.kafka.apache.org%3E",
+     "https://lists.apache.org/thread.html/r4ad2ea01354e394b7fa8c78a184b7e1634d51be9bc0e9e4d7e6c9305@%3Cjira.kafka.apache.org%3E",
+     "https://lists.apache.org/thread.html/r5f7ac2bd631ccb12ced65b71ff11f94e76d05b22000795e4a7b61203@%3Cjira.kafka.apache.org%3E",
+     "https://lists.apache.org/thread.html/r5f80cf3ade5bb73410643e885fe6b7bf9f0222daf3533e42c7ae240c@%3Cjira.kafka.apache.org%3E",
+     "https://lists.apache.org/thread.html/r6e3962fc9f6a79851f70cffdec5759065969cec9c6708b964464b301@%3Cjira.kafka.apache.org%3E",
+     "https://lists.apache.org/thread.html/ra0adb9653c7de9539b93cc8434143b655f753b9f60580ff260becb2b@%3Cusers.kafka.apache.org%3E",
+     "https://lists.apache.org/thread.html/redf17d8ad16140733b25ca402ae825d6dfa9b85f73d9fb3fd0c75d73@%3Cdev.kafka.apache.org%3E",
+     "https://lists.apache.org/thread.html/rffebcbeaace56ff1fed7916700d2f414ca1366386fb1293e99b3e31e@%3Cjira.kafka.apache.org%3E",
+     "https://lists.debian.org/debian-lts-announce/2019/06/msg00021.html",
+     "https://seclists.org/bugtraq/2019/Aug/4",
+     "https://seclists.org/bugtraq/2019/Jul/22",
+     "https://security.FreeBSD.org/advisories/FreeBSD-SA-19:18.bzip2.asc",
+     "https://security.gentoo.org/glsa/201708-08",
+     "https://usn.ubuntu.com/4038-1/",
+     "https://usn.ubuntu.com/4038-2/",
+     "https://www.oracle.com/security-alerts/cpuoct2020.html"
+    ],
+    "description": "Use-after-free vulnerability in bzip2recover in bzip2 1.0.6 allows remote attackers to cause a denial of service (crash) via a crafted bzip2 file, related to block ends set to before the start of the block.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "2.0",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+      "metrics": {
+       "baseScore": 4.3,
+       "exploitabilityScore": 8.6,
+       "impactScore": 2.9
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 6.5,
+       "exploitabilityScore": 2.8,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "stock-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:python:python:3.8.10:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "python",
+       "version": "3.8.10"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2016-3189",
+      "versionConstraint": ">= 3.7.0, < 3.7.13 || >= 3.8.0, < 3.8.13 || >= 3.9.0, < 3.9.11 || >= 3.10.0, < 3.10.3 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:python:python:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "cfa3877f3ffc7b08",
+    "name": "python",
+    "version": "3.8.10",
+    "type": "binary",
+    "locations": [
+     {
+      "path": "/usr/bin/python3.8",
+      "layerID": "sha256:07850820e5b4c4dc34c7ab86578c73ca61bf7a105f6315a4644b3d9a4c9924e7"
+     }
+    ],
+    "language": "",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:python_software_foundation:python:3.8.10:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python:python:3.8.10:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python:python:3.8.10:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:generic/python@3.8.10",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2013-0340",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2013-0340",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "http://openwall.com/lists/oss-security/2013/02/22/3",
+     "http://seclists.org/fulldisclosure/2021/Oct/61",
+     "http://seclists.org/fulldisclosure/2021/Oct/62",
+     "http://seclists.org/fulldisclosure/2021/Oct/63",
+     "http://seclists.org/fulldisclosure/2021/Sep/33",
+     "http://seclists.org/fulldisclosure/2021/Sep/34",
+     "http://seclists.org/fulldisclosure/2021/Sep/35",
+     "http://seclists.org/fulldisclosure/2021/Sep/38",
+     "http://seclists.org/fulldisclosure/2021/Sep/39",
+     "http://seclists.org/fulldisclosure/2021/Sep/40",
+     "http://securitytracker.com/id?1028213",
+     "http://www.openwall.com/lists/oss-security/2013/04/12/6",
+     "http://www.openwall.com/lists/oss-security/2021/10/07/4",
+     "http://www.securityfocus.com/bid/58233",
+     "https://lists.apache.org/thread.html/r41eca5f4f09e74436cbb05dec450fc2bef37b5d3e966aa7cc5fada6d%40%3Cannounce.apache.org%3E",
+     "https://lists.apache.org/thread.html/rfb2c193360436e230b85547e85a41bea0916916f96c501f5b6fc4702%40%3Cusers.openoffice.apache.org%3E",
+     "https://security.gentoo.org/glsa/201701-21",
+     "https://support.apple.com/kb/HT212804",
+     "https://support.apple.com/kb/HT212805",
+     "https://support.apple.com/kb/HT212807",
+     "https://support.apple.com/kb/HT212814",
+     "https://support.apple.com/kb/HT212815",
+     "https://support.apple.com/kb/HT212819"
+    ],
+    "description": "expat 2.1.0 and earlier does not properly handle entities expansion unless an application developer uses the XML_SetEntityDeclHandler function, which allows remote attackers to cause a denial of service (resource consumption), send HTTP requests to intranet servers, or read arbitrary files via a crafted XML document, aka an XML External Entity (XXE) issue. NOTE: it could be argued that because expat already provides the ability to disable external entity expansion, the responsibility for resolving this issue lies with application developers; according to this argument, this entry should be REJECTed, and each affected application would need its own CVE.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "2.0",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+      "metrics": {
+       "baseScore": 6.8,
+       "exploitabilityScore": 8.6,
+       "impactScore": 6.4
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "stock-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:python:python:3.8.10:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "python",
+       "version": "3.8.10"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2013-0340",
+      "versionConstraint": ">= 3.6.0, < 3.6.15 || >= 3.7.0, < 3.7.12 || >= 3.8.0, < 3.8.12 || >= 3.9.0, < 3.9.7 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:python:python:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "cfa3877f3ffc7b08",
+    "name": "python",
+    "version": "3.8.10",
+    "type": "binary",
+    "locations": [
+     {
+      "path": "/usr/bin/python3.8",
+      "layerID": "sha256:07850820e5b4c4dc34c7ab86578c73ca61bf7a105f6315a4644b3d9a4c9924e7"
+     }
+    ],
+    "language": "",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:python_software_foundation:python:3.8.10:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python:python:3.8.10:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python:python:3.8.10:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:generic/python@3.8.10",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2007-4559",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2007-4559",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "http://mail.python.org/pipermail/python-dev/2007-August/074290.html",
+     "http://mail.python.org/pipermail/python-dev/2007-August/074292.html",
+     "http://secunia.com/advisories/26623",
+     "http://www.vupen.com/english/advisories/2007/3022",
+     "https://bugzilla.redhat.com/show_bug.cgi?id=263261",
+     "https://security.gentoo.org/glsa/202309-06"
+    ],
+    "description": "Directory traversal vulnerability in the (1) extract and (2) extractall functions in the tarfile module in Python allows user-assisted remote attackers to overwrite arbitrary files via a .. (dot dot) sequence in filenames in a TAR archive, a related issue to CVE-2001-1267.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "2.0",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+      "metrics": {
+       "baseScore": 6.8,
+       "exploitabilityScore": 8.6,
+       "impactScore": 6.4
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "stock-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:python:python:3.8.10:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "python",
+       "version": "3.8.10"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2007-4559",
+      "versionConstraint": "< 3.6.16 || >= 3.7.0, < 3.8.17 || >= 3.9.0, < 3.9.17 || >= 3.10.0, < 3.10.12 || >= 3.11.0, < 3.11.4 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:python:python:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "cfa3877f3ffc7b08",
+    "name": "python",
+    "version": "3.8.10",
+    "type": "binary",
+    "locations": [
+     {
+      "path": "/usr/bin/python3.8",
+      "layerID": "sha256:07850820e5b4c4dc34c7ab86578c73ca61bf7a105f6315a4644b3d9a4c9924e7"
+     }
+    ],
+    "language": "",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:python_software_foundation:python:3.8.10:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python:python:3.8.10:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python:python:3.8.10:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:generic/python@3.8.10",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-mjmj-j48q-9wg2",
+    "dataSource": "https://github.com/advisories/GHSA-mjmj-j48q-9wg2",
+    "namespace": "github:language:java",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-mjmj-j48q-9wg2"
+    ],
+    "description": "SnakeYaml Constructor Deserialization Remote Code Execution",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:L",
+      "metrics": {
+       "baseScore": 8.3,
+       "exploitabilityScore": 2.8,
+       "impactScore": 5.5
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "2.0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-1471",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-1471",
+     "namespace": "nvd:cpe",
+     "severity": "Critical",
+     "urls": [
+      "http://packetstormsecurity.com/files/175095/PyTorch-Model-Server-Registration-Deserialization-Remote-Code-Execution.html",
+      "https://bitbucket.org/snakeyaml/snakeyaml/issues/561/cve-2022-1471-vulnerability-in#comment-64581479",
+      "https://github.com/google/security-research/security/advisories/GHSA-mjmj-j48q-9wg2",
+      "https://github.com/mbechler/marshalsec",
+      "https://groups.google.com/g/kubernetes-security-announce/c/mwrakFaEdnc",
+      "https://security.netapp.com/advisory/ntap-20230818-0015/",
+      "https://www.github.com/mbechler/marshalsec/blob/master/marshalsec.pdf?raw=true"
+     ],
+     "description": "SnakeYaml's Constructor() class does not restrict types which can be instantiated during deserialization. Deserializing yaml content provided by an attacker can lead to remote code execution. We recommend using SnakeYaml's SafeConsturctor when parsing untrusted content to restrict deserialization. We recommend upgrading to version 2.0 and beyond.\n",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 9.8,
+        "exploitabilityScore": 3.9,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "cve-coordination@google.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:L",
+       "metrics": {
+        "baseScore": 8.3,
+        "exploitabilityScore": 2.8,
+        "impactScore": 5.5
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "snakeyaml",
+       "version": "1.26"
+      }
+     },
+     "found": {
+      "versionConstraint": "<=1.33 (unknown)",
+      "vulnerabilityID": "GHSA-mjmj-j48q-9wg2"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "c4af829326906c51",
+    "name": "snakeyaml",
+    "version": "1.26",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "/opt/cassandra/lib/snakeyaml-1.26.jar",
+      "layerID": "sha256:07850820e5b4c4dc34c7ab86578c73ca61bf7a105f6315a4644b3d9a4c9924e7"
+     }
+    ],
+    "language": "java",
+    "licenses": [
+     "http://www.apache.org/licenses/LICENSE-2.0.txt"
+    ],
+    "cpes": [
+     "cpe:2.3:a:snakeyaml:snakeyaml:1.26:*:*:*:*:*:*:*",
+     "cpe:2.3:a:yaml:snakeyaml:1.26:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/org.yaml/snakeyaml@1.26",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "/opt/cassandra/lib/snakeyaml-1.26.jar",
+     "pomArtifactID": "snakeyaml",
+     "pomGroupID": "org.yaml",
+     "manifestName": "",
+     "archiveDigests": [
+      {
+       "algorithm": "sha1",
+       "value": "a78a8747147d2c5807683e76ec2b633e95c14fe9"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-3mc7-4q67-w48m",
+    "dataSource": "https://github.com/advisories/GHSA-3mc7-4q67-w48m",
+    "namespace": "github:language:java",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-3mc7-4q67-w48m"
+    ],
+    "description": "Uncontrolled Resource Consumption in snakeyaml",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "1.31"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-25857",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-25857",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://bitbucket.org/snakeyaml/snakeyaml/commits/fc300780da21f4bb92c148bc90257201220cf174",
+      "https://bitbucket.org/snakeyaml/snakeyaml/issues/525",
+      "https://github.com/snakeyaml/snakeyaml/commit/fc300780da21f4bb92c148bc90257201220cf174",
+      "https://lists.debian.org/debian-lts-announce/2022/10/msg00001.html",
+      "https://security.snyk.io/vuln/SNYK-JAVA-ORGYAML-2806360"
+     ],
+     "description": "The package org.yaml:snakeyaml from 0 and before 1.31 are vulnerable to Denial of Service (DoS) due missing to nested depth limitation for collections.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "report@snyk.io",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "snakeyaml",
+       "version": "1.26"
+      }
+     },
+     "found": {
+      "versionConstraint": "<1.31 (unknown)",
+      "vulnerabilityID": "GHSA-3mc7-4q67-w48m"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "c4af829326906c51",
+    "name": "snakeyaml",
+    "version": "1.26",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "/opt/cassandra/lib/snakeyaml-1.26.jar",
+      "layerID": "sha256:07850820e5b4c4dc34c7ab86578c73ca61bf7a105f6315a4644b3d9a4c9924e7"
+     }
+    ],
+    "language": "java",
+    "licenses": [
+     "http://www.apache.org/licenses/LICENSE-2.0.txt"
+    ],
+    "cpes": [
+     "cpe:2.3:a:snakeyaml:snakeyaml:1.26:*:*:*:*:*:*:*",
+     "cpe:2.3:a:yaml:snakeyaml:1.26:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/org.yaml/snakeyaml@1.26",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "/opt/cassandra/lib/snakeyaml-1.26.jar",
+     "pomArtifactID": "snakeyaml",
+     "pomGroupID": "org.yaml",
+     "manifestName": "",
+     "archiveDigests": [
+      {
+       "algorithm": "sha1",
+       "value": "a78a8747147d2c5807683e76ec2b633e95c14fe9"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-w37g-rhq8-7m4j",
+    "dataSource": "https://github.com/advisories/GHSA-w37g-rhq8-7m4j",
+    "namespace": "github:language:java",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-w37g-rhq8-7m4j"
+    ],
+    "description": "Snakeyaml vulnerable to Stack overflow leading to denial of service",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 6.5,
+       "exploitabilityScore": 2.8,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "1.32"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-41854",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-41854",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50355",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/3DDXEXXWAZGF5AVHIPGFPXIWL6TSMKJE/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/7MKE4XWRXTH32757H7QJU4ACS67DYDCR/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/KSPAJ5Y45A4ZDION2KN5RDWLHK4XKY2J/"
+     ],
+     "description": "Those using Snakeyaml to parse untrusted YAML files may be vulnerable to Denial of Service attacks (DOS). If the parser is running on user supplied input, an attacker may supply content that causes the parser to crash by stack overflow. This effect may support a denial of service attack.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 6.5,
+        "exploitabilityScore": 2.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "cve-coordination@google.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:C/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 5.8,
+        "exploitabilityScore": 1.3,
+        "impactScore": 4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "snakeyaml",
+       "version": "1.26"
+      }
+     },
+     "found": {
+      "versionConstraint": "<1.32 (unknown)",
+      "vulnerabilityID": "GHSA-w37g-rhq8-7m4j"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "c4af829326906c51",
+    "name": "snakeyaml",
+    "version": "1.26",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "/opt/cassandra/lib/snakeyaml-1.26.jar",
+      "layerID": "sha256:07850820e5b4c4dc34c7ab86578c73ca61bf7a105f6315a4644b3d9a4c9924e7"
+     }
+    ],
+    "language": "java",
+    "licenses": [
+     "http://www.apache.org/licenses/LICENSE-2.0.txt"
+    ],
+    "cpes": [
+     "cpe:2.3:a:snakeyaml:snakeyaml:1.26:*:*:*:*:*:*:*",
+     "cpe:2.3:a:yaml:snakeyaml:1.26:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/org.yaml/snakeyaml@1.26",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "/opt/cassandra/lib/snakeyaml-1.26.jar",
+     "pomArtifactID": "snakeyaml",
+     "pomGroupID": "org.yaml",
+     "manifestName": "",
+     "archiveDigests": [
+      {
+       "algorithm": "sha1",
+       "value": "a78a8747147d2c5807683e76ec2b633e95c14fe9"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-hhhw-99gj-p3c3",
+    "dataSource": "https://github.com/advisories/GHSA-hhhw-99gj-p3c3",
+    "namespace": "github:language:java",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-hhhw-99gj-p3c3"
+    ],
+    "description": "snakeYAML before 1.31 vulnerable to Denial of Service due to Out-of-bounds Write",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 5.5,
+       "exploitabilityScore": 1.8,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "1.31"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-38750",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-38750",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://bitbucket.org/snakeyaml/snakeyaml/issues/526/stackoverflow-oss-fuzz-47027",
+      "https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47027",
+      "https://lists.debian.org/debian-lts-announce/2022/10/msg00001.html",
+      "https://security.gentoo.org/glsa/202305-28"
+     ],
+     "description": "Using snakeYAML to parse untrusted YAML files may be vulnerable to Denial of Service attacks (DOS). If the parser is running on user supplied input, an attacker may supply content that causes the parser to crash by stackoverflow.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 5.5,
+        "exploitabilityScore": 1.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "cve-coordination@google.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 6.5,
+        "exploitabilityScore": 2.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "snakeyaml",
+       "version": "1.26"
+      }
+     },
+     "found": {
+      "versionConstraint": "<1.31 (unknown)",
+      "vulnerabilityID": "GHSA-hhhw-99gj-p3c3"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "c4af829326906c51",
+    "name": "snakeyaml",
+    "version": "1.26",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "/opt/cassandra/lib/snakeyaml-1.26.jar",
+      "layerID": "sha256:07850820e5b4c4dc34c7ab86578c73ca61bf7a105f6315a4644b3d9a4c9924e7"
+     }
+    ],
+    "language": "java",
+    "licenses": [
+     "http://www.apache.org/licenses/LICENSE-2.0.txt"
+    ],
+    "cpes": [
+     "cpe:2.3:a:snakeyaml:snakeyaml:1.26:*:*:*:*:*:*:*",
+     "cpe:2.3:a:yaml:snakeyaml:1.26:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/org.yaml/snakeyaml@1.26",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "/opt/cassandra/lib/snakeyaml-1.26.jar",
+     "pomArtifactID": "snakeyaml",
+     "pomGroupID": "org.yaml",
+     "manifestName": "",
+     "archiveDigests": [
+      {
+       "algorithm": "sha1",
+       "value": "a78a8747147d2c5807683e76ec2b633e95c14fe9"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-c4r9-r8fh-9vj2",
+    "dataSource": "https://github.com/advisories/GHSA-c4r9-r8fh-9vj2",
+    "namespace": "github:language:java",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-c4r9-r8fh-9vj2"
+    ],
+    "description": "snakeYAML before 1.31 vulnerable to Denial of Service due to Out-of-bounds Write",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 6.5,
+       "exploitabilityScore": 2.8,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "1.31"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-38749",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-38749",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://bitbucket.org/snakeyaml/snakeyaml/issues/525/got-stackoverflowerror-for-many-open",
+      "https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47024",
+      "https://lists.debian.org/debian-lts-announce/2022/10/msg00001.html",
+      "https://security.gentoo.org/glsa/202305-28"
+     ],
+     "description": "Using snakeYAML to parse untrusted YAML files may be vulnerable to Denial of Service attacks (DOS). If the parser is running on user supplied input, an attacker may supply content that causes the parser to crash by stackoverflow.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 6.5,
+        "exploitabilityScore": 2.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "cve-coordination@google.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 6.5,
+        "exploitabilityScore": 2.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "snakeyaml",
+       "version": "1.26"
+      }
+     },
+     "found": {
+      "versionConstraint": "<1.31 (unknown)",
+      "vulnerabilityID": "GHSA-c4r9-r8fh-9vj2"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "c4af829326906c51",
+    "name": "snakeyaml",
+    "version": "1.26",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "/opt/cassandra/lib/snakeyaml-1.26.jar",
+      "layerID": "sha256:07850820e5b4c4dc34c7ab86578c73ca61bf7a105f6315a4644b3d9a4c9924e7"
+     }
+    ],
+    "language": "java",
+    "licenses": [
+     "http://www.apache.org/licenses/LICENSE-2.0.txt"
+    ],
+    "cpes": [
+     "cpe:2.3:a:snakeyaml:snakeyaml:1.26:*:*:*:*:*:*:*",
+     "cpe:2.3:a:yaml:snakeyaml:1.26:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/org.yaml/snakeyaml@1.26",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "/opt/cassandra/lib/snakeyaml-1.26.jar",
+     "pomArtifactID": "snakeyaml",
+     "pomGroupID": "org.yaml",
+     "manifestName": "",
+     "archiveDigests": [
+      {
+       "algorithm": "sha1",
+       "value": "a78a8747147d2c5807683e76ec2b633e95c14fe9"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-9w3m-gqgf-c4p9",
+    "dataSource": "https://github.com/advisories/GHSA-9w3m-gqgf-c4p9",
+    "namespace": "github:language:java",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-9w3m-gqgf-c4p9"
+    ],
+    "description": "snakeYAML before 1.32 vulnerable to Denial of Service due to Out-of-bounds Write",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 6.5,
+       "exploitabilityScore": 2.8,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "1.32"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-38752",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-38752",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://bitbucket.org/snakeyaml/snakeyaml/issues/531/stackoverflow-oss-fuzz-47081",
+      "https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47081",
+      "https://security.gentoo.org/glsa/202305-28"
+     ],
+     "description": "Using snakeYAML to parse untrusted YAML files may be vulnerable to Denial of Service attacks (DOS). If the parser is running on user supplied input, an attacker may supply content that causes the parser to crash by stack-overflow.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 6.5,
+        "exploitabilityScore": 2.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "cve-coordination@google.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 6.5,
+        "exploitabilityScore": 2.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "snakeyaml",
+       "version": "1.26"
+      }
+     },
+     "found": {
+      "versionConstraint": "<1.32 (unknown)",
+      "vulnerabilityID": "GHSA-9w3m-gqgf-c4p9"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "c4af829326906c51",
+    "name": "snakeyaml",
+    "version": "1.26",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "/opt/cassandra/lib/snakeyaml-1.26.jar",
+      "layerID": "sha256:07850820e5b4c4dc34c7ab86578c73ca61bf7a105f6315a4644b3d9a4c9924e7"
+     }
+    ],
+    "language": "java",
+    "licenses": [
+     "http://www.apache.org/licenses/LICENSE-2.0.txt"
+    ],
+    "cpes": [
+     "cpe:2.3:a:snakeyaml:snakeyaml:1.26:*:*:*:*:*:*:*",
+     "cpe:2.3:a:yaml:snakeyaml:1.26:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/org.yaml/snakeyaml@1.26",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "/opt/cassandra/lib/snakeyaml-1.26.jar",
+     "pomArtifactID": "snakeyaml",
+     "pomGroupID": "org.yaml",
+     "manifestName": "",
+     "archiveDigests": [
+      {
+       "algorithm": "sha1",
+       "value": "a78a8747147d2c5807683e76ec2b633e95c14fe9"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-98wm-3w3q-mw94",
+    "dataSource": "https://github.com/advisories/GHSA-98wm-3w3q-mw94",
+    "namespace": "github:language:java",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-98wm-3w3q-mw94"
+    ],
+    "description": "snakeYAML before 1.31 vulnerable to Denial of Service due to Out-of-bounds Write",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 6.5,
+       "exploitabilityScore": 2.8,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "1.31"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-38751",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-38751",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://bitbucket.org/snakeyaml/snakeyaml/issues/530/stackoverflow-oss-fuzz-47039",
+      "https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47039",
+      "https://lists.debian.org/debian-lts-announce/2022/10/msg00001.html",
+      "https://security.gentoo.org/glsa/202305-28"
+     ],
+     "description": "Using snakeYAML to parse untrusted YAML files may be vulnerable to Denial of Service attacks (DOS). If the parser is running on user supplied input, an attacker may supply content that causes the parser to crash by stackoverflow.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 6.5,
+        "exploitabilityScore": 2.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "cve-coordination@google.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 6.5,
+        "exploitabilityScore": 2.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "snakeyaml",
+       "version": "1.26"
+      }
+     },
+     "found": {
+      "versionConstraint": "<1.31 (unknown)",
+      "vulnerabilityID": "GHSA-98wm-3w3q-mw94"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "c4af829326906c51",
+    "name": "snakeyaml",
+    "version": "1.26",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "/opt/cassandra/lib/snakeyaml-1.26.jar",
+      "layerID": "sha256:07850820e5b4c4dc34c7ab86578c73ca61bf7a105f6315a4644b3d9a4c9924e7"
+     }
+    ],
+    "language": "java",
+    "licenses": [
+     "http://www.apache.org/licenses/LICENSE-2.0.txt"
+    ],
+    "cpes": [
+     "cpe:2.3:a:snakeyaml:snakeyaml:1.26:*:*:*:*:*:*:*",
+     "cpe:2.3:a:yaml:snakeyaml:1.26:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/org.yaml/snakeyaml@1.26",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "/opt/cassandra/lib/snakeyaml-1.26.jar",
+     "pomArtifactID": "snakeyaml",
+     "pomGroupID": "org.yaml",
+     "manifestName": "",
+     "archiveDigests": [
+      {
+       "algorithm": "sha1",
+       "value": "a78a8747147d2c5807683e76ec2b633e95c14fe9"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-55g7-9cwv-5qfv",
+    "dataSource": "https://github.com/advisories/GHSA-55g7-9cwv-5qfv",
+    "namespace": "github:language:java",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-55g7-9cwv-5qfv"
+    ],
+    "description": "snappy-java's missing upper bound check on chunk length can lead to Denial of Service (DoS) impact",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "1.1.10.4"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-43642",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-43642",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/xerial/snappy-java/commit/9f8c3cf74223ed0a8a834134be9c917b9f10ceb5",
+      "https://github.com/xerial/snappy-java/security/advisories/GHSA-55g7-9cwv-5qfv"
+     ],
+     "description": "snappy-java is a Java port of the snappy, a fast C++ compresser/decompresser developed by Google. The SnappyInputStream was found to be vulnerable to Denial of Service (DoS) attacks when decompressing data with a too large chunk size. Due to missing upper bound check on chunk length, an unrecoverable fatal error can occur. All versions of snappy-java including the latest released version 1.1.10.3 are vulnerable to this issue. A fix has been introduced in commit `9f8c3cf74` which will be included in the 1.1.10.4 release. Users are advised to upgrade. Users unable to upgrade should only accept compressed data from trusted sources.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "snappy-java",
+       "version": "1.1.10.1"
+      }
+     },
+     "found": {
+      "versionConstraint": "<=1.1.10.3 (unknown)",
+      "vulnerabilityID": "GHSA-55g7-9cwv-5qfv"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "5a5fb8168b564872",
+    "name": "snappy-java",
+    "version": "1.1.10.1",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "/opt/cassandra/lib/snappy-java-1.1.10.1.jar",
+      "layerID": "sha256:07850820e5b4c4dc34c7ab86578c73ca61bf7a105f6315a4644b3d9a4c9924e7"
+     }
+    ],
+    "language": "java",
+    "licenses": [
+     "http://www.apache.org/licenses/LICENSE-2.0.txt"
+    ],
+    "cpes": [
+     "cpe:2.3:a:SnappyBundleActivator:SnappyBundleActivator:1.1.10.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:SnappyBundleActivator:snappy-java:1.1.10.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:SnappyBundleActivator:snappy_java:1.1.10.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:snappy-java:SnappyBundleActivator:1.1.10.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:snappy_java:SnappyBundleActivator:1.1.10.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:xerial-org:SnappyBundleActivator:1.1.10.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:xerial_org:SnappyBundleActivator:1.1.10.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:SnappyBundleActivator:snappy:1.1.10.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:snappy:SnappyBundleActivator:1.1.10.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:xerial:SnappyBundleActivator:1.1.10.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:snappy-java:snappy-java:1.1.10.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:snappy-java:snappy_java:1.1.10.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:snappy_java:snappy-java:1.1.10.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:snappy_java:snappy_java:1.1.10.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:xerial-org:snappy-java:1.1.10.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:xerial-org:snappy_java:1.1.10.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:xerial_org:snappy-java:1.1.10.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:xerial_org:snappy_java:1.1.10.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:snappy-java:snappy:1.1.10.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:snappy:snappy-java:1.1.10.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:snappy:snappy_java:1.1.10.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:snappy_java:snappy:1.1.10.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:xerial:snappy-java:1.1.10.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:xerial:snappy_java:1.1.10.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:xerial-org:snappy:1.1.10.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:xerial_org:snappy:1.1.10.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:snappy:snappy:1.1.10.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:xerial:snappy:1.1.10.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/org.xerial.snappy/snappy-java@1.1.10.1",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "/opt/cassandra/lib/snappy-java-1.1.10.1.jar",
+     "pomArtifactID": "",
+     "pomGroupID": "",
+     "manifestName": "",
+     "archiveDigests": [
+      {
+       "algorithm": "sha1",
+       "value": "4a1e1a22cba39145dfa20f2fef4e1ca38c8e02a1"
+      }
+     ]
+    }
+   }
+  }
+ ],
+ "source": {
+  "type": "image",
+  "target": {
+   "userInput": "docker.io/rapidfort/cassandra-official:latest",
+   "imageID": "sha256:e7eed5bb948bedc054885a23a92c506235c7a32e7d594aa8c3dfc94cf643678c",
+   "manifestDigest": "sha256:7c8450c231157ec825fd7498f59fed51d8bded72aa8232ddf1cfb7313bc579b5",
+   "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+   "tags": [
+    "rapidfort/cassandra-official:latest"
+   ],
+   "imageSize": 252669227,
+   "layers": [
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:07850820e5b4c4dc34c7ab86578c73ca61bf7a105f6315a4644b3d9a4c9924e7",
+     "size": 252669227
+    }
+   ],
+   "manifest": "eyJzY2hlbWFWZXJzaW9uIjoyLCJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmRpc3RyaWJ1dGlvbi5tYW5pZmVzdC52Mitqc29uIiwiY29uZmlnIjp7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuY29udGFpbmVyLmltYWdlLnYxK2pzb24iLCJzaXplIjo3MjM0LCJkaWdlc3QiOiJzaGEyNTY6ZTdlZWQ1YmI5NDhiZWRjMDU0ODg1YTIzYTkyYzUwNjIzNWM3YTMyZTdkNTk0YWE4YzNkZmM5NGNmNjQzNjc4YyJ9LCJsYXllcnMiOlt7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjoyNTU5OTMzNDQsImRpZ2VzdCI6InNoYTI1NjowNzg1MDgyMGU1YjRjNGRjMzRjN2FiODY1NzhjNzNjYTYxYmY3YTEwNWY2MzE1YTQ2NDRiM2Q5YTRjOTkyNGU3In1dfQ==",
+   "config": "eyJhcmNoaXRlY3R1cmUiOiJhbWQ2NCIsImNvbmZpZyI6eyJIb3N0bmFtZSI6IiIsIkRvbWFpbm5hbWUiOiIiLCJVc2VyIjoiIiwiQXR0YWNoU3RkaW4iOmZhbHNlLCJBdHRhY2hTdGRvdXQiOmZhbHNlLCJBdHRhY2hTdGRlcnIiOmZhbHNlLCJFeHBvc2VkUG9ydHMiOnsiNzAwMC90Y3AiOnt9LCI3MDAxL3RjcCI6e30sIjcxOTkvdGNwIjp7fSwiOTA0Mi90Y3AiOnt9LCI5MTYwL3RjcCI6e319LCJUdHkiOmZhbHNlLCJPcGVuU3RkaW4iOmZhbHNlLCJTdGRpbk9uY2UiOmZhbHNlLCJFbnYiOlsiUEFUSD0vb3B0L2Nhc3NhbmRyYS9iaW46L29wdC9qYXZhL29wZW5qZGsvYmluOi91c3IvbG9jYWwvc2JpbjovdXNyL2xvY2FsL2JpbjovdXNyL3NiaW46L3Vzci9iaW46L3NiaW46L2JpbiIsIkpBVkFfSE9NRT0vb3B0L2phdmEvb3BlbmpkayIsIkxBTkc9ZW5fVVMuVVRGLTgiLCJMQU5HVUFHRT1lbl9VUzplbiIsIkxDX0FMTD1lbl9VUy5VVEYtOCIsIkpBVkFfVkVSU0lPTj1qZGstMTEuMC4yMC4xKzEiLCJHT1NVX1ZFUlNJT049MS4xNiIsIkNBU1NBTkRSQV9IT01FPS9vcHQvY2Fzc2FuZHJhIiwiQ0FTU0FORFJBX0NPTkY9L2V0Yy9jYXNzYW5kcmEiLCJHUEdfS0VZUz1DRUM4NkJCNEEwQkE5RDBGOTAzOTdDQUVGODM1OEZBMkYyODMzQzkzIFx0QzQ5NjVFRTlFMzAxNUQxOTJDQ0NGMkI2Rjc1OENFMzE4RDc3Mjk1RCBcdDVBRUQxQkYzNzhFOUExOURBREUxQkNCMzRCRDczNkE4MkI1QzFCMDAgXHQ1MTRBMkFENjMxQTU3QTE2REQwMDQ3RUM3NDlENkVFQzAzNTNCMTJDIFx0QTI2RTUyOEIyNzFGMTlCOUU1RDhFMTlFQTI3OEI3ODFGRTRCMkJEQSBcdEE0QzQ2NUZFQTBDNTUyNTYxQTM5MkE2MUU5MTMzNUQ3N0UzRTg3Q0IgXHQ5RTY2Q0VDNjEwNkQ1NzhEMEIxRUI5QkZGMTAwMDk2MkI3RjY4NDBDIFx0QzQwMDk4NzJDNTlCNDk1NjEzMTBEOTY2RDAwNjI4NzZBRjMwRjA1NCBcdEI3ODQyQ0RBRjM2RTZBMzIxNEZBRTM1RDVFODVCOUFFMEI4NEMwNDEgXHQzRTlDODc2OTA3QTU2MEFDQTAwOTY0RjM2M0U5QkFEMjE1QkJGNUYwIFx0RjhCN0ZEMDBFMDVDOTMyOTkxQTJDRDYxNTBFRTEwM0QxNjJDNUE1NSBcdDc0NjRBQUQ5MDY4MjQxQzUwQkE2QTI2MjMyRjM1Q0IyRjU0NkQ5M0UgXHRDRUM1QzUwQjlDNjI5RUYwRjVBQjI3MDY2NTBCNzJFQjE0Q0NENjIyIiwiQ0FTU0FORFJBX1ZFUlNJT049NC4wLjExIiwiQ0FTU0FORFJBX1NIQTUxMj05MmJkMzU4MTllODY5Mjc3MDlhZGQxMDc1MDIzYWY1YWVkOTNkNDJlMDExNWJmYTZiNjc1YjE1ZTkzYjMxYmZmYTZmZDNiOWZmOTVhNDAzYmI5NjUwZWM0MTdhMDU2N2FjNzc2Yzg4YjU2ZmUzNzM5Mzg0NTE3NDZiYmM2NGE1MCJdLCJDbWQiOlsiY2Fzc2FuZHJhIiwiLWYiXSwiSW1hZ2UiOiJzaGEyNTY6YTM1OTc5OWU4ZmQ3NWRjMDc3MmJjYWY2NzNlMjMwYTcxMmFiOTVhYTJjYWQzNzMxYzEyYzU4YmYxZjVkNGNhMiIsIlZvbHVtZXMiOnsiL3Zhci9saWIvY2Fzc2FuZHJhIjp7fX0sIldvcmtpbmdEaXIiOiIiLCJFbnRyeXBvaW50IjpbImRvY2tlci1lbnRyeXBvaW50LnNoIl0sIk9uQnVpbGQiOm51bGwsIkxhYmVscyI6eyJpby5idWlsZGFoLnZlcnNpb24iOiIxLjI5LjAiLCJvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UucmVmLm5hbWUiOiJ1YnVudHUiLCJvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UudmVyc2lvbiI6IjIwLjA0Iiwib3JpZ19pbWFnZV9kaWdlc3QiOiJzaGEyNTY6ZTM0MWIwYTkyZWMwMDViMjUxYjMyNzdlNzFjNmZmMjg2NzU3ZDIwZjc0OGVkZWYxZGQ0NTZlZTU1OGRjZDc3NyIsInJmLmRlOGNiMzg1LTQ2NzYtNDU0ZC04ODBjLWRhNjgxNzgyMTMwNiI6ImRvY2tlci5pby9saWJyYXJ5L2Nhc3NhbmRyYTo0LjAuMTEiLCJyZl9pbWFnZV9ndWlkLjAwMmZjMWY1LWRkMmYtNGEwMy04OGNmLWMzN2UwMTJjNjI4MSI6IjAwMmZjMWY1LWRkMmYtNGEwMy04OGNmLWMzN2UwMTJjNjI4MSJ9fSwiY29udGFpbmVyIjoiMmRhMmNjZTMzMGNjMjNiNWFkZGVjZTdlNmVhMzEwOGUzMmEwYjMzMWNkNGY3ODg0YWVmNDMyNGQ1YzhiODI2ZSIsImNvbnRhaW5lcl9jb25maWciOnsiSG9zdG5hbWUiOiIyZGEyY2NlMzMwY2MiLCJEb21haW5uYW1lIjoiIiwiVXNlciI6IiIsIkF0dGFjaFN0ZGluIjpmYWxzZSwiQXR0YWNoU3Rkb3V0IjpmYWxzZSwiQXR0YWNoU3RkZXJyIjpmYWxzZSwiRXhwb3NlZFBvcnRzIjp7IjcwMDAvdGNwIjp7fSwiNzAwMS90Y3AiOnt9LCI3MTk5L3RjcCI6e30sIjkwNDIvdGNwIjp7fSwiOTE2MC90Y3AiOnt9fSwiVHR5IjpmYWxzZSwiT3BlblN0ZGluIjpmYWxzZSwiU3RkaW5PbmNlIjpmYWxzZSwiRW52IjpbIlBBVEg9L29wdC9jYXNzYW5kcmEvYmluOi9vcHQvamF2YS9vcGVuamRrL2JpbjovdXNyL2xvY2FsL3NiaW46L3Vzci9sb2NhbC9iaW46L3Vzci9zYmluOi91c3IvYmluOi9zYmluOi9iaW4iLCJKQVZBX0hPTUU9L29wdC9qYXZhL29wZW5qZGsiLCJMQU5HPWVuX1VTLlVURi04IiwiTEFOR1VBR0U9ZW5fVVM6ZW4iLCJMQ19BTEw9ZW5fVVMuVVRGLTgiLCJKQVZBX1ZFUlNJT049amRrLTExLjAuMjAuMSsxIiwiR09TVV9WRVJTSU9OPTEuMTYiLCJDQVNTQU5EUkFfSE9NRT0vb3B0L2Nhc3NhbmRyYSIsIkNBU1NBTkRSQV9DT05GPS9ldGMvY2Fzc2FuZHJhIiwiR1BHX0tFWVM9Q0VDODZCQjRBMEJBOUQwRjkwMzk3Q0FFRjgzNThGQTJGMjgzM0M5MyBcdEM0OTY1RUU5RTMwMTVEMTkyQ0NDRjJCNkY3NThDRTMxOEQ3NzI5NUQgXHQ1QUVEMUJGMzc4RTlBMTlEQURFMUJDQjM0QkQ3MzZBODJCNUMxQjAwIFx0NTE0QTJBRDYzMUE1N0ExNkREMDA0N0VDNzQ5RDZFRUMwMzUzQjEyQyBcdEEyNkU1MjhCMjcxRjE5QjlFNUQ4RTE5RUEyNzhCNzgxRkU0QjJCREEgXHRBNEM0NjVGRUEwQzU1MjU2MUEzOTJBNjFFOTEzMzVENzdFM0U4N0NCIFx0OUU2NkNFQzYxMDZENTc4RDBCMUVCOUJGRjEwMDA5NjJCN0Y2ODQwQyBcdEM0MDA5ODcyQzU5QjQ5NTYxMzEwRDk2NkQwMDYyODc2QUYzMEYwNTQgXHRCNzg0MkNEQUYzNkU2QTMyMTRGQUUzNUQ1RTg1QjlBRTBCODRDMDQxIFx0M0U5Qzg3NjkwN0E1NjBBQ0EwMDk2NEYzNjNFOUJBRDIxNUJCRjVGMCBcdEY4QjdGRDAwRTA1QzkzMjk5MUEyQ0Q2MTUwRUUxMDNEMTYyQzVBNTUgXHQ3NDY0QUFEOTA2ODI0MUM1MEJBNkEyNjIzMkYzNUNCMkY1NDZEOTNFIFx0Q0VDNUM1MEI5QzYyOUVGMEY1QUIyNzA2NjUwQjcyRUIxNENDRDYyMiIsIkNBU1NBTkRSQV9WRVJTSU9OPTQuMC4xMSIsIkNBU1NBTkRSQV9TSEE1MTI9OTJiZDM1ODE5ZTg2OTI3NzA5YWRkMTA3NTAyM2FmNWFlZDkzZDQyZTAxMTViZmE2YjY3NWIxNWU5M2IzMWJmZmE2ZmQzYjlmZjk1YTQwM2JiOTY1MGVjNDE3YTA1NjdhYzc3NmM4OGI1NmZlMzczOTM4NDUxNzQ2YmJjNjRhNTAiXSwiQ21kIjpbIi9iaW4vc2giLCItYyIsIiMobm9wKSAiLCJMQUJFTCBvcmlnX2ltYWdlX2RpZ2VzdD1zaGEyNTY6ZTM0MWIwYTkyZWMwMDViMjUxYjMyNzdlNzFjNmZmMjg2NzU3ZDIwZjc0OGVkZWYxZGQ0NTZlZTU1OGRjZDc3NyJdLCJJbWFnZSI6InNoYTI1NjphMzU5Nzk5ZThmZDc1ZGMwNzcyYmNhZjY3M2UyMzBhNzEyYWI5NWFhMmNhZDM3MzFjMTJjNThiZjFmNWQ0Y2EyIiwiVm9sdW1lcyI6eyIvdmFyL2xpYi9jYXNzYW5kcmEiOnt9fSwiV29ya2luZ0RpciI6IiIsIkVudHJ5cG9pbnQiOlsiZG9ja2VyLWVudHJ5cG9pbnQuc2giXSwiT25CdWlsZCI6bnVsbCwiTGFiZWxzIjp7ImlvLmJ1aWxkYWgudmVyc2lvbiI6IjEuMjkuMCIsIm9yZy5vcGVuY29udGFpbmVycy5pbWFnZS5yZWYubmFtZSI6InVidW50dSIsIm9yZy5vcGVuY29udGFpbmVycy5pbWFnZS52ZXJzaW9uIjoiMjAuMDQiLCJvcmlnX2ltYWdlX2RpZ2VzdCI6InNoYTI1NjplMzQxYjBhOTJlYzAwNWIyNTFiMzI3N2U3MWM2ZmYyODY3NTdkMjBmNzQ4ZWRlZjFkZDQ1NmVlNTU4ZGNkNzc3IiwicmYuZGU4Y2IzODUtNDY3Ni00NTRkLTg4MGMtZGE2ODE3ODIxMzA2IjoiZG9ja2VyLmlvL2xpYnJhcnkvY2Fzc2FuZHJhOjQuMC4xMSIsInJmX2ltYWdlX2d1aWQuMDAyZmMxZjUtZGQyZi00YTAzLTg4Y2YtYzM3ZTAxMmM2MjgxIjoiMDAyZmMxZjUtZGQyZi00YTAzLTg4Y2YtYzM3ZTAxMmM2MjgxIn19LCJjcmVhdGVkIjoiMjAyMy0wOS0wMVQwMTowOTo0NS40NDA0MTkzMloiLCJkb2NrZXJfdmVyc2lvbiI6IjI0LjAuNSIsImhpc3RvcnkiOlt7ImNyZWF0ZWQiOiIyMDIzLTA5LTAxVDAxOjA4OjUzLjM1NjM5NTE3MloiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgQUREIGZpbGU6NGUxZjNlYzVjMTcwZmNiODQ3Y2RmODA4YzI3MzFkYjgxNDM0MGMzYzMzOGRmNDRlOGZmZjE4ODQxNzgxMTM4MiBpbiAvICJ9LHsiY3JlYXRlZCI6IjIwMjMtMDktMDFUMDE6MDg6NTUuMDc2MDA2NjkxWiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSBMQUJFTCBcIm9yZy5vcGVuY29udGFpbmVycy5pbWFnZS5yZWYubmFtZVwiPVwidWJ1bnR1XCIgXCJvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UudmVyc2lvblwiPVwiMjAuMDRcIiBcInJmLmRlOGNiMzg1LTQ2NzYtNDU0ZC04ODBjLWRhNjgxNzgyMTMwNlwiPVwiZG9ja2VyLmlvL2xpYnJhcnkvY2Fzc2FuZHJhOjQuMC4xMVwiIiwiY29tbWVudCI6IkZST00gMGMwZjdhNWE3YzViIiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjMtMDktMDFUMDE6MDg6NTUuMTA2NTcxODIxWiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSBFTlYgUEFUSD1cIi9vcHQvY2Fzc2FuZHJhL2Jpbjovb3B0L2phdmEvb3Blbmpkay9iaW46L3Vzci9sb2NhbC9zYmluOi91c3IvbG9jYWwvYmluOi91c3Ivc2JpbjovdXNyL2Jpbjovc2JpbjovYmluXCIgSkFWQV9IT01FPVwiL29wdC9qYXZhL29wZW5qZGtcIiBMQU5HPVwiZW5fVVMuVVRGLThcIiBMQU5HVUFHRT1cImVuX1VTOmVuXCIgTENfQUxMPVwiZW5fVVMuVVRGLThcIiBKQVZBX1ZFUlNJT049XCJqZGstMTEuMC4yMC4xKzFcIiBHT1NVX1ZFUlNJT049XCIxLjE2XCIgQ0FTU0FORFJBX0hPTUU9XCIvb3B0L2Nhc3NhbmRyYVwiIENBU1NBTkRSQV9DT05GPVwiL2V0Yy9jYXNzYW5kcmFcIiBHUEdfS0VZUz1cIkNFQzg2QkI0QTBCQTlEMEY5MDM5N0NBRUY4MzU4RkEyRjI4MzNDOTMgXHRDNDk2NUVFOUUzMDE1RDE5MkNDQ0YyQjZGNzU4Q0UzMThENzcyOTVEIFx0NUFFRDFCRjM3OEU5QTE5REFERTFCQ0IzNEJENzM2QTgyQjVDMUIwMCBcdDUxNEEyQUQ2MzFBNTdBMTZERDAwNDdFQzc0OUQ2RUVDMDM1M0IxMkMgXHRBMjZFNTI4QjI3MUYxOUI5RTVEOEUxOUVBMjc4Qjc4MUZFNEIyQkRBIFx0QTRDNDY1RkVBMEM1NTI1NjFBMzkyQTYxRTkxMzM1RDc3RTNFODdDQiBcdDlFNjZDRUM2MTA2RDU3OEQwQjFFQjlCRkYxMDAwOTYyQjdGNjg0MEMgXHRDNDAwOTg3MkM1OUI0OTU2MTMxMEQ5NjZEMDA2Mjg3NkFGMzBGMDU0IFx0Qjc4NDJDREFGMzZFNkEzMjE0RkFFMzVENUU4NUI5QUUwQjg0QzA0MSBcdDNFOUM4NzY5MDdBNTYwQUNBMDA5NjRGMzYzRTlCQUQyMTVCQkY1RjAgXHRGOEI3RkQwMEUwNUM5MzI5OTFBMkNENjE1MEVFMTAzRDE2MkM1QTU1IFx0NzQ2NEFBRDkwNjgyNDFDNTBCQTZBMjYyMzJGMzVDQjJGNTQ2RDkzRSBcdENFQzVDNTBCOUM2MjlFRjBGNUFCMjcwNjY1MEI3MkVCMTRDQ0Q2MjJcIiBDQVNTQU5EUkFfVkVSU0lPTj1cIjQuMC4xMVwiIENBU1NBTkRSQV9TSEE1MTI9XCI5MmJkMzU4MTllODY5Mjc3MDlhZGQxMDc1MDIzYWY1YWVkOTNkNDJlMDExNWJmYTZiNjc1YjE1ZTkzYjMxYmZmYTZmZDNiOWZmOTVhNDAzYmI5NjUwZWM0MTdhMDU2N2FjNzc2Yzg4YjU2ZmUzNzM5Mzg0NTE3NDZiYmM2NGE1MFwiICIsImNvbW1lbnQiOiJGUk9NIGQxNmNmYjgxMDJmNSIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDIzLTA5LTAxVDAxOjA4OjU1LjEzODQ3Mzg2OFoiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgRVhQT1NFICA3MDAwL3RjcCA3MDAxL3RjcCA3MTk5L3RjcCA5MDQyL3RjcCA5MTYwL3RjcCIsImNvbW1lbnQiOiJGUk9NIGI0NzRiYzkzOGEwNSIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDIzLTA5LTAxVDAxOjA4OjU1LjE2OTgxOTEyM1oiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgVk9MVU1FIFtcIi92YXIvbGliL2Nhc3NhbmRyYVwiXSIsImNvbW1lbnQiOiJGUk9NIDJmYzA5Nzk1YWM1NiIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDIzLTA5LTAxVDAxOjA4OjU1LjIwMjA1MTE4N1oiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgRU5UUllQT0lOVCBbXCJkb2NrZXItZW50cnlwb2ludC5zaFwiXSIsImNvbW1lbnQiOiJGUk9NIDI2M2I3MWJiMTFmOCIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDIzLTA5LTAxVDAxOjA4OjU1LjIzMzg5NzUzM1oiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgQ01EIFtcImNhc3NhbmRyYVwiLCBcIi1mXCJdIiwiY29tbWVudCI6IkZST00gMWUyZjJmOGJhYzExIiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjMtMDktMDFUMDE6MDg6NTUuMzMzNDI5MjUyWiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSBMQUJFTCBcInJmX2ltYWdlX2d1aWQuMDAyZmMxZjUtZGQyZi00YTAzLTg4Y2YtYzM3ZTAxMmM2MjgxXCI9XCIwMDJmYzFmNS1kZDJmLTRhMDMtODhjZi1jMzdlMDEyYzYyODFcIiIsImNvbW1lbnQiOiJGUk9NIDQzYjFhOTk2MmQ3MCIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDIzLTA5LTAxVDAxOjA5OjI3LjU0MzYxNzYyNloiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgIExBQkVMIG9yaWdfaW1hZ2VfZGlnZXN0PXNoYTI1NjplMzQxYjBhOTJlYzAwNWIyNTFiMzI3N2U3MWM2ZmYyODY3NTdkMjBmNzQ4ZWRlZjFkZDQ1NmVlNTU4ZGNkNzc3IiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjMtMDktMDFUMDE6MDk6NDUuNDQwNDE5MzJaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApICBMQUJFTCBvcmlnX2ltYWdlX2RpZ2VzdD1zaGEyNTY6ZTM0MWIwYTkyZWMwMDViMjUxYjMyNzdlNzFjNmZmMjg2NzU3ZDIwZjc0OGVkZWYxZGQ0NTZlZTU1OGRjZDc3NyIsImVtcHR5X2xheWVyIjp0cnVlfV0sIm9zIjoibGludXgiLCJyb290ZnMiOnsidHlwZSI6ImxheWVycyIsImRpZmZfaWRzIjpbInNoYTI1NjowNzg1MDgyMGU1YjRjNGRjMzRjN2FiODY1NzhjNzNjYTYxYmY3YTEwNWY2MzE1YTQ2NDRiM2Q5YTRjOTkyNGU3Il19fQ==",
+   "repoDigests": [
+    "rapidfort/cassandra-official@sha256:a978e039d05fdf13fd9c0a42a693e1da658c2f3bfdcb7d1bb73f4fbf2b4c3d18"
+   ],
+   "architecture": "amd64",
+   "os": "linux"
+  }
+ },
+ "distro": {
+  "name": "ubuntu",
+  "version": "20.04",
+  "idLike": [
+   "debian"
+  ]
+ },
+ "descriptor": {
+  "name": "grype",
+  "version": "0.71.0",
+  "configuration": {
+   "output": [
+    "json"
+   ],
+   "file": "",
+   "distro": "",
+   "add-cpes-if-none": false,
+   "output-template-file": "",
+   "check-for-app-update": true,
+   "only-fixed": false,
+   "only-notfixed": false,
+   "platform": "",
+   "search": {
+    "scope": "Squashed",
+    "unindexed-archives": false,
+    "indexed-archives": true
+   },
+   "ignore": null,
+   "exclude": [],
+   "db": {
+    "cache-dir": "/home/anon/.cache/grype/db",
+    "update-url": "https://toolbox-data.anchore.io/grype/databases/listing.json",
+    "ca-cert": "",
+    "auto-update": true,
+    "validate-by-hash-on-start": false,
+    "validate-age": true,
+    "max-allowed-built-age": 432000000000000
+   },
+   "externalSources": {
+    "enable": false,
+    "maven": {
+     "searchUpstreamBySha1": true,
+     "baseUrl": "https://search.maven.org/solrsearch/select"
+    }
+   },
+   "match": {
+    "java": {
+     "using-cpes": false
+    },
+    "dotnet": {
+     "using-cpes": false
+    },
+    "golang": {
+     "using-cpes": false
+    },
+    "javascript": {
+     "using-cpes": false
+    },
+    "python": {
+     "using-cpes": false
+    },
+    "ruby": {
+     "using-cpes": false
+    },
+    "rust": {
+     "using-cpes": false
+    },
+    "stock": {
+     "using-cpes": true
+    }
+   },
+   "fail-on-severity": "",
+   "registry": {
+    "insecure-skip-tls-verify": false,
+    "insecure-use-http": false,
+    "auth": null,
+    "ca-cert": ""
+   },
+   "show-suppressed": false,
+   "by-cve": false,
+   "name": "",
+   "default-image-pull-source": "",
+   "vex-documents": [],
+   "vex-add": []
+  },
+  "db": {
+   "built": "2023-10-18T01:27:01Z",
+   "schemaVersion": 5,
+   "location": "/home/anon/.cache/grype/db/5",
+   "checksum": "sha256:3d645110a85196185e04ca12f42bb7ca46c6946833db616c7db1c751f261ab04",
+   "error": null
+  },
+  "timestamp": "2023-10-18T17:50:33.877362703-04:00"
+ }
+}

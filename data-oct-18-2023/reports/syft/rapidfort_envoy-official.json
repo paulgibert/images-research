@@ -1,0 +1,750 @@
+{
+ "artifacts": [
+  {
+   "id": "5b1b70d4729f557b",
+   "name": "coreutils",
+   "version": "8.30-3ubuntu2",
+   "type": "deb",
+   "foundBy": "dpkgdb-cataloger",
+   "locations": [
+    {
+     "path": "/var/lib/dpkg/status",
+     "layerID": "sha256:32d9cba698feeca50bb19bcdba0f2dacd70eeae9e75f1229938a3abe2dacb943",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "",
+   "cpes": [
+    "cpe:2.3:a:coreutils:coreutils:8.30-3ubuntu2:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:deb/ubuntu/coreutils@8.30-3ubuntu2?arch=amd64&distro=ubuntu-20.04",
+   "metadataType": "DpkgMetadata",
+   "metadata": {
+    "package": "coreutils",
+    "source": "",
+    "version": "8.30-3ubuntu2",
+    "sourceVersion": "",
+    "architecture": "amd64",
+    "maintainer": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>",
+    "installedSize": 7196,
+    "files": []
+   }
+  },
+  {
+   "id": "e4076f7563e4931b",
+   "name": "dash",
+   "version": "0.5.10.2-6",
+   "type": "deb",
+   "foundBy": "dpkgdb-cataloger",
+   "locations": [
+    {
+     "path": "/var/lib/dpkg/status",
+     "layerID": "sha256:32d9cba698feeca50bb19bcdba0f2dacd70eeae9e75f1229938a3abe2dacb943",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "",
+   "cpes": [
+    "cpe:2.3:a:dash:dash:0.5.10.2-6:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:deb/ubuntu/dash@0.5.10.2-6?arch=amd64&distro=ubuntu-20.04",
+   "metadataType": "DpkgMetadata",
+   "metadata": {
+    "package": "dash",
+    "source": "",
+    "version": "0.5.10.2-6",
+    "sourceVersion": "",
+    "architecture": "amd64",
+    "maintainer": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>",
+    "installedSize": 212,
+    "files": []
+   }
+  },
+  {
+   "id": "bfd6b6dd0a440687",
+   "name": "grep",
+   "version": "3.4-1",
+   "type": "deb",
+   "foundBy": "dpkgdb-cataloger",
+   "locations": [
+    {
+     "path": "/var/lib/dpkg/status",
+     "layerID": "sha256:32d9cba698feeca50bb19bcdba0f2dacd70eeae9e75f1229938a3abe2dacb943",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "",
+   "cpes": [
+    "cpe:2.3:a:grep:grep:3.4-1:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:deb/ubuntu/grep@3.4-1?arch=amd64&distro=ubuntu-20.04",
+   "metadataType": "DpkgMetadata",
+   "metadata": {
+    "package": "grep",
+    "source": "",
+    "version": "3.4-1",
+    "sourceVersion": "",
+    "architecture": "amd64",
+    "maintainer": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>",
+    "installedSize": 496,
+    "files": []
+   }
+  },
+  {
+   "id": "4fa3bfc59c100649",
+   "name": "libacl1",
+   "version": "2.2.53-6",
+   "type": "deb",
+   "foundBy": "dpkgdb-cataloger",
+   "locations": [
+    {
+     "path": "/var/lib/dpkg/status",
+     "layerID": "sha256:32d9cba698feeca50bb19bcdba0f2dacd70eeae9e75f1229938a3abe2dacb943",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "",
+   "cpes": [
+    "cpe:2.3:a:libacl1:libacl1:2.2.53-6:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:deb/ubuntu/libacl1@2.2.53-6?arch=amd64&upstream=acl&distro=ubuntu-20.04",
+   "metadataType": "DpkgMetadata",
+   "metadata": {
+    "package": "libacl1",
+    "source": "acl",
+    "version": "2.2.53-6",
+    "sourceVersion": "",
+    "architecture": "amd64",
+    "maintainer": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>",
+    "installedSize": 70,
+    "files": []
+   }
+  },
+  {
+   "id": "d37e0662dc3ecba7",
+   "name": "libattr1",
+   "version": "1:2.4.48-5",
+   "type": "deb",
+   "foundBy": "dpkgdb-cataloger",
+   "locations": [
+    {
+     "path": "/var/lib/dpkg/status",
+     "layerID": "sha256:32d9cba698feeca50bb19bcdba0f2dacd70eeae9e75f1229938a3abe2dacb943",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "",
+   "cpes": [
+    "cpe:2.3:a:libattr1:libattr1:1\\:2.4.48-5:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:deb/ubuntu/libattr1@1:2.4.48-5?arch=amd64&upstream=attr&distro=ubuntu-20.04",
+   "metadataType": "DpkgMetadata",
+   "metadata": {
+    "package": "libattr1",
+    "source": "attr",
+    "version": "1:2.4.48-5",
+    "sourceVersion": "",
+    "architecture": "amd64",
+    "maintainer": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>",
+    "installedSize": 57,
+    "files": [
+     {
+      "path": "/etc/xattr.conf",
+      "digest": {
+       "algorithm": "md5",
+       "value": "d1e7e7add29e247fdcf2a098fe5b37a0"
+      },
+      "isConfigFile": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "03bcc070fa548708",
+   "name": "libc6",
+   "version": "2.31-0ubuntu9.12",
+   "type": "deb",
+   "foundBy": "dpkgdb-cataloger",
+   "locations": [
+    {
+     "path": "/var/lib/dpkg/status",
+     "layerID": "sha256:32d9cba698feeca50bb19bcdba0f2dacd70eeae9e75f1229938a3abe2dacb943",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "",
+   "cpes": [
+    "cpe:2.3:a:libc6:libc6:2.31-0ubuntu9.12:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.12?arch=amd64&upstream=glibc&distro=ubuntu-20.04",
+   "metadataType": "DpkgMetadata",
+   "metadata": {
+    "package": "libc6",
+    "source": "glibc",
+    "version": "2.31-0ubuntu9.12",
+    "sourceVersion": "",
+    "architecture": "amd64",
+    "maintainer": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>",
+    "installedSize": 13238,
+    "files": [
+     {
+      "path": "/etc/ld.so.conf.d/x86_64-linux-gnu.conf",
+      "digest": {
+       "algorithm": "md5",
+       "value": "d4e7a7b88a71b5ffd9e2644e71a0cfab"
+      },
+      "isConfigFile": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "c1add0ba4d28a73a",
+   "name": "libpcre2-8-0",
+   "version": "10.34-7ubuntu0.1",
+   "type": "deb",
+   "foundBy": "dpkgdb-cataloger",
+   "locations": [
+    {
+     "path": "/var/lib/dpkg/status",
+     "layerID": "sha256:32d9cba698feeca50bb19bcdba0f2dacd70eeae9e75f1229938a3abe2dacb943",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "",
+   "cpes": [
+    "cpe:2.3:a:libpcre2-8-0:libpcre2-8-0:10.34-7ubuntu0.1:*:*:*:*:*:*:*",
+    "cpe:2.3:a:libpcre2-8-0:libpcre2_8_0:10.34-7ubuntu0.1:*:*:*:*:*:*:*",
+    "cpe:2.3:a:libpcre2_8_0:libpcre2-8-0:10.34-7ubuntu0.1:*:*:*:*:*:*:*",
+    "cpe:2.3:a:libpcre2_8_0:libpcre2_8_0:10.34-7ubuntu0.1:*:*:*:*:*:*:*",
+    "cpe:2.3:a:libpcre2-8:libpcre2-8-0:10.34-7ubuntu0.1:*:*:*:*:*:*:*",
+    "cpe:2.3:a:libpcre2-8:libpcre2_8_0:10.34-7ubuntu0.1:*:*:*:*:*:*:*",
+    "cpe:2.3:a:libpcre2_8:libpcre2-8-0:10.34-7ubuntu0.1:*:*:*:*:*:*:*",
+    "cpe:2.3:a:libpcre2_8:libpcre2_8_0:10.34-7ubuntu0.1:*:*:*:*:*:*:*",
+    "cpe:2.3:a:libpcre2:libpcre2-8-0:10.34-7ubuntu0.1:*:*:*:*:*:*:*",
+    "cpe:2.3:a:libpcre2:libpcre2_8_0:10.34-7ubuntu0.1:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:deb/ubuntu/libpcre2-8-0@10.34-7ubuntu0.1?arch=amd64&upstream=pcre2&distro=ubuntu-20.04",
+   "metadataType": "DpkgMetadata",
+   "metadata": {
+    "package": "libpcre2-8-0",
+    "source": "pcre2",
+    "version": "10.34-7ubuntu0.1",
+    "sourceVersion": "",
+    "architecture": "amd64",
+    "maintainer": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>",
+    "installedSize": 596,
+    "files": []
+   }
+  },
+  {
+   "id": "4520854101c812a6",
+   "name": "libpcre3",
+   "version": "2:8.39-12ubuntu0.1",
+   "type": "deb",
+   "foundBy": "dpkgdb-cataloger",
+   "locations": [
+    {
+     "path": "/var/lib/dpkg/status",
+     "layerID": "sha256:32d9cba698feeca50bb19bcdba0f2dacd70eeae9e75f1229938a3abe2dacb943",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "",
+   "cpes": [
+    "cpe:2.3:a:libpcre3:libpcre3:2\\:8.39-12ubuntu0.1:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:deb/ubuntu/libpcre3@2:8.39-12ubuntu0.1?arch=amd64&upstream=pcre3&distro=ubuntu-20.04",
+   "metadataType": "DpkgMetadata",
+   "metadata": {
+    "package": "libpcre3",
+    "source": "pcre3",
+    "version": "2:8.39-12ubuntu0.1",
+    "sourceVersion": "",
+    "architecture": "amd64",
+    "maintainer": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>",
+    "installedSize": 671,
+    "files": []
+   }
+  },
+  {
+   "id": "a72c4ca9a84e6715",
+   "name": "libselinux1",
+   "version": "3.0-1build2",
+   "type": "deb",
+   "foundBy": "dpkgdb-cataloger",
+   "locations": [
+    {
+     "path": "/var/lib/dpkg/status",
+     "layerID": "sha256:32d9cba698feeca50bb19bcdba0f2dacd70eeae9e75f1229938a3abe2dacb943",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "",
+   "cpes": [
+    "cpe:2.3:a:libselinux1:libselinux1:3.0-1build2:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:deb/ubuntu/libselinux1@3.0-1build2?arch=amd64&upstream=libselinux&distro=ubuntu-20.04",
+   "metadataType": "DpkgMetadata",
+   "metadata": {
+    "package": "libselinux1",
+    "source": "libselinux",
+    "version": "3.0-1build2",
+    "sourceVersion": "",
+    "architecture": "amd64",
+    "maintainer": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>",
+    "installedSize": 202,
+    "files": []
+   }
+  },
+  {
+   "id": "d796e28d6940a550",
+   "name": "libtinfo6",
+   "version": "6.2-0ubuntu2.1",
+   "type": "deb",
+   "foundBy": "dpkgdb-cataloger",
+   "locations": [
+    {
+     "path": "/var/lib/dpkg/status",
+     "layerID": "sha256:32d9cba698feeca50bb19bcdba0f2dacd70eeae9e75f1229938a3abe2dacb943",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "",
+   "cpes": [
+    "cpe:2.3:a:libtinfo6:libtinfo6:6.2-0ubuntu2.1:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:deb/ubuntu/libtinfo6@6.2-0ubuntu2.1?arch=amd64&upstream=ncurses&distro=ubuntu-20.04",
+   "metadataType": "DpkgMetadata",
+   "metadata": {
+    "package": "libtinfo6",
+    "source": "ncurses",
+    "version": "6.2-0ubuntu2.1",
+    "sourceVersion": "",
+    "architecture": "amd64",
+    "maintainer": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>",
+    "installedSize": 537,
+    "files": []
+   }
+  },
+  {
+   "id": "adb92ffa973c3d96",
+   "name": "ncurses-bin",
+   "version": "6.2-0ubuntu2.1",
+   "type": "deb",
+   "foundBy": "dpkgdb-cataloger",
+   "locations": [
+    {
+     "path": "/var/lib/dpkg/status",
+     "layerID": "sha256:32d9cba698feeca50bb19bcdba0f2dacd70eeae9e75f1229938a3abe2dacb943",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "",
+   "cpes": [
+    "cpe:2.3:a:ncurses-bin:ncurses-bin:6.2-0ubuntu2.1:*:*:*:*:*:*:*",
+    "cpe:2.3:a:ncurses-bin:ncurses_bin:6.2-0ubuntu2.1:*:*:*:*:*:*:*",
+    "cpe:2.3:a:ncurses_bin:ncurses-bin:6.2-0ubuntu2.1:*:*:*:*:*:*:*",
+    "cpe:2.3:a:ncurses_bin:ncurses_bin:6.2-0ubuntu2.1:*:*:*:*:*:*:*",
+    "cpe:2.3:a:ncurses:ncurses-bin:6.2-0ubuntu2.1:*:*:*:*:*:*:*",
+    "cpe:2.3:a:ncurses:ncurses_bin:6.2-0ubuntu2.1:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:deb/ubuntu/ncurses-bin@6.2-0ubuntu2.1?arch=amd64&upstream=ncurses&distro=ubuntu-20.04",
+   "metadataType": "DpkgMetadata",
+   "metadata": {
+    "package": "ncurses-bin",
+    "source": "ncurses",
+    "version": "6.2-0ubuntu2.1",
+    "sourceVersion": "",
+    "architecture": "amd64",
+    "maintainer": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>",
+    "installedSize": 642,
+    "files": []
+   }
+  },
+  {
+   "id": "6e29e51d31a4fd56",
+   "name": "sed",
+   "version": "4.7-1",
+   "type": "deb",
+   "foundBy": "dpkgdb-cataloger",
+   "locations": [
+    {
+     "path": "/var/lib/dpkg/status",
+     "layerID": "sha256:32d9cba698feeca50bb19bcdba0f2dacd70eeae9e75f1229938a3abe2dacb943",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "",
+   "cpes": [
+    "cpe:2.3:a:sed:sed:4.7-1:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:deb/ubuntu/sed@4.7-1?arch=amd64&distro=ubuntu-20.04",
+   "metadataType": "DpkgMetadata",
+   "metadata": {
+    "package": "sed",
+    "source": "",
+    "version": "4.7-1",
+    "sourceVersion": "",
+    "architecture": "amd64",
+    "maintainer": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>",
+    "installedSize": 336,
+    "files": []
+   }
+  },
+  {
+   "id": "23bef187efad6db8",
+   "name": "tar",
+   "version": "1.30+dfsg-7ubuntu0.20.04.3",
+   "type": "deb",
+   "foundBy": "dpkgdb-cataloger",
+   "locations": [
+    {
+     "path": "/var/lib/dpkg/status",
+     "layerID": "sha256:32d9cba698feeca50bb19bcdba0f2dacd70eeae9e75f1229938a3abe2dacb943",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "",
+   "cpes": [
+    "cpe:2.3:a:tar:tar:1.30\\+dfsg-7ubuntu0.20.04.3:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:deb/ubuntu/tar@1.30+dfsg-7ubuntu0.20.04.3?arch=amd64&distro=ubuntu-20.04",
+   "metadataType": "DpkgMetadata",
+   "metadata": {
+    "package": "tar",
+    "source": "",
+    "version": "1.30+dfsg-7ubuntu0.20.04.3",
+    "sourceVersion": "",
+    "architecture": "amd64",
+    "maintainer": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>",
+    "installedSize": 884,
+    "files": []
+   }
+  }
+ ],
+ "artifactRelationships": [
+  {
+   "parent": "03bcc070fa548708",
+   "child": "58fa354841c6cee9",
+   "type": "evident-by"
+  },
+  {
+   "parent": "03bcc070fa548708",
+   "child": "9a3908dcbed4c2f5",
+   "type": "contains"
+  },
+  {
+   "parent": "23bef187efad6db8",
+   "child": "58fa354841c6cee9",
+   "type": "evident-by"
+  },
+  {
+   "parent": "4520854101c812a6",
+   "child": "58fa354841c6cee9",
+   "type": "evident-by"
+  },
+  {
+   "parent": "4fa3bfc59c100649",
+   "child": "58fa354841c6cee9",
+   "type": "evident-by"
+  },
+  {
+   "parent": "5b1b70d4729f557b",
+   "child": "58fa354841c6cee9",
+   "type": "evident-by"
+  },
+  {
+   "parent": "6e29e51d31a4fd56",
+   "child": "58fa354841c6cee9",
+   "type": "evident-by"
+  },
+  {
+   "parent": "9f935f246d4d90a687eba20d7f9b23ee92d898d307af4f88da69c4300c2108f6",
+   "child": "03bcc070fa548708",
+   "type": "contains"
+  },
+  {
+   "parent": "9f935f246d4d90a687eba20d7f9b23ee92d898d307af4f88da69c4300c2108f6",
+   "child": "23bef187efad6db8",
+   "type": "contains"
+  },
+  {
+   "parent": "9f935f246d4d90a687eba20d7f9b23ee92d898d307af4f88da69c4300c2108f6",
+   "child": "4520854101c812a6",
+   "type": "contains"
+  },
+  {
+   "parent": "9f935f246d4d90a687eba20d7f9b23ee92d898d307af4f88da69c4300c2108f6",
+   "child": "4fa3bfc59c100649",
+   "type": "contains"
+  },
+  {
+   "parent": "9f935f246d4d90a687eba20d7f9b23ee92d898d307af4f88da69c4300c2108f6",
+   "child": "5b1b70d4729f557b",
+   "type": "contains"
+  },
+  {
+   "parent": "9f935f246d4d90a687eba20d7f9b23ee92d898d307af4f88da69c4300c2108f6",
+   "child": "6e29e51d31a4fd56",
+   "type": "contains"
+  },
+  {
+   "parent": "9f935f246d4d90a687eba20d7f9b23ee92d898d307af4f88da69c4300c2108f6",
+   "child": "a72c4ca9a84e6715",
+   "type": "contains"
+  },
+  {
+   "parent": "9f935f246d4d90a687eba20d7f9b23ee92d898d307af4f88da69c4300c2108f6",
+   "child": "adb92ffa973c3d96",
+   "type": "contains"
+  },
+  {
+   "parent": "9f935f246d4d90a687eba20d7f9b23ee92d898d307af4f88da69c4300c2108f6",
+   "child": "bfd6b6dd0a440687",
+   "type": "contains"
+  },
+  {
+   "parent": "9f935f246d4d90a687eba20d7f9b23ee92d898d307af4f88da69c4300c2108f6",
+   "child": "c1add0ba4d28a73a",
+   "type": "contains"
+  },
+  {
+   "parent": "9f935f246d4d90a687eba20d7f9b23ee92d898d307af4f88da69c4300c2108f6",
+   "child": "d37e0662dc3ecba7",
+   "type": "contains"
+  },
+  {
+   "parent": "9f935f246d4d90a687eba20d7f9b23ee92d898d307af4f88da69c4300c2108f6",
+   "child": "d796e28d6940a550",
+   "type": "contains"
+  },
+  {
+   "parent": "9f935f246d4d90a687eba20d7f9b23ee92d898d307af4f88da69c4300c2108f6",
+   "child": "e4076f7563e4931b",
+   "type": "contains"
+  },
+  {
+   "parent": "a72c4ca9a84e6715",
+   "child": "58fa354841c6cee9",
+   "type": "evident-by"
+  },
+  {
+   "parent": "adb92ffa973c3d96",
+   "child": "58fa354841c6cee9",
+   "type": "evident-by"
+  },
+  {
+   "parent": "bfd6b6dd0a440687",
+   "child": "58fa354841c6cee9",
+   "type": "evident-by"
+  },
+  {
+   "parent": "c1add0ba4d28a73a",
+   "child": "58fa354841c6cee9",
+   "type": "evident-by"
+  },
+  {
+   "parent": "d37e0662dc3ecba7",
+   "child": "58fa354841c6cee9",
+   "type": "evident-by"
+  },
+  {
+   "parent": "d796e28d6940a550",
+   "child": "58fa354841c6cee9",
+   "type": "evident-by"
+  },
+  {
+   "parent": "e4076f7563e4931b",
+   "child": "58fa354841c6cee9",
+   "type": "evident-by"
+  }
+ ],
+ "files": [
+  {
+   "id": "9a3908dcbed4c2f5",
+   "location": {
+    "path": "/etc/ld.so.conf.d/x86_64-linux-gnu.conf",
+    "layerID": "sha256:32d9cba698feeca50bb19bcdba0f2dacd70eeae9e75f1229938a3abe2dacb943"
+   }
+  },
+  {
+   "id": "58fa354841c6cee9",
+   "location": {
+    "path": "/var/lib/dpkg/status",
+    "layerID": "sha256:32d9cba698feeca50bb19bcdba0f2dacd70eeae9e75f1229938a3abe2dacb943"
+   }
+  }
+ ],
+ "source": {
+  "id": "9f935f246d4d90a687eba20d7f9b23ee92d898d307af4f88da69c4300c2108f6",
+  "name": "docker.io/rapidfort/envoy-official",
+  "version": "sha256:9f935f246d4d90a687eba20d7f9b23ee92d898d307af4f88da69c4300c2108f6",
+  "type": "image",
+  "metadata": {
+   "userInput": "docker.io/rapidfort/envoy-official:latest",
+   "imageID": "sha256:71f1f97d74265a735bbbd92995f590e03db5f8efa7dc6ff23ebe9b3c02858908",
+   "manifestDigest": "sha256:9f935f246d4d90a687eba20d7f9b23ee92d898d307af4f88da69c4300c2108f6",
+   "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+   "tags": [
+    "rapidfort/envoy-official:latest"
+   ],
+   "imageSize": 75805584,
+   "layers": [
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:32d9cba698feeca50bb19bcdba0f2dacd70eeae9e75f1229938a3abe2dacb943",
+     "size": 75805584
+    }
+   ],
+   "manifest": "eyJzY2hlbWFWZXJzaW9uIjoyLCJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmRpc3RyaWJ1dGlvbi5tYW5pZmVzdC52Mitqc29uIiwiY29uZmlnIjp7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuY29udGFpbmVyLmltYWdlLnYxK2pzb24iLCJzaXplIjo0MDYxLCJkaWdlc3QiOiJzaGEyNTY6NzFmMWY5N2Q3NDI2NWE3MzViYmJkOTI5OTVmNTkwZTAzZGI1ZjhlZmE3ZGM2ZmYyM2ViZTliM2MwMjg1ODkwOCJ9LCJsYXllcnMiOlt7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjo3NjM5NDQ5NiwiZGlnZXN0Ijoic2hhMjU2OjMyZDljYmE2OThmZWVjYTUwYmIxOWJjZGJhMGYyZGFjZDcwZWVhZTllNzVmMTIyOTkzOGEzYWJlMmRhY2I5NDMifV19",
+   "config": "eyJhcmNoaXRlY3R1cmUiOiJhbWQ2NCIsImNvbmZpZyI6eyJIb3N0bmFtZSI6IiIsIkRvbWFpbm5hbWUiOiIiLCJVc2VyIjoiIiwiQXR0YWNoU3RkaW4iOmZhbHNlLCJBdHRhY2hTdGRvdXQiOmZhbHNlLCJBdHRhY2hTdGRlcnIiOmZhbHNlLCJFeHBvc2VkUG9ydHMiOnsiMTAwMDAvdGNwIjp7fX0sIlR0eSI6ZmFsc2UsIk9wZW5TdGRpbiI6ZmFsc2UsIlN0ZGluT25jZSI6ZmFsc2UsIkVudiI6WyJQQVRIPS91c3IvbG9jYWwvc2JpbjovdXNyL2xvY2FsL2JpbjovdXNyL3NiaW46L3Vzci9iaW46L3NiaW46L2JpbiIsIkRFQklBTl9GUk9OVEVORD1ub25pbnRlcmFjdGl2ZSJdLCJDbWQiOlsiZW52b3kiLCItYyIsIi9ldGMvZW52b3kvZW52b3kueWFtbCJdLCJJbWFnZSI6InNoYTI1NjpjODJiNTVkNGE4YjZlZjkxM2QzZDNjYzQ5NTdmZjA2YzM4NTY0MjZkMTkyM2JkNjQ5YjdmMjkxN2VhMDIyY2VmIiwiVm9sdW1lcyI6bnVsbCwiV29ya2luZ0RpciI6IiIsIkVudHJ5cG9pbnQiOlsiL2RvY2tlci1lbnRyeXBvaW50LnNoIl0sIk9uQnVpbGQiOm51bGwsIkxhYmVscyI6eyJpby5idWlsZGFoLnZlcnNpb24iOiIxLjI5LjAiLCJvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UucmVmLm5hbWUiOiJ1YnVudHUiLCJvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UudmVyc2lvbiI6IjIwLjA0Iiwib3JpZ19pbWFnZV9kaWdlc3QiOiJzaGEyNTY6MWNiZDQ4NjkzNzA4NDY0M2ZhMWUxNGIzOGY2MTkwMDEwMzI4YzRmNmE1ZTExN2U0N2UxMTIwYTI4ZGU0ZDVjNiIsInJmLmNjY2YzN2NmLTU1NWQtNDVhMC1hZGE5LTkwZDBjYzQxZDYxYSI6ImRvY2tlci5pby9lbnZveXByb3h5L2Vudm95OnYxLjI3LWxhdGVzdCIsInJmX2ltYWdlX2d1aWQuMDEwNTM4NTUtMmEwNC00OWFhLTgzZWYtOWE5NDhjMjIxZjViIjoiMDEwNTM4NTUtMmEwNC00OWFhLTgzZWYtOWE5NDhjMjIxZjViIn19LCJjb250YWluZXIiOiI0ZmNlNTJkOWU1ZDM3M2IxNjFhZjllYWQ1NmJlOWRmYWM1ODI1YzdjZjc3MDI3ZjZjNGRlNDYzNjdhZDQ5NmM5IiwiY29udGFpbmVyX2NvbmZpZyI6eyJIb3N0bmFtZSI6IjRmY2U1MmQ5ZTVkMyIsIkRvbWFpbm5hbWUiOiIiLCJVc2VyIjoiIiwiQXR0YWNoU3RkaW4iOmZhbHNlLCJBdHRhY2hTdGRvdXQiOmZhbHNlLCJBdHRhY2hTdGRlcnIiOmZhbHNlLCJFeHBvc2VkUG9ydHMiOnsiMTAwMDAvdGNwIjp7fX0sIlR0eSI6ZmFsc2UsIk9wZW5TdGRpbiI6ZmFsc2UsIlN0ZGluT25jZSI6ZmFsc2UsIkVudiI6WyJQQVRIPS91c3IvbG9jYWwvc2JpbjovdXNyL2xvY2FsL2JpbjovdXNyL3NiaW46L3Vzci9iaW46L3NiaW46L2JpbiIsIkRFQklBTl9GUk9OVEVORD1ub25pbnRlcmFjdGl2ZSJdLCJDbWQiOlsiL2Jpbi9zaCIsIi1jIiwiIyhub3ApICIsIkxBQkVMIG9yaWdfaW1hZ2VfZGlnZXN0PXNoYTI1NjoxY2JkNDg2OTM3MDg0NjQzZmExZTE0YjM4ZjYxOTAwMTAzMjhjNGY2YTVlMTE3ZTQ3ZTExMjBhMjhkZTRkNWM2Il0sIkltYWdlIjoic2hhMjU2OmM4MmI1NWQ0YThiNmVmOTEzZDNkM2NjNDk1N2ZmMDZjMzg1NjQyNmQxOTIzYmQ2NDliN2YyOTE3ZWEwMjJjZWYiLCJWb2x1bWVzIjpudWxsLCJXb3JraW5nRGlyIjoiIiwiRW50cnlwb2ludCI6WyIvZG9ja2VyLWVudHJ5cG9pbnQuc2giXSwiT25CdWlsZCI6bnVsbCwiTGFiZWxzIjp7ImlvLmJ1aWxkYWgudmVyc2lvbiI6IjEuMjkuMCIsIm9yZy5vcGVuY29udGFpbmVycy5pbWFnZS5yZWYubmFtZSI6InVidW50dSIsIm9yZy5vcGVuY29udGFpbmVycy5pbWFnZS52ZXJzaW9uIjoiMjAuMDQiLCJvcmlnX2ltYWdlX2RpZ2VzdCI6InNoYTI1NjoxY2JkNDg2OTM3MDg0NjQzZmExZTE0YjM4ZjYxOTAwMTAzMjhjNGY2YTVlMTE3ZTQ3ZTExMjBhMjhkZTRkNWM2IiwicmYuY2NjZjM3Y2YtNTU1ZC00NWEwLWFkYTktOTBkMGNjNDFkNjFhIjoiZG9ja2VyLmlvL2Vudm95cHJveHkvZW52b3k6djEuMjctbGF0ZXN0IiwicmZfaW1hZ2VfZ3VpZC4wMTA1Mzg1NS0yYTA0LTQ5YWEtODNlZi05YTk0OGMyMjFmNWIiOiIwMTA1Mzg1NS0yYTA0LTQ5YWEtODNlZi05YTk0OGMyMjFmNWIifX0sImNyZWF0ZWQiOiIyMDIzLTEwLTE3VDE1OjE4OjAwLjk3MDI0OTI2MloiLCJkb2NrZXJfdmVyc2lvbiI6IjI0LjAuNiIsImhpc3RvcnkiOlt7ImNyZWF0ZWQiOiIyMDIzLTEwLTE3VDE1OjE3OjM1LjI5Njg0MTQyM1oiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgQUREIGZpbGU6MTQwMDIyNzFjZWUwYzIzMDhhNGEwODI4OGYyZDM2NWY1OWEzNWRjYzAwNjIzY2MxMTAzMGEzMzY4OTIwZWIxNyBpbiAvICJ9LHsiY3JlYXRlZCI6IjIwMjMtMTAtMTdUMTU6MTc6MzUuODY1ODk2MjRaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApIExBQkVMIFwib3JnLm9wZW5jb250YWluZXJzLmltYWdlLnJlZi5uYW1lXCI9XCJ1YnVudHVcIiBcIm9yZy5vcGVuY29udGFpbmVycy5pbWFnZS52ZXJzaW9uXCI9XCIyMC4wNFwiIFwicmYuY2NjZjM3Y2YtNTU1ZC00NWEwLWFkYTktOTBkMGNjNDFkNjFhXCI9XCJkb2NrZXIuaW8vZW52b3lwcm94eS9lbnZveTp2MS4yNy1sYXRlc3RcIiIsImNvbW1lbnQiOiJGUk9NIGYzMTk0OGI4ZGFmNyIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDIzLTEwLTE3VDE1OjE3OjM1LjkwMDUwODI0N1oiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgRU5WIFBBVEg9XCIvdXNyL2xvY2FsL3NiaW46L3Vzci9sb2NhbC9iaW46L3Vzci9zYmluOi91c3IvYmluOi9zYmluOi9iaW5cIiBERUJJQU5fRlJPTlRFTkQ9XCJub25pbnRlcmFjdGl2ZVwiICIsImNvbW1lbnQiOiJGUk9NIDMyN2RjODc4YzczNyIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDIzLTEwLTE3VDE1OjE3OjM1LjkzMDQwODEwNVoiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgRVhQT1NFICAxMDAwMC90Y3AiLCJjb21tZW50IjoiRlJPTSA4ZjA3NjM5M2U3ZDIiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyMy0xMC0xN1QxNToxNzozNS45NjIwMjczMTlaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApIEVOVFJZUE9JTlQgW1wiL2RvY2tlci1lbnRyeXBvaW50LnNoXCJdIiwiY29tbWVudCI6IkZST00gNTYxNWUzYTVlN2ViIiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjMtMTAtMTdUMTU6MTc6MzUuOTkzNDYyNzQ5WiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSBDTUQgW1wiZW52b3lcIiwgXCItY1wiLCBcIi9ldGMvZW52b3kvZW52b3kueWFtbFwiXSIsImNvbW1lbnQiOiJGUk9NIDBjMjBjNTkwMmEzNSIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDIzLTEwLTE3VDE1OjE3OjM2LjA4OTg3NTA1M1oiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgTEFCRUwgXCJyZl9pbWFnZV9ndWlkLjAxMDUzODU1LTJhMDQtNDlhYS04M2VmLTlhOTQ4YzIyMWY1YlwiPVwiMDEwNTM4NTUtMmEwNC00OWFhLTgzZWYtOWE5NDhjMjIxZjViXCIiLCJjb21tZW50IjoiRlJPTSBkODUwNWNmNzA1NGUiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyMy0xMC0xN1QxNToxNzo0OS45Njg1OTAzMloiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgIExBQkVMIG9yaWdfaW1hZ2VfZGlnZXN0PXNoYTI1NjoxY2JkNDg2OTM3MDg0NjQzZmExZTE0YjM4ZjYxOTAwMTAzMjhjNGY2YTVlMTE3ZTQ3ZTExMjBhMjhkZTRkNWM2IiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjMtMTAtMTdUMTU6MTg6MDAuOTcwMjQ5MjYyWiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSAgTEFCRUwgb3JpZ19pbWFnZV9kaWdlc3Q9c2hhMjU2OjFjYmQ0ODY5MzcwODQ2NDNmYTFlMTRiMzhmNjE5MDAxMDMyOGM0ZjZhNWUxMTdlNDdlMTEyMGEyOGRlNGQ1YzYiLCJlbXB0eV9sYXllciI6dHJ1ZX1dLCJvcyI6ImxpbnV4Iiwicm9vdGZzIjp7InR5cGUiOiJsYXllcnMiLCJkaWZmX2lkcyI6WyJzaGEyNTY6MzJkOWNiYTY5OGZlZWNhNTBiYjE5YmNkYmEwZjJkYWNkNzBlZWFlOWU3NWYxMjI5OTM4YTNhYmUyZGFjYjk0MyJdfX0=",
+   "repoDigests": [
+    "rapidfort/envoy-official@sha256:e152b21738dc67165bc97e30e1adf66bf57f74074088f54a1365d750462c68a4"
+   ],
+   "architecture": "amd64",
+   "os": "linux"
+  }
+ },
+ "distro": {
+  "prettyName": "Ubuntu 20.04.6 LTS",
+  "name": "Ubuntu",
+  "id": "ubuntu",
+  "idLike": [
+   "debian"
+  ],
+  "version": "20.04.6 LTS (Focal Fossa)",
+  "versionID": "20.04",
+  "versionCodename": "focal",
+  "homeURL": "https://www.ubuntu.com/",
+  "supportURL": "https://help.ubuntu.com/",
+  "bugReportURL": "https://bugs.launchpad.net/ubuntu/",
+  "privacyPolicyURL": "https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+ },
+ "descriptor": {
+  "name": "syft",
+  "version": "0.93.0",
+  "configuration": {
+   "catalogers": null,
+   "package": {
+    "cataloger": {
+     "enabled": true,
+     "scope": "Squashed"
+    },
+    "search-unindexed-archives": false,
+    "search-indexed-archives": true
+   },
+   "golang": {
+    "search-local-mod-cache-licenses": false,
+    "local-mod-cache-dir": "",
+    "search-remote-licenses": false,
+    "proxy": "",
+    "no-proxy": ""
+   },
+   "linux-kernel": {
+    "catalog-modules": true
+   },
+   "python": {
+    "guess-unpinned-requirements": false
+   },
+   "file-metadata": {
+    "cataloger": {
+     "enabled": false,
+     "scope": "Squashed"
+    },
+    "digests": [
+     "sha256"
+    ]
+   },
+   "file-classification": {
+    "cataloger": {
+     "enabled": false,
+     "scope": "Squashed"
+    }
+   },
+   "file-contents": {
+    "cataloger": {
+     "enabled": false,
+     "scope": "Squashed"
+    },
+    "skip-files-above-size": 1048576,
+    "globs": null
+   },
+   "secrets": {
+    "cataloger": {
+     "enabled": false,
+     "scope": "AllLayers"
+    },
+    "additional-patterns": null,
+    "exclude-pattern-names": null,
+    "reveal-values": false,
+    "skip-files-above-size": 1048576
+   },
+   "registry": {
+    "insecure-skip-tls-verify": false,
+    "insecure-use-http": false,
+    "auth": null,
+    "ca-cert": ""
+   },
+   "exclude": [],
+   "platform": "",
+   "name": "",
+   "source": {
+    "name": "",
+    "version": "",
+    "file": {
+     "digests": [
+      "sha256"
+     ]
+    }
+   },
+   "parallelism": 1,
+   "default-image-pull-source": "",
+   "base-path": "",
+   "exclude-binary-overlap-by-ownership": true
+  }
+ },
+ "schema": {
+  "version": "11.0.0",
+  "url": "https://raw.githubusercontent.com/anchore/syft/main/schema/json/schema-11.0.0.json"
+ }
+}

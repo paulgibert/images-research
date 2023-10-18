@@ -58,7 +58,7 @@ class GrypeScanner(ImageScanner):
         """
         Runs the Grype scanner.
         """
-        cmd = f"grype {image_fullname} -o json > {report_path}"
+        cmd = f"grype {image_fullname} -o json > {report_path} 2> /dev/null"
         utils.bash(cmd)
 
 
@@ -71,5 +71,5 @@ class SyftScanner(ImageScanner):
         """
         Runs the Syft scanner,
         """
-        cmd = f"syft {image_fullname} -o syft-json > {report_path}"
+        cmd = f"syft {image_fullname} -o syft-json > {report_path} 2> /dev/null"
         utils.bash(cmd)

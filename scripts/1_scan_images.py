@@ -16,6 +16,7 @@ import os
 import sys
 import argparse
 import json
+from tqdm import tqdm
 
 # Add parent dir to path
 sys.path.append("/".join(os.path.dirname(__file__).split("/")[0:-1]))
@@ -29,6 +30,7 @@ IMAGES_JSON_PATH = os.path.join(
                    os.path.abspath(__file__)), "images.json")
 GRYPE_DIRNAME = "grype"
 SYFT_DIRNAME = "syft"
+N_SCAN_ITERS = 84
 
 
 def get_image_fullname(domain: str, path: str,
@@ -107,6 +109,8 @@ def main():
     The main method of the script.
     Scans the images found in images.json with Grype and Syft.
     """
+    print("STAGE 1: Scanning images (This might take awhile...)")
+
     reports_dir = parse_args()
 
     grype_dir = os.path.join(reports_dir, GRYPE_DIRNAME)
@@ -123,15 +127,17 @@ def main():
 
     # Parse the images.json file and process all images
     with open(IMAGES_JSON_PATH, "r", encoding="utf-8") as fp:
-        for image in json.load(fp)["images"]:
-            for vendor in image["vendors"]:
-                image_fullname = get_image_fullname(vendor["domain"],
-                                                    vendor["path"],
-                                                    vendor["tag"])
-                process_image(vendor=vendor["name"],
-                              image_type=image["name"],
-                              image_fullname=image_fullname,
-                              scanners=scanners)
+        with tqdm(total=N_SCAN_ITERS) as pbar:
+            for image in json.load(fp)["images"]:
+                for vendor in image["vendors"]:
+                    image_fullname = get_image_fullname(vendor["domain"],
+                                                        vendor["path"],
+                                                        vendor["tag"])
+                    process_image(vendor=vendor["name"],
+                                image_type=image["name"],
+                                image_fullname=image_fullname,
+                                scanners=scanners)
+                    pbar.update(1)
 
 
 if __name__ == "__main__":

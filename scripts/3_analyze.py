@@ -71,7 +71,7 @@ FIGURES_DIR = "figures"
 FIGSIZE = (8,6)
 FIGURES = [
     FigureParams(
-        column="image_sz_mb",
+        column="image_size_mb",
         title="MB per Image",
         xlabel="Size (MB)",
         filename="sizes_fig.png"
@@ -101,7 +101,7 @@ FIGURES = [
         filename="vulns_p_comp_fig.png"
     ),
     FigureParams(
-        column="vulns_per_comp_severe",
+        column="severe_vulns_per_comp",
         title="Number of \"High\" and \"Critical\" Vulnerabilites per Component per Image",
         xlabel="Vulnerabilites per Component",
         filename="vulns_p_comp_severe_fig.png"
@@ -209,7 +209,7 @@ def calculate_and_save_stats(agg_df: pd.DataFrame, out_path: str):
 
         table.append(row)
     
-    with open(out_path, "r", encoding="utf-8") as fp:
+    with open(out_path, "w", encoding="utf-8") as fp:
         fp.write(tabulate(table, headers="firstrow"))
 
 
@@ -241,6 +241,8 @@ def main():
     Builds figures and summary statistics
     from aggregate data set.
     """
+    print("STAGE 3: Generating figures and stats")
+    
     ds_path, out_dir = parse_args()
 
     # Read aggregate data set

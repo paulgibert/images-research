@@ -1,0 +1,1760 @@
+{
+ "matches": [
+  {
+   "vulnerability": {
+    "id": "CVE-2023-0464",
+    "dataSource": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-0464",
+    "namespace": "alpine:distro:alpine:3.16",
+    "severity": "High",
+    "urls": [
+     "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-0464"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "1.1.1t-r1"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-0464",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-0464",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=2017771e2db3e2b96f89bbe8766c3209f6a99545",
+      "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=879f7080d7e141f415c79eaa3a8ac4a3dad0348b",
+      "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=959c59c7a0164117e7f8366466a32bb1f8d77ff1",
+      "https://lists.debian.org/debian-lts-announce/2023/06/msg00011.html",
+      "https://www.debian.org/security/2023/dsa-5417",
+      "https://www.openssl.org/news/secadv/20230322.txt"
+     ],
+     "description": "A security vulnerability has been identified in all supported versions\n\nof OpenSSL related to the verification of X.509 certificate chains\nthat include policy constraints.  Attackers may be able to exploit this\nvulnerability by creating a malicious certificate chain that triggers\nexponential use of computational resources, leading to a denial-of-service\n(DoS) attack on affected systems.\n\nPolicy processing is disabled by default but can be enabled by passing\nthe `-policy' argument to the command line utilities or by calling the\n`X509_VERIFY_PARAM_set1_policies()' function.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "alpine",
+       "version": "3.16.2"
+      },
+      "namespace": "alpine:distro:alpine:3.16",
+      "package": {
+       "name": "openssl",
+       "version": "1.1.1t-r0"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 1.1.1t-r1 (apk)",
+      "vulnerabilityID": "CVE-2023-0464"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "dd0125642fd58186",
+    "name": "libcrypto1.1",
+    "version": "1.1.1t-r0",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:fd374ecf8e760d83808d16203945e7b89ecfe0fb57903584c00ff47b395b6e28"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "OpenSSL"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libcrypto1.1:libcrypto1.1:1.1.1t-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libcrypto1.1:libcrypto:1.1.1t-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libcrypto:libcrypto1.1:1.1.1t-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libcrypto:libcrypto:1.1.1t-r0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/libcrypto1.1@1.1.1t-r0?arch=x86_64&upstream=openssl&distro=alpine-3.16.2",
+    "upstreams": [
+     {
+      "name": "openssl"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-3817",
+    "dataSource": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-3817",
+    "namespace": "alpine:distro:alpine:3.16",
+    "severity": "Medium",
+    "urls": [
+     "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-3817"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "1.1.1v-r0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-3817",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-3817",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "http://seclists.org/fulldisclosure/2023/Jul/43",
+      "http://www.openwall.com/lists/oss-security/2023/07/31/1",
+      "http://www.openwall.com/lists/oss-security/2023/09/22/11",
+      "http://www.openwall.com/lists/oss-security/2023/09/22/9",
+      "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=6a1eb62c29db6cb5eec707f9338aee00f44e26f5",
+      "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=869ad69aadd985c7b8ca6f4e5dd0eb274c9f3644",
+      "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=9002fd07327a91f35ba6c1307e71fa6fd4409b7f",
+      "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=91ddeba0f2269b017dc06c46c993a788974b1aa5",
+      "https://lists.debian.org/debian-lts-announce/2023/08/msg00019.html",
+      "https://security.netapp.com/advisory/ntap-20230818-0014/",
+      "https://www.openssl.org/news/secadv/20230731.txt"
+     ],
+     "description": "Issue summary: Checking excessively long DH keys or parameters may be very slow.\n\nImpact summary: Applications that use the functions DH_check(), DH_check_ex()\nor EVP_PKEY_param_check() to check a DH key or DH parameters may experience long\ndelays. Where the key or parameters that are being checked have been obtained\nfrom an untrusted source this may lead to a Denial of Service.\n\nThe function DH_check() performs various checks on DH parameters. After fixing\nCVE-2023-3446 it was discovered that a large q parameter value can also trigger\nan overly long computation during some of these checks. A correct q value,\nif present, cannot be larger than the modulus p parameter, thus it is\nunnecessary to perform these checks if q is larger than p.\n\nAn application that calls DH_check() and supplies a key or parameters obtained\nfrom an untrusted source could be vulnerable to a Denial of Service attack.\n\nThe function DH_check() is itself called by a number of other OpenSSL functions.\nAn application calling any of those other functions may similarly be affected.\nThe other functions affected by this are DH_check_ex() and\nEVP_PKEY_param_check().\n\nAlso vulnerable are the OpenSSL dhparam and pkeyparam command line applications\nwhen using the \"-check\" option.\n\nThe OpenSSL SSL/TLS implementation is not affected by this issue.\n\nThe OpenSSL 3.0 and 3.1 FIPS providers are not affected by this issue.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+       "metrics": {
+        "baseScore": 5.3,
+        "exploitabilityScore": 3.9,
+        "impactScore": 1.4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "alpine",
+       "version": "3.16.2"
+      },
+      "namespace": "alpine:distro:alpine:3.16",
+      "package": {
+       "name": "openssl",
+       "version": "1.1.1t-r0"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 1.1.1v-r0 (apk)",
+      "vulnerabilityID": "CVE-2023-3817"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "dd0125642fd58186",
+    "name": "libcrypto1.1",
+    "version": "1.1.1t-r0",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:fd374ecf8e760d83808d16203945e7b89ecfe0fb57903584c00ff47b395b6e28"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "OpenSSL"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libcrypto1.1:libcrypto1.1:1.1.1t-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libcrypto1.1:libcrypto:1.1.1t-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libcrypto:libcrypto1.1:1.1.1t-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libcrypto:libcrypto:1.1.1t-r0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/libcrypto1.1@1.1.1t-r0?arch=x86_64&upstream=openssl&distro=alpine-3.16.2",
+    "upstreams": [
+     {
+      "name": "openssl"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-3446",
+    "dataSource": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-3446",
+    "namespace": "alpine:distro:alpine:3.16",
+    "severity": "Medium",
+    "urls": [
+     "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-3446"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "1.1.1u-r2"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-3446",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-3446",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "http://www.openwall.com/lists/oss-security/2023/07/19/4",
+      "http://www.openwall.com/lists/oss-security/2023/07/19/5",
+      "http://www.openwall.com/lists/oss-security/2023/07/19/6",
+      "http://www.openwall.com/lists/oss-security/2023/07/31/1",
+      "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=1fa20cf2f506113c761777127a38bce5068740eb",
+      "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=8780a896543a654e757db1b9396383f9d8095528",
+      "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=9a0a4d3c1e7138915563c0df4fe6a3f9377b839c",
+      "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=fc9867c1e03c22ebf56943be205202e576aabf23",
+      "https://lists.debian.org/debian-lts-announce/2023/08/msg00019.html",
+      "https://security.netapp.com/advisory/ntap-20230803-0011/",
+      "https://www.openssl.org/news/secadv/20230719.txt"
+     ],
+     "description": "Issue summary: Checking excessively long DH keys or parameters may be very slow.\n\nImpact summary: Applications that use the functions DH_check(), DH_check_ex()\nor EVP_PKEY_param_check() to check a DH key or DH parameters may experience long\ndelays. Where the key or parameters that are being checked have been obtained\nfrom an untrusted source this may lead to a Denial of Service.\n\nThe function DH_check() performs various checks on DH parameters. One of those\nchecks confirms that the modulus ('p' parameter) is not too large. Trying to use\na very large modulus is slow and OpenSSL will not normally use a modulus which\nis over 10,000 bits in length.\n\nHowever the DH_check() function checks numerous aspects of the key or parameters\nthat have been supplied. Some of those checks use the supplied modulus value\neven if it has already been found to be too large.\n\nAn application that calls DH_check() and supplies a key or parameters obtained\nfrom an untrusted source could be vulernable to a Denial of Service attack.\n\nThe function DH_check() is itself called by a number of other OpenSSL functions.\nAn application calling any of those other functions may similarly be affected.\nThe other functions affected by this are DH_check_ex() and\nEVP_PKEY_param_check().\n\nAlso vulnerable are the OpenSSL dhparam and pkeyparam command line applications\nwhen using the '-check' option.\n\nThe OpenSSL SSL/TLS implementation is not affected by this issue.\nThe OpenSSL 3.0 and 3.1 FIPS providers are not affected by this issue.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+       "metrics": {
+        "baseScore": 5.3,
+        "exploitabilityScore": 3.9,
+        "impactScore": 1.4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "alpine",
+       "version": "3.16.2"
+      },
+      "namespace": "alpine:distro:alpine:3.16",
+      "package": {
+       "name": "openssl",
+       "version": "1.1.1t-r0"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 1.1.1u-r2 (apk)",
+      "vulnerabilityID": "CVE-2023-3446"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "dd0125642fd58186",
+    "name": "libcrypto1.1",
+    "version": "1.1.1t-r0",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:fd374ecf8e760d83808d16203945e7b89ecfe0fb57903584c00ff47b395b6e28"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "OpenSSL"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libcrypto1.1:libcrypto1.1:1.1.1t-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libcrypto1.1:libcrypto:1.1.1t-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libcrypto:libcrypto1.1:1.1.1t-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libcrypto:libcrypto:1.1.1t-r0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/libcrypto1.1@1.1.1t-r0?arch=x86_64&upstream=openssl&distro=alpine-3.16.2",
+    "upstreams": [
+     {
+      "name": "openssl"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-2650",
+    "dataSource": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-2650",
+    "namespace": "alpine:distro:alpine:3.16",
+    "severity": "Medium",
+    "urls": [
+     "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-2650"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "1.1.1u-r0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-2650",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-2650",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "http://www.openwall.com/lists/oss-security/2023/05/30/1",
+      "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=423a2bc737a908ad0c77bda470b2b59dc879936b",
+      "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=853c5e56ee0b8650c73140816bb8b91d6163422c",
+      "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=9e209944b35cf82368071f160a744b6178f9b098",
+      "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=db779b0e10b047f2585615e0b8f2acdf21f8544a",
+      "https://lists.debian.org/debian-lts-announce/2023/06/msg00011.html",
+      "https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2023-0009",
+      "https://security.netapp.com/advisory/ntap-20230703-0001/",
+      "https://www.debian.org/security/2023/dsa-5417",
+      "https://www.openssl.org/news/secadv/20230530.txt"
+     ],
+     "description": "Issue summary: Processing some specially crafted ASN.1 object identifiers or\ndata containing them may be very slow.\n\nImpact summary: Applications that use OBJ_obj2txt() directly, or use any of\nthe OpenSSL subsystems OCSP, PKCS7/SMIME, CMS, CMP/CRMF or TS with no message\nsize limit may experience notable to very long delays when processing those\nmessages, which may lead to a Denial of Service.\n\nAn OBJECT IDENTIFIER is composed of a series of numbers - sub-identifiers -\nmost of which have no size limit.  OBJ_obj2txt() may be used to translate\nan ASN.1 OBJECT IDENTIFIER given in DER encoding form (using the OpenSSL\ntype ASN1_OBJECT) to its canonical numeric text form, which are the\nsub-identifiers of the OBJECT IDENTIFIER in decimal form, separated by\nperiods.\n\nWhen one of the sub-identifiers in the OBJECT IDENTIFIER is very large\n(these are sizes that are seen as absurdly large, taking up tens or hundreds\nof KiBs), the translation to a decimal number in text may take a very long\ntime.  The time complexity is O(n^2) with 'n' being the size of the\nsub-identifiers in bytes (*).\n\nWith OpenSSL 3.0, support to fetch cryptographic algorithms using names /\nidentifiers in string form was introduced.  This includes using OBJECT\nIDENTIFIERs in canonical numeric text form as identifiers for fetching\nalgorithms.\n\nSuch OBJECT IDENTIFIERs may be received through the ASN.1 structure\nAlgorithmIdentifier, which is commonly used in multiple protocols to specify\nwhat cryptographic algorithm should be used to sign or verify, encrypt or\ndecrypt, or digest passed data.\n\nApplications that call OBJ_obj2txt() directly with untrusted data are\naffected, with any version of OpenSSL.  If the use is for the mere purpose\nof display, the severity is considered low.\n\nIn OpenSSL 3.0 and newer, this affects the subsystems OCSP, PKCS7/SMIME,\nCMS, CMP/CRMF or TS.  It also impacts anything that processes X.509\ncertificates, including simple things like verifying its signature.\n\nThe impact on TLS is relatively low, because all versions of OpenSSL have a\n100KiB limit on the peer's certificate chain.  Additionally, this only\nimpacts clients, or servers that have explicitly enabled client\nauthentication.\n\nIn OpenSSL 1.1.1 and 1.0.2, this only affects displaying diverse objects,\nsuch as X.509 certificates.  This is assumed to not happen in such a way\nthat it would cause a Denial of Service, so these versions are considered\nnot affected by this issue in such a way that it would be cause for concern,\nand the severity is therefore considered low.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 6.5,
+        "exploitabilityScore": 2.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "alpine",
+       "version": "3.16.2"
+      },
+      "namespace": "alpine:distro:alpine:3.16",
+      "package": {
+       "name": "openssl",
+       "version": "1.1.1t-r0"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 1.1.1u-r0 (apk)",
+      "vulnerabilityID": "CVE-2023-2650"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "dd0125642fd58186",
+    "name": "libcrypto1.1",
+    "version": "1.1.1t-r0",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:fd374ecf8e760d83808d16203945e7b89ecfe0fb57903584c00ff47b395b6e28"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "OpenSSL"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libcrypto1.1:libcrypto1.1:1.1.1t-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libcrypto1.1:libcrypto:1.1.1t-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libcrypto:libcrypto1.1:1.1.1t-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libcrypto:libcrypto:1.1.1t-r0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/libcrypto1.1@1.1.1t-r0?arch=x86_64&upstream=openssl&distro=alpine-3.16.2",
+    "upstreams": [
+     {
+      "name": "openssl"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-0466",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-0466",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "http://www.openwall.com/lists/oss-security/2023/09/28/4",
+     "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=0d16b7e99aafc0b4a6d729eec65a411a7e025f0a",
+     "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=51e8a84ce742db0f6c70510d0159dad8f7825908",
+     "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=73398dea26de9899fb4baa94098ad0a61f435c72",
+     "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=fc814a30fc4f0bc54fcea7d9a7462f5457aab061",
+     "https://lists.debian.org/debian-lts-announce/2023/06/msg00011.html",
+     "https://security.netapp.com/advisory/ntap-20230414-0001/",
+     "https://www.debian.org/security/2023/dsa-5417",
+     "https://www.openssl.org/news/secadv/20230328.txt"
+    ],
+    "description": "The function X509_VERIFY_PARAM_add0_policy() is documented to\nimplicitly enable the certificate policy check when doing certificate\nverification. However the implementation of the function does not\nenable the check which allows certificates with invalid or incorrect\npolicies to pass the certificate verification.\n\nAs suddenly enabling the policy check could break existing deployments it was\ndecided to keep the existing behavior of the X509_VERIFY_PARAM_add0_policy()\nfunction.\n\nInstead the applications that require OpenSSL to perform certificate\npolicy check need to use X509_VERIFY_PARAM_set1_policies() or explicitly\nenable the policy check by calling X509_VERIFY_PARAM_set_flags() with\nthe X509_V_FLAG_POLICY_CHECK flag argument.\n\nCertificate policy checks are disabled by default in OpenSSL and are not\ncommonly used by applications.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+      "metrics": {
+       "baseScore": 5.3,
+       "exploitabilityScore": 3.9,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:openssl:openssl:1.1.1t-r0:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "openssl",
+       "version": "1.1.1t-r0"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2023-0466",
+      "versionConstraint": ">= 1.0.2, < 1.0.2zh || >= 1.1.1, < 1.1.1u || >= 3.0.0, < 3.0.9 || >= 3.1.0, < 3.1.1 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:openssl:openssl:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "dd0125642fd58186",
+    "name": "libcrypto1.1",
+    "version": "1.1.1t-r0",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:fd374ecf8e760d83808d16203945e7b89ecfe0fb57903584c00ff47b395b6e28"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "OpenSSL"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libcrypto1.1:libcrypto1.1:1.1.1t-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libcrypto1.1:libcrypto:1.1.1t-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libcrypto:libcrypto1.1:1.1.1t-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libcrypto:libcrypto:1.1.1t-r0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/libcrypto1.1@1.1.1t-r0?arch=x86_64&upstream=openssl&distro=alpine-3.16.2",
+    "upstreams": [
+     {
+      "name": "openssl"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-0465",
+    "dataSource": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-0465",
+    "namespace": "alpine:distro:alpine:3.16",
+    "severity": "Medium",
+    "urls": [
+     "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-0465"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "1.1.1t-r2"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-0465",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-0465",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=1dd43e0709fece299b15208f36cc7c76209ba0bb",
+      "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=b013765abfa80036dc779dd0e50602c57bb3bf95",
+      "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=facfb1ab745646e97a1920977ae4a9965ea61d5c",
+      "https://lists.debian.org/debian-lts-announce/2023/06/msg00011.html",
+      "https://security.netapp.com/advisory/ntap-20230414-0001/",
+      "https://www.debian.org/security/2023/dsa-5417",
+      "https://www.openssl.org/news/secadv/20230328.txt"
+     ],
+     "description": "Applications that use a non-default option when verifying certificates may be\nvulnerable to an attack from a malicious CA to circumvent certain checks.\n\nInvalid certificate policies in leaf certificates are silently ignored by\nOpenSSL and other certificate policy checks are skipped for that certificate.\nA malicious CA could use this to deliberately assert invalid certificate policies\nin order to circumvent policy checking on the certificate altogether.\n\nPolicy processing is disabled by default but can be enabled by passing\nthe `-policy' argument to the command line utilities or by calling the\n`X509_VERIFY_PARAM_set1_policies()' function.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+       "metrics": {
+        "baseScore": 5.3,
+        "exploitabilityScore": 3.9,
+        "impactScore": 1.4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "alpine",
+       "version": "3.16.2"
+      },
+      "namespace": "alpine:distro:alpine:3.16",
+      "package": {
+       "name": "openssl",
+       "version": "1.1.1t-r0"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 1.1.1t-r2 (apk)",
+      "vulnerabilityID": "CVE-2023-0465"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "dd0125642fd58186",
+    "name": "libcrypto1.1",
+    "version": "1.1.1t-r0",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:fd374ecf8e760d83808d16203945e7b89ecfe0fb57903584c00ff47b395b6e28"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "OpenSSL"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libcrypto1.1:libcrypto1.1:1.1.1t-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libcrypto1.1:libcrypto:1.1.1t-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libcrypto:libcrypto1.1:1.1.1t-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libcrypto:libcrypto:1.1.1t-r0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/libcrypto1.1@1.1.1t-r0?arch=x86_64&upstream=openssl&distro=alpine-3.16.2",
+    "upstreams": [
+     {
+      "name": "openssl"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2020-22218",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2020-22218",
+    "namespace": "nvd:cpe",
+    "severity": "High",
+    "urls": [
+     "https://github.com/libssh2/libssh2/pull/476",
+     "https://lists.debian.org/debian-lts-announce/2023/09/msg00006.html",
+     "https://security.netapp.com/advisory/ntap-20231006-0002/"
+    ],
+    "description": "An issue was discovered in function _libssh2_packet_add in libssh2 1.10.0 allows attackers to access out of bounds memory.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:libssh2:libssh2:1.10.0-r2:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "libssh2",
+       "version": "1.10.0-r2"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2020-22218",
+      "versionConstraint": "= 1.10.0 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:libssh2:libssh2:1.10.0:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "00c36653b2912e56",
+    "name": "libssh2",
+    "version": "1.10.0-r2",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:fd374ecf8e760d83808d16203945e7b89ecfe0fb57903584c00ff47b395b6e28"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "BSD-3-Clause"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libssh2:libssh2:1.10.0-r2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libssh2:libssh:1.10.0-r2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libssh:libssh2:1.10.0-r2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libssh:libssh:1.10.0-r2:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/libssh2@1.10.0-r2?arch=x86_64&distro=alpine-3.16.2",
+    "upstreams": [
+     {
+      "name": "libssh2"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-3603",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-3603",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://access.redhat.com/security/cve/CVE-2023-3603",
+     "https://bugzilla.redhat.com/show_bug.cgi?id=2221791"
+    ],
+    "description": "A missing allocation check in sftp server processing read requests may cause a NULL dereference on low-memory conditions. The malicious client can request up to 4GB SFTP reads, causing allocation of up to 4GB buffers, which was not being checked for failure. This will likely crash the authenticated user's sftp server connection (if implemented as forking as recommended). For thread-based servers, this might also cause DoS for legitimate users.\r\n\r\nGiven this code is not in any released versions, no security releases have been issued.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 6.5,
+       "exploitabilityScore": 2.8,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "source": "secalert@redhat.com",
+      "type": "Secondary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:L",
+      "metrics": {
+       "baseScore": 3.1,
+       "exploitabilityScore": 1.6,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:libssh:libssh:1.10.0-r2:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "libssh2",
+       "version": "1.10.0-r2"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2023-3603",
+      "versionConstraint": "none (unknown)",
+      "cpes": [
+       "cpe:2.3:a:libssh:libssh:-:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "00c36653b2912e56",
+    "name": "libssh2",
+    "version": "1.10.0-r2",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:fd374ecf8e760d83808d16203945e7b89ecfe0fb57903584c00ff47b395b6e28"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "BSD-3-Clause"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libssh2:libssh2:1.10.0-r2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libssh2:libssh:1.10.0-r2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libssh:libssh2:1.10.0-r2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libssh:libssh:1.10.0-r2:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/libssh2@1.10.0-r2?arch=x86_64&distro=alpine-3.16.2",
+    "upstreams": [
+     {
+      "name": "libssh2"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-0464",
+    "dataSource": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-0464",
+    "namespace": "alpine:distro:alpine:3.16",
+    "severity": "High",
+    "urls": [
+     "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-0464"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "1.1.1t-r1"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-0464",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-0464",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=2017771e2db3e2b96f89bbe8766c3209f6a99545",
+      "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=879f7080d7e141f415c79eaa3a8ac4a3dad0348b",
+      "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=959c59c7a0164117e7f8366466a32bb1f8d77ff1",
+      "https://lists.debian.org/debian-lts-announce/2023/06/msg00011.html",
+      "https://www.debian.org/security/2023/dsa-5417",
+      "https://www.openssl.org/news/secadv/20230322.txt"
+     ],
+     "description": "A security vulnerability has been identified in all supported versions\n\nof OpenSSL related to the verification of X.509 certificate chains\nthat include policy constraints.  Attackers may be able to exploit this\nvulnerability by creating a malicious certificate chain that triggers\nexponential use of computational resources, leading to a denial-of-service\n(DoS) attack on affected systems.\n\nPolicy processing is disabled by default but can be enabled by passing\nthe `-policy' argument to the command line utilities or by calling the\n`X509_VERIFY_PARAM_set1_policies()' function.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "alpine",
+       "version": "3.16.2"
+      },
+      "namespace": "alpine:distro:alpine:3.16",
+      "package": {
+       "name": "openssl",
+       "version": "1.1.1t-r0"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 1.1.1t-r1 (apk)",
+      "vulnerabilityID": "CVE-2023-0464"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "39ce061300512ba7",
+    "name": "libssl1.1",
+    "version": "1.1.1t-r0",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:fd374ecf8e760d83808d16203945e7b89ecfe0fb57903584c00ff47b395b6e28"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "OpenSSL"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libssl1.1:libssl1.1:1.1.1t-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libssl1.1:libssl:1.1.1t-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libssl:libssl1.1:1.1.1t-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libssl:libssl:1.1.1t-r0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/libssl1.1@1.1.1t-r0?arch=x86_64&upstream=openssl&distro=alpine-3.16.2",
+    "upstreams": [
+     {
+      "name": "openssl"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-3817",
+    "dataSource": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-3817",
+    "namespace": "alpine:distro:alpine:3.16",
+    "severity": "Medium",
+    "urls": [
+     "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-3817"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "1.1.1v-r0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-3817",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-3817",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "http://seclists.org/fulldisclosure/2023/Jul/43",
+      "http://www.openwall.com/lists/oss-security/2023/07/31/1",
+      "http://www.openwall.com/lists/oss-security/2023/09/22/11",
+      "http://www.openwall.com/lists/oss-security/2023/09/22/9",
+      "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=6a1eb62c29db6cb5eec707f9338aee00f44e26f5",
+      "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=869ad69aadd985c7b8ca6f4e5dd0eb274c9f3644",
+      "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=9002fd07327a91f35ba6c1307e71fa6fd4409b7f",
+      "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=91ddeba0f2269b017dc06c46c993a788974b1aa5",
+      "https://lists.debian.org/debian-lts-announce/2023/08/msg00019.html",
+      "https://security.netapp.com/advisory/ntap-20230818-0014/",
+      "https://www.openssl.org/news/secadv/20230731.txt"
+     ],
+     "description": "Issue summary: Checking excessively long DH keys or parameters may be very slow.\n\nImpact summary: Applications that use the functions DH_check(), DH_check_ex()\nor EVP_PKEY_param_check() to check a DH key or DH parameters may experience long\ndelays. Where the key or parameters that are being checked have been obtained\nfrom an untrusted source this may lead to a Denial of Service.\n\nThe function DH_check() performs various checks on DH parameters. After fixing\nCVE-2023-3446 it was discovered that a large q parameter value can also trigger\nan overly long computation during some of these checks. A correct q value,\nif present, cannot be larger than the modulus p parameter, thus it is\nunnecessary to perform these checks if q is larger than p.\n\nAn application that calls DH_check() and supplies a key or parameters obtained\nfrom an untrusted source could be vulnerable to a Denial of Service attack.\n\nThe function DH_check() is itself called by a number of other OpenSSL functions.\nAn application calling any of those other functions may similarly be affected.\nThe other functions affected by this are DH_check_ex() and\nEVP_PKEY_param_check().\n\nAlso vulnerable are the OpenSSL dhparam and pkeyparam command line applications\nwhen using the \"-check\" option.\n\nThe OpenSSL SSL/TLS implementation is not affected by this issue.\n\nThe OpenSSL 3.0 and 3.1 FIPS providers are not affected by this issue.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+       "metrics": {
+        "baseScore": 5.3,
+        "exploitabilityScore": 3.9,
+        "impactScore": 1.4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "alpine",
+       "version": "3.16.2"
+      },
+      "namespace": "alpine:distro:alpine:3.16",
+      "package": {
+       "name": "openssl",
+       "version": "1.1.1t-r0"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 1.1.1v-r0 (apk)",
+      "vulnerabilityID": "CVE-2023-3817"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "39ce061300512ba7",
+    "name": "libssl1.1",
+    "version": "1.1.1t-r0",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:fd374ecf8e760d83808d16203945e7b89ecfe0fb57903584c00ff47b395b6e28"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "OpenSSL"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libssl1.1:libssl1.1:1.1.1t-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libssl1.1:libssl:1.1.1t-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libssl:libssl1.1:1.1.1t-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libssl:libssl:1.1.1t-r0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/libssl1.1@1.1.1t-r0?arch=x86_64&upstream=openssl&distro=alpine-3.16.2",
+    "upstreams": [
+     {
+      "name": "openssl"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-3446",
+    "dataSource": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-3446",
+    "namespace": "alpine:distro:alpine:3.16",
+    "severity": "Medium",
+    "urls": [
+     "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-3446"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "1.1.1u-r2"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-3446",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-3446",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "http://www.openwall.com/lists/oss-security/2023/07/19/4",
+      "http://www.openwall.com/lists/oss-security/2023/07/19/5",
+      "http://www.openwall.com/lists/oss-security/2023/07/19/6",
+      "http://www.openwall.com/lists/oss-security/2023/07/31/1",
+      "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=1fa20cf2f506113c761777127a38bce5068740eb",
+      "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=8780a896543a654e757db1b9396383f9d8095528",
+      "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=9a0a4d3c1e7138915563c0df4fe6a3f9377b839c",
+      "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=fc9867c1e03c22ebf56943be205202e576aabf23",
+      "https://lists.debian.org/debian-lts-announce/2023/08/msg00019.html",
+      "https://security.netapp.com/advisory/ntap-20230803-0011/",
+      "https://www.openssl.org/news/secadv/20230719.txt"
+     ],
+     "description": "Issue summary: Checking excessively long DH keys or parameters may be very slow.\n\nImpact summary: Applications that use the functions DH_check(), DH_check_ex()\nor EVP_PKEY_param_check() to check a DH key or DH parameters may experience long\ndelays. Where the key or parameters that are being checked have been obtained\nfrom an untrusted source this may lead to a Denial of Service.\n\nThe function DH_check() performs various checks on DH parameters. One of those\nchecks confirms that the modulus ('p' parameter) is not too large. Trying to use\na very large modulus is slow and OpenSSL will not normally use a modulus which\nis over 10,000 bits in length.\n\nHowever the DH_check() function checks numerous aspects of the key or parameters\nthat have been supplied. Some of those checks use the supplied modulus value\neven if it has already been found to be too large.\n\nAn application that calls DH_check() and supplies a key or parameters obtained\nfrom an untrusted source could be vulernable to a Denial of Service attack.\n\nThe function DH_check() is itself called by a number of other OpenSSL functions.\nAn application calling any of those other functions may similarly be affected.\nThe other functions affected by this are DH_check_ex() and\nEVP_PKEY_param_check().\n\nAlso vulnerable are the OpenSSL dhparam and pkeyparam command line applications\nwhen using the '-check' option.\n\nThe OpenSSL SSL/TLS implementation is not affected by this issue.\nThe OpenSSL 3.0 and 3.1 FIPS providers are not affected by this issue.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+       "metrics": {
+        "baseScore": 5.3,
+        "exploitabilityScore": 3.9,
+        "impactScore": 1.4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "alpine",
+       "version": "3.16.2"
+      },
+      "namespace": "alpine:distro:alpine:3.16",
+      "package": {
+       "name": "openssl",
+       "version": "1.1.1t-r0"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 1.1.1u-r2 (apk)",
+      "vulnerabilityID": "CVE-2023-3446"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "39ce061300512ba7",
+    "name": "libssl1.1",
+    "version": "1.1.1t-r0",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:fd374ecf8e760d83808d16203945e7b89ecfe0fb57903584c00ff47b395b6e28"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "OpenSSL"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libssl1.1:libssl1.1:1.1.1t-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libssl1.1:libssl:1.1.1t-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libssl:libssl1.1:1.1.1t-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libssl:libssl:1.1.1t-r0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/libssl1.1@1.1.1t-r0?arch=x86_64&upstream=openssl&distro=alpine-3.16.2",
+    "upstreams": [
+     {
+      "name": "openssl"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-2650",
+    "dataSource": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-2650",
+    "namespace": "alpine:distro:alpine:3.16",
+    "severity": "Medium",
+    "urls": [
+     "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-2650"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "1.1.1u-r0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-2650",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-2650",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "http://www.openwall.com/lists/oss-security/2023/05/30/1",
+      "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=423a2bc737a908ad0c77bda470b2b59dc879936b",
+      "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=853c5e56ee0b8650c73140816bb8b91d6163422c",
+      "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=9e209944b35cf82368071f160a744b6178f9b098",
+      "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=db779b0e10b047f2585615e0b8f2acdf21f8544a",
+      "https://lists.debian.org/debian-lts-announce/2023/06/msg00011.html",
+      "https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2023-0009",
+      "https://security.netapp.com/advisory/ntap-20230703-0001/",
+      "https://www.debian.org/security/2023/dsa-5417",
+      "https://www.openssl.org/news/secadv/20230530.txt"
+     ],
+     "description": "Issue summary: Processing some specially crafted ASN.1 object identifiers or\ndata containing them may be very slow.\n\nImpact summary: Applications that use OBJ_obj2txt() directly, or use any of\nthe OpenSSL subsystems OCSP, PKCS7/SMIME, CMS, CMP/CRMF or TS with no message\nsize limit may experience notable to very long delays when processing those\nmessages, which may lead to a Denial of Service.\n\nAn OBJECT IDENTIFIER is composed of a series of numbers - sub-identifiers -\nmost of which have no size limit.  OBJ_obj2txt() may be used to translate\nan ASN.1 OBJECT IDENTIFIER given in DER encoding form (using the OpenSSL\ntype ASN1_OBJECT) to its canonical numeric text form, which are the\nsub-identifiers of the OBJECT IDENTIFIER in decimal form, separated by\nperiods.\n\nWhen one of the sub-identifiers in the OBJECT IDENTIFIER is very large\n(these are sizes that are seen as absurdly large, taking up tens or hundreds\nof KiBs), the translation to a decimal number in text may take a very long\ntime.  The time complexity is O(n^2) with 'n' being the size of the\nsub-identifiers in bytes (*).\n\nWith OpenSSL 3.0, support to fetch cryptographic algorithms using names /\nidentifiers in string form was introduced.  This includes using OBJECT\nIDENTIFIERs in canonical numeric text form as identifiers for fetching\nalgorithms.\n\nSuch OBJECT IDENTIFIERs may be received through the ASN.1 structure\nAlgorithmIdentifier, which is commonly used in multiple protocols to specify\nwhat cryptographic algorithm should be used to sign or verify, encrypt or\ndecrypt, or digest passed data.\n\nApplications that call OBJ_obj2txt() directly with untrusted data are\naffected, with any version of OpenSSL.  If the use is for the mere purpose\nof display, the severity is considered low.\n\nIn OpenSSL 3.0 and newer, this affects the subsystems OCSP, PKCS7/SMIME,\nCMS, CMP/CRMF or TS.  It also impacts anything that processes X.509\ncertificates, including simple things like verifying its signature.\n\nThe impact on TLS is relatively low, because all versions of OpenSSL have a\n100KiB limit on the peer's certificate chain.  Additionally, this only\nimpacts clients, or servers that have explicitly enabled client\nauthentication.\n\nIn OpenSSL 1.1.1 and 1.0.2, this only affects displaying diverse objects,\nsuch as X.509 certificates.  This is assumed to not happen in such a way\nthat it would cause a Denial of Service, so these versions are considered\nnot affected by this issue in such a way that it would be cause for concern,\nand the severity is therefore considered low.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 6.5,
+        "exploitabilityScore": 2.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "alpine",
+       "version": "3.16.2"
+      },
+      "namespace": "alpine:distro:alpine:3.16",
+      "package": {
+       "name": "openssl",
+       "version": "1.1.1t-r0"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 1.1.1u-r0 (apk)",
+      "vulnerabilityID": "CVE-2023-2650"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "39ce061300512ba7",
+    "name": "libssl1.1",
+    "version": "1.1.1t-r0",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:fd374ecf8e760d83808d16203945e7b89ecfe0fb57903584c00ff47b395b6e28"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "OpenSSL"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libssl1.1:libssl1.1:1.1.1t-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libssl1.1:libssl:1.1.1t-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libssl:libssl1.1:1.1.1t-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libssl:libssl:1.1.1t-r0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/libssl1.1@1.1.1t-r0?arch=x86_64&upstream=openssl&distro=alpine-3.16.2",
+    "upstreams": [
+     {
+      "name": "openssl"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-0466",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-0466",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "http://www.openwall.com/lists/oss-security/2023/09/28/4",
+     "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=0d16b7e99aafc0b4a6d729eec65a411a7e025f0a",
+     "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=51e8a84ce742db0f6c70510d0159dad8f7825908",
+     "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=73398dea26de9899fb4baa94098ad0a61f435c72",
+     "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=fc814a30fc4f0bc54fcea7d9a7462f5457aab061",
+     "https://lists.debian.org/debian-lts-announce/2023/06/msg00011.html",
+     "https://security.netapp.com/advisory/ntap-20230414-0001/",
+     "https://www.debian.org/security/2023/dsa-5417",
+     "https://www.openssl.org/news/secadv/20230328.txt"
+    ],
+    "description": "The function X509_VERIFY_PARAM_add0_policy() is documented to\nimplicitly enable the certificate policy check when doing certificate\nverification. However the implementation of the function does not\nenable the check which allows certificates with invalid or incorrect\npolicies to pass the certificate verification.\n\nAs suddenly enabling the policy check could break existing deployments it was\ndecided to keep the existing behavior of the X509_VERIFY_PARAM_add0_policy()\nfunction.\n\nInstead the applications that require OpenSSL to perform certificate\npolicy check need to use X509_VERIFY_PARAM_set1_policies() or explicitly\nenable the policy check by calling X509_VERIFY_PARAM_set_flags() with\nthe X509_V_FLAG_POLICY_CHECK flag argument.\n\nCertificate policy checks are disabled by default in OpenSSL and are not\ncommonly used by applications.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+      "metrics": {
+       "baseScore": 5.3,
+       "exploitabilityScore": 3.9,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:openssl:openssl:1.1.1t-r0:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "openssl",
+       "version": "1.1.1t-r0"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2023-0466",
+      "versionConstraint": ">= 1.0.2, < 1.0.2zh || >= 1.1.1, < 1.1.1u || >= 3.0.0, < 3.0.9 || >= 3.1.0, < 3.1.1 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:openssl:openssl:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "39ce061300512ba7",
+    "name": "libssl1.1",
+    "version": "1.1.1t-r0",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:fd374ecf8e760d83808d16203945e7b89ecfe0fb57903584c00ff47b395b6e28"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "OpenSSL"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libssl1.1:libssl1.1:1.1.1t-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libssl1.1:libssl:1.1.1t-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libssl:libssl1.1:1.1.1t-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libssl:libssl:1.1.1t-r0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/libssl1.1@1.1.1t-r0?arch=x86_64&upstream=openssl&distro=alpine-3.16.2",
+    "upstreams": [
+     {
+      "name": "openssl"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-0465",
+    "dataSource": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-0465",
+    "namespace": "alpine:distro:alpine:3.16",
+    "severity": "Medium",
+    "urls": [
+     "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-0465"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "1.1.1t-r2"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-0465",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-0465",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=1dd43e0709fece299b15208f36cc7c76209ba0bb",
+      "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=b013765abfa80036dc779dd0e50602c57bb3bf95",
+      "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=facfb1ab745646e97a1920977ae4a9965ea61d5c",
+      "https://lists.debian.org/debian-lts-announce/2023/06/msg00011.html",
+      "https://security.netapp.com/advisory/ntap-20230414-0001/",
+      "https://www.debian.org/security/2023/dsa-5417",
+      "https://www.openssl.org/news/secadv/20230328.txt"
+     ],
+     "description": "Applications that use a non-default option when verifying certificates may be\nvulnerable to an attack from a malicious CA to circumvent certain checks.\n\nInvalid certificate policies in leaf certificates are silently ignored by\nOpenSSL and other certificate policy checks are skipped for that certificate.\nA malicious CA could use this to deliberately assert invalid certificate policies\nin order to circumvent policy checking on the certificate altogether.\n\nPolicy processing is disabled by default but can be enabled by passing\nthe `-policy' argument to the command line utilities or by calling the\n`X509_VERIFY_PARAM_set1_policies()' function.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+       "metrics": {
+        "baseScore": 5.3,
+        "exploitabilityScore": 3.9,
+        "impactScore": 1.4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "alpine",
+       "version": "3.16.2"
+      },
+      "namespace": "alpine:distro:alpine:3.16",
+      "package": {
+       "name": "openssl",
+       "version": "1.1.1t-r0"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 1.1.1t-r2 (apk)",
+      "vulnerabilityID": "CVE-2023-0465"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "39ce061300512ba7",
+    "name": "libssl1.1",
+    "version": "1.1.1t-r0",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:fd374ecf8e760d83808d16203945e7b89ecfe0fb57903584c00ff47b395b6e28"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "OpenSSL"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libssl1.1:libssl1.1:1.1.1t-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libssl1.1:libssl:1.1.1t-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libssl:libssl1.1:1.1.1t-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libssl:libssl:1.1.1t-r0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/libssl1.1@1.1.1t-r0?arch=x86_64&upstream=openssl&distro=alpine-3.16.2",
+    "upstreams": [
+     {
+      "name": "openssl"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-35945",
+    "dataSource": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-35945",
+    "namespace": "alpine:distro:alpine:3.16",
+    "severity": "High",
+    "urls": [
+     "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-35945"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "1.47.0-r1"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-35945",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-35945",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/envoyproxy/envoy/security/advisories/GHSA-jfxv-29pc-x22r",
+      "https://github.com/nghttp2/nghttp2/blob/e7f59406556c80904b81b593d38508591bb7523a/lib/nghttp2_session.c#L3346"
+     ],
+     "description": "Envoy is a cloud-native high-performance edge/middle/service proxy. Envoy’s HTTP/2 codec may leak a header map and bookkeeping structures upon receiving `RST_STREAM` immediately followed by the `GOAWAY` frames from an upstream server. In nghttp2, cleanup of pending requests due to receipt of the `GOAWAY` frame skips de-allocation of the bookkeeping structure and pending compressed header. The error return [code path] is taken if connection is already marked for not sending more requests due to `GOAWAY` frame. The clean-up code is right after the return statement, causing memory leak. Denial of service through memory exhaustion. This vulnerability was patched in versions(s) 1.26.3, 1.25.8, 1.24.9, 1.23.11.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "alpine",
+       "version": "3.16.2"
+      },
+      "namespace": "alpine:distro:alpine:3.16",
+      "package": {
+       "name": "nghttp2",
+       "version": "1.47.0-r0"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 1.47.0-r1 (apk)",
+      "vulnerabilityID": "CVE-2023-35945"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "356e7a0c98515e7a",
+    "name": "nghttp2-dev",
+    "version": "1.47.0-r0",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:fd374ecf8e760d83808d16203945e7b89ecfe0fb57903584c00ff47b395b6e28"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "MIT"
+    ],
+    "cpes": [
+     "cpe:2.3:a:nghttp2-dev:nghttp2-dev:1.47.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp2-dev:nghttp2_dev:1.47.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp2_dev:nghttp2-dev:1.47.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp2_dev:nghttp2_dev:1.47.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp-dev:nghttp2-dev:1.47.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp-dev:nghttp2_dev:1.47.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp2-dev:nghttp-dev:1.47.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp2-dev:nghttp_dev:1.47.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp2_dev:nghttp-dev:1.47.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp2_dev:nghttp_dev:1.47.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp_dev:nghttp2-dev:1.47.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp_dev:nghttp2_dev:1.47.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp-dev:nghttp-dev:1.47.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp-dev:nghttp_dev:1.47.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp_dev:nghttp-dev:1.47.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp_dev:nghttp_dev:1.47.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp2:nghttp2-dev:1.47.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp2:nghttp2_dev:1.47.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp2:nghttp-dev:1.47.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp2:nghttp_dev:1.47.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp:nghttp2-dev:1.47.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp:nghttp2_dev:1.47.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp:nghttp-dev:1.47.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp:nghttp_dev:1.47.0-r0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/nghttp2-dev@1.47.0-r0?arch=x86_64&upstream=nghttp2&distro=alpine-3.16.2",
+    "upstreams": [
+     {
+      "name": "nghttp2"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-35945",
+    "dataSource": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-35945",
+    "namespace": "alpine:distro:alpine:3.16",
+    "severity": "High",
+    "urls": [
+     "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-35945"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "1.47.0-r1"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-35945",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-35945",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/envoyproxy/envoy/security/advisories/GHSA-jfxv-29pc-x22r",
+      "https://github.com/nghttp2/nghttp2/blob/e7f59406556c80904b81b593d38508591bb7523a/lib/nghttp2_session.c#L3346"
+     ],
+     "description": "Envoy is a cloud-native high-performance edge/middle/service proxy. Envoy’s HTTP/2 codec may leak a header map and bookkeeping structures upon receiving `RST_STREAM` immediately followed by the `GOAWAY` frames from an upstream server. In nghttp2, cleanup of pending requests due to receipt of the `GOAWAY` frame skips de-allocation of the bookkeeping structure and pending compressed header. The error return [code path] is taken if connection is already marked for not sending more requests due to `GOAWAY` frame. The clean-up code is right after the return statement, causing memory leak. Denial of service through memory exhaustion. This vulnerability was patched in versions(s) 1.26.3, 1.25.8, 1.24.9, 1.23.11.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "alpine",
+       "version": "3.16.2"
+      },
+      "namespace": "alpine:distro:alpine:3.16",
+      "package": {
+       "name": "nghttp2",
+       "version": "1.47.0-r0"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 1.47.0-r1 (apk)",
+      "vulnerabilityID": "CVE-2023-35945"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "5ffbe67dcd8a50dc",
+    "name": "nghttp2-libs",
+    "version": "1.47.0-r0",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:fd374ecf8e760d83808d16203945e7b89ecfe0fb57903584c00ff47b395b6e28"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "MIT"
+    ],
+    "cpes": [
+     "cpe:2.3:a:nghttp2-libs:nghttp2-libs:1.47.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp2-libs:nghttp2_libs:1.47.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp2_libs:nghttp2-libs:1.47.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp2_libs:nghttp2_libs:1.47.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp-libs:nghttp2-libs:1.47.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp-libs:nghttp2_libs:1.47.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp2-libs:nghttp-libs:1.47.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp2-libs:nghttp_libs:1.47.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp2_libs:nghttp-libs:1.47.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp2_libs:nghttp_libs:1.47.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp_libs:nghttp2-libs:1.47.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp_libs:nghttp2_libs:1.47.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp-libs:nghttp-libs:1.47.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp-libs:nghttp_libs:1.47.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp_libs:nghttp-libs:1.47.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp_libs:nghttp_libs:1.47.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp2:nghttp2-libs:1.47.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp2:nghttp2_libs:1.47.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp2:nghttp-libs:1.47.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp2:nghttp_libs:1.47.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp:nghttp2-libs:1.47.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp:nghttp2_libs:1.47.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp:nghttp-libs:1.47.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp:nghttp_libs:1.47.0-r0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/nghttp2-libs@1.47.0-r0?arch=x86_64&upstream=nghttp2&distro=alpine-3.16.2",
+    "upstreams": [
+     {
+      "name": "nghttp2"
+     }
+    ]
+   }
+  }
+ ],
+ "source": {
+  "type": "image",
+  "target": {
+   "userInput": "docker.io/rapidfort/curl:latest",
+   "imageID": "sha256:79e55f4cc73bb43a3736ba9e904da913989d9574d70876fd6fb6153345b3a80e",
+   "manifestDigest": "sha256:6464da3c4168811693c659037be576c416ac9766eafc52d47cc891ad5ec53898",
+   "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+   "tags": [
+    "rapidfort/curl:latest"
+   ],
+   "imageSize": 6542980,
+   "layers": [
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:fd374ecf8e760d83808d16203945e7b89ecfe0fb57903584c00ff47b395b6e28",
+     "size": 6542980
+    }
+   ],
+   "manifest": "eyJzY2hlbWFWZXJzaW9uIjoyLCJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmRpc3RyaWJ1dGlvbi5tYW5pZmVzdC52Mitqc29uIiwiY29uZmlnIjp7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuY29udGFpbmVyLmltYWdlLnYxK2pzb24iLCJzaXplIjo0NTY0LCJkaWdlc3QiOiJzaGEyNTY6NzllNTVmNGNjNzNiYjQzYTM3MzZiYTllOTA0ZGE5MTM5ODlkOTU3NGQ3MDg3NmZkNmZiNjE1MzM0NWIzYTgwZSJ9LCJsYXllcnMiOlt7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjo2NzkyMTkyLCJkaWdlc3QiOiJzaGEyNTY6ZmQzNzRlY2Y4ZTc2MGQ4MzgwOGQxNjIwMzk0NWU3Yjg5ZWNmZTBmYjU3OTAzNTg0YzAwZmY0N2IzOTViNmUyOCJ9XX0=",
+   "config": "eyJhcmNoaXRlY3R1cmUiOiJhbWQ2NCIsImNvbmZpZyI6eyJIb3N0bmFtZSI6IiIsIkRvbWFpbm5hbWUiOiIiLCJVc2VyIjoiY3VybF91c2VyIiwiQXR0YWNoU3RkaW4iOmZhbHNlLCJBdHRhY2hTdGRvdXQiOmZhbHNlLCJBdHRhY2hTdGRlcnIiOmZhbHNlLCJUdHkiOmZhbHNlLCJPcGVuU3RkaW4iOmZhbHNlLCJTdGRpbk9uY2UiOmZhbHNlLCJFbnYiOlsiUEFUSD0vdXNyL2xvY2FsL3NiaW46L3Vzci9sb2NhbC9iaW46L3Vzci9zYmluOi91c3IvYmluOi9zYmluOi9iaW4iLCJDVVJMX1ZFUlNJT049N184OF8xIiwiQ1VSTF9SRUxFQVNFX1RBRz1jdXJsLTdfODhfMSIsIkNVUkxfR0lUX1JFUE89aHR0cHM6Ly9naXRodWIuY29tL2N1cmwvY3VybC5naXQiLCJDVVJMX0NBX0JVTkRMRT0vY2FjZXJ0LnBlbSJdLCJDbWQiOlsiY3VybCJdLCJJbWFnZSI6InNoYTI1NjoxMWRmZmVjNmY2ODljZTUzMDkxMzUxZGJiOTk3ZDE5Y2VlOTM4OTM3MzdiMzU0NDlmYWE2ZjI0OWFjYmUwZDIxIiwiVm9sdW1lcyI6bnVsbCwiV29ya2luZ0RpciI6IiIsIkVudHJ5cG9pbnQiOlsiL2VudHJ5cG9pbnQuc2giXSwiT25CdWlsZCI6bnVsbCwiTGFiZWxzIjp7Ik1haW50YWluZXIiOiJKYW1lcyBGdWxsZXIgXHUwMDNjamltLmZ1bGxlckB3ZWJjb21wb3NpdGUuY29tXHUwMDNlIiwiTmFtZSI6ImN1cmwiLCJWZXJzaW9uIjoiMS4wLjAiLCJkb2NrZXIuY21kIjoiZG9ja2VyIHJ1biAtaXQgY3VybC9jdXJsOjcuODguMSAtcyAtTCBodHRwOi8vY3VybC5zZSIsIm9yaWdfaW1hZ2VfZGlnZXN0Ijoic2hhMjU2OjQ4MzE4NDA3YjhkOThlOGM3ZDViZDQ3NDFjODhlOGUxYTU0NDJkZTY2MGI0N2Y2M2JhNjU2ZTVjOTEwYmMzZGEiLCJyZi44Y2Q2ZDk0YS01NGVlLTQyMDItOGY2ZC02YmYxMjVkODhjZTUiOiJkb2NrZXIuaW8vY3VybGltYWdlcy9jdXJsOjcuODguMSIsInJmX2ltYWdlX2d1aWQuZDVhMzRjOGItMjIyZC00M2M0LWI0YjItZGQyZjNkMmRlNGMxIjoiZDVhMzRjOGItMjIyZC00M2M0LWI0YjItZGQyZjNkMmRlNGMxIiwic2UuaGF4eC5jdXJsIjoiY3VybCIsInNlLmhheHguY3VybC5kZXNjcmlwdGlvbiI6Im5ldHdvcmsgdXRpbGl0eSIsInNlLmhheHguY3VybC5yZWxlYXNlX3RhZyI6ImN1cmwtN184OF8xIiwic2UuaGF4eC5jdXJsLnZlcnNpb24iOiI3Xzg4XzEifX0sImNvbnRhaW5lciI6ImE1YWVhNjI2NzJmMDFkMGFhNzkyOGUzNmQ0NzdlYWUwODE3ZjE4YzZlYzQ1OTNlMGViODcwZWVlNGYwYjlhZDkiLCJjb250YWluZXJfY29uZmlnIjp7Ikhvc3RuYW1lIjoiYTVhZWE2MjY3MmYwIiwiRG9tYWlubmFtZSI6IiIsIlVzZXIiOiJjdXJsX3VzZXIiLCJBdHRhY2hTdGRpbiI6ZmFsc2UsIkF0dGFjaFN0ZG91dCI6ZmFsc2UsIkF0dGFjaFN0ZGVyciI6ZmFsc2UsIlR0eSI6ZmFsc2UsIk9wZW5TdGRpbiI6ZmFsc2UsIlN0ZGluT25jZSI6ZmFsc2UsIkVudiI6WyJQQVRIPS91c3IvbG9jYWwvc2JpbjovdXNyL2xvY2FsL2JpbjovdXNyL3NiaW46L3Vzci9iaW46L3NiaW46L2JpbiIsIkNVUkxfVkVSU0lPTj03Xzg4XzEiLCJDVVJMX1JFTEVBU0VfVEFHPWN1cmwtN184OF8xIiwiQ1VSTF9HSVRfUkVQTz1odHRwczovL2dpdGh1Yi5jb20vY3VybC9jdXJsLmdpdCIsIkNVUkxfQ0FfQlVORExFPS9jYWNlcnQucGVtIl0sIkNtZCI6WyIvYmluL3NoIiwiLWMiLCIjKG5vcCkgIiwiTEFCRUwgb3JpZ19pbWFnZV9kaWdlc3Q9c2hhMjU2OjQ4MzE4NDA3YjhkOThlOGM3ZDViZDQ3NDFjODhlOGUxYTU0NDJkZTY2MGI0N2Y2M2JhNjU2ZTVjOTEwYmMzZGEiXSwiSW1hZ2UiOiJzaGEyNTY6MTFkZmZlYzZmNjg5Y2U1MzA5MTM1MWRiYjk5N2QxOWNlZTkzODkzNzM3YjM1NDQ5ZmFhNmYyNDlhY2JlMGQyMSIsIlZvbHVtZXMiOm51bGwsIldvcmtpbmdEaXIiOiIiLCJFbnRyeXBvaW50IjpbIi9lbnRyeXBvaW50LnNoIl0sIk9uQnVpbGQiOm51bGwsIkxhYmVscyI6eyJNYWludGFpbmVyIjoiSmFtZXMgRnVsbGVyIFx1MDAzY2ppbS5mdWxsZXJAd2ViY29tcG9zaXRlLmNvbVx1MDAzZSIsIk5hbWUiOiJjdXJsIiwiVmVyc2lvbiI6IjEuMC4wIiwiZG9ja2VyLmNtZCI6ImRvY2tlciBydW4gLWl0IGN1cmwvY3VybDo3Ljg4LjEgLXMgLUwgaHR0cDovL2N1cmwuc2UiLCJvcmlnX2ltYWdlX2RpZ2VzdCI6InNoYTI1Njo0ODMxODQwN2I4ZDk4ZThjN2Q1YmQ0NzQxYzg4ZThlMWE1NDQyZGU2NjBiNDdmNjNiYTY1NmU1YzkxMGJjM2RhIiwicmYuOGNkNmQ5NGEtNTRlZS00MjAyLThmNmQtNmJmMTI1ZDg4Y2U1IjoiZG9ja2VyLmlvL2N1cmxpbWFnZXMvY3VybDo3Ljg4LjEiLCJyZl9pbWFnZV9ndWlkLmQ1YTM0YzhiLTIyMmQtNDNjNC1iNGIyLWRkMmYzZDJkZTRjMSI6ImQ1YTM0YzhiLTIyMmQtNDNjNC1iNGIyLWRkMmYzZDJkZTRjMSIsInNlLmhheHguY3VybCI6ImN1cmwiLCJzZS5oYXh4LmN1cmwuZGVzY3JpcHRpb24iOiJuZXR3b3JrIHV0aWxpdHkiLCJzZS5oYXh4LmN1cmwucmVsZWFzZV90YWciOiJjdXJsLTdfODhfMSIsInNlLmhheHguY3VybC52ZXJzaW9uIjoiN184OF8xIn19LCJjcmVhdGVkIjoiMjAyMy0wNi0wMlQwMjo1MDo0MS43MTI1OTIwMDZaIiwiZG9ja2VyX3ZlcnNpb24iOiIyMC4xMC4yNCthenVyZS0xIiwiaGlzdG9yeSI6W3siY3JlYXRlZCI6IjIwMjMtMDYtMDJUMDI6NTA6MzAuNDIzMjE2NDc0WiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSBBREQgZmlsZTpiODliOTg2NGU3MzE4Y2U0NGNmYmExZjE2ZmI2OTFiZTE4YjdhYTY0MzM5MzVkNGQxZTI1OTFjZDIyZDg2N2NiIGluIC8gIn0seyJjcmVhdGVkIjoiMjAyMy0wNi0wMlQwMjo1MDozMC41ODQ3NDAzMThaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApICBMQUJFTCBNYWludGFpbmVyPUphbWVzIEZ1bGxlciBcdTAwM2NqaW0uZnVsbGVyQHdlYmNvbXBvc2l0ZS5jb21cdTAwM2UgTmFtZT1jdXJsIFZlcnNpb249MS4wLjAgZG9ja2VyLmNtZD1kb2NrZXIgcnVuIC1pdCBjdXJsL2N1cmw6Ny44OC4xIC1zIC1MIGh0dHA6Ly9jdXJsLnNlIHJmLjhjZDZkOTRhLTU0ZWUtNDIwMi04ZjZkLTZiZjEyNWQ4OGNlNT1kb2NrZXIuaW8vY3VybGltYWdlcy9jdXJsOjcuODguMSBzZS5oYXh4LmN1cmw9Y3VybCBzZS5oYXh4LmN1cmwuZGVzY3JpcHRpb249bmV0d29yayB1dGlsaXR5IHNlLmhheHguY3VybC5yZWxlYXNlX3RhZz1jdXJsLTdfODhfMSBzZS5oYXh4LmN1cmwudmVyc2lvbj03Xzg4XzEiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyMy0wNi0wMlQwMjo1MDozMC42NDQ0MTY2MTVaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApICBFTlYgUEFUSD0vdXNyL2xvY2FsL3NiaW46L3Vzci9sb2NhbC9iaW46L3Vzci9zYmluOi91c3IvYmluOi9zYmluOi9iaW4gQ1VSTF9WRVJTSU9OPTdfODhfMSBDVVJMX1JFTEVBU0VfVEFHPWN1cmwtN184OF8xIENVUkxfR0lUX1JFUE89aHR0cHM6Ly9naXRodWIuY29tL2N1cmwvY3VybC5naXQgQ1VSTF9DQV9CVU5ETEU9L2NhY2VydC5wZW0iLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyMy0wNi0wMlQwMjo1MDozMC43MDIxMDA0MTVaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApICBVU0VSIGN1cmxfdXNlciIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDIzLTA2LTAyVDAyOjUwOjMwLjc3NzAzMjUwNVoiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgIEVOVFJZUE9JTlQgW1wiL2VudHJ5cG9pbnQuc2hcIl0iLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyMy0wNi0wMlQwMjo1MDozMC44MzQ5OTY3OTJaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApICBDTUQgW1wiY3VybFwiXSIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDIzLTA2LTAyVDAyOjUwOjMwLjg5NTY5NDc1NFoiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgIExBQkVMIHJmX2ltYWdlX2d1aWQuZDVhMzRjOGItMjIyZC00M2M0LWI0YjItZGQyZjNkMmRlNGMxPWQ1YTM0YzhiLTIyMmQtNDNjNC1iNGIyLWRkMmYzZDJkZTRjMSIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDIzLTA2LTAyVDAyOjUwOjM2LjkyNzA3MjU2WiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSAgTEFCRUwgb3JpZ19pbWFnZV9kaWdlc3Q9c2hhMjU2OjQ4MzE4NDA3YjhkOThlOGM3ZDViZDQ3NDFjODhlOGUxYTU0NDJkZTY2MGI0N2Y2M2JhNjU2ZTVjOTEwYmMzZGEiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyMy0wNi0wMlQwMjo1MDo0MS43MTI1OTIwMDZaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApICBMQUJFTCBvcmlnX2ltYWdlX2RpZ2VzdD1zaGEyNTY6NDgzMTg0MDdiOGQ5OGU4YzdkNWJkNDc0MWM4OGU4ZTFhNTQ0MmRlNjYwYjQ3ZjYzYmE2NTZlNWM5MTBiYzNkYSIsImVtcHR5X2xheWVyIjp0cnVlfV0sIm9zIjoibGludXgiLCJyb290ZnMiOnsidHlwZSI6ImxheWVycyIsImRpZmZfaWRzIjpbInNoYTI1NjpmZDM3NGVjZjhlNzYwZDgzODA4ZDE2MjAzOTQ1ZTdiODllY2ZlMGZiNTc5MDM1ODRjMDBmZjQ3YjM5NWI2ZTI4Il19fQ==",
+   "repoDigests": [
+    "rapidfort/curl@sha256:490d765e4e6ff4de54c93ba6ecf0b96e698ac84e41a13600875485e245252414"
+   ],
+   "architecture": "amd64",
+   "os": "linux"
+  }
+ },
+ "distro": {
+  "name": "alpine",
+  "version": "3.16.2",
+  "idLike": []
+ },
+ "descriptor": {
+  "name": "grype",
+  "version": "0.71.0",
+  "configuration": {
+   "output": [
+    "json"
+   ],
+   "file": "",
+   "distro": "",
+   "add-cpes-if-none": false,
+   "output-template-file": "",
+   "check-for-app-update": true,
+   "only-fixed": false,
+   "only-notfixed": false,
+   "platform": "",
+   "search": {
+    "scope": "Squashed",
+    "unindexed-archives": false,
+    "indexed-archives": true
+   },
+   "ignore": null,
+   "exclude": [],
+   "db": {
+    "cache-dir": "/home/anon/.cache/grype/db",
+    "update-url": "https://toolbox-data.anchore.io/grype/databases/listing.json",
+    "ca-cert": "",
+    "auto-update": true,
+    "validate-by-hash-on-start": false,
+    "validate-age": true,
+    "max-allowed-built-age": 432000000000000
+   },
+   "externalSources": {
+    "enable": false,
+    "maven": {
+     "searchUpstreamBySha1": true,
+     "baseUrl": "https://search.maven.org/solrsearch/select"
+    }
+   },
+   "match": {
+    "java": {
+     "using-cpes": false
+    },
+    "dotnet": {
+     "using-cpes": false
+    },
+    "golang": {
+     "using-cpes": false
+    },
+    "javascript": {
+     "using-cpes": false
+    },
+    "python": {
+     "using-cpes": false
+    },
+    "ruby": {
+     "using-cpes": false
+    },
+    "rust": {
+     "using-cpes": false
+    },
+    "stock": {
+     "using-cpes": true
+    }
+   },
+   "fail-on-severity": "",
+   "registry": {
+    "insecure-skip-tls-verify": false,
+    "insecure-use-http": false,
+    "auth": null,
+    "ca-cert": ""
+   },
+   "show-suppressed": false,
+   "by-cve": false,
+   "name": "",
+   "default-image-pull-source": "",
+   "vex-documents": [],
+   "vex-add": []
+  },
+  "db": {
+   "built": "2023-10-18T01:27:01Z",
+   "schemaVersion": 5,
+   "location": "/home/anon/.cache/grype/db/5",
+   "checksum": "sha256:3d645110a85196185e04ca12f42bb7ca46c6946833db616c7db1c751f261ab04",
+   "error": null
+  },
+  "timestamp": "2023-10-18T17:51:21.705679418-04:00"
+ }
+}
