@@ -179,7 +179,7 @@ def build_and_save_figures(agg_df: pd.DataFrame, out_dir: str):
         _build_figure(ax, agg_df, params)
         fig.tight_layout()
         out_path = os.path.join(out_dir, params.filename)
-        fig.savefig(out_path)
+        fig.savefig(out_path, dpi=200)
 
 
 def calculate_and_save_stats(agg_df: pd.DataFrame, out_path: str):
@@ -208,7 +208,7 @@ def calculate_and_save_stats(agg_df: pd.DataFrame, out_path: str):
         row.append(stats.test_rapidfort_lt_chainguard()[1])
 
         table.append(row)
-    
+
     with open(out_path, "w", encoding="utf-8") as fp:
         fp.write(tabulate(table, headers="firstrow"))
 
@@ -242,7 +242,7 @@ def main():
     from aggregate data set.
     """
     print("STAGE 3: Generating figures and stats")
-    
+
     ds_path, out_dir = parse_args()
 
     # Read aggregate data set

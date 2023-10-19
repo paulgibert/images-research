@@ -4,7 +4,7 @@
 rm -rf data
 mkdir data
 mkdir data/reports
-python scripts/1_scan_images.py -r data/reports
+python scripts/1_scan_images.py -i images.json -r data/reports
 
 # Stage 2 - Build data sets from scan reports
 mkdir data/data-sets

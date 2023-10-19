@@ -1,13 +1,13 @@
 """
 Stage 1 script.
-Performs Grype and Syft scans on images listed in scripts/images.json.
+Performs Grype and Syft scans on provided images.
 Scan reports are saved to the directroy specified.
 
 Usage:
-    1_scan_images.py -r [report directory]
+    1_scan_images.py -i [images json] -r [report directory]
 
 Example:
-    1_scan_images.py -r data/reports
+    1_scan_images.py -i [image.json] -r data/reports
 """
 
 
@@ -25,9 +25,6 @@ from src.image_scanner import GrypeScanner, SyftScanner
 from src import utils
 
 
-IMAGES_JSON_PATH = os.path.join(
-                   os.path.dirname(
-                   os.path.abspath(__file__)), "images.json")
 GRYPE_DIRNAME = "grype"
 SYFT_DIRNAME = "syft"
 N_SCAN_ITERS = 84
@@ -96,12 +93,16 @@ def parse_args() -> str:
     parser = argparse.ArgumentParser(
                     prog=os.path.basename(__file__),
                     description="Pulls and scans a list of images with Grype and Syft.")
+    parser.add_argument("--images", "-i",
+                        required=True,
+                        help="The images.json file containing the images of the study.")
     parser.add_argument("--reports-dir", "-r",
                         required=True,
                         help="The directory to save scan reports.")
 
+    images_path = parser.parse_args().images
     reports_dir = parser.parse_args().reports_dir
-    return reports_dir
+    return images_path, reports_dir
 
 
 def main():
@@ -111,7 +112,7 @@ def main():
     """
     print("STAGE 1: Scanning images (This might take awhile...)")
 
-    reports_dir = parse_args()
+    images_path, reports_dir = parse_args()
 
     grype_dir = os.path.join(reports_dir, GRYPE_DIRNAME)
     syft_dir = os.path.join(reports_dir, SYFT_DIRNAME)
@@ -126,7 +127,7 @@ def main():
         SyftScanner(syft_dir)]
 
     # Parse the images.json file and process all images
-    with open(IMAGES_JSON_PATH, "r", encoding="utf-8") as fp:
+    with open(images_path, "r", encoding="utf-8") as fp:
         with tqdm(total=N_SCAN_ITERS) as pbar:
             for image in json.load(fp)["images"]:
                 for vendor in image["vendors"]:
