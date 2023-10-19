@@ -1,7 +1,7 @@
 """
 Stage 1 script.
 Performs Grype and Syft scans on provided images.
-Scan reports are saved to the directroy specified.
+Scan reports are saved to the directory specified.
 
 Usage:
     1_scan_images.py -i [images json] -r [report directory]

@@ -17,7 +17,7 @@ Example:
 
 Note: The reports directory is expected to be of the form
     
-    [dir name]/
+    reports/
         grype/
             - chainguard_nginx.json
             - rapidfort_nginx.json

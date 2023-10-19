@@ -1,13 +1,13 @@
 # images-research
 
 
-![Drag Racing](data/oct-18-2023/analysis/figures/vulns_fig.png)
+![Drag Racing](data/19-Oct-2023/analysis/figures/vulns_fig.png)
 
 ### Description
 
 This repository hosts the scripts used to generate data for a technical analysis comparing container image hardening techniques.
 
-The data used in the study can be found at `data/oct-18-2023`. The easiest way to produce your own data is to install dependencies and execute the run script.
+The data used in the study can be found at `data/19-Oct-2023/`. The easiest way to produce your own data is to install dependencies and execute the run script.
 
 To install dependencies and setup a virtual environment to run the script, run these command:
 ```
@@ -23,8 +23,9 @@ Now execute the run script:
 ```
 The run script creates a new directory under `data/` named after the date, where all generated scans, data sets, and analysis are saved. The directory will look like this after executing the run script:
 
+```
 data
-└── [month]-[day]-[year]
+└── [day]-[month]-[year]
     ├── analysis
     │   ├── figures
     │   │   ├── comps_fig.png
@@ -47,7 +48,7 @@ data
         └── syft
             ├── [image vendor]_[image type].json
             |   ├── ...
-           
+```     
 
 ### Data Generation Stages
 Data is generated in three stages
