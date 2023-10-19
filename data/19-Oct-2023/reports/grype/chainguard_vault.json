@@ -1,0 +1,122 @@
+{
+ "matches": [],
+ "source": {
+  "type": "image",
+  "target": {
+   "userInput": "cgr.dev/chainguard/vault:latest",
+   "imageID": "sha256:704f4756767b7ed6f90b972d45a70696a45216c346848c2b1535f68e03b2d467",
+   "manifestDigest": "sha256:d00357004218d3bd52e972c78a8f0cfcbac4f95b8ea4a551b50c5a4f818a2fc3",
+   "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+   "tags": [
+    "cgr.dev/chainguard/vault:latest"
+   ],
+   "imageSize": 271837189,
+   "layers": [
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:f83445e2c1861ab2a3dd24b795bfc09a7afb07ced5621a2eb22c918703029862",
+     "size": 271837189
+    }
+   ],
+   "manifest": "eyJzY2hlbWFWZXJzaW9uIjoyLCJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmRpc3RyaWJ1dGlvbi5tYW5pZmVzdC52Mitqc29uIiwiY29uZmlnIjp7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuY29udGFpbmVyLmltYWdlLnYxK2pzb24iLCJzaXplIjo1NzYsImRpZ2VzdCI6InNoYTI1Njo3MDRmNDc1Njc2N2I3ZWQ2ZjkwYjk3MmQ0NWE3MDY5NmE0NTIxNmMzNDY4NDhjMmIxNTM1ZjY4ZTAzYjJkNDY3In0sImxheWVycyI6W3sibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vdm5kLmRvY2tlci5pbWFnZS5yb290ZnMuZGlmZi50YXIuZ3ppcCIsInNpemUiOjI3MjA1NDI3MiwiZGlnZXN0Ijoic2hhMjU2OmY4MzQ0NWUyYzE4NjFhYjJhM2RkMjRiNzk1YmZjMDlhN2FmYjA3Y2VkNTYyMWEyZWIyMmM5MTg3MDMwMjk4NjIifV19",
+   "config": "eyJhcmNoaXRlY3R1cmUiOiJhbWQ2NCIsImF1dGhvciI6ImdpdGh1Yi5jb20vY2hhaW5ndWFyZC1kZXYvYXBrbyIsImNyZWF0ZWQiOiIyMDIzLTEwLTE1VDAyOjU5OjQxWiIsImhpc3RvcnkiOlt7ImF1dGhvciI6ImFwa28iLCJjcmVhdGVkIjoiMjAyMy0xMC0xNVQwMjo1OTo0MVoiLCJjcmVhdGVkX2J5IjoiYXBrbyIsImNvbW1lbnQiOiJUaGlzIGlzIGFuIGFwa28gc2luZ2xlLWxheWVyIGltYWdlIn1dLCJvcyI6ImxpbnV4Iiwicm9vdGZzIjp7InR5cGUiOiJsYXllcnMiLCJkaWZmX2lkcyI6WyJzaGEyNTY6ZjgzNDQ1ZTJjMTg2MWFiMmEzZGQyNGI3OTViZmMwOWE3YWZiMDdjZWQ1NjIxYTJlYjIyYzkxODcwMzAyOTg2MiJdfSwiY29uZmlnIjp7IkNtZCI6WyJzZXJ2ZXIiLCItZGV2Il0sIkVudHJ5cG9pbnQiOlsiL3Vzci9iaW4vZG9ja2VyLWVudHJ5cG9pbnQuc2giXSwiRW52IjpbIlBBVEg9L3Vzci9sb2NhbC9zYmluOi91c3IvbG9jYWwvYmluOi91c3Ivc2JpbjovdXNyL2Jpbjovc2JpbjovYmluIiwiU1NMX0NFUlRfRklMRT0vZXRjL3NzbC9jZXJ0cy9jYS1jZXJ0aWZpY2F0ZXMuY3J0Il0sIlVzZXIiOiIwIn19",
+   "repoDigests": [
+    "cgr.dev/chainguard/vault@sha256:5331b6eaf46e4a127bc426b702015794d8211c69adcc31ee028e869b0ea3ab19"
+   ],
+   "architecture": "amd64",
+   "os": "linux"
+  }
+ },
+ "distro": {
+  "name": "wolfi",
+  "version": "20230201",
+  "idLike": []
+ },
+ "descriptor": {
+  "name": "grype",
+  "version": "0.71.0",
+  "configuration": {
+   "output": [
+    "json"
+   ],
+   "file": "",
+   "distro": "",
+   "add-cpes-if-none": false,
+   "output-template-file": "",
+   "check-for-app-update": true,
+   "only-fixed": false,
+   "only-notfixed": false,
+   "platform": "",
+   "search": {
+    "scope": "Squashed",
+    "unindexed-archives": false,
+    "indexed-archives": true
+   },
+   "ignore": null,
+   "exclude": [],
+   "db": {
+    "cache-dir": "/home/anon/.cache/grype/db",
+    "update-url": "https://toolbox-data.anchore.io/grype/databases/listing.json",
+    "ca-cert": "",
+    "auto-update": true,
+    "validate-by-hash-on-start": false,
+    "validate-age": true,
+    "max-allowed-built-age": 432000000000000
+   },
+   "externalSources": {
+    "enable": false,
+    "maven": {
+     "searchUpstreamBySha1": true,
+     "baseUrl": "https://search.maven.org/solrsearch/select"
+    }
+   },
+   "match": {
+    "java": {
+     "using-cpes": false
+    },
+    "dotnet": {
+     "using-cpes": false
+    },
+    "golang": {
+     "using-cpes": false
+    },
+    "javascript": {
+     "using-cpes": false
+    },
+    "python": {
+     "using-cpes": false
+    },
+    "ruby": {
+     "using-cpes": false
+    },
+    "rust": {
+     "using-cpes": false
+    },
+    "stock": {
+     "using-cpes": true
+    }
+   },
+   "fail-on-severity": "",
+   "registry": {
+    "insecure-skip-tls-verify": false,
+    "insecure-use-http": false,
+    "auth": null,
+    "ca-cert": ""
+   },
+   "show-suppressed": false,
+   "by-cve": false,
+   "name": "",
+   "default-image-pull-source": "",
+   "vex-documents": [],
+   "vex-add": []
+  },
+  "db": {
+   "built": "2023-10-19T01:26:11Z",
+   "schemaVersion": 5,
+   "location": "/home/anon/.cache/grype/db/5",
+   "checksum": "sha256:82a6f823d143a88a7937924a444251226a37788529ca4f48880d35a7561b5308",
+   "error": null
+  },
+  "timestamp": "2023-10-19T16:05:00.403621522-04:00"
+ }
+}

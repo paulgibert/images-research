@@ -1,0 +1,3975 @@
+{
+ "matches": [
+  {
+   "vulnerability": {
+    "id": "CVE-2016-2781",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2016-2781",
+    "namespace": "debian:distro:debian:11",
+    "severity": "Low",
+    "urls": [
+     "https://security-tracker.debian.org/tracker/CVE-2016-2781"
+    ],
+    "description": "chroot in GNU coreutils, when used with --userspec, allows local users to escape to the parent session via a crafted TIOCSTI ioctl call, which pushes characters to the terminal's input buffer.",
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "wont-fix"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2016-2781",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2016-2781",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "http://www.openwall.com/lists/oss-security/2016/02/28/2",
+      "http://www.openwall.com/lists/oss-security/2016/02/28/3",
+      "https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772@%3Cdev.mina.apache.org%3E"
+     ],
+     "description": "chroot in GNU coreutils, when used with --userspec, allows local users to escape to the parent session via a crafted TIOCSTI ioctl call, which pushes characters to the terminal's input buffer.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:L/AC:L/Au:N/C:N/I:P/A:N",
+       "metrics": {
+        "baseScore": 2.1,
+        "exploitabilityScore": 3.9,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.0",
+       "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:C/C:N/I:H/A:N",
+       "metrics": {
+        "baseScore": 6.5,
+        "exploitabilityScore": 2,
+        "impactScore": 4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "debian",
+       "version": "11"
+      },
+      "namespace": "debian:distro:debian:11",
+      "package": {
+       "name": "coreutils",
+       "version": "8.32-4+b1"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2016-2781"
+     }
+    },
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "debian",
+       "version": "11"
+      },
+      "namespace": "debian:distro:debian:11",
+      "package": {
+       "name": "coreutils",
+       "version": "8.32-4"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2016-2781"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "28236318a0dfac9d",
+    "name": "coreutils",
+    "version": "8.32-4+b1",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:1d654fedcc2ffc062714b9adb2166c56879d30732bb8e9d153fbbdf9827260fa"
+     }
+    ],
+    "language": "",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:coreutils:coreutils:8.32-4+b1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/debian/coreutils@8.32-4+b1?arch=amd64&upstream=coreutils%408.32-4&distro=debian-11",
+    "upstreams": [
+     {
+      "name": "coreutils",
+      "version": "8.32-4"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2017-18018",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2017-18018",
+    "namespace": "debian:distro:debian:11",
+    "severity": "Negligible",
+    "urls": [
+     "https://security-tracker.debian.org/tracker/CVE-2017-18018"
+    ],
+    "description": "In GNU Coreutils through 8.29, chown-core.c in chown and chgrp does not prevent replacement of a plain file with a symlink during use of the POSIX \"-R -L\" options, which allows local users to modify the ownership of arbitrary files by leveraging a race condition.",
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2017-18018",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2017-18018",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "http://lists.gnu.org/archive/html/coreutils/2017-12/msg00045.html"
+     ],
+     "description": "In GNU Coreutils through 8.29, chown-core.c in chown and chgrp does not prevent replacement of a plain file with a symlink during use of the POSIX \"-R -L\" options, which allows local users to modify the ownership of arbitrary files by leveraging a race condition.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:L/AC:M/Au:N/C:N/I:P/A:N",
+       "metrics": {
+        "baseScore": 1.9,
+        "exploitabilityScore": 3.4,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.0",
+       "vector": "CVSS:3.0/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:H/A:N",
+       "metrics": {
+        "baseScore": 4.7,
+        "exploitabilityScore": 1,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "debian",
+       "version": "11"
+      },
+      "namespace": "debian:distro:debian:11",
+      "package": {
+       "name": "coreutils",
+       "version": "8.32-4+b1"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2017-18018"
+     }
+    },
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "debian",
+       "version": "11"
+      },
+      "namespace": "debian:distro:debian:11",
+      "package": {
+       "name": "coreutils",
+       "version": "8.32-4"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2017-18018"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "28236318a0dfac9d",
+    "name": "coreutils",
+    "version": "8.32-4+b1",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:1d654fedcc2ffc062714b9adb2166c56879d30732bb8e9d153fbbdf9827260fa"
+     }
+    ],
+    "language": "",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:coreutils:coreutils:8.32-4+b1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/debian/coreutils@8.32-4+b1?arch=amd64&upstream=coreutils%408.32-4&distro=debian-11",
+    "upstreams": [
+     {
+      "name": "coreutils",
+      "version": "8.32-4"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-v86x-5fm3-5p7j",
+    "dataSource": "https://github.com/advisories/GHSA-v86x-5fm3-5p7j",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-v86x-5fm3-5p7j"
+    ],
+    "description": "Alertmanager UI is vulnerable to stored XSS via the /api/v1/alerts endpoint",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+      "metrics": {
+       "baseScore": 5.4,
+       "exploitabilityScore": 2.3,
+       "impactScore": 2.7
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "0.25.1"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-40577",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-40577",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://github.com/prometheus/alertmanager/security/advisories/GHSA-v86x-5fm3-5p7j",
+      "https://lists.debian.org/debian-lts-announce/2023/10/msg00011.html"
+     ],
+     "description": "Alertmanager handles alerts sent by client applications such as the Prometheus server. An attacker with the permission to perform POST requests on the /api/v1/alerts endpoint could be able to execute arbitrary JavaScript code on the users of Prometheus Alertmanager. This issue has been fixed in Alertmanager version 0.2.51.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+       "metrics": {
+        "baseScore": 5.4,
+        "exploitabilityScore": 2.3,
+        "impactScore": 2.7
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/prometheus/alertmanager",
+       "version": "v0.25.0"
+      }
+     },
+     "found": {
+      "versionConstraint": "<=0.25.0 (unknown)",
+      "vulnerabilityID": "GHSA-v86x-5fm3-5p7j"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "a6a244f9584ef309",
+    "name": "github.com/prometheus/alertmanager",
+    "version": "v0.25.0",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/opt/bitnami/prometheus/bin/promtool",
+      "layerID": "sha256:1d654fedcc2ffc062714b9adb2166c56879d30732bb8e9d153fbbdf9827260fa"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:prometheus:alertmanager:v0.25.0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/prometheus/alertmanager@v0.25.0",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.20.10",
+     "architecture": "amd64",
+     "h1Digest": "h1:vbXKUR6PYRiZPRIKfmXaG+dmCKG52RtPL4Btl8hQGvg=",
+     "mainModule": "github.com/prometheus/prometheus"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-v86x-5fm3-5p7j",
+    "dataSource": "https://github.com/advisories/GHSA-v86x-5fm3-5p7j",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-v86x-5fm3-5p7j"
+    ],
+    "description": "Alertmanager UI is vulnerable to stored XSS via the /api/v1/alerts endpoint",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+      "metrics": {
+       "baseScore": 5.4,
+       "exploitabilityScore": 2.3,
+       "impactScore": 2.7
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "0.25.1"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-40577",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-40577",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://github.com/prometheus/alertmanager/security/advisories/GHSA-v86x-5fm3-5p7j",
+      "https://lists.debian.org/debian-lts-announce/2023/10/msg00011.html"
+     ],
+     "description": "Alertmanager handles alerts sent by client applications such as the Prometheus server. An attacker with the permission to perform POST requests on the /api/v1/alerts endpoint could be able to execute arbitrary JavaScript code on the users of Prometheus Alertmanager. This issue has been fixed in Alertmanager version 0.2.51.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+       "metrics": {
+        "baseScore": 5.4,
+        "exploitabilityScore": 2.3,
+        "impactScore": 2.7
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/prometheus/alertmanager",
+       "version": "v0.25.0"
+      }
+     },
+     "found": {
+      "versionConstraint": "<=0.25.0 (unknown)",
+      "vulnerabilityID": "GHSA-v86x-5fm3-5p7j"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "59f7b4abdeef1591",
+    "name": "github.com/prometheus/alertmanager",
+    "version": "v0.25.0",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/opt/bitnami/prometheus/bin/prometheus",
+      "layerID": "sha256:1d654fedcc2ffc062714b9adb2166c56879d30732bb8e9d153fbbdf9827260fa"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:prometheus:alertmanager:v0.25.0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/prometheus/alertmanager@v0.25.0",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.20.10",
+     "architecture": "amd64",
+     "h1Digest": "h1:vbXKUR6PYRiZPRIKfmXaG+dmCKG52RtPL4Btl8hQGvg=",
+     "mainModule": "github.com/prometheus/prometheus"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-v86x-5fm3-5p7j",
+    "dataSource": "https://github.com/advisories/GHSA-v86x-5fm3-5p7j",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-v86x-5fm3-5p7j"
+    ],
+    "description": "Alertmanager UI is vulnerable to stored XSS via the /api/v1/alerts endpoint",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+      "metrics": {
+       "baseScore": 5.4,
+       "exploitabilityScore": 2.3,
+       "impactScore": 2.7
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "0.25.1"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-40577",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-40577",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://github.com/prometheus/alertmanager/security/advisories/GHSA-v86x-5fm3-5p7j",
+      "https://lists.debian.org/debian-lts-announce/2023/10/msg00011.html"
+     ],
+     "description": "Alertmanager handles alerts sent by client applications such as the Prometheus server. An attacker with the permission to perform POST requests on the /api/v1/alerts endpoint could be able to execute arbitrary JavaScript code on the users of Prometheus Alertmanager. This issue has been fixed in Alertmanager version 0.2.51.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+       "metrics": {
+        "baseScore": 5.4,
+        "exploitabilityScore": 2.3,
+        "impactScore": 2.7
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/prometheus/alertmanager",
+       "version": "v0.25.0"
+      }
+     },
+     "found": {
+      "versionConstraint": "<=0.25.0 (unknown)",
+      "vulnerabilityID": "GHSA-v86x-5fm3-5p7j"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "f8c5475bbc8d15ea",
+    "name": "github.com/prometheus/alertmanager",
+    "version": "v0.25.0",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/opt/bitnami/prometheus/.spdx-prometheus.spdx",
+      "layerID": "sha256:1d654fedcc2ffc062714b9adb2166c56879d30732bb8e9d153fbbdf9827260fa"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:prometheus:alertmanager:v0.25.0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/prometheus/alertmanager@v0.25.0",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "",
+     "architecture": ""
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-rcjv-mgp8-qvmr",
+    "dataSource": "https://github.com/advisories/GHSA-rcjv-mgp8-qvmr",
+    "namespace": "github:language:go",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-rcjv-mgp8-qvmr"
+    ],
+    "description": "OpenTelemetry-Go Contrib vulnerable to denial of service in otelhttp due to unbound cardinality metrics",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "0.44.0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-45142",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-45142",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/advisories/GHSA-cg3q-j54f-5p7p",
+      "https://github.com/open-telemetry/opentelemetry-go-contrib/blob/5f7e6ad5a49b45df45f61a1deb29d7f1158032df/instrumentation/net/http/otelhttp/handler.go#L63-L65",
+      "https://github.com/open-telemetry/opentelemetry-go-contrib/pull/4277",
+      "https://github.com/open-telemetry/opentelemetry-go-contrib/releases/tag/v1.19.0",
+      "https://github.com/open-telemetry/opentelemetry-go-contrib/security/advisories/GHSA-5r5m-65gx-7vrh",
+      "https://github.com/open-telemetry/opentelemetry-go-contrib/security/advisories/GHSA-rcjv-mgp8-qvmr",
+      "https://github.com/open-telemetry/opentelemetry-go/blob/38e1b499c3da3107694ad2660b3888eee9c8b896/semconv/internal/v2/http.go#L223",
+      "https://github.com/open-telemetry/opentelemetry-go/blob/v1.12.0/semconv/internal/v2/http.go#L159"
+     ],
+     "description": "OpenTelemetry-Go Contrib is a collection of third-party packages for OpenTelemetry-Go. A handler wrapper out of the box adds labels `http.user_agent` and `http.method` that have unbound cardinality. It leads to the server's potential memory exhaustion when many malicious requests are sent to it. HTTP header User-Agent or HTTP method for requests can be easily set by an attacker to be random and long. The library internally uses `httpconv.ServerRequest` that records every value for HTTP `method` and `User-Agent`. In order to be affected, a program has to use the `otelhttp.NewHandler` wrapper and not filter any unknown HTTP methods or User agents on the level of CDN, LB, previous middleware, etc. Version 0.44.0 fixed this issue when the values collected for attribute `http.request.method` were changed to be restricted to a set of well-known values and other high cardinality attributes were removed. As a workaround to stop being affected, `otelhttp.WithFilter()` can be used, but it requires manual careful configuration to not log certain requests entirely. For convenience and safe usage of this library, it should by default mark with the label `unknown` non-standard HTTP methods and User agents to show that such requests were made but do not increase cardinality. In case someone wants to stay with the current behavior, library API should allow to enable it.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp",
+       "version": "v0.42.0"
+      }
+     },
+     "found": {
+      "versionConstraint": "<0.44.0 (unknown)",
+      "vulnerabilityID": "GHSA-rcjv-mgp8-qvmr"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "a2c9e8a395e9e088",
+    "name": "go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp",
+    "version": "v0.42.0",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/opt/bitnami/prometheus/bin/promtool",
+      "layerID": "sha256:1d654fedcc2ffc062714b9adb2166c56879d30732bb8e9d153fbbdf9827260fa"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:contrib:instrumentation/net/http/otelhttp:v0.42.0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp@v0.42.0",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.20.10",
+     "architecture": "amd64",
+     "h1Digest": "h1:pginetY7+onl4qN1vl0xW/V/v6OBZ0vVdH+esuJgvmM=",
+     "mainModule": "github.com/prometheus/prometheus"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-rcjv-mgp8-qvmr",
+    "dataSource": "https://github.com/advisories/GHSA-rcjv-mgp8-qvmr",
+    "namespace": "github:language:go",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-rcjv-mgp8-qvmr"
+    ],
+    "description": "OpenTelemetry-Go Contrib vulnerable to denial of service in otelhttp due to unbound cardinality metrics",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "0.44.0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-45142",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-45142",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/advisories/GHSA-cg3q-j54f-5p7p",
+      "https://github.com/open-telemetry/opentelemetry-go-contrib/blob/5f7e6ad5a49b45df45f61a1deb29d7f1158032df/instrumentation/net/http/otelhttp/handler.go#L63-L65",
+      "https://github.com/open-telemetry/opentelemetry-go-contrib/pull/4277",
+      "https://github.com/open-telemetry/opentelemetry-go-contrib/releases/tag/v1.19.0",
+      "https://github.com/open-telemetry/opentelemetry-go-contrib/security/advisories/GHSA-5r5m-65gx-7vrh",
+      "https://github.com/open-telemetry/opentelemetry-go-contrib/security/advisories/GHSA-rcjv-mgp8-qvmr",
+      "https://github.com/open-telemetry/opentelemetry-go/blob/38e1b499c3da3107694ad2660b3888eee9c8b896/semconv/internal/v2/http.go#L223",
+      "https://github.com/open-telemetry/opentelemetry-go/blob/v1.12.0/semconv/internal/v2/http.go#L159"
+     ],
+     "description": "OpenTelemetry-Go Contrib is a collection of third-party packages for OpenTelemetry-Go. A handler wrapper out of the box adds labels `http.user_agent` and `http.method` that have unbound cardinality. It leads to the server's potential memory exhaustion when many malicious requests are sent to it. HTTP header User-Agent or HTTP method for requests can be easily set by an attacker to be random and long. The library internally uses `httpconv.ServerRequest` that records every value for HTTP `method` and `User-Agent`. In order to be affected, a program has to use the `otelhttp.NewHandler` wrapper and not filter any unknown HTTP methods or User agents on the level of CDN, LB, previous middleware, etc. Version 0.44.0 fixed this issue when the values collected for attribute `http.request.method` were changed to be restricted to a set of well-known values and other high cardinality attributes were removed. As a workaround to stop being affected, `otelhttp.WithFilter()` can be used, but it requires manual careful configuration to not log certain requests entirely. For convenience and safe usage of this library, it should by default mark with the label `unknown` non-standard HTTP methods and User agents to show that such requests were made but do not increase cardinality. In case someone wants to stay with the current behavior, library API should allow to enable it.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp",
+       "version": "v0.42.0"
+      }
+     },
+     "found": {
+      "versionConstraint": "<0.44.0 (unknown)",
+      "vulnerabilityID": "GHSA-rcjv-mgp8-qvmr"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "29d8a36c2b87cefb",
+    "name": "go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp",
+    "version": "v0.42.0",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/opt/bitnami/prometheus/bin/prometheus",
+      "layerID": "sha256:1d654fedcc2ffc062714b9adb2166c56879d30732bb8e9d153fbbdf9827260fa"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:contrib:instrumentation/net/http/otelhttp:v0.42.0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp@v0.42.0",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.20.10",
+     "architecture": "amd64",
+     "h1Digest": "h1:pginetY7+onl4qN1vl0xW/V/v6OBZ0vVdH+esuJgvmM=",
+     "mainModule": "github.com/prometheus/prometheus"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-rcjv-mgp8-qvmr",
+    "dataSource": "https://github.com/advisories/GHSA-rcjv-mgp8-qvmr",
+    "namespace": "github:language:go",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-rcjv-mgp8-qvmr"
+    ],
+    "description": "OpenTelemetry-Go Contrib vulnerable to denial of service in otelhttp due to unbound cardinality metrics",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "0.44.0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-45142",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-45142",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/advisories/GHSA-cg3q-j54f-5p7p",
+      "https://github.com/open-telemetry/opentelemetry-go-contrib/blob/5f7e6ad5a49b45df45f61a1deb29d7f1158032df/instrumentation/net/http/otelhttp/handler.go#L63-L65",
+      "https://github.com/open-telemetry/opentelemetry-go-contrib/pull/4277",
+      "https://github.com/open-telemetry/opentelemetry-go-contrib/releases/tag/v1.19.0",
+      "https://github.com/open-telemetry/opentelemetry-go-contrib/security/advisories/GHSA-5r5m-65gx-7vrh",
+      "https://github.com/open-telemetry/opentelemetry-go-contrib/security/advisories/GHSA-rcjv-mgp8-qvmr",
+      "https://github.com/open-telemetry/opentelemetry-go/blob/38e1b499c3da3107694ad2660b3888eee9c8b896/semconv/internal/v2/http.go#L223",
+      "https://github.com/open-telemetry/opentelemetry-go/blob/v1.12.0/semconv/internal/v2/http.go#L159"
+     ],
+     "description": "OpenTelemetry-Go Contrib is a collection of third-party packages for OpenTelemetry-Go. A handler wrapper out of the box adds labels `http.user_agent` and `http.method` that have unbound cardinality. It leads to the server's potential memory exhaustion when many malicious requests are sent to it. HTTP header User-Agent or HTTP method for requests can be easily set by an attacker to be random and long. The library internally uses `httpconv.ServerRequest` that records every value for HTTP `method` and `User-Agent`. In order to be affected, a program has to use the `otelhttp.NewHandler` wrapper and not filter any unknown HTTP methods or User agents on the level of CDN, LB, previous middleware, etc. Version 0.44.0 fixed this issue when the values collected for attribute `http.request.method` were changed to be restricted to a set of well-known values and other high cardinality attributes were removed. As a workaround to stop being affected, `otelhttp.WithFilter()` can be used, but it requires manual careful configuration to not log certain requests entirely. For convenience and safe usage of this library, it should by default mark with the label `unknown` non-standard HTTP methods and User agents to show that such requests were made but do not increase cardinality. In case someone wants to stay with the current behavior, library API should allow to enable it.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp",
+       "version": "v0.42.0"
+      }
+     },
+     "found": {
+      "versionConstraint": "<0.44.0 (unknown)",
+      "vulnerabilityID": "GHSA-rcjv-mgp8-qvmr"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "797e0c382eb05234",
+    "name": "go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp",
+    "version": "v0.42.0",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/opt/bitnami/prometheus/.spdx-prometheus.spdx",
+      "layerID": "sha256:1d654fedcc2ffc062714b9adb2166c56879d30732bb8e9d153fbbdf9827260fa"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:contrib:instrumentation/net/http/otelhttp:v0.42.0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp@v0.42.0",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "",
+     "architecture": ""
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-qppj-fm5r-hxr3",
+    "dataSource": "https://github.com/advisories/GHSA-qppj-fm5r-hxr3",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-qppj-fm5r-hxr3"
+    ],
+    "description": "swift-nio-http2 vulnerable to HTTP/2 Stream Cancellation Attack",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+      "metrics": {
+       "baseScore": 5.3,
+       "exploitabilityScore": 3.9,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "0.17.0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-44487",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-44487",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "http://www.openwall.com/lists/oss-security/2023/10/13/4",
+      "http://www.openwall.com/lists/oss-security/2023/10/13/9",
+      "http://www.openwall.com/lists/oss-security/2023/10/18/4",
+      "https://access.redhat.com/security/cve/cve-2023-44487",
+      "https://arstechnica.com/security/2023/10/how-ddosers-used-the-http-2-protocol-to-deliver-attacks-of-unprecedented-size/",
+      "https://aws.amazon.com/security/security-bulletins/AWS-2023-011/",
+      "https://blog.cloudflare.com/technical-breakdown-http2-rapid-reset-ddos-attack/",
+      "https://blog.cloudflare.com/zero-day-rapid-reset-http2-record-breaking-ddos-attack/",
+      "https://blog.litespeedtech.com/2023/10/11/rapid-reset-http-2-vulnerablilty/",
+      "https://blog.qualys.com/vulnerabilities-threat-research/2023/10/10/cve-2023-44487-http-2-rapid-reset-attack",
+      "https://blog.vespa.ai/cve-2023-44487/",
+      "https://bugzilla.proxmox.com/show_bug.cgi?id=4988",
+      "https://bugzilla.redhat.com/show_bug.cgi?id=2242803",
+      "https://bugzilla.suse.com/show_bug.cgi?id=1216123",
+      "https://cgit.freebsd.org/ports/commit/?id=c64c329c2c1752f46b73e3e6ce9f4329be6629f9",
+      "https://cloud.google.com/blog/products/identity-security/google-cloud-mitigated-largest-ddos-attack-peaking-above-398-million-rps/",
+      "https://cloud.google.com/blog/products/identity-security/how-it-works-the-novel-http2-rapid-reset-ddos-attack",
+      "https://community.traefik.io/t/is-traefik-vulnerable-to-cve-2023-44487/20125",
+      "https://edg.io/lp/blog/resets-leaks-ddos-and-the-tale-of-a-hidden-cve",
+      "https://forums.swift.org/t/swift-nio-http2-security-update-cve-2023-44487-http-2-dos/67764",
+      "https://gist.github.com/adulau/7c2bfb8e9cdbe4b35a5e131c66a0c088",
+      "https://github.com/Azure/AKS/issues/3947",
+      "https://github.com/Kong/kong/discussions/11741",
+      "https://github.com/advisories/GHSA-qppj-fm5r-hxr3",
+      "https://github.com/advisories/GHSA-vx74-f528-fxqg",
+      "https://github.com/advisories/GHSA-xpw8-rcwv-8f8p",
+      "https://github.com/akka/akka-http/issues/4323",
+      "https://github.com/alibaba/tengine/issues/1872",
+      "https://github.com/apache/apisix/issues/10320",
+      "https://github.com/apache/httpd-site/pull/10",
+      "https://github.com/apache/httpd/blob/afcdbeebbff4b0c50ea26cdd16e178c0d1f24152/modules/http2/h2_mplx.c#L1101-L1113",
+      "https://github.com/apache/tomcat/tree/main/java/org/apache/coyote/http2",
+      "https://github.com/apache/trafficserver/pull/10564",
+      "https://github.com/arkrwn/PoC/tree/main/CVE-2023-44487",
+      "https://github.com/bcdannyboy/CVE-2023-44487",
+      "https://github.com/caddyserver/caddy/issues/5877",
+      "https://github.com/caddyserver/caddy/releases/tag/v2.7.5",
+      "https://github.com/dotnet/announcements/issues/277",
+      "https://github.com/dotnet/core/blob/e4613450ea0da7fd2fc6b61dfb2c1c1dec1ce9ec/release-notes/6.0/6.0.23/6.0.23.md?plain=1#L73",
+      "https://github.com/eclipse/jetty.project/issues/10679",
+      "https://github.com/envoyproxy/envoy/pull/30055",
+      "https://github.com/etcd-io/etcd/issues/16740",
+      "https://github.com/facebook/proxygen/pull/466",
+      "https://github.com/golang/go/issues/63417",
+      "https://github.com/grpc/grpc-go/pull/6703",
+      "https://github.com/h2o/h2o/pull/3291",
+      "https://github.com/h2o/h2o/security/advisories/GHSA-2m7v-gc89-fjqf",
+      "https://github.com/haproxy/haproxy/issues/2312",
+      "https://github.com/icing/mod_h2/blob/0a864782af0a942aa2ad4ed960a6b32cd35bcf0a/mod_http2/README.md?plain=1#L239-L244",
+      "https://github.com/junkurihara/rust-rpxy/issues/97",
+      "https://github.com/kazu-yamamoto/http2/commit/f61d41a502bd0f60eb24e1ce14edc7b6df6722a1",
+      "https://github.com/kazu-yamamoto/http2/issues/93",
+      "https://github.com/kubernetes/kubernetes/pull/121120",
+      "https://github.com/line/armeria/pull/5232",
+      "https://github.com/linkerd/website/pull/1695/commits/4b9c6836471bc8270ab48aae6fd2181bc73fd632",
+      "https://github.com/micrictor/http2-rst-stream",
+      "https://github.com/microsoft/CBL-Mariner/pull/6381",
+      "https://github.com/netty/netty/commit/58f75f665aa81a8cbcf6ffa74820042a285c5e61",
+      "https://github.com/nghttp2/nghttp2/pull/1961",
+      "https://github.com/nghttp2/nghttp2/releases/tag/v1.57.0",
+      "https://github.com/ninenines/cowboy/issues/1615",
+      "https://github.com/nodejs/node/pull/50121",
+      "https://github.com/openresty/openresty/issues/930",
+      "https://github.com/opensearch-project/data-prepper/issues/3474",
+      "https://github.com/oqtane/oqtane.framework/discussions/3367",
+      "https://github.com/projectcontour/contour/pull/5826",
+      "https://github.com/tempesta-tech/tempesta/issues/1986",
+      "https://github.com/varnishcache/varnish-cache/issues/3996",
+      "https://groups.google.com/g/golang-announce/c/iNNxDTCjZvo",
+      "https://istio.io/latest/news/security/istio-security-2023-004/",
+      "https://linkerd.io/2023/10/12/linkerd-cve-2023-44487/",
+      "https://lists.apache.org/thread/5py8h42mxfsn8l1wy6o41xwhsjlsd87q",
+      "https://lists.debian.org/debian-lts-announce/2023/10/msg00020.html",
+      "https://lists.debian.org/debian-lts-announce/2023/10/msg00023.html",
+      "https://lists.debian.org/debian-lts-announce/2023/10/msg00024.html",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/JMEXY22BFG5Q64HQCM5CK2Q7KDKVV4TY/",
+      "https://lists.w3.org/Archives/Public/ietf-http-wg/2023OctDec/0025.html",
+      "https://mailman.nginx.org/pipermail/nginx-devel/2023-October/S36Q5HBXR7CAIMPLLPRSSSYR4PCMWILK.html",
+      "https://martinthomson.github.io/h2-stream-limits/draft-thomson-httpbis-h2-stream-limits.html",
+      "https://msrc.microsoft.com/blog/2023/10/microsoft-response-to-distributed-denial-of-service-ddos-attacks-against-http/2/",
+      "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-44487",
+      "https://my.f5.com/manage/s/article/K000137106",
+      "https://netty.io/news/2023/10/10/4-1-100-Final.html",
+      "https://news.ycombinator.com/item?id=37830987",
+      "https://news.ycombinator.com/item?id=37830998",
+      "https://news.ycombinator.com/item?id=37831062",
+      "https://news.ycombinator.com/item?id=37837043",
+      "https://openssf.org/blog/2023/10/10/http-2-rapid-reset-vulnerability-highlights-need-for-rapid-response/",
+      "https://seanmonstar.com/post/730794151136935936/hyper-http2-rapid-reset-unaffected",
+      "https://security.netapp.com/advisory/ntap-20231016-0001/",
+      "https://security.paloaltonetworks.com/CVE-2023-44487",
+      "https://tomcat.apache.org/security-10.html#Fixed_in_Apache_Tomcat_10.1.14",
+      "https://ubuntu.com/security/CVE-2023-44487",
+      "https://www.bleepingcomputer.com/news/security/new-http-2-rapid-reset-zero-day-attack-breaks-ddos-records/",
+      "https://www.cisa.gov/news-events/alerts/2023/10/10/http2-rapid-reset-vulnerability-cve-2023-44487",
+      "https://www.darkreading.com/cloud/internet-wide-zero-day-bug-fuels-largest-ever-ddos-event",
+      "https://www.debian.org/security/2023/dsa-5521",
+      "https://www.debian.org/security/2023/dsa-5522",
+      "https://www.haproxy.com/blog/haproxy-is-not-affected-by-the-http-2-rapid-reset-attack-cve-2023-44487",
+      "https://www.netlify.com/blog/netlify-successfully-mitigates-cve-2023-44487/",
+      "https://www.nginx.com/blog/http-2-rapid-reset-attack-impacting-f5-nginx-products/",
+      "https://www.openwall.com/lists/oss-security/2023/10/10/6",
+      "https://www.phoronix.com/news/HTTP2-Rapid-Reset-Attack",
+      "https://www.theregister.com/2023/10/10/http2_rapid_reset_zeroday/"
+     ],
+     "description": "The HTTP/2 protocol allows a denial of service (server resource consumption) because request cancellation can reset many streams quickly, as exploited in the wild in August through October 2023.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "golang.org/x/net",
+       "version": "v0.12.0"
+      }
+     },
+     "found": {
+      "versionConstraint": "<0.17.0 (unknown)",
+      "vulnerabilityID": "GHSA-qppj-fm5r-hxr3"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "d19693a6d4683c4a",
+    "name": "golang.org/x/net",
+    "version": "v0.12.0",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/opt/bitnami/prometheus/bin/prometheus",
+      "layerID": "sha256:1d654fedcc2ffc062714b9adb2166c56879d30732bb8e9d153fbbdf9827260fa"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:golang:x/net:v0.12.0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/golang.org/x/net@v0.12.0",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.20.10",
+     "architecture": "amd64",
+     "h1Digest": "h1:cfawfvKITfUsFCeJIHJrbSxpeu/E81khclypR0GVT50=",
+     "mainModule": "github.com/prometheus/prometheus"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-qppj-fm5r-hxr3",
+    "dataSource": "https://github.com/advisories/GHSA-qppj-fm5r-hxr3",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-qppj-fm5r-hxr3"
+    ],
+    "description": "swift-nio-http2 vulnerable to HTTP/2 Stream Cancellation Attack",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+      "metrics": {
+       "baseScore": 5.3,
+       "exploitabilityScore": 3.9,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "0.17.0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-44487",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-44487",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "http://www.openwall.com/lists/oss-security/2023/10/13/4",
+      "http://www.openwall.com/lists/oss-security/2023/10/13/9",
+      "http://www.openwall.com/lists/oss-security/2023/10/18/4",
+      "https://access.redhat.com/security/cve/cve-2023-44487",
+      "https://arstechnica.com/security/2023/10/how-ddosers-used-the-http-2-protocol-to-deliver-attacks-of-unprecedented-size/",
+      "https://aws.amazon.com/security/security-bulletins/AWS-2023-011/",
+      "https://blog.cloudflare.com/technical-breakdown-http2-rapid-reset-ddos-attack/",
+      "https://blog.cloudflare.com/zero-day-rapid-reset-http2-record-breaking-ddos-attack/",
+      "https://blog.litespeedtech.com/2023/10/11/rapid-reset-http-2-vulnerablilty/",
+      "https://blog.qualys.com/vulnerabilities-threat-research/2023/10/10/cve-2023-44487-http-2-rapid-reset-attack",
+      "https://blog.vespa.ai/cve-2023-44487/",
+      "https://bugzilla.proxmox.com/show_bug.cgi?id=4988",
+      "https://bugzilla.redhat.com/show_bug.cgi?id=2242803",
+      "https://bugzilla.suse.com/show_bug.cgi?id=1216123",
+      "https://cgit.freebsd.org/ports/commit/?id=c64c329c2c1752f46b73e3e6ce9f4329be6629f9",
+      "https://cloud.google.com/blog/products/identity-security/google-cloud-mitigated-largest-ddos-attack-peaking-above-398-million-rps/",
+      "https://cloud.google.com/blog/products/identity-security/how-it-works-the-novel-http2-rapid-reset-ddos-attack",
+      "https://community.traefik.io/t/is-traefik-vulnerable-to-cve-2023-44487/20125",
+      "https://edg.io/lp/blog/resets-leaks-ddos-and-the-tale-of-a-hidden-cve",
+      "https://forums.swift.org/t/swift-nio-http2-security-update-cve-2023-44487-http-2-dos/67764",
+      "https://gist.github.com/adulau/7c2bfb8e9cdbe4b35a5e131c66a0c088",
+      "https://github.com/Azure/AKS/issues/3947",
+      "https://github.com/Kong/kong/discussions/11741",
+      "https://github.com/advisories/GHSA-qppj-fm5r-hxr3",
+      "https://github.com/advisories/GHSA-vx74-f528-fxqg",
+      "https://github.com/advisories/GHSA-xpw8-rcwv-8f8p",
+      "https://github.com/akka/akka-http/issues/4323",
+      "https://github.com/alibaba/tengine/issues/1872",
+      "https://github.com/apache/apisix/issues/10320",
+      "https://github.com/apache/httpd-site/pull/10",
+      "https://github.com/apache/httpd/blob/afcdbeebbff4b0c50ea26cdd16e178c0d1f24152/modules/http2/h2_mplx.c#L1101-L1113",
+      "https://github.com/apache/tomcat/tree/main/java/org/apache/coyote/http2",
+      "https://github.com/apache/trafficserver/pull/10564",
+      "https://github.com/arkrwn/PoC/tree/main/CVE-2023-44487",
+      "https://github.com/bcdannyboy/CVE-2023-44487",
+      "https://github.com/caddyserver/caddy/issues/5877",
+      "https://github.com/caddyserver/caddy/releases/tag/v2.7.5",
+      "https://github.com/dotnet/announcements/issues/277",
+      "https://github.com/dotnet/core/blob/e4613450ea0da7fd2fc6b61dfb2c1c1dec1ce9ec/release-notes/6.0/6.0.23/6.0.23.md?plain=1#L73",
+      "https://github.com/eclipse/jetty.project/issues/10679",
+      "https://github.com/envoyproxy/envoy/pull/30055",
+      "https://github.com/etcd-io/etcd/issues/16740",
+      "https://github.com/facebook/proxygen/pull/466",
+      "https://github.com/golang/go/issues/63417",
+      "https://github.com/grpc/grpc-go/pull/6703",
+      "https://github.com/h2o/h2o/pull/3291",
+      "https://github.com/h2o/h2o/security/advisories/GHSA-2m7v-gc89-fjqf",
+      "https://github.com/haproxy/haproxy/issues/2312",
+      "https://github.com/icing/mod_h2/blob/0a864782af0a942aa2ad4ed960a6b32cd35bcf0a/mod_http2/README.md?plain=1#L239-L244",
+      "https://github.com/junkurihara/rust-rpxy/issues/97",
+      "https://github.com/kazu-yamamoto/http2/commit/f61d41a502bd0f60eb24e1ce14edc7b6df6722a1",
+      "https://github.com/kazu-yamamoto/http2/issues/93",
+      "https://github.com/kubernetes/kubernetes/pull/121120",
+      "https://github.com/line/armeria/pull/5232",
+      "https://github.com/linkerd/website/pull/1695/commits/4b9c6836471bc8270ab48aae6fd2181bc73fd632",
+      "https://github.com/micrictor/http2-rst-stream",
+      "https://github.com/microsoft/CBL-Mariner/pull/6381",
+      "https://github.com/netty/netty/commit/58f75f665aa81a8cbcf6ffa74820042a285c5e61",
+      "https://github.com/nghttp2/nghttp2/pull/1961",
+      "https://github.com/nghttp2/nghttp2/releases/tag/v1.57.0",
+      "https://github.com/ninenines/cowboy/issues/1615",
+      "https://github.com/nodejs/node/pull/50121",
+      "https://github.com/openresty/openresty/issues/930",
+      "https://github.com/opensearch-project/data-prepper/issues/3474",
+      "https://github.com/oqtane/oqtane.framework/discussions/3367",
+      "https://github.com/projectcontour/contour/pull/5826",
+      "https://github.com/tempesta-tech/tempesta/issues/1986",
+      "https://github.com/varnishcache/varnish-cache/issues/3996",
+      "https://groups.google.com/g/golang-announce/c/iNNxDTCjZvo",
+      "https://istio.io/latest/news/security/istio-security-2023-004/",
+      "https://linkerd.io/2023/10/12/linkerd-cve-2023-44487/",
+      "https://lists.apache.org/thread/5py8h42mxfsn8l1wy6o41xwhsjlsd87q",
+      "https://lists.debian.org/debian-lts-announce/2023/10/msg00020.html",
+      "https://lists.debian.org/debian-lts-announce/2023/10/msg00023.html",
+      "https://lists.debian.org/debian-lts-announce/2023/10/msg00024.html",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/JMEXY22BFG5Q64HQCM5CK2Q7KDKVV4TY/",
+      "https://lists.w3.org/Archives/Public/ietf-http-wg/2023OctDec/0025.html",
+      "https://mailman.nginx.org/pipermail/nginx-devel/2023-October/S36Q5HBXR7CAIMPLLPRSSSYR4PCMWILK.html",
+      "https://martinthomson.github.io/h2-stream-limits/draft-thomson-httpbis-h2-stream-limits.html",
+      "https://msrc.microsoft.com/blog/2023/10/microsoft-response-to-distributed-denial-of-service-ddos-attacks-against-http/2/",
+      "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-44487",
+      "https://my.f5.com/manage/s/article/K000137106",
+      "https://netty.io/news/2023/10/10/4-1-100-Final.html",
+      "https://news.ycombinator.com/item?id=37830987",
+      "https://news.ycombinator.com/item?id=37830998",
+      "https://news.ycombinator.com/item?id=37831062",
+      "https://news.ycombinator.com/item?id=37837043",
+      "https://openssf.org/blog/2023/10/10/http-2-rapid-reset-vulnerability-highlights-need-for-rapid-response/",
+      "https://seanmonstar.com/post/730794151136935936/hyper-http2-rapid-reset-unaffected",
+      "https://security.netapp.com/advisory/ntap-20231016-0001/",
+      "https://security.paloaltonetworks.com/CVE-2023-44487",
+      "https://tomcat.apache.org/security-10.html#Fixed_in_Apache_Tomcat_10.1.14",
+      "https://ubuntu.com/security/CVE-2023-44487",
+      "https://www.bleepingcomputer.com/news/security/new-http-2-rapid-reset-zero-day-attack-breaks-ddos-records/",
+      "https://www.cisa.gov/news-events/alerts/2023/10/10/http2-rapid-reset-vulnerability-cve-2023-44487",
+      "https://www.darkreading.com/cloud/internet-wide-zero-day-bug-fuels-largest-ever-ddos-event",
+      "https://www.debian.org/security/2023/dsa-5521",
+      "https://www.debian.org/security/2023/dsa-5522",
+      "https://www.haproxy.com/blog/haproxy-is-not-affected-by-the-http-2-rapid-reset-attack-cve-2023-44487",
+      "https://www.netlify.com/blog/netlify-successfully-mitigates-cve-2023-44487/",
+      "https://www.nginx.com/blog/http-2-rapid-reset-attack-impacting-f5-nginx-products/",
+      "https://www.openwall.com/lists/oss-security/2023/10/10/6",
+      "https://www.phoronix.com/news/HTTP2-Rapid-Reset-Attack",
+      "https://www.theregister.com/2023/10/10/http2_rapid_reset_zeroday/"
+     ],
+     "description": "The HTTP/2 protocol allows a denial of service (server resource consumption) because request cancellation can reset many streams quickly, as exploited in the wild in August through October 2023.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "golang.org/x/net",
+       "version": "v0.12.0"
+      }
+     },
+     "found": {
+      "versionConstraint": "<0.17.0 (unknown)",
+      "vulnerabilityID": "GHSA-qppj-fm5r-hxr3"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "845f7cf01ad79382",
+    "name": "golang.org/x/net",
+    "version": "v0.12.0",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/opt/bitnami/prometheus/bin/promtool",
+      "layerID": "sha256:1d654fedcc2ffc062714b9adb2166c56879d30732bb8e9d153fbbdf9827260fa"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:golang:x/net:v0.12.0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/golang.org/x/net@v0.12.0",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.20.10",
+     "architecture": "amd64",
+     "h1Digest": "h1:cfawfvKITfUsFCeJIHJrbSxpeu/E81khclypR0GVT50=",
+     "mainModule": "github.com/prometheus/prometheus"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-qppj-fm5r-hxr3",
+    "dataSource": "https://github.com/advisories/GHSA-qppj-fm5r-hxr3",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-qppj-fm5r-hxr3"
+    ],
+    "description": "swift-nio-http2 vulnerable to HTTP/2 Stream Cancellation Attack",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+      "metrics": {
+       "baseScore": 5.3,
+       "exploitabilityScore": 3.9,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "0.17.0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-44487",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-44487",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "http://www.openwall.com/lists/oss-security/2023/10/13/4",
+      "http://www.openwall.com/lists/oss-security/2023/10/13/9",
+      "http://www.openwall.com/lists/oss-security/2023/10/18/4",
+      "https://access.redhat.com/security/cve/cve-2023-44487",
+      "https://arstechnica.com/security/2023/10/how-ddosers-used-the-http-2-protocol-to-deliver-attacks-of-unprecedented-size/",
+      "https://aws.amazon.com/security/security-bulletins/AWS-2023-011/",
+      "https://blog.cloudflare.com/technical-breakdown-http2-rapid-reset-ddos-attack/",
+      "https://blog.cloudflare.com/zero-day-rapid-reset-http2-record-breaking-ddos-attack/",
+      "https://blog.litespeedtech.com/2023/10/11/rapid-reset-http-2-vulnerablilty/",
+      "https://blog.qualys.com/vulnerabilities-threat-research/2023/10/10/cve-2023-44487-http-2-rapid-reset-attack",
+      "https://blog.vespa.ai/cve-2023-44487/",
+      "https://bugzilla.proxmox.com/show_bug.cgi?id=4988",
+      "https://bugzilla.redhat.com/show_bug.cgi?id=2242803",
+      "https://bugzilla.suse.com/show_bug.cgi?id=1216123",
+      "https://cgit.freebsd.org/ports/commit/?id=c64c329c2c1752f46b73e3e6ce9f4329be6629f9",
+      "https://cloud.google.com/blog/products/identity-security/google-cloud-mitigated-largest-ddos-attack-peaking-above-398-million-rps/",
+      "https://cloud.google.com/blog/products/identity-security/how-it-works-the-novel-http2-rapid-reset-ddos-attack",
+      "https://community.traefik.io/t/is-traefik-vulnerable-to-cve-2023-44487/20125",
+      "https://edg.io/lp/blog/resets-leaks-ddos-and-the-tale-of-a-hidden-cve",
+      "https://forums.swift.org/t/swift-nio-http2-security-update-cve-2023-44487-http-2-dos/67764",
+      "https://gist.github.com/adulau/7c2bfb8e9cdbe4b35a5e131c66a0c088",
+      "https://github.com/Azure/AKS/issues/3947",
+      "https://github.com/Kong/kong/discussions/11741",
+      "https://github.com/advisories/GHSA-qppj-fm5r-hxr3",
+      "https://github.com/advisories/GHSA-vx74-f528-fxqg",
+      "https://github.com/advisories/GHSA-xpw8-rcwv-8f8p",
+      "https://github.com/akka/akka-http/issues/4323",
+      "https://github.com/alibaba/tengine/issues/1872",
+      "https://github.com/apache/apisix/issues/10320",
+      "https://github.com/apache/httpd-site/pull/10",
+      "https://github.com/apache/httpd/blob/afcdbeebbff4b0c50ea26cdd16e178c0d1f24152/modules/http2/h2_mplx.c#L1101-L1113",
+      "https://github.com/apache/tomcat/tree/main/java/org/apache/coyote/http2",
+      "https://github.com/apache/trafficserver/pull/10564",
+      "https://github.com/arkrwn/PoC/tree/main/CVE-2023-44487",
+      "https://github.com/bcdannyboy/CVE-2023-44487",
+      "https://github.com/caddyserver/caddy/issues/5877",
+      "https://github.com/caddyserver/caddy/releases/tag/v2.7.5",
+      "https://github.com/dotnet/announcements/issues/277",
+      "https://github.com/dotnet/core/blob/e4613450ea0da7fd2fc6b61dfb2c1c1dec1ce9ec/release-notes/6.0/6.0.23/6.0.23.md?plain=1#L73",
+      "https://github.com/eclipse/jetty.project/issues/10679",
+      "https://github.com/envoyproxy/envoy/pull/30055",
+      "https://github.com/etcd-io/etcd/issues/16740",
+      "https://github.com/facebook/proxygen/pull/466",
+      "https://github.com/golang/go/issues/63417",
+      "https://github.com/grpc/grpc-go/pull/6703",
+      "https://github.com/h2o/h2o/pull/3291",
+      "https://github.com/h2o/h2o/security/advisories/GHSA-2m7v-gc89-fjqf",
+      "https://github.com/haproxy/haproxy/issues/2312",
+      "https://github.com/icing/mod_h2/blob/0a864782af0a942aa2ad4ed960a6b32cd35bcf0a/mod_http2/README.md?plain=1#L239-L244",
+      "https://github.com/junkurihara/rust-rpxy/issues/97",
+      "https://github.com/kazu-yamamoto/http2/commit/f61d41a502bd0f60eb24e1ce14edc7b6df6722a1",
+      "https://github.com/kazu-yamamoto/http2/issues/93",
+      "https://github.com/kubernetes/kubernetes/pull/121120",
+      "https://github.com/line/armeria/pull/5232",
+      "https://github.com/linkerd/website/pull/1695/commits/4b9c6836471bc8270ab48aae6fd2181bc73fd632",
+      "https://github.com/micrictor/http2-rst-stream",
+      "https://github.com/microsoft/CBL-Mariner/pull/6381",
+      "https://github.com/netty/netty/commit/58f75f665aa81a8cbcf6ffa74820042a285c5e61",
+      "https://github.com/nghttp2/nghttp2/pull/1961",
+      "https://github.com/nghttp2/nghttp2/releases/tag/v1.57.0",
+      "https://github.com/ninenines/cowboy/issues/1615",
+      "https://github.com/nodejs/node/pull/50121",
+      "https://github.com/openresty/openresty/issues/930",
+      "https://github.com/opensearch-project/data-prepper/issues/3474",
+      "https://github.com/oqtane/oqtane.framework/discussions/3367",
+      "https://github.com/projectcontour/contour/pull/5826",
+      "https://github.com/tempesta-tech/tempesta/issues/1986",
+      "https://github.com/varnishcache/varnish-cache/issues/3996",
+      "https://groups.google.com/g/golang-announce/c/iNNxDTCjZvo",
+      "https://istio.io/latest/news/security/istio-security-2023-004/",
+      "https://linkerd.io/2023/10/12/linkerd-cve-2023-44487/",
+      "https://lists.apache.org/thread/5py8h42mxfsn8l1wy6o41xwhsjlsd87q",
+      "https://lists.debian.org/debian-lts-announce/2023/10/msg00020.html",
+      "https://lists.debian.org/debian-lts-announce/2023/10/msg00023.html",
+      "https://lists.debian.org/debian-lts-announce/2023/10/msg00024.html",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/JMEXY22BFG5Q64HQCM5CK2Q7KDKVV4TY/",
+      "https://lists.w3.org/Archives/Public/ietf-http-wg/2023OctDec/0025.html",
+      "https://mailman.nginx.org/pipermail/nginx-devel/2023-October/S36Q5HBXR7CAIMPLLPRSSSYR4PCMWILK.html",
+      "https://martinthomson.github.io/h2-stream-limits/draft-thomson-httpbis-h2-stream-limits.html",
+      "https://msrc.microsoft.com/blog/2023/10/microsoft-response-to-distributed-denial-of-service-ddos-attacks-against-http/2/",
+      "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-44487",
+      "https://my.f5.com/manage/s/article/K000137106",
+      "https://netty.io/news/2023/10/10/4-1-100-Final.html",
+      "https://news.ycombinator.com/item?id=37830987",
+      "https://news.ycombinator.com/item?id=37830998",
+      "https://news.ycombinator.com/item?id=37831062",
+      "https://news.ycombinator.com/item?id=37837043",
+      "https://openssf.org/blog/2023/10/10/http-2-rapid-reset-vulnerability-highlights-need-for-rapid-response/",
+      "https://seanmonstar.com/post/730794151136935936/hyper-http2-rapid-reset-unaffected",
+      "https://security.netapp.com/advisory/ntap-20231016-0001/",
+      "https://security.paloaltonetworks.com/CVE-2023-44487",
+      "https://tomcat.apache.org/security-10.html#Fixed_in_Apache_Tomcat_10.1.14",
+      "https://ubuntu.com/security/CVE-2023-44487",
+      "https://www.bleepingcomputer.com/news/security/new-http-2-rapid-reset-zero-day-attack-breaks-ddos-records/",
+      "https://www.cisa.gov/news-events/alerts/2023/10/10/http2-rapid-reset-vulnerability-cve-2023-44487",
+      "https://www.darkreading.com/cloud/internet-wide-zero-day-bug-fuels-largest-ever-ddos-event",
+      "https://www.debian.org/security/2023/dsa-5521",
+      "https://www.debian.org/security/2023/dsa-5522",
+      "https://www.haproxy.com/blog/haproxy-is-not-affected-by-the-http-2-rapid-reset-attack-cve-2023-44487",
+      "https://www.netlify.com/blog/netlify-successfully-mitigates-cve-2023-44487/",
+      "https://www.nginx.com/blog/http-2-rapid-reset-attack-impacting-f5-nginx-products/",
+      "https://www.openwall.com/lists/oss-security/2023/10/10/6",
+      "https://www.phoronix.com/news/HTTP2-Rapid-Reset-Attack",
+      "https://www.theregister.com/2023/10/10/http2_rapid_reset_zeroday/"
+     ],
+     "description": "The HTTP/2 protocol allows a denial of service (server resource consumption) because request cancellation can reset many streams quickly, as exploited in the wild in August through October 2023.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "golang.org/x/net",
+       "version": "v0.12.0"
+      }
+     },
+     "found": {
+      "versionConstraint": "<0.17.0 (unknown)",
+      "vulnerabilityID": "GHSA-qppj-fm5r-hxr3"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "d979aa1e7b7708a6",
+    "name": "golang.org/x/net",
+    "version": "v0.12.0",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/opt/bitnami/prometheus/.spdx-prometheus.spdx",
+      "layerID": "sha256:1d654fedcc2ffc062714b9adb2166c56879d30732bb8e9d153fbbdf9827260fa"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:golang:x/net:v0.12.0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/golang.org/x/net@v0.12.0",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "",
+     "architecture": ""
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-4374-p667-p6c8",
+    "dataSource": "https://github.com/advisories/GHSA-4374-p667-p6c8",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-4374-p667-p6c8"
+    ],
+    "description": "HTTP/2 rapid reset can cause excessive work in net/http",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "0.17.0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-39325",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-39325",
+     "namespace": "nvd:cpe",
+     "urls": [
+      "https://go.dev/cl/534215",
+      "https://go.dev/cl/534235",
+      "https://go.dev/issue/63417",
+      "https://groups.google.com/g/golang-announce/c/iNNxDTCjZvo/m/UDd7VKQuAAAJ",
+      "https://pkg.go.dev/vuln/GO-2023-2102"
+     ],
+     "description": "A malicious HTTP/2 client which rapidly creates requests and immediately resets them can cause excessive server resource consumption. While the total number of requests is bounded by the http2.Server.MaxConcurrentStreams setting, resetting an in-progress request allows the attacker to create a new request while the existing one is still executing. With the fix applied, HTTP/2 servers now bound the number of simultaneously executing handler goroutines to the stream concurrency limit (MaxConcurrentStreams). New requests arriving when at the limit (which can only happen after the client has reset an existing, in-flight request) will be queued until a handler exits. If the request queue grows too large, the server will terminate the connection. This issue is also fixed in golang.org/x/net/http2 for users manually configuring HTTP/2. The default stream concurrency limit is 250 streams (requests) per HTTP/2 connection. This value may be adjusted using the golang.org/x/net/http2 package; see the Server.MaxConcurrentStreams setting and the ConfigureServer function.",
+     "cvss": []
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "golang.org/x/net",
+       "version": "v0.12.0"
+      }
+     },
+     "found": {
+      "versionConstraint": "<0.17.0 (unknown)",
+      "vulnerabilityID": "GHSA-4374-p667-p6c8"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "845f7cf01ad79382",
+    "name": "golang.org/x/net",
+    "version": "v0.12.0",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/opt/bitnami/prometheus/bin/promtool",
+      "layerID": "sha256:1d654fedcc2ffc062714b9adb2166c56879d30732bb8e9d153fbbdf9827260fa"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:golang:x/net:v0.12.0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/golang.org/x/net@v0.12.0",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.20.10",
+     "architecture": "amd64",
+     "h1Digest": "h1:cfawfvKITfUsFCeJIHJrbSxpeu/E81khclypR0GVT50=",
+     "mainModule": "github.com/prometheus/prometheus"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-4374-p667-p6c8",
+    "dataSource": "https://github.com/advisories/GHSA-4374-p667-p6c8",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-4374-p667-p6c8"
+    ],
+    "description": "HTTP/2 rapid reset can cause excessive work in net/http",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "0.17.0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-39325",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-39325",
+     "namespace": "nvd:cpe",
+     "urls": [
+      "https://go.dev/cl/534215",
+      "https://go.dev/cl/534235",
+      "https://go.dev/issue/63417",
+      "https://groups.google.com/g/golang-announce/c/iNNxDTCjZvo/m/UDd7VKQuAAAJ",
+      "https://pkg.go.dev/vuln/GO-2023-2102"
+     ],
+     "description": "A malicious HTTP/2 client which rapidly creates requests and immediately resets them can cause excessive server resource consumption. While the total number of requests is bounded by the http2.Server.MaxConcurrentStreams setting, resetting an in-progress request allows the attacker to create a new request while the existing one is still executing. With the fix applied, HTTP/2 servers now bound the number of simultaneously executing handler goroutines to the stream concurrency limit (MaxConcurrentStreams). New requests arriving when at the limit (which can only happen after the client has reset an existing, in-flight request) will be queued until a handler exits. If the request queue grows too large, the server will terminate the connection. This issue is also fixed in golang.org/x/net/http2 for users manually configuring HTTP/2. The default stream concurrency limit is 250 streams (requests) per HTTP/2 connection. This value may be adjusted using the golang.org/x/net/http2 package; see the Server.MaxConcurrentStreams setting and the ConfigureServer function.",
+     "cvss": []
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "golang.org/x/net",
+       "version": "v0.12.0"
+      }
+     },
+     "found": {
+      "versionConstraint": "<0.17.0 (unknown)",
+      "vulnerabilityID": "GHSA-4374-p667-p6c8"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "d979aa1e7b7708a6",
+    "name": "golang.org/x/net",
+    "version": "v0.12.0",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/opt/bitnami/prometheus/.spdx-prometheus.spdx",
+      "layerID": "sha256:1d654fedcc2ffc062714b9adb2166c56879d30732bb8e9d153fbbdf9827260fa"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:golang:x/net:v0.12.0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/golang.org/x/net@v0.12.0",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "",
+     "architecture": ""
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-4374-p667-p6c8",
+    "dataSource": "https://github.com/advisories/GHSA-4374-p667-p6c8",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-4374-p667-p6c8"
+    ],
+    "description": "HTTP/2 rapid reset can cause excessive work in net/http",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "0.17.0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-39325",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-39325",
+     "namespace": "nvd:cpe",
+     "urls": [
+      "https://go.dev/cl/534215",
+      "https://go.dev/cl/534235",
+      "https://go.dev/issue/63417",
+      "https://groups.google.com/g/golang-announce/c/iNNxDTCjZvo/m/UDd7VKQuAAAJ",
+      "https://pkg.go.dev/vuln/GO-2023-2102"
+     ],
+     "description": "A malicious HTTP/2 client which rapidly creates requests and immediately resets them can cause excessive server resource consumption. While the total number of requests is bounded by the http2.Server.MaxConcurrentStreams setting, resetting an in-progress request allows the attacker to create a new request while the existing one is still executing. With the fix applied, HTTP/2 servers now bound the number of simultaneously executing handler goroutines to the stream concurrency limit (MaxConcurrentStreams). New requests arriving when at the limit (which can only happen after the client has reset an existing, in-flight request) will be queued until a handler exits. If the request queue grows too large, the server will terminate the connection. This issue is also fixed in golang.org/x/net/http2 for users manually configuring HTTP/2. The default stream concurrency limit is 250 streams (requests) per HTTP/2 connection. This value may be adjusted using the golang.org/x/net/http2 package; see the Server.MaxConcurrentStreams setting and the ConfigureServer function.",
+     "cvss": []
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "golang.org/x/net",
+       "version": "v0.12.0"
+      }
+     },
+     "found": {
+      "versionConstraint": "<0.17.0 (unknown)",
+      "vulnerabilityID": "GHSA-4374-p667-p6c8"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "d19693a6d4683c4a",
+    "name": "golang.org/x/net",
+    "version": "v0.12.0",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/opt/bitnami/prometheus/bin/prometheus",
+      "layerID": "sha256:1d654fedcc2ffc062714b9adb2166c56879d30732bb8e9d153fbbdf9827260fa"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:golang:x/net:v0.12.0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/golang.org/x/net@v0.12.0",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.20.10",
+     "architecture": "amd64",
+     "h1Digest": "h1:cfawfvKITfUsFCeJIHJrbSxpeu/E81khclypR0GVT50=",
+     "mainModule": "github.com/prometheus/prometheus"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-2wrh-6pvc-2jm9",
+    "dataSource": "https://github.com/advisories/GHSA-2wrh-6pvc-2jm9",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-2wrh-6pvc-2jm9"
+    ],
+    "description": "Improper rendering of text nodes in golang.org/x/net/html",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+      "metrics": {
+       "baseScore": 6.1,
+       "exploitabilityScore": 2.8,
+       "impactScore": 2.7
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "0.13.0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-3978",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-3978",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://go.dev/cl/514896",
+      "https://go.dev/issue/61615",
+      "https://pkg.go.dev/vuln/GO-2023-1988"
+     ],
+     "description": "Text nodes not in the HTML namespace are incorrectly literally rendered, causing text which should be escaped to not be. This could lead to an XSS attack.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+       "metrics": {
+        "baseScore": 6.1,
+        "exploitabilityScore": 2.8,
+        "impactScore": 2.7
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "golang.org/x/net",
+       "version": "v0.12.0"
+      }
+     },
+     "found": {
+      "versionConstraint": "<0.13.0 (unknown)",
+      "vulnerabilityID": "GHSA-2wrh-6pvc-2jm9"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "845f7cf01ad79382",
+    "name": "golang.org/x/net",
+    "version": "v0.12.0",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/opt/bitnami/prometheus/bin/promtool",
+      "layerID": "sha256:1d654fedcc2ffc062714b9adb2166c56879d30732bb8e9d153fbbdf9827260fa"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:golang:x/net:v0.12.0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/golang.org/x/net@v0.12.0",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.20.10",
+     "architecture": "amd64",
+     "h1Digest": "h1:cfawfvKITfUsFCeJIHJrbSxpeu/E81khclypR0GVT50=",
+     "mainModule": "github.com/prometheus/prometheus"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-2wrh-6pvc-2jm9",
+    "dataSource": "https://github.com/advisories/GHSA-2wrh-6pvc-2jm9",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-2wrh-6pvc-2jm9"
+    ],
+    "description": "Improper rendering of text nodes in golang.org/x/net/html",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+      "metrics": {
+       "baseScore": 6.1,
+       "exploitabilityScore": 2.8,
+       "impactScore": 2.7
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "0.13.0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-3978",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-3978",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://go.dev/cl/514896",
+      "https://go.dev/issue/61615",
+      "https://pkg.go.dev/vuln/GO-2023-1988"
+     ],
+     "description": "Text nodes not in the HTML namespace are incorrectly literally rendered, causing text which should be escaped to not be. This could lead to an XSS attack.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+       "metrics": {
+        "baseScore": 6.1,
+        "exploitabilityScore": 2.8,
+        "impactScore": 2.7
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "golang.org/x/net",
+       "version": "v0.12.0"
+      }
+     },
+     "found": {
+      "versionConstraint": "<0.13.0 (unknown)",
+      "vulnerabilityID": "GHSA-2wrh-6pvc-2jm9"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "d979aa1e7b7708a6",
+    "name": "golang.org/x/net",
+    "version": "v0.12.0",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/opt/bitnami/prometheus/.spdx-prometheus.spdx",
+      "layerID": "sha256:1d654fedcc2ffc062714b9adb2166c56879d30732bb8e9d153fbbdf9827260fa"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:golang:x/net:v0.12.0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/golang.org/x/net@v0.12.0",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "",
+     "architecture": ""
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-2wrh-6pvc-2jm9",
+    "dataSource": "https://github.com/advisories/GHSA-2wrh-6pvc-2jm9",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-2wrh-6pvc-2jm9"
+    ],
+    "description": "Improper rendering of text nodes in golang.org/x/net/html",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+      "metrics": {
+       "baseScore": 6.1,
+       "exploitabilityScore": 2.8,
+       "impactScore": 2.7
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "0.13.0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-3978",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-3978",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://go.dev/cl/514896",
+      "https://go.dev/issue/61615",
+      "https://pkg.go.dev/vuln/GO-2023-1988"
+     ],
+     "description": "Text nodes not in the HTML namespace are incorrectly literally rendered, causing text which should be escaped to not be. This could lead to an XSS attack.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+       "metrics": {
+        "baseScore": 6.1,
+        "exploitabilityScore": 2.8,
+        "impactScore": 2.7
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "golang.org/x/net",
+       "version": "v0.12.0"
+      }
+     },
+     "found": {
+      "versionConstraint": "<0.13.0 (unknown)",
+      "vulnerabilityID": "GHSA-2wrh-6pvc-2jm9"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "d19693a6d4683c4a",
+    "name": "golang.org/x/net",
+    "version": "v0.12.0",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/opt/bitnami/prometheus/bin/prometheus",
+      "layerID": "sha256:1d654fedcc2ffc062714b9adb2166c56879d30732bb8e9d153fbbdf9827260fa"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:golang:x/net:v0.12.0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/golang.org/x/net@v0.12.0",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.20.10",
+     "architecture": "amd64",
+     "h1Digest": "h1:cfawfvKITfUsFCeJIHJrbSxpeu/E81khclypR0GVT50=",
+     "mainModule": "github.com/prometheus/prometheus"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-4813",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2023-4813",
+    "namespace": "debian:distro:debian:11",
+    "severity": "Medium",
+    "urls": [
+     "https://security-tracker.debian.org/tracker/CVE-2023-4813"
+    ],
+    "description": "A flaw was found in glibc. In an uncommon situation, the gaih_inet function may use memory that has been freed, resulting in an application crash. This issue is only exploitable when the getaddrinfo function is called and the hosts database in /etc/nsswitch.conf is configured with SUCCESS=continue or SUCCESS=merge.",
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "wont-fix"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-4813",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-4813",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "http://www.openwall.com/lists/oss-security/2023/10/03/8",
+      "https://access.redhat.com/errata/RHSA-2023:5453",
+      "https://access.redhat.com/errata/RHSA-2023:5455",
+      "https://access.redhat.com/security/cve/CVE-2023-4813",
+      "https://bugzilla.redhat.com/show_bug.cgi?id=2237798"
+     ],
+     "description": "A flaw was found in glibc. In an uncommon situation, the gaih_inet function may use memory that has been freed, resulting in an application crash. This issue is only exploitable when the getaddrinfo function is called and the hosts database in /etc/nsswitch.conf is configured with SUCCESS=continue or SUCCESS=merge.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 5.9,
+        "exploitabilityScore": 2.2,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "secalert@redhat.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 5.9,
+        "exploitabilityScore": 2.2,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "debian",
+       "version": "11"
+      },
+      "namespace": "debian:distro:debian:11",
+      "package": {
+       "name": "glibc",
+       "version": "2.31-13+deb11u7"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2023-4813"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "f74e093bf35b0808",
+    "name": "libc6",
+    "version": "2.31-13+deb11u7",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:1d654fedcc2ffc062714b9adb2166c56879d30732bb8e9d153fbbdf9827260fa"
+     }
+    ],
+    "language": "",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:libc6:libc6:2.31-13+deb11u7:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/debian/libc6@2.31-13+deb11u7?arch=amd64&upstream=glibc&distro=debian-11",
+    "upstreams": [
+     {
+      "name": "glibc"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-4806",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2023-4806",
+    "namespace": "debian:distro:debian:11",
+    "severity": "Medium",
+    "urls": [
+     "https://security-tracker.debian.org/tracker/CVE-2023-4806"
+    ],
+    "description": "A flaw was found in glibc. In an extremely rare situation, the getaddrinfo function may access memory that has been freed, resulting in an application crash. This issue is only exploitable when a NSS module implements only the _nss_*_gethostbyname2_r and _nss_*_getcanonname_r hooks without implementing the _nss_*_gethostbyname3_r hook. The resolved name should return a large number of IPv6 and IPv4, and the call to the getaddrinfo function should have the AF_INET6 address family with AI_CANONNAME, AI_ALL and AI_V4MAPPED as flags.",
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "wont-fix"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-4806",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-4806",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "http://www.openwall.com/lists/oss-security/2023/10/03/4",
+      "http://www.openwall.com/lists/oss-security/2023/10/03/5",
+      "http://www.openwall.com/lists/oss-security/2023/10/03/6",
+      "http://www.openwall.com/lists/oss-security/2023/10/03/8",
+      "https://access.redhat.com/errata/RHSA-2023:5453",
+      "https://access.redhat.com/errata/RHSA-2023:5455",
+      "https://access.redhat.com/security/cve/CVE-2023-4806",
+      "https://bugzilla.redhat.com/show_bug.cgi?id=2237782",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/4DBUQRRPB47TC3NJOUIBVWUGFHBJAFDL/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/DFG4P76UHHZEWQ26FWBXG76N2QLKKPZA/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/NDAQWHTSVOCOZ5K6KPIWKRT3JX4RTZUR/",
+      "https://security.gentoo.org/glsa/202310-03"
+     ],
+     "description": "A flaw was found in glibc. In an extremely rare situation, the getaddrinfo function may access memory that has been freed, resulting in an application crash. This issue is only exploitable when a NSS module implements only the _nss_*_gethostbyname2_r and _nss_*_getcanonname_r hooks without implementing the _nss_*_gethostbyname3_r hook. The resolved name should return a large number of IPv6 and IPv4, and the call to the getaddrinfo function should have the AF_INET6 address family with AI_CANONNAME, AI_ALL and AI_V4MAPPED as flags.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 5.9,
+        "exploitabilityScore": 2.2,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "secalert@redhat.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 5.9,
+        "exploitabilityScore": 2.2,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "debian",
+       "version": "11"
+      },
+      "namespace": "debian:distro:debian:11",
+      "package": {
+       "name": "glibc",
+       "version": "2.31-13+deb11u7"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2023-4806"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "f74e093bf35b0808",
+    "name": "libc6",
+    "version": "2.31-13+deb11u7",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:1d654fedcc2ffc062714b9adb2166c56879d30732bb8e9d153fbbdf9827260fa"
+     }
+    ],
+    "language": "",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:libc6:libc6:2.31-13+deb11u7:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/debian/libc6@2.31-13+deb11u7?arch=amd64&upstream=glibc&distro=debian-11",
+    "upstreams": [
+     {
+      "name": "glibc"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2019-9192",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2019-9192",
+    "namespace": "debian:distro:debian:11",
+    "severity": "Negligible",
+    "urls": [
+     "https://security-tracker.debian.org/tracker/CVE-2019-9192"
+    ],
+    "description": "** DISPUTED ** In the GNU C Library (aka glibc or libc6) through 2.29, check_dst_limits_calc_pos_1 in posix/regexec.c has Uncontrolled Recursion, as demonstrated by '(|)(\\\\1\\\\1)*' in grep, a different issue than CVE-2018-20796. NOTE: the software maintainer disputes that this is a vulnerability because the behavior occurs only with a crafted pattern.",
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2019-9192",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2019-9192",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://sourceware.org/bugzilla/show_bug.cgi?id=24269",
+      "https://support.f5.com/csp/article/K26346590?utm_source=f5support&amp;utm_medium=RSS"
+     ],
+     "description": "** DISPUTED ** In the GNU C Library (aka glibc or libc6) through 2.29, check_dst_limits_calc_pos_1 in posix/regexec.c has Uncontrolled Recursion, as demonstrated by '(|)(\\\\1\\\\1)*' in grep, a different issue than CVE-2018-20796. NOTE: the software maintainer disputes that this is a vulnerability because the behavior occurs only with a crafted pattern.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+       "metrics": {
+        "baseScore": 5,
+        "exploitabilityScore": 10,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.0",
+       "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "debian",
+       "version": "11"
+      },
+      "namespace": "debian:distro:debian:11",
+      "package": {
+       "name": "glibc",
+       "version": "2.31-13+deb11u7"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2019-9192"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "f74e093bf35b0808",
+    "name": "libc6",
+    "version": "2.31-13+deb11u7",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:1d654fedcc2ffc062714b9adb2166c56879d30732bb8e9d153fbbdf9827260fa"
+     }
+    ],
+    "language": "",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:libc6:libc6:2.31-13+deb11u7:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/debian/libc6@2.31-13+deb11u7?arch=amd64&upstream=glibc&distro=debian-11",
+    "upstreams": [
+     {
+      "name": "glibc"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2019-1010025",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2019-1010025",
+    "namespace": "debian:distro:debian:11",
+    "severity": "Negligible",
+    "urls": [
+     "https://security-tracker.debian.org/tracker/CVE-2019-1010025"
+    ],
+    "description": "** DISPUTED ** GNU Libc current is affected by: Mitigation bypass. The impact is: Attacker may guess the heap addresses of pthread_created thread. The component is: glibc. NOTE: the vendor's position is \"ASLR bypass itself is not a vulnerability.\"",
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2019-1010025",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2019-1010025",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://security-tracker.debian.org/tracker/CVE-2019-1010025",
+      "https://sourceware.org/bugzilla/show_bug.cgi?id=22853",
+      "https://support.f5.com/csp/article/K06046097",
+      "https://support.f5.com/csp/article/K06046097?utm_source=f5support&amp;utm_medium=RSS",
+      "https://ubuntu.com/security/CVE-2019-1010025"
+     ],
+     "description": "** DISPUTED ** GNU Libc current is affected by: Mitigation bypass. The impact is: Attacker may guess the heap addresses of pthread_created thread. The component is: glibc. NOTE: the vendor's position is \"ASLR bypass itself is not a vulnerability.\"",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+       "metrics": {
+        "baseScore": 5,
+        "exploitabilityScore": 10,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.0",
+       "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+       "metrics": {
+        "baseScore": 5.3,
+        "exploitabilityScore": 3.9,
+        "impactScore": 1.4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "debian",
+       "version": "11"
+      },
+      "namespace": "debian:distro:debian:11",
+      "package": {
+       "name": "glibc",
+       "version": "2.31-13+deb11u7"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2019-1010025"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "f74e093bf35b0808",
+    "name": "libc6",
+    "version": "2.31-13+deb11u7",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:1d654fedcc2ffc062714b9adb2166c56879d30732bb8e9d153fbbdf9827260fa"
+     }
+    ],
+    "language": "",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:libc6:libc6:2.31-13+deb11u7:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/debian/libc6@2.31-13+deb11u7?arch=amd64&upstream=glibc&distro=debian-11",
+    "upstreams": [
+     {
+      "name": "glibc"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2019-1010024",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2019-1010024",
+    "namespace": "debian:distro:debian:11",
+    "severity": "Negligible",
+    "urls": [
+     "https://security-tracker.debian.org/tracker/CVE-2019-1010024"
+    ],
+    "description": "** DISPUTED ** GNU Libc current is affected by: Mitigation bypass. The impact is: Attacker may bypass ASLR using cache of thread stack and heap. The component is: glibc. NOTE: Upstream comments indicate \"this is being treated as a non-security bug and no real threat.\"",
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2019-1010024",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2019-1010024",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "http://www.securityfocus.com/bid/109162",
+      "https://security-tracker.debian.org/tracker/CVE-2019-1010024",
+      "https://sourceware.org/bugzilla/show_bug.cgi?id=22852",
+      "https://support.f5.com/csp/article/K06046097",
+      "https://support.f5.com/csp/article/K06046097?utm_source=f5support&amp;utm_medium=RSS",
+      "https://ubuntu.com/security/CVE-2019-1010024"
+     ],
+     "description": "** DISPUTED ** GNU Libc current is affected by: Mitigation bypass. The impact is: Attacker may bypass ASLR using cache of thread stack and heap. The component is: glibc. NOTE: Upstream comments indicate \"this is being treated as a non-security bug and no real threat.\"",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+       "metrics": {
+        "baseScore": 5,
+        "exploitabilityScore": 10,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.0",
+       "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+       "metrics": {
+        "baseScore": 5.3,
+        "exploitabilityScore": 3.9,
+        "impactScore": 1.4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "debian",
+       "version": "11"
+      },
+      "namespace": "debian:distro:debian:11",
+      "package": {
+       "name": "glibc",
+       "version": "2.31-13+deb11u7"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2019-1010024"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "f74e093bf35b0808",
+    "name": "libc6",
+    "version": "2.31-13+deb11u7",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:1d654fedcc2ffc062714b9adb2166c56879d30732bb8e9d153fbbdf9827260fa"
+     }
+    ],
+    "language": "",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:libc6:libc6:2.31-13+deb11u7:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/debian/libc6@2.31-13+deb11u7?arch=amd64&upstream=glibc&distro=debian-11",
+    "upstreams": [
+     {
+      "name": "glibc"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2019-1010023",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2019-1010023",
+    "namespace": "debian:distro:debian:11",
+    "severity": "Negligible",
+    "urls": [
+     "https://security-tracker.debian.org/tracker/CVE-2019-1010023"
+    ],
+    "description": "** DISPUTED ** GNU Libc current is affected by: Re-mapping current loaded library with malicious ELF file. The impact is: In worst case attacker may evaluate privileges. The component is: libld. The attack vector is: Attacker sends 2 ELF files to victim and asks to run ldd on it. ldd execute code. NOTE: Upstream comments indicate \"this is being treated as a non-security bug and no real threat.\"",
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2019-1010023",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2019-1010023",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "http://www.securityfocus.com/bid/109167",
+      "https://security-tracker.debian.org/tracker/CVE-2019-1010023",
+      "https://sourceware.org/bugzilla/show_bug.cgi?id=22851",
+      "https://support.f5.com/csp/article/K11932200?utm_source=f5support&amp;utm_medium=RSS",
+      "https://ubuntu.com/security/CVE-2019-1010023"
+     ],
+     "description": "** DISPUTED ** GNU Libc current is affected by: Re-mapping current loaded library with malicious ELF file. The impact is: In worst case attacker may evaluate privileges. The component is: libld. The attack vector is: Attacker sends 2 ELF files to victim and asks to run ldd on it. ldd execute code. NOTE: Upstream comments indicate \"this is being treated as a non-security bug and no real threat.\"",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+       "metrics": {
+        "baseScore": 6.8,
+        "exploitabilityScore": 8.6,
+        "impactScore": 6.4
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.0",
+       "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 8.8,
+        "exploitabilityScore": 2.8,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "debian",
+       "version": "11"
+      },
+      "namespace": "debian:distro:debian:11",
+      "package": {
+       "name": "glibc",
+       "version": "2.31-13+deb11u7"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2019-1010023"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "f74e093bf35b0808",
+    "name": "libc6",
+    "version": "2.31-13+deb11u7",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:1d654fedcc2ffc062714b9adb2166c56879d30732bb8e9d153fbbdf9827260fa"
+     }
+    ],
+    "language": "",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:libc6:libc6:2.31-13+deb11u7:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/debian/libc6@2.31-13+deb11u7?arch=amd64&upstream=glibc&distro=debian-11",
+    "upstreams": [
+     {
+      "name": "glibc"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2019-1010022",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2019-1010022",
+    "namespace": "debian:distro:debian:11",
+    "severity": "Negligible",
+    "urls": [
+     "https://security-tracker.debian.org/tracker/CVE-2019-1010022"
+    ],
+    "description": "** DISPUTED ** GNU Libc current is affected by: Mitigation bypass. The impact is: Attacker may bypass stack guard protection. The component is: nptl. The attack vector is: Exploit stack buffer overflow vulnerability and use this bypass vulnerability to bypass stack guard. NOTE: Upstream comments indicate \"this is being treated as a non-security bug and no real threat.\"",
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2019-1010022",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2019-1010022",
+     "namespace": "nvd:cpe",
+     "severity": "Critical",
+     "urls": [
+      "https://security-tracker.debian.org/tracker/CVE-2019-1010022",
+      "https://sourceware.org/bugzilla/show_bug.cgi?id=22850",
+      "https://sourceware.org/bugzilla/show_bug.cgi?id=22850#c3",
+      "https://ubuntu.com/security/CVE-2019-1010022"
+     ],
+     "description": "** DISPUTED ** GNU Libc current is affected by: Mitigation bypass. The impact is: Attacker may bypass stack guard protection. The component is: nptl. The attack vector is: Exploit stack buffer overflow vulnerability and use this bypass vulnerability to bypass stack guard. NOTE: Upstream comments indicate \"this is being treated as a non-security bug and no real threat.\"",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 10,
+        "impactScore": 6.4
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.0",
+       "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 9.8,
+        "exploitabilityScore": 3.9,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "debian",
+       "version": "11"
+      },
+      "namespace": "debian:distro:debian:11",
+      "package": {
+       "name": "glibc",
+       "version": "2.31-13+deb11u7"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2019-1010022"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "f74e093bf35b0808",
+    "name": "libc6",
+    "version": "2.31-13+deb11u7",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:1d654fedcc2ffc062714b9adb2166c56879d30732bb8e9d153fbbdf9827260fa"
+     }
+    ],
+    "language": "",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:libc6:libc6:2.31-13+deb11u7:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/debian/libc6@2.31-13+deb11u7?arch=amd64&upstream=glibc&distro=debian-11",
+    "upstreams": [
+     {
+      "name": "glibc"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2018-20796",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2018-20796",
+    "namespace": "debian:distro:debian:11",
+    "severity": "Negligible",
+    "urls": [
+     "https://security-tracker.debian.org/tracker/CVE-2018-20796"
+    ],
+    "description": "In the GNU C Library (aka glibc or libc6) through 2.29, check_dst_limits_calc_pos_1 in posix/regexec.c has Uncontrolled Recursion, as demonstrated by '(\\227|)(\\\\1\\\\1|t1|\\\\\\2537)+' in grep.",
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2018-20796",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2018-20796",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "http://www.securityfocus.com/bid/107160",
+      "https://debbugs.gnu.org/cgi/bugreport.cgi?bug=34141",
+      "https://lists.gnu.org/archive/html/bug-gnulib/2019-01/msg00108.html",
+      "https://security.netapp.com/advisory/ntap-20190315-0002/",
+      "https://support.f5.com/csp/article/K26346590?utm_source=f5support&amp;utm_medium=RSS"
+     ],
+     "description": "In the GNU C Library (aka glibc or libc6) through 2.29, check_dst_limits_calc_pos_1 in posix/regexec.c has Uncontrolled Recursion, as demonstrated by '(\\227|)(\\\\1\\\\1|t1|\\\\\\2537)+' in grep.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+       "metrics": {
+        "baseScore": 5,
+        "exploitabilityScore": 10,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.0",
+       "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "debian",
+       "version": "11"
+      },
+      "namespace": "debian:distro:debian:11",
+      "package": {
+       "name": "glibc",
+       "version": "2.31-13+deb11u7"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2018-20796"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "f74e093bf35b0808",
+    "name": "libc6",
+    "version": "2.31-13+deb11u7",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:1d654fedcc2ffc062714b9adb2166c56879d30732bb8e9d153fbbdf9827260fa"
+     }
+    ],
+    "language": "",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:libc6:libc6:2.31-13+deb11u7:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/debian/libc6@2.31-13+deb11u7?arch=amd64&upstream=glibc&distro=debian-11",
+    "upstreams": [
+     {
+      "name": "glibc"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2010-4756",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2010-4756",
+    "namespace": "debian:distro:debian:11",
+    "severity": "Negligible",
+    "urls": [
+     "https://security-tracker.debian.org/tracker/CVE-2010-4756"
+    ],
+    "description": "The glob implementation in the GNU C Library (aka glibc or libc6) allows remote authenticated users to cause a denial of service (CPU and memory consumption) via crafted glob expressions that do not match any pathnames, as demonstrated by glob expressions in STAT commands to an FTP daemon, a different vulnerability than CVE-2010-2632.",
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2010-4756",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2010-4756",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "http://cxib.net/stuff/glob-0day.c",
+      "http://securityreason.com/achievement_securityalert/89",
+      "http://securityreason.com/exploitalert/9223",
+      "https://bugzilla.redhat.com/show_bug.cgi?id=681681",
+      "https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2010-4756"
+     ],
+     "description": "The glob implementation in the GNU C Library (aka glibc or libc6) allows remote authenticated users to cause a denial of service (CPU and memory consumption) via crafted glob expressions that do not match any pathnames, as demonstrated by glob expressions in STAT commands to an FTP daemon, a different vulnerability than CVE-2010-2632.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:S/C:N/I:N/A:P",
+       "metrics": {
+        "baseScore": 4,
+        "exploitabilityScore": 8,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "debian",
+       "version": "11"
+      },
+      "namespace": "debian:distro:debian:11",
+      "package": {
+       "name": "glibc",
+       "version": "2.31-13+deb11u7"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2010-4756"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "f74e093bf35b0808",
+    "name": "libc6",
+    "version": "2.31-13+deb11u7",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:1d654fedcc2ffc062714b9adb2166c56879d30732bb8e9d153fbbdf9827260fa"
+     }
+    ],
+    "language": "",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:libc6:libc6:2.31-13+deb11u7:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/debian/libc6@2.31-13+deb11u7?arch=amd64&upstream=glibc&distro=debian-11",
+    "upstreams": [
+     {
+      "name": "glibc"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2022-41409",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2022-41409",
+    "namespace": "debian:distro:debian:11",
+    "severity": "Negligible",
+    "urls": [
+     "https://security-tracker.debian.org/tracker/CVE-2022-41409"
+    ],
+    "description": "Integer overflow vulnerability in pcre2test before 10.41 allows attackers to cause a denial of service or other unspecified impacts via negative input.",
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-41409",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-41409",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/PCRE2Project/pcre2/commit/94e1c001761373b7d9450768aa15d04c25547a35",
+      "https://github.com/PCRE2Project/pcre2/issues/141"
+     ],
+     "description": "Integer overflow vulnerability in pcre2test before 10.41 allows attackers to cause a denial of service or other unspecified impacts via negative input.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "debian",
+       "version": "11"
+      },
+      "namespace": "debian:distro:debian:11",
+      "package": {
+       "name": "pcre2",
+       "version": "10.36-2+deb11u1"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2022-41409"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "c2b2703f3a391847",
+    "name": "libpcre2-8-0",
+    "version": "10.36-2+deb11u1",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:1d654fedcc2ffc062714b9adb2166c56879d30732bb8e9d153fbbdf9827260fa"
+     }
+    ],
+    "language": "",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:libpcre2-8-0:libpcre2-8-0:10.36-2+deb11u1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libpcre2-8-0:libpcre2_8_0:10.36-2+deb11u1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libpcre2_8_0:libpcre2-8-0:10.36-2+deb11u1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libpcre2_8_0:libpcre2_8_0:10.36-2+deb11u1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libpcre2-8:libpcre2-8-0:10.36-2+deb11u1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libpcre2-8:libpcre2_8_0:10.36-2+deb11u1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libpcre2_8:libpcre2-8-0:10.36-2+deb11u1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libpcre2_8:libpcre2_8_0:10.36-2+deb11u1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libpcre2:libpcre2-8-0:10.36-2+deb11u1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libpcre2:libpcre2_8_0:10.36-2+deb11u1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/debian/libpcre2-8-0@10.36-2+deb11u1?arch=amd64&upstream=pcre2&distro=debian-11",
+    "upstreams": [
+     {
+      "name": "pcre2"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2019-20838",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2019-20838",
+    "namespace": "debian:distro:debian:11",
+    "severity": "Negligible",
+    "urls": [
+     "https://security-tracker.debian.org/tracker/CVE-2019-20838"
+    ],
+    "description": "libpcre in PCRE before 8.43 allows a subject buffer over-read in JIT when UTF is disabled, and \\X or \\R has more than one fixed quantifier, a related issue to CVE-2019-20454.",
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2019-20838",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2019-20838",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "http://seclists.org/fulldisclosure/2020/Dec/32",
+      "http://seclists.org/fulldisclosure/2021/Feb/14",
+      "https://bugs.gentoo.org/717920",
+      "https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772@%3Cdev.mina.apache.org%3E",
+      "https://support.apple.com/kb/HT211931",
+      "https://support.apple.com/kb/HT212147",
+      "https://www.pcre.org/original/changelog.txt"
+     ],
+     "description": "libpcre in PCRE before 8.43 allows a subject buffer over-read in JIT when UTF is disabled, and \\X or \\R has more than one fixed quantifier, a related issue to CVE-2019-20454.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+       "metrics": {
+        "baseScore": 4.3,
+        "exploitabilityScore": 8.6,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "debian",
+       "version": "11"
+      },
+      "namespace": "debian:distro:debian:11",
+      "package": {
+       "name": "pcre3",
+       "version": "2:8.39-13"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2019-20838"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "7759f1a277e93c8e",
+    "name": "libpcre3",
+    "version": "2:8.39-13",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:1d654fedcc2ffc062714b9adb2166c56879d30732bb8e9d153fbbdf9827260fa"
+     }
+    ],
+    "language": "",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:libpcre3:libpcre3:2:8.39-13:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/debian/libpcre3@2:8.39-13?arch=amd64&upstream=pcre3&distro=debian-11",
+    "upstreams": [
+     {
+      "name": "pcre3"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2017-7246",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2017-7246",
+    "namespace": "debian:distro:debian:11",
+    "severity": "Negligible",
+    "urls": [
+     "https://security-tracker.debian.org/tracker/CVE-2017-7246"
+    ],
+    "description": "Stack-based buffer overflow in the pcre32_copy_substring function in pcre_get.c in libpcre1 in PCRE 8.40 allows remote attackers to cause a denial of service (WRITE of size 268) or possibly have unspecified other impact via a crafted file.",
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2017-7246",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2017-7246",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "http://www.securityfocus.com/bid/97067",
+      "https://access.redhat.com/errata/RHSA-2018:2486",
+      "https://blogs.gentoo.org/ago/2017/03/20/libpcre-two-stack-based-buffer-overflow-write-in-pcre32_copy_substring-pcre_get-c/",
+      "https://security.gentoo.org/glsa/201710-25"
+     ],
+     "description": "Stack-based buffer overflow in the pcre32_copy_substring function in pcre_get.c in libpcre1 in PCRE 8.40 allows remote attackers to cause a denial of service (WRITE of size 268) or possibly have unspecified other impact via a crafted file.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+       "metrics": {
+        "baseScore": 6.8,
+        "exploitabilityScore": 8.6,
+        "impactScore": 6.4
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.0",
+       "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 7.8,
+        "exploitabilityScore": 1.8,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "debian",
+       "version": "11"
+      },
+      "namespace": "debian:distro:debian:11",
+      "package": {
+       "name": "pcre3",
+       "version": "2:8.39-13"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2017-7246"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "7759f1a277e93c8e",
+    "name": "libpcre3",
+    "version": "2:8.39-13",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:1d654fedcc2ffc062714b9adb2166c56879d30732bb8e9d153fbbdf9827260fa"
+     }
+    ],
+    "language": "",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:libpcre3:libpcre3:2:8.39-13:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/debian/libpcre3@2:8.39-13?arch=amd64&upstream=pcre3&distro=debian-11",
+    "upstreams": [
+     {
+      "name": "pcre3"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2017-7245",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2017-7245",
+    "namespace": "debian:distro:debian:11",
+    "severity": "Negligible",
+    "urls": [
+     "https://security-tracker.debian.org/tracker/CVE-2017-7245"
+    ],
+    "description": "Stack-based buffer overflow in the pcre32_copy_substring function in pcre_get.c in libpcre1 in PCRE 8.40 allows remote attackers to cause a denial of service (WRITE of size 4) or possibly have unspecified other impact via a crafted file.",
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2017-7245",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2017-7245",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "http://www.securityfocus.com/bid/97067",
+      "https://access.redhat.com/errata/RHSA-2018:2486",
+      "https://blogs.gentoo.org/ago/2017/03/20/libpcre-two-stack-based-buffer-overflow-write-in-pcre32_copy_substring-pcre_get-c/",
+      "https://security.gentoo.org/glsa/201710-25"
+     ],
+     "description": "Stack-based buffer overflow in the pcre32_copy_substring function in pcre_get.c in libpcre1 in PCRE 8.40 allows remote attackers to cause a denial of service (WRITE of size 4) or possibly have unspecified other impact via a crafted file.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+       "metrics": {
+        "baseScore": 6.8,
+        "exploitabilityScore": 8.6,
+        "impactScore": 6.4
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.0",
+       "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 7.8,
+        "exploitabilityScore": 1.8,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "debian",
+       "version": "11"
+      },
+      "namespace": "debian:distro:debian:11",
+      "package": {
+       "name": "pcre3",
+       "version": "2:8.39-13"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2017-7245"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "7759f1a277e93c8e",
+    "name": "libpcre3",
+    "version": "2:8.39-13",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:1d654fedcc2ffc062714b9adb2166c56879d30732bb8e9d153fbbdf9827260fa"
+     }
+    ],
+    "language": "",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:libpcre3:libpcre3:2:8.39-13:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/debian/libpcre3@2:8.39-13?arch=amd64&upstream=pcre3&distro=debian-11",
+    "upstreams": [
+     {
+      "name": "pcre3"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2017-16231",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2017-16231",
+    "namespace": "debian:distro:debian:11",
+    "severity": "Negligible",
+    "urls": [
+     "https://security-tracker.debian.org/tracker/CVE-2017-16231"
+    ],
+    "description": "** DISPUTED ** In PCRE 8.41, after compiling, a pcretest load test PoC produces a crash overflow in the function match() in pcre_exec.c because of a self-recursive call. NOTE: third parties dispute the relevance of this report, noting that there are options that can be used to limit the amount of stack that is used.",
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2017-16231",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2017-16231",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "http://packetstormsecurity.com/files/150897/PCRE-8.41-Buffer-Overflow.html",
+      "http://seclists.org/fulldisclosure/2018/Dec/33",
+      "http://www.openwall.com/lists/oss-security/2017/11/01/11",
+      "http://www.openwall.com/lists/oss-security/2017/11/01/3",
+      "http://www.openwall.com/lists/oss-security/2017/11/01/7",
+      "http://www.openwall.com/lists/oss-security/2017/11/01/8",
+      "http://www.securityfocus.com/bid/101688",
+      "https://bugs.exim.org/show_bug.cgi?id=2047"
+     ],
+     "description": "** DISPUTED ** In PCRE 8.41, after compiling, a pcretest load test PoC produces a crash overflow in the function match() in pcre_exec.c because of a self-recursive call. NOTE: third parties dispute the relevance of this report, noting that there are options that can be used to limit the amount of stack that is used.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:L/AC:L/Au:N/C:N/I:N/A:P",
+       "metrics": {
+        "baseScore": 2.1,
+        "exploitabilityScore": 3.9,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.0",
+       "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 5.5,
+        "exploitabilityScore": 1.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "debian",
+       "version": "11"
+      },
+      "namespace": "debian:distro:debian:11",
+      "package": {
+       "name": "pcre3",
+       "version": "2:8.39-13"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2017-16231"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "7759f1a277e93c8e",
+    "name": "libpcre3",
+    "version": "2:8.39-13",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:1d654fedcc2ffc062714b9adb2166c56879d30732bb8e9d153fbbdf9827260fa"
+     }
+    ],
+    "language": "",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:libpcre3:libpcre3:2:8.39-13:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/debian/libpcre3@2:8.39-13?arch=amd64&upstream=pcre3&distro=debian-11",
+    "upstreams": [
+     {
+      "name": "pcre3"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2017-11164",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2017-11164",
+    "namespace": "debian:distro:debian:11",
+    "severity": "Negligible",
+    "urls": [
+     "https://security-tracker.debian.org/tracker/CVE-2017-11164"
+    ],
+    "description": "In PCRE 8.41, the OP_KETRMAX feature in the match function in pcre_exec.c allows stack exhaustion (uncontrolled recursion) when processing a crafted regular expression.",
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2017-11164",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2017-11164",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "http://openwall.com/lists/oss-security/2017/07/11/3",
+      "http://www.openwall.com/lists/oss-security/2023/04/11/1",
+      "http://www.openwall.com/lists/oss-security/2023/04/12/1",
+      "http://www.securityfocus.com/bid/99575",
+      "https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772@%3Cdev.mina.apache.org%3E"
+     ],
+     "description": "In PCRE 8.41, the OP_KETRMAX feature in the match function in pcre_exec.c allows stack exhaustion (uncontrolled recursion) when processing a crafted regular expression.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
+       "metrics": {
+        "baseScore": 7.8,
+        "exploitabilityScore": 10,
+        "impactScore": 6.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.0",
+       "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "debian",
+       "version": "11"
+      },
+      "namespace": "debian:distro:debian:11",
+      "package": {
+       "name": "pcre3",
+       "version": "2:8.39-13"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2017-11164"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "7759f1a277e93c8e",
+    "name": "libpcre3",
+    "version": "2:8.39-13",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:1d654fedcc2ffc062714b9adb2166c56879d30732bb8e9d153fbbdf9827260fa"
+     }
+    ],
+    "language": "",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:libpcre3:libpcre3:2:8.39-13:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/debian/libpcre3@2:8.39-13?arch=amd64&upstream=pcre3&distro=debian-11",
+    "upstreams": [
+     {
+      "name": "pcre3"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2022-48303",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2022-48303",
+    "namespace": "debian:distro:debian:11",
+    "severity": "Negligible",
+    "urls": [
+     "https://security-tracker.debian.org/tracker/CVE-2022-48303"
+    ],
+    "description": "GNU Tar through 1.34 has a one-byte out-of-bounds read that results in use of uninitialized memory for a conditional jump. Exploitation to change the flow of control has not been demonstrated. The issue occurs in from_header in list.c via a V7 archive in which mtime has approximately 11 whitespace characters.",
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-48303",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-48303",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/CRY7VEL4AIG3GLIEVCTOXRZNSVYDYYUD/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/X5VQYCO52Z7GAVCLRYUITN7KXHLRZQS4/",
+      "https://savannah.gnu.org/bugs/?62387",
+      "https://savannah.gnu.org/patch/?10307"
+     ],
+     "description": "GNU Tar through 1.34 has a one-byte out-of-bounds read that results in use of uninitialized memory for a conditional jump. Exploitation to change the flow of control has not been demonstrated. The issue occurs in from_header in list.c via a V7 archive in which mtime has approximately 11 whitespace characters.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 5.5,
+        "exploitabilityScore": 1.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "debian",
+       "version": "11"
+      },
+      "namespace": "debian:distro:debian:11",
+      "package": {
+       "name": "tar",
+       "version": "1.34+dfsg-1"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2022-48303"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "3085d22a6edfb2d3",
+    "name": "tar",
+    "version": "1.34+dfsg-1",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:1d654fedcc2ffc062714b9adb2166c56879d30732bb8e9d153fbbdf9827260fa"
+     }
+    ],
+    "language": "",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:tar:tar:1.34+dfsg-1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/debian/tar@1.34+dfsg-1?arch=amd64&distro=debian-11",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2005-2541",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2005-2541",
+    "namespace": "debian:distro:debian:11",
+    "severity": "Negligible",
+    "urls": [
+     "https://security-tracker.debian.org/tracker/CVE-2005-2541"
+    ],
+    "description": "Tar 1.15.1 does not properly warn the user when extracting setuid or setgid files, which may allow local users or remote attackers to gain privileges.",
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2005-2541",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2005-2541",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "http://marc.info/?l=bugtraq&m=112327628230258&w=2",
+      "https://lists.apache.org/thread.html/rc713534b10f9daeee2e0990239fa407e2118e4aa9e88a7041177497c@%3Cissues.guacamole.apache.org%3E"
+     ],
+     "description": "Tar 1.15.1 does not properly warn the user when extracting setuid or setgid files, which may allow local users or remote attackers to gain privileges.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+       "metrics": {
+        "baseScore": 10,
+        "exploitabilityScore": 10,
+        "impactScore": 10
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "debian",
+       "version": "11"
+      },
+      "namespace": "debian:distro:debian:11",
+      "package": {
+       "name": "tar",
+       "version": "1.34+dfsg-1"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2005-2541"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "3085d22a6edfb2d3",
+    "name": "tar",
+    "version": "1.34+dfsg-1",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:1d654fedcc2ffc062714b9adb2166c56879d30732bb8e9d153fbbdf9827260fa"
+     }
+    ],
+    "language": "",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:tar:tar:1.34+dfsg-1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/debian/tar@1.34+dfsg-1?arch=amd64&distro=debian-11",
+    "upstreams": []
+   }
+  }
+ ],
+ "source": {
+  "type": "image",
+  "target": {
+   "userInput": "docker.io/rapidfort/prometheus:latest",
+   "imageID": "sha256:3a0661519d2e058c06f32766a8cfd3c9fd5d34f9f33a2f7626d1e588c69ddce6",
+   "manifestDigest": "sha256:580f13f561cee131accd3162eff8f4e9c512decfc7af50875f05d249085908cd",
+   "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+   "tags": [
+    "rapidfort/prometheus:latest"
+   ],
+   "imageSize": 183142359,
+   "layers": [
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:1d654fedcc2ffc062714b9adb2166c56879d30732bb8e9d153fbbdf9827260fa",
+     "size": 183142359
+    }
+   ],
+   "manifest": "eyJzY2hlbWFWZXJzaW9uIjoyLCJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmRpc3RyaWJ1dGlvbi5tYW5pZmVzdC52Mitqc29uIiwiY29uZmlnIjp7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuY29udGFpbmVyLmltYWdlLnYxK2pzb24iLCJzaXplIjo2Njk5LCJkaWdlc3QiOiJzaGEyNTY6M2EwNjYxNTE5ZDJlMDU4YzA2ZjMyNzY2YThjZmQzYzlmZDVkMzRmOWYzM2EyZjc2MjZkMWU1ODhjNjlkZGNlNiJ9LCJsYXllcnMiOlt7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjoxODQwNTEyMDAsImRpZ2VzdCI6InNoYTI1NjoxZDY1NGZlZGNjMmZmYzA2MjcxNGI5YWRiMjE2NmM1Njg3OWQzMDczMmJiOGU5ZDE1M2ZiYmRmOTgyNzI2MGZhIn1dfQ==",
+   "config": "eyJhcmNoaXRlY3R1cmUiOiJhbWQ2NCIsImNvbmZpZyI6eyJIb3N0bmFtZSI6IiIsIkRvbWFpbm5hbWUiOiIiLCJVc2VyIjoiMTAwMSIsIkF0dGFjaFN0ZGluIjpmYWxzZSwiQXR0YWNoU3Rkb3V0IjpmYWxzZSwiQXR0YWNoU3RkZXJyIjpmYWxzZSwiRXhwb3NlZFBvcnRzIjp7IjkwOTAvdGNwIjp7fX0sIlR0eSI6ZmFsc2UsIk9wZW5TdGRpbiI6ZmFsc2UsIlN0ZGluT25jZSI6ZmFsc2UsIkVudiI6WyJQQVRIPS9vcHQvYml0bmFtaS9wcm9tZXRoZXVzL2JpbjovdXNyL2xvY2FsL3NiaW46L3Vzci9sb2NhbC9iaW46L3Vzci9zYmluOi91c3IvYmluOi9zYmluOi9iaW4iLCJIT01FPS8iLCJPU19BUkNIPWFtZDY0IiwiT1NfRkxBVk9VUj1kZWJpYW4tMTEiLCJPU19OQU1FPWxpbnV4IiwiQVBQX1ZFUlNJT049Mi40Ny4xIiwiQklUTkFNSV9BUFBfTkFNRT1wcm9tZXRoZXVzIl0sIkNtZCI6WyItLWNvbmZpZy5maWxlPS9vcHQvYml0bmFtaS9wcm9tZXRoZXVzL2NvbmYvcHJvbWV0aGV1cy55bWwiLCItLXN0b3JhZ2UudHNkYi5wYXRoPS9vcHQvYml0bmFtaS9wcm9tZXRoZXVzL2RhdGEiLCItLXdlYi5jb25zb2xlLmxpYnJhcmllcz0vb3B0L2JpdG5hbWkvcHJvbWV0aGV1cy9jb25mL2NvbnNvbGVfbGlicmFyaWVzIiwiLS13ZWIuY29uc29sZS50ZW1wbGF0ZXM9L29wdC9iaXRuYW1pL3Byb21ldGhldXMvY29uZi9jb25zb2xlcyJdLCJJbWFnZSI6InNoYTI1NjoxNDRjMWI3NzRiNjQzY2E5MjQ1MWI1MzQ5NmQ0YzgxZWY0NDgyNTFiZDRmYmY3ZmEzZDQyNzJhYjViN2M2YmQ1IiwiVm9sdW1lcyI6bnVsbCwiV29ya2luZ0RpciI6Ii9vcHQvYml0bmFtaS9wcm9tZXRoZXVzIiwiRW50cnlwb2ludCI6WyIvb3B0L2JpdG5hbWkvcHJvbWV0aGV1cy9iaW4vcHJvbWV0aGV1cyJdLCJPbkJ1aWxkIjpudWxsLCJMYWJlbHMiOnsiY29tLnZtd2FyZS5jcC5hcnRpZmFjdC5mbGF2b3IiOiJzaGEyNTY6MWUxYjQ2NTdhNzdmMGQ0N2U5MjIwZjBjMzdiOWJmNzgwMjU4MWI5MzIxNGZmZjdkMWJkMjM2NGM4YmYyMmU4ZSIsImlvLmJ1aWxkYWgudmVyc2lvbiI6IjEuMjkuMCIsIm9yZy5vcGVuY29udGFpbmVycy5pbWFnZS5iYXNlLm5hbWUiOiJkb2NrZXIuaW8vYml0bmFtaS9taW5pZGViOmJ1bGxzZXllIiwib3JnLm9wZW5jb250YWluZXJzLmltYWdlLmNyZWF0ZWQiOiIyMDIzLTEwLTExVDA3OjU3OjA2WiIsIm9yZy5vcGVuY29udGFpbmVycy5pbWFnZS5kZXNjcmlwdGlvbiI6IkFwcGxpY2F0aW9uIHBhY2thZ2VkIGJ5IFZNd2FyZSwgSW5jIiwib3JnLm9wZW5jb250YWluZXJzLmltYWdlLmxpY2Vuc2VzIjoiQXBhY2hlLTIuMCIsIm9yZy5vcGVuY29udGFpbmVycy5pbWFnZS5yZWYubmFtZSI6IjIuNDcuMS1kZWJpYW4tMTEtcjIiLCJvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UudGl0bGUiOiJwcm9tZXRoZXVzIiwib3JnLm9wZW5jb250YWluZXJzLmltYWdlLnZlbmRvciI6IlZNd2FyZSwgSW5jLiIsIm9yZy5vcGVuY29udGFpbmVycy5pbWFnZS52ZXJzaW9uIjoiMi40Ny4xIiwib3JpZ19pbWFnZV9kaWdlc3QiOiJzaGEyNTY6MGE1ZmViNjA3ZjkzZmFiNmFmZmFjNDFiNjBjMWE3ZDk1MjNhNzhmMzQ5NDBkYWY4ZGRlNjFiZDgxODNiMDUxZSIsInJmLmZiNmJiNTk1LTA5MDgtNDRlMi05YzM0LTU4NzM5MDIyNjMxYSI6ImRvY2tlci5pby9iaXRuYW1pL3Byb21ldGhldXM6Mi40Ny4xLWRlYmlhbi0xMS1yMiIsInJmX2ltYWdlX2d1aWQuNTQzNDI4ZTktYzRlZC00OTE2LWJiNzgtNzU1NjAxZWM4ZTg1IjoiNTQzNDI4ZTktYzRlZC00OTE2LWJiNzgtNzU1NjAxZWM4ZTg1In19LCJjb250YWluZXIiOiJkZjdjYTkyOGY2N2IyYjY1ZWViNTcyYTUxNmZjYmQxOGQ3NTEwNzAxYTJhYTUxYTZmMGY0YWUzZjkxZWRmZTRkIiwiY29udGFpbmVyX2NvbmZpZyI6eyJIb3N0bmFtZSI6ImRmN2NhOTI4ZjY3YiIsIkRvbWFpbm5hbWUiOiIiLCJVc2VyIjoiMTAwMSIsIkF0dGFjaFN0ZGluIjpmYWxzZSwiQXR0YWNoU3Rkb3V0IjpmYWxzZSwiQXR0YWNoU3RkZXJyIjpmYWxzZSwiRXhwb3NlZFBvcnRzIjp7IjkwOTAvdGNwIjp7fX0sIlR0eSI6ZmFsc2UsIk9wZW5TdGRpbiI6ZmFsc2UsIlN0ZGluT25jZSI6ZmFsc2UsIkVudiI6WyJQQVRIPS9vcHQvYml0bmFtaS9wcm9tZXRoZXVzL2JpbjovdXNyL2xvY2FsL3NiaW46L3Vzci9sb2NhbC9iaW46L3Vzci9zYmluOi91c3IvYmluOi9zYmluOi9iaW4iLCJIT01FPS8iLCJPU19BUkNIPWFtZDY0IiwiT1NfRkxBVk9VUj1kZWJpYW4tMTEiLCJPU19OQU1FPWxpbnV4IiwiQVBQX1ZFUlNJT049Mi40Ny4xIiwiQklUTkFNSV9BUFBfTkFNRT1wcm9tZXRoZXVzIl0sIkNtZCI6WyIvYmluL3NoIiwiLWMiLCIjKG5vcCkgIiwiTEFCRUwgb3JpZ19pbWFnZV9kaWdlc3Q9c2hhMjU2OjBhNWZlYjYwN2Y5M2ZhYjZhZmZhYzQxYjYwYzFhN2Q5NTIzYTc4ZjM0OTQwZGFmOGRkZTYxYmQ4MTgzYjA1MWUiXSwiSW1hZ2UiOiJzaGEyNTY6MTQ0YzFiNzc0YjY0M2NhOTI0NTFiNTM0OTZkNGM4MWVmNDQ4MjUxYmQ0ZmJmN2ZhM2Q0MjcyYWI1YjdjNmJkNSIsIlZvbHVtZXMiOm51bGwsIldvcmtpbmdEaXIiOiIvb3B0L2JpdG5hbWkvcHJvbWV0aGV1cyIsIkVudHJ5cG9pbnQiOlsiL29wdC9iaXRuYW1pL3Byb21ldGhldXMvYmluL3Byb21ldGhldXMiXSwiT25CdWlsZCI6bnVsbCwiTGFiZWxzIjp7ImNvbS52bXdhcmUuY3AuYXJ0aWZhY3QuZmxhdm9yIjoic2hhMjU2OjFlMWI0NjU3YTc3ZjBkNDdlOTIyMGYwYzM3YjliZjc4MDI1ODFiOTMyMTRmZmY3ZDFiZDIzNjRjOGJmMjJlOGUiLCJpby5idWlsZGFoLnZlcnNpb24iOiIxLjI5LjAiLCJvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UuYmFzZS5uYW1lIjoiZG9ja2VyLmlvL2JpdG5hbWkvbWluaWRlYjpidWxsc2V5ZSIsIm9yZy5vcGVuY29udGFpbmVycy5pbWFnZS5jcmVhdGVkIjoiMjAyMy0xMC0xMVQwNzo1NzowNloiLCJvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UuZGVzY3JpcHRpb24iOiJBcHBsaWNhdGlvbiBwYWNrYWdlZCBieSBWTXdhcmUsIEluYyIsIm9yZy5vcGVuY29udGFpbmVycy5pbWFnZS5saWNlbnNlcyI6IkFwYWNoZS0yLjAiLCJvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UucmVmLm5hbWUiOiIyLjQ3LjEtZGViaWFuLTExLXIyIiwib3JnLm9wZW5jb250YWluZXJzLmltYWdlLnRpdGxlIjoicHJvbWV0aGV1cyIsIm9yZy5vcGVuY29udGFpbmVycy5pbWFnZS52ZW5kb3IiOiJWTXdhcmUsIEluYy4iLCJvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UudmVyc2lvbiI6IjIuNDcuMSIsIm9yaWdfaW1hZ2VfZGlnZXN0Ijoic2hhMjU2OjBhNWZlYjYwN2Y5M2ZhYjZhZmZhYzQxYjYwYzFhN2Q5NTIzYTc4ZjM0OTQwZGFmOGRkZTYxYmQ4MTgzYjA1MWUiLCJyZi5mYjZiYjU5NS0wOTA4LTQ0ZTItOWMzNC01ODczOTAyMjYzMWEiOiJkb2NrZXIuaW8vYml0bmFtaS9wcm9tZXRoZXVzOjIuNDcuMS1kZWJpYW4tMTEtcjIiLCJyZl9pbWFnZV9ndWlkLjU0MzQyOGU5LWM0ZWQtNDkxNi1iYjc4LTc1NTYwMWVjOGU4NSI6IjU0MzQyOGU5LWM0ZWQtNDkxNi1iYjc4LTc1NTYwMWVjOGU4NSJ9fSwiY3JlYXRlZCI6IjIwMjMtMTAtMTdUMjA6NDQ6MjMuNTA0MjI4ODUzWiIsImRvY2tlcl92ZXJzaW9uIjoiMjQuMC42IiwiaGlzdG9yeSI6W3siY3JlYXRlZCI6IjIwMjMtMTAtMTdUMjA6NDM6NDguNzQzNzk5NTA1WiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSBBREQgZmlsZTo5YzFhYWFiZDUxZmQwOGE0MmZjZTQzZTQ4OWY1ZDY4OGNmODVkYTI0Mjk5Y2U1ZDA0OGNiOTMzYWEzZmU5NjI4IGluIC8gIn0seyJjcmVhdGVkIjoiMjAyMy0xMC0xN1QyMDo0Mzo0OS45Mzc2MTM0MzJaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApIExBQkVMIFwiY29tLnZtd2FyZS5jcC5hcnRpZmFjdC5mbGF2b3JcIj1cInNoYTI1NjoxZTFiNDY1N2E3N2YwZDQ3ZTkyMjBmMGMzN2I5YmY3ODAyNTgxYjkzMjE0ZmZmN2QxYmQyMzY0YzhiZjIyZThlXCIgXCJvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UuYmFzZS5uYW1lXCI9XCJkb2NrZXIuaW8vYml0bmFtaS9taW5pZGViOmJ1bGxzZXllXCIgXCJvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UuY3JlYXRlZFwiPVwiMjAyMy0xMC0xMVQwNzo1NzowNlpcIiBcIm9yZy5vcGVuY29udGFpbmVycy5pbWFnZS5kZXNjcmlwdGlvblwiPVwiQXBwbGljYXRpb24gcGFja2FnZWQgYnkgVk13YXJlLCBJbmNcIiBcIm9yZy5vcGVuY29udGFpbmVycy5pbWFnZS5saWNlbnNlc1wiPVwiQXBhY2hlLTIuMFwiIFwib3JnLm9wZW5jb250YWluZXJzLmltYWdlLnJlZi5uYW1lXCI9XCIyLjQ3LjEtZGViaWFuLTExLXIyXCIgXCJvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UudGl0bGVcIj1cInByb21ldGhldXNcIiBcIm9yZy5vcGVuY29udGFpbmVycy5pbWFnZS52ZW5kb3JcIj1cIlZNd2FyZSwgSW5jLlwiIFwib3JnLm9wZW5jb250YWluZXJzLmltYWdlLnZlcnNpb25cIj1cIjIuNDcuMVwiIFwicmYuZmI2YmI1OTUtMDkwOC00NGUyLTljMzQtNTg3MzkwMjI2MzFhXCI9XCJkb2NrZXIuaW8vYml0bmFtaS9wcm9tZXRoZXVzOjIuNDcuMS1kZWJpYW4tMTEtcjJcIiIsImNvbW1lbnQiOiJGUk9NIDc3ZjhiYTFmODEzYyIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDIzLTEwLTE3VDIwOjQzOjQ5Ljk2NzIzNzgzMloiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgRU5WIFBBVEg9XCIvb3B0L2JpdG5hbWkvcHJvbWV0aGV1cy9iaW46L3Vzci9sb2NhbC9zYmluOi91c3IvbG9jYWwvYmluOi91c3Ivc2JpbjovdXNyL2Jpbjovc2JpbjovYmluXCIgSE9NRT1cIi9cIiBPU19BUkNIPVwiYW1kNjRcIiBPU19GTEFWT1VSPVwiZGViaWFuLTExXCIgT1NfTkFNRT1cImxpbnV4XCIgQVBQX1ZFUlNJT049XCIyLjQ3LjFcIiBCSVROQU1JX0FQUF9OQU1FPVwicHJvbWV0aGV1c1wiICIsImNvbW1lbnQiOiJGUk9NIDU2NzkyNjFkNjRjNyIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDIzLTEwLTE3VDIwOjQzOjQ5Ljk5ODg0MTY1MloiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgRVhQT1NFICA5MDkwL3RjcCIsImNvbW1lbnQiOiJGUk9NIGU1MTQwYzk4NmRmOCIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDIzLTEwLTE3VDIwOjQzOjUwLjA2MTA0NTIyMloiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgV09SS0RJUiAvb3B0L2JpdG5hbWkvcHJvbWV0aGV1cyIsImNvbW1lbnQiOiJGUk9NIDVlMjA4ZjEwMzQ4OCIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDIzLTEwLTE3VDIwOjQzOjUwLjExNzUyNzgyN1oiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgVVNFUiAxMDAxIiwiY29tbWVudCI6IkZST00gNmZmYmU4OTBmMWJjIiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjMtMTAtMTdUMjA6NDM6NTAuMTc1MzQzMDI4WiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSBFTlRSWVBPSU5UIFtcIi9vcHQvYml0bmFtaS9wcm9tZXRoZXVzL2Jpbi9wcm9tZXRoZXVzXCJdIiwiY29tbWVudCI6IkZST00gMmI4YjAyNzMwOTY5IiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjMtMTAtMTdUMjA6NDM6NTAuMjMyNzE1NTMxWiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSBDTUQgW1wiLS1jb25maWcuZmlsZT0vb3B0L2JpdG5hbWkvcHJvbWV0aGV1cy9jb25mL3Byb21ldGhldXMueW1sXCIsIFwiLS1zdG9yYWdlLnRzZGIucGF0aD0vb3B0L2JpdG5hbWkvcHJvbWV0aGV1cy9kYXRhXCIsIFwiLS13ZWIuY29uc29sZS5saWJyYXJpZXM9L29wdC9iaXRuYW1pL3Byb21ldGhldXMvY29uZi9jb25zb2xlX2xpYnJhcmllc1wiLCBcIi0td2ViLmNvbnNvbGUudGVtcGxhdGVzPS9vcHQvYml0bmFtaS9wcm9tZXRoZXVzL2NvbmYvY29uc29sZXNcIl0iLCJjb21tZW50IjoiRlJPTSAwYmM2YjM4MDM4YzUiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyMy0xMC0xN1QyMDo0Mzo1MC4zNTQwODU4NDlaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApIExBQkVMIFwicmZfaW1hZ2VfZ3VpZC41NDM0MjhlOS1jNGVkLTQ5MTYtYmI3OC03NTU2MDFlYzhlODVcIj1cIjU0MzQyOGU5LWM0ZWQtNDkxNi1iYjc4LTc1NTYwMWVjOGU4NVwiIiwiY29tbWVudCI6IkZST00gZjY2NGYxNzQ0YmNmIiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjMtMTAtMTdUMjA6NDQ6MTEuNjE0OTY2NDdaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApICBMQUJFTCBvcmlnX2ltYWdlX2RpZ2VzdD1zaGEyNTY6MGE1ZmViNjA3ZjkzZmFiNmFmZmFjNDFiNjBjMWE3ZDk1MjNhNzhmMzQ5NDBkYWY4ZGRlNjFiZDgxODNiMDUxZSIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDIzLTEwLTE3VDIwOjQ0OjIzLjUwNDIyODg1M1oiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgIExBQkVMIG9yaWdfaW1hZ2VfZGlnZXN0PXNoYTI1NjowYTVmZWI2MDdmOTNmYWI2YWZmYWM0MWI2MGMxYTdkOTUyM2E3OGYzNDk0MGRhZjhkZGU2MWJkODE4M2IwNTFlIiwiZW1wdHlfbGF5ZXIiOnRydWV9XSwib3MiOiJsaW51eCIsInJvb3RmcyI6eyJ0eXBlIjoibGF5ZXJzIiwiZGlmZl9pZHMiOlsic2hhMjU2OjFkNjU0ZmVkY2MyZmZjMDYyNzE0YjlhZGIyMTY2YzU2ODc5ZDMwNzMyYmI4ZTlkMTUzZmJiZGY5ODI3MjYwZmEiXX19",
+   "repoDigests": [
+    "rapidfort/prometheus@sha256:f124af5024069e4f6cdab1fcfe0fb84ae27e07aa098b969c41c1d90a305948e9"
+   ],
+   "architecture": "amd64",
+   "os": "linux"
+  }
+ },
+ "distro": {
+  "name": "debian",
+  "version": "11",
+  "idLike": []
+ },
+ "descriptor": {
+  "name": "grype",
+  "version": "0.71.0",
+  "configuration": {
+   "output": [
+    "json"
+   ],
+   "file": "",
+   "distro": "",
+   "add-cpes-if-none": false,
+   "output-template-file": "",
+   "check-for-app-update": true,
+   "only-fixed": false,
+   "only-notfixed": false,
+   "platform": "",
+   "search": {
+    "scope": "Squashed",
+    "unindexed-archives": false,
+    "indexed-archives": true
+   },
+   "ignore": null,
+   "exclude": [],
+   "db": {
+    "cache-dir": "/home/anon/.cache/grype/db",
+    "update-url": "https://toolbox-data.anchore.io/grype/databases/listing.json",
+    "ca-cert": "",
+    "auto-update": true,
+    "validate-by-hash-on-start": false,
+    "validate-age": true,
+    "max-allowed-built-age": 432000000000000
+   },
+   "externalSources": {
+    "enable": false,
+    "maven": {
+     "searchUpstreamBySha1": true,
+     "baseUrl": "https://search.maven.org/solrsearch/select"
+    }
+   },
+   "match": {
+    "java": {
+     "using-cpes": false
+    },
+    "dotnet": {
+     "using-cpes": false
+    },
+    "golang": {
+     "using-cpes": false
+    },
+    "javascript": {
+     "using-cpes": false
+    },
+    "python": {
+     "using-cpes": false
+    },
+    "ruby": {
+     "using-cpes": false
+    },
+    "rust": {
+     "using-cpes": false
+    },
+    "stock": {
+     "using-cpes": true
+    }
+   },
+   "fail-on-severity": "",
+   "registry": {
+    "insecure-skip-tls-verify": false,
+    "insecure-use-http": false,
+    "auth": null,
+    "ca-cert": ""
+   },
+   "show-suppressed": false,
+   "by-cve": false,
+   "name": "",
+   "default-image-pull-source": "",
+   "vex-documents": [],
+   "vex-add": []
+  },
+  "db": {
+   "built": "2023-10-19T01:26:11Z",
+   "schemaVersion": 5,
+   "location": "/home/anon/.cache/grype/db/5",
+   "checksum": "sha256:82a6f823d143a88a7937924a444251226a37788529ca4f48880d35a7561b5308",
+   "error": null
+  },
+  "timestamp": "2023-10-19T16:00:18.872383747-04:00"
+ }
+}

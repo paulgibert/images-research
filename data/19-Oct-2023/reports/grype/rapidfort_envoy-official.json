@@ -1,0 +1,426 @@
+{
+ "matches": [
+  {
+   "vulnerability": {
+    "id": "CVE-2016-2781",
+    "dataSource": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2016-2781",
+    "namespace": "ubuntu:distro:ubuntu:20.04",
+    "severity": "Low",
+    "urls": [
+     "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2016-2781"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2016-2781",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2016-2781",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "http://www.openwall.com/lists/oss-security/2016/02/28/2",
+      "http://www.openwall.com/lists/oss-security/2016/02/28/3",
+      "https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772@%3Cdev.mina.apache.org%3E"
+     ],
+     "description": "chroot in GNU coreutils, when used with --userspec, allows local users to escape to the parent session via a crafted TIOCSTI ioctl call, which pushes characters to the terminal's input buffer.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:L/AC:L/Au:N/C:N/I:P/A:N",
+       "metrics": {
+        "baseScore": 2.1,
+        "exploitabilityScore": 3.9,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.0",
+       "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:C/C:N/I:H/A:N",
+       "metrics": {
+        "baseScore": 6.5,
+        "exploitabilityScore": 2,
+        "impactScore": 4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "20.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:20.04",
+      "package": {
+       "name": "coreutils",
+       "version": "8.30-3ubuntu2"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2016-2781"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "5b1b70d4729f557b",
+    "name": "coreutils",
+    "version": "8.30-3ubuntu2",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:b06cd7bd756bfbf98b4e511965e8f653825107cd2a618bc58dac719331729994"
+     }
+    ],
+    "language": "",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:coreutils:coreutils:8.30-3ubuntu2:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/coreutils@8.30-3ubuntu2?arch=amd64&distro=ubuntu-20.04",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2016-20013",
+    "dataSource": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2016-20013",
+    "namespace": "ubuntu:distro:ubuntu:20.04",
+    "severity": "Negligible",
+    "urls": [
+     "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2016-20013"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2016-20013",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2016-20013",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://akkadia.org/drepper/SHA-crypt.txt",
+      "https://pthree.org/2018/05/23/do-not-use-sha256crypt-sha512crypt-theyre-dangerous/",
+      "https://twitter.com/solardiz/status/795601240151457793"
+     ],
+     "description": "sha256crypt and sha512crypt through 0.6 allow attackers to cause a denial of service (CPU consumption) because the algorithm's runtime is proportional to the square of the length of the password.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+       "metrics": {
+        "baseScore": 5,
+        "exploitabilityScore": 10,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "20.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:20.04",
+      "package": {
+       "name": "glibc",
+       "version": "2.31-0ubuntu9.12"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2016-20013"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "03bcc070fa548708",
+    "name": "libc6",
+    "version": "2.31-0ubuntu9.12",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:b06cd7bd756bfbf98b4e511965e8f653825107cd2a618bc58dac719331729994"
+     }
+    ],
+    "language": "",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:libc6:libc6:2.31-0ubuntu9.12:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.12?arch=amd64&upstream=glibc&distro=ubuntu-20.04",
+    "upstreams": [
+     {
+      "name": "glibc"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2017-11164",
+    "dataSource": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2017-11164",
+    "namespace": "ubuntu:distro:ubuntu:20.04",
+    "severity": "Negligible",
+    "urls": [
+     "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2017-11164"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2017-11164",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2017-11164",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "http://openwall.com/lists/oss-security/2017/07/11/3",
+      "http://www.openwall.com/lists/oss-security/2023/04/11/1",
+      "http://www.openwall.com/lists/oss-security/2023/04/12/1",
+      "http://www.securityfocus.com/bid/99575",
+      "https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772@%3Cdev.mina.apache.org%3E"
+     ],
+     "description": "In PCRE 8.41, the OP_KETRMAX feature in the match function in pcre_exec.c allows stack exhaustion (uncontrolled recursion) when processing a crafted regular expression.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
+       "metrics": {
+        "baseScore": 7.8,
+        "exploitabilityScore": 10,
+        "impactScore": 6.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.0",
+       "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "20.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:20.04",
+      "package": {
+       "name": "pcre3",
+       "version": "2:8.39-12ubuntu0.1"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2017-11164"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "4520854101c812a6",
+    "name": "libpcre3",
+    "version": "2:8.39-12ubuntu0.1",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:b06cd7bd756bfbf98b4e511965e8f653825107cd2a618bc58dac719331729994"
+     }
+    ],
+    "language": "",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:libpcre3:libpcre3:2:8.39-12ubuntu0.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/libpcre3@2:8.39-12ubuntu0.1?arch=amd64&upstream=pcre3&distro=ubuntu-20.04",
+    "upstreams": [
+     {
+      "name": "pcre3"
+     }
+    ]
+   }
+  }
+ ],
+ "source": {
+  "type": "image",
+  "target": {
+   "userInput": "docker.io/rapidfort/envoy-official:latest",
+   "imageID": "sha256:4bd19eb996021fa16205430291a0ae022062b4290ef2f7938891814c5a1cf9b7",
+   "manifestDigest": "sha256:68724e7cb50e2572c4375980f6a307817335c3df7c878d20c37c12ef57f7ee13",
+   "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+   "tags": [
+    "rapidfort/envoy-official:latest"
+   ],
+   "imageSize": 76720272,
+   "layers": [
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:b06cd7bd756bfbf98b4e511965e8f653825107cd2a618bc58dac719331729994",
+     "size": 76720272
+    }
+   ],
+   "manifest": "eyJzY2hlbWFWZXJzaW9uIjoyLCJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmRpc3RyaWJ1dGlvbi5tYW5pZmVzdC52Mitqc29uIiwiY29uZmlnIjp7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuY29udGFpbmVyLmltYWdlLnYxK2pzb24iLCJzaXplIjo0MDU5LCJkaWdlc3QiOiJzaGEyNTY6NGJkMTllYjk5NjAyMWZhMTYyMDU0MzAyOTFhMGFlMDIyMDYyYjQyOTBlZjJmNzkzODg5MTgxNGM1YTFjZjliNyJ9LCJsYXllcnMiOlt7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjo3NzMwODkyOCwiZGlnZXN0Ijoic2hhMjU2OmIwNmNkN2JkNzU2YmZiZjk4YjRlNTExOTY1ZThmNjUzODI1MTA3Y2QyYTYxOGJjNThkYWM3MTkzMzE3Mjk5OTQifV19",
+   "config": "eyJhcmNoaXRlY3R1cmUiOiJhbWQ2NCIsImNvbmZpZyI6eyJIb3N0bmFtZSI6IiIsIkRvbWFpbm5hbWUiOiIiLCJVc2VyIjoiIiwiQXR0YWNoU3RkaW4iOmZhbHNlLCJBdHRhY2hTdGRvdXQiOmZhbHNlLCJBdHRhY2hTdGRlcnIiOmZhbHNlLCJFeHBvc2VkUG9ydHMiOnsiMTAwMDAvdGNwIjp7fX0sIlR0eSI6ZmFsc2UsIk9wZW5TdGRpbiI6ZmFsc2UsIlN0ZGluT25jZSI6ZmFsc2UsIkVudiI6WyJQQVRIPS91c3IvbG9jYWwvc2JpbjovdXNyL2xvY2FsL2JpbjovdXNyL3NiaW46L3Vzci9iaW46L3NiaW46L2JpbiIsIkRFQklBTl9GUk9OVEVORD1ub25pbnRlcmFjdGl2ZSJdLCJDbWQiOlsiZW52b3kiLCItYyIsIi9ldGMvZW52b3kvZW52b3kueWFtbCJdLCJJbWFnZSI6InNoYTI1NjphZTc5ZDk4ODQyMjA3ODFhZDM2ZTYyZDYyZmIxNzcwYmFkYzBjNTYwZmQ3MTA4MjAzYWM4NWUyOTA4ZjdjY2JhIiwiVm9sdW1lcyI6bnVsbCwiV29ya2luZ0RpciI6IiIsIkVudHJ5cG9pbnQiOlsiL2RvY2tlci1lbnRyeXBvaW50LnNoIl0sIk9uQnVpbGQiOm51bGwsIkxhYmVscyI6eyJpby5idWlsZGFoLnZlcnNpb24iOiIxLjI5LjAiLCJvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UucmVmLm5hbWUiOiJ1YnVudHUiLCJvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UudmVyc2lvbiI6IjIwLjA0Iiwib3JpZ19pbWFnZV9kaWdlc3QiOiJzaGEyNTY6OWE1MmU3NTRmZWI0MmZmZmQ1ODBmMDRhOGU3NmNjYWM3Y2FiMGQyZjEzNjJkZGQxNjIxMzZlMTNiMTU1ZWQ3ZiIsInJmLjZhNzkzZjNjLThiMmYtNDRlNC1hNGJiLWJjZDRlOWNmNTE4OSI6ImRvY2tlci5pby9lbnZveXByb3h5L2Vudm95OnYxLjI4LWxhdGVzdCIsInJmX2ltYWdlX2d1aWQuMjc0NjZhMGItZWI0MC00NDMyLWE1NWYtZjZiNzY5NDA0YjFlIjoiMjc0NjZhMGItZWI0MC00NDMyLWE1NWYtZjZiNzY5NDA0YjFlIn19LCJjb250YWluZXIiOiI1ZDlhYzk5ZTI3OWY3ZTA5MjM5ZThkYmVlZDdlYjZmNmU4NzliNTgwMDhlM2Y1NDE1MGVhNTQwOWE2ZmQxZjUyIiwiY29udGFpbmVyX2NvbmZpZyI6eyJIb3N0bmFtZSI6IjVkOWFjOTllMjc5ZiIsIkRvbWFpbm5hbWUiOiIiLCJVc2VyIjoiIiwiQXR0YWNoU3RkaW4iOmZhbHNlLCJBdHRhY2hTdGRvdXQiOmZhbHNlLCJBdHRhY2hTdGRlcnIiOmZhbHNlLCJFeHBvc2VkUG9ydHMiOnsiMTAwMDAvdGNwIjp7fX0sIlR0eSI6ZmFsc2UsIk9wZW5TdGRpbiI6ZmFsc2UsIlN0ZGluT25jZSI6ZmFsc2UsIkVudiI6WyJQQVRIPS91c3IvbG9jYWwvc2JpbjovdXNyL2xvY2FsL2JpbjovdXNyL3NiaW46L3Vzci9iaW46L3NiaW46L2JpbiIsIkRFQklBTl9GUk9OVEVORD1ub25pbnRlcmFjdGl2ZSJdLCJDbWQiOlsiL2Jpbi9zaCIsIi1jIiwiIyhub3ApICIsIkxBQkVMIG9yaWdfaW1hZ2VfZGlnZXN0PXNoYTI1Njo5YTUyZTc1NGZlYjQyZmZmZDU4MGYwNGE4ZTc2Y2NhYzdjYWIwZDJmMTM2MmRkZDE2MjEzNmUxM2IxNTVlZDdmIl0sIkltYWdlIjoic2hhMjU2OmFlNzlkOTg4NDIyMDc4MWFkMzZlNjJkNjJmYjE3NzBiYWRjMGM1NjBmZDcxMDgyMDNhYzg1ZTI5MDhmN2NjYmEiLCJWb2x1bWVzIjpudWxsLCJXb3JraW5nRGlyIjoiIiwiRW50cnlwb2ludCI6WyIvZG9ja2VyLWVudHJ5cG9pbnQuc2giXSwiT25CdWlsZCI6bnVsbCwiTGFiZWxzIjp7ImlvLmJ1aWxkYWgudmVyc2lvbiI6IjEuMjkuMCIsIm9yZy5vcGVuY29udGFpbmVycy5pbWFnZS5yZWYubmFtZSI6InVidW50dSIsIm9yZy5vcGVuY29udGFpbmVycy5pbWFnZS52ZXJzaW9uIjoiMjAuMDQiLCJvcmlnX2ltYWdlX2RpZ2VzdCI6InNoYTI1Njo5YTUyZTc1NGZlYjQyZmZmZDU4MGYwNGE4ZTc2Y2NhYzdjYWIwZDJmMTM2MmRkZDE2MjEzNmUxM2IxNTVlZDdmIiwicmYuNmE3OTNmM2MtOGIyZi00NGU0LWE0YmItYmNkNGU5Y2Y1MTg5IjoiZG9ja2VyLmlvL2Vudm95cHJveHkvZW52b3k6djEuMjgtbGF0ZXN0IiwicmZfaW1hZ2VfZ3VpZC4yNzQ2NmEwYi1lYjQwLTQ0MzItYTU1Zi1mNmI3Njk0MDRiMWUiOiIyNzQ2NmEwYi1lYjQwLTQ0MzItYTU1Zi1mNmI3Njk0MDRiMWUifX0sImNyZWF0ZWQiOiIyMDIzLTEwLTE5VDExOjE1OjU3LjMyMzQ4MzIzWiIsImRvY2tlcl92ZXJzaW9uIjoiMjQuMC42IiwiaGlzdG9yeSI6W3siY3JlYXRlZCI6IjIwMjMtMTAtMTlUMTE6MTQ6NTQuNjA0ODIzNjY2WiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSBBREQgZmlsZToxZmVhMmZjNmVmNTdjODVjMTJjNjg5ZjBkOGVjYjJkNDg3ZGQ0ZDE0ODcwMGFhMzczYjNmOGZlOGYwODRjZjc2IGluIC8gIn0seyJjcmVhdGVkIjoiMjAyMy0xMC0xOVQxMToxNDo1OS45NDg4NDA2NzVaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApIExBQkVMIFwib3JnLm9wZW5jb250YWluZXJzLmltYWdlLnJlZi5uYW1lXCI9XCJ1YnVudHVcIiBcIm9yZy5vcGVuY29udGFpbmVycy5pbWFnZS52ZXJzaW9uXCI9XCIyMC4wNFwiIFwicmYuNmE3OTNmM2MtOGIyZi00NGU0LWE0YmItYmNkNGU5Y2Y1MTg5XCI9XCJkb2NrZXIuaW8vZW52b3lwcm94eS9lbnZveTp2MS4yOC1sYXRlc3RcIiIsImNvbW1lbnQiOiJGUk9NIDdhMGQ5NGM4MWU3NSIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDIzLTEwLTE5VDExOjE1OjAwLjY4OTcwNDkwNVoiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgRU5WIFBBVEg9XCIvdXNyL2xvY2FsL3NiaW46L3Vzci9sb2NhbC9iaW46L3Vzci9zYmluOi91c3IvYmluOi9zYmluOi9iaW5cIiBERUJJQU5fRlJPTlRFTkQ9XCJub25pbnRlcmFjdGl2ZVwiICIsImNvbW1lbnQiOiJGUk9NIDVmYzU2NjcyMmYyZiIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDIzLTEwLTE5VDExOjE1OjAxLjE5MjM1MTY3OFoiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgRVhQT1NFICAxMDAwMC90Y3AiLCJjb21tZW50IjoiRlJPTSAwZjQ2NDNjNTg4NzEiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyMy0xMC0xOVQxMToxNTowMS4zMTUzNzU4WiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSBFTlRSWVBPSU5UIFtcIi9kb2NrZXItZW50cnlwb2ludC5zaFwiXSIsImNvbW1lbnQiOiJGUk9NIDk2MWU4YmRmNWQ1ZiIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDIzLTEwLTE5VDExOjE1OjAxLjg2NzY3NzY5NloiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgQ01EIFtcImVudm95XCIsIFwiLWNcIiwgXCIvZXRjL2Vudm95L2Vudm95LnlhbWxcIl0iLCJjb21tZW50IjoiRlJPTSBiZDM2NWYwYmYzN2EiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyMy0xMC0xOVQxMToxNTowMi42NjY0MTQ1NDNaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApIExBQkVMIFwicmZfaW1hZ2VfZ3VpZC4yNzQ2NmEwYi1lYjQwLTQ0MzItYTU1Zi1mNmI3Njk0MDRiMWVcIj1cIjI3NDY2YTBiLWViNDAtNDQzMi1hNTVmLWY2Yjc2OTQwNGIxZVwiIiwiY29tbWVudCI6IkZST00gN2UzNTY1Zjc1ZTMwIiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjMtMTAtMTlUMTE6MTU6NDcuNjE5MTUwNjg4WiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSAgTEFCRUwgb3JpZ19pbWFnZV9kaWdlc3Q9c2hhMjU2OjlhNTJlNzU0ZmViNDJmZmZkNTgwZjA0YThlNzZjY2FjN2NhYjBkMmYxMzYyZGRkMTYyMTM2ZTEzYjE1NWVkN2YiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyMy0xMC0xOVQxMToxNTo1Ny4zMjM0ODMyM1oiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgIExBQkVMIG9yaWdfaW1hZ2VfZGlnZXN0PXNoYTI1Njo5YTUyZTc1NGZlYjQyZmZmZDU4MGYwNGE4ZTc2Y2NhYzdjYWIwZDJmMTM2MmRkZDE2MjEzNmUxM2IxNTVlZDdmIiwiZW1wdHlfbGF5ZXIiOnRydWV9XSwib3MiOiJsaW51eCIsInJvb3RmcyI6eyJ0eXBlIjoibGF5ZXJzIiwiZGlmZl9pZHMiOlsic2hhMjU2OmIwNmNkN2JkNzU2YmZiZjk4YjRlNTExOTY1ZThmNjUzODI1MTA3Y2QyYTYxOGJjNThkYWM3MTkzMzE3Mjk5OTQiXX19",
+   "repoDigests": [
+    "rapidfort/envoy-official@sha256:3f7cb9f1a9a7e6938f233cc0adb86d21cf2d60582cad9049a8c7f77ce1d24d11"
+   ],
+   "architecture": "amd64",
+   "os": "linux"
+  }
+ },
+ "distro": {
+  "name": "ubuntu",
+  "version": "20.04",
+  "idLike": [
+   "debian"
+  ]
+ },
+ "descriptor": {
+  "name": "grype",
+  "version": "0.71.0",
+  "configuration": {
+   "output": [
+    "json"
+   ],
+   "file": "",
+   "distro": "",
+   "add-cpes-if-none": false,
+   "output-template-file": "",
+   "check-for-app-update": true,
+   "only-fixed": false,
+   "only-notfixed": false,
+   "platform": "",
+   "search": {
+    "scope": "Squashed",
+    "unindexed-archives": false,
+    "indexed-archives": true
+   },
+   "ignore": null,
+   "exclude": [],
+   "db": {
+    "cache-dir": "/home/anon/.cache/grype/db",
+    "update-url": "https://toolbox-data.anchore.io/grype/databases/listing.json",
+    "ca-cert": "",
+    "auto-update": true,
+    "validate-by-hash-on-start": false,
+    "validate-age": true,
+    "max-allowed-built-age": 432000000000000
+   },
+   "externalSources": {
+    "enable": false,
+    "maven": {
+     "searchUpstreamBySha1": true,
+     "baseUrl": "https://search.maven.org/solrsearch/select"
+    }
+   },
+   "match": {
+    "java": {
+     "using-cpes": false
+    },
+    "dotnet": {
+     "using-cpes": false
+    },
+    "golang": {
+     "using-cpes": false
+    },
+    "javascript": {
+     "using-cpes": false
+    },
+    "python": {
+     "using-cpes": false
+    },
+    "ruby": {
+     "using-cpes": false
+    },
+    "rust": {
+     "using-cpes": false
+    },
+    "stock": {
+     "using-cpes": true
+    }
+   },
+   "fail-on-severity": "",
+   "registry": {
+    "insecure-skip-tls-verify": false,
+    "insecure-use-http": false,
+    "auth": null,
+    "ca-cert": ""
+   },
+   "show-suppressed": false,
+   "by-cve": false,
+   "name": "",
+   "default-image-pull-source": "",
+   "vex-documents": [],
+   "vex-add": []
+  },
+  "db": {
+   "built": "2023-10-19T01:26:11Z",
+   "schemaVersion": 5,
+   "location": "/home/anon/.cache/grype/db/5",
+   "checksum": "sha256:82a6f823d143a88a7937924a444251226a37788529ca4f48880d35a7561b5308",
+   "error": null
+  },
+  "timestamp": "2023-10-19T15:49:14.486809137-04:00"
+ }
+}
