@@ -53,15 +53,18 @@ data
 ### Data Generation Stages
 Data is generated in three stages
 
-**Stage 1: Image Scanning**. Images listed in images.json are pulled and scanned with Grype and Syft. Scan reports are saved to the `reports/` subdirectory. See `scripts/1_scan_images.py`.
+**Stage 1: Image Scanning**. Images listed in images.json are pulled and scanned with Grype and Syft. Scan reports are saved to the `reports/` subdirectory.
+
+See `scripts/1_scan_images.py`.
 
 **Stage 2: Data set generation**. Scan reports are parsed and aggregated into four CSV files saved under the `data-sets/` subdirectory:
-    - `vulns.csv` - Vulnerabilities detected across all images
-    - `sizes.csv` - Size in bytes of all images
-    - `comps.csv` - Components detected across all images
-    - `agg.csv`   - Aggregated size, vulnerability, and component data
-    
+- `vulns.csv` - Vulnerabilities detected across all images
+- `sizes.csv` - Size in bytes of all images
+- `comps.csv` - Components detected across all images
+- `agg.csv`   - Aggregated size, vulnerability, and component data
+
 See `2_build_datasets.py`.
 
-**Stage 3: Analysis**. Generate figures and summary statistics from the `agg.csv` data set. The summary is saved to `analyis/summary.txt`. Figures are saved under `analysis/figures`.
+**Stage 3: Analysis**. Generate figures and summary statistics from the `agg.csv` data set. The summary is saved to `analysis/summary.txt`. Figures are saved under `analysis/figures`.
+
 Performed by `scripts/3_analyze.py`.
