@@ -57,7 +57,7 @@ Data is generated in three stages
 
 See `scripts/1_scan_images.py`
 
-**Stage 2: Data set generation**. Scan reports are parsed and aggregated into four CSV files saved under the `data-sets/` subdirectory:
+**Stage 2: Data Set Generation**. Scan reports are parsed and aggregated into four CSV files saved under the `data-sets/` subdirectory:
 - `vulns.csv` - Vulnerabilities detected across all images
 - `sizes.csv` - Size in bytes of all images
 - `comps.csv` - Components detected across all images
