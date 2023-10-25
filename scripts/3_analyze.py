@@ -93,7 +93,7 @@ FIGURES = [
     FigureParams(
         column="n_components",
         title="Number of Components per Image",
-        xlabel="Num Vulnerabilities",
+        xlabel="Number of Components",
         filename="comps_fig.png"
     ),
     FigureParams(
