@@ -48,7 +48,10 @@ def get_image_fullname(domain: str, path: str,
     @param path: The path the image can be found at
     @param tag: The tag of the image.
     """
-    return f"{domain}/{path}:{tag}"
+    if domain == "":
+        return f"{path}:{tag}"
+    else:
+        return f"{domain}/{path}:{tag}"
 
 
 def _rm_image(image_fullname: str):
