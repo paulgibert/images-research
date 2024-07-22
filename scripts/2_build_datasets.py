@@ -10,10 +10,10 @@ sizes.csv   -   A collection of image sizes across vendors
 agg.csv     -   Aggregated number of vulnerabilities, components, and image size per image across vendors.
 
 Usage:
-    2_build_datasets.py -r [directory of scan reports] -o [directory to save data sets]
+    python3 2_build_datasets.py -r [directory of scan reports] -o [directory to save data sets]
 
 Example:
-    1_scan_images.py -r data/reports -o data/data-sets
+    python3 1_scan_images.py -r data/reports -o data/data-sets
 
 Note: The reports directory is expected to be of the form
     

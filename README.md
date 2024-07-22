@@ -12,9 +12,9 @@ The data used in the study can be found at `data/19-Oct-2023/`. The easiest way 
 To install dependencies and setup a virtual environment to run the script, run these command:
 ```
 sudo ./install_deps.sh
-python -m venv env
+python3 -m venv env
 source env/bin/activate
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 
 Now execute the run script:

@@ -4,10 +4,10 @@ Performs Grype and Syft scans on provided images.
 Scan reports are saved to the directory specified.
 
 Usage:
-    1_scan_images.py -i [images json] -r [report directory]
+    python3 1_scan_images.py -i [images json] -r [report directory]
 
 Example:
-    1_scan_images.py -i [image.json] -r data/reports
+    python3 1_scan_images.py -i [image.json] -r data/reports
 """
 
 
