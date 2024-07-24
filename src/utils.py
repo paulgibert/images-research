@@ -10,7 +10,11 @@ def bash(cmd: str) -> str:
     @param cmd: command
     @returns stdout
     """
-    b = subprocess.check_output(cmd, shell=True)
+    try:
+        b = subprocess.check_output(cmd, shell=True)
+    except subprocess.CalledProcessError as e:
+        print(f"Error running `{cmd}`: {str(e)}")
+        exit(1)
     return b.decode("utf-8")[:-1]
 
 
@@ -47,7 +51,7 @@ def check_equal_contents(its: List[any]):
     are not of equal content.
 
     @param objs: List of iterables to compare
-    @raises ValueError if there is a element mismatch
+    @raises ValueError if there is an element mismatch
     """
     if len(its) <= 1:
         return
@@ -55,3 +59,22 @@ def check_equal_contents(its: List[any]):
         for elem, ref in zip(it, its[0]):
             if elem != ref:
                 raise ValueError(f"Objects differed in content. {elem} != {ref}")
+
+
+def check_docker_image_exists(image_fullname) -> bool:
+    """
+    Checks if a docker image exists locally.
+
+    @param image_fullname: The name of the image including registry and tag
+    """
+    try:
+        # Run the docker images command and capture the output
+        result = subprocess.run(['docker', 'inspect', image_fullname],
+                                stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+        
+        # If the image exists, docker inspect will return exit code 0
+        return result.returncode == 0
+    except subprocess.CalledProcessError as e:
+        # Handle errors if the docker command fails
+        print(f"Error checking docker image: {e}")
+        exit(1)

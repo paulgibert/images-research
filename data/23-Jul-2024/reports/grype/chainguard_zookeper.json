@@ -1,0 +1,180 @@
+{
+ "matches": [],
+ "source": {
+  "type": "image",
+  "target": {
+   "userInput": "cgr.dev/chainguard/zookeeper:latest",
+   "imageID": "sha256:427d91312220c77fbff5be8ff7af748620ef78a95904a1a5f166d5354db0c313",
+   "manifestDigest": "sha256:312a1fd7f909bae89595280b305b7e9e7874f3d8fe3f351cc987338e4b9b24ea",
+   "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+   "tags": [
+    "cgr.dev/chainguard/zookeeper:latest"
+   ],
+   "imageSize": 259920039,
+   "layers": [
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:d26a52aed6957f8615b0a1a350923f15d1e2e2b5881ee40e8e8e2bead20cbd8f",
+     "size": 259920039
+    }
+   ],
+   "manifest": "eyJzY2hlbWFWZXJzaW9uIjoyLCJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmRpc3RyaWJ1dGlvbi5tYW5pZmVzdC52Mitqc29uIiwiY29uZmlnIjp7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuY29udGFpbmVyLmltYWdlLnYxK2pzb24iLCJzaXplIjo3MzMsImRpZ2VzdCI6InNoYTI1Njo0MjdkOTEzMTIyMjBjNzdmYmZmNWJlOGZmN2FmNzQ4NjIwZWY3OGE5NTkwNGExYTVmMTY2ZDUzNTRkYjBjMzEzIn0sImxheWVycyI6W3sibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vdm5kLmRvY2tlci5pbWFnZS5yb290ZnMuZGlmZi50YXIuZ3ppcCIsInNpemUiOjI2MTQzMTI5NiwiZGlnZXN0Ijoic2hhMjU2OmQyNmE1MmFlZDY5NTdmODYxNWIwYTFhMzUwOTIzZjE1ZDFlMmUyYjU4ODFlZTQwZThlOGUyYmVhZDIwY2JkOGYifV19",
+   "config": "eyJhcmNoaXRlY3R1cmUiOiJhcm02NCIsImF1dGhvciI6ImdpdGh1Yi5jb20vY2hhaW5ndWFyZC1kZXYvYXBrbyIsImNyZWF0ZWQiOiIyMDI0LTA3LTIzVDExOjUzOjIwWiIsImhpc3RvcnkiOlt7ImF1dGhvciI6ImFwa28iLCJjcmVhdGVkIjoiMjAyNC0wNy0yM1QxMTo1MzoyMFoiLCJjcmVhdGVkX2J5IjoiYXBrbyIsImNvbW1lbnQiOiJUaGlzIGlzIGFuIGFwa28gc2luZ2xlLWxheWVyIGltYWdlIn1dLCJvcyI6ImxpbnV4Iiwicm9vdGZzIjp7InR5cGUiOiJsYXllcnMiLCJkaWZmX2lkcyI6WyJzaGEyNTY6ZDI2YTUyYWVkNjk1N2Y4NjE1YjBhMWEzNTA5MjNmMTVkMWUyZTJiNTg4MWVlNDBlOGU4ZTJiZWFkMjBjYmQ4ZiJdfSwiY29uZmlnIjp7IkNtZCI6WyIvb3B0L2JpdG5hbWkvc2NyaXB0cy96b29rZWVwZXIvcnVuLnNoIl0sIkVudHJ5cG9pbnQiOlsiL29wdC9iaXRuYW1pL3NjcmlwdHMvem9va2VlcGVyL2VudHJ5cG9pbnQuc2giXSwiRW52IjpbIkJJVE5BTUlfQVBQX05BTUU9em9va2VlcGVyIiwiSkFWQV9IT01FPS91c3IvbGliL2p2bS9kZWZhdWx0LWp2bSIsIkxBTkc9ZW5fVVMuVVRGLTgiLCJQQVRIPS91c3IvbG9jYWwvc2JpbjovdXNyL2xvY2FsL2JpbjovdXNyL3NiaW46L3Vzci9iaW46L3NiaW46L2JpbjovdXNyL3NoYXJlL2phdmEvem9va2VlcGVyL2JpbiIsIlNTTF9DRVJUX0ZJTEU9L2V0Yy9zc2wvY2VydHMvY2EtY2VydGlmaWNhdGVzLmNydCJdLCJVc2VyIjoiMTAwMSJ9fQ==",
+   "repoDigests": [
+    "cgr.dev/chainguard/zookeeper@sha256:657019a45763e64333d5d5fddc5ccf1cade003fcebf85b2f05f60d1f2cef65c6"
+   ],
+   "architecture": "arm64",
+   "os": "linux"
+  }
+ },
+ "distro": {
+  "name": "wolfi",
+  "version": "20230201",
+  "idLike": []
+ },
+ "descriptor": {
+  "name": "grype",
+  "version": "0.79.3",
+  "configuration": {
+   "output": [
+    "json"
+   ],
+   "file": "",
+   "distro": "",
+   "add-cpes-if-none": false,
+   "output-template-file": "",
+   "check-for-app-update": true,
+   "only-fixed": false,
+   "only-notfixed": false,
+   "ignore-wontfix": "",
+   "platform": "",
+   "search": {
+    "scope": "squashed",
+    "unindexed-archives": false,
+    "indexed-archives": true
+   },
+   "ignore": [
+    {
+     "vulnerability": "",
+     "reason": "",
+     "namespace": "",
+     "fix-state": "",
+     "package": {
+      "name": "kernel-headers",
+      "version": "",
+      "language": "",
+      "type": "rpm",
+      "location": "",
+      "upstream-name": "kernel"
+     },
+     "vex-status": "",
+     "vex-justification": "",
+     "match-type": "exact-indirect-match"
+    },
+    {
+     "vulnerability": "",
+     "reason": "",
+     "namespace": "",
+     "fix-state": "",
+     "package": {
+      "name": "linux-headers-.*",
+      "version": "",
+      "language": "",
+      "type": "deb",
+      "location": "",
+      "upstream-name": "linux"
+     },
+     "vex-status": "",
+     "vex-justification": "",
+     "match-type": "exact-indirect-match"
+    },
+    {
+     "vulnerability": "",
+     "reason": "",
+     "namespace": "",
+     "fix-state": "",
+     "package": {
+      "name": "linux-libc-dev",
+      "version": "",
+      "language": "",
+      "type": "deb",
+      "location": "",
+      "upstream-name": "linux"
+     },
+     "vex-status": "",
+     "vex-justification": "",
+     "match-type": "exact-indirect-match"
+    }
+   ],
+   "exclude": [],
+   "db": {
+    "cache-dir": "/Users/paulgibert/Library/Caches/grype/db",
+    "update-url": "https://toolbox-data.anchore.io/grype/databases/listing.json",
+    "ca-cert": "",
+    "auto-update": true,
+    "validate-by-hash-on-start": false,
+    "validate-age": true,
+    "max-allowed-built-age": 432000000000000,
+    "update-available-timeout": 30000000000,
+    "update-download-timeout": 120000000000
+   },
+   "externalSources": {
+    "enable": false,
+    "maven": {
+     "searchUpstreamBySha1": true,
+     "baseUrl": "https://search.maven.org/solrsearch/select"
+    }
+   },
+   "match": {
+    "java": {
+     "using-cpes": false
+    },
+    "dotnet": {
+     "using-cpes": false
+    },
+    "golang": {
+     "using-cpes": false,
+     "always-use-cpe-for-stdlib": true,
+     "allow-main-module-pseudo-version-comparison": false
+    },
+    "javascript": {
+     "using-cpes": false
+    },
+    "python": {
+     "using-cpes": false
+    },
+    "ruby": {
+     "using-cpes": false
+    },
+    "rust": {
+     "using-cpes": false
+    },
+    "stock": {
+     "using-cpes": true
+    }
+   },
+   "fail-on-severity": "",
+   "registry": {
+    "insecure-skip-tls-verify": false,
+    "insecure-use-http": false,
+    "auth": null,
+    "ca-cert": ""
+   },
+   "show-suppressed": false,
+   "by-cve": false,
+   "name": "",
+   "default-image-pull-source": "",
+   "vex-documents": [],
+   "vex-add": [],
+   "match-upstream-kernel-headers": false
+  },
+  "db": {
+   "built": "2024-07-23T01:30:37Z",
+   "schemaVersion": 5,
+   "location": "/Users/paulgibert/Library/Caches/grype/db/5",
+   "checksum": "sha256:972d0f51e180d424f3fff2637a1559e06940f35eda6bd03593be2a3db8f28971",
+   "error": null
+  },
+  "timestamp": "2024-07-23T21:26:13.000734-04:00"
+ }
+}

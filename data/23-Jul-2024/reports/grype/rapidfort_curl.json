@@ -1,0 +1,1635 @@
+{
+ "matches": [
+  {
+   "vulnerability": {
+    "id": "CVE-2023-42365",
+    "dataSource": "https://www.cve.org/CVERecord?id=CVE-2023-42365",
+    "namespace": "alpine:distro:alpine:3.19",
+    "severity": "Medium",
+    "urls": [
+     "https://www.cve.org/CVERecord?id=CVE-2023-42365"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "1.36.1-r19"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-42365",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-42365",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://bugs.busybox.net/show_bug.cgi?id=15871"
+     ],
+     "description": "A use-after-free vulnerability was discovered in BusyBox v.1.36.1 via a crafted awk pattern in the awk.c copyvar function.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 5.5,
+        "exploitabilityScore": 1.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "alpine",
+       "version": "3.19.1"
+      },
+      "namespace": "alpine:distro:alpine:3.19",
+      "package": {
+       "name": "busybox",
+       "version": "1.36.1-r18"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 1.36.1-r19 (apk)",
+      "vulnerabilityID": "CVE-2023-42365"
+     }
+    },
+    {
+     "type": "exact-direct-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "alpine",
+       "version": "3.19.1"
+      },
+      "namespace": "alpine:distro:alpine:3.19",
+      "package": {
+       "name": "busybox",
+       "version": "1.36.1-r18"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 1.36.1-r19 (apk)",
+      "vulnerabilityID": "CVE-2023-42365"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "e60fcb9716460385",
+    "name": "busybox",
+    "version": "1.36.1-r18",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:024f03fbc7cf33e8dd706da511ccc205274b6a4fb6b2352acaadd232004a1e45"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-2.0-only"
+    ],
+    "cpes": [
+     "cpe:2.3:a:busybox:busybox:1.36.1-r18:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/busybox@1.36.1-r18?arch=x86_64&distro=alpine-3.19.1",
+    "upstreams": [
+     {
+      "name": "busybox"
+     }
+    ],
+    "metadataType": "ApkMetadata",
+    "metadata": {
+     "files": [
+      {
+       "path": "/bin"
+      },
+      {
+       "path": "/bin/busybox"
+      },
+      {
+       "path": "/etc"
+      },
+      {
+       "path": "/etc/securetty"
+      },
+      {
+       "path": "/etc/udhcpd.conf"
+      },
+      {
+       "path": "/etc/busybox-paths.d"
+      },
+      {
+       "path": "/etc/busybox-paths.d/busybox"
+      },
+      {
+       "path": "/etc/logrotate.d"
+      },
+      {
+       "path": "/etc/logrotate.d/acpid"
+      },
+      {
+       "path": "/etc/network"
+      },
+      {
+       "path": "/etc/network/if-down.d"
+      },
+      {
+       "path": "/etc/network/if-post-down.d"
+      },
+      {
+       "path": "/etc/network/if-post-up.d"
+      },
+      {
+       "path": "/etc/network/if-pre-down.d"
+      },
+      {
+       "path": "/etc/network/if-pre-up.d"
+      },
+      {
+       "path": "/etc/network/if-up.d"
+      },
+      {
+       "path": "/etc/network/if-up.d/dad"
+      },
+      {
+       "path": "/etc/udhcpc"
+      },
+      {
+       "path": "/etc/udhcpc/udhcpc.conf"
+      },
+      {
+       "path": "/sbin"
+      },
+      {
+       "path": "/tmp"
+      },
+      {
+       "path": "/usr"
+      },
+      {
+       "path": "/usr/sbin"
+      },
+      {
+       "path": "/usr/share"
+      },
+      {
+       "path": "/usr/share/udhcpc"
+      },
+      {
+       "path": "/usr/share/udhcpc/default.script"
+      },
+      {
+       "path": "/var"
+      },
+      {
+       "path": "/var/cache"
+      },
+      {
+       "path": "/var/cache/misc"
+      },
+      {
+       "path": "/var/lib"
+      },
+      {
+       "path": "/var/lib/udhcpd"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-42364",
+    "dataSource": "https://www.cve.org/CVERecord?id=CVE-2023-42364",
+    "namespace": "alpine:distro:alpine:3.19",
+    "severity": "Medium",
+    "urls": [
+     "https://www.cve.org/CVERecord?id=CVE-2023-42364"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "1.36.1-r19"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-42364",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-42364",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://bugs.busybox.net/show_bug.cgi?id=15868"
+     ],
+     "description": "A use-after-free vulnerability in BusyBox v.1.36.1 allows attackers to cause a denial of service via a crafted awk pattern in the awk.c evaluate function.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 5.5,
+        "exploitabilityScore": 1.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "alpine",
+       "version": "3.19.1"
+      },
+      "namespace": "alpine:distro:alpine:3.19",
+      "package": {
+       "name": "busybox",
+       "version": "1.36.1-r18"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 1.36.1-r19 (apk)",
+      "vulnerabilityID": "CVE-2023-42364"
+     }
+    },
+    {
+     "type": "exact-direct-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "alpine",
+       "version": "3.19.1"
+      },
+      "namespace": "alpine:distro:alpine:3.19",
+      "package": {
+       "name": "busybox",
+       "version": "1.36.1-r18"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 1.36.1-r19 (apk)",
+      "vulnerabilityID": "CVE-2023-42364"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "e60fcb9716460385",
+    "name": "busybox",
+    "version": "1.36.1-r18",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:024f03fbc7cf33e8dd706da511ccc205274b6a4fb6b2352acaadd232004a1e45"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-2.0-only"
+    ],
+    "cpes": [
+     "cpe:2.3:a:busybox:busybox:1.36.1-r18:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/busybox@1.36.1-r18?arch=x86_64&distro=alpine-3.19.1",
+    "upstreams": [
+     {
+      "name": "busybox"
+     }
+    ],
+    "metadataType": "ApkMetadata",
+    "metadata": {
+     "files": [
+      {
+       "path": "/bin"
+      },
+      {
+       "path": "/bin/busybox"
+      },
+      {
+       "path": "/etc"
+      },
+      {
+       "path": "/etc/securetty"
+      },
+      {
+       "path": "/etc/udhcpd.conf"
+      },
+      {
+       "path": "/etc/busybox-paths.d"
+      },
+      {
+       "path": "/etc/busybox-paths.d/busybox"
+      },
+      {
+       "path": "/etc/logrotate.d"
+      },
+      {
+       "path": "/etc/logrotate.d/acpid"
+      },
+      {
+       "path": "/etc/network"
+      },
+      {
+       "path": "/etc/network/if-down.d"
+      },
+      {
+       "path": "/etc/network/if-post-down.d"
+      },
+      {
+       "path": "/etc/network/if-post-up.d"
+      },
+      {
+       "path": "/etc/network/if-pre-down.d"
+      },
+      {
+       "path": "/etc/network/if-pre-up.d"
+      },
+      {
+       "path": "/etc/network/if-up.d"
+      },
+      {
+       "path": "/etc/network/if-up.d/dad"
+      },
+      {
+       "path": "/etc/udhcpc"
+      },
+      {
+       "path": "/etc/udhcpc/udhcpc.conf"
+      },
+      {
+       "path": "/sbin"
+      },
+      {
+       "path": "/tmp"
+      },
+      {
+       "path": "/usr"
+      },
+      {
+       "path": "/usr/sbin"
+      },
+      {
+       "path": "/usr/share"
+      },
+      {
+       "path": "/usr/share/udhcpc"
+      },
+      {
+       "path": "/usr/share/udhcpc/default.script"
+      },
+      {
+       "path": "/var"
+      },
+      {
+       "path": "/var/cache"
+      },
+      {
+       "path": "/var/cache/misc"
+      },
+      {
+       "path": "/var/lib"
+      },
+      {
+       "path": "/var/lib/udhcpd"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-42365",
+    "dataSource": "https://www.cve.org/CVERecord?id=CVE-2023-42365",
+    "namespace": "alpine:distro:alpine:3.19",
+    "severity": "Medium",
+    "urls": [
+     "https://www.cve.org/CVERecord?id=CVE-2023-42365"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "1.36.1-r19"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-42365",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-42365",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://bugs.busybox.net/show_bug.cgi?id=15871"
+     ],
+     "description": "A use-after-free vulnerability was discovered in BusyBox v.1.36.1 via a crafted awk pattern in the awk.c copyvar function.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 5.5,
+        "exploitabilityScore": 1.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "alpine",
+       "version": "3.19.1"
+      },
+      "namespace": "alpine:distro:alpine:3.19",
+      "package": {
+       "name": "busybox",
+       "version": "1.36.1-r18"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 1.36.1-r19 (apk)",
+      "vulnerabilityID": "CVE-2023-42365"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "0de9728a81240238",
+    "name": "busybox-binsh",
+    "version": "1.36.1-r18",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:024f03fbc7cf33e8dd706da511ccc205274b6a4fb6b2352acaadd232004a1e45"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-2.0-only"
+    ],
+    "cpes": [
+     "cpe:2.3:a:busybox-binsh:busybox-binsh:1.36.1-r18:*:*:*:*:*:*:*",
+     "cpe:2.3:a:busybox-binsh:busybox_binsh:1.36.1-r18:*:*:*:*:*:*:*",
+     "cpe:2.3:a:busybox_binsh:busybox-binsh:1.36.1-r18:*:*:*:*:*:*:*",
+     "cpe:2.3:a:busybox_binsh:busybox_binsh:1.36.1-r18:*:*:*:*:*:*:*",
+     "cpe:2.3:a:busybox:busybox-binsh:1.36.1-r18:*:*:*:*:*:*:*",
+     "cpe:2.3:a:busybox:busybox_binsh:1.36.1-r18:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/busybox-binsh@1.36.1-r18?arch=x86_64&upstream=busybox&distro=alpine-3.19.1",
+    "upstreams": [
+     {
+      "name": "busybox"
+     }
+    ],
+    "metadataType": "ApkMetadata",
+    "metadata": {
+     "files": [
+      {
+       "path": "/bin"
+      },
+      {
+       "path": "/bin/sh"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-42364",
+    "dataSource": "https://www.cve.org/CVERecord?id=CVE-2023-42364",
+    "namespace": "alpine:distro:alpine:3.19",
+    "severity": "Medium",
+    "urls": [
+     "https://www.cve.org/CVERecord?id=CVE-2023-42364"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "1.36.1-r19"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-42364",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-42364",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://bugs.busybox.net/show_bug.cgi?id=15868"
+     ],
+     "description": "A use-after-free vulnerability in BusyBox v.1.36.1 allows attackers to cause a denial of service via a crafted awk pattern in the awk.c evaluate function.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 5.5,
+        "exploitabilityScore": 1.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "alpine",
+       "version": "3.19.1"
+      },
+      "namespace": "alpine:distro:alpine:3.19",
+      "package": {
+       "name": "busybox",
+       "version": "1.36.1-r18"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 1.36.1-r19 (apk)",
+      "vulnerabilityID": "CVE-2023-42364"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "0de9728a81240238",
+    "name": "busybox-binsh",
+    "version": "1.36.1-r18",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:024f03fbc7cf33e8dd706da511ccc205274b6a4fb6b2352acaadd232004a1e45"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-2.0-only"
+    ],
+    "cpes": [
+     "cpe:2.3:a:busybox-binsh:busybox-binsh:1.36.1-r18:*:*:*:*:*:*:*",
+     "cpe:2.3:a:busybox-binsh:busybox_binsh:1.36.1-r18:*:*:*:*:*:*:*",
+     "cpe:2.3:a:busybox_binsh:busybox-binsh:1.36.1-r18:*:*:*:*:*:*:*",
+     "cpe:2.3:a:busybox_binsh:busybox_binsh:1.36.1-r18:*:*:*:*:*:*:*",
+     "cpe:2.3:a:busybox:busybox-binsh:1.36.1-r18:*:*:*:*:*:*:*",
+     "cpe:2.3:a:busybox:busybox_binsh:1.36.1-r18:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/busybox-binsh@1.36.1-r18?arch=x86_64&upstream=busybox&distro=alpine-3.19.1",
+    "upstreams": [
+     {
+      "name": "busybox"
+     }
+    ],
+    "metadataType": "ApkMetadata",
+    "metadata": {
+     "files": [
+      {
+       "path": "/bin"
+      },
+      {
+       "path": "/bin/sh"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2024-5535",
+    "dataSource": "https://www.cve.org/CVERecord?id=CVE-2024-5535",
+    "namespace": "alpine:distro:alpine:3.19",
+    "severity": "Critical",
+    "urls": [
+     "https://www.cve.org/CVERecord?id=CVE-2024-5535"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "3.1.6-r0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-5535",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-5535",
+     "namespace": "nvd:cpe",
+     "severity": "Critical",
+     "urls": [
+      "http://www.openwall.com/lists/oss-security/2024/06/27/1",
+      "http://www.openwall.com/lists/oss-security/2024/06/28/4",
+      "https://github.com/openssl/openssl/commit/4ada436a1946cbb24db5ab4ca082b69c1bc10f37",
+      "https://github.com/openssl/openssl/commit/99fb785a5f85315b95288921a321a935ea29a51e",
+      "https://github.com/openssl/openssl/commit/cf6f91f6121f4db167405db2f0de410a456f260c",
+      "https://github.com/openssl/openssl/commit/e86ac436f0bd54d4517745483e2315650fae7b2c",
+      "https://github.openssl.org/openssl/extended-releases/commit/9947251413065a05189a63c9b7a6c1d4e224c21c",
+      "https://github.openssl.org/openssl/extended-releases/commit/b78ec0824da857223486660177d3b1f255c65d87",
+      "https://security.netapp.com/advisory/ntap-20240712-0005/",
+      "https://www.openssl.org/news/secadv/20240627.txt"
+     ],
+     "description": "Issue summary: Calling the OpenSSL API function SSL_select_next_proto with an\nempty supported client protocols buffer may cause a crash or memory contents to\nbe sent to the peer.\n\nImpact summary: A buffer overread can have a range of potential consequences\nsuch as unexpected application beahviour or a crash. In particular this issue\ncould result in up to 255 bytes of arbitrary private data from memory being sent\nto the peer leading to a loss of confidentiality. However, only applications\nthat directly call the SSL_select_next_proto function with a 0 length list of\nsupported client protocols are affected by this issue. This would normally never\nbe a valid scenario and is typically not under attacker control but may occur by\naccident in the case of a configuration or programming error in the calling\napplication.\n\nThe OpenSSL API function SSL_select_next_proto is typically used by TLS\napplications that support ALPN (Application Layer Protocol Negotiation) or NPN\n(Next Protocol Negotiation). NPN is older, was never standardised and\nis deprecated in favour of ALPN. We believe that ALPN is significantly more\nwidely deployed than NPN. The SSL_select_next_proto function accepts a list of\nprotocols from the server and a list of protocols from the client and returns\nthe first protocol that appears in the server list that also appears in the\nclient list. In the case of no overlap between the two lists it returns the\nfirst item in the client list. In either case it will signal whether an overlap\nbetween the two lists was found. In the case where SSL_select_next_proto is\ncalled with a zero length client list it fails to notice this condition and\nreturns the memory immediately following the client list pointer (and reports\nthat there was no overlap in the lists).\n\nThis function is typically called from a server side application callback for\nALPN or a client side application callback for NPN. In the case of ALPN the list\nof protocols supplied by the client is guaranteed by libssl to never be zero in\nlength. The list of server protocols comes from the application and should never\nnormally be expected to be of zero length. In this case if the\nSSL_select_next_proto function has been called as expected (with the list\nsupplied by the client passed in the client/client_len parameters), then the\napplication will not be vulnerable to this issue. If the application has\naccidentally been configured with a zero length server list, and has\naccidentally passed that zero length server list in the client/client_len\nparameters, and has additionally failed to correctly handle a \"no overlap\"\nresponse (which would normally result in a handshake failure in ALPN) then it\nwill be vulnerable to this problem.\n\nIn the case of NPN, the protocol permits the client to opportunistically select\na protocol when there is no overlap. OpenSSL returns the first client protocol\nin the no overlap case in support of this. The list of client protocols comes\nfrom the application and should never normally be expected to be of zero length.\nHowever if the SSL_select_next_proto function is accidentally called with a\nclient_len of 0 then an invalid memory pointer will be returned instead. If the\napplication uses this output as the opportunistic protocol then the loss of\nconfidentiality will occur.\n\nThis issue has been assessed as Low severity because applications are most\nlikely to be vulnerable if they are using NPN instead of ALPN - but NPN is not\nwidely used. It also requires an application configuration or programming error.\nFinally, this issue would not typically be under attacker control making active\nexploitation unlikely.\n\nThe FIPS modules in 3.3, 3.2, 3.1 and 3.0 are not affected by this issue.\n\nDue to the low severity of this issue we are not issuing new releases of\nOpenSSL at this time. The fix will be included in the next releases when they\nbecome available.",
+     "cvss": [
+      {
+       "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H",
+       "metrics": {
+        "baseScore": 9.1,
+        "exploitabilityScore": 3.9,
+        "impactScore": 5.2
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "alpine",
+       "version": "3.19.1"
+      },
+      "namespace": "alpine:distro:alpine:3.19",
+      "package": {
+       "name": "openssl",
+       "version": "3.1.5-r0"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 3.1.6-r0 (apk)",
+      "vulnerabilityID": "CVE-2024-5535"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "48aded0ae4ac61b3",
+    "name": "libcrypto3",
+    "version": "3.1.5-r0",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:024f03fbc7cf33e8dd706da511ccc205274b6a4fb6b2352acaadd232004a1e45"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "Apache-2.0"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libcrypto3:libcrypto3:3.1.5-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libcrypto3:libcrypto:3.1.5-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libcrypto:libcrypto3:3.1.5-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libcrypto:libcrypto:3.1.5-r0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/libcrypto3@3.1.5-r0?arch=x86_64&upstream=openssl&distro=alpine-3.19.1",
+    "upstreams": [
+     {
+      "name": "openssl"
+     }
+    ],
+    "metadataType": "ApkMetadata",
+    "metadata": {
+     "files": [
+      {
+       "path": "/etc"
+      },
+      {
+       "path": "/etc/ssl"
+      },
+      {
+       "path": "/etc/ssl/ct_log_list.cnf"
+      },
+      {
+       "path": "/etc/ssl/ct_log_list.cnf.dist"
+      },
+      {
+       "path": "/etc/ssl/openssl.cnf"
+      },
+      {
+       "path": "/etc/ssl/openssl.cnf.dist"
+      },
+      {
+       "path": "/etc/ssl/certs"
+      },
+      {
+       "path": "/etc/ssl/misc"
+      },
+      {
+       "path": "/etc/ssl/misc/CA.pl"
+      },
+      {
+       "path": "/etc/ssl/misc/tsget"
+      },
+      {
+       "path": "/etc/ssl/misc/tsget.pl"
+      },
+      {
+       "path": "/etc/ssl/private"
+      },
+      {
+       "path": "/lib"
+      },
+      {
+       "path": "/lib/libcrypto.so.3"
+      },
+      {
+       "path": "/usr"
+      },
+      {
+       "path": "/usr/lib"
+      },
+      {
+       "path": "/usr/lib/libcrypto.so.3"
+      },
+      {
+       "path": "/usr/lib/engines-3"
+      },
+      {
+       "path": "/usr/lib/engines-3/afalg.so"
+      },
+      {
+       "path": "/usr/lib/engines-3/capi.so"
+      },
+      {
+       "path": "/usr/lib/engines-3/loader_attic.so"
+      },
+      {
+       "path": "/usr/lib/engines-3/padlock.so"
+      },
+      {
+       "path": "/usr/lib/ossl-modules"
+      },
+      {
+       "path": "/usr/lib/ossl-modules/legacy.so"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2024-4741",
+    "dataSource": "https://www.cve.org/CVERecord?id=CVE-2024-4741",
+    "namespace": "alpine:distro:alpine:3.19",
+    "severity": "Unknown",
+    "urls": [
+     "https://www.cve.org/CVERecord?id=CVE-2024-4741"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "3.1.6-r0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "alpine",
+       "version": "3.19.1"
+      },
+      "namespace": "alpine:distro:alpine:3.19",
+      "package": {
+       "name": "openssl",
+       "version": "3.1.5-r0"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 3.1.6-r0 (apk)",
+      "vulnerabilityID": "CVE-2024-4741"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "48aded0ae4ac61b3",
+    "name": "libcrypto3",
+    "version": "3.1.5-r0",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:024f03fbc7cf33e8dd706da511ccc205274b6a4fb6b2352acaadd232004a1e45"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "Apache-2.0"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libcrypto3:libcrypto3:3.1.5-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libcrypto3:libcrypto:3.1.5-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libcrypto:libcrypto3:3.1.5-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libcrypto:libcrypto:3.1.5-r0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/libcrypto3@3.1.5-r0?arch=x86_64&upstream=openssl&distro=alpine-3.19.1",
+    "upstreams": [
+     {
+      "name": "openssl"
+     }
+    ],
+    "metadataType": "ApkMetadata",
+    "metadata": {
+     "files": [
+      {
+       "path": "/etc"
+      },
+      {
+       "path": "/etc/ssl"
+      },
+      {
+       "path": "/etc/ssl/ct_log_list.cnf"
+      },
+      {
+       "path": "/etc/ssl/ct_log_list.cnf.dist"
+      },
+      {
+       "path": "/etc/ssl/openssl.cnf"
+      },
+      {
+       "path": "/etc/ssl/openssl.cnf.dist"
+      },
+      {
+       "path": "/etc/ssl/certs"
+      },
+      {
+       "path": "/etc/ssl/misc"
+      },
+      {
+       "path": "/etc/ssl/misc/CA.pl"
+      },
+      {
+       "path": "/etc/ssl/misc/tsget"
+      },
+      {
+       "path": "/etc/ssl/misc/tsget.pl"
+      },
+      {
+       "path": "/etc/ssl/private"
+      },
+      {
+       "path": "/lib"
+      },
+      {
+       "path": "/lib/libcrypto.so.3"
+      },
+      {
+       "path": "/usr"
+      },
+      {
+       "path": "/usr/lib"
+      },
+      {
+       "path": "/usr/lib/libcrypto.so.3"
+      },
+      {
+       "path": "/usr/lib/engines-3"
+      },
+      {
+       "path": "/usr/lib/engines-3/afalg.so"
+      },
+      {
+       "path": "/usr/lib/engines-3/capi.so"
+      },
+      {
+       "path": "/usr/lib/engines-3/loader_attic.so"
+      },
+      {
+       "path": "/usr/lib/engines-3/padlock.so"
+      },
+      {
+       "path": "/usr/lib/ossl-modules"
+      },
+      {
+       "path": "/usr/lib/ossl-modules/legacy.so"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2024-5535",
+    "dataSource": "https://www.cve.org/CVERecord?id=CVE-2024-5535",
+    "namespace": "alpine:distro:alpine:3.19",
+    "severity": "Critical",
+    "urls": [
+     "https://www.cve.org/CVERecord?id=CVE-2024-5535"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "3.1.6-r0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-5535",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-5535",
+     "namespace": "nvd:cpe",
+     "severity": "Critical",
+     "urls": [
+      "http://www.openwall.com/lists/oss-security/2024/06/27/1",
+      "http://www.openwall.com/lists/oss-security/2024/06/28/4",
+      "https://github.com/openssl/openssl/commit/4ada436a1946cbb24db5ab4ca082b69c1bc10f37",
+      "https://github.com/openssl/openssl/commit/99fb785a5f85315b95288921a321a935ea29a51e",
+      "https://github.com/openssl/openssl/commit/cf6f91f6121f4db167405db2f0de410a456f260c",
+      "https://github.com/openssl/openssl/commit/e86ac436f0bd54d4517745483e2315650fae7b2c",
+      "https://github.openssl.org/openssl/extended-releases/commit/9947251413065a05189a63c9b7a6c1d4e224c21c",
+      "https://github.openssl.org/openssl/extended-releases/commit/b78ec0824da857223486660177d3b1f255c65d87",
+      "https://security.netapp.com/advisory/ntap-20240712-0005/",
+      "https://www.openssl.org/news/secadv/20240627.txt"
+     ],
+     "description": "Issue summary: Calling the OpenSSL API function SSL_select_next_proto with an\nempty supported client protocols buffer may cause a crash or memory contents to\nbe sent to the peer.\n\nImpact summary: A buffer overread can have a range of potential consequences\nsuch as unexpected application beahviour or a crash. In particular this issue\ncould result in up to 255 bytes of arbitrary private data from memory being sent\nto the peer leading to a loss of confidentiality. However, only applications\nthat directly call the SSL_select_next_proto function with a 0 length list of\nsupported client protocols are affected by this issue. This would normally never\nbe a valid scenario and is typically not under attacker control but may occur by\naccident in the case of a configuration or programming error in the calling\napplication.\n\nThe OpenSSL API function SSL_select_next_proto is typically used by TLS\napplications that support ALPN (Application Layer Protocol Negotiation) or NPN\n(Next Protocol Negotiation). NPN is older, was never standardised and\nis deprecated in favour of ALPN. We believe that ALPN is significantly more\nwidely deployed than NPN. The SSL_select_next_proto function accepts a list of\nprotocols from the server and a list of protocols from the client and returns\nthe first protocol that appears in the server list that also appears in the\nclient list. In the case of no overlap between the two lists it returns the\nfirst item in the client list. In either case it will signal whether an overlap\nbetween the two lists was found. In the case where SSL_select_next_proto is\ncalled with a zero length client list it fails to notice this condition and\nreturns the memory immediately following the client list pointer (and reports\nthat there was no overlap in the lists).\n\nThis function is typically called from a server side application callback for\nALPN or a client side application callback for NPN. In the case of ALPN the list\nof protocols supplied by the client is guaranteed by libssl to never be zero in\nlength. The list of server protocols comes from the application and should never\nnormally be expected to be of zero length. In this case if the\nSSL_select_next_proto function has been called as expected (with the list\nsupplied by the client passed in the client/client_len parameters), then the\napplication will not be vulnerable to this issue. If the application has\naccidentally been configured with a zero length server list, and has\naccidentally passed that zero length server list in the client/client_len\nparameters, and has additionally failed to correctly handle a \"no overlap\"\nresponse (which would normally result in a handshake failure in ALPN) then it\nwill be vulnerable to this problem.\n\nIn the case of NPN, the protocol permits the client to opportunistically select\na protocol when there is no overlap. OpenSSL returns the first client protocol\nin the no overlap case in support of this. The list of client protocols comes\nfrom the application and should never normally be expected to be of zero length.\nHowever if the SSL_select_next_proto function is accidentally called with a\nclient_len of 0 then an invalid memory pointer will be returned instead. If the\napplication uses this output as the opportunistic protocol then the loss of\nconfidentiality will occur.\n\nThis issue has been assessed as Low severity because applications are most\nlikely to be vulnerable if they are using NPN instead of ALPN - but NPN is not\nwidely used. It also requires an application configuration or programming error.\nFinally, this issue would not typically be under attacker control making active\nexploitation unlikely.\n\nThe FIPS modules in 3.3, 3.2, 3.1 and 3.0 are not affected by this issue.\n\nDue to the low severity of this issue we are not issuing new releases of\nOpenSSL at this time. The fix will be included in the next releases when they\nbecome available.",
+     "cvss": [
+      {
+       "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H",
+       "metrics": {
+        "baseScore": 9.1,
+        "exploitabilityScore": 3.9,
+        "impactScore": 5.2
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "alpine",
+       "version": "3.19.1"
+      },
+      "namespace": "alpine:distro:alpine:3.19",
+      "package": {
+       "name": "openssl",
+       "version": "3.1.5-r0"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 3.1.6-r0 (apk)",
+      "vulnerabilityID": "CVE-2024-5535"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "ebfcfa317a422e97",
+    "name": "libssl3",
+    "version": "3.1.5-r0",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:024f03fbc7cf33e8dd706da511ccc205274b6a4fb6b2352acaadd232004a1e45"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "Apache-2.0"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libssl3:libssl3:3.1.5-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libssl3:libssl:3.1.5-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libssl:libssl3:3.1.5-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libssl:libssl:3.1.5-r0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/libssl3@3.1.5-r0?arch=x86_64&upstream=openssl&distro=alpine-3.19.1",
+    "upstreams": [
+     {
+      "name": "openssl"
+     }
+    ],
+    "metadataType": "ApkMetadata",
+    "metadata": {
+     "files": [
+      {
+       "path": "/lib"
+      },
+      {
+       "path": "/lib/libssl.so.3"
+      },
+      {
+       "path": "/usr"
+      },
+      {
+       "path": "/usr/lib"
+      },
+      {
+       "path": "/usr/lib/libssl.so.3"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2024-4741",
+    "dataSource": "https://www.cve.org/CVERecord?id=CVE-2024-4741",
+    "namespace": "alpine:distro:alpine:3.19",
+    "severity": "Unknown",
+    "urls": [
+     "https://www.cve.org/CVERecord?id=CVE-2024-4741"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "3.1.6-r0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "alpine",
+       "version": "3.19.1"
+      },
+      "namespace": "alpine:distro:alpine:3.19",
+      "package": {
+       "name": "openssl",
+       "version": "3.1.5-r0"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 3.1.6-r0 (apk)",
+      "vulnerabilityID": "CVE-2024-4741"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "ebfcfa317a422e97",
+    "name": "libssl3",
+    "version": "3.1.5-r0",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:024f03fbc7cf33e8dd706da511ccc205274b6a4fb6b2352acaadd232004a1e45"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "Apache-2.0"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libssl3:libssl3:3.1.5-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libssl3:libssl:3.1.5-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libssl:libssl3:3.1.5-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libssl:libssl:3.1.5-r0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/libssl3@3.1.5-r0?arch=x86_64&upstream=openssl&distro=alpine-3.19.1",
+    "upstreams": [
+     {
+      "name": "openssl"
+     }
+    ],
+    "metadataType": "ApkMetadata",
+    "metadata": {
+     "files": [
+      {
+       "path": "/lib"
+      },
+      {
+       "path": "/lib/libssl.so.3"
+      },
+      {
+       "path": "/usr"
+      },
+      {
+       "path": "/usr/lib"
+      },
+      {
+       "path": "/usr/lib/libssl.so.3"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2024-28182",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-28182",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "http://www.openwall.com/lists/oss-security/2024/04/03/16",
+     "https://github.com/nghttp2/nghttp2/commit/00201ecd8f982da3b67d4f6868af72a1b03b14e0",
+     "https://github.com/nghttp2/nghttp2/commit/d71a4668c6bead55805d18810d633fbb98315af9",
+     "https://github.com/nghttp2/nghttp2/security/advisories/GHSA-x6x3-gv8h-m57q",
+     "https://lists.debian.org/debian-lts-announce/2024/04/msg00026.html",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/AGOME6ZXJG7664IPQNVE3DL67E3YP3HY/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/J6ZMXUGB66VAXDW5J6QSTHM5ET25FGSA/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/PXJO2EASHM2OQQLGVDY5ZSO7UVDVHTDK/"
+    ],
+    "description": "nghttp2 is an implementation of the Hypertext Transfer Protocol version 2 in C. The nghttp2 library prior to version 1.61.0 keeps reading the unbounded number of HTTP/2 CONTINUATION frames even after a stream is reset to keep HPACK context in sync.  This causes excessive CPU usage to decode HPACK stream. nghttp2 v1.61.0 mitigates this vulnerability by limiting the number of CONTINUATION frames it accepts per stream. There is no workaround for this vulnerability.",
+    "cvss": [
+     {
+      "source": "security-advisories@github.com",
+      "type": "Secondary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+      "metrics": {
+       "baseScore": 5.3,
+       "exploitabilityScore": 3.9,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:nghttp2:nghttp2:1.58.0-r0:*:*:*:*:*:*:*"
+      ],
+      "package": {
+       "name": "nghttp2",
+       "version": "1.58.0-r0"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2024-28182",
+      "versionConstraint": "< 1.61.0 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:nghttp2:nghttp2:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "2b6564db197084f4",
+    "name": "nghttp2-dev",
+    "version": "1.58.0-r0",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:024f03fbc7cf33e8dd706da511ccc205274b6a4fb6b2352acaadd232004a1e45"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "MIT"
+    ],
+    "cpes": [
+     "cpe:2.3:a:nghttp2-dev:nghttp2-dev:1.58.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp2-dev:nghttp2_dev:1.58.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp2_dev:nghttp2-dev:1.58.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp2_dev:nghttp2_dev:1.58.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp-dev:nghttp2-dev:1.58.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp-dev:nghttp2_dev:1.58.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp2-dev:nghttp-dev:1.58.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp2-dev:nghttp_dev:1.58.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp2_dev:nghttp-dev:1.58.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp2_dev:nghttp_dev:1.58.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp_dev:nghttp2-dev:1.58.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp_dev:nghttp2_dev:1.58.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp-dev:nghttp-dev:1.58.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp-dev:nghttp_dev:1.58.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp_dev:nghttp-dev:1.58.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp_dev:nghttp_dev:1.58.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp2:nghttp2-dev:1.58.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp2:nghttp2_dev:1.58.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp2:nghttp-dev:1.58.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp2:nghttp_dev:1.58.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp:nghttp2-dev:1.58.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp:nghttp2_dev:1.58.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp:nghttp-dev:1.58.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp:nghttp_dev:1.58.0-r0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/nghttp2-dev@1.58.0-r0?arch=x86_64&upstream=nghttp2&distro=alpine-3.19.1",
+    "upstreams": [
+     {
+      "name": "nghttp2"
+     }
+    ],
+    "metadataType": "ApkMetadata",
+    "metadata": {
+     "files": [
+      {
+       "path": "/usr"
+      },
+      {
+       "path": "/usr/include"
+      },
+      {
+       "path": "/usr/include/nghttp2"
+      },
+      {
+       "path": "/usr/include/nghttp2/nghttp2.h"
+      },
+      {
+       "path": "/usr/include/nghttp2/nghttp2ver.h"
+      },
+      {
+       "path": "/usr/lib"
+      },
+      {
+       "path": "/usr/lib/libnghttp2.so"
+      },
+      {
+       "path": "/usr/lib/pkgconfig"
+      },
+      {
+       "path": "/usr/lib/pkgconfig/libnghttp2.pc"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2024-28182",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-28182",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "http://www.openwall.com/lists/oss-security/2024/04/03/16",
+     "https://github.com/nghttp2/nghttp2/commit/00201ecd8f982da3b67d4f6868af72a1b03b14e0",
+     "https://github.com/nghttp2/nghttp2/commit/d71a4668c6bead55805d18810d633fbb98315af9",
+     "https://github.com/nghttp2/nghttp2/security/advisories/GHSA-x6x3-gv8h-m57q",
+     "https://lists.debian.org/debian-lts-announce/2024/04/msg00026.html",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/AGOME6ZXJG7664IPQNVE3DL67E3YP3HY/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/J6ZMXUGB66VAXDW5J6QSTHM5ET25FGSA/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/PXJO2EASHM2OQQLGVDY5ZSO7UVDVHTDK/"
+    ],
+    "description": "nghttp2 is an implementation of the Hypertext Transfer Protocol version 2 in C. The nghttp2 library prior to version 1.61.0 keeps reading the unbounded number of HTTP/2 CONTINUATION frames even after a stream is reset to keep HPACK context in sync.  This causes excessive CPU usage to decode HPACK stream. nghttp2 v1.61.0 mitigates this vulnerability by limiting the number of CONTINUATION frames it accepts per stream. There is no workaround for this vulnerability.",
+    "cvss": [
+     {
+      "source": "security-advisories@github.com",
+      "type": "Secondary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+      "metrics": {
+       "baseScore": 5.3,
+       "exploitabilityScore": 3.9,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:nghttp2:nghttp2:1.58.0-r0:*:*:*:*:*:*:*"
+      ],
+      "package": {
+       "name": "nghttp2",
+       "version": "1.58.0-r0"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2024-28182",
+      "versionConstraint": "< 1.61.0 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:nghttp2:nghttp2:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "e7725f0529737c37",
+    "name": "nghttp2-libs",
+    "version": "1.58.0-r0",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:024f03fbc7cf33e8dd706da511ccc205274b6a4fb6b2352acaadd232004a1e45"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "MIT"
+    ],
+    "cpes": [
+     "cpe:2.3:a:nghttp2-libs:nghttp2-libs:1.58.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp2-libs:nghttp2_libs:1.58.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp2_libs:nghttp2-libs:1.58.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp2_libs:nghttp2_libs:1.58.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp-libs:nghttp2-libs:1.58.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp-libs:nghttp2_libs:1.58.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp2-libs:nghttp-libs:1.58.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp2-libs:nghttp_libs:1.58.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp2_libs:nghttp-libs:1.58.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp2_libs:nghttp_libs:1.58.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp_libs:nghttp2-libs:1.58.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp_libs:nghttp2_libs:1.58.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp-libs:nghttp-libs:1.58.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp-libs:nghttp_libs:1.58.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp_libs:nghttp-libs:1.58.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp_libs:nghttp_libs:1.58.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp2:nghttp2-libs:1.58.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp2:nghttp2_libs:1.58.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp2:nghttp-libs:1.58.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp2:nghttp_libs:1.58.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp:nghttp2-libs:1.58.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp:nghttp2_libs:1.58.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp:nghttp-libs:1.58.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp:nghttp_libs:1.58.0-r0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/nghttp2-libs@1.58.0-r0?arch=x86_64&upstream=nghttp2&distro=alpine-3.19.1",
+    "upstreams": [
+     {
+      "name": "nghttp2"
+     }
+    ],
+    "metadataType": "ApkMetadata",
+    "metadata": {
+     "files": [
+      {
+       "path": "/usr"
+      },
+      {
+       "path": "/usr/lib"
+      },
+      {
+       "path": "/usr/lib/libnghttp2.so.14"
+      },
+      {
+       "path": "/usr/lib/libnghttp2.so.14.25.1"
+      }
+     ]
+    }
+   }
+  }
+ ],
+ "source": {
+  "type": "image",
+  "target": {
+   "userInput": "docker.io/rapidfort/curl:latest",
+   "imageID": "sha256:db5c14fa7c6ed1d35dc9f827e104a935aa80069aa1bb40565909e974a82e0297",
+   "manifestDigest": "sha256:d8c64a51d02d6b09311b5dd422a289af998d702714d8a1a378e3cdba2caa1b30",
+   "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+   "tags": [
+    "rapidfort/curl:latest"
+   ],
+   "imageSize": 11688235,
+   "layers": [
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:024f03fbc7cf33e8dd706da511ccc205274b6a4fb6b2352acaadd232004a1e45",
+     "size": 11688235
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+     "size": 0
+    }
+   ],
+   "manifest": "eyJzY2hlbWFWZXJzaW9uIjoyLCJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmRpc3RyaWJ1dGlvbi5tYW5pZmVzdC52Mitqc29uIiwiY29uZmlnIjp7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuY29udGFpbmVyLmltYWdlLnYxK2pzb24iLCJzaXplIjo0NzE2LCJkaWdlc3QiOiJzaGEyNTY6ZGI1YzE0ZmE3YzZlZDFkMzVkYzlmODI3ZTEwNGE5MzVhYTgwMDY5YWExYmI0MDU2NTkwOWU5NzRhODJlMDI5NyJ9LCJsYXllcnMiOlt7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjoxMTk2MDgzMiwiZGlnZXN0Ijoic2hhMjU2OjAyNGYwM2ZiYzdjZjMzZThkZDcwNmRhNTExY2NjMjA1Mjc0YjZhNGZiNmIyMzUyYWNhYWRkMjMyMDA0YTFlNDUifSx7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjoxMDI0LCJkaWdlc3QiOiJzaGEyNTY6NWY3MGJmMThhMDg2MDA3MDE2ZTk0OGIwNGFlZDNiODIxMDNhMzZiZWE0MTc1NWI2Y2RkZmFmMTBhY2UzYzZlZiJ9XX0=",
+   "config": "eyJhcmNoaXRlY3R1cmUiOiJhbWQ2NCIsImNvbmZpZyI6eyJIb3N0bmFtZSI6IiIsIkRvbWFpbm5hbWUiOiIiLCJVc2VyIjoiY3VybF91c2VyIiwiQXR0YWNoU3RkaW4iOmZhbHNlLCJBdHRhY2hTdGRvdXQiOmZhbHNlLCJBdHRhY2hTdGRlcnIiOmZhbHNlLCJUdHkiOmZhbHNlLCJPcGVuU3RkaW4iOmZhbHNlLCJTdGRpbk9uY2UiOmZhbHNlLCJFbnYiOlsiUEFUSD0vdXNyL2xvY2FsL3NiaW46L3Vzci9sb2NhbC9iaW46L3Vzci9zYmluOi91c3IvYmluOi9zYmluOi9iaW4iLCJDVVJMX0NBX0JVTkRMRT0vY2FjZXJ0LnBlbSJdLCJDbWQiOlsiY3VybCJdLCJBcmdzRXNjYXBlZCI6dHJ1ZSwiSW1hZ2UiOiJzaGEyNTY6NDExMDRjMmNjNmQzZWRlZTAwMWZmYzQ5MDUxMGNlOTRjZTBhYWM1M2JkNWIzOWRlODVhM2E2MWYyNTRjNDM4MyIsIlZvbHVtZXMiOm51bGwsIldvcmtpbmdEaXIiOiIvaG9tZS9jdXJsX3VzZXIiLCJFbnRyeXBvaW50IjpbIi9lbnRyeXBvaW50LnNoIl0sIk9uQnVpbGQiOm51bGwsIkxhYmVscyI6eyJkb2NrZXIuY21kIjoicG9kbWFuIHJ1biAtaXQgcXVheS5pby9jdXJsLzo4LjguMCIsImlvLmJ1aWxkYWgudmVyc2lvbiI6IjEuMjMuMSIsIm1haW50YWluZXIiOiJKYW1lcyBGdWxsZXIgXHUwMDNjamltLmZ1bGxlckB3ZWJjb21wb3NpdGUuY29tXHUwMDNlIiwibmFtZSI6ImN1cmwtbGludXgtYW1kNjQ6OC44LjAiLCJvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UuZGVzY3JpcHRpb24iOiJtaW5pbWFsIGltYWdlIGZvciBjdXJsIiwib3JnLm9wZW5jb250YWluZXJzLmltYWdlLmxpY2Vuc2VzIjoiTUlUIiwib3JnLm9wZW5jb250YWluZXJzLmltYWdlLnNvdXJjZSI6Imh0dHBzOi8vZ2l0aHViLmNvbS9jdXJsL2N1cmwtY29udGFpbmVyIiwib3JpZ19pbWFnZV9kaWdlc3QiOiJzaGEyNTY6NzNlNGQ1MzJlYTYyZDc1MDVjNTg2NWI1MTdkMzcwNDk2NmZmZTkxNjYwOWJlZGMyMmFmNjgzM2RjOTk2OWJjZCIsInJmX2ltYWdlX2d1aWQuOTU0OGFkMzgtY2JhYi00NjJjLWI5MTYtOTEzYzQ4NDQ2ZDEyIjoiOTU0OGFkMzgtY2JhYi00NjJjLWI5MTYtOTEzYzQ4NDQ2ZDEyIiwidmVyc2lvbiI6IjguOC4wIn19LCJjb250YWluZXIiOiJiODlmZTNhNTM3NTFiOTkwNmEwOTBlM2ZlMWIwOTEzMmI1MWZmNDY1NjY4NzZlMTY2YzgzMGM0MGVjOTdjNmIzIiwiY29udGFpbmVyX2NvbmZpZyI6eyJIb3N0bmFtZSI6ImI4OWZlM2E1Mzc1MSIsIkRvbWFpbm5hbWUiOiIiLCJVc2VyIjoiY3VybF91c2VyIiwiQXR0YWNoU3RkaW4iOmZhbHNlLCJBdHRhY2hTdGRvdXQiOmZhbHNlLCJBdHRhY2hTdGRlcnIiOmZhbHNlLCJUdHkiOmZhbHNlLCJPcGVuU3RkaW4iOmZhbHNlLCJTdGRpbk9uY2UiOmZhbHNlLCJFbnYiOlsiUEFUSD0vdXNyL2xvY2FsL3NiaW46L3Vzci9sb2NhbC9iaW46L3Vzci9zYmluOi91c3IvYmluOi9zYmluOi9iaW4iLCJDVVJMX0NBX0JVTkRMRT0vY2FjZXJ0LnBlbSJdLCJDbWQiOlsiL2Jpbi9zaCIsIi1jIiwiIyhub3ApICIsIkxBQkVMIG9yaWdfaW1hZ2VfZGlnZXN0PXNoYTI1Njo3M2U0ZDUzMmVhNjJkNzUwNWM1ODY1YjUxN2QzNzA0OTY2ZmZlOTE2NjA5YmVkYzIyYWY2ODMzZGM5OTY5YmNkIl0sIkFyZ3NFc2NhcGVkIjp0cnVlLCJJbWFnZSI6InNoYTI1Njo0MTEwNGMyY2M2ZDNlZGVlMDAxZmZjNDkwNTEwY2U5NGNlMGFhYzUzYmQ1YjM5ZGU4NWEzYTYxZjI1NGM0MzgzIiwiVm9sdW1lcyI6bnVsbCwiV29ya2luZ0RpciI6Ii9ob21lL2N1cmxfdXNlciIsIkVudHJ5cG9pbnQiOlsiL2VudHJ5cG9pbnQuc2giXSwiT25CdWlsZCI6bnVsbCwiTGFiZWxzIjp7ImRvY2tlci5jbWQiOiJwb2RtYW4gcnVuIC1pdCBxdWF5LmlvL2N1cmwvOjguOC4wIiwiaW8uYnVpbGRhaC52ZXJzaW9uIjoiMS4yMy4xIiwibWFpbnRhaW5lciI6IkphbWVzIEZ1bGxlciBcdTAwM2NqaW0uZnVsbGVyQHdlYmNvbXBvc2l0ZS5jb21cdTAwM2UiLCJuYW1lIjoiY3VybC1saW51eC1hbWQ2NDo4LjguMCIsIm9yZy5vcGVuY29udGFpbmVycy5pbWFnZS5kZXNjcmlwdGlvbiI6Im1pbmltYWwgaW1hZ2UgZm9yIGN1cmwiLCJvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UubGljZW5zZXMiOiJNSVQiLCJvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2Uuc291cmNlIjoiaHR0cHM6Ly9naXRodWIuY29tL2N1cmwvY3VybC1jb250YWluZXIiLCJvcmlnX2ltYWdlX2RpZ2VzdCI6InNoYTI1Njo3M2U0ZDUzMmVhNjJkNzUwNWM1ODY1YjUxN2QzNzA0OTY2ZmZlOTE2NjA5YmVkYzIyYWY2ODMzZGM5OTY5YmNkIiwicmZfaW1hZ2VfZ3VpZC45NTQ4YWQzOC1jYmFiLTQ2MmMtYjkxNi05MTNjNDg0NDZkMTIiOiI5NTQ4YWQzOC1jYmFiLTQ2MmMtYjkxNi05MTNjNDg0NDZkMTIiLCJ2ZXJzaW9uIjoiOC44LjAifX0sImNyZWF0ZWQiOiIyMDI0LTA1LTIyVDA4OjE3OjQ5LjQyMDYwOTc4WiIsImRvY2tlcl92ZXJzaW9uIjoiMjQuMC45IiwiaGlzdG9yeSI6W3siY3JlYXRlZCI6IjIwMjQtMDUtMjJUMDg6MTc6NDMuNDMzOTQwNDE2WiIsImNyZWF0ZWRfYnkiOiJBUkcgUkZfUkZJRD05NTQ4YWQzOC1jYmFiLTQ2MmMtYjkxNi05MTNjNDg0NDZkMTIiLCJjb21tZW50IjoiYnVpbGRraXQuZG9ja2VyZmlsZS52MCIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDI0LTA1LTIyVDA4OjE3OjQzLjQzMzk0MDQxNloiLCJjcmVhdGVkX2J5IjoiQ09QWSAvIC8gIyBidWlsZGtpdCIsImNvbW1lbnQiOiJidWlsZGtpdC5kb2NrZXJmaWxlLnYwIn0seyJjcmVhdGVkIjoiMjAyNC0wNS0yMlQwODoxNzo0My40MzM5NDA0MTZaIiwiY3JlYXRlZF9ieSI6IkxBQkVMIHJmX2ltYWdlX2d1aWQuOTU0OGFkMzgtY2JhYi00NjJjLWI5MTYtOTEzYzQ4NDQ2ZDEyPTk1NDhhZDM4LWNiYWItNDYyYy1iOTE2LTkxM2M0ODQ0NmQxMiIsImNvbW1lbnQiOiJidWlsZGtpdC5kb2NrZXJmaWxlLnYwIiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjQtMDUtMjJUMDg6MTc6NDMuNDMzOTQwNDE2WiIsImNyZWF0ZWRfYnkiOiJMQUJFTCBkb2NrZXIuY21kPXBvZG1hbiBydW4gLWl0IHF1YXkuaW8vY3VybC86OC44LjAgaW8uYnVpbGRhaC52ZXJzaW9uPTEuMjMuMSBtYWludGFpbmVyPUphbWVzIEZ1bGxlciBcdTAwM2NqaW0uZnVsbGVyQHdlYmNvbXBvc2l0ZS5jb21cdTAwM2UgbmFtZT1jdXJsLWxpbnV4LWFtZDY0OjguOC4wIG9yZy5vcGVuY29udGFpbmVycy5pbWFnZS5kZXNjcmlwdGlvbj1taW5pbWFsIGltYWdlIGZvciBjdXJsIG9yZy5vcGVuY29udGFpbmVycy5pbWFnZS5saWNlbnNlcz1NSVQgb3JnLm9wZW5jb250YWluZXJzLmltYWdlLnNvdXJjZT1odHRwczovL2dpdGh1Yi5jb20vY3VybC9jdXJsLWNvbnRhaW5lciB2ZXJzaW9uPTguOC4wIiwiY29tbWVudCI6ImJ1aWxka2l0LmRvY2tlcmZpbGUudjAiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyNC0wNS0yMlQwODoxNzo0My40MzM5NDA0MTZaIiwiY3JlYXRlZF9ieSI6IkVOViBQQVRIPS91c3IvbG9jYWwvc2JpbjovdXNyL2xvY2FsL2JpbjovdXNyL3NiaW46L3Vzci9iaW46L3NiaW46L2JpbiBDVVJMX0NBX0JVTkRMRT0vY2FjZXJ0LnBlbSIsImNvbW1lbnQiOiJidWlsZGtpdC5kb2NrZXJmaWxlLnYwIiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjQtMDUtMjJUMDg6MTc6NDMuNDQyMDA2ODAyWiIsImNyZWF0ZWRfYnkiOiJXT1JLRElSIC9ob21lL2N1cmxfdXNlciIsImNvbW1lbnQiOiJidWlsZGtpdC5kb2NrZXJmaWxlLnYwIn0seyJjcmVhdGVkIjoiMjAyNC0wNS0yMlQwODoxNzo0My40NDIwMDY4MDJaIiwiY3JlYXRlZF9ieSI6IlVTRVIgY3VybF91c2VyIiwiY29tbWVudCI6ImJ1aWxka2l0LmRvY2tlcmZpbGUudjAiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyNC0wNS0yMlQwODoxNzo0My40NDIwMDY4MDJaIiwiY3JlYXRlZF9ieSI6IkVOVFJZUE9JTlQgW1wiL2VudHJ5cG9pbnQuc2hcIl0iLCJjb21tZW50IjoiYnVpbGRraXQuZG9ja2VyZmlsZS52MCIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDI0LTA1LTIyVDA4OjE3OjQzLjQ0MjAwNjgwMloiLCJjcmVhdGVkX2J5IjoiQ01EIFtcImN1cmxcIl0iLCJjb21tZW50IjoiYnVpbGRraXQuZG9ja2VyZmlsZS52MCIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDI0LTA1LTIyVDA4OjE3OjQ0Ljg3OTkwMjM4MloiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgIExBQkVMIG9yaWdfaW1hZ2VfZGlnZXN0PXNoYTI1Njo3M2U0ZDUzMmVhNjJkNzUwNWM1ODY1YjUxN2QzNzA0OTY2ZmZlOTE2NjA5YmVkYzIyYWY2ODMzZGM5OTY5YmNkIiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjQtMDUtMjJUMDg6MTc6NDkuNDIwNjA5NzhaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApICBMQUJFTCBvcmlnX2ltYWdlX2RpZ2VzdD1zaGEyNTY6NzNlNGQ1MzJlYTYyZDc1MDVjNTg2NWI1MTdkMzcwNDk2NmZmZTkxNjYwOWJlZGMyMmFmNjgzM2RjOTk2OWJjZCIsImVtcHR5X2xheWVyIjp0cnVlfV0sIm9zIjoibGludXgiLCJyb290ZnMiOnsidHlwZSI6ImxheWVycyIsImRpZmZfaWRzIjpbInNoYTI1NjowMjRmMDNmYmM3Y2YzM2U4ZGQ3MDZkYTUxMWNjYzIwNTI3NGI2YTRmYjZiMjM1MmFjYWFkZDIzMjAwNGExZTQ1Iiwic2hhMjU2OjVmNzBiZjE4YTA4NjAwNzAxNmU5NDhiMDRhZWQzYjgyMTAzYTM2YmVhNDE3NTViNmNkZGZhZjEwYWNlM2M2ZWYiXX19",
+   "repoDigests": [
+    "rapidfort/curl@sha256:f7c7f28672e7a01ef40955f918739bb2a5679c9aa5fb315e91499eb2dc7071c9"
+   ],
+   "architecture": "amd64",
+   "os": "linux",
+   "labels": {
+    "docker.cmd": "podman run -it quay.io/curl/:8.8.0",
+    "io.buildah.version": "1.23.1",
+    "maintainer": "James Fuller <jim.fuller@webcomposite.com>",
+    "name": "curl-linux-amd64:8.8.0",
+    "org.opencontainers.image.description": "minimal image for curl",
+    "org.opencontainers.image.licenses": "MIT",
+    "org.opencontainers.image.source": "https://github.com/curl/curl-container",
+    "orig_image_digest": "sha256:73e4d532ea62d7505c5865b517d3704966ffe916609bedc22af6833dc9969bcd",
+    "rf_image_guid.9548ad38-cbab-462c-b916-913c48446d12": "9548ad38-cbab-462c-b916-913c48446d12",
+    "version": "8.8.0"
+   }
+  }
+ },
+ "distro": {
+  "name": "alpine",
+  "version": "3.19.1",
+  "idLike": []
+ },
+ "descriptor": {
+  "name": "grype",
+  "version": "0.79.3",
+  "configuration": {
+   "output": [
+    "json"
+   ],
+   "file": "",
+   "distro": "",
+   "add-cpes-if-none": false,
+   "output-template-file": "",
+   "check-for-app-update": true,
+   "only-fixed": false,
+   "only-notfixed": false,
+   "ignore-wontfix": "",
+   "platform": "",
+   "search": {
+    "scope": "squashed",
+    "unindexed-archives": false,
+    "indexed-archives": true
+   },
+   "ignore": [
+    {
+     "vulnerability": "",
+     "reason": "",
+     "namespace": "",
+     "fix-state": "",
+     "package": {
+      "name": "kernel-headers",
+      "version": "",
+      "language": "",
+      "type": "rpm",
+      "location": "",
+      "upstream-name": "kernel"
+     },
+     "vex-status": "",
+     "vex-justification": "",
+     "match-type": "exact-indirect-match"
+    },
+    {
+     "vulnerability": "",
+     "reason": "",
+     "namespace": "",
+     "fix-state": "",
+     "package": {
+      "name": "linux-headers-.*",
+      "version": "",
+      "language": "",
+      "type": "deb",
+      "location": "",
+      "upstream-name": "linux"
+     },
+     "vex-status": "",
+     "vex-justification": "",
+     "match-type": "exact-indirect-match"
+    },
+    {
+     "vulnerability": "",
+     "reason": "",
+     "namespace": "",
+     "fix-state": "",
+     "package": {
+      "name": "linux-libc-dev",
+      "version": "",
+      "language": "",
+      "type": "deb",
+      "location": "",
+      "upstream-name": "linux"
+     },
+     "vex-status": "",
+     "vex-justification": "",
+     "match-type": "exact-indirect-match"
+    }
+   ],
+   "exclude": [],
+   "db": {
+    "cache-dir": "/Users/paulgibert/Library/Caches/grype/db",
+    "update-url": "https://toolbox-data.anchore.io/grype/databases/listing.json",
+    "ca-cert": "",
+    "auto-update": true,
+    "validate-by-hash-on-start": false,
+    "validate-age": true,
+    "max-allowed-built-age": 432000000000000,
+    "update-available-timeout": 30000000000,
+    "update-download-timeout": 120000000000
+   },
+   "externalSources": {
+    "enable": false,
+    "maven": {
+     "searchUpstreamBySha1": true,
+     "baseUrl": "https://search.maven.org/solrsearch/select"
+    }
+   },
+   "match": {
+    "java": {
+     "using-cpes": false
+    },
+    "dotnet": {
+     "using-cpes": false
+    },
+    "golang": {
+     "using-cpes": false,
+     "always-use-cpe-for-stdlib": true,
+     "allow-main-module-pseudo-version-comparison": false
+    },
+    "javascript": {
+     "using-cpes": false
+    },
+    "python": {
+     "using-cpes": false
+    },
+    "ruby": {
+     "using-cpes": false
+    },
+    "rust": {
+     "using-cpes": false
+    },
+    "stock": {
+     "using-cpes": true
+    }
+   },
+   "fail-on-severity": "",
+   "registry": {
+    "insecure-skip-tls-verify": false,
+    "insecure-use-http": false,
+    "auth": null,
+    "ca-cert": ""
+   },
+   "show-suppressed": false,
+   "by-cve": false,
+   "name": "",
+   "default-image-pull-source": "",
+   "vex-documents": [],
+   "vex-add": [],
+   "match-upstream-kernel-headers": false
+  },
+  "db": {
+   "built": "2024-07-23T01:30:37Z",
+   "schemaVersion": 5,
+   "location": "/Users/paulgibert/Library/Caches/grype/db/5",
+   "checksum": "sha256:972d0f51e180d424f3fff2637a1559e06940f35eda6bd03593be2a3db8f28971",
+   "error": null
+  },
+  "timestamp": "2024-07-23T21:46:14.810608-04:00"
+ }
+}

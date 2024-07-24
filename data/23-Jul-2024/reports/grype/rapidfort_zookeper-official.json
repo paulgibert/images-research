@@ -1,0 +1,1068 @@
+{
+ "matches": [
+  {
+   "vulnerability": {
+    "id": "CVE-2016-2781",
+    "dataSource": "https://ubuntu.com/security/CVE-2016-2781",
+    "namespace": "ubuntu:distro:ubuntu:22.04",
+    "severity": "Low",
+    "urls": [
+     "https://ubuntu.com/security/CVE-2016-2781"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2016-2781",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2016-2781",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "http://www.openwall.com/lists/oss-security/2016/02/28/2",
+      "http://www.openwall.com/lists/oss-security/2016/02/28/3",
+      "https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772%40%3Cdev.mina.apache.org%3E"
+     ],
+     "description": "chroot in GNU coreutils, when used with --userspec, allows local users to escape to the parent session via a crafted TIOCSTI ioctl call, which pushes characters to the terminal's input buffer.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:L/AC:L/Au:N/C:N/I:P/A:N",
+       "metrics": {
+        "baseScore": 2.1,
+        "exploitabilityScore": 3.9,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.0",
+       "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:C/C:N/I:H/A:N",
+       "metrics": {
+        "baseScore": 6.5,
+        "exploitabilityScore": 2,
+        "impactScore": 4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "22.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:22.04",
+      "package": {
+       "name": "coreutils",
+       "version": "8.32-4.1ubuntu1.2"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2016-2781"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "ac4d70545425fd76",
+    "name": "coreutils",
+    "version": "8.32-4.1ubuntu1.2",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/coreutils/copyright",
+      "layerID": "sha256:c025702b212a502cb02c91fa3ae56a49c2f5e9c3ee7e233c03123cfafcdd7d84"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:c025702b212a502cb02c91fa3ae56a49c2f5e9c3ee7e233c03123cfafcdd7d84"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-3"
+    ],
+    "cpes": [
+     "cpe:2.3:a:coreutils:coreutils:8.32-4.1ubuntu1.2:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/coreutils@8.32-4.1ubuntu1.2?arch=amd64&distro=ubuntu-22.04",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2016-20013",
+    "dataSource": "https://ubuntu.com/security/CVE-2016-20013",
+    "namespace": "ubuntu:distro:ubuntu:22.04",
+    "severity": "Negligible",
+    "urls": [
+     "https://ubuntu.com/security/CVE-2016-20013"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2016-20013",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2016-20013",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://akkadia.org/drepper/SHA-crypt.txt",
+      "https://pthree.org/2018/05/23/do-not-use-sha256crypt-sha512crypt-theyre-dangerous/",
+      "https://twitter.com/solardiz/status/795601240151457793"
+     ],
+     "description": "sha256crypt and sha512crypt through 0.6 allow attackers to cause a denial of service (CPU consumption) because the algorithm's runtime is proportional to the square of the length of the password.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+       "metrics": {
+        "baseScore": 5,
+        "exploitabilityScore": 10,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "22.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:22.04",
+      "package": {
+       "name": "glibc",
+       "version": "2.35-0ubuntu3.8"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2016-20013"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "afdc9da7bf1fafc5",
+    "name": "libc6",
+    "version": "2.35-0ubuntu3.8",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/libc6/copyright",
+      "layerID": "sha256:c025702b212a502cb02c91fa3ae56a49c2f5e9c3ee7e233c03123cfafcdd7d84"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:c025702b212a502cb02c91fa3ae56a49c2f5e9c3ee7e233c03123cfafcdd7d84"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GFDL-1.3",
+     "GPL-2",
+     "LGPL-2.1"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libc6:libc6:2.35-0ubuntu3.8:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/libc6@2.35-0ubuntu3.8?arch=amd64&upstream=glibc&distro=ubuntu-22.04",
+    "upstreams": [
+     {
+      "name": "glibc"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2022-41409",
+    "dataSource": "https://ubuntu.com/security/CVE-2022-41409",
+    "namespace": "ubuntu:distro:ubuntu:22.04",
+    "severity": "Low",
+    "urls": [
+     "https://ubuntu.com/security/CVE-2022-41409"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-41409",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-41409",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/PCRE2Project/pcre2/commit/94e1c001761373b7d9450768aa15d04c25547a35",
+      "https://github.com/PCRE2Project/pcre2/issues/141"
+     ],
+     "description": "Integer overflow vulnerability in pcre2test before 10.41 allows attackers to cause a denial of service or other unspecified impacts via negative input.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "22.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:22.04",
+      "package": {
+       "name": "pcre2",
+       "version": "10.39-3ubuntu0.1"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2022-41409"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "51f38bf78dffda95",
+    "name": "libpcre2-8-0",
+    "version": "10.39-3ubuntu0.1",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/libpcre2-8-0/copyright",
+      "layerID": "sha256:c025702b212a502cb02c91fa3ae56a49c2f5e9c3ee7e233c03123cfafcdd7d84"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:c025702b212a502cb02c91fa3ae56a49c2f5e9c3ee7e233c03123cfafcdd7d84"
+     }
+    ],
+    "language": "",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:libpcre2-8-0:libpcre2-8-0:10.39-3ubuntu0.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libpcre2-8-0:libpcre2_8_0:10.39-3ubuntu0.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libpcre2_8_0:libpcre2-8-0:10.39-3ubuntu0.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libpcre2_8_0:libpcre2_8_0:10.39-3ubuntu0.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libpcre2-8:libpcre2-8-0:10.39-3ubuntu0.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libpcre2-8:libpcre2_8_0:10.39-3ubuntu0.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libpcre2_8:libpcre2-8-0:10.39-3ubuntu0.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libpcre2_8:libpcre2_8_0:10.39-3ubuntu0.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libpcre2:libpcre2-8-0:10.39-3ubuntu0.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libpcre2:libpcre2_8_0:10.39-3ubuntu0.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/libpcre2-8-0@10.39-3ubuntu0.1?arch=amd64&upstream=pcre2&distro=ubuntu-22.04",
+    "upstreams": [
+     {
+      "name": "pcre2"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2017-11164",
+    "dataSource": "https://ubuntu.com/security/CVE-2017-11164",
+    "namespace": "ubuntu:distro:ubuntu:22.04",
+    "severity": "Negligible",
+    "urls": [
+     "https://ubuntu.com/security/CVE-2017-11164"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2017-11164",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2017-11164",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "http://openwall.com/lists/oss-security/2017/07/11/3",
+      "http://www.openwall.com/lists/oss-security/2023/04/11/1",
+      "http://www.openwall.com/lists/oss-security/2023/04/12/1",
+      "http://www.securityfocus.com/bid/99575",
+      "https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772%40%3Cdev.mina.apache.org%3E"
+     ],
+     "description": "In PCRE 8.41, the OP_KETRMAX feature in the match function in pcre_exec.c allows stack exhaustion (uncontrolled recursion) when processing a crafted regular expression.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
+       "metrics": {
+        "baseScore": 7.8,
+        "exploitabilityScore": 10,
+        "impactScore": 6.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.0",
+       "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "22.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:22.04",
+      "package": {
+       "name": "pcre3",
+       "version": "2:8.39-13ubuntu0.22.04.1"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2017-11164"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "f71f09967777ca8d",
+    "name": "libpcre3",
+    "version": "2:8.39-13ubuntu0.22.04.1",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/libpcre3/copyright",
+      "layerID": "sha256:c025702b212a502cb02c91fa3ae56a49c2f5e9c3ee7e233c03123cfafcdd7d84"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:c025702b212a502cb02c91fa3ae56a49c2f5e9c3ee7e233c03123cfafcdd7d84"
+     }
+    ],
+    "language": "",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:libpcre3:libpcre3:2:8.39-13ubuntu0.22.04.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/libpcre3@2:8.39-13ubuntu0.22.04.1?arch=amd64&upstream=pcre3&distro=ubuntu-22.04",
+    "upstreams": [
+     {
+      "name": "pcre3"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-50495",
+    "dataSource": "https://ubuntu.com/security/CVE-2023-50495",
+    "namespace": "ubuntu:distro:ubuntu:22.04",
+    "severity": "Low",
+    "urls": [
+     "https://ubuntu.com/security/CVE-2023-50495"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-50495",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-50495",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/LU4MYMKFEZQ5VSCVLRIZGDQOUW3T44GT/",
+      "https://lists.gnu.org/archive/html/bug-ncurses/2023-04/msg00020.html",
+      "https://lists.gnu.org/archive/html/bug-ncurses/2023-04/msg00029.html",
+      "https://security.netapp.com/advisory/ntap-20240119-0008/"
+     ],
+     "description": "NCurse v6.4-20230418 was discovered to contain a segmentation fault via the component _nc_wrap_entry().",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 6.5,
+        "exploitabilityScore": 2.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "22.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:22.04",
+      "package": {
+       "name": "ncurses",
+       "version": "6.3-2ubuntu0.1"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2023-50495"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "b1ac34e2a6e64913",
+    "name": "libtinfo6",
+    "version": "6.3-2ubuntu0.1",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/libtinfo6/copyright",
+      "layerID": "sha256:c025702b212a502cb02c91fa3ae56a49c2f5e9c3ee7e233c03123cfafcdd7d84"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:c025702b212a502cb02c91fa3ae56a49c2f5e9c3ee7e233c03123cfafcdd7d84"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "BSD-3-clause",
+     "MIT/X11",
+     "X11"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libtinfo6:libtinfo6:6.3-2ubuntu0.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/libtinfo6@6.3-2ubuntu0.1?arch=amd64&upstream=ncurses&distro=ubuntu-22.04",
+    "upstreams": [
+     {
+      "name": "ncurses"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-45918",
+    "dataSource": "https://ubuntu.com/security/CVE-2023-45918",
+    "namespace": "ubuntu:distro:ubuntu:22.04",
+    "severity": "Low",
+    "urls": [
+     "https://ubuntu.com/security/CVE-2023-45918"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-45918",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-45918",
+     "namespace": "nvd:cpe",
+     "severity": "Unknown",
+     "urls": [
+      "https://lists.gnu.org/archive/html/bug-ncurses/2023-06/msg00005.html",
+      "https://security.netapp.com/advisory/ntap-20240315-0006/"
+     ],
+     "description": "ncurses 6.4-20230610 has a NULL pointer dereference in tgetstr in tinfo/lib_termcap.c.",
+     "cvss": []
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "22.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:22.04",
+      "package": {
+       "name": "ncurses",
+       "version": "6.3-2ubuntu0.1"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2023-45918"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "b1ac34e2a6e64913",
+    "name": "libtinfo6",
+    "version": "6.3-2ubuntu0.1",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/libtinfo6/copyright",
+      "layerID": "sha256:c025702b212a502cb02c91fa3ae56a49c2f5e9c3ee7e233c03123cfafcdd7d84"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:c025702b212a502cb02c91fa3ae56a49c2f5e9c3ee7e233c03123cfafcdd7d84"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "BSD-3-clause",
+     "MIT/X11",
+     "X11"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libtinfo6:libtinfo6:6.3-2ubuntu0.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/libtinfo6@6.3-2ubuntu0.1?arch=amd64&upstream=ncurses&distro=ubuntu-22.04",
+    "upstreams": [
+     {
+      "name": "ncurses"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-50495",
+    "dataSource": "https://ubuntu.com/security/CVE-2023-50495",
+    "namespace": "ubuntu:distro:ubuntu:22.04",
+    "severity": "Low",
+    "urls": [
+     "https://ubuntu.com/security/CVE-2023-50495"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-50495",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-50495",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/LU4MYMKFEZQ5VSCVLRIZGDQOUW3T44GT/",
+      "https://lists.gnu.org/archive/html/bug-ncurses/2023-04/msg00020.html",
+      "https://lists.gnu.org/archive/html/bug-ncurses/2023-04/msg00029.html",
+      "https://security.netapp.com/advisory/ntap-20240119-0008/"
+     ],
+     "description": "NCurse v6.4-20230418 was discovered to contain a segmentation fault via the component _nc_wrap_entry().",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 6.5,
+        "exploitabilityScore": 2.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "22.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:22.04",
+      "package": {
+       "name": "ncurses",
+       "version": "6.3-2ubuntu0.1"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2023-50495"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "24a7b10cad181243",
+    "name": "ncurses-bin",
+    "version": "6.3-2ubuntu0.1",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/ncurses-bin/copyright",
+      "layerID": "sha256:c025702b212a502cb02c91fa3ae56a49c2f5e9c3ee7e233c03123cfafcdd7d84"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:c025702b212a502cb02c91fa3ae56a49c2f5e9c3ee7e233c03123cfafcdd7d84"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "BSD-3-clause",
+     "MIT/X11",
+     "X11"
+    ],
+    "cpes": [
+     "cpe:2.3:a:ncurses-bin:ncurses-bin:6.3-2ubuntu0.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ncurses-bin:ncurses_bin:6.3-2ubuntu0.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ncurses_bin:ncurses-bin:6.3-2ubuntu0.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ncurses_bin:ncurses_bin:6.3-2ubuntu0.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ncurses:ncurses-bin:6.3-2ubuntu0.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ncurses:ncurses_bin:6.3-2ubuntu0.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/ncurses-bin@6.3-2ubuntu0.1?arch=amd64&upstream=ncurses&distro=ubuntu-22.04",
+    "upstreams": [
+     {
+      "name": "ncurses"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-45918",
+    "dataSource": "https://ubuntu.com/security/CVE-2023-45918",
+    "namespace": "ubuntu:distro:ubuntu:22.04",
+    "severity": "Low",
+    "urls": [
+     "https://ubuntu.com/security/CVE-2023-45918"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-45918",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-45918",
+     "namespace": "nvd:cpe",
+     "severity": "Unknown",
+     "urls": [
+      "https://lists.gnu.org/archive/html/bug-ncurses/2023-06/msg00005.html",
+      "https://security.netapp.com/advisory/ntap-20240315-0006/"
+     ],
+     "description": "ncurses 6.4-20230610 has a NULL pointer dereference in tgetstr in tinfo/lib_termcap.c.",
+     "cvss": []
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "22.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:22.04",
+      "package": {
+       "name": "ncurses",
+       "version": "6.3-2ubuntu0.1"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2023-45918"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "24a7b10cad181243",
+    "name": "ncurses-bin",
+    "version": "6.3-2ubuntu0.1",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/ncurses-bin/copyright",
+      "layerID": "sha256:c025702b212a502cb02c91fa3ae56a49c2f5e9c3ee7e233c03123cfafcdd7d84"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:c025702b212a502cb02c91fa3ae56a49c2f5e9c3ee7e233c03123cfafcdd7d84"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "BSD-3-clause",
+     "MIT/X11",
+     "X11"
+    ],
+    "cpes": [
+     "cpe:2.3:a:ncurses-bin:ncurses-bin:6.3-2ubuntu0.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ncurses-bin:ncurses_bin:6.3-2ubuntu0.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ncurses_bin:ncurses-bin:6.3-2ubuntu0.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ncurses_bin:ncurses_bin:6.3-2ubuntu0.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ncurses:ncurses-bin:6.3-2ubuntu0.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ncurses:ncurses_bin:6.3-2ubuntu0.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/ncurses-bin@6.3-2ubuntu0.1?arch=amd64&upstream=ncurses&distro=ubuntu-22.04",
+    "upstreams": [
+     {
+      "name": "ncurses"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-r978-9m6m-6gm6",
+    "dataSource": "https://github.com/advisories/GHSA-r978-9m6m-6gm6",
+    "namespace": "github:language:java",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-r978-9m6m-6gm6"
+    ],
+    "description": "Apache ZooKeeper vulnerable to information disclosure in persistent watchers handling",
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-23944",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-23944",
+     "namespace": "nvd:cpe",
+     "severity": "Unknown",
+     "urls": [
+      "http://www.openwall.com/lists/oss-security/2024/03/14/2",
+      "https://lists.apache.org/thread/96s5nqssj03rznz9hv58txdb2k1lr79k"
+     ],
+     "description": "Information disclosure in persistent watchers handling in Apache ZooKeeper due to missing ACL check. It allows an attacker to monitor child znodes by attaching a persistent watcher (addWatch command) to a parent which the attacker has already access to. ZooKeeper server doesn't do ACL check when the persistent watcher is triggered and as a consequence, the full path of znodes that a watch event gets triggered upon is exposed to the owner of the watcher. It's important to note that only the path is exposed by this vulnerability, not the data of znode, but since znode path can contain sensitive information like user name or login ID, this issue is potentially critical.\n\nUsers are recommended to upgrade to version 3.9.2, 3.8.4 which fixes the issue.\n",
+     "cvss": []
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "zookeeper",
+       "version": "3.7.2"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=3.6.0,<=3.7.2 (unknown)",
+      "vulnerabilityID": "GHSA-r978-9m6m-6gm6"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "59901b23a4a2e988",
+    "name": "zookeeper",
+    "version": "3.7.2",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "/apache-zookeeper-3.7.2-bin/lib/zookeeper-3.7.2.jar",
+      "layerID": "sha256:c025702b212a502cb02c91fa3ae56a49c2f5e9c3ee7e233c03123cfafcdd7d84"
+     }
+    ],
+    "language": "java",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:apache:zookeeper:3.7.2:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/org.apache.zookeeper/zookeeper@3.7.2",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "/apache-zookeeper-3.7.2-bin/lib/zookeeper-3.7.2.jar",
+     "pomArtifactID": "zookeeper",
+     "pomGroupID": "org.apache.zookeeper",
+     "manifestName": "",
+     "archiveDigests": [
+      {
+       "algorithm": "sha1",
+       "value": "3b7c2c26b697094fc29e5a78a522cffa1a55b26d"
+      }
+     ]
+    }
+   }
+  }
+ ],
+ "source": {
+  "type": "image",
+  "target": {
+   "userInput": "docker.io/rapidfort/zookeeper-official:latest",
+   "imageID": "sha256:b38f4f293db6c73fd3c09e79c8f0a9cefe91d5a580c773ead3ee1cfb00463fa6",
+   "manifestDigest": "sha256:e6df86055fe066d3db9da1d28ba751d16d3b8fc8104dd444cfbb56462465ff58",
+   "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+   "tags": [
+    "rapidfort/zookeeper-official:latest"
+   ],
+   "imageSize": 177605827,
+   "layers": [
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:c025702b212a502cb02c91fa3ae56a49c2f5e9c3ee7e233c03123cfafcdd7d84",
+     "size": 177605827
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+     "size": 0
+    }
+   ],
+   "manifest": "eyJzY2hlbWFWZXJzaW9uIjoyLCJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmRpc3RyaWJ1dGlvbi5tYW5pZmVzdC52Mitqc29uIiwiY29uZmlnIjp7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuY29udGFpbmVyLmltYWdlLnYxK2pzb24iLCJzaXplIjo2MDg5LCJkaWdlc3QiOiJzaGEyNTY6YjM4ZjRmMjkzZGI2YzczZmQzYzA5ZTc5YzhmMGE5Y2VmZTkxZDVhNTgwYzc3M2VhZDNlZTFjZmIwMDQ2M2ZhNiJ9LCJsYXllcnMiOlt7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjoxODAwMzcxMjAsImRpZ2VzdCI6InNoYTI1NjpjMDI1NzAyYjIxMmE1MDJjYjAyYzkxZmEzYWU1NmE0OWMyZjVlOWMzZWU3ZTIzM2MwMzEyM2NmYWZjZGQ3ZDg0In0seyJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmltYWdlLnJvb3Rmcy5kaWZmLnRhci5nemlwIiwic2l6ZSI6MTAyNCwiZGlnZXN0Ijoic2hhMjU2OjVmNzBiZjE4YTA4NjAwNzAxNmU5NDhiMDRhZWQzYjgyMTAzYTM2YmVhNDE3NTViNmNkZGZhZjEwYWNlM2M2ZWYifV19",
+   "config": "eyJhcmNoaXRlY3R1cmUiOiJhbWQ2NCIsImNvbmZpZyI6eyJIb3N0bmFtZSI6IiIsIkRvbWFpbm5hbWUiOiIiLCJVc2VyIjoiIiwiQXR0YWNoU3RkaW4iOmZhbHNlLCJBdHRhY2hTdGRvdXQiOmZhbHNlLCJBdHRhY2hTdGRlcnIiOmZhbHNlLCJFeHBvc2VkUG9ydHMiOnsiMjE4MS90Y3AiOnt9LCIyODg4L3RjcCI6e30sIjM4ODgvdGNwIjp7fSwiODA4MC90Y3AiOnt9fSwiVHR5IjpmYWxzZSwiT3BlblN0ZGluIjpmYWxzZSwiU3RkaW5PbmNlIjpmYWxzZSwiRW52IjpbIlBBVEg9L29wdC9qYXZhL29wZW5qZGsvYmluOi91c3IvbG9jYWwvc2JpbjovdXNyL2xvY2FsL2JpbjovdXNyL3NiaW46L3Vzci9iaW46L3NiaW46L2JpbjovYXBhY2hlLXpvb2tlZXBlci0zLjcuMi1iaW4vYmluIiwiSkFWQV9IT01FPS9vcHQvamF2YS9vcGVuamRrIiwiTEFORz1lbl9VUy5VVEYtOCIsIkxBTkdVQUdFPWVuX1VTOmVuIiwiTENfQUxMPWVuX1VTLlVURi04IiwiSkFWQV9WRVJTSU9OPWpkay0xNy4wLjEyKzciLCJaT09fQ09ORl9ESVI9L2NvbmYiLCJaT09fREFUQV9ESVI9L2RhdGEiLCJaT09fREFUQV9MT0dfRElSPS9kYXRhbG9nIiwiWk9PX0xPR19ESVI9L2xvZ3MiLCJaT09fVElDS19USU1FPTIwMDAiLCJaT09fSU5JVF9MSU1JVD01IiwiWk9PX1NZTkNfTElNSVQ9MiIsIlpPT19BVVRPUFVSR0VfUFVSR0VJTlRFUlZBTD0wIiwiWk9PX0FVVE9QVVJHRV9TTkFQUkVUQUlOQ09VTlQ9MyIsIlpPT19NQVhfQ0xJRU5UX0NOWE5TPTYwIiwiWk9PX1NUQU5EQUxPTkVfRU5BQkxFRD10cnVlIiwiWk9PX0FETUlOU0VSVkVSX0VOQUJMRUQ9dHJ1ZSIsIlpPT0NGR0RJUj0vY29uZiJdLCJDbWQiOlsiemtTZXJ2ZXIuc2giLCJzdGFydC1mb3JlZ3JvdW5kIl0sIkFyZ3NFc2NhcGVkIjp0cnVlLCJJbWFnZSI6InNoYTI1NjoxZjdiMWVmOGY4OTg4ODY1OGRhNDFmMzQzNGI3ZWRmMzI3YTAyM2IzMGU3NDVhMTA0ZGJlMzk3ZDU5OTJhZTgxIiwiVm9sdW1lcyI6eyIvZGF0YSI6e30sIi9kYXRhbG9nIjp7fSwiL2xvZ3MiOnt9fSwiV29ya2luZ0RpciI6Ii9hcGFjaGUtem9va2VlcGVyLTMuNy4yLWJpbiIsIkVudHJ5cG9pbnQiOlsiL2RvY2tlci1lbnRyeXBvaW50LnNoIl0sIk9uQnVpbGQiOm51bGwsIkxhYmVscyI6eyJvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UucmVmLm5hbWUiOiJ1YnVudHUiLCJvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UudmVyc2lvbiI6IjIyLjA0Iiwib3JpZ19pbWFnZV9kaWdlc3QiOiJzaGEyNTY6YzkxMGY3NjdjMTk1MzQ2MjE2Mzg1ZDJkNTM3ZmQwOWY1ZGIzNjg3MjYzNmY5OTIxYzlkZTIwNjk3NjBhM2ZjNyIsInJmX2ltYWdlX2d1aWQuYmU2ZmI0ZDktYzEwZS00NjlmLTgxNGQtNTFiYmM0MjYwN2UzIjoiYmU2ZmI0ZDktYzEwZS00NjlmLTgxNGQtNTFiYmM0MjYwN2UzIn19LCJjb250YWluZXIiOiJkOTc4ZjBlYjQzNWQ2OTMyZWE0ZjYzODBmZGE2NjgxNzk0ZDkwZDg1OWI4NTQzOThjMjhmMDdlYzJiODcxZTk1IiwiY29udGFpbmVyX2NvbmZpZyI6eyJIb3N0bmFtZSI6ImQ5NzhmMGViNDM1ZCIsIkRvbWFpbm5hbWUiOiIiLCJVc2VyIjoiIiwiQXR0YWNoU3RkaW4iOmZhbHNlLCJBdHRhY2hTdGRvdXQiOmZhbHNlLCJBdHRhY2hTdGRlcnIiOmZhbHNlLCJFeHBvc2VkUG9ydHMiOnsiMjE4MS90Y3AiOnt9LCIyODg4L3RjcCI6e30sIjM4ODgvdGNwIjp7fSwiODA4MC90Y3AiOnt9fSwiVHR5IjpmYWxzZSwiT3BlblN0ZGluIjpmYWxzZSwiU3RkaW5PbmNlIjpmYWxzZSwiRW52IjpbIlBBVEg9L29wdC9qYXZhL29wZW5qZGsvYmluOi91c3IvbG9jYWwvc2JpbjovdXNyL2xvY2FsL2JpbjovdXNyL3NiaW46L3Vzci9iaW46L3NiaW46L2JpbjovYXBhY2hlLXpvb2tlZXBlci0zLjcuMi1iaW4vYmluIiwiSkFWQV9IT01FPS9vcHQvamF2YS9vcGVuamRrIiwiTEFORz1lbl9VUy5VVEYtOCIsIkxBTkdVQUdFPWVuX1VTOmVuIiwiTENfQUxMPWVuX1VTLlVURi04IiwiSkFWQV9WRVJTSU9OPWpkay0xNy4wLjEyKzciLCJaT09fQ09ORl9ESVI9L2NvbmYiLCJaT09fREFUQV9ESVI9L2RhdGEiLCJaT09fREFUQV9MT0dfRElSPS9kYXRhbG9nIiwiWk9PX0xPR19ESVI9L2xvZ3MiLCJaT09fVElDS19USU1FPTIwMDAiLCJaT09fSU5JVF9MSU1JVD01IiwiWk9PX1NZTkNfTElNSVQ9MiIsIlpPT19BVVRPUFVSR0VfUFVSR0VJTlRFUlZBTD0wIiwiWk9PX0FVVE9QVVJHRV9TTkFQUkVUQUlOQ09VTlQ9MyIsIlpPT19NQVhfQ0xJRU5UX0NOWE5TPTYwIiwiWk9PX1NUQU5EQUxPTkVfRU5BQkxFRD10cnVlIiwiWk9PX0FETUlOU0VSVkVSX0VOQUJMRUQ9dHJ1ZSIsIlpPT0NGR0RJUj0vY29uZiJdLCJDbWQiOlsiL2Jpbi9zaCIsIi1jIiwiIyhub3ApICIsIkxBQkVMIG9yaWdfaW1hZ2VfZGlnZXN0PXNoYTI1NjpjOTEwZjc2N2MxOTUzNDYyMTYzODVkMmQ1MzdmZDA5ZjVkYjM2ODcyNjM2Zjk5MjFjOWRlMjA2OTc2MGEzZmM3Il0sIkFyZ3NFc2NhcGVkIjp0cnVlLCJJbWFnZSI6InNoYTI1NjoxZjdiMWVmOGY4OTg4ODY1OGRhNDFmMzQzNGI3ZWRmMzI3YTAyM2IzMGU3NDVhMTA0ZGJlMzk3ZDU5OTJhZTgxIiwiVm9sdW1lcyI6eyIvZGF0YSI6e30sIi9kYXRhbG9nIjp7fSwiL2xvZ3MiOnt9fSwiV29ya2luZ0RpciI6Ii9hcGFjaGUtem9va2VlcGVyLTMuNy4yLWJpbiIsIkVudHJ5cG9pbnQiOlsiL2RvY2tlci1lbnRyeXBvaW50LnNoIl0sIk9uQnVpbGQiOm51bGwsIkxhYmVscyI6eyJvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UucmVmLm5hbWUiOiJ1YnVudHUiLCJvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UudmVyc2lvbiI6IjIyLjA0Iiwib3JpZ19pbWFnZV9kaWdlc3QiOiJzaGEyNTY6YzkxMGY3NjdjMTk1MzQ2MjE2Mzg1ZDJkNTM3ZmQwOWY1ZGIzNjg3MjYzNmY5OTIxYzlkZTIwNjk3NjBhM2ZjNyIsInJmX2ltYWdlX2d1aWQuYmU2ZmI0ZDktYzEwZS00NjlmLTgxNGQtNTFiYmM0MjYwN2UzIjoiYmU2ZmI0ZDktYzEwZS00NjlmLTgxNGQtNTFiYmM0MjYwN2UzIn19LCJjcmVhdGVkIjoiMjAyNC0wNy0yM1QwOTo0Mjo0Mi4yNDg4NDMzMjFaIiwiZG9ja2VyX3ZlcnNpb24iOiIyNi4xLjMiLCJoaXN0b3J5IjpbeyJjcmVhdGVkIjoiMjAyNC0wNy0yM1QwOTo0MjoyOC41NDQ3NDE4NFoiLCJjcmVhdGVkX2J5IjoiQVJHIFJGX1JGSUQ9YmU2ZmI0ZDktYzEwZS00NjlmLTgxNGQtNTFiYmM0MjYwN2UzIiwiY29tbWVudCI6ImJ1aWxka2l0LmRvY2tlcmZpbGUudjAiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyNC0wNy0yM1QwOTo0MjoyOC41NDQ3NDE4NFoiLCJjcmVhdGVkX2J5IjoiQ09QWSAvIC8gIyBidWlsZGtpdCIsImNvbW1lbnQiOiJidWlsZGtpdC5kb2NrZXJmaWxlLnYwIn0seyJjcmVhdGVkIjoiMjAyNC0wNy0yM1QwOTo0MjoyOC41NDQ3NDE4NFoiLCJjcmVhdGVkX2J5IjoiTEFCRUwgcmZfaW1hZ2VfZ3VpZC5iZTZmYjRkOS1jMTBlLTQ2OWYtODE0ZC01MWJiYzQyNjA3ZTM9YmU2ZmI0ZDktYzEwZS00NjlmLTgxNGQtNTFiYmM0MjYwN2UzIiwiY29tbWVudCI6ImJ1aWxka2l0LmRvY2tlcmZpbGUudjAiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyNC0wNy0yM1QwOTo0MjoyOC41NDQ3NDE4NFoiLCJjcmVhdGVkX2J5IjoiTEFCRUwgb3JnLm9wZW5jb250YWluZXJzLmltYWdlLnJlZi5uYW1lPXVidW50dSBvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UudmVyc2lvbj0yMi4wNCIsImNvbW1lbnQiOiJidWlsZGtpdC5kb2NrZXJmaWxlLnYwIiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjQtMDctMjNUMDk6NDI6MjguNTQ0NzQxODRaIiwiY3JlYXRlZF9ieSI6IkVOViBQQVRIPS9vcHQvamF2YS9vcGVuamRrL2JpbjovdXNyL2xvY2FsL3NiaW46L3Vzci9sb2NhbC9iaW46L3Vzci9zYmluOi91c3IvYmluOi9zYmluOi9iaW46L2FwYWNoZS16b29rZWVwZXItMy43LjItYmluL2JpbiBKQVZBX0hPTUU9L29wdC9qYXZhL29wZW5qZGsgTEFORz1lbl9VUy5VVEYtOCBMQU5HVUFHRT1lbl9VUzplbiBMQ19BTEw9ZW5fVVMuVVRGLTggSkFWQV9WRVJTSU9OPWpkay0xNy4wLjEyKzcgWk9PX0NPTkZfRElSPS9jb25mIFpPT19EQVRBX0RJUj0vZGF0YSBaT09fREFUQV9MT0dfRElSPS9kYXRhbG9nIFpPT19MT0dfRElSPS9sb2dzIFpPT19USUNLX1RJTUU9MjAwMCBaT09fSU5JVF9MSU1JVD01IFpPT19TWU5DX0xJTUlUPTIgWk9PX0FVVE9QVVJHRV9QVVJHRUlOVEVSVkFMPTAgWk9PX0FVVE9QVVJHRV9TTkFQUkVUQUlOQ09VTlQ9MyBaT09fTUFYX0NMSUVOVF9DTlhOUz02MCBaT09fU1RBTkRBTE9ORV9FTkFCTEVEPXRydWUgWk9PX0FETUlOU0VSVkVSX0VOQUJMRUQ9dHJ1ZSBaT09DRkdESVI9L2NvbmYiLCJjb21tZW50IjoiYnVpbGRraXQuZG9ja2VyZmlsZS52MCIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDI0LTA3LTIzVDA5OjQyOjI4LjU0NDc0MTg0WiIsImNyZWF0ZWRfYnkiOiJFWFBPU0UgbWFwWzIxODEvdGNwOnt9XSIsImNvbW1lbnQiOiJidWlsZGtpdC5kb2NrZXJmaWxlLnYwIiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjQtMDctMjNUMDk6NDI6MjguNTQ0NzQxODRaIiwiY3JlYXRlZF9ieSI6IkVYUE9TRSBtYXBbMjg4OC90Y3A6e31dIiwiY29tbWVudCI6ImJ1aWxka2l0LmRvY2tlcmZpbGUudjAiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyNC0wNy0yM1QwOTo0MjoyOC41NDQ3NDE4NFoiLCJjcmVhdGVkX2J5IjoiRVhQT1NFIG1hcFszODg4L3RjcDp7fV0iLCJjb21tZW50IjoiYnVpbGRraXQuZG9ja2VyZmlsZS52MCIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDI0LTA3LTIzVDA5OjQyOjI4LjU0NDc0MTg0WiIsImNyZWF0ZWRfYnkiOiJFWFBPU0UgbWFwWzgwODAvdGNwOnt9XSIsImNvbW1lbnQiOiJidWlsZGtpdC5kb2NrZXJmaWxlLnYwIiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjQtMDctMjNUMDk6NDI6MjguNTQ0NzQxODRaIiwiY3JlYXRlZF9ieSI6IlZPTFVNRSBbL2RhdGEgL2RhdGFsb2cgL2xvZ3NdIiwiY29tbWVudCI6ImJ1aWxka2l0LmRvY2tlcmZpbGUudjAiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyNC0wNy0yM1QwOTo0MjoyOC41NTYyMjc1NzNaIiwiY3JlYXRlZF9ieSI6IldPUktESVIgL2FwYWNoZS16b29rZWVwZXItMy43LjItYmluIiwiY29tbWVudCI6ImJ1aWxka2l0LmRvY2tlcmZpbGUudjAifSx7ImNyZWF0ZWQiOiIyMDI0LTA3LTIzVDA5OjQyOjI4LjU1NjIyNzU3M1oiLCJjcmVhdGVkX2J5IjoiRU5UUllQT0lOVCBbXCIvZG9ja2VyLWVudHJ5cG9pbnQuc2hcIl0iLCJjb21tZW50IjoiYnVpbGRraXQuZG9ja2VyZmlsZS52MCIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDI0LTA3LTIzVDA5OjQyOjI4LjU1NjIyNzU3M1oiLCJjcmVhdGVkX2J5IjoiQ01EIFtcInprU2VydmVyLnNoXCIgXCJzdGFydC1mb3JlZ3JvdW5kXCJdIiwiY29tbWVudCI6ImJ1aWxka2l0LmRvY2tlcmZpbGUudjAiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyNC0wNy0yM1QwOTo0MjozMC4yNDQwMDU2NjlaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApICBMQUJFTCBvcmlnX2ltYWdlX2RpZ2VzdD1zaGEyNTY6YzkxMGY3NjdjMTk1MzQ2MjE2Mzg1ZDJkNTM3ZmQwOWY1ZGIzNjg3MjYzNmY5OTIxYzlkZTIwNjk3NjBhM2ZjNyIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDI0LTA3LTIzVDA5OjQyOjQyLjI0ODg0MzMyMVoiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgIExBQkVMIG9yaWdfaW1hZ2VfZGlnZXN0PXNoYTI1NjpjOTEwZjc2N2MxOTUzNDYyMTYzODVkMmQ1MzdmZDA5ZjVkYjM2ODcyNjM2Zjk5MjFjOWRlMjA2OTc2MGEzZmM3IiwiZW1wdHlfbGF5ZXIiOnRydWV9XSwib3MiOiJsaW51eCIsInJvb3RmcyI6eyJ0eXBlIjoibGF5ZXJzIiwiZGlmZl9pZHMiOlsic2hhMjU2OmMwMjU3MDJiMjEyYTUwMmNiMDJjOTFmYTNhZTU2YTQ5YzJmNWU5YzNlZTdlMjMzYzAzMTIzY2ZhZmNkZDdkODQiLCJzaGEyNTY6NWY3MGJmMThhMDg2MDA3MDE2ZTk0OGIwNGFlZDNiODIxMDNhMzZiZWE0MTc1NWI2Y2RkZmFmMTBhY2UzYzZlZiJdfX0=",
+   "repoDigests": [
+    "rapidfort/zookeeper-official@sha256:754c30cc1f11ca258c672788708785d52fbd3baab6ad628d2d21da95c31b425d"
+   ],
+   "architecture": "amd64",
+   "os": "linux",
+   "labels": {
+    "org.opencontainers.image.ref.name": "ubuntu",
+    "org.opencontainers.image.version": "22.04",
+    "orig_image_digest": "sha256:c910f767c195346216385d2d537fd09f5db36872636f9921c9de2069760a3fc7",
+    "rf_image_guid.be6fb4d9-c10e-469f-814d-51bbc42607e3": "be6fb4d9-c10e-469f-814d-51bbc42607e3"
+   }
+  }
+ },
+ "distro": {
+  "name": "ubuntu",
+  "version": "22.04",
+  "idLike": [
+   "debian"
+  ]
+ },
+ "descriptor": {
+  "name": "grype",
+  "version": "0.79.3",
+  "configuration": {
+   "output": [
+    "json"
+   ],
+   "file": "",
+   "distro": "",
+   "add-cpes-if-none": false,
+   "output-template-file": "",
+   "check-for-app-update": true,
+   "only-fixed": false,
+   "only-notfixed": false,
+   "ignore-wontfix": "",
+   "platform": "",
+   "search": {
+    "scope": "squashed",
+    "unindexed-archives": false,
+    "indexed-archives": true
+   },
+   "ignore": [
+    {
+     "vulnerability": "",
+     "reason": "",
+     "namespace": "",
+     "fix-state": "",
+     "package": {
+      "name": "kernel-headers",
+      "version": "",
+      "language": "",
+      "type": "rpm",
+      "location": "",
+      "upstream-name": "kernel"
+     },
+     "vex-status": "",
+     "vex-justification": "",
+     "match-type": "exact-indirect-match"
+    },
+    {
+     "vulnerability": "",
+     "reason": "",
+     "namespace": "",
+     "fix-state": "",
+     "package": {
+      "name": "linux-headers-.*",
+      "version": "",
+      "language": "",
+      "type": "deb",
+      "location": "",
+      "upstream-name": "linux"
+     },
+     "vex-status": "",
+     "vex-justification": "",
+     "match-type": "exact-indirect-match"
+    },
+    {
+     "vulnerability": "",
+     "reason": "",
+     "namespace": "",
+     "fix-state": "",
+     "package": {
+      "name": "linux-libc-dev",
+      "version": "",
+      "language": "",
+      "type": "deb",
+      "location": "",
+      "upstream-name": "linux"
+     },
+     "vex-status": "",
+     "vex-justification": "",
+     "match-type": "exact-indirect-match"
+    }
+   ],
+   "exclude": [],
+   "db": {
+    "cache-dir": "/Users/paulgibert/Library/Caches/grype/db",
+    "update-url": "https://toolbox-data.anchore.io/grype/databases/listing.json",
+    "ca-cert": "",
+    "auto-update": true,
+    "validate-by-hash-on-start": false,
+    "validate-age": true,
+    "max-allowed-built-age": 432000000000000,
+    "update-available-timeout": 30000000000,
+    "update-download-timeout": 120000000000
+   },
+   "externalSources": {
+    "enable": false,
+    "maven": {
+     "searchUpstreamBySha1": true,
+     "baseUrl": "https://search.maven.org/solrsearch/select"
+    }
+   },
+   "match": {
+    "java": {
+     "using-cpes": false
+    },
+    "dotnet": {
+     "using-cpes": false
+    },
+    "golang": {
+     "using-cpes": false,
+     "always-use-cpe-for-stdlib": true,
+     "allow-main-module-pseudo-version-comparison": false
+    },
+    "javascript": {
+     "using-cpes": false
+    },
+    "python": {
+     "using-cpes": false
+    },
+    "ruby": {
+     "using-cpes": false
+    },
+    "rust": {
+     "using-cpes": false
+    },
+    "stock": {
+     "using-cpes": true
+    }
+   },
+   "fail-on-severity": "",
+   "registry": {
+    "insecure-skip-tls-verify": false,
+    "insecure-use-http": false,
+    "auth": null,
+    "ca-cert": ""
+   },
+   "show-suppressed": false,
+   "by-cve": false,
+   "name": "",
+   "default-image-pull-source": "",
+   "vex-documents": [],
+   "vex-add": [],
+   "match-upstream-kernel-headers": false
+  },
+  "db": {
+   "built": "2024-07-23T01:30:37Z",
+   "schemaVersion": 5,
+   "location": "/Users/paulgibert/Library/Caches/grype/db/5",
+   "checksum": "sha256:972d0f51e180d424f3fff2637a1559e06940f35eda6bd03593be2a3db8f28971",
+   "error": null
+  },
+  "timestamp": "2024-07-23T21:34:18.844177-04:00"
+ }
+}

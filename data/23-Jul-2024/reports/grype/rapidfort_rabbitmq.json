@@ -1,0 +1,2319 @@
+{
+ "matches": [
+  {
+   "vulnerability": {
+    "id": "CVE-2016-2781",
+    "dataSource": "https://ubuntu.com/security/CVE-2016-2781",
+    "namespace": "ubuntu:distro:ubuntu:22.04",
+    "severity": "Low",
+    "urls": [
+     "https://ubuntu.com/security/CVE-2016-2781"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2016-2781",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2016-2781",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "http://www.openwall.com/lists/oss-security/2016/02/28/2",
+      "http://www.openwall.com/lists/oss-security/2016/02/28/3",
+      "https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772%40%3Cdev.mina.apache.org%3E"
+     ],
+     "description": "chroot in GNU coreutils, when used with --userspec, allows local users to escape to the parent session via a crafted TIOCSTI ioctl call, which pushes characters to the terminal's input buffer.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:L/AC:L/Au:N/C:N/I:P/A:N",
+       "metrics": {
+        "baseScore": 2.1,
+        "exploitabilityScore": 3.9,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.0",
+       "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:C/C:N/I:H/A:N",
+       "metrics": {
+        "baseScore": 6.5,
+        "exploitabilityScore": 2,
+        "impactScore": 4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "22.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:22.04",
+      "package": {
+       "name": "coreutils",
+       "version": "8.32-4.1ubuntu1.2"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2016-2781"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "ac4d70545425fd76",
+    "name": "coreutils",
+    "version": "8.32-4.1ubuntu1.2",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/coreutils/copyright",
+      "layerID": "sha256:073a993fbb638d20386a2d83fbc91e7f7bf95bdd03fef73cdf9710a516e57557"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:073a993fbb638d20386a2d83fbc91e7f7bf95bdd03fef73cdf9710a516e57557"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-3"
+    ],
+    "cpes": [
+     "cpe:2.3:a:coreutils:coreutils:8.32-4.1ubuntu1.2:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/coreutils@8.32-4.1ubuntu1.2?arch=amd64&distro=ubuntu-22.04",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2024-33602",
+    "dataSource": "https://ubuntu.com/security/CVE-2024-33602",
+    "namespace": "ubuntu:distro:ubuntu:22.04",
+    "severity": "Medium",
+    "urls": [
+     "https://ubuntu.com/security/CVE-2024-33602"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "2.35-0ubuntu3.8"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-33602",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-33602",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "http://www.openwall.com/lists/oss-security/2024/07/22/5",
+      "https://lists.debian.org/debian-lts-announce/2024/06/msg00026.html",
+      "https://security.netapp.com/advisory/ntap-20240524-0012/",
+      "https://sourceware.org/git/?p=glibc.git;a=blob;f=advisories/GLIBC-SA-2024-0008"
+     ],
+     "description": "nscd: netgroup cache assumes NSS callback uses in-buffer strings\n\nThe Name Service Cache Daemon's (nscd) netgroup cache can corrupt memory\nwhen the NSS callback does not store all strings in the provided buffer.\nThe flaw was introduced in glibc 2.15 when the cache was added to nscd.\n\nThis vulnerability is only present in the nscd binary.\n\n",
+     "cvss": [
+      {
+       "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:L",
+       "metrics": {
+        "baseScore": 8.6,
+        "exploitabilityScore": 3.9,
+        "impactScore": 4.7
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "22.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:22.04",
+      "package": {
+       "name": "glibc",
+       "version": "2.35-0ubuntu3.7"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 2.35-0ubuntu3.8 (deb)",
+      "vulnerabilityID": "CVE-2024-33602"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "921592e44d5570f8",
+    "name": "libc-bin",
+    "version": "2.35-0ubuntu3.7",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/libc-bin/copyright",
+      "layerID": "sha256:073a993fbb638d20386a2d83fbc91e7f7bf95bdd03fef73cdf9710a516e57557"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:073a993fbb638d20386a2d83fbc91e7f7bf95bdd03fef73cdf9710a516e57557"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GFDL-1.3",
+     "GPL-2",
+     "LGPL-2.1"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libc-bin:libc-bin:2.35-0ubuntu3.7:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libc-bin:libc_bin:2.35-0ubuntu3.7:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libc_bin:libc-bin:2.35-0ubuntu3.7:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libc_bin:libc_bin:2.35-0ubuntu3.7:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libc:libc-bin:2.35-0ubuntu3.7:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libc:libc_bin:2.35-0ubuntu3.7:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/libc-bin@2.35-0ubuntu3.7?arch=amd64&upstream=glibc&distro=ubuntu-22.04",
+    "upstreams": [
+     {
+      "name": "glibc"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2024-33601",
+    "dataSource": "https://ubuntu.com/security/CVE-2024-33601",
+    "namespace": "ubuntu:distro:ubuntu:22.04",
+    "severity": "Medium",
+    "urls": [
+     "https://ubuntu.com/security/CVE-2024-33601"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "2.35-0ubuntu3.8"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-33601",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-33601",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "http://www.openwall.com/lists/oss-security/2024/07/22/5",
+      "https://lists.debian.org/debian-lts-announce/2024/06/msg00026.html",
+      "https://security.netapp.com/advisory/ntap-20240524-0014/",
+      "https://sourceware.org/git/?p=glibc.git;a=blob;f=advisories/GLIBC-SA-2024-0007"
+     ],
+     "description": "nscd: netgroup cache may terminate daemon on memory allocation failure\n\nThe Name Service Cache Daemon's (nscd) netgroup cache uses xmalloc or\nxrealloc and these functions may terminate the process due to a memory\nallocation failure resulting in a denial of service to the clients.  The\nflaw was introduced in glibc 2.15 when the cache was added to nscd.\n\nThis vulnerability is only present in the nscd binary.\n\n",
+     "cvss": [
+      {
+       "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "22.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:22.04",
+      "package": {
+       "name": "glibc",
+       "version": "2.35-0ubuntu3.7"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 2.35-0ubuntu3.8 (deb)",
+      "vulnerabilityID": "CVE-2024-33601"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "921592e44d5570f8",
+    "name": "libc-bin",
+    "version": "2.35-0ubuntu3.7",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/libc-bin/copyright",
+      "layerID": "sha256:073a993fbb638d20386a2d83fbc91e7f7bf95bdd03fef73cdf9710a516e57557"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:073a993fbb638d20386a2d83fbc91e7f7bf95bdd03fef73cdf9710a516e57557"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GFDL-1.3",
+     "GPL-2",
+     "LGPL-2.1"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libc-bin:libc-bin:2.35-0ubuntu3.7:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libc-bin:libc_bin:2.35-0ubuntu3.7:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libc_bin:libc-bin:2.35-0ubuntu3.7:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libc_bin:libc_bin:2.35-0ubuntu3.7:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libc:libc-bin:2.35-0ubuntu3.7:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libc:libc_bin:2.35-0ubuntu3.7:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/libc-bin@2.35-0ubuntu3.7?arch=amd64&upstream=glibc&distro=ubuntu-22.04",
+    "upstreams": [
+     {
+      "name": "glibc"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2024-33600",
+    "dataSource": "https://ubuntu.com/security/CVE-2024-33600",
+    "namespace": "ubuntu:distro:ubuntu:22.04",
+    "severity": "Medium",
+    "urls": [
+     "https://ubuntu.com/security/CVE-2024-33600"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "2.35-0ubuntu3.8"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-33600",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-33600",
+     "namespace": "nvd:cpe",
+     "severity": "Unknown",
+     "urls": [
+      "http://www.openwall.com/lists/oss-security/2024/07/22/5",
+      "https://lists.debian.org/debian-lts-announce/2024/06/msg00026.html",
+      "https://security.netapp.com/advisory/ntap-20240524-0013/",
+      "https://sourceware.org/git/?p=glibc.git;a=blob;f=advisories/GLIBC-SA-2024-0006"
+     ],
+     "description": "nscd: Null pointer crashes after notfound response\n\nIf the Name Service Cache Daemon's (nscd) cache fails to add a not-found\nnetgroup response to the cache, the client request can result in a null\npointer dereference.  This flaw was introduced in glibc 2.15 when the\ncache was added to nscd.\n\nThis vulnerability is only present in the nscd binary.\n\n",
+     "cvss": []
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "22.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:22.04",
+      "package": {
+       "name": "glibc",
+       "version": "2.35-0ubuntu3.7"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 2.35-0ubuntu3.8 (deb)",
+      "vulnerabilityID": "CVE-2024-33600"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "921592e44d5570f8",
+    "name": "libc-bin",
+    "version": "2.35-0ubuntu3.7",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/libc-bin/copyright",
+      "layerID": "sha256:073a993fbb638d20386a2d83fbc91e7f7bf95bdd03fef73cdf9710a516e57557"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:073a993fbb638d20386a2d83fbc91e7f7bf95bdd03fef73cdf9710a516e57557"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GFDL-1.3",
+     "GPL-2",
+     "LGPL-2.1"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libc-bin:libc-bin:2.35-0ubuntu3.7:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libc-bin:libc_bin:2.35-0ubuntu3.7:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libc_bin:libc-bin:2.35-0ubuntu3.7:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libc_bin:libc_bin:2.35-0ubuntu3.7:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libc:libc-bin:2.35-0ubuntu3.7:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libc:libc_bin:2.35-0ubuntu3.7:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/libc-bin@2.35-0ubuntu3.7?arch=amd64&upstream=glibc&distro=ubuntu-22.04",
+    "upstreams": [
+     {
+      "name": "glibc"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2024-33599",
+    "dataSource": "https://ubuntu.com/security/CVE-2024-33599",
+    "namespace": "ubuntu:distro:ubuntu:22.04",
+    "severity": "Medium",
+    "urls": [
+     "https://ubuntu.com/security/CVE-2024-33599"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "2.35-0ubuntu3.8"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-33599",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-33599",
+     "namespace": "nvd:cpe",
+     "severity": "Unknown",
+     "urls": [
+      "http://www.openwall.com/lists/oss-security/2024/07/22/5",
+      "https://lists.debian.org/debian-lts-announce/2024/06/msg00026.html",
+      "https://security.netapp.com/advisory/ntap-20240524-0011/",
+      "https://sourceware.org/git/?p=glibc.git;a=blob;f=advisories/GLIBC-SA-2024-0005"
+     ],
+     "description": "nscd: Stack-based buffer overflow in netgroup cache\n\nIf the Name Service Cache Daemon's (nscd) fixed size cache is exhausted\nby client requests then a subsequent client request for netgroup data\nmay result in a stack-based buffer overflow.  This flaw was introduced\nin glibc 2.15 when the cache was added to nscd.\n\nThis vulnerability is only present in the nscd binary.\n",
+     "cvss": []
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "22.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:22.04",
+      "package": {
+       "name": "glibc",
+       "version": "2.35-0ubuntu3.7"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 2.35-0ubuntu3.8 (deb)",
+      "vulnerabilityID": "CVE-2024-33599"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "921592e44d5570f8",
+    "name": "libc-bin",
+    "version": "2.35-0ubuntu3.7",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/libc-bin/copyright",
+      "layerID": "sha256:073a993fbb638d20386a2d83fbc91e7f7bf95bdd03fef73cdf9710a516e57557"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:073a993fbb638d20386a2d83fbc91e7f7bf95bdd03fef73cdf9710a516e57557"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GFDL-1.3",
+     "GPL-2",
+     "LGPL-2.1"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libc-bin:libc-bin:2.35-0ubuntu3.7:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libc-bin:libc_bin:2.35-0ubuntu3.7:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libc_bin:libc-bin:2.35-0ubuntu3.7:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libc_bin:libc_bin:2.35-0ubuntu3.7:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libc:libc-bin:2.35-0ubuntu3.7:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libc:libc_bin:2.35-0ubuntu3.7:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/libc-bin@2.35-0ubuntu3.7?arch=amd64&upstream=glibc&distro=ubuntu-22.04",
+    "upstreams": [
+     {
+      "name": "glibc"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2016-20013",
+    "dataSource": "https://ubuntu.com/security/CVE-2016-20013",
+    "namespace": "ubuntu:distro:ubuntu:22.04",
+    "severity": "Negligible",
+    "urls": [
+     "https://ubuntu.com/security/CVE-2016-20013"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2016-20013",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2016-20013",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://akkadia.org/drepper/SHA-crypt.txt",
+      "https://pthree.org/2018/05/23/do-not-use-sha256crypt-sha512crypt-theyre-dangerous/",
+      "https://twitter.com/solardiz/status/795601240151457793"
+     ],
+     "description": "sha256crypt and sha512crypt through 0.6 allow attackers to cause a denial of service (CPU consumption) because the algorithm's runtime is proportional to the square of the length of the password.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+       "metrics": {
+        "baseScore": 5,
+        "exploitabilityScore": 10,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "22.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:22.04",
+      "package": {
+       "name": "glibc",
+       "version": "2.35-0ubuntu3.7"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2016-20013"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "921592e44d5570f8",
+    "name": "libc-bin",
+    "version": "2.35-0ubuntu3.7",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/libc-bin/copyright",
+      "layerID": "sha256:073a993fbb638d20386a2d83fbc91e7f7bf95bdd03fef73cdf9710a516e57557"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:073a993fbb638d20386a2d83fbc91e7f7bf95bdd03fef73cdf9710a516e57557"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GFDL-1.3",
+     "GPL-2",
+     "LGPL-2.1"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libc-bin:libc-bin:2.35-0ubuntu3.7:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libc-bin:libc_bin:2.35-0ubuntu3.7:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libc_bin:libc-bin:2.35-0ubuntu3.7:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libc_bin:libc_bin:2.35-0ubuntu3.7:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libc:libc-bin:2.35-0ubuntu3.7:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libc:libc_bin:2.35-0ubuntu3.7:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/libc-bin@2.35-0ubuntu3.7?arch=amd64&upstream=glibc&distro=ubuntu-22.04",
+    "upstreams": [
+     {
+      "name": "glibc"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2024-33602",
+    "dataSource": "https://ubuntu.com/security/CVE-2024-33602",
+    "namespace": "ubuntu:distro:ubuntu:22.04",
+    "severity": "Medium",
+    "urls": [
+     "https://ubuntu.com/security/CVE-2024-33602"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "2.35-0ubuntu3.8"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-33602",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-33602",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "http://www.openwall.com/lists/oss-security/2024/07/22/5",
+      "https://lists.debian.org/debian-lts-announce/2024/06/msg00026.html",
+      "https://security.netapp.com/advisory/ntap-20240524-0012/",
+      "https://sourceware.org/git/?p=glibc.git;a=blob;f=advisories/GLIBC-SA-2024-0008"
+     ],
+     "description": "nscd: netgroup cache assumes NSS callback uses in-buffer strings\n\nThe Name Service Cache Daemon's (nscd) netgroup cache can corrupt memory\nwhen the NSS callback does not store all strings in the provided buffer.\nThe flaw was introduced in glibc 2.15 when the cache was added to nscd.\n\nThis vulnerability is only present in the nscd binary.\n\n",
+     "cvss": [
+      {
+       "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:L",
+       "metrics": {
+        "baseScore": 8.6,
+        "exploitabilityScore": 3.9,
+        "impactScore": 4.7
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "22.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:22.04",
+      "package": {
+       "name": "glibc",
+       "version": "2.35-0ubuntu3.7"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 2.35-0ubuntu3.8 (deb)",
+      "vulnerabilityID": "CVE-2024-33602"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "9cb01e159e6ad427",
+    "name": "libc6",
+    "version": "2.35-0ubuntu3.7",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/libc6/copyright",
+      "layerID": "sha256:073a993fbb638d20386a2d83fbc91e7f7bf95bdd03fef73cdf9710a516e57557"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:073a993fbb638d20386a2d83fbc91e7f7bf95bdd03fef73cdf9710a516e57557"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GFDL-1.3",
+     "GPL-2",
+     "LGPL-2.1"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libc6:libc6:2.35-0ubuntu3.7:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/libc6@2.35-0ubuntu3.7?arch=amd64&upstream=glibc&distro=ubuntu-22.04",
+    "upstreams": [
+     {
+      "name": "glibc"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2024-33601",
+    "dataSource": "https://ubuntu.com/security/CVE-2024-33601",
+    "namespace": "ubuntu:distro:ubuntu:22.04",
+    "severity": "Medium",
+    "urls": [
+     "https://ubuntu.com/security/CVE-2024-33601"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "2.35-0ubuntu3.8"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-33601",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-33601",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "http://www.openwall.com/lists/oss-security/2024/07/22/5",
+      "https://lists.debian.org/debian-lts-announce/2024/06/msg00026.html",
+      "https://security.netapp.com/advisory/ntap-20240524-0014/",
+      "https://sourceware.org/git/?p=glibc.git;a=blob;f=advisories/GLIBC-SA-2024-0007"
+     ],
+     "description": "nscd: netgroup cache may terminate daemon on memory allocation failure\n\nThe Name Service Cache Daemon's (nscd) netgroup cache uses xmalloc or\nxrealloc and these functions may terminate the process due to a memory\nallocation failure resulting in a denial of service to the clients.  The\nflaw was introduced in glibc 2.15 when the cache was added to nscd.\n\nThis vulnerability is only present in the nscd binary.\n\n",
+     "cvss": [
+      {
+       "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "22.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:22.04",
+      "package": {
+       "name": "glibc",
+       "version": "2.35-0ubuntu3.7"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 2.35-0ubuntu3.8 (deb)",
+      "vulnerabilityID": "CVE-2024-33601"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "9cb01e159e6ad427",
+    "name": "libc6",
+    "version": "2.35-0ubuntu3.7",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/libc6/copyright",
+      "layerID": "sha256:073a993fbb638d20386a2d83fbc91e7f7bf95bdd03fef73cdf9710a516e57557"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:073a993fbb638d20386a2d83fbc91e7f7bf95bdd03fef73cdf9710a516e57557"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GFDL-1.3",
+     "GPL-2",
+     "LGPL-2.1"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libc6:libc6:2.35-0ubuntu3.7:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/libc6@2.35-0ubuntu3.7?arch=amd64&upstream=glibc&distro=ubuntu-22.04",
+    "upstreams": [
+     {
+      "name": "glibc"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2024-33600",
+    "dataSource": "https://ubuntu.com/security/CVE-2024-33600",
+    "namespace": "ubuntu:distro:ubuntu:22.04",
+    "severity": "Medium",
+    "urls": [
+     "https://ubuntu.com/security/CVE-2024-33600"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "2.35-0ubuntu3.8"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-33600",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-33600",
+     "namespace": "nvd:cpe",
+     "severity": "Unknown",
+     "urls": [
+      "http://www.openwall.com/lists/oss-security/2024/07/22/5",
+      "https://lists.debian.org/debian-lts-announce/2024/06/msg00026.html",
+      "https://security.netapp.com/advisory/ntap-20240524-0013/",
+      "https://sourceware.org/git/?p=glibc.git;a=blob;f=advisories/GLIBC-SA-2024-0006"
+     ],
+     "description": "nscd: Null pointer crashes after notfound response\n\nIf the Name Service Cache Daemon's (nscd) cache fails to add a not-found\nnetgroup response to the cache, the client request can result in a null\npointer dereference.  This flaw was introduced in glibc 2.15 when the\ncache was added to nscd.\n\nThis vulnerability is only present in the nscd binary.\n\n",
+     "cvss": []
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "22.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:22.04",
+      "package": {
+       "name": "glibc",
+       "version": "2.35-0ubuntu3.7"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 2.35-0ubuntu3.8 (deb)",
+      "vulnerabilityID": "CVE-2024-33600"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "9cb01e159e6ad427",
+    "name": "libc6",
+    "version": "2.35-0ubuntu3.7",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/libc6/copyright",
+      "layerID": "sha256:073a993fbb638d20386a2d83fbc91e7f7bf95bdd03fef73cdf9710a516e57557"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:073a993fbb638d20386a2d83fbc91e7f7bf95bdd03fef73cdf9710a516e57557"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GFDL-1.3",
+     "GPL-2",
+     "LGPL-2.1"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libc6:libc6:2.35-0ubuntu3.7:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/libc6@2.35-0ubuntu3.7?arch=amd64&upstream=glibc&distro=ubuntu-22.04",
+    "upstreams": [
+     {
+      "name": "glibc"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2024-33599",
+    "dataSource": "https://ubuntu.com/security/CVE-2024-33599",
+    "namespace": "ubuntu:distro:ubuntu:22.04",
+    "severity": "Medium",
+    "urls": [
+     "https://ubuntu.com/security/CVE-2024-33599"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "2.35-0ubuntu3.8"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-33599",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-33599",
+     "namespace": "nvd:cpe",
+     "severity": "Unknown",
+     "urls": [
+      "http://www.openwall.com/lists/oss-security/2024/07/22/5",
+      "https://lists.debian.org/debian-lts-announce/2024/06/msg00026.html",
+      "https://security.netapp.com/advisory/ntap-20240524-0011/",
+      "https://sourceware.org/git/?p=glibc.git;a=blob;f=advisories/GLIBC-SA-2024-0005"
+     ],
+     "description": "nscd: Stack-based buffer overflow in netgroup cache\n\nIf the Name Service Cache Daemon's (nscd) fixed size cache is exhausted\nby client requests then a subsequent client request for netgroup data\nmay result in a stack-based buffer overflow.  This flaw was introduced\nin glibc 2.15 when the cache was added to nscd.\n\nThis vulnerability is only present in the nscd binary.\n",
+     "cvss": []
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "22.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:22.04",
+      "package": {
+       "name": "glibc",
+       "version": "2.35-0ubuntu3.7"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 2.35-0ubuntu3.8 (deb)",
+      "vulnerabilityID": "CVE-2024-33599"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "9cb01e159e6ad427",
+    "name": "libc6",
+    "version": "2.35-0ubuntu3.7",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/libc6/copyright",
+      "layerID": "sha256:073a993fbb638d20386a2d83fbc91e7f7bf95bdd03fef73cdf9710a516e57557"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:073a993fbb638d20386a2d83fbc91e7f7bf95bdd03fef73cdf9710a516e57557"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GFDL-1.3",
+     "GPL-2",
+     "LGPL-2.1"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libc6:libc6:2.35-0ubuntu3.7:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/libc6@2.35-0ubuntu3.7?arch=amd64&upstream=glibc&distro=ubuntu-22.04",
+    "upstreams": [
+     {
+      "name": "glibc"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2016-20013",
+    "dataSource": "https://ubuntu.com/security/CVE-2016-20013",
+    "namespace": "ubuntu:distro:ubuntu:22.04",
+    "severity": "Negligible",
+    "urls": [
+     "https://ubuntu.com/security/CVE-2016-20013"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2016-20013",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2016-20013",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://akkadia.org/drepper/SHA-crypt.txt",
+      "https://pthree.org/2018/05/23/do-not-use-sha256crypt-sha512crypt-theyre-dangerous/",
+      "https://twitter.com/solardiz/status/795601240151457793"
+     ],
+     "description": "sha256crypt and sha512crypt through 0.6 allow attackers to cause a denial of service (CPU consumption) because the algorithm's runtime is proportional to the square of the length of the password.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+       "metrics": {
+        "baseScore": 5,
+        "exploitabilityScore": 10,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "22.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:22.04",
+      "package": {
+       "name": "glibc",
+       "version": "2.35-0ubuntu3.7"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2016-20013"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "9cb01e159e6ad427",
+    "name": "libc6",
+    "version": "2.35-0ubuntu3.7",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/libc6/copyright",
+      "layerID": "sha256:073a993fbb638d20386a2d83fbc91e7f7bf95bdd03fef73cdf9710a516e57557"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:073a993fbb638d20386a2d83fbc91e7f7bf95bdd03fef73cdf9710a516e57557"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GFDL-1.3",
+     "GPL-2",
+     "LGPL-2.1"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libc6:libc6:2.35-0ubuntu3.7:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/libc6@2.35-0ubuntu3.7?arch=amd64&upstream=glibc&distro=ubuntu-22.04",
+    "upstreams": [
+     {
+      "name": "glibc"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-4039",
+    "dataSource": "https://ubuntu.com/security/CVE-2023-4039",
+    "namespace": "ubuntu:distro:ubuntu:22.04",
+    "severity": "Medium",
+    "urls": [
+     "https://ubuntu.com/security/CVE-2023-4039"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-4039",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-4039",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://developer.arm.com/Arm%20Security%20Center/GCC%20Stack%20Protector%20Vulnerability%20AArch64",
+      "https://github.com/metaredteam/external-disclosures/security/advisories/GHSA-x7ch-h5rf-w2mf"
+     ],
+     "description": "\n\n**DISPUTED**A failure in the -fstack-protector feature in GCC-based toolchains \nthat target AArch64 allows an attacker to exploit an existing buffer \noverflow in dynamically-sized local variables in your application \nwithout this being detected. This stack-protector failure only applies \nto C99-style dynamically-sized local variables or those created using \nalloca(). The stack-protector operates as intended for statically-sized \nlocal variables.\n\nThe default behavior when the stack-protector \ndetects an overflow is to terminate your application, resulting in \ncontrolled loss of availability. An attacker who can exploit a buffer \noverflow without triggering the stack-protector might be able to change \nprogram flow control to cause an uncontrolled loss of availability or to\n go further and affect confidentiality or integrity. NOTE: The GCC project argues that this is a missed hardening bug and not a vulnerability by itself.\n\n\n\n\n\n",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N",
+       "metrics": {
+        "baseScore": 4.8,
+        "exploitabilityScore": 2.2,
+        "impactScore": 2.5
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "arm-security@arm.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N",
+       "metrics": {
+        "baseScore": 4.8,
+        "exploitabilityScore": 2.2,
+        "impactScore": 2.5
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "22.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:22.04",
+      "package": {
+       "name": "gcc-12",
+       "version": "12.3.0-1ubuntu1~22.04"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2023-4039"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "1a815885a4031f6c",
+    "name": "libgcc-s1",
+    "version": "12.3.0-1ubuntu1~22.04",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/gcc-12-base/copyright",
+      "layerID": "sha256:073a993fbb638d20386a2d83fbc91e7f7bf95bdd03fef73cdf9710a516e57557"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:073a993fbb638d20386a2d83fbc91e7f7bf95bdd03fef73cdf9710a516e57557"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "Artistic",
+     "GFDL-1.2",
+     "GPL",
+     "GPL-2",
+     "GPL-3",
+     "LGPL"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libgcc-s1:libgcc-s1:12.3.0-1ubuntu1~22.04:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libgcc-s1:libgcc_s1:12.3.0-1ubuntu1~22.04:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libgcc_s1:libgcc-s1:12.3.0-1ubuntu1~22.04:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libgcc_s1:libgcc_s1:12.3.0-1ubuntu1~22.04:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libgcc:libgcc-s1:12.3.0-1ubuntu1~22.04:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libgcc:libgcc_s1:12.3.0-1ubuntu1~22.04:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/libgcc-s1@12.3.0-1ubuntu1~22.04?arch=amd64&upstream=gcc-12&distro=ubuntu-22.04",
+    "upstreams": [
+     {
+      "name": "gcc-12"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2022-27943",
+    "dataSource": "https://ubuntu.com/security/CVE-2022-27943",
+    "namespace": "ubuntu:distro:ubuntu:22.04",
+    "severity": "Low",
+    "urls": [
+     "https://ubuntu.com/security/CVE-2022-27943"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-27943",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-27943",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://gcc.gnu.org/bugzilla/show_bug.cgi?id=105039",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/H424YXGW7OKXS2NCAP35OP6Y4P4AW6VG/",
+      "https://sourceware.org/bugzilla/show_bug.cgi?id=28995"
+     ],
+     "description": "libiberty/rust-demangle.c in GNU GCC 11.2 allows stack consumption in demangle_const, as demonstrated by nm-new.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+       "metrics": {
+        "baseScore": 4.3,
+        "exploitabilityScore": 8.6,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 5.5,
+        "exploitabilityScore": 1.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "22.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:22.04",
+      "package": {
+       "name": "gcc-12",
+       "version": "12.3.0-1ubuntu1~22.04"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2022-27943"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "1a815885a4031f6c",
+    "name": "libgcc-s1",
+    "version": "12.3.0-1ubuntu1~22.04",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/gcc-12-base/copyright",
+      "layerID": "sha256:073a993fbb638d20386a2d83fbc91e7f7bf95bdd03fef73cdf9710a516e57557"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:073a993fbb638d20386a2d83fbc91e7f7bf95bdd03fef73cdf9710a516e57557"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "Artistic",
+     "GFDL-1.2",
+     "GPL",
+     "GPL-2",
+     "GPL-3",
+     "LGPL"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libgcc-s1:libgcc-s1:12.3.0-1ubuntu1~22.04:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libgcc-s1:libgcc_s1:12.3.0-1ubuntu1~22.04:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libgcc_s1:libgcc-s1:12.3.0-1ubuntu1~22.04:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libgcc_s1:libgcc_s1:12.3.0-1ubuntu1~22.04:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libgcc:libgcc-s1:12.3.0-1ubuntu1~22.04:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libgcc:libgcc_s1:12.3.0-1ubuntu1~22.04:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/libgcc-s1@12.3.0-1ubuntu1~22.04?arch=amd64&upstream=gcc-12&distro=ubuntu-22.04",
+    "upstreams": [
+     {
+      "name": "gcc-12"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2022-41409",
+    "dataSource": "https://ubuntu.com/security/CVE-2022-41409",
+    "namespace": "ubuntu:distro:ubuntu:22.04",
+    "severity": "Low",
+    "urls": [
+     "https://ubuntu.com/security/CVE-2022-41409"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-41409",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-41409",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/PCRE2Project/pcre2/commit/94e1c001761373b7d9450768aa15d04c25547a35",
+      "https://github.com/PCRE2Project/pcre2/issues/141"
+     ],
+     "description": "Integer overflow vulnerability in pcre2test before 10.41 allows attackers to cause a denial of service or other unspecified impacts via negative input.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "22.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:22.04",
+      "package": {
+       "name": "pcre2",
+       "version": "10.39-3ubuntu0.1"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2022-41409"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "51f38bf78dffda95",
+    "name": "libpcre2-8-0",
+    "version": "10.39-3ubuntu0.1",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/libpcre2-8-0/copyright",
+      "layerID": "sha256:073a993fbb638d20386a2d83fbc91e7f7bf95bdd03fef73cdf9710a516e57557"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:073a993fbb638d20386a2d83fbc91e7f7bf95bdd03fef73cdf9710a516e57557"
+     }
+    ],
+    "language": "",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:libpcre2-8-0:libpcre2-8-0:10.39-3ubuntu0.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libpcre2-8-0:libpcre2_8_0:10.39-3ubuntu0.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libpcre2_8_0:libpcre2-8-0:10.39-3ubuntu0.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libpcre2_8_0:libpcre2_8_0:10.39-3ubuntu0.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libpcre2-8:libpcre2-8-0:10.39-3ubuntu0.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libpcre2-8:libpcre2_8_0:10.39-3ubuntu0.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libpcre2_8:libpcre2-8-0:10.39-3ubuntu0.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libpcre2_8:libpcre2_8_0:10.39-3ubuntu0.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libpcre2:libpcre2-8-0:10.39-3ubuntu0.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libpcre2:libpcre2_8_0:10.39-3ubuntu0.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/libpcre2-8-0@10.39-3ubuntu0.1?arch=amd64&upstream=pcre2&distro=ubuntu-22.04",
+    "upstreams": [
+     {
+      "name": "pcre2"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2017-11164",
+    "dataSource": "https://ubuntu.com/security/CVE-2017-11164",
+    "namespace": "ubuntu:distro:ubuntu:22.04",
+    "severity": "Negligible",
+    "urls": [
+     "https://ubuntu.com/security/CVE-2017-11164"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2017-11164",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2017-11164",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "http://openwall.com/lists/oss-security/2017/07/11/3",
+      "http://www.openwall.com/lists/oss-security/2023/04/11/1",
+      "http://www.openwall.com/lists/oss-security/2023/04/12/1",
+      "http://www.securityfocus.com/bid/99575",
+      "https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772%40%3Cdev.mina.apache.org%3E"
+     ],
+     "description": "In PCRE 8.41, the OP_KETRMAX feature in the match function in pcre_exec.c allows stack exhaustion (uncontrolled recursion) when processing a crafted regular expression.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
+       "metrics": {
+        "baseScore": 7.8,
+        "exploitabilityScore": 10,
+        "impactScore": 6.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.0",
+       "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "22.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:22.04",
+      "package": {
+       "name": "pcre3",
+       "version": "2:8.39-13ubuntu0.22.04.1"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2017-11164"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "f71f09967777ca8d",
+    "name": "libpcre3",
+    "version": "2:8.39-13ubuntu0.22.04.1",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/libpcre3/copyright",
+      "layerID": "sha256:073a993fbb638d20386a2d83fbc91e7f7bf95bdd03fef73cdf9710a516e57557"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:073a993fbb638d20386a2d83fbc91e7f7bf95bdd03fef73cdf9710a516e57557"
+     }
+    ],
+    "language": "",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:libpcre3:libpcre3:2:8.39-13ubuntu0.22.04.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/libpcre3@2:8.39-13ubuntu0.22.04.1?arch=amd64&upstream=pcre3&distro=ubuntu-22.04",
+    "upstreams": [
+     {
+      "name": "pcre3"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-4039",
+    "dataSource": "https://ubuntu.com/security/CVE-2023-4039",
+    "namespace": "ubuntu:distro:ubuntu:22.04",
+    "severity": "Medium",
+    "urls": [
+     "https://ubuntu.com/security/CVE-2023-4039"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-4039",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-4039",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://developer.arm.com/Arm%20Security%20Center/GCC%20Stack%20Protector%20Vulnerability%20AArch64",
+      "https://github.com/metaredteam/external-disclosures/security/advisories/GHSA-x7ch-h5rf-w2mf"
+     ],
+     "description": "\n\n**DISPUTED**A failure in the -fstack-protector feature in GCC-based toolchains \nthat target AArch64 allows an attacker to exploit an existing buffer \noverflow in dynamically-sized local variables in your application \nwithout this being detected. This stack-protector failure only applies \nto C99-style dynamically-sized local variables or those created using \nalloca(). The stack-protector operates as intended for statically-sized \nlocal variables.\n\nThe default behavior when the stack-protector \ndetects an overflow is to terminate your application, resulting in \ncontrolled loss of availability. An attacker who can exploit a buffer \noverflow without triggering the stack-protector might be able to change \nprogram flow control to cause an uncontrolled loss of availability or to\n go further and affect confidentiality or integrity. NOTE: The GCC project argues that this is a missed hardening bug and not a vulnerability by itself.\n\n\n\n\n\n",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N",
+       "metrics": {
+        "baseScore": 4.8,
+        "exploitabilityScore": 2.2,
+        "impactScore": 2.5
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "arm-security@arm.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N",
+       "metrics": {
+        "baseScore": 4.8,
+        "exploitabilityScore": 2.2,
+        "impactScore": 2.5
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "22.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:22.04",
+      "package": {
+       "name": "gcc-12",
+       "version": "12.3.0-1ubuntu1~22.04"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2023-4039"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "d829e1a8235373ed",
+    "name": "libstdc++6",
+    "version": "12.3.0-1ubuntu1~22.04",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/gcc-12-base/copyright",
+      "layerID": "sha256:073a993fbb638d20386a2d83fbc91e7f7bf95bdd03fef73cdf9710a516e57557"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:073a993fbb638d20386a2d83fbc91e7f7bf95bdd03fef73cdf9710a516e57557"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "Artistic",
+     "GFDL-1.2",
+     "GPL",
+     "GPL-2",
+     "GPL-3",
+     "LGPL"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libstdc++6:libstdc++6:12.3.0-1ubuntu1~22.04:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/libstdc%2B%2B6@12.3.0-1ubuntu1~22.04?arch=amd64&upstream=gcc-12&distro=ubuntu-22.04",
+    "upstreams": [
+     {
+      "name": "gcc-12"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2022-27943",
+    "dataSource": "https://ubuntu.com/security/CVE-2022-27943",
+    "namespace": "ubuntu:distro:ubuntu:22.04",
+    "severity": "Low",
+    "urls": [
+     "https://ubuntu.com/security/CVE-2022-27943"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-27943",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-27943",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://gcc.gnu.org/bugzilla/show_bug.cgi?id=105039",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/H424YXGW7OKXS2NCAP35OP6Y4P4AW6VG/",
+      "https://sourceware.org/bugzilla/show_bug.cgi?id=28995"
+     ],
+     "description": "libiberty/rust-demangle.c in GNU GCC 11.2 allows stack consumption in demangle_const, as demonstrated by nm-new.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+       "metrics": {
+        "baseScore": 4.3,
+        "exploitabilityScore": 8.6,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 5.5,
+        "exploitabilityScore": 1.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "22.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:22.04",
+      "package": {
+       "name": "gcc-12",
+       "version": "12.3.0-1ubuntu1~22.04"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2022-27943"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "d829e1a8235373ed",
+    "name": "libstdc++6",
+    "version": "12.3.0-1ubuntu1~22.04",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/gcc-12-base/copyright",
+      "layerID": "sha256:073a993fbb638d20386a2d83fbc91e7f7bf95bdd03fef73cdf9710a516e57557"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:073a993fbb638d20386a2d83fbc91e7f7bf95bdd03fef73cdf9710a516e57557"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "Artistic",
+     "GFDL-1.2",
+     "GPL",
+     "GPL-2",
+     "GPL-3",
+     "LGPL"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libstdc++6:libstdc++6:12.3.0-1ubuntu1~22.04:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/libstdc%2B%2B6@12.3.0-1ubuntu1~22.04?arch=amd64&upstream=gcc-12&distro=ubuntu-22.04",
+    "upstreams": [
+     {
+      "name": "gcc-12"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-50495",
+    "dataSource": "https://ubuntu.com/security/CVE-2023-50495",
+    "namespace": "ubuntu:distro:ubuntu:22.04",
+    "severity": "Low",
+    "urls": [
+     "https://ubuntu.com/security/CVE-2023-50495"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-50495",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-50495",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/LU4MYMKFEZQ5VSCVLRIZGDQOUW3T44GT/",
+      "https://lists.gnu.org/archive/html/bug-ncurses/2023-04/msg00020.html",
+      "https://lists.gnu.org/archive/html/bug-ncurses/2023-04/msg00029.html",
+      "https://security.netapp.com/advisory/ntap-20240119-0008/"
+     ],
+     "description": "NCurse v6.4-20230418 was discovered to contain a segmentation fault via the component _nc_wrap_entry().",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 6.5,
+        "exploitabilityScore": 2.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "22.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:22.04",
+      "package": {
+       "name": "ncurses",
+       "version": "6.3-2ubuntu0.1"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2023-50495"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "b1ac34e2a6e64913",
+    "name": "libtinfo6",
+    "version": "6.3-2ubuntu0.1",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/libtinfo6/copyright",
+      "layerID": "sha256:073a993fbb638d20386a2d83fbc91e7f7bf95bdd03fef73cdf9710a516e57557"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:073a993fbb638d20386a2d83fbc91e7f7bf95bdd03fef73cdf9710a516e57557"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "BSD-3-clause",
+     "MIT/X11",
+     "X11"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libtinfo6:libtinfo6:6.3-2ubuntu0.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/libtinfo6@6.3-2ubuntu0.1?arch=amd64&upstream=ncurses&distro=ubuntu-22.04",
+    "upstreams": [
+     {
+      "name": "ncurses"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-45918",
+    "dataSource": "https://ubuntu.com/security/CVE-2023-45918",
+    "namespace": "ubuntu:distro:ubuntu:22.04",
+    "severity": "Low",
+    "urls": [
+     "https://ubuntu.com/security/CVE-2023-45918"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-45918",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-45918",
+     "namespace": "nvd:cpe",
+     "severity": "Unknown",
+     "urls": [
+      "https://lists.gnu.org/archive/html/bug-ncurses/2023-06/msg00005.html",
+      "https://security.netapp.com/advisory/ntap-20240315-0006/"
+     ],
+     "description": "ncurses 6.4-20230610 has a NULL pointer dereference in tgetstr in tinfo/lib_termcap.c.",
+     "cvss": []
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "22.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:22.04",
+      "package": {
+       "name": "ncurses",
+       "version": "6.3-2ubuntu0.1"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2023-45918"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "b1ac34e2a6e64913",
+    "name": "libtinfo6",
+    "version": "6.3-2ubuntu0.1",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/libtinfo6/copyright",
+      "layerID": "sha256:073a993fbb638d20386a2d83fbc91e7f7bf95bdd03fef73cdf9710a516e57557"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:073a993fbb638d20386a2d83fbc91e7f7bf95bdd03fef73cdf9710a516e57557"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "BSD-3-clause",
+     "MIT/X11",
+     "X11"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libtinfo6:libtinfo6:6.3-2ubuntu0.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/libtinfo6@6.3-2ubuntu0.1?arch=amd64&upstream=ncurses&distro=ubuntu-22.04",
+    "upstreams": [
+     {
+      "name": "ncurses"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-50495",
+    "dataSource": "https://ubuntu.com/security/CVE-2023-50495",
+    "namespace": "ubuntu:distro:ubuntu:22.04",
+    "severity": "Low",
+    "urls": [
+     "https://ubuntu.com/security/CVE-2023-50495"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-50495",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-50495",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/LU4MYMKFEZQ5VSCVLRIZGDQOUW3T44GT/",
+      "https://lists.gnu.org/archive/html/bug-ncurses/2023-04/msg00020.html",
+      "https://lists.gnu.org/archive/html/bug-ncurses/2023-04/msg00029.html",
+      "https://security.netapp.com/advisory/ntap-20240119-0008/"
+     ],
+     "description": "NCurse v6.4-20230418 was discovered to contain a segmentation fault via the component _nc_wrap_entry().",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 6.5,
+        "exploitabilityScore": 2.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "22.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:22.04",
+      "package": {
+       "name": "ncurses",
+       "version": "6.3-2ubuntu0.1"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2023-50495"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "24a7b10cad181243",
+    "name": "ncurses-bin",
+    "version": "6.3-2ubuntu0.1",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/ncurses-bin/copyright",
+      "layerID": "sha256:073a993fbb638d20386a2d83fbc91e7f7bf95bdd03fef73cdf9710a516e57557"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:073a993fbb638d20386a2d83fbc91e7f7bf95bdd03fef73cdf9710a516e57557"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "BSD-3-clause",
+     "MIT/X11",
+     "X11"
+    ],
+    "cpes": [
+     "cpe:2.3:a:ncurses-bin:ncurses-bin:6.3-2ubuntu0.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ncurses-bin:ncurses_bin:6.3-2ubuntu0.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ncurses_bin:ncurses-bin:6.3-2ubuntu0.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ncurses_bin:ncurses_bin:6.3-2ubuntu0.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ncurses:ncurses-bin:6.3-2ubuntu0.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ncurses:ncurses_bin:6.3-2ubuntu0.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/ncurses-bin@6.3-2ubuntu0.1?arch=amd64&upstream=ncurses&distro=ubuntu-22.04",
+    "upstreams": [
+     {
+      "name": "ncurses"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-45918",
+    "dataSource": "https://ubuntu.com/security/CVE-2023-45918",
+    "namespace": "ubuntu:distro:ubuntu:22.04",
+    "severity": "Low",
+    "urls": [
+     "https://ubuntu.com/security/CVE-2023-45918"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-45918",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-45918",
+     "namespace": "nvd:cpe",
+     "severity": "Unknown",
+     "urls": [
+      "https://lists.gnu.org/archive/html/bug-ncurses/2023-06/msg00005.html",
+      "https://security.netapp.com/advisory/ntap-20240315-0006/"
+     ],
+     "description": "ncurses 6.4-20230610 has a NULL pointer dereference in tgetstr in tinfo/lib_termcap.c.",
+     "cvss": []
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "22.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:22.04",
+      "package": {
+       "name": "ncurses",
+       "version": "6.3-2ubuntu0.1"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2023-45918"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "24a7b10cad181243",
+    "name": "ncurses-bin",
+    "version": "6.3-2ubuntu0.1",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/ncurses-bin/copyright",
+      "layerID": "sha256:073a993fbb638d20386a2d83fbc91e7f7bf95bdd03fef73cdf9710a516e57557"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:073a993fbb638d20386a2d83fbc91e7f7bf95bdd03fef73cdf9710a516e57557"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "BSD-3-clause",
+     "MIT/X11",
+     "X11"
+    ],
+    "cpes": [
+     "cpe:2.3:a:ncurses-bin:ncurses-bin:6.3-2ubuntu0.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ncurses-bin:ncurses_bin:6.3-2ubuntu0.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ncurses_bin:ncurses-bin:6.3-2ubuntu0.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ncurses_bin:ncurses_bin:6.3-2ubuntu0.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ncurses:ncurses-bin:6.3-2ubuntu0.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ncurses:ncurses_bin:6.3-2ubuntu0.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/ncurses-bin@6.3-2ubuntu0.1?arch=amd64&upstream=ncurses&distro=ubuntu-22.04",
+    "upstreams": [
+     {
+      "name": "ncurses"
+     }
+    ]
+   }
+  }
+ ],
+ "source": {
+  "type": "image",
+  "target": {
+   "userInput": "docker.io/rapidfort/rabbitmq:latest",
+   "imageID": "sha256:7877167b629788d4d150646f6eabdb34fc70d50ac3c902ddb5aa871dadf2507c",
+   "manifestDigest": "sha256:53981a7d60a3649888cfaff61857528bca292e0236d78331dbd96716df64d6fa",
+   "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+   "tags": [
+    "rapidfort/rabbitmq:latest"
+   ],
+   "imageSize": 107157298,
+   "layers": [
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:073a993fbb638d20386a2d83fbc91e7f7bf95bdd03fef73cdf9710a516e57557",
+     "size": 107157298
+    }
+   ],
+   "manifest": "eyJzY2hlbWFWZXJzaW9uIjoyLCJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmRpc3RyaWJ1dGlvbi5tYW5pZmVzdC52Mitqc29uIiwiY29uZmlnIjp7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuY29udGFpbmVyLmltYWdlLnYxK2pzb24iLCJzaXplIjo2MTA3LCJkaWdlc3QiOiJzaGEyNTY6Nzg3NzE2N2I2Mjk3ODhkNGQxNTA2NDZmNmVhYmRiMzRmYzcwZDUwYWMzYzkwMmRkYjVhYTg3MWRhZGYyNTA3YyJ9LCJsYXllcnMiOlt7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjoxMTAxNTIxOTIsImRpZ2VzdCI6InNoYTI1NjowNzNhOTkzZmJiNjM4ZDIwMzg2YTJkODNmYmM5MWU3ZjdiZjk1YmRkMDNmZWY3M2NkZjk3MTBhNTE2ZTU3NTU3In1dfQ==",
+   "config": "eyJhcmNoaXRlY3R1cmUiOiJhbWQ2NCIsImNvbmZpZyI6eyJIb3N0bmFtZSI6IiIsIkRvbWFpbm5hbWUiOiIiLCJVc2VyIjoiIiwiQXR0YWNoU3RkaW4iOmZhbHNlLCJBdHRhY2hTdGRvdXQiOmZhbHNlLCJBdHRhY2hTdGRlcnIiOmZhbHNlLCJFeHBvc2VkUG9ydHMiOnsiMTU2NzEvdGNwIjp7fSwiMTU2NzIvdGNwIjp7fSwiMTU2OTEvdGNwIjp7fSwiMTU2OTIvdGNwIjp7fSwiMjU2NzIvdGNwIjp7fSwiNDM2OS90Y3AiOnt9LCI1NjcxL3RjcCI6e30sIjU2NzIvdGNwIjp7fX0sIlR0eSI6ZmFsc2UsIk9wZW5TdGRpbiI6ZmFsc2UsIlN0ZGluT25jZSI6ZmFsc2UsIkVudiI6WyJQQVRIPS9vcHQvcmFiYml0bXEvc2Jpbjovb3B0L2VybGFuZy9iaW46L29wdC9vcGVuc3NsL2JpbjovdXNyL2xvY2FsL3NiaW46L3Vzci9sb2NhbC9iaW46L3Vzci9zYmluOi91c3IvYmluOi9zYmluOi9iaW4iLCJFUkxBTkdfSU5TVEFMTF9QQVRIX1BSRUZJWD0vb3B0L2VybGFuZyIsIk9QRU5TU0xfSU5TVEFMTF9QQVRIX1BSRUZJWD0vb3B0L29wZW5zc2wiLCJSQUJCSVRNUV9EQVRBX0RJUj0vdmFyL2xpYi9yYWJiaXRtcSIsIlJBQkJJVE1RX1ZFUlNJT049My4xMy4yIiwiUkFCQklUTVFfUEdQX0tFWV9JRD0weDBBOUFGMjExNUY0Njg3QkQyOTgwM0EyMDZCNzNBMzZFNjAyNkRGQ0EiLCJSQUJCSVRNUV9IT01FPS9vcHQvcmFiYml0bXEiLCJIT01FPS92YXIvbGliL3JhYmJpdG1xIiwiTEFORz1DLlVURi04IiwiTEFOR1VBR0U9Qy5VVEYtOCIsIkxDX0FMTD1DLlVURi04Il0sIkNtZCI6WyJyYWJiaXRtcS1zZXJ2ZXIiXSwiQXJnc0VzY2FwZWQiOnRydWUsIkltYWdlIjoic2hhMjU2OmY0ZDYwZjdkN2VkMDVhODJlYWRhYTRlYTMwNjFiN2U4MzY2MmZiNzA2ZTFhZmJjODZiMmRjYjY5NWM2ZTJhZmUiLCJWb2x1bWVzIjp7Ii92YXIvbGliL3JhYmJpdG1xIjp7fX0sIldvcmtpbmdEaXIiOiIvIiwiRW50cnlwb2ludCI6WyJkb2NrZXItZW50cnlwb2ludC5zaCJdLCJPbkJ1aWxkIjpudWxsLCJMYWJlbHMiOnsib3JnLm9wZW5jb250YWluZXJzLmltYWdlLnJlZi5uYW1lIjoidWJ1bnR1Iiwib3JnLm9wZW5jb250YWluZXJzLmltYWdlLnZlcnNpb24iOiIyMi4wNCIsIm9yaWdfaW1hZ2VfZGlnZXN0Ijoic2hhMjU2OmVlZTlhZmJjMTdjMzI0MjRiYTYzMDlkZmQyZDllZmM5YjliMTg2M2ZmZTIzMWIzZDJiZTI4MTU3NThiMGQ2NDkiLCJyZl9pbWFnZV9ndWlkLmMzMWQwN2Q0LTkzNTEtNDQ3MS1iNDhjLTIxYjhkYzc5M2E1YyI6ImMzMWQwN2Q0LTkzNTEtNDQ3MS1iNDhjLTIxYjhkYzc5M2E1YyJ9fSwiY29udGFpbmVyIjoiN2IyYzg4NmNmODg0MzE3NmUyNjJlYTgxNjQ3NmZiZGQ0ZjQzNTA0YTA5Y2FhMjgyZWQ1NmE3OTMxNGJkYzA5MSIsImNvbnRhaW5lcl9jb25maWciOnsiSG9zdG5hbWUiOiI3YjJjODg2Y2Y4ODQiLCJEb21haW5uYW1lIjoiIiwiVXNlciI6IiIsIkF0dGFjaFN0ZGluIjpmYWxzZSwiQXR0YWNoU3Rkb3V0IjpmYWxzZSwiQXR0YWNoU3RkZXJyIjpmYWxzZSwiRXhwb3NlZFBvcnRzIjp7IjE1NjcxL3RjcCI6e30sIjE1NjcyL3RjcCI6e30sIjE1NjkxL3RjcCI6e30sIjE1NjkyL3RjcCI6e30sIjI1NjcyL3RjcCI6e30sIjQzNjkvdGNwIjp7fSwiNTY3MS90Y3AiOnt9LCI1NjcyL3RjcCI6e319LCJUdHkiOmZhbHNlLCJPcGVuU3RkaW4iOmZhbHNlLCJTdGRpbk9uY2UiOmZhbHNlLCJFbnYiOlsiUEFUSD0vb3B0L3JhYmJpdG1xL3NiaW46L29wdC9lcmxhbmcvYmluOi9vcHQvb3BlbnNzbC9iaW46L3Vzci9sb2NhbC9zYmluOi91c3IvbG9jYWwvYmluOi91c3Ivc2JpbjovdXNyL2Jpbjovc2JpbjovYmluIiwiRVJMQU5HX0lOU1RBTExfUEFUSF9QUkVGSVg9L29wdC9lcmxhbmciLCJPUEVOU1NMX0lOU1RBTExfUEFUSF9QUkVGSVg9L29wdC9vcGVuc3NsIiwiUkFCQklUTVFfREFUQV9ESVI9L3Zhci9saWIvcmFiYml0bXEiLCJSQUJCSVRNUV9WRVJTSU9OPTMuMTMuMiIsIlJBQkJJVE1RX1BHUF9LRVlfSUQ9MHgwQTlBRjIxMTVGNDY4N0JEMjk4MDNBMjA2QjczQTM2RTYwMjZERkNBIiwiUkFCQklUTVFfSE9NRT0vb3B0L3JhYmJpdG1xIiwiSE9NRT0vdmFyL2xpYi9yYWJiaXRtcSIsIkxBTkc9Qy5VVEYtOCIsIkxBTkdVQUdFPUMuVVRGLTgiLCJMQ19BTEw9Qy5VVEYtOCJdLCJDbWQiOlsiL2Jpbi9zaCIsIi1jIiwiIyhub3ApICIsIkxBQkVMIG9yaWdfaW1hZ2VfZGlnZXN0PXNoYTI1NjplZWU5YWZiYzE3YzMyNDI0YmE2MzA5ZGZkMmQ5ZWZjOWI5YjE4NjNmZmUyMzFiM2QyYmUyODE1NzU4YjBkNjQ5Il0sIkFyZ3NFc2NhcGVkIjp0cnVlLCJJbWFnZSI6InNoYTI1NjpmNGQ2MGY3ZDdlZDA1YTgyZWFkYWE0ZWEzMDYxYjdlODM2NjJmYjcwNmUxYWZiYzg2YjJkY2I2OTVjNmUyYWZlIiwiVm9sdW1lcyI6eyIvdmFyL2xpYi9yYWJiaXRtcSI6e319LCJXb3JraW5nRGlyIjoiLyIsIkVudHJ5cG9pbnQiOlsiZG9ja2VyLWVudHJ5cG9pbnQuc2giXSwiT25CdWlsZCI6bnVsbCwiTGFiZWxzIjp7Im9yZy5vcGVuY29udGFpbmVycy5pbWFnZS5yZWYubmFtZSI6InVidW50dSIsIm9yZy5vcGVuY29udGFpbmVycy5pbWFnZS52ZXJzaW9uIjoiMjIuMDQiLCJvcmlnX2ltYWdlX2RpZ2VzdCI6InNoYTI1NjplZWU5YWZiYzE3YzMyNDI0YmE2MzA5ZGZkMmQ5ZWZjOWI5YjE4NjNmZmUyMzFiM2QyYmUyODE1NzU4YjBkNjQ5IiwicmZfaW1hZ2VfZ3VpZC5jMzFkMDdkNC05MzUxLTQ0NzEtYjQ4Yy0yMWI4ZGM3OTNhNWMiOiJjMzFkMDdkNC05MzUxLTQ0NzEtYjQ4Yy0yMWI4ZGM3OTNhNWMifX0sImNyZWF0ZWQiOiIyMDI0LTA1LTIwVDEzOjAyOjQ4LjAwNTczNTc3MloiLCJkb2NrZXJfdmVyc2lvbiI6IjI0LjAuOSIsImhpc3RvcnkiOlt7ImNyZWF0ZWQiOiIyMDI0LTA1LTIwVDEzOjAyOjM3LjEwOTQ3MDQwMloiLCJjcmVhdGVkX2J5IjoiQVJHIFJGX1JGSUQ9YzMxZDA3ZDQtOTM1MS00NDcxLWI0OGMtMjFiOGRjNzkzYTVjIiwiY29tbWVudCI6ImJ1aWxka2l0LmRvY2tlcmZpbGUudjAiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyNC0wNS0yMFQxMzowMjozNy4xMDk0NzA0MDJaIiwiY3JlYXRlZF9ieSI6IkNPUFkgLyAvICMgYnVpbGRraXQiLCJjb21tZW50IjoiYnVpbGRraXQuZG9ja2VyZmlsZS52MCJ9LHsiY3JlYXRlZCI6IjIwMjQtMDUtMjBUMTM6MDI6MzcuMTA5NDcwNDAyWiIsImNyZWF0ZWRfYnkiOiJMQUJFTCByZl9pbWFnZV9ndWlkLmMzMWQwN2Q0LTkzNTEtNDQ3MS1iNDhjLTIxYjhkYzc5M2E1Yz1jMzFkMDdkNC05MzUxLTQ0NzEtYjQ4Yy0yMWI4ZGM3OTNhNWMiLCJjb21tZW50IjoiYnVpbGRraXQuZG9ja2VyZmlsZS52MCIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDI0LTA1LTIwVDEzOjAyOjM3LjEwOTQ3MDQwMloiLCJjcmVhdGVkX2J5IjoiTEFCRUwgb3JnLm9wZW5jb250YWluZXJzLmltYWdlLnJlZi5uYW1lPXVidW50dSBvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UudmVyc2lvbj0yMi4wNCIsImNvbW1lbnQiOiJidWlsZGtpdC5kb2NrZXJmaWxlLnYwIiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjQtMDUtMjBUMTM6MDI6MzcuMTA5NDcwNDAyWiIsImNyZWF0ZWRfYnkiOiJFTlYgUEFUSD0vb3B0L3JhYmJpdG1xL3NiaW46L29wdC9lcmxhbmcvYmluOi9vcHQvb3BlbnNzbC9iaW46L3Vzci9sb2NhbC9zYmluOi91c3IvbG9jYWwvYmluOi91c3Ivc2JpbjovdXNyL2Jpbjovc2JpbjovYmluIEVSTEFOR19JTlNUQUxMX1BBVEhfUFJFRklYPS9vcHQvZXJsYW5nIE9QRU5TU0xfSU5TVEFMTF9QQVRIX1BSRUZJWD0vb3B0L29wZW5zc2wgUkFCQklUTVFfREFUQV9ESVI9L3Zhci9saWIvcmFiYml0bXEgUkFCQklUTVFfVkVSU0lPTj0zLjEzLjIgUkFCQklUTVFfUEdQX0tFWV9JRD0weDBBOUFGMjExNUY0Njg3QkQyOTgwM0EyMDZCNzNBMzZFNjAyNkRGQ0EgUkFCQklUTVFfSE9NRT0vb3B0L3JhYmJpdG1xIEhPTUU9L3Zhci9saWIvcmFiYml0bXEgTEFORz1DLlVURi04IExBTkdVQUdFPUMuVVRGLTggTENfQUxMPUMuVVRGLTgiLCJjb21tZW50IjoiYnVpbGRraXQuZG9ja2VyZmlsZS52MCIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDI0LTA1LTIwVDEzOjAyOjM3LjEwOTQ3MDQwMloiLCJjcmVhdGVkX2J5IjoiRVhQT1NFIG1hcFsxNTY3MS90Y3A6e31dIiwiY29tbWVudCI6ImJ1aWxka2l0LmRvY2tlcmZpbGUudjAiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyNC0wNS0yMFQxMzowMjozNy4xMDk0NzA0MDJaIiwiY3JlYXRlZF9ieSI6IkVYUE9TRSBtYXBbMTU2NzIvdGNwOnt9XSIsImNvbW1lbnQiOiJidWlsZGtpdC5kb2NrZXJmaWxlLnYwIiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjQtMDUtMjBUMTM6MDI6MzcuMTA5NDcwNDAyWiIsImNyZWF0ZWRfYnkiOiJFWFBPU0UgbWFwWzE1NjkxL3RjcDp7fV0iLCJjb21tZW50IjoiYnVpbGRraXQuZG9ja2VyZmlsZS52MCIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDI0LTA1LTIwVDEzOjAyOjM3LjEwOTQ3MDQwMloiLCJjcmVhdGVkX2J5IjoiRVhQT1NFIG1hcFsxNTY5Mi90Y3A6e31dIiwiY29tbWVudCI6ImJ1aWxka2l0LmRvY2tlcmZpbGUudjAiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyNC0wNS0yMFQxMzowMjozNy4xMDk0NzA0MDJaIiwiY3JlYXRlZF9ieSI6IkVYUE9TRSBtYXBbMjU2NzIvdGNwOnt9XSIsImNvbW1lbnQiOiJidWlsZGtpdC5kb2NrZXJmaWxlLnYwIiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjQtMDUtMjBUMTM6MDI6MzcuMTA5NDcwNDAyWiIsImNyZWF0ZWRfYnkiOiJFWFBPU0UgbWFwWzQzNjkvdGNwOnt9XSIsImNvbW1lbnQiOiJidWlsZGtpdC5kb2NrZXJmaWxlLnYwIiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjQtMDUtMjBUMTM6MDI6MzcuMTA5NDcwNDAyWiIsImNyZWF0ZWRfYnkiOiJFWFBPU0UgbWFwWzU2NzEvdGNwOnt9XSIsImNvbW1lbnQiOiJidWlsZGtpdC5kb2NrZXJmaWxlLnYwIiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjQtMDUtMjBUMTM6MDI6MzcuMTA5NDcwNDAyWiIsImNyZWF0ZWRfYnkiOiJFWFBPU0UgbWFwWzU2NzIvdGNwOnt9XSIsImNvbW1lbnQiOiJidWlsZGtpdC5kb2NrZXJmaWxlLnYwIiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjQtMDUtMjBUMTM6MDI6MzcuMTA5NDcwNDAyWiIsImNyZWF0ZWRfYnkiOiJWT0xVTUUgWy92YXIvbGliL3JhYmJpdG1xXSIsImNvbW1lbnQiOiJidWlsZGtpdC5kb2NrZXJmaWxlLnYwIiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjQtMDUtMjBUMTM6MDI6MzcuMTA5NDcwNDAyWiIsImNyZWF0ZWRfYnkiOiJFTlRSWVBPSU5UIFtcImRvY2tlci1lbnRyeXBvaW50LnNoXCJdIiwiY29tbWVudCI6ImJ1aWxka2l0LmRvY2tlcmZpbGUudjAiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyNC0wNS0yMFQxMzowMjozNy4xMDk0NzA0MDJaIiwiY3JlYXRlZF9ieSI6IkNNRCBbXCJyYWJiaXRtcS1zZXJ2ZXJcIl0iLCJjb21tZW50IjoiYnVpbGRraXQuZG9ja2VyZmlsZS52MCIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDI0LTA1LTIwVDEzOjAyOjM4Ljk2MDQ1NDI0N1oiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgIExBQkVMIG9yaWdfaW1hZ2VfZGlnZXN0PXNoYTI1NjplZWU5YWZiYzE3YzMyNDI0YmE2MzA5ZGZkMmQ5ZWZjOWI5YjE4NjNmZmUyMzFiM2QyYmUyODE1NzU4YjBkNjQ5IiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjQtMDUtMjBUMTM6MDI6NDguMDA1NzM1NzcyWiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSAgTEFCRUwgb3JpZ19pbWFnZV9kaWdlc3Q9c2hhMjU2OmVlZTlhZmJjMTdjMzI0MjRiYTYzMDlkZmQyZDllZmM5YjliMTg2M2ZmZTIzMWIzZDJiZTI4MTU3NThiMGQ2NDkiLCJlbXB0eV9sYXllciI6dHJ1ZX1dLCJvcyI6ImxpbnV4Iiwicm9vdGZzIjp7InR5cGUiOiJsYXllcnMiLCJkaWZmX2lkcyI6WyJzaGEyNTY6MDczYTk5M2ZiYjYzOGQyMDM4NmEyZDgzZmJjOTFlN2Y3YmY5NWJkZDAzZmVmNzNjZGY5NzEwYTUxNmU1NzU1NyJdfX0=",
+   "repoDigests": [
+    "rapidfort/rabbitmq@sha256:898547b744c3b8a34d304b536bf3c43a1b600a3b2401ee0acf654553d2230f8e"
+   ],
+   "architecture": "amd64",
+   "os": "linux",
+   "labels": {
+    "org.opencontainers.image.ref.name": "ubuntu",
+    "org.opencontainers.image.version": "22.04",
+    "orig_image_digest": "sha256:eee9afbc17c32424ba6309dfd2d9efc9b9b1863ffe231b3d2be2815758b0d649",
+    "rf_image_guid.c31d07d4-9351-4471-b48c-21b8dc793a5c": "c31d07d4-9351-4471-b48c-21b8dc793a5c"
+   }
+  }
+ },
+ "distro": {
+  "name": "ubuntu",
+  "version": "22.04",
+  "idLike": [
+   "debian"
+  ]
+ },
+ "descriptor": {
+  "name": "grype",
+  "version": "0.79.3",
+  "configuration": {
+   "output": [
+    "json"
+   ],
+   "file": "",
+   "distro": "",
+   "add-cpes-if-none": false,
+   "output-template-file": "",
+   "check-for-app-update": true,
+   "only-fixed": false,
+   "only-notfixed": false,
+   "ignore-wontfix": "",
+   "platform": "",
+   "search": {
+    "scope": "squashed",
+    "unindexed-archives": false,
+    "indexed-archives": true
+   },
+   "ignore": [
+    {
+     "vulnerability": "",
+     "reason": "",
+     "namespace": "",
+     "fix-state": "",
+     "package": {
+      "name": "kernel-headers",
+      "version": "",
+      "language": "",
+      "type": "rpm",
+      "location": "",
+      "upstream-name": "kernel"
+     },
+     "vex-status": "",
+     "vex-justification": "",
+     "match-type": "exact-indirect-match"
+    },
+    {
+     "vulnerability": "",
+     "reason": "",
+     "namespace": "",
+     "fix-state": "",
+     "package": {
+      "name": "linux-headers-.*",
+      "version": "",
+      "language": "",
+      "type": "deb",
+      "location": "",
+      "upstream-name": "linux"
+     },
+     "vex-status": "",
+     "vex-justification": "",
+     "match-type": "exact-indirect-match"
+    },
+    {
+     "vulnerability": "",
+     "reason": "",
+     "namespace": "",
+     "fix-state": "",
+     "package": {
+      "name": "linux-libc-dev",
+      "version": "",
+      "language": "",
+      "type": "deb",
+      "location": "",
+      "upstream-name": "linux"
+     },
+     "vex-status": "",
+     "vex-justification": "",
+     "match-type": "exact-indirect-match"
+    }
+   ],
+   "exclude": [],
+   "db": {
+    "cache-dir": "/Users/paulgibert/Library/Caches/grype/db",
+    "update-url": "https://toolbox-data.anchore.io/grype/databases/listing.json",
+    "ca-cert": "",
+    "auto-update": true,
+    "validate-by-hash-on-start": false,
+    "validate-age": true,
+    "max-allowed-built-age": 432000000000000,
+    "update-available-timeout": 30000000000,
+    "update-download-timeout": 120000000000
+   },
+   "externalSources": {
+    "enable": false,
+    "maven": {
+     "searchUpstreamBySha1": true,
+     "baseUrl": "https://search.maven.org/solrsearch/select"
+    }
+   },
+   "match": {
+    "java": {
+     "using-cpes": false
+    },
+    "dotnet": {
+     "using-cpes": false
+    },
+    "golang": {
+     "using-cpes": false,
+     "always-use-cpe-for-stdlib": true,
+     "allow-main-module-pseudo-version-comparison": false
+    },
+    "javascript": {
+     "using-cpes": false
+    },
+    "python": {
+     "using-cpes": false
+    },
+    "ruby": {
+     "using-cpes": false
+    },
+    "rust": {
+     "using-cpes": false
+    },
+    "stock": {
+     "using-cpes": true
+    }
+   },
+   "fail-on-severity": "",
+   "registry": {
+    "insecure-skip-tls-verify": false,
+    "insecure-use-http": false,
+    "auth": null,
+    "ca-cert": ""
+   },
+   "show-suppressed": false,
+   "by-cve": false,
+   "name": "",
+   "default-image-pull-source": "",
+   "vex-documents": [],
+   "vex-add": [],
+   "match-upstream-kernel-headers": false
+  },
+  "db": {
+   "built": "2024-07-23T01:30:37Z",
+   "schemaVersion": 5,
+   "location": "/Users/paulgibert/Library/Caches/grype/db/5",
+   "checksum": "sha256:972d0f51e180d424f3fff2637a1559e06940f35eda6bd03593be2a3db8f28971",
+   "error": null
+  },
+  "timestamp": "2024-07-23T21:22:17.350843-04:00"
+ }
+}

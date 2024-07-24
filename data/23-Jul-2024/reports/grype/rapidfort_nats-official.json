@@ -1,0 +1,184 @@
+{
+ "matches": [],
+ "source": {
+  "type": "image",
+  "target": {
+   "userInput": "docker.io/rapidfort/nats-official:latest",
+   "imageID": "sha256:743af061767a6fff5a92bee6e6c8cb14634f31d95c2477059ad2b80797994795",
+   "manifestDigest": "sha256:1ca88bfe686a71b25e42648130b47c987417d3214581402d231a3e087418d48b",
+   "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+   "tags": [
+    "rapidfort/nats-official:latest"
+   ],
+   "imageSize": 16073292,
+   "layers": [
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:541fd9ca9ea0db2027f55de423859fb13b904c5ccf19855ac0d78a2b3a1f1ed1",
+     "size": 16073292
+    }
+   ],
+   "manifest": "eyJzY2hlbWFWZXJzaW9uIjoyLCJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmRpc3RyaWJ1dGlvbi5tYW5pZmVzdC52Mitqc29uIiwiY29uZmlnIjp7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuY29udGFpbmVyLmltYWdlLnYxK2pzb24iLCJzaXplIjozNzUyLCJkaWdlc3QiOiJzaGEyNTY6NzQzYWYwNjE3NjdhNmZmZjVhOTJiZWU2ZTZjOGNiMTQ2MzRmMzFkOTVjMjQ3NzA1OWFkMmI4MDc5Nzk5NDc5NSJ9LCJsYXllcnMiOlt7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjoxNjQ3MDUyOCwiZGlnZXN0Ijoic2hhMjU2OjU0MWZkOWNhOWVhMGRiMjAyN2Y1NWRlNDIzODU5ZmIxM2I5MDRjNWNjZjE5ODU1YWMwZDc4YTJiM2ExZjFlZDEifV19",
+   "config": "eyJhcmNoaXRlY3R1cmUiOiJhbWQ2NCIsImNvbmZpZyI6eyJIb3N0bmFtZSI6IiIsIkRvbWFpbm5hbWUiOiIiLCJVc2VyIjoiIiwiQXR0YWNoU3RkaW4iOmZhbHNlLCJBdHRhY2hTdGRvdXQiOmZhbHNlLCJBdHRhY2hTdGRlcnIiOmZhbHNlLCJFeHBvc2VkUG9ydHMiOnsiNDIyMi90Y3AiOnt9LCI2MjIyL3RjcCI6e30sIjgyMjIvdGNwIjp7fX0sIlR0eSI6ZmFsc2UsIk9wZW5TdGRpbiI6ZmFsc2UsIlN0ZGluT25jZSI6ZmFsc2UsIkVudiI6WyJQQVRIPS91c3IvbG9jYWwvc2JpbjovdXNyL2xvY2FsL2JpbjovdXNyL3NiaW46L3Vzci9iaW46L3NiaW46L2JpbiIsIk5BVFNfU0VSVkVSPTIuMTAuMTgiXSwiQ21kIjpbIm5hdHMtc2VydmVyIiwiLS1jb25maWciLCIvZXRjL25hdHMvbmF0cy1zZXJ2ZXIuY29uZiJdLCJBcmdzRXNjYXBlZCI6dHJ1ZSwiSW1hZ2UiOiJzaGEyNTY6ZjcxZjZiZTc4Y2FlMzU2OTczNTlhZDM2YzdmODg5ZGVkY2MzMzA3MWIwOGQ1OThlYjZhNWJmMDY1YTE5YjUwNCIsIlZvbHVtZXMiOm51bGwsIldvcmtpbmdEaXIiOiIvIiwiRW50cnlwb2ludCI6WyJkb2NrZXItZW50cnlwb2ludC5zaCJdLCJPbkJ1aWxkIjpudWxsLCJMYWJlbHMiOnsib3JpZ19pbWFnZV9kaWdlc3QiOiJzaGEyNTY6MmIwYzgwZDc1OTY2ZGRlMzA3N2U1OTQ4M2E5NWIxNGEyODAzYmJiNTUwY2QwZjlmMzBmYTM3MTI0OTBlMmNkMiIsInJmX2ltYWdlX2d1aWQuODljOWY3OGItZWFiZS00ZjFmLTk0ZDgtYzIzYjk1YTkxOTAwIjoiODljOWY3OGItZWFiZS00ZjFmLTk0ZDgtYzIzYjk1YTkxOTAwIn19LCJjb250YWluZXIiOiIxOGI5MzI4YTdiNDhiNDJhMWExNzBkN2I1NmZmYTc4NTAzOGU0OTYzMjhhM2U2NzNlZGY0NjkwYjhmM2I1ZDkyIiwiY29udGFpbmVyX2NvbmZpZyI6eyJIb3N0bmFtZSI6IjE4YjkzMjhhN2I0OCIsIkRvbWFpbm5hbWUiOiIiLCJVc2VyIjoiIiwiQXR0YWNoU3RkaW4iOmZhbHNlLCJBdHRhY2hTdGRvdXQiOmZhbHNlLCJBdHRhY2hTdGRlcnIiOmZhbHNlLCJFeHBvc2VkUG9ydHMiOnsiNDIyMi90Y3AiOnt9LCI2MjIyL3RjcCI6e30sIjgyMjIvdGNwIjp7fX0sIlR0eSI6ZmFsc2UsIk9wZW5TdGRpbiI6ZmFsc2UsIlN0ZGluT25jZSI6ZmFsc2UsIkVudiI6WyJQQVRIPS91c3IvbG9jYWwvc2JpbjovdXNyL2xvY2FsL2JpbjovdXNyL3NiaW46L3Vzci9iaW46L3NiaW46L2JpbiIsIk5BVFNfU0VSVkVSPTIuMTAuMTgiXSwiQ21kIjpbIi9iaW4vc2giLCItYyIsIiMobm9wKSAiLCJMQUJFTCBvcmlnX2ltYWdlX2RpZ2VzdD1zaGEyNTY6MmIwYzgwZDc1OTY2ZGRlMzA3N2U1OTQ4M2E5NWIxNGEyODAzYmJiNTUwY2QwZjlmMzBmYTM3MTI0OTBlMmNkMiJdLCJBcmdzRXNjYXBlZCI6dHJ1ZSwiSW1hZ2UiOiJzaGEyNTY6ZjcxZjZiZTc4Y2FlMzU2OTczNTlhZDM2YzdmODg5ZGVkY2MzMzA3MWIwOGQ1OThlYjZhNWJmMDY1YTE5YjUwNCIsIlZvbHVtZXMiOm51bGwsIldvcmtpbmdEaXIiOiIvIiwiRW50cnlwb2ludCI6WyJkb2NrZXItZW50cnlwb2ludC5zaCJdLCJPbkJ1aWxkIjpudWxsLCJMYWJlbHMiOnsib3JpZ19pbWFnZV9kaWdlc3QiOiJzaGEyNTY6MmIwYzgwZDc1OTY2ZGRlMzA3N2U1OTQ4M2E5NWIxNGEyODAzYmJiNTUwY2QwZjlmMzBmYTM3MTI0OTBlMmNkMiIsInJmX2ltYWdlX2d1aWQuODljOWY3OGItZWFiZS00ZjFmLTk0ZDgtYzIzYjk1YTkxOTAwIjoiODljOWY3OGItZWFiZS00ZjFmLTk0ZDgtYzIzYjk1YTkxOTAwIn19LCJjcmVhdGVkIjoiMjAyNC0wNy0yM1QwMjoxNzo1NC40NDY0OTU1OThaIiwiZG9ja2VyX3ZlcnNpb24iOiIyNi4xLjMiLCJoaXN0b3J5IjpbeyJjcmVhdGVkIjoiMjAyNC0wNy0yM1QwMjoxNzo1MC4xNTIyNDMzNTRaIiwiY3JlYXRlZF9ieSI6IkFSRyBSRl9SRklEPTg5YzlmNzhiLWVhYmUtNGYxZi05NGQ4LWMyM2I5NWE5MTkwMCIsImNvbW1lbnQiOiJidWlsZGtpdC5kb2NrZXJmaWxlLnYwIiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjQtMDctMjNUMDI6MTc6NTAuMTUyMjQzMzU0WiIsImNyZWF0ZWRfYnkiOiJDT1BZIC8gLyAjIGJ1aWxka2l0IiwiY29tbWVudCI6ImJ1aWxka2l0LmRvY2tlcmZpbGUudjAifSx7ImNyZWF0ZWQiOiIyMDI0LTA3LTIzVDAyOjE3OjUwLjE1MjI0MzM1NFoiLCJjcmVhdGVkX2J5IjoiTEFCRUwgcmZfaW1hZ2VfZ3VpZC44OWM5Zjc4Yi1lYWJlLTRmMWYtOTRkOC1jMjNiOTVhOTE5MDA9ODljOWY3OGItZWFiZS00ZjFmLTk0ZDgtYzIzYjk1YTkxOTAwIiwiY29tbWVudCI6ImJ1aWxka2l0LmRvY2tlcmZpbGUudjAiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyNC0wNy0yM1QwMjoxNzo1MC4xNTIyNDMzNTRaIiwiY3JlYXRlZF9ieSI6IkVOViBQQVRIPS91c3IvbG9jYWwvc2JpbjovdXNyL2xvY2FsL2JpbjovdXNyL3NiaW46L3Vzci9iaW46L3NiaW46L2JpbiBOQVRTX1NFUlZFUj0yLjEwLjE4IiwiY29tbWVudCI6ImJ1aWxka2l0LmRvY2tlcmZpbGUudjAiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyNC0wNy0yM1QwMjoxNzo1MC4xNTIyNDMzNTRaIiwiY3JlYXRlZF9ieSI6IkVYUE9TRSBtYXBbNDIyMi90Y3A6e31dIiwiY29tbWVudCI6ImJ1aWxka2l0LmRvY2tlcmZpbGUudjAiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyNC0wNy0yM1QwMjoxNzo1MC4xNTIyNDMzNTRaIiwiY3JlYXRlZF9ieSI6IkVYUE9TRSBtYXBbNjIyMi90Y3A6e31dIiwiY29tbWVudCI6ImJ1aWxka2l0LmRvY2tlcmZpbGUudjAiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyNC0wNy0yM1QwMjoxNzo1MC4xNTIyNDMzNTRaIiwiY3JlYXRlZF9ieSI6IkVYUE9TRSBtYXBbODIyMi90Y3A6e31dIiwiY29tbWVudCI6ImJ1aWxka2l0LmRvY2tlcmZpbGUudjAiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyNC0wNy0yM1QwMjoxNzo1MC4xNTIyNDMzNTRaIiwiY3JlYXRlZF9ieSI6IkVOVFJZUE9JTlQgW1wiZG9ja2VyLWVudHJ5cG9pbnQuc2hcIl0iLCJjb21tZW50IjoiYnVpbGRraXQuZG9ja2VyZmlsZS52MCIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDI0LTA3LTIzVDAyOjE3OjUwLjE1MjI0MzM1NFoiLCJjcmVhdGVkX2J5IjoiQ01EIFtcIm5hdHMtc2VydmVyXCIgXCItLWNvbmZpZ1wiIFwiL2V0Yy9uYXRzL25hdHMtc2VydmVyLmNvbmZcIl0iLCJjb21tZW50IjoiYnVpbGRraXQuZG9ja2VyZmlsZS52MCIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDI0LTA3LTIzVDAyOjE3OjUwLjk2OTA4NTgyNloiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgIExBQkVMIG9yaWdfaW1hZ2VfZGlnZXN0PXNoYTI1NjoyYjBjODBkNzU5NjZkZGUzMDc3ZTU5NDgzYTk1YjE0YTI4MDNiYmI1NTBjZDBmOWYzMGZhMzcxMjQ5MGUyY2QyIiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjQtMDctMjNUMDI6MTc6NTQuNDQ2NDk1NTk4WiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSAgTEFCRUwgb3JpZ19pbWFnZV9kaWdlc3Q9c2hhMjU2OjJiMGM4MGQ3NTk2NmRkZTMwNzdlNTk0ODNhOTViMTRhMjgwM2JiYjU1MGNkMGY5ZjMwZmEzNzEyNDkwZTJjZDIiLCJlbXB0eV9sYXllciI6dHJ1ZX1dLCJvcyI6ImxpbnV4Iiwicm9vdGZzIjp7InR5cGUiOiJsYXllcnMiLCJkaWZmX2lkcyI6WyJzaGEyNTY6NTQxZmQ5Y2E5ZWEwZGIyMDI3ZjU1ZGU0MjM4NTlmYjEzYjkwNGM1Y2NmMTk4NTVhYzBkNzhhMmIzYTFmMWVkMSJdfX0=",
+   "repoDigests": [
+    "rapidfort/nats-official@sha256:43241ca73e1806570aa3ecd06ef48206fa5c7493f219b6b27e8c9c694dee3ba9"
+   ],
+   "architecture": "amd64",
+   "os": "linux",
+   "labels": {
+    "orig_image_digest": "sha256:2b0c80d75966dde3077e59483a95b14a2803bbb550cd0f9f30fa3712490e2cd2",
+    "rf_image_guid.89c9f78b-eabe-4f1f-94d8-c23b95a91900": "89c9f78b-eabe-4f1f-94d8-c23b95a91900"
+   }
+  }
+ },
+ "distro": {
+  "name": "alpine",
+  "version": "3.20.2",
+  "idLike": []
+ },
+ "descriptor": {
+  "name": "grype",
+  "version": "0.79.3",
+  "configuration": {
+   "output": [
+    "json"
+   ],
+   "file": "",
+   "distro": "",
+   "add-cpes-if-none": false,
+   "output-template-file": "",
+   "check-for-app-update": true,
+   "only-fixed": false,
+   "only-notfixed": false,
+   "ignore-wontfix": "",
+   "platform": "",
+   "search": {
+    "scope": "squashed",
+    "unindexed-archives": false,
+    "indexed-archives": true
+   },
+   "ignore": [
+    {
+     "vulnerability": "",
+     "reason": "",
+     "namespace": "",
+     "fix-state": "",
+     "package": {
+      "name": "kernel-headers",
+      "version": "",
+      "language": "",
+      "type": "rpm",
+      "location": "",
+      "upstream-name": "kernel"
+     },
+     "vex-status": "",
+     "vex-justification": "",
+     "match-type": "exact-indirect-match"
+    },
+    {
+     "vulnerability": "",
+     "reason": "",
+     "namespace": "",
+     "fix-state": "",
+     "package": {
+      "name": "linux-headers-.*",
+      "version": "",
+      "language": "",
+      "type": "deb",
+      "location": "",
+      "upstream-name": "linux"
+     },
+     "vex-status": "",
+     "vex-justification": "",
+     "match-type": "exact-indirect-match"
+    },
+    {
+     "vulnerability": "",
+     "reason": "",
+     "namespace": "",
+     "fix-state": "",
+     "package": {
+      "name": "linux-libc-dev",
+      "version": "",
+      "language": "",
+      "type": "deb",
+      "location": "",
+      "upstream-name": "linux"
+     },
+     "vex-status": "",
+     "vex-justification": "",
+     "match-type": "exact-indirect-match"
+    }
+   ],
+   "exclude": [],
+   "db": {
+    "cache-dir": "/Users/paulgibert/Library/Caches/grype/db",
+    "update-url": "https://toolbox-data.anchore.io/grype/databases/listing.json",
+    "ca-cert": "",
+    "auto-update": true,
+    "validate-by-hash-on-start": false,
+    "validate-age": true,
+    "max-allowed-built-age": 432000000000000,
+    "update-available-timeout": 30000000000,
+    "update-download-timeout": 120000000000
+   },
+   "externalSources": {
+    "enable": false,
+    "maven": {
+     "searchUpstreamBySha1": true,
+     "baseUrl": "https://search.maven.org/solrsearch/select"
+    }
+   },
+   "match": {
+    "java": {
+     "using-cpes": false
+    },
+    "dotnet": {
+     "using-cpes": false
+    },
+    "golang": {
+     "using-cpes": false,
+     "always-use-cpe-for-stdlib": true,
+     "allow-main-module-pseudo-version-comparison": false
+    },
+    "javascript": {
+     "using-cpes": false
+    },
+    "python": {
+     "using-cpes": false
+    },
+    "ruby": {
+     "using-cpes": false
+    },
+    "rust": {
+     "using-cpes": false
+    },
+    "stock": {
+     "using-cpes": true
+    }
+   },
+   "fail-on-severity": "",
+   "registry": {
+    "insecure-skip-tls-verify": false,
+    "insecure-use-http": false,
+    "auth": null,
+    "ca-cert": ""
+   },
+   "show-suppressed": false,
+   "by-cve": false,
+   "name": "",
+   "default-image-pull-source": "",
+   "vex-documents": [],
+   "vex-add": [],
+   "match-upstream-kernel-headers": false
+  },
+  "db": {
+   "built": "2024-07-23T01:30:37Z",
+   "schemaVersion": 5,
+   "location": "/Users/paulgibert/Library/Caches/grype/db/5",
+   "checksum": "sha256:972d0f51e180d424f3fff2637a1559e06940f35eda6bd03593be2a3db8f28971",
+   "error": null
+  },
+  "timestamp": "2024-07-23T21:38:16.539239-04:00"
+ }
+}

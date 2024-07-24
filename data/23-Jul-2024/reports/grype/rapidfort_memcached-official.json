@@ -1,0 +1,184 @@
+{
+ "matches": [],
+ "source": {
+  "type": "image",
+  "target": {
+   "userInput": "docker.io/rapidfort/memcached-official:latest",
+   "imageID": "sha256:41683d7383843fce44e8a47523cee5c5f62a5082b4fe1dde499734d0716a7d9e",
+   "manifestDigest": "sha256:c43b608feaaa1ec0fc80694b5fb7cb75072d4ca1775da95a3c11242813609fce",
+   "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+   "tags": [
+    "rapidfort/memcached-official:latest"
+   ],
+   "imageSize": 8119058,
+   "layers": [
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:acd41e44f829be0c078279e0e88552748ca8ffcb0872b516c0cb496737a0de75",
+     "size": 8119058
+    }
+   ],
+   "manifest": "eyJzY2hlbWFWZXJzaW9uIjoyLCJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmRpc3RyaWJ1dGlvbi5tYW5pZmVzdC52Mitqc29uIiwiY29uZmlnIjp7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuY29udGFpbmVyLmltYWdlLnYxK2pzb24iLCJzaXplIjozODY4LCJkaWdlc3QiOiJzaGEyNTY6NDE2ODNkNzM4Mzg0M2ZjZTQ0ZThhNDc1MjNjZWU1YzVmNjJhNTA4MmI0ZmUxZGRlNDk5NzM0ZDA3MTZhN2Q5ZSJ9LCJsYXllcnMiOlt7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjo4MzY0NTQ0LCJkaWdlc3QiOiJzaGEyNTY6YWNkNDFlNDRmODI5YmUwYzA3ODI3OWUwZTg4NTUyNzQ4Y2E4ZmZjYjA4NzJiNTE2YzBjYjQ5NjczN2EwZGU3NSJ9XX0=",
+   "config": "eyJhcmNoaXRlY3R1cmUiOiJhbWQ2NCIsImNvbmZpZyI6eyJIb3N0bmFtZSI6IiIsIkRvbWFpbm5hbWUiOiIiLCJVc2VyIjoibWVtY2FjaGUiLCJBdHRhY2hTdGRpbiI6ZmFsc2UsIkF0dGFjaFN0ZG91dCI6ZmFsc2UsIkF0dGFjaFN0ZGVyciI6ZmFsc2UsIkV4cG9zZWRQb3J0cyI6eyIxMTIxMS90Y3AiOnt9fSwiVHR5IjpmYWxzZSwiT3BlblN0ZGluIjpmYWxzZSwiU3RkaW5PbmNlIjpmYWxzZSwiRW52IjpbIlBBVEg9L3Vzci9sb2NhbC9zYmluOi91c3IvbG9jYWwvYmluOi91c3Ivc2JpbjovdXNyL2Jpbjovc2JpbjovYmluIiwiTUVNQ0FDSEVEX1ZFUlNJT049MS42LjI5IiwiTUVNQ0FDSEVEX1VSTD1odHRwczovL21lbWNhY2hlZC5vcmcvZmlsZXMvbWVtY2FjaGVkLTEuNi4yOS50YXIuZ3oiLCJNRU1DQUNIRURfU0hBMT1hOTY5OWFlZDExMWQ4NmI2ZTM3YjNjZTVlNmVmNGU3NTM5NTgyZDVmIl0sIkNtZCI6WyJtZW1jYWNoZWQiXSwiQXJnc0VzY2FwZWQiOnRydWUsIkltYWdlIjoic2hhMjU2OmQxM2NiMzdkZDk4YWQwMzM3NGJjOWQxMjA1OTBmZjIwOTNkYzQ0YjUzNGJjMGExMTI0ZDFiZWZlZGQxZmM2ZjQiLCJWb2x1bWVzIjpudWxsLCJXb3JraW5nRGlyIjoiLyIsIkVudHJ5cG9pbnQiOlsiZG9ja2VyLWVudHJ5cG9pbnQuc2giXSwiT25CdWlsZCI6bnVsbCwiTGFiZWxzIjp7Im9yaWdfaW1hZ2VfZGlnZXN0Ijoic2hhMjU2OmM4NzQxYWRjMmM0NTI2NDEyNTE4N2VkM2UxNmNjOTBjZjAyOWRiYzM3ODdmYjI3ODRjNWI5N2U1N2Q0ZjU5MTQiLCJyZl9pbWFnZV9ndWlkLjMxMjk5NWE0LTUyNTYtNDJkZi1hOTIyLWQyYjcyNDYzOGYxNyI6IjMxMjk5NWE0LTUyNTYtNDJkZi1hOTIyLWQyYjcyNDYzOGYxNyJ9fSwiY29udGFpbmVyIjoiNGRmYTc3MjM4N2U1NTAyMzVjMjI3NGYyNmNjYWFmZDU2NjYxMzc0ZjU3NDdjMWE3OGQzMDJlMTU5YjJjYWViMSIsImNvbnRhaW5lcl9jb25maWciOnsiSG9zdG5hbWUiOiI0ZGZhNzcyMzg3ZTUiLCJEb21haW5uYW1lIjoiIiwiVXNlciI6Im1lbWNhY2hlIiwiQXR0YWNoU3RkaW4iOmZhbHNlLCJBdHRhY2hTdGRvdXQiOmZhbHNlLCJBdHRhY2hTdGRlcnIiOmZhbHNlLCJFeHBvc2VkUG9ydHMiOnsiMTEyMTEvdGNwIjp7fX0sIlR0eSI6ZmFsc2UsIk9wZW5TdGRpbiI6ZmFsc2UsIlN0ZGluT25jZSI6ZmFsc2UsIkVudiI6WyJQQVRIPS91c3IvbG9jYWwvc2JpbjovdXNyL2xvY2FsL2JpbjovdXNyL3NiaW46L3Vzci9iaW46L3NiaW46L2JpbiIsIk1FTUNBQ0hFRF9WRVJTSU9OPTEuNi4yOSIsIk1FTUNBQ0hFRF9VUkw9aHR0cHM6Ly9tZW1jYWNoZWQub3JnL2ZpbGVzL21lbWNhY2hlZC0xLjYuMjkudGFyLmd6IiwiTUVNQ0FDSEVEX1NIQTE9YTk2OTlhZWQxMTFkODZiNmUzN2IzY2U1ZTZlZjRlNzUzOTU4MmQ1ZiJdLCJDbWQiOlsiL2Jpbi9zaCIsIi1jIiwiIyhub3ApICIsIkxBQkVMIG9yaWdfaW1hZ2VfZGlnZXN0PXNoYTI1NjpjODc0MWFkYzJjNDUyNjQxMjUxODdlZDNlMTZjYzkwY2YwMjlkYmMzNzg3ZmIyNzg0YzViOTdlNTdkNGY1OTE0Il0sIkFyZ3NFc2NhcGVkIjp0cnVlLCJJbWFnZSI6InNoYTI1NjpkMTNjYjM3ZGQ5OGFkMDMzNzRiYzlkMTIwNTkwZmYyMDkzZGM0NGI1MzRiYzBhMTEyNGQxYmVmZWRkMWZjNmY0IiwiVm9sdW1lcyI6bnVsbCwiV29ya2luZ0RpciI6Ii8iLCJFbnRyeXBvaW50IjpbImRvY2tlci1lbnRyeXBvaW50LnNoIl0sIk9uQnVpbGQiOm51bGwsIkxhYmVscyI6eyJvcmlnX2ltYWdlX2RpZ2VzdCI6InNoYTI1NjpjODc0MWFkYzJjNDUyNjQxMjUxODdlZDNlMTZjYzkwY2YwMjlkYmMzNzg3ZmIyNzg0YzViOTdlNTdkNGY1OTE0IiwicmZfaW1hZ2VfZ3VpZC4zMTI5OTVhNC01MjU2LTQyZGYtYTkyMi1kMmI3MjQ2MzhmMTciOiIzMTI5OTVhNC01MjU2LTQyZGYtYTkyMi1kMmI3MjQ2MzhmMTcifX0sImNyZWF0ZWQiOiIyMDI0LTA3LTIzVDIwOjUxOjE5Ljg2NjgyNjYwNloiLCJkb2NrZXJfdmVyc2lvbiI6IjI2LjEuMyIsImhpc3RvcnkiOlt7ImNyZWF0ZWQiOiIyMDI0LTA3LTIzVDIwOjUxOjE0Ljc5OTI1NzgwNloiLCJjcmVhdGVkX2J5IjoiQVJHIFJGX1JGSUQ9MzEyOTk1YTQtNTI1Ni00MmRmLWE5MjItZDJiNzI0NjM4ZjE3IiwiY29tbWVudCI6ImJ1aWxka2l0LmRvY2tlcmZpbGUudjAiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyNC0wNy0yM1QyMDo1MToxNC43OTkyNTc4MDZaIiwiY3JlYXRlZF9ieSI6IkNPUFkgLyAvICMgYnVpbGRraXQiLCJjb21tZW50IjoiYnVpbGRraXQuZG9ja2VyZmlsZS52MCJ9LHsiY3JlYXRlZCI6IjIwMjQtMDctMjNUMjA6NTE6MTQuNzk5MjU3ODA2WiIsImNyZWF0ZWRfYnkiOiJMQUJFTCByZl9pbWFnZV9ndWlkLjMxMjk5NWE0LTUyNTYtNDJkZi1hOTIyLWQyYjcyNDYzOGYxNz0zMTI5OTVhNC01MjU2LTQyZGYtYTkyMi1kMmI3MjQ2MzhmMTciLCJjb21tZW50IjoiYnVpbGRraXQuZG9ja2VyZmlsZS52MCIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDI0LTA3LTIzVDIwOjUxOjE0Ljc5OTI1NzgwNloiLCJjcmVhdGVkX2J5IjoiRU5WIFBBVEg9L3Vzci9sb2NhbC9zYmluOi91c3IvbG9jYWwvYmluOi91c3Ivc2JpbjovdXNyL2Jpbjovc2JpbjovYmluIE1FTUNBQ0hFRF9WRVJTSU9OPTEuNi4yOSBNRU1DQUNIRURfVVJMPWh0dHBzOi8vbWVtY2FjaGVkLm9yZy9maWxlcy9tZW1jYWNoZWQtMS42LjI5LnRhci5neiBNRU1DQUNIRURfU0hBMT1hOTY5OWFlZDExMWQ4NmI2ZTM3YjNjZTVlNmVmNGU3NTM5NTgyZDVmIiwiY29tbWVudCI6ImJ1aWxka2l0LmRvY2tlcmZpbGUudjAiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyNC0wNy0yM1QyMDo1MToxNC43OTkyNTc4MDZaIiwiY3JlYXRlZF9ieSI6IkVYUE9TRSBtYXBbMTEyMTEvdGNwOnt9XSIsImNvbW1lbnQiOiJidWlsZGtpdC5kb2NrZXJmaWxlLnYwIiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjQtMDctMjNUMjA6NTE6MTQuNzk5MjU3ODA2WiIsImNyZWF0ZWRfYnkiOiJVU0VSIG1lbWNhY2hlIiwiY29tbWVudCI6ImJ1aWxka2l0LmRvY2tlcmZpbGUudjAiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyNC0wNy0yM1QyMDo1MToxNC43OTkyNTc4MDZaIiwiY3JlYXRlZF9ieSI6IkVOVFJZUE9JTlQgW1wiZG9ja2VyLWVudHJ5cG9pbnQuc2hcIl0iLCJjb21tZW50IjoiYnVpbGRraXQuZG9ja2VyZmlsZS52MCIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDI0LTA3LTIzVDIwOjUxOjE0Ljc5OTI1NzgwNloiLCJjcmVhdGVkX2J5IjoiQ01EIFtcIm1lbWNhY2hlZFwiXSIsImNvbW1lbnQiOiJidWlsZGtpdC5kb2NrZXJmaWxlLnYwIiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjQtMDctMjNUMjA6NTE6MTYuNDg2MDUyMjQzWiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSAgTEFCRUwgb3JpZ19pbWFnZV9kaWdlc3Q9c2hhMjU2OmM4NzQxYWRjMmM0NTI2NDEyNTE4N2VkM2UxNmNjOTBjZjAyOWRiYzM3ODdmYjI3ODRjNWI5N2U1N2Q0ZjU5MTQiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyNC0wNy0yM1QyMDo1MToxOS44NjY4MjY2MDZaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApICBMQUJFTCBvcmlnX2ltYWdlX2RpZ2VzdD1zaGEyNTY6Yzg3NDFhZGMyYzQ1MjY0MTI1MTg3ZWQzZTE2Y2M5MGNmMDI5ZGJjMzc4N2ZiMjc4NGM1Yjk3ZTU3ZDRmNTkxNCIsImVtcHR5X2xheWVyIjp0cnVlfV0sIm9zIjoibGludXgiLCJyb290ZnMiOnsidHlwZSI6ImxheWVycyIsImRpZmZfaWRzIjpbInNoYTI1NjphY2Q0MWU0NGY4MjliZTBjMDc4Mjc5ZTBlODg1NTI3NDhjYThmZmNiMDg3MmI1MTZjMGNiNDk2NzM3YTBkZTc1Il19fQ==",
+   "repoDigests": [
+    "rapidfort/memcached-official@sha256:d75aa459c98b3697d5be223d4bbc621685343285553bb02a23c688546c6003ea"
+   ],
+   "architecture": "amd64",
+   "os": "linux",
+   "labels": {
+    "orig_image_digest": "sha256:c8741adc2c45264125187ed3e16cc90cf029dbc3787fb2784c5b97e57d4f5914",
+    "rf_image_guid.312995a4-5256-42df-a922-d2b724638f17": "312995a4-5256-42df-a922-d2b724638f17"
+   }
+  }
+ },
+ "distro": {
+  "name": "alpine",
+  "version": "3.20.2",
+  "idLike": []
+ },
+ "descriptor": {
+  "name": "grype",
+  "version": "0.79.3",
+  "configuration": {
+   "output": [
+    "json"
+   ],
+   "file": "",
+   "distro": "",
+   "add-cpes-if-none": false,
+   "output-template-file": "",
+   "check-for-app-update": true,
+   "only-fixed": false,
+   "only-notfixed": false,
+   "ignore-wontfix": "",
+   "platform": "",
+   "search": {
+    "scope": "squashed",
+    "unindexed-archives": false,
+    "indexed-archives": true
+   },
+   "ignore": [
+    {
+     "vulnerability": "",
+     "reason": "",
+     "namespace": "",
+     "fix-state": "",
+     "package": {
+      "name": "kernel-headers",
+      "version": "",
+      "language": "",
+      "type": "rpm",
+      "location": "",
+      "upstream-name": "kernel"
+     },
+     "vex-status": "",
+     "vex-justification": "",
+     "match-type": "exact-indirect-match"
+    },
+    {
+     "vulnerability": "",
+     "reason": "",
+     "namespace": "",
+     "fix-state": "",
+     "package": {
+      "name": "linux-headers-.*",
+      "version": "",
+      "language": "",
+      "type": "deb",
+      "location": "",
+      "upstream-name": "linux"
+     },
+     "vex-status": "",
+     "vex-justification": "",
+     "match-type": "exact-indirect-match"
+    },
+    {
+     "vulnerability": "",
+     "reason": "",
+     "namespace": "",
+     "fix-state": "",
+     "package": {
+      "name": "linux-libc-dev",
+      "version": "",
+      "language": "",
+      "type": "deb",
+      "location": "",
+      "upstream-name": "linux"
+     },
+     "vex-status": "",
+     "vex-justification": "",
+     "match-type": "exact-indirect-match"
+    }
+   ],
+   "exclude": [],
+   "db": {
+    "cache-dir": "/Users/paulgibert/Library/Caches/grype/db",
+    "update-url": "https://toolbox-data.anchore.io/grype/databases/listing.json",
+    "ca-cert": "",
+    "auto-update": true,
+    "validate-by-hash-on-start": false,
+    "validate-age": true,
+    "max-allowed-built-age": 432000000000000,
+    "update-available-timeout": 30000000000,
+    "update-download-timeout": 120000000000
+   },
+   "externalSources": {
+    "enable": false,
+    "maven": {
+     "searchUpstreamBySha1": true,
+     "baseUrl": "https://search.maven.org/solrsearch/select"
+    }
+   },
+   "match": {
+    "java": {
+     "using-cpes": false
+    },
+    "dotnet": {
+     "using-cpes": false
+    },
+    "golang": {
+     "using-cpes": false,
+     "always-use-cpe-for-stdlib": true,
+     "allow-main-module-pseudo-version-comparison": false
+    },
+    "javascript": {
+     "using-cpes": false
+    },
+    "python": {
+     "using-cpes": false
+    },
+    "ruby": {
+     "using-cpes": false
+    },
+    "rust": {
+     "using-cpes": false
+    },
+    "stock": {
+     "using-cpes": true
+    }
+   },
+   "fail-on-severity": "",
+   "registry": {
+    "insecure-skip-tls-verify": false,
+    "insecure-use-http": false,
+    "auth": null,
+    "ca-cert": ""
+   },
+   "show-suppressed": false,
+   "by-cve": false,
+   "name": "",
+   "default-image-pull-source": "",
+   "vex-documents": [],
+   "vex-add": [],
+   "match-upstream-kernel-headers": false
+  },
+  "db": {
+   "built": "2024-07-23T01:30:37Z",
+   "schemaVersion": 5,
+   "location": "/Users/paulgibert/Library/Caches/grype/db/5",
+   "checksum": "sha256:972d0f51e180d424f3fff2637a1559e06940f35eda6bd03593be2a3db8f28971",
+   "error": null
+  },
+  "timestamp": "2024-07-23T21:41:34.479258-04:00"
+ }
+}

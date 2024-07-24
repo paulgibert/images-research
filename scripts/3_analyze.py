@@ -119,7 +119,7 @@ def _get_column(agg_df: pd.DataFrame, vendor: str, column: str) -> Tuple[np.ndar
     @param agg_df: A pandas DataFrame containing the aggregate data
     @param vendor: The vendor to get data of
     @param column: The column to get data from
-    @returns A Tuple of the vendor data and coresponding image types (data, types)
+    @returns A Tuple of the vendor data and corresponding image types (data, types)
     """
     mask = agg_df["image_vendor"] == vendor
     by = "image_type"

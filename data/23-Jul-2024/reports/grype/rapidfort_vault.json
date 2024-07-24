@@ -1,0 +1,2292 @@
+{
+ "matches": [
+  {
+   "vulnerability": {
+    "id": "CVE-2023-42366",
+    "dataSource": "https://www.cve.org/CVERecord?id=CVE-2023-42366",
+    "namespace": "alpine:distro:alpine:3.18",
+    "severity": "Medium",
+    "urls": [
+     "https://www.cve.org/CVERecord?id=CVE-2023-42366"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "1.36.1-r6"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-42366",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-42366",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://bugs.busybox.net/show_bug.cgi?id=15874"
+     ],
+     "description": "A heap-buffer-overflow was discovered in BusyBox v.1.36.1 in the next_token function at awk.c:1159.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 5.5,
+        "exploitabilityScore": 1.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "alpine",
+       "version": "3.18.6"
+      },
+      "namespace": "alpine:distro:alpine:3.18",
+      "package": {
+       "name": "busybox",
+       "version": "1.36.1-r5"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 1.36.1-r6 (apk)",
+      "vulnerabilityID": "CVE-2023-42366"
+     }
+    },
+    {
+     "type": "exact-direct-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "alpine",
+       "version": "3.18.6"
+      },
+      "namespace": "alpine:distro:alpine:3.18",
+      "package": {
+       "name": "busybox",
+       "version": "1.36.1-r5"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 1.36.1-r6 (apk)",
+      "vulnerabilityID": "CVE-2023-42366"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "c4cadec7a04f67ce",
+    "name": "busybox",
+    "version": "1.36.1-r5",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:bd12cf821e8409571f90c41a4fc067f820e0b386a841c57328c599b7ab97fe97"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-2.0-only"
+    ],
+    "cpes": [
+     "cpe:2.3:a:busybox:busybox:1.36.1-r5:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/busybox@1.36.1-r5?arch=x86_64&distro=alpine-3.18.6",
+    "upstreams": [
+     {
+      "name": "busybox"
+     }
+    ],
+    "metadataType": "ApkMetadata",
+    "metadata": {
+     "files": [
+      {
+       "path": "/bin"
+      },
+      {
+       "path": "/bin/busybox"
+      },
+      {
+       "path": "/etc"
+      },
+      {
+       "path": "/etc/securetty"
+      },
+      {
+       "path": "/etc/udhcpd.conf"
+      },
+      {
+       "path": "/etc/busybox-paths.d"
+      },
+      {
+       "path": "/etc/busybox-paths.d/busybox"
+      },
+      {
+       "path": "/etc/logrotate.d"
+      },
+      {
+       "path": "/etc/logrotate.d/acpid"
+      },
+      {
+       "path": "/etc/network"
+      },
+      {
+       "path": "/etc/network/if-down.d"
+      },
+      {
+       "path": "/etc/network/if-post-down.d"
+      },
+      {
+       "path": "/etc/network/if-post-up.d"
+      },
+      {
+       "path": "/etc/network/if-pre-down.d"
+      },
+      {
+       "path": "/etc/network/if-pre-up.d"
+      },
+      {
+       "path": "/etc/network/if-up.d"
+      },
+      {
+       "path": "/etc/network/if-up.d/dad"
+      },
+      {
+       "path": "/sbin"
+      },
+      {
+       "path": "/tmp"
+      },
+      {
+       "path": "/usr"
+      },
+      {
+       "path": "/usr/sbin"
+      },
+      {
+       "path": "/usr/share"
+      },
+      {
+       "path": "/usr/share/udhcpc"
+      },
+      {
+       "path": "/usr/share/udhcpc/default.script"
+      },
+      {
+       "path": "/var"
+      },
+      {
+       "path": "/var/cache"
+      },
+      {
+       "path": "/var/cache/misc"
+      },
+      {
+       "path": "/var/lib"
+      },
+      {
+       "path": "/var/lib/udhcpd"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-42365",
+    "dataSource": "https://www.cve.org/CVERecord?id=CVE-2023-42365",
+    "namespace": "alpine:distro:alpine:3.18",
+    "severity": "Medium",
+    "urls": [
+     "https://www.cve.org/CVERecord?id=CVE-2023-42365"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "1.36.1-r7"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-42365",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-42365",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://bugs.busybox.net/show_bug.cgi?id=15871"
+     ],
+     "description": "A use-after-free vulnerability was discovered in BusyBox v.1.36.1 via a crafted awk pattern in the awk.c copyvar function.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 5.5,
+        "exploitabilityScore": 1.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "alpine",
+       "version": "3.18.6"
+      },
+      "namespace": "alpine:distro:alpine:3.18",
+      "package": {
+       "name": "busybox",
+       "version": "1.36.1-r5"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 1.36.1-r7 (apk)",
+      "vulnerabilityID": "CVE-2023-42365"
+     }
+    },
+    {
+     "type": "exact-indirect-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "alpine",
+       "version": "3.18.6"
+      },
+      "namespace": "alpine:distro:alpine:3.18",
+      "package": {
+       "name": "busybox",
+       "version": "1.36.1-r5"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 1.36.1-r7 (apk)",
+      "vulnerabilityID": "CVE-2023-42365"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "c4cadec7a04f67ce",
+    "name": "busybox",
+    "version": "1.36.1-r5",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:bd12cf821e8409571f90c41a4fc067f820e0b386a841c57328c599b7ab97fe97"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-2.0-only"
+    ],
+    "cpes": [
+     "cpe:2.3:a:busybox:busybox:1.36.1-r5:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/busybox@1.36.1-r5?arch=x86_64&distro=alpine-3.18.6",
+    "upstreams": [
+     {
+      "name": "busybox"
+     }
+    ],
+    "metadataType": "ApkMetadata",
+    "metadata": {
+     "files": [
+      {
+       "path": "/bin"
+      },
+      {
+       "path": "/bin/busybox"
+      },
+      {
+       "path": "/etc"
+      },
+      {
+       "path": "/etc/securetty"
+      },
+      {
+       "path": "/etc/udhcpd.conf"
+      },
+      {
+       "path": "/etc/busybox-paths.d"
+      },
+      {
+       "path": "/etc/busybox-paths.d/busybox"
+      },
+      {
+       "path": "/etc/logrotate.d"
+      },
+      {
+       "path": "/etc/logrotate.d/acpid"
+      },
+      {
+       "path": "/etc/network"
+      },
+      {
+       "path": "/etc/network/if-down.d"
+      },
+      {
+       "path": "/etc/network/if-post-down.d"
+      },
+      {
+       "path": "/etc/network/if-post-up.d"
+      },
+      {
+       "path": "/etc/network/if-pre-down.d"
+      },
+      {
+       "path": "/etc/network/if-pre-up.d"
+      },
+      {
+       "path": "/etc/network/if-up.d"
+      },
+      {
+       "path": "/etc/network/if-up.d/dad"
+      },
+      {
+       "path": "/sbin"
+      },
+      {
+       "path": "/tmp"
+      },
+      {
+       "path": "/usr"
+      },
+      {
+       "path": "/usr/sbin"
+      },
+      {
+       "path": "/usr/share"
+      },
+      {
+       "path": "/usr/share/udhcpc"
+      },
+      {
+       "path": "/usr/share/udhcpc/default.script"
+      },
+      {
+       "path": "/var"
+      },
+      {
+       "path": "/var/cache"
+      },
+      {
+       "path": "/var/cache/misc"
+      },
+      {
+       "path": "/var/lib"
+      },
+      {
+       "path": "/var/lib/udhcpd"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-42364",
+    "dataSource": "https://www.cve.org/CVERecord?id=CVE-2023-42364",
+    "namespace": "alpine:distro:alpine:3.18",
+    "severity": "Medium",
+    "urls": [
+     "https://www.cve.org/CVERecord?id=CVE-2023-42364"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "1.36.1-r7"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-42364",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-42364",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://bugs.busybox.net/show_bug.cgi?id=15868"
+     ],
+     "description": "A use-after-free vulnerability in BusyBox v.1.36.1 allows attackers to cause a denial of service via a crafted awk pattern in the awk.c evaluate function.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 5.5,
+        "exploitabilityScore": 1.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "alpine",
+       "version": "3.18.6"
+      },
+      "namespace": "alpine:distro:alpine:3.18",
+      "package": {
+       "name": "busybox",
+       "version": "1.36.1-r5"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 1.36.1-r7 (apk)",
+      "vulnerabilityID": "CVE-2023-42364"
+     }
+    },
+    {
+     "type": "exact-direct-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "alpine",
+       "version": "3.18.6"
+      },
+      "namespace": "alpine:distro:alpine:3.18",
+      "package": {
+       "name": "busybox",
+       "version": "1.36.1-r5"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 1.36.1-r7 (apk)",
+      "vulnerabilityID": "CVE-2023-42364"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "c4cadec7a04f67ce",
+    "name": "busybox",
+    "version": "1.36.1-r5",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:bd12cf821e8409571f90c41a4fc067f820e0b386a841c57328c599b7ab97fe97"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-2.0-only"
+    ],
+    "cpes": [
+     "cpe:2.3:a:busybox:busybox:1.36.1-r5:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/busybox@1.36.1-r5?arch=x86_64&distro=alpine-3.18.6",
+    "upstreams": [
+     {
+      "name": "busybox"
+     }
+    ],
+    "metadataType": "ApkMetadata",
+    "metadata": {
+     "files": [
+      {
+       "path": "/bin"
+      },
+      {
+       "path": "/bin/busybox"
+      },
+      {
+       "path": "/etc"
+      },
+      {
+       "path": "/etc/securetty"
+      },
+      {
+       "path": "/etc/udhcpd.conf"
+      },
+      {
+       "path": "/etc/busybox-paths.d"
+      },
+      {
+       "path": "/etc/busybox-paths.d/busybox"
+      },
+      {
+       "path": "/etc/logrotate.d"
+      },
+      {
+       "path": "/etc/logrotate.d/acpid"
+      },
+      {
+       "path": "/etc/network"
+      },
+      {
+       "path": "/etc/network/if-down.d"
+      },
+      {
+       "path": "/etc/network/if-post-down.d"
+      },
+      {
+       "path": "/etc/network/if-post-up.d"
+      },
+      {
+       "path": "/etc/network/if-pre-down.d"
+      },
+      {
+       "path": "/etc/network/if-pre-up.d"
+      },
+      {
+       "path": "/etc/network/if-up.d"
+      },
+      {
+       "path": "/etc/network/if-up.d/dad"
+      },
+      {
+       "path": "/sbin"
+      },
+      {
+       "path": "/tmp"
+      },
+      {
+       "path": "/usr"
+      },
+      {
+       "path": "/usr/sbin"
+      },
+      {
+       "path": "/usr/share"
+      },
+      {
+       "path": "/usr/share/udhcpc"
+      },
+      {
+       "path": "/usr/share/udhcpc/default.script"
+      },
+      {
+       "path": "/var"
+      },
+      {
+       "path": "/var/cache"
+      },
+      {
+       "path": "/var/cache/misc"
+      },
+      {
+       "path": "/var/lib"
+      },
+      {
+       "path": "/var/lib/udhcpd"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-42363",
+    "dataSource": "https://www.cve.org/CVERecord?id=CVE-2023-42363",
+    "namespace": "alpine:distro:alpine:3.18",
+    "severity": "Medium",
+    "urls": [
+     "https://www.cve.org/CVERecord?id=CVE-2023-42363"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "1.36.1-r7"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-42363",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-42363",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://bugs.busybox.net/show_bug.cgi?id=15865"
+     ],
+     "description": "A use-after-free vulnerability was discovered in xasprintf function in xfuncs_printf.c:344 in BusyBox v.1.36.1.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 5.5,
+        "exploitabilityScore": 1.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "alpine",
+       "version": "3.18.6"
+      },
+      "namespace": "alpine:distro:alpine:3.18",
+      "package": {
+       "name": "busybox",
+       "version": "1.36.1-r5"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 1.36.1-r7 (apk)",
+      "vulnerabilityID": "CVE-2023-42363"
+     }
+    },
+    {
+     "type": "exact-indirect-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "alpine",
+       "version": "3.18.6"
+      },
+      "namespace": "alpine:distro:alpine:3.18",
+      "package": {
+       "name": "busybox",
+       "version": "1.36.1-r5"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 1.36.1-r7 (apk)",
+      "vulnerabilityID": "CVE-2023-42363"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "c4cadec7a04f67ce",
+    "name": "busybox",
+    "version": "1.36.1-r5",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:bd12cf821e8409571f90c41a4fc067f820e0b386a841c57328c599b7ab97fe97"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-2.0-only"
+    ],
+    "cpes": [
+     "cpe:2.3:a:busybox:busybox:1.36.1-r5:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/busybox@1.36.1-r5?arch=x86_64&distro=alpine-3.18.6",
+    "upstreams": [
+     {
+      "name": "busybox"
+     }
+    ],
+    "metadataType": "ApkMetadata",
+    "metadata": {
+     "files": [
+      {
+       "path": "/bin"
+      },
+      {
+       "path": "/bin/busybox"
+      },
+      {
+       "path": "/etc"
+      },
+      {
+       "path": "/etc/securetty"
+      },
+      {
+       "path": "/etc/udhcpd.conf"
+      },
+      {
+       "path": "/etc/busybox-paths.d"
+      },
+      {
+       "path": "/etc/busybox-paths.d/busybox"
+      },
+      {
+       "path": "/etc/logrotate.d"
+      },
+      {
+       "path": "/etc/logrotate.d/acpid"
+      },
+      {
+       "path": "/etc/network"
+      },
+      {
+       "path": "/etc/network/if-down.d"
+      },
+      {
+       "path": "/etc/network/if-post-down.d"
+      },
+      {
+       "path": "/etc/network/if-post-up.d"
+      },
+      {
+       "path": "/etc/network/if-pre-down.d"
+      },
+      {
+       "path": "/etc/network/if-pre-up.d"
+      },
+      {
+       "path": "/etc/network/if-up.d"
+      },
+      {
+       "path": "/etc/network/if-up.d/dad"
+      },
+      {
+       "path": "/sbin"
+      },
+      {
+       "path": "/tmp"
+      },
+      {
+       "path": "/usr"
+      },
+      {
+       "path": "/usr/sbin"
+      },
+      {
+       "path": "/usr/share"
+      },
+      {
+       "path": "/usr/share/udhcpc"
+      },
+      {
+       "path": "/usr/share/udhcpc/default.script"
+      },
+      {
+       "path": "/var"
+      },
+      {
+       "path": "/var/cache"
+      },
+      {
+       "path": "/var/cache/misc"
+      },
+      {
+       "path": "/var/lib"
+      },
+      {
+       "path": "/var/lib/udhcpd"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-42366",
+    "dataSource": "https://www.cve.org/CVERecord?id=CVE-2023-42366",
+    "namespace": "alpine:distro:alpine:3.18",
+    "severity": "Medium",
+    "urls": [
+     "https://www.cve.org/CVERecord?id=CVE-2023-42366"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "1.36.1-r6"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-42366",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-42366",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://bugs.busybox.net/show_bug.cgi?id=15874"
+     ],
+     "description": "A heap-buffer-overflow was discovered in BusyBox v.1.36.1 in the next_token function at awk.c:1159.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 5.5,
+        "exploitabilityScore": 1.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "alpine",
+       "version": "3.18.6"
+      },
+      "namespace": "alpine:distro:alpine:3.18",
+      "package": {
+       "name": "busybox",
+       "version": "1.36.1-r5"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 1.36.1-r6 (apk)",
+      "vulnerabilityID": "CVE-2023-42366"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "ea8601e6fdd7765c",
+    "name": "busybox-binsh",
+    "version": "1.36.1-r5",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:bd12cf821e8409571f90c41a4fc067f820e0b386a841c57328c599b7ab97fe97"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-2.0-only"
+    ],
+    "cpes": [
+     "cpe:2.3:a:busybox-binsh:busybox-binsh:1.36.1-r5:*:*:*:*:*:*:*",
+     "cpe:2.3:a:busybox-binsh:busybox_binsh:1.36.1-r5:*:*:*:*:*:*:*",
+     "cpe:2.3:a:busybox_binsh:busybox-binsh:1.36.1-r5:*:*:*:*:*:*:*",
+     "cpe:2.3:a:busybox_binsh:busybox_binsh:1.36.1-r5:*:*:*:*:*:*:*",
+     "cpe:2.3:a:busybox:busybox-binsh:1.36.1-r5:*:*:*:*:*:*:*",
+     "cpe:2.3:a:busybox:busybox_binsh:1.36.1-r5:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/busybox-binsh@1.36.1-r5?arch=x86_64&upstream=busybox&distro=alpine-3.18.6",
+    "upstreams": [
+     {
+      "name": "busybox"
+     }
+    ],
+    "metadataType": "ApkMetadata",
+    "metadata": {
+     "files": [
+      {
+       "path": "/bin"
+      },
+      {
+       "path": "/bin/sh"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-42365",
+    "dataSource": "https://www.cve.org/CVERecord?id=CVE-2023-42365",
+    "namespace": "alpine:distro:alpine:3.18",
+    "severity": "Medium",
+    "urls": [
+     "https://www.cve.org/CVERecord?id=CVE-2023-42365"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "1.36.1-r7"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-42365",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-42365",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://bugs.busybox.net/show_bug.cgi?id=15871"
+     ],
+     "description": "A use-after-free vulnerability was discovered in BusyBox v.1.36.1 via a crafted awk pattern in the awk.c copyvar function.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 5.5,
+        "exploitabilityScore": 1.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "alpine",
+       "version": "3.18.6"
+      },
+      "namespace": "alpine:distro:alpine:3.18",
+      "package": {
+       "name": "busybox",
+       "version": "1.36.1-r5"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 1.36.1-r7 (apk)",
+      "vulnerabilityID": "CVE-2023-42365"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "ea8601e6fdd7765c",
+    "name": "busybox-binsh",
+    "version": "1.36.1-r5",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:bd12cf821e8409571f90c41a4fc067f820e0b386a841c57328c599b7ab97fe97"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-2.0-only"
+    ],
+    "cpes": [
+     "cpe:2.3:a:busybox-binsh:busybox-binsh:1.36.1-r5:*:*:*:*:*:*:*",
+     "cpe:2.3:a:busybox-binsh:busybox_binsh:1.36.1-r5:*:*:*:*:*:*:*",
+     "cpe:2.3:a:busybox_binsh:busybox-binsh:1.36.1-r5:*:*:*:*:*:*:*",
+     "cpe:2.3:a:busybox_binsh:busybox_binsh:1.36.1-r5:*:*:*:*:*:*:*",
+     "cpe:2.3:a:busybox:busybox-binsh:1.36.1-r5:*:*:*:*:*:*:*",
+     "cpe:2.3:a:busybox:busybox_binsh:1.36.1-r5:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/busybox-binsh@1.36.1-r5?arch=x86_64&upstream=busybox&distro=alpine-3.18.6",
+    "upstreams": [
+     {
+      "name": "busybox"
+     }
+    ],
+    "metadataType": "ApkMetadata",
+    "metadata": {
+     "files": [
+      {
+       "path": "/bin"
+      },
+      {
+       "path": "/bin/sh"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-42364",
+    "dataSource": "https://www.cve.org/CVERecord?id=CVE-2023-42364",
+    "namespace": "alpine:distro:alpine:3.18",
+    "severity": "Medium",
+    "urls": [
+     "https://www.cve.org/CVERecord?id=CVE-2023-42364"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "1.36.1-r7"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-42364",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-42364",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://bugs.busybox.net/show_bug.cgi?id=15868"
+     ],
+     "description": "A use-after-free vulnerability in BusyBox v.1.36.1 allows attackers to cause a denial of service via a crafted awk pattern in the awk.c evaluate function.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 5.5,
+        "exploitabilityScore": 1.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "alpine",
+       "version": "3.18.6"
+      },
+      "namespace": "alpine:distro:alpine:3.18",
+      "package": {
+       "name": "busybox",
+       "version": "1.36.1-r5"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 1.36.1-r7 (apk)",
+      "vulnerabilityID": "CVE-2023-42364"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "ea8601e6fdd7765c",
+    "name": "busybox-binsh",
+    "version": "1.36.1-r5",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:bd12cf821e8409571f90c41a4fc067f820e0b386a841c57328c599b7ab97fe97"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-2.0-only"
+    ],
+    "cpes": [
+     "cpe:2.3:a:busybox-binsh:busybox-binsh:1.36.1-r5:*:*:*:*:*:*:*",
+     "cpe:2.3:a:busybox-binsh:busybox_binsh:1.36.1-r5:*:*:*:*:*:*:*",
+     "cpe:2.3:a:busybox_binsh:busybox-binsh:1.36.1-r5:*:*:*:*:*:*:*",
+     "cpe:2.3:a:busybox_binsh:busybox_binsh:1.36.1-r5:*:*:*:*:*:*:*",
+     "cpe:2.3:a:busybox:busybox-binsh:1.36.1-r5:*:*:*:*:*:*:*",
+     "cpe:2.3:a:busybox:busybox_binsh:1.36.1-r5:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/busybox-binsh@1.36.1-r5?arch=x86_64&upstream=busybox&distro=alpine-3.18.6",
+    "upstreams": [
+     {
+      "name": "busybox"
+     }
+    ],
+    "metadataType": "ApkMetadata",
+    "metadata": {
+     "files": [
+      {
+       "path": "/bin"
+      },
+      {
+       "path": "/bin/sh"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-42363",
+    "dataSource": "https://www.cve.org/CVERecord?id=CVE-2023-42363",
+    "namespace": "alpine:distro:alpine:3.18",
+    "severity": "Medium",
+    "urls": [
+     "https://www.cve.org/CVERecord?id=CVE-2023-42363"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "1.36.1-r7"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-42363",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-42363",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://bugs.busybox.net/show_bug.cgi?id=15865"
+     ],
+     "description": "A use-after-free vulnerability was discovered in xasprintf function in xfuncs_printf.c:344 in BusyBox v.1.36.1.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 5.5,
+        "exploitabilityScore": 1.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "alpine",
+       "version": "3.18.6"
+      },
+      "namespace": "alpine:distro:alpine:3.18",
+      "package": {
+       "name": "busybox",
+       "version": "1.36.1-r5"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 1.36.1-r7 (apk)",
+      "vulnerabilityID": "CVE-2023-42363"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "ea8601e6fdd7765c",
+    "name": "busybox-binsh",
+    "version": "1.36.1-r5",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:bd12cf821e8409571f90c41a4fc067f820e0b386a841c57328c599b7ab97fe97"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-2.0-only"
+    ],
+    "cpes": [
+     "cpe:2.3:a:busybox-binsh:busybox-binsh:1.36.1-r5:*:*:*:*:*:*:*",
+     "cpe:2.3:a:busybox-binsh:busybox_binsh:1.36.1-r5:*:*:*:*:*:*:*",
+     "cpe:2.3:a:busybox_binsh:busybox-binsh:1.36.1-r5:*:*:*:*:*:*:*",
+     "cpe:2.3:a:busybox_binsh:busybox_binsh:1.36.1-r5:*:*:*:*:*:*:*",
+     "cpe:2.3:a:busybox:busybox-binsh:1.36.1-r5:*:*:*:*:*:*:*",
+     "cpe:2.3:a:busybox:busybox_binsh:1.36.1-r5:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/busybox-binsh@1.36.1-r5?arch=x86_64&upstream=busybox&distro=alpine-3.18.6",
+    "upstreams": [
+     {
+      "name": "busybox"
+     }
+    ],
+    "metadataType": "ApkMetadata",
+    "metadata": {
+     "files": [
+      {
+       "path": "/bin"
+      },
+      {
+       "path": "/bin/sh"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-m5vv-6r4h-3vj9",
+    "dataSource": "https://github.com/advisories/GHSA-m5vv-6r4h-3vj9",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-m5vv-6r4h-3vj9"
+    ],
+    "description": "Azure Identity Libraries and Microsoft Authentication Library Elevation of Privilege Vulnerability",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+      "metrics": {
+       "baseScore": 5.5,
+       "exploitabilityScore": 1.8,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "1.6.0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-35255",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-35255",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-35255"
+     ],
+     "description": "Azure Identity Libraries and Microsoft Authentication Library Elevation of Privilege Vulnerability",
+     "cvss": [
+      {
+       "source": "secure@microsoft.com",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+       "metrics": {
+        "baseScore": 5.5,
+        "exploitabilityScore": 1.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/Azure/azure-sdk-for-go/sdk/azidentity",
+       "version": "v1.5.1"
+      }
+     },
+     "found": {
+      "versionConstraint": "<1.6.0 (unknown)",
+      "vulnerabilityID": "GHSA-m5vv-6r4h-3vj9"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "20360dc7bf4be96d",
+    "name": "github.com/Azure/azure-sdk-for-go/sdk/azidentity",
+    "version": "v1.5.1",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/bin/vault",
+      "layerID": "sha256:bd12cf821e8409571f90c41a4fc067f820e0b386a841c57328c599b7ab97fe97"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:Azure:azure-sdk-for-go/sdk/azidentity:v1.5.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:Azure:azure_sdk_for_go/sdk/azidentity:v1.5.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/Azure/azure-sdk-for-go@v1.5.1#sdk/azidentity",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.22.2",
+     "architecture": "amd64",
+     "h1Digest": "h1:sO0/P7g68FrryJzljemN+6GTssUXdANk6aJ7T1ZxnsQ=",
+     "mainModule": "github.com/hashicorp/vault"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-v6v8-xj6m-xwqh",
+    "dataSource": "https://github.com/advisories/GHSA-v6v8-xj6m-xwqh",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-v6v8-xj6m-xwqh"
+    ],
+    "description": "go-retryablehttp can leak basic auth credentials to log files",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:C/C:H/I:N/A:N",
+      "metrics": {
+       "baseScore": 6,
+       "exploitabilityScore": 1.5,
+       "impactScore": 4
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "0.7.7"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-6104",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-6104",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://discuss.hashicorp.com/c/security"
+     ],
+     "description": "go-retryablehttp prior to 0.7.7 did not sanitize urls when writing them to its log file. This could lead to go-retryablehttp writing sensitive HTTP basic auth credentials to its log file. This vulnerability, CVE-2024-6104, was fixed in go-retryablehttp 0.7.7.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+       "metrics": {
+        "baseScore": 5.5,
+        "exploitabilityScore": 1.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security@hashicorp.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:C/C:H/I:N/A:N",
+       "metrics": {
+        "baseScore": 6,
+        "exploitabilityScore": 1.5,
+        "impactScore": 4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/hashicorp/go-retryablehttp",
+       "version": "v0.7.5"
+      }
+     },
+     "found": {
+      "versionConstraint": "<0.7.7 (unknown)",
+      "vulnerabilityID": "GHSA-v6v8-xj6m-xwqh"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "58b404e4fdcf8fef",
+    "name": "github.com/hashicorp/go-retryablehttp",
+    "version": "v0.7.5",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/bin/vault",
+      "layerID": "sha256:bd12cf821e8409571f90c41a4fc067f820e0b386a841c57328c599b7ab97fe97"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:hashicorp:retryablehttp:v0.7.5:*:*:*:*:go:*:*"
+    ],
+    "purl": "pkg:golang/github.com/hashicorp/go-retryablehttp@v0.7.5",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.22.2",
+     "architecture": "amd64",
+     "h1Digest": "h1:bJj+Pj19UZMIweq/iie+1u5YCdGrnxCT9yvm0e+Nd5M=",
+     "mainModule": "github.com/hashicorp/vault"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-rhh4-rh7c-7r5v",
+    "dataSource": "https://github.com/advisories/GHSA-rhh4-rh7c-7r5v",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-rhh4-rh7c-7r5v"
+    ],
+    "description": "Archiver Path Traversal vulnerability",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:H/A:N",
+      "metrics": {
+       "baseScore": 6.1,
+       "exploitabilityScore": 1.8,
+       "impactScore": 4.2
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-0406",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-0406",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://access.redhat.com/security/cve/CVE-2024-0406",
+      "https://bugzilla.redhat.com/show_bug.cgi?id=2257749"
+     ],
+     "description": "A flaw was discovered in the mholt/archiver package. This flaw allows an attacker to create a specially crafted tar file, which, when unpacked, may allow access to restricted files or directories. This issue can allow the creation or overwriting of files with the user's or application's privileges using the library.",
+     "cvss": [
+      {
+       "source": "secalert@redhat.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:H/A:N",
+       "metrics": {
+        "baseScore": 6.1,
+        "exploitabilityScore": 1.8,
+        "impactScore": 4.2
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/mholt/archiver/v3",
+       "version": "v3.5.1"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=3.0.0,<=3.5.1 (unknown)",
+      "vulnerabilityID": "GHSA-rhh4-rh7c-7r5v"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "45e8a81be5bcd370",
+    "name": "github.com/mholt/archiver/v3",
+    "version": "v3.5.1",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/bin/vault",
+      "layerID": "sha256:bd12cf821e8409571f90c41a4fc067f820e0b386a841c57328c599b7ab97fe97"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:mholt:archiver/v3:v3.5.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/mholt/archiver@v3.5.1#v3",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.22.2",
+     "architecture": "amd64",
+     "h1Digest": "h1:rDjOBX9JSF5BvoJGvjqK479aL70qh9DIpZCl+k7Clwo=",
+     "mainModule": "github.com/hashicorp/vault"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-c5q2-7r4c-mv6g",
+    "dataSource": "https://github.com/advisories/GHSA-c5q2-7r4c-mv6g",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-c5q2-7r4c-mv6g"
+    ],
+    "description": "Go JOSE vulnerable to Improper Handling of Highly Compressed Data (Data Amplification)",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L",
+      "metrics": {
+       "baseScore": 4.3,
+       "exploitabilityScore": 2.8,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-28180",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-28180",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://github.com/go-jose/go-jose/commit/0dd4dd541c665fb292d664f77604ba694726f298",
+      "https://github.com/go-jose/go-jose/commit/add6a284ea0f844fd6628cba637be5451fe4b28a",
+      "https://github.com/go-jose/go-jose/commit/f4c051a0653d78199a053892f7619ebf96339502",
+      "https://github.com/go-jose/go-jose/security/advisories/GHSA-c5q2-7r4c-mv6g",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/GD2GSBQTBLYADASUBHHZV2CZPTSLIPQJ/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/I6MMWFBOXJA6ZCXNVPDFJ4XMK5PVG5RG/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/IJ6LAJJ2FTA2JVVOACCV5RZTOIZLXUNJ/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/JNPMXL36YGS3GQEVI3Q5HKHJ7YAAQXL5/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/KXKGNCRU7OTM5AHC7YIYBNOWI742PRMY/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/MSOMHDKRPU3A2JEMRODT2IREDFBLVPGS/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UG5FSEYJ3GP27FZXC5YAAMMEC5XWKJHG/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UJO2U5ACZVACNQXJ5EBRFLFW6DP5BROY/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/XJDO5VSIAOGT2WP63AXAAWNRSVJCNCRH/"
+     ],
+     "description": "Package jose aims to provide an implementation of the Javascript Object Signing and Encryption set of standards. An attacker could send a JWE containing compressed data that used large amounts of memory and CPU when decompressed by Decrypt or DecryptMulti. Those functions now return an error if the decompressed data would exceed 250kB or 10x the compressed size (whichever is larger). This vulnerability has been patched in versions 4.0.1, 3.0.3 and 2.6.3.\n",
+     "cvss": [
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L",
+       "metrics": {
+        "baseScore": 4.3,
+        "exploitabilityScore": 2.8,
+        "impactScore": 1.4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "gopkg.in/square/go-jose.v2",
+       "version": "v2.6.0"
+      }
+     },
+     "found": {
+      "versionConstraint": "<=2.6.0 (unknown)",
+      "vulnerabilityID": "GHSA-c5q2-7r4c-mv6g"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "fbb0bb096d3d4ba9",
+    "name": "gopkg.in/square/go-jose.v2",
+    "version": "v2.6.0",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/bin/vault",
+      "layerID": "sha256:bd12cf821e8409571f90c41a4fc067f820e0b386a841c57328c599b7ab97fe97"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [],
+    "purl": "pkg:golang/gopkg.in/square/go-jose.v2@v2.6.0",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.22.2",
+     "architecture": "amd64",
+     "h1Digest": "h1:NGk74WTnPKBNUhNzQX7PYcTLUjoq7mzKk2OKbvwk2iI=",
+     "mainModule": "github.com/hashicorp/vault"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2024-24790",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-24790",
+    "namespace": "nvd:cpe",
+    "severity": "Critical",
+    "urls": [
+     "http://www.openwall.com/lists/oss-security/2024/06/04/1",
+     "https://go.dev/cl/590316",
+     "https://go.dev/issue/67680",
+     "https://groups.google.com/g/golang-announce/c/XbxouI9gY7k/m/TuoGEhxIEwAJ",
+     "https://pkg.go.dev/vuln/GO-2024-2887"
+    ],
+    "description": "The various Is methods (IsPrivate, IsLoopback, etc) did not work as expected for IPv4-mapped IPv6 addresses, returning false for addresses which would return true in their traditional IPv4 forms.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 9.8,
+       "exploitabilityScore": 3.9,
+       "impactScore": 5.9
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:golang:go:1.22.2:-:*:*:*:*:*:*"
+      ],
+      "package": {
+       "name": "stdlib",
+       "version": "go1.22.2"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2024-24790",
+      "versionConstraint": "< 1.21.11 || >= 1.22.0-0, < 1.22.4 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:golang:go:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "e9ecc984c873fe8b",
+    "name": "stdlib",
+    "version": "go1.22.2",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/bin/vault",
+      "layerID": "sha256:bd12cf821e8409571f90c41a4fc067f820e0b386a841c57328c599b7ab97fe97"
+     }
+    ],
+    "language": "go",
+    "licenses": [
+     "BSD-3-Clause"
+    ],
+    "cpes": [
+     "cpe:2.3:a:golang:go:1.22.2:-:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/stdlib@1.22.2",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.22.2",
+     "architecture": ""
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2024-24791",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-24791",
+    "namespace": "nvd:cpe",
+    "severity": "High",
+    "urls": [
+     "https://go.dev/cl/591255",
+     "https://go.dev/issue/67555",
+     "https://groups.google.com/g/golang-dev/c/t0rK-qHBqzY/m/6MMoAZkMAgAJ",
+     "https://pkg.go.dev/vuln/GO-2024-2963"
+    ],
+    "description": "The net/http HTTP/1.1 client mishandled the case where a server responds to a request with an \"Expect: 100-continue\" header with a non-informational (200 or higher) status. This mishandling could leave a client connection in an invalid state, where the next request sent on the connection will fail. An attacker sending a request to a net/http/httputil.ReverseProxy proxy can exploit this mishandling to cause a denial of service by sending \"Expect: 100-continue\" requests which elicit a non-informational response from the backend. Each such request leaves the proxy with an invalid connection, and causes one subsequent request using that connection to fail.",
+    "cvss": [
+     {
+      "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+      "type": "Secondary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:golang:go:1.22.2:-:*:*:*:*:*:*"
+      ],
+      "package": {
+       "name": "stdlib",
+       "version": "go1.22.2"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2024-24791",
+      "versionConstraint": "< 1.21.12 || >= 1.22.0-0, < 1.22.5 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:golang:go:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "e9ecc984c873fe8b",
+    "name": "stdlib",
+    "version": "go1.22.2",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/bin/vault",
+      "layerID": "sha256:bd12cf821e8409571f90c41a4fc067f820e0b386a841c57328c599b7ab97fe97"
+     }
+    ],
+    "language": "go",
+    "licenses": [
+     "BSD-3-Clause"
+    ],
+    "cpes": [
+     "cpe:2.3:a:golang:go:1.22.2:-:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/stdlib@1.22.2",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.22.2",
+     "architecture": ""
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2024-24789",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-24789",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "http://www.openwall.com/lists/oss-security/2024/06/04/1",
+     "https://go.dev/cl/585397",
+     "https://go.dev/issue/66869",
+     "https://groups.google.com/g/golang-announce/c/XbxouI9gY7k/m/TuoGEhxIEwAJ",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/U5YAEIA6IUHUNGJ7AIXXPQT6D2GYENX7/",
+     "https://pkg.go.dev/vuln/GO-2024-2888"
+    ],
+    "description": "The archive/zip package's handling of certain types of invalid zip files differs from the behavior of most zip implementations. This misalignment could be exploited to create an zip file with contents that vary depending on the implementation reading the file. The archive/zip package now rejects files containing these errors.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N",
+      "metrics": {
+       "baseScore": 5.5,
+       "exploitabilityScore": 1.8,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+      "type": "Secondary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:L",
+      "metrics": {
+       "baseScore": 5.3,
+       "exploitabilityScore": 1.8,
+       "impactScore": 3.4
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:golang:go:1.22.2:-:*:*:*:*:*:*"
+      ],
+      "package": {
+       "name": "stdlib",
+       "version": "go1.22.2"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2024-24789",
+      "versionConstraint": "< 1.21.11 || >= 1.22.0-0, < 1.22.4 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:golang:go:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "e9ecc984c873fe8b",
+    "name": "stdlib",
+    "version": "go1.22.2",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/bin/vault",
+      "layerID": "sha256:bd12cf821e8409571f90c41a4fc067f820e0b386a841c57328c599b7ab97fe97"
+     }
+    ],
+    "language": "go",
+    "licenses": [
+     "BSD-3-Clause"
+    ],
+    "cpes": [
+     "cpe:2.3:a:golang:go:1.22.2:-:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/stdlib@1.22.2",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.22.2",
+     "architecture": ""
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2024-24787",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-24787",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "http://www.openwall.com/lists/oss-security/2024/05/08/3",
+     "https://go.dev/cl/583815",
+     "https://go.dev/issue/67119",
+     "https://groups.google.com/g/golang-announce/c/wkkO4P9stm0",
+     "https://pkg.go.dev/vuln/GO-2024-2825",
+     "https://security.netapp.com/advisory/ntap-20240531-0006/"
+    ],
+    "description": "On Darwin, building a Go module which contains CGO can trigger arbitrary code execution when using the Apple version of ld, due to usage of the -lto_library flag in a \"#cgo LDFLAGS\" directive.",
+    "cvss": [
+     {
+      "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+      "type": "Secondary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 6.4,
+       "exploitabilityScore": 0.5,
+       "impactScore": 5.9
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:golang:go:1.22.2:-:*:*:*:*:*:*"
+      ],
+      "package": {
+       "name": "stdlib",
+       "version": "go1.22.2"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2024-24787",
+      "versionConstraint": "< 1.21.10 || >= 1.22.0-0, < 1.22.3 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:golang:go:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "e9ecc984c873fe8b",
+    "name": "stdlib",
+    "version": "go1.22.2",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/bin/vault",
+      "layerID": "sha256:bd12cf821e8409571f90c41a4fc067f820e0b386a841c57328c599b7ab97fe97"
+     }
+    ],
+    "language": "go",
+    "licenses": [
+     "BSD-3-Clause"
+    ],
+    "cpes": [
+     "cpe:2.3:a:golang:go:1.22.2:-:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/stdlib@1.22.2",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.22.2",
+     "architecture": ""
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2024-24788",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-24788",
+    "namespace": "nvd:cpe",
+    "severity": "Unknown",
+    "urls": [
+     "http://www.openwall.com/lists/oss-security/2024/05/08/3",
+     "https://go.dev/cl/578375",
+     "https://go.dev/issue/66754",
+     "https://groups.google.com/g/golang-announce/c/wkkO4P9stm0",
+     "https://pkg.go.dev/vuln/GO-2024-2824",
+     "https://security.netapp.com/advisory/ntap-20240605-0002/",
+     "https://security.netapp.com/advisory/ntap-20240614-0001/"
+    ],
+    "description": "A malformed DNS message in response to a query can cause the Lookup functions to get stuck in an infinite loop.",
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:golang:go:1.22.2:-:*:*:*:*:*:*"
+      ],
+      "package": {
+       "name": "stdlib",
+       "version": "go1.22.2"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2024-24788",
+      "versionConstraint": ">= 1.22.0-0, < 1.22.3 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:golang:go:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "e9ecc984c873fe8b",
+    "name": "stdlib",
+    "version": "go1.22.2",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/bin/vault",
+      "layerID": "sha256:bd12cf821e8409571f90c41a4fc067f820e0b386a841c57328c599b7ab97fe97"
+     }
+    ],
+    "language": "go",
+    "licenses": [
+     "BSD-3-Clause"
+    ],
+    "cpes": [
+     "cpe:2.3:a:golang:go:1.22.2:-:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/stdlib@1.22.2",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.22.2",
+     "architecture": ""
+    }
+   }
+  }
+ ],
+ "source": {
+  "type": "image",
+  "target": {
+   "userInput": "docker.io/rapidfort/vault:latest",
+   "imageID": "sha256:f643f56400ebb617d7259fda33f952ec503c34346ea663baf808b951631736ff",
+   "manifestDigest": "sha256:4916b28c7d5ac1960793058cd91875e720222ffb6298d96010c082130dad1f44",
+   "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+   "tags": [
+    "rapidfort/vault:latest"
+   ],
+   "imageSize": 431200480,
+   "layers": [
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:bd12cf821e8409571f90c41a4fc067f820e0b386a841c57328c599b7ab97fe97",
+     "size": 431200480
+    }
+   ],
+   "manifest": "eyJzY2hlbWFWZXJzaW9uIjoyLCJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmRpc3RyaWJ1dGlvbi5tYW5pZmVzdC52Mitqc29uIiwiY29uZmlnIjp7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuY29udGFpbmVyLmltYWdlLnYxK2pzb24iLCJzaXplIjo1Mzk2LCJkaWdlc3QiOiJzaGEyNTY6ZjY0M2Y1NjQwMGViYjYxN2Q3MjU5ZmRhMzNmOTUyZWM1MDNjMzQzNDZlYTY2M2JhZjgwOGI5NTE2MzE3MzZmZiJ9LCJsYXllcnMiOlt7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjo0MzE0NjEzNzYsImRpZ2VzdCI6InNoYTI1NjpiZDEyY2Y4MjFlODQwOTU3MWY5MGM0MWE0ZmMwNjdmODIwZTBiMzg2YTg0MWM1NzMyOGM1OTliN2FiOTdmZTk3In1dfQ==",
+   "config": "eyJhcmNoaXRlY3R1cmUiOiJhbWQ2NCIsImNvbmZpZyI6eyJIb3N0bmFtZSI6IiIsIkRvbWFpbm5hbWUiOiIiLCJVc2VyIjoiIiwiQXR0YWNoU3RkaW4iOmZhbHNlLCJBdHRhY2hTdGRvdXQiOmZhbHNlLCJBdHRhY2hTdGRlcnIiOmZhbHNlLCJFeHBvc2VkUG9ydHMiOnsiODIwMC90Y3AiOnt9fSwiVHR5IjpmYWxzZSwiT3BlblN0ZGluIjpmYWxzZSwiU3RkaW5PbmNlIjpmYWxzZSwiRW52IjpbIlBBVEg9L3Vzci9sb2NhbC9zYmluOi91c3IvbG9jYWwvYmluOi91c3Ivc2JpbjovdXNyL2Jpbjovc2JpbjovYmluIiwiTkFNRT12YXVsdCIsIlZFUlNJT049Il0sIkNtZCI6WyJzZXJ2ZXIiLCItZGV2Il0sIkFyZ3NFc2NhcGVkIjp0cnVlLCJJbWFnZSI6InNoYTI1NjpkM2M4ODg1ZjRmZTdkZTdiODY5OWY3YTdkMzcwMjVlZGUyMTI4ZmI5OGI3YzcxMzc0MWZiNDIxOThkMGRlMGExIiwiVm9sdW1lcyI6eyIvdmF1bHQvZmlsZSI6e30sIi92YXVsdC9sb2dzIjp7fX0sIldvcmtpbmdEaXIiOiIvIiwiRW50cnlwb2ludCI6WyJkb2NrZXItZW50cnlwb2ludC5zaCJdLCJPbkJ1aWxkIjpudWxsLCJMYWJlbHMiOnsiZGVzY3JpcHRpb24iOiJWYXVsdCBpcyBhIHRvb2wgZm9yIHNlY3VyZWx5IGFjY2Vzc2luZyBzZWNyZXRzLiBBIHNlY3JldCBpcyBhbnl0aGluZyB0aGF0IHlvdSB3YW50IHRvIHRpZ2h0bHkgY29udHJvbCBhY2Nlc3MgdG8sIHN1Y2ggYXMgQVBJIGtleXMsIHBhc3N3b3JkcywgY2VydGlmaWNhdGVzLCBhbmQgbW9yZS4gVmF1bHQgcHJvdmlkZXMgYSB1bmlmaWVkIGludGVyZmFjZSB0byBhbnkgc2VjcmV0LCB3aGlsZSBwcm92aWRpbmcgdGlnaHQgYWNjZXNzIGNvbnRyb2wgYW5kIHJlY29yZGluZyBhIGRldGFpbGVkIGF1ZGl0IGxvZy4iLCJtYWludGFpbmVyIjoiVmF1bHQgVGVhbSBcdTAwM2N2YXVsdEBoYXNoaWNvcnAuY29tXHUwMDNlIiwibmFtZSI6IlZhdWx0Iiwib3JpZ19pbWFnZV9kaWdlc3QiOiJzaGEyNTY6YzVlMDQ2ODk2MTFjYjg2NGI4YjYyNDdhNmE4NDVlMGJkYzA1OTk5OGYzOWI1YzhhNjU5NTYyMjg3Mzc5NTI1YyIsInJlbGVhc2UiOiJlOTJkOWE1NzAxOGY0MzM2MGUyZTM3MTdiM2I2YTdmNjUwYzg4ZjRjIiwicmV2aXNpb24iOiJlOTJkOWE1NzAxOGY0MzM2MGUyZTM3MTdiM2I2YTdmNjUwYzg4ZjRjIiwicmZfaW1hZ2VfZ3VpZC44MTcyMmU5Ni03OWU2LTRkNzgtYTlmMC0xYTI1ZjM5NmEzZGQiOiI4MTcyMmU5Ni03OWU2LTRkNzgtYTlmMC0xYTI1ZjM5NmEzZGQiLCJzdW1tYXJ5IjoiVmF1bHQgaXMgYSB0b29sIGZvciBzZWN1cmVseSBhY2Nlc3Npbmcgc2VjcmV0cy4iLCJ2ZW5kb3IiOiJIYXNoaUNvcnAiLCJ2ZXJzaW9uIjoiMS4xNi4zIn19LCJjb250YWluZXIiOiJjMjYyOTAxYmIwNWFmYjczM2FhNjJiOTkwYmMzOGQxZWI2MGE1NzFiMWMwNGJhYzQ5YjM3NzU2ZTliY2VkNGQyIiwiY29udGFpbmVyX2NvbmZpZyI6eyJIb3N0bmFtZSI6ImMyNjI5MDFiYjA1YSIsIkRvbWFpbm5hbWUiOiIiLCJVc2VyIjoiIiwiQXR0YWNoU3RkaW4iOmZhbHNlLCJBdHRhY2hTdGRvdXQiOmZhbHNlLCJBdHRhY2hTdGRlcnIiOmZhbHNlLCJFeHBvc2VkUG9ydHMiOnsiODIwMC90Y3AiOnt9fSwiVHR5IjpmYWxzZSwiT3BlblN0ZGluIjpmYWxzZSwiU3RkaW5PbmNlIjpmYWxzZSwiRW52IjpbIlBBVEg9L3Vzci9sb2NhbC9zYmluOi91c3IvbG9jYWwvYmluOi91c3Ivc2JpbjovdXNyL2Jpbjovc2JpbjovYmluIiwiTkFNRT12YXVsdCIsIlZFUlNJT049Il0sIkNtZCI6WyIvYmluL3NoIiwiLWMiLCIjKG5vcCkgIiwiTEFCRUwgb3JpZ19pbWFnZV9kaWdlc3Q9c2hhMjU2OmM1ZTA0Njg5NjExY2I4NjRiOGI2MjQ3YTZhODQ1ZTBiZGMwNTk5OThmMzliNWM4YTY1OTU2MjI4NzM3OTUyNWMiXSwiQXJnc0VzY2FwZWQiOnRydWUsIkltYWdlIjoic2hhMjU2OmQzYzg4ODVmNGZlN2RlN2I4Njk5ZjdhN2QzNzAyNWVkZTIxMjhmYjk4YjdjNzEzNzQxZmI0MjE5OGQwZGUwYTEiLCJWb2x1bWVzIjp7Ii92YXVsdC9maWxlIjp7fSwiL3ZhdWx0L2xvZ3MiOnt9fSwiV29ya2luZ0RpciI6Ii8iLCJFbnRyeXBvaW50IjpbImRvY2tlci1lbnRyeXBvaW50LnNoIl0sIk9uQnVpbGQiOm51bGwsIkxhYmVscyI6eyJkZXNjcmlwdGlvbiI6IlZhdWx0IGlzIGEgdG9vbCBmb3Igc2VjdXJlbHkgYWNjZXNzaW5nIHNlY3JldHMuIEEgc2VjcmV0IGlzIGFueXRoaW5nIHRoYXQgeW91IHdhbnQgdG8gdGlnaHRseSBjb250cm9sIGFjY2VzcyB0bywgc3VjaCBhcyBBUEkga2V5cywgcGFzc3dvcmRzLCBjZXJ0aWZpY2F0ZXMsIGFuZCBtb3JlLiBWYXVsdCBwcm92aWRlcyBhIHVuaWZpZWQgaW50ZXJmYWNlIHRvIGFueSBzZWNyZXQsIHdoaWxlIHByb3ZpZGluZyB0aWdodCBhY2Nlc3MgY29udHJvbCBhbmQgcmVjb3JkaW5nIGEgZGV0YWlsZWQgYXVkaXQgbG9nLiIsIm1haW50YWluZXIiOiJWYXVsdCBUZWFtIFx1MDAzY3ZhdWx0QGhhc2hpY29ycC5jb21cdTAwM2UiLCJuYW1lIjoiVmF1bHQiLCJvcmlnX2ltYWdlX2RpZ2VzdCI6InNoYTI1NjpjNWUwNDY4OTYxMWNiODY0YjhiNjI0N2E2YTg0NWUwYmRjMDU5OTk4ZjM5YjVjOGE2NTk1NjIyODczNzk1MjVjIiwicmVsZWFzZSI6ImU5MmQ5YTU3MDE4ZjQzMzYwZTJlMzcxN2IzYjZhN2Y2NTBjODhmNGMiLCJyZXZpc2lvbiI6ImU5MmQ5YTU3MDE4ZjQzMzYwZTJlMzcxN2IzYjZhN2Y2NTBjODhmNGMiLCJyZl9pbWFnZV9ndWlkLjgxNzIyZTk2LTc5ZTYtNGQ3OC1hOWYwLTFhMjVmMzk2YTNkZCI6IjgxNzIyZTk2LTc5ZTYtNGQ3OC1hOWYwLTFhMjVmMzk2YTNkZCIsInN1bW1hcnkiOiJWYXVsdCBpcyBhIHRvb2wgZm9yIHNlY3VyZWx5IGFjY2Vzc2luZyBzZWNyZXRzLiIsInZlbmRvciI6Ikhhc2hpQ29ycCIsInZlcnNpb24iOiIxLjE2LjMifX0sImNyZWF0ZWQiOiIyMDI0LTA1LTI5VDIwOjU2OjUzLjM2OTE0NTI1WiIsImRvY2tlcl92ZXJzaW9uIjoiMjQuMC45IiwiaGlzdG9yeSI6W3siY3JlYXRlZCI6IjIwMjQtMDUtMjlUMjA6NTY6MzQuNjUzMzgwMzE5WiIsImNyZWF0ZWRfYnkiOiJBUkcgUkZfUkZJRD04MTcyMmU5Ni03OWU2LTRkNzgtYTlmMC0xYTI1ZjM5NmEzZGQiLCJjb21tZW50IjoiYnVpbGRraXQuZG9ja2VyZmlsZS52MCIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDI0LTA1LTI5VDIwOjU2OjM0LjY1MzM4MDMxOVoiLCJjcmVhdGVkX2J5IjoiQ09QWSAvIC8gIyBidWlsZGtpdCIsImNvbW1lbnQiOiJidWlsZGtpdC5kb2NrZXJmaWxlLnYwIn0seyJjcmVhdGVkIjoiMjAyNC0wNS0yOVQyMDo1NjozNC42NTMzODAzMTlaIiwiY3JlYXRlZF9ieSI6IkxBQkVMIHJmX2ltYWdlX2d1aWQuODE3MjJlOTYtNzllNi00ZDc4LWE5ZjAtMWEyNWYzOTZhM2RkPTgxNzIyZTk2LTc5ZTYtNGQ3OC1hOWYwLTFhMjVmMzk2YTNkZCIsImNvbW1lbnQiOiJidWlsZGtpdC5kb2NrZXJmaWxlLnYwIiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjQtMDUtMjlUMjA6NTY6MzQuNjUzMzgwMzE5WiIsImNyZWF0ZWRfYnkiOiJMQUJFTCBkZXNjcmlwdGlvbj1WYXVsdCBpcyBhIHRvb2wgZm9yIHNlY3VyZWx5IGFjY2Vzc2luZyBzZWNyZXRzLiBBIHNlY3JldCBpcyBhbnl0aGluZyB0aGF0IHlvdSB3YW50IHRvIHRpZ2h0bHkgY29udHJvbCBhY2Nlc3MgdG8sIHN1Y2ggYXMgQVBJIGtleXMsIHBhc3N3b3JkcywgY2VydGlmaWNhdGVzLCBhbmQgbW9yZS4gVmF1bHQgcHJvdmlkZXMgYSB1bmlmaWVkIGludGVyZmFjZSB0byBhbnkgc2VjcmV0LCB3aGlsZSBwcm92aWRpbmcgdGlnaHQgYWNjZXNzIGNvbnRyb2wgYW5kIHJlY29yZGluZyBhIGRldGFpbGVkIGF1ZGl0IGxvZy4gbWFpbnRhaW5lcj1WYXVsdCBUZWFtIFx1MDAzY3ZhdWx0QGhhc2hpY29ycC5jb21cdTAwM2UgbmFtZT1WYXVsdCByZWxlYXNlPWU5MmQ5YTU3MDE4ZjQzMzYwZTJlMzcxN2IzYjZhN2Y2NTBjODhmNGMgcmV2aXNpb249ZTkyZDlhNTcwMThmNDMzNjBlMmUzNzE3YjNiNmE3ZjY1MGM4OGY0YyBzdW1tYXJ5PVZhdWx0IGlzIGEgdG9vbCBmb3Igc2VjdXJlbHkgYWNjZXNzaW5nIHNlY3JldHMuIHZlbmRvcj1IYXNoaUNvcnAgdmVyc2lvbj0xLjE2LjMiLCJjb21tZW50IjoiYnVpbGRraXQuZG9ja2VyZmlsZS52MCIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDI0LTA1LTI5VDIwOjU2OjM0LjY1MzM4MDMxOVoiLCJjcmVhdGVkX2J5IjoiRU5WIFBBVEg9L3Vzci9sb2NhbC9zYmluOi91c3IvbG9jYWwvYmluOi91c3Ivc2JpbjovdXNyL2Jpbjovc2JpbjovYmluIE5BTUU9dmF1bHQgVkVSU0lPTj0iLCJjb21tZW50IjoiYnVpbGRraXQuZG9ja2VyZmlsZS52MCIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDI0LTA1LTI5VDIwOjU2OjM0LjY1MzM4MDMxOVoiLCJjcmVhdGVkX2J5IjoiRVhQT1NFIG1hcFs4MjAwL3RjcDp7fV0iLCJjb21tZW50IjoiYnVpbGRraXQuZG9ja2VyZmlsZS52MCIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDI0LTA1LTI5VDIwOjU2OjM0LjY1MzM4MDMxOVoiLCJjcmVhdGVkX2J5IjoiVk9MVU1FIFsvdmF1bHQvZmlsZSAvdmF1bHQvbG9nc10iLCJjb21tZW50IjoiYnVpbGRraXQuZG9ja2VyZmlsZS52MCIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDI0LTA1LTI5VDIwOjU2OjM0LjY1MzM4MDMxOVoiLCJjcmVhdGVkX2J5IjoiRU5UUllQT0lOVCBbXCJkb2NrZXItZW50cnlwb2ludC5zaFwiXSIsImNvbW1lbnQiOiJidWlsZGtpdC5kb2NrZXJmaWxlLnYwIiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjQtMDUtMjlUMjA6NTY6MzQuNjUzMzgwMzE5WiIsImNyZWF0ZWRfYnkiOiJDTUQgW1wic2VydmVyXCIgXCItZGV2XCJdIiwiY29tbWVudCI6ImJ1aWxka2l0LmRvY2tlcmZpbGUudjAiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyNC0wNS0yOVQyMDo1NjozNy4xMTM1MTIyNjNaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApICBMQUJFTCBvcmlnX2ltYWdlX2RpZ2VzdD1zaGEyNTY6YzVlMDQ2ODk2MTFjYjg2NGI4YjYyNDdhNmE4NDVlMGJkYzA1OTk5OGYzOWI1YzhhNjU5NTYyMjg3Mzc5NTI1YyIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDI0LTA1LTI5VDIwOjU2OjUzLjM2OTE0NTI1WiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSAgTEFCRUwgb3JpZ19pbWFnZV9kaWdlc3Q9c2hhMjU2OmM1ZTA0Njg5NjExY2I4NjRiOGI2MjQ3YTZhODQ1ZTBiZGMwNTk5OThmMzliNWM4YTY1OTU2MjI4NzM3OTUyNWMiLCJlbXB0eV9sYXllciI6dHJ1ZX1dLCJvcyI6ImxpbnV4Iiwicm9vdGZzIjp7InR5cGUiOiJsYXllcnMiLCJkaWZmX2lkcyI6WyJzaGEyNTY6YmQxMmNmODIxZTg0MDk1NzFmOTBjNDFhNGZjMDY3ZjgyMGUwYjM4NmE4NDFjNTczMjhjNTk5YjdhYjk3ZmU5NyJdfX0=",
+   "repoDigests": [
+    "rapidfort/vault@sha256:65c58d9b40c48f1da4f3360c2869e3be9ac48af21dbf7f2b16700f3aa630e7d6"
+   ],
+   "architecture": "amd64",
+   "os": "linux",
+   "labels": {
+    "description": "Vault is a tool for securely accessing secrets. A secret is anything that you want to tightly control access to, such as API keys, passwords, certificates, and more. Vault provides a unified interface to any secret, while providing tight access control and recording a detailed audit log.",
+    "maintainer": "Vault Team <vault@hashicorp.com>",
+    "name": "Vault",
+    "orig_image_digest": "sha256:c5e04689611cb864b8b6247a6a845e0bdc059998f39b5c8a659562287379525c",
+    "release": "e92d9a57018f43360e2e3717b3b6a7f650c88f4c",
+    "revision": "e92d9a57018f43360e2e3717b3b6a7f650c88f4c",
+    "rf_image_guid.81722e96-79e6-4d78-a9f0-1a25f396a3dd": "81722e96-79e6-4d78-a9f0-1a25f396a3dd",
+    "summary": "Vault is a tool for securely accessing secrets.",
+    "vendor": "HashiCorp",
+    "version": "1.16.3"
+   }
+  }
+ },
+ "distro": {
+  "name": "alpine",
+  "version": "3.18.6",
+  "idLike": []
+ },
+ "descriptor": {
+  "name": "grype",
+  "version": "0.79.3",
+  "configuration": {
+   "output": [
+    "json"
+   ],
+   "file": "",
+   "distro": "",
+   "add-cpes-if-none": false,
+   "output-template-file": "",
+   "check-for-app-update": true,
+   "only-fixed": false,
+   "only-notfixed": false,
+   "ignore-wontfix": "",
+   "platform": "",
+   "search": {
+    "scope": "squashed",
+    "unindexed-archives": false,
+    "indexed-archives": true
+   },
+   "ignore": [
+    {
+     "vulnerability": "",
+     "reason": "",
+     "namespace": "",
+     "fix-state": "",
+     "package": {
+      "name": "kernel-headers",
+      "version": "",
+      "language": "",
+      "type": "rpm",
+      "location": "",
+      "upstream-name": "kernel"
+     },
+     "vex-status": "",
+     "vex-justification": "",
+     "match-type": "exact-indirect-match"
+    },
+    {
+     "vulnerability": "",
+     "reason": "",
+     "namespace": "",
+     "fix-state": "",
+     "package": {
+      "name": "linux-headers-.*",
+      "version": "",
+      "language": "",
+      "type": "deb",
+      "location": "",
+      "upstream-name": "linux"
+     },
+     "vex-status": "",
+     "vex-justification": "",
+     "match-type": "exact-indirect-match"
+    },
+    {
+     "vulnerability": "",
+     "reason": "",
+     "namespace": "",
+     "fix-state": "",
+     "package": {
+      "name": "linux-libc-dev",
+      "version": "",
+      "language": "",
+      "type": "deb",
+      "location": "",
+      "upstream-name": "linux"
+     },
+     "vex-status": "",
+     "vex-justification": "",
+     "match-type": "exact-indirect-match"
+    }
+   ],
+   "exclude": [],
+   "db": {
+    "cache-dir": "/Users/paulgibert/Library/Caches/grype/db",
+    "update-url": "https://toolbox-data.anchore.io/grype/databases/listing.json",
+    "ca-cert": "",
+    "auto-update": true,
+    "validate-by-hash-on-start": false,
+    "validate-age": true,
+    "max-allowed-built-age": 432000000000000,
+    "update-available-timeout": 30000000000,
+    "update-download-timeout": 120000000000
+   },
+   "externalSources": {
+    "enable": false,
+    "maven": {
+     "searchUpstreamBySha1": true,
+     "baseUrl": "https://search.maven.org/solrsearch/select"
+    }
+   },
+   "match": {
+    "java": {
+     "using-cpes": false
+    },
+    "dotnet": {
+     "using-cpes": false
+    },
+    "golang": {
+     "using-cpes": false,
+     "always-use-cpe-for-stdlib": true,
+     "allow-main-module-pseudo-version-comparison": false
+    },
+    "javascript": {
+     "using-cpes": false
+    },
+    "python": {
+     "using-cpes": false
+    },
+    "ruby": {
+     "using-cpes": false
+    },
+    "rust": {
+     "using-cpes": false
+    },
+    "stock": {
+     "using-cpes": true
+    }
+   },
+   "fail-on-severity": "",
+   "registry": {
+    "insecure-skip-tls-verify": false,
+    "insecure-use-http": false,
+    "auth": null,
+    "ca-cert": ""
+   },
+   "show-suppressed": false,
+   "by-cve": false,
+   "name": "",
+   "default-image-pull-source": "",
+   "vex-documents": [],
+   "vex-add": [],
+   "match-upstream-kernel-headers": false
+  },
+  "db": {
+   "built": "2024-07-23T01:30:37Z",
+   "schemaVersion": 5,
+   "location": "/Users/paulgibert/Library/Caches/grype/db/5",
+   "checksum": "sha256:972d0f51e180d424f3fff2637a1559e06940f35eda6bd03593be2a3db8f28971",
+   "error": null
+  },
+  "timestamp": "2024-07-23T21:52:24.325906-04:00"
+ }
+}

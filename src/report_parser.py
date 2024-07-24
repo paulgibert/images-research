@@ -56,7 +56,7 @@ class ReportParser:
 class GrypeMetadataReportParser(ReportParser):
     """
     A class for parsing metadata, such as image size,
-    from Grpye reports. This parser does not provide
+    from Grype reports. This parser does not provide
     vulnerability data.
     """
 

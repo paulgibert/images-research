@@ -1,0 +1,2809 @@
+{
+ "matches": [
+  {
+   "vulnerability": {
+    "id": "CVE-2016-2781",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2016-2781",
+    "namespace": "debian:distro:debian:12",
+    "severity": "Low",
+    "urls": [
+     "https://security-tracker.debian.org/tracker/CVE-2016-2781"
+    ],
+    "description": "chroot in GNU coreutils, when used with --userspec, allows local users to escape to the parent session via a crafted TIOCSTI ioctl call, which pushes characters to the terminal's input buffer.",
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "wont-fix"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2016-2781",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2016-2781",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "http://www.openwall.com/lists/oss-security/2016/02/28/2",
+      "http://www.openwall.com/lists/oss-security/2016/02/28/3",
+      "https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772%40%3Cdev.mina.apache.org%3E"
+     ],
+     "description": "chroot in GNU coreutils, when used with --userspec, allows local users to escape to the parent session via a crafted TIOCSTI ioctl call, which pushes characters to the terminal's input buffer.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:L/AC:L/Au:N/C:N/I:P/A:N",
+       "metrics": {
+        "baseScore": 2.1,
+        "exploitabilityScore": 3.9,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.0",
+       "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:C/C:N/I:H/A:N",
+       "metrics": {
+        "baseScore": 6.5,
+        "exploitabilityScore": 2,
+        "impactScore": 4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "debian",
+       "version": "12"
+      },
+      "namespace": "debian:distro:debian:12",
+      "package": {
+       "name": "coreutils",
+       "version": "9.1-1"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2016-2781"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "4eb23a612ddb1006",
+    "name": "coreutils",
+    "version": "9.1-1",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/coreutils/copyright",
+      "layerID": "sha256:1b3a7b5bb685de2470bc4a8b608b62ba4e192c04380b48c76fea876678cc6bfd"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:1b3a7b5bb685de2470bc4a8b608b62ba4e192c04380b48c76fea876678cc6bfd"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "BSD-4-clause-UC",
+     "FSFULLR",
+     "GFDL-1.3",
+     "GFDL-NIV-1.3",
+     "GPL-3",
+     "GPL-3+",
+     "ISC"
+    ],
+    "cpes": [
+     "cpe:2.3:a:coreutils:coreutils:9.1-1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/debian/coreutils@9.1-1?arch=amd64&distro=debian-12",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2017-18018",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2017-18018",
+    "namespace": "debian:distro:debian:12",
+    "severity": "Negligible",
+    "urls": [
+     "https://security-tracker.debian.org/tracker/CVE-2017-18018"
+    ],
+    "description": "In GNU Coreutils through 8.29, chown-core.c in chown and chgrp does not prevent replacement of a plain file with a symlink during use of the POSIX \"-R -L\" options, which allows local users to modify the ownership of arbitrary files by leveraging a race condition.",
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2017-18018",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2017-18018",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "http://lists.gnu.org/archive/html/coreutils/2017-12/msg00045.html"
+     ],
+     "description": "In GNU Coreutils through 8.29, chown-core.c in chown and chgrp does not prevent replacement of a plain file with a symlink during use of the POSIX \"-R -L\" options, which allows local users to modify the ownership of arbitrary files by leveraging a race condition.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:L/AC:M/Au:N/C:N/I:P/A:N",
+       "metrics": {
+        "baseScore": 1.9,
+        "exploitabilityScore": 3.4,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.0",
+       "vector": "CVSS:3.0/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:H/A:N",
+       "metrics": {
+        "baseScore": 4.7,
+        "exploitabilityScore": 1,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "debian",
+       "version": "12"
+      },
+      "namespace": "debian:distro:debian:12",
+      "package": {
+       "name": "coreutils",
+       "version": "9.1-1"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2017-18018"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "4eb23a612ddb1006",
+    "name": "coreutils",
+    "version": "9.1-1",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/coreutils/copyright",
+      "layerID": "sha256:1b3a7b5bb685de2470bc4a8b608b62ba4e192c04380b48c76fea876678cc6bfd"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:1b3a7b5bb685de2470bc4a8b608b62ba4e192c04380b48c76fea876678cc6bfd"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "BSD-4-clause-UC",
+     "FSFULLR",
+     "GFDL-1.3",
+     "GFDL-NIV-1.3",
+     "GPL-3",
+     "GPL-3+",
+     "ISC"
+    ],
+    "cpes": [
+     "cpe:2.3:a:coreutils:coreutils:9.1-1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/debian/coreutils@9.1-1?arch=amd64&distro=debian-12",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2019-9192",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2019-9192",
+    "namespace": "debian:distro:debian:12",
+    "severity": "Negligible",
+    "urls": [
+     "https://security-tracker.debian.org/tracker/CVE-2019-9192"
+    ],
+    "description": "In the GNU C Library (aka glibc or libc6) through 2.29, check_dst_limits_calc_pos_1 in posix/regexec.c has Uncontrolled Recursion, as demonstrated by '(|)(\\\\1\\\\1)*' in grep, a different issue than CVE-2018-20796. NOTE: the software maintainer disputes that this is a vulnerability because the behavior occurs only with a crafted pattern",
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2019-9192",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2019-9192",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://sourceware.org/bugzilla/show_bug.cgi?id=24269",
+      "https://support.f5.com/csp/article/K26346590?utm_source=f5support&amp%3Butm_medium=RSS"
+     ],
+     "description": "In the GNU C Library (aka glibc or libc6) through 2.29, check_dst_limits_calc_pos_1 in posix/regexec.c has Uncontrolled Recursion, as demonstrated by '(|)(\\\\1\\\\1)*' in grep, a different issue than CVE-2018-20796. NOTE: the software maintainer disputes that this is a vulnerability because the behavior occurs only with a crafted pattern",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+       "metrics": {
+        "baseScore": 5,
+        "exploitabilityScore": 10,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.0",
+       "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "debian",
+       "version": "12"
+      },
+      "namespace": "debian:distro:debian:12",
+      "package": {
+       "name": "glibc",
+       "version": "2.36-9+deb12u7"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2019-9192"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "e1cf8309ef1e6b0c",
+    "name": "libc-bin",
+    "version": "2.36-9+deb12u7",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/libc-bin/copyright",
+      "layerID": "sha256:1b3a7b5bb685de2470bc4a8b608b62ba4e192c04380b48c76fea876678cc6bfd"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:1b3a7b5bb685de2470bc4a8b608b62ba4e192c04380b48c76fea876678cc6bfd"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-2",
+     "LGPL-2.1"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libc-bin:libc-bin:2.36-9+deb12u7:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libc-bin:libc_bin:2.36-9+deb12u7:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libc_bin:libc-bin:2.36-9+deb12u7:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libc_bin:libc_bin:2.36-9+deb12u7:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libc:libc-bin:2.36-9+deb12u7:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libc:libc_bin:2.36-9+deb12u7:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/debian/libc-bin@2.36-9%2Bdeb12u7?arch=amd64&upstream=glibc&distro=debian-12",
+    "upstreams": [
+     {
+      "name": "glibc"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2019-1010025",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2019-1010025",
+    "namespace": "debian:distro:debian:12",
+    "severity": "Negligible",
+    "urls": [
+     "https://security-tracker.debian.org/tracker/CVE-2019-1010025"
+    ],
+    "description": "GNU Libc current is affected by: Mitigation bypass. The impact is: Attacker may guess the heap addresses of pthread_created thread. The component is: glibc. NOTE: the vendor's position is \"ASLR bypass itself is not a vulnerability.",
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2019-1010025",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2019-1010025",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://security-tracker.debian.org/tracker/CVE-2019-1010025",
+      "https://sourceware.org/bugzilla/show_bug.cgi?id=22853",
+      "https://support.f5.com/csp/article/K06046097",
+      "https://support.f5.com/csp/article/K06046097?utm_source=f5support&amp%3Butm_medium=RSS",
+      "https://ubuntu.com/security/CVE-2019-1010025"
+     ],
+     "description": "GNU Libc current is affected by: Mitigation bypass. The impact is: Attacker may guess the heap addresses of pthread_created thread. The component is: glibc. NOTE: the vendor's position is \"ASLR bypass itself is not a vulnerability.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+       "metrics": {
+        "baseScore": 5,
+        "exploitabilityScore": 10,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.0",
+       "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+       "metrics": {
+        "baseScore": 5.3,
+        "exploitabilityScore": 3.9,
+        "impactScore": 1.4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "debian",
+       "version": "12"
+      },
+      "namespace": "debian:distro:debian:12",
+      "package": {
+       "name": "glibc",
+       "version": "2.36-9+deb12u7"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2019-1010025"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "e1cf8309ef1e6b0c",
+    "name": "libc-bin",
+    "version": "2.36-9+deb12u7",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/libc-bin/copyright",
+      "layerID": "sha256:1b3a7b5bb685de2470bc4a8b608b62ba4e192c04380b48c76fea876678cc6bfd"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:1b3a7b5bb685de2470bc4a8b608b62ba4e192c04380b48c76fea876678cc6bfd"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-2",
+     "LGPL-2.1"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libc-bin:libc-bin:2.36-9+deb12u7:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libc-bin:libc_bin:2.36-9+deb12u7:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libc_bin:libc-bin:2.36-9+deb12u7:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libc_bin:libc_bin:2.36-9+deb12u7:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libc:libc-bin:2.36-9+deb12u7:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libc:libc_bin:2.36-9+deb12u7:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/debian/libc-bin@2.36-9%2Bdeb12u7?arch=amd64&upstream=glibc&distro=debian-12",
+    "upstreams": [
+     {
+      "name": "glibc"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2019-1010024",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2019-1010024",
+    "namespace": "debian:distro:debian:12",
+    "severity": "Negligible",
+    "urls": [
+     "https://security-tracker.debian.org/tracker/CVE-2019-1010024"
+    ],
+    "description": "GNU Libc current is affected by: Mitigation bypass. The impact is: Attacker may bypass ASLR using cache of thread stack and heap. The component is: glibc. NOTE: Upstream comments indicate \"this is being treated as a non-security bug and no real threat.",
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2019-1010024",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2019-1010024",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "http://www.securityfocus.com/bid/109162",
+      "https://security-tracker.debian.org/tracker/CVE-2019-1010024",
+      "https://sourceware.org/bugzilla/show_bug.cgi?id=22852",
+      "https://support.f5.com/csp/article/K06046097",
+      "https://support.f5.com/csp/article/K06046097?utm_source=f5support&amp%3Butm_medium=RSS",
+      "https://ubuntu.com/security/CVE-2019-1010024"
+     ],
+     "description": "GNU Libc current is affected by: Mitigation bypass. The impact is: Attacker may bypass ASLR using cache of thread stack and heap. The component is: glibc. NOTE: Upstream comments indicate \"this is being treated as a non-security bug and no real threat.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+       "metrics": {
+        "baseScore": 5,
+        "exploitabilityScore": 10,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.0",
+       "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+       "metrics": {
+        "baseScore": 5.3,
+        "exploitabilityScore": 3.9,
+        "impactScore": 1.4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "debian",
+       "version": "12"
+      },
+      "namespace": "debian:distro:debian:12",
+      "package": {
+       "name": "glibc",
+       "version": "2.36-9+deb12u7"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2019-1010024"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "e1cf8309ef1e6b0c",
+    "name": "libc-bin",
+    "version": "2.36-9+deb12u7",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/libc-bin/copyright",
+      "layerID": "sha256:1b3a7b5bb685de2470bc4a8b608b62ba4e192c04380b48c76fea876678cc6bfd"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:1b3a7b5bb685de2470bc4a8b608b62ba4e192c04380b48c76fea876678cc6bfd"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-2",
+     "LGPL-2.1"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libc-bin:libc-bin:2.36-9+deb12u7:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libc-bin:libc_bin:2.36-9+deb12u7:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libc_bin:libc-bin:2.36-9+deb12u7:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libc_bin:libc_bin:2.36-9+deb12u7:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libc:libc-bin:2.36-9+deb12u7:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libc:libc_bin:2.36-9+deb12u7:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/debian/libc-bin@2.36-9%2Bdeb12u7?arch=amd64&upstream=glibc&distro=debian-12",
+    "upstreams": [
+     {
+      "name": "glibc"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2019-1010023",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2019-1010023",
+    "namespace": "debian:distro:debian:12",
+    "severity": "Negligible",
+    "urls": [
+     "https://security-tracker.debian.org/tracker/CVE-2019-1010023"
+    ],
+    "description": "GNU Libc current is affected by: Re-mapping current loaded library with malicious ELF file. The impact is: In worst case attacker may evaluate privileges. The component is: libld. The attack vector is: Attacker sends 2 ELF files to victim and asks to run ldd on it. ldd execute code. NOTE: Upstream comments indicate \"this is being treated as a non-security bug and no real threat.",
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2019-1010023",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2019-1010023",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "http://www.securityfocus.com/bid/109167",
+      "https://security-tracker.debian.org/tracker/CVE-2019-1010023",
+      "https://sourceware.org/bugzilla/show_bug.cgi?id=22851",
+      "https://support.f5.com/csp/article/K11932200?utm_source=f5support&amp%3Butm_medium=RSS",
+      "https://ubuntu.com/security/CVE-2019-1010023"
+     ],
+     "description": "GNU Libc current is affected by: Re-mapping current loaded library with malicious ELF file. The impact is: In worst case attacker may evaluate privileges. The component is: libld. The attack vector is: Attacker sends 2 ELF files to victim and asks to run ldd on it. ldd execute code. NOTE: Upstream comments indicate \"this is being treated as a non-security bug and no real threat.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+       "metrics": {
+        "baseScore": 6.8,
+        "exploitabilityScore": 8.6,
+        "impactScore": 6.4
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.0",
+       "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 8.8,
+        "exploitabilityScore": 2.8,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N",
+       "metrics": {
+        "baseScore": 5.4,
+        "exploitabilityScore": 2.8,
+        "impactScore": 2.5
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "debian",
+       "version": "12"
+      },
+      "namespace": "debian:distro:debian:12",
+      "package": {
+       "name": "glibc",
+       "version": "2.36-9+deb12u7"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2019-1010023"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "e1cf8309ef1e6b0c",
+    "name": "libc-bin",
+    "version": "2.36-9+deb12u7",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/libc-bin/copyright",
+      "layerID": "sha256:1b3a7b5bb685de2470bc4a8b608b62ba4e192c04380b48c76fea876678cc6bfd"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:1b3a7b5bb685de2470bc4a8b608b62ba4e192c04380b48c76fea876678cc6bfd"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-2",
+     "LGPL-2.1"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libc-bin:libc-bin:2.36-9+deb12u7:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libc-bin:libc_bin:2.36-9+deb12u7:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libc_bin:libc-bin:2.36-9+deb12u7:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libc_bin:libc_bin:2.36-9+deb12u7:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libc:libc-bin:2.36-9+deb12u7:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libc:libc_bin:2.36-9+deb12u7:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/debian/libc-bin@2.36-9%2Bdeb12u7?arch=amd64&upstream=glibc&distro=debian-12",
+    "upstreams": [
+     {
+      "name": "glibc"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2019-1010022",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2019-1010022",
+    "namespace": "debian:distro:debian:12",
+    "severity": "Negligible",
+    "urls": [
+     "https://security-tracker.debian.org/tracker/CVE-2019-1010022"
+    ],
+    "description": "GNU Libc current is affected by: Mitigation bypass. The impact is: Attacker may bypass stack guard protection. The component is: nptl. The attack vector is: Exploit stack buffer overflow vulnerability and use this bypass vulnerability to bypass stack guard. NOTE: Upstream comments indicate \"this is being treated as a non-security bug and no real threat.",
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2019-1010022",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2019-1010022",
+     "namespace": "nvd:cpe",
+     "severity": "Critical",
+     "urls": [
+      "https://security-tracker.debian.org/tracker/CVE-2019-1010022",
+      "https://sourceware.org/bugzilla/show_bug.cgi?id=22850",
+      "https://sourceware.org/bugzilla/show_bug.cgi?id=22850#c3",
+      "https://ubuntu.com/security/CVE-2019-1010022"
+     ],
+     "description": "GNU Libc current is affected by: Mitigation bypass. The impact is: Attacker may bypass stack guard protection. The component is: nptl. The attack vector is: Exploit stack buffer overflow vulnerability and use this bypass vulnerability to bypass stack guard. NOTE: Upstream comments indicate \"this is being treated as a non-security bug and no real threat.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 10,
+        "impactScore": 6.4
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.0",
+       "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 9.8,
+        "exploitabilityScore": 3.9,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "debian",
+       "version": "12"
+      },
+      "namespace": "debian:distro:debian:12",
+      "package": {
+       "name": "glibc",
+       "version": "2.36-9+deb12u7"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2019-1010022"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "e1cf8309ef1e6b0c",
+    "name": "libc-bin",
+    "version": "2.36-9+deb12u7",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/libc-bin/copyright",
+      "layerID": "sha256:1b3a7b5bb685de2470bc4a8b608b62ba4e192c04380b48c76fea876678cc6bfd"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:1b3a7b5bb685de2470bc4a8b608b62ba4e192c04380b48c76fea876678cc6bfd"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-2",
+     "LGPL-2.1"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libc-bin:libc-bin:2.36-9+deb12u7:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libc-bin:libc_bin:2.36-9+deb12u7:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libc_bin:libc-bin:2.36-9+deb12u7:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libc_bin:libc_bin:2.36-9+deb12u7:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libc:libc-bin:2.36-9+deb12u7:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libc:libc_bin:2.36-9+deb12u7:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/debian/libc-bin@2.36-9%2Bdeb12u7?arch=amd64&upstream=glibc&distro=debian-12",
+    "upstreams": [
+     {
+      "name": "glibc"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2018-20796",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2018-20796",
+    "namespace": "debian:distro:debian:12",
+    "severity": "Negligible",
+    "urls": [
+     "https://security-tracker.debian.org/tracker/CVE-2018-20796"
+    ],
+    "description": "In the GNU C Library (aka glibc or libc6) through 2.29, check_dst_limits_calc_pos_1 in posix/regexec.c has Uncontrolled Recursion, as demonstrated by '(\\227|)(\\\\1\\\\1|t1|\\\\\\2537)+' in grep.",
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2018-20796",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2018-20796",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "http://www.securityfocus.com/bid/107160",
+      "https://debbugs.gnu.org/cgi/bugreport.cgi?bug=34141",
+      "https://lists.gnu.org/archive/html/bug-gnulib/2019-01/msg00108.html",
+      "https://security.netapp.com/advisory/ntap-20190315-0002/",
+      "https://support.f5.com/csp/article/K26346590?utm_source=f5support&amp%3Butm_medium=RSS"
+     ],
+     "description": "In the GNU C Library (aka glibc or libc6) through 2.29, check_dst_limits_calc_pos_1 in posix/regexec.c has Uncontrolled Recursion, as demonstrated by '(\\227|)(\\\\1\\\\1|t1|\\\\\\2537)+' in grep.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+       "metrics": {
+        "baseScore": 5,
+        "exploitabilityScore": 10,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.0",
+       "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "debian",
+       "version": "12"
+      },
+      "namespace": "debian:distro:debian:12",
+      "package": {
+       "name": "glibc",
+       "version": "2.36-9+deb12u7"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2018-20796"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "e1cf8309ef1e6b0c",
+    "name": "libc-bin",
+    "version": "2.36-9+deb12u7",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/libc-bin/copyright",
+      "layerID": "sha256:1b3a7b5bb685de2470bc4a8b608b62ba4e192c04380b48c76fea876678cc6bfd"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:1b3a7b5bb685de2470bc4a8b608b62ba4e192c04380b48c76fea876678cc6bfd"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-2",
+     "LGPL-2.1"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libc-bin:libc-bin:2.36-9+deb12u7:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libc-bin:libc_bin:2.36-9+deb12u7:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libc_bin:libc-bin:2.36-9+deb12u7:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libc_bin:libc_bin:2.36-9+deb12u7:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libc:libc-bin:2.36-9+deb12u7:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libc:libc_bin:2.36-9+deb12u7:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/debian/libc-bin@2.36-9%2Bdeb12u7?arch=amd64&upstream=glibc&distro=debian-12",
+    "upstreams": [
+     {
+      "name": "glibc"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2010-4756",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2010-4756",
+    "namespace": "debian:distro:debian:12",
+    "severity": "Negligible",
+    "urls": [
+     "https://security-tracker.debian.org/tracker/CVE-2010-4756"
+    ],
+    "description": "The glob implementation in the GNU C Library (aka glibc or libc6) allows remote authenticated users to cause a denial of service (CPU and memory consumption) via crafted glob expressions that do not match any pathnames, as demonstrated by glob expressions in STAT commands to an FTP daemon, a different vulnerability than CVE-2010-2632.",
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2010-4756",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2010-4756",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "http://cxib.net/stuff/glob-0day.c",
+      "http://securityreason.com/achievement_securityalert/89",
+      "http://securityreason.com/exploitalert/9223",
+      "https://bugzilla.redhat.com/show_bug.cgi?id=681681",
+      "https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2010-4756"
+     ],
+     "description": "The glob implementation in the GNU C Library (aka glibc or libc6) allows remote authenticated users to cause a denial of service (CPU and memory consumption) via crafted glob expressions that do not match any pathnames, as demonstrated by glob expressions in STAT commands to an FTP daemon, a different vulnerability than CVE-2010-2632.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:S/C:N/I:N/A:P",
+       "metrics": {
+        "baseScore": 4,
+        "exploitabilityScore": 8,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "debian",
+       "version": "12"
+      },
+      "namespace": "debian:distro:debian:12",
+      "package": {
+       "name": "glibc",
+       "version": "2.36-9+deb12u7"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2010-4756"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "e1cf8309ef1e6b0c",
+    "name": "libc-bin",
+    "version": "2.36-9+deb12u7",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/libc-bin/copyright",
+      "layerID": "sha256:1b3a7b5bb685de2470bc4a8b608b62ba4e192c04380b48c76fea876678cc6bfd"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:1b3a7b5bb685de2470bc4a8b608b62ba4e192c04380b48c76fea876678cc6bfd"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-2",
+     "LGPL-2.1"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libc-bin:libc-bin:2.36-9+deb12u7:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libc-bin:libc_bin:2.36-9+deb12u7:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libc_bin:libc-bin:2.36-9+deb12u7:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libc_bin:libc_bin:2.36-9+deb12u7:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libc:libc-bin:2.36-9+deb12u7:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libc:libc_bin:2.36-9+deb12u7:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/debian/libc-bin@2.36-9%2Bdeb12u7?arch=amd64&upstream=glibc&distro=debian-12",
+    "upstreams": [
+     {
+      "name": "glibc"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2019-9192",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2019-9192",
+    "namespace": "debian:distro:debian:12",
+    "severity": "Negligible",
+    "urls": [
+     "https://security-tracker.debian.org/tracker/CVE-2019-9192"
+    ],
+    "description": "In the GNU C Library (aka glibc or libc6) through 2.29, check_dst_limits_calc_pos_1 in posix/regexec.c has Uncontrolled Recursion, as demonstrated by '(|)(\\\\1\\\\1)*' in grep, a different issue than CVE-2018-20796. NOTE: the software maintainer disputes that this is a vulnerability because the behavior occurs only with a crafted pattern",
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2019-9192",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2019-9192",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://sourceware.org/bugzilla/show_bug.cgi?id=24269",
+      "https://support.f5.com/csp/article/K26346590?utm_source=f5support&amp%3Butm_medium=RSS"
+     ],
+     "description": "In the GNU C Library (aka glibc or libc6) through 2.29, check_dst_limits_calc_pos_1 in posix/regexec.c has Uncontrolled Recursion, as demonstrated by '(|)(\\\\1\\\\1)*' in grep, a different issue than CVE-2018-20796. NOTE: the software maintainer disputes that this is a vulnerability because the behavior occurs only with a crafted pattern",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+       "metrics": {
+        "baseScore": 5,
+        "exploitabilityScore": 10,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.0",
+       "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "debian",
+       "version": "12"
+      },
+      "namespace": "debian:distro:debian:12",
+      "package": {
+       "name": "glibc",
+       "version": "2.36-9+deb12u7"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2019-9192"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "90bc70c2ffc13e7f",
+    "name": "libc6",
+    "version": "2.36-9+deb12u7",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/libc6/copyright",
+      "layerID": "sha256:1b3a7b5bb685de2470bc4a8b608b62ba4e192c04380b48c76fea876678cc6bfd"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:1b3a7b5bb685de2470bc4a8b608b62ba4e192c04380b48c76fea876678cc6bfd"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-2",
+     "LGPL-2.1"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libc6:libc6:2.36-9+deb12u7:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/debian/libc6@2.36-9%2Bdeb12u7?arch=amd64&upstream=glibc&distro=debian-12",
+    "upstreams": [
+     {
+      "name": "glibc"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2019-1010025",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2019-1010025",
+    "namespace": "debian:distro:debian:12",
+    "severity": "Negligible",
+    "urls": [
+     "https://security-tracker.debian.org/tracker/CVE-2019-1010025"
+    ],
+    "description": "GNU Libc current is affected by: Mitigation bypass. The impact is: Attacker may guess the heap addresses of pthread_created thread. The component is: glibc. NOTE: the vendor's position is \"ASLR bypass itself is not a vulnerability.",
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2019-1010025",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2019-1010025",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://security-tracker.debian.org/tracker/CVE-2019-1010025",
+      "https://sourceware.org/bugzilla/show_bug.cgi?id=22853",
+      "https://support.f5.com/csp/article/K06046097",
+      "https://support.f5.com/csp/article/K06046097?utm_source=f5support&amp%3Butm_medium=RSS",
+      "https://ubuntu.com/security/CVE-2019-1010025"
+     ],
+     "description": "GNU Libc current is affected by: Mitigation bypass. The impact is: Attacker may guess the heap addresses of pthread_created thread. The component is: glibc. NOTE: the vendor's position is \"ASLR bypass itself is not a vulnerability.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+       "metrics": {
+        "baseScore": 5,
+        "exploitabilityScore": 10,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.0",
+       "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+       "metrics": {
+        "baseScore": 5.3,
+        "exploitabilityScore": 3.9,
+        "impactScore": 1.4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "debian",
+       "version": "12"
+      },
+      "namespace": "debian:distro:debian:12",
+      "package": {
+       "name": "glibc",
+       "version": "2.36-9+deb12u7"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2019-1010025"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "90bc70c2ffc13e7f",
+    "name": "libc6",
+    "version": "2.36-9+deb12u7",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/libc6/copyright",
+      "layerID": "sha256:1b3a7b5bb685de2470bc4a8b608b62ba4e192c04380b48c76fea876678cc6bfd"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:1b3a7b5bb685de2470bc4a8b608b62ba4e192c04380b48c76fea876678cc6bfd"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-2",
+     "LGPL-2.1"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libc6:libc6:2.36-9+deb12u7:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/debian/libc6@2.36-9%2Bdeb12u7?arch=amd64&upstream=glibc&distro=debian-12",
+    "upstreams": [
+     {
+      "name": "glibc"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2019-1010024",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2019-1010024",
+    "namespace": "debian:distro:debian:12",
+    "severity": "Negligible",
+    "urls": [
+     "https://security-tracker.debian.org/tracker/CVE-2019-1010024"
+    ],
+    "description": "GNU Libc current is affected by: Mitigation bypass. The impact is: Attacker may bypass ASLR using cache of thread stack and heap. The component is: glibc. NOTE: Upstream comments indicate \"this is being treated as a non-security bug and no real threat.",
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2019-1010024",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2019-1010024",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "http://www.securityfocus.com/bid/109162",
+      "https://security-tracker.debian.org/tracker/CVE-2019-1010024",
+      "https://sourceware.org/bugzilla/show_bug.cgi?id=22852",
+      "https://support.f5.com/csp/article/K06046097",
+      "https://support.f5.com/csp/article/K06046097?utm_source=f5support&amp%3Butm_medium=RSS",
+      "https://ubuntu.com/security/CVE-2019-1010024"
+     ],
+     "description": "GNU Libc current is affected by: Mitigation bypass. The impact is: Attacker may bypass ASLR using cache of thread stack and heap. The component is: glibc. NOTE: Upstream comments indicate \"this is being treated as a non-security bug and no real threat.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+       "metrics": {
+        "baseScore": 5,
+        "exploitabilityScore": 10,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.0",
+       "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+       "metrics": {
+        "baseScore": 5.3,
+        "exploitabilityScore": 3.9,
+        "impactScore": 1.4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "debian",
+       "version": "12"
+      },
+      "namespace": "debian:distro:debian:12",
+      "package": {
+       "name": "glibc",
+       "version": "2.36-9+deb12u7"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2019-1010024"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "90bc70c2ffc13e7f",
+    "name": "libc6",
+    "version": "2.36-9+deb12u7",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/libc6/copyright",
+      "layerID": "sha256:1b3a7b5bb685de2470bc4a8b608b62ba4e192c04380b48c76fea876678cc6bfd"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:1b3a7b5bb685de2470bc4a8b608b62ba4e192c04380b48c76fea876678cc6bfd"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-2",
+     "LGPL-2.1"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libc6:libc6:2.36-9+deb12u7:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/debian/libc6@2.36-9%2Bdeb12u7?arch=amd64&upstream=glibc&distro=debian-12",
+    "upstreams": [
+     {
+      "name": "glibc"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2019-1010023",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2019-1010023",
+    "namespace": "debian:distro:debian:12",
+    "severity": "Negligible",
+    "urls": [
+     "https://security-tracker.debian.org/tracker/CVE-2019-1010023"
+    ],
+    "description": "GNU Libc current is affected by: Re-mapping current loaded library with malicious ELF file. The impact is: In worst case attacker may evaluate privileges. The component is: libld. The attack vector is: Attacker sends 2 ELF files to victim and asks to run ldd on it. ldd execute code. NOTE: Upstream comments indicate \"this is being treated as a non-security bug and no real threat.",
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2019-1010023",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2019-1010023",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "http://www.securityfocus.com/bid/109167",
+      "https://security-tracker.debian.org/tracker/CVE-2019-1010023",
+      "https://sourceware.org/bugzilla/show_bug.cgi?id=22851",
+      "https://support.f5.com/csp/article/K11932200?utm_source=f5support&amp%3Butm_medium=RSS",
+      "https://ubuntu.com/security/CVE-2019-1010023"
+     ],
+     "description": "GNU Libc current is affected by: Re-mapping current loaded library with malicious ELF file. The impact is: In worst case attacker may evaluate privileges. The component is: libld. The attack vector is: Attacker sends 2 ELF files to victim and asks to run ldd on it. ldd execute code. NOTE: Upstream comments indicate \"this is being treated as a non-security bug and no real threat.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+       "metrics": {
+        "baseScore": 6.8,
+        "exploitabilityScore": 8.6,
+        "impactScore": 6.4
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.0",
+       "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 8.8,
+        "exploitabilityScore": 2.8,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N",
+       "metrics": {
+        "baseScore": 5.4,
+        "exploitabilityScore": 2.8,
+        "impactScore": 2.5
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "debian",
+       "version": "12"
+      },
+      "namespace": "debian:distro:debian:12",
+      "package": {
+       "name": "glibc",
+       "version": "2.36-9+deb12u7"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2019-1010023"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "90bc70c2ffc13e7f",
+    "name": "libc6",
+    "version": "2.36-9+deb12u7",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/libc6/copyright",
+      "layerID": "sha256:1b3a7b5bb685de2470bc4a8b608b62ba4e192c04380b48c76fea876678cc6bfd"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:1b3a7b5bb685de2470bc4a8b608b62ba4e192c04380b48c76fea876678cc6bfd"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-2",
+     "LGPL-2.1"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libc6:libc6:2.36-9+deb12u7:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/debian/libc6@2.36-9%2Bdeb12u7?arch=amd64&upstream=glibc&distro=debian-12",
+    "upstreams": [
+     {
+      "name": "glibc"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2019-1010022",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2019-1010022",
+    "namespace": "debian:distro:debian:12",
+    "severity": "Negligible",
+    "urls": [
+     "https://security-tracker.debian.org/tracker/CVE-2019-1010022"
+    ],
+    "description": "GNU Libc current is affected by: Mitigation bypass. The impact is: Attacker may bypass stack guard protection. The component is: nptl. The attack vector is: Exploit stack buffer overflow vulnerability and use this bypass vulnerability to bypass stack guard. NOTE: Upstream comments indicate \"this is being treated as a non-security bug and no real threat.",
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2019-1010022",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2019-1010022",
+     "namespace": "nvd:cpe",
+     "severity": "Critical",
+     "urls": [
+      "https://security-tracker.debian.org/tracker/CVE-2019-1010022",
+      "https://sourceware.org/bugzilla/show_bug.cgi?id=22850",
+      "https://sourceware.org/bugzilla/show_bug.cgi?id=22850#c3",
+      "https://ubuntu.com/security/CVE-2019-1010022"
+     ],
+     "description": "GNU Libc current is affected by: Mitigation bypass. The impact is: Attacker may bypass stack guard protection. The component is: nptl. The attack vector is: Exploit stack buffer overflow vulnerability and use this bypass vulnerability to bypass stack guard. NOTE: Upstream comments indicate \"this is being treated as a non-security bug and no real threat.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 10,
+        "impactScore": 6.4
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.0",
+       "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 9.8,
+        "exploitabilityScore": 3.9,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "debian",
+       "version": "12"
+      },
+      "namespace": "debian:distro:debian:12",
+      "package": {
+       "name": "glibc",
+       "version": "2.36-9+deb12u7"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2019-1010022"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "90bc70c2ffc13e7f",
+    "name": "libc6",
+    "version": "2.36-9+deb12u7",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/libc6/copyright",
+      "layerID": "sha256:1b3a7b5bb685de2470bc4a8b608b62ba4e192c04380b48c76fea876678cc6bfd"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:1b3a7b5bb685de2470bc4a8b608b62ba4e192c04380b48c76fea876678cc6bfd"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-2",
+     "LGPL-2.1"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libc6:libc6:2.36-9+deb12u7:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/debian/libc6@2.36-9%2Bdeb12u7?arch=amd64&upstream=glibc&distro=debian-12",
+    "upstreams": [
+     {
+      "name": "glibc"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2018-20796",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2018-20796",
+    "namespace": "debian:distro:debian:12",
+    "severity": "Negligible",
+    "urls": [
+     "https://security-tracker.debian.org/tracker/CVE-2018-20796"
+    ],
+    "description": "In the GNU C Library (aka glibc or libc6) through 2.29, check_dst_limits_calc_pos_1 in posix/regexec.c has Uncontrolled Recursion, as demonstrated by '(\\227|)(\\\\1\\\\1|t1|\\\\\\2537)+' in grep.",
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2018-20796",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2018-20796",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "http://www.securityfocus.com/bid/107160",
+      "https://debbugs.gnu.org/cgi/bugreport.cgi?bug=34141",
+      "https://lists.gnu.org/archive/html/bug-gnulib/2019-01/msg00108.html",
+      "https://security.netapp.com/advisory/ntap-20190315-0002/",
+      "https://support.f5.com/csp/article/K26346590?utm_source=f5support&amp%3Butm_medium=RSS"
+     ],
+     "description": "In the GNU C Library (aka glibc or libc6) through 2.29, check_dst_limits_calc_pos_1 in posix/regexec.c has Uncontrolled Recursion, as demonstrated by '(\\227|)(\\\\1\\\\1|t1|\\\\\\2537)+' in grep.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+       "metrics": {
+        "baseScore": 5,
+        "exploitabilityScore": 10,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.0",
+       "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "debian",
+       "version": "12"
+      },
+      "namespace": "debian:distro:debian:12",
+      "package": {
+       "name": "glibc",
+       "version": "2.36-9+deb12u7"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2018-20796"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "90bc70c2ffc13e7f",
+    "name": "libc6",
+    "version": "2.36-9+deb12u7",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/libc6/copyright",
+      "layerID": "sha256:1b3a7b5bb685de2470bc4a8b608b62ba4e192c04380b48c76fea876678cc6bfd"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:1b3a7b5bb685de2470bc4a8b608b62ba4e192c04380b48c76fea876678cc6bfd"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-2",
+     "LGPL-2.1"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libc6:libc6:2.36-9+deb12u7:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/debian/libc6@2.36-9%2Bdeb12u7?arch=amd64&upstream=glibc&distro=debian-12",
+    "upstreams": [
+     {
+      "name": "glibc"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2010-4756",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2010-4756",
+    "namespace": "debian:distro:debian:12",
+    "severity": "Negligible",
+    "urls": [
+     "https://security-tracker.debian.org/tracker/CVE-2010-4756"
+    ],
+    "description": "The glob implementation in the GNU C Library (aka glibc or libc6) allows remote authenticated users to cause a denial of service (CPU and memory consumption) via crafted glob expressions that do not match any pathnames, as demonstrated by glob expressions in STAT commands to an FTP daemon, a different vulnerability than CVE-2010-2632.",
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2010-4756",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2010-4756",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "http://cxib.net/stuff/glob-0day.c",
+      "http://securityreason.com/achievement_securityalert/89",
+      "http://securityreason.com/exploitalert/9223",
+      "https://bugzilla.redhat.com/show_bug.cgi?id=681681",
+      "https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2010-4756"
+     ],
+     "description": "The glob implementation in the GNU C Library (aka glibc or libc6) allows remote authenticated users to cause a denial of service (CPU and memory consumption) via crafted glob expressions that do not match any pathnames, as demonstrated by glob expressions in STAT commands to an FTP daemon, a different vulnerability than CVE-2010-2632.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:S/C:N/I:N/A:P",
+       "metrics": {
+        "baseScore": 4,
+        "exploitabilityScore": 8,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "debian",
+       "version": "12"
+      },
+      "namespace": "debian:distro:debian:12",
+      "package": {
+       "name": "glibc",
+       "version": "2.36-9+deb12u7"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2010-4756"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "90bc70c2ffc13e7f",
+    "name": "libc6",
+    "version": "2.36-9+deb12u7",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/libc6/copyright",
+      "layerID": "sha256:1b3a7b5bb685de2470bc4a8b608b62ba4e192c04380b48c76fea876678cc6bfd"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:1b3a7b5bb685de2470bc4a8b608b62ba4e192c04380b48c76fea876678cc6bfd"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-2",
+     "LGPL-2.1"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libc6:libc6:2.36-9+deb12u7:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/debian/libc6@2.36-9%2Bdeb12u7?arch=amd64&upstream=glibc&distro=debian-12",
+    "upstreams": [
+     {
+      "name": "glibc"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2024-5535",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2024-5535",
+    "namespace": "debian:distro:debian:12",
+    "severity": "Critical",
+    "urls": [
+     "https://security-tracker.debian.org/tracker/CVE-2024-5535"
+    ],
+    "description": "Issue summary: Calling the OpenSSL API function SSL_select_next_proto with an empty supported client protocols buffer may cause a crash or memory contents to be sent to the peer.  Impact summary: A buffer overread can have a range of potential consequences such as unexpected application beahviour or a crash. In particular this issue could result in up to 255 bytes of arbitrary private data from memory being sent to the peer leading to a loss of confidentiality. However, only applications that directly call the SSL_select_next_proto function with a 0 length list of supported client protocols are affected by this issue. This would normally never be a valid scenario and is typically not under attacker control but may occur by accident in the case of a configuration or programming error in the calling application.  The OpenSSL API function SSL_select_next_proto is typically used by TLS applications that support ALPN (Application Layer Protocol Negotiation) or NPN (Next Protocol Negotiation). NPN is older, was never standardised and is deprecated in favour of ALPN. We believe that ALPN is significantly more widely deployed than NPN. The SSL_select_next_proto function accepts a list of protocols from the server and a list of protocols from the client and returns the first protocol that appears in the server list that also appears in the client list. In the case of no overlap between the two lists it returns the first item in the client list. In either case it will signal whether an overlap between the two lists was found. In the case where SSL_select_next_proto is called with a zero length client list it fails to notice this condition and returns the memory immediately following the client list pointer (and reports that there was no overlap in the lists).  This function is typically called from a server side application callback for ALPN or a client side application callback for NPN. In the case of ALPN the list of protocols supplied by the client is guaranteed by libssl to never be zero in length. The list of server protocols comes from the application and should never normally be expected to be of zero length. In this case if the SSL_select_next_proto function has been called as expected (with the list supplied by the client passed in the client/client_len parameters), then the application will not be vulnerable to this issue. If the application has accidentally been configured with a zero length server list, and has accidentally passed that zero length server list in the client/client_len parameters, and has additionally failed to correctly handle a \"no overlap\" response (which would normally result in a handshake failure in ALPN) then it will be vulnerable to this problem.  In the case of NPN, the protocol permits the client to opportunistically select a protocol when there is no overlap. OpenSSL returns the first client protocol in the no overlap case in support of this. The list of client protocols comes from the application and should never normally be expected to be of zero length. However if the SSL_select_next_proto function is accidentally called with a client_len of 0 then an invalid memory pointer will be returned instead. If the application uses this output as the opportunistic protocol then the loss of confidentiality will occur.  This issue has been assessed as Low severity because applications are most likely to be vulnerable if they are using NPN instead of ALPN - but NPN is not widely used. It also requires an application configuration or programming error. Finally, this issue would not typically be under attacker control making active exploitation unlikely.  The FIPS modules in 3.3, 3.2, 3.1 and 3.0 are not affected by this issue.  Due to the low severity of this issue we are not issuing new releases of OpenSSL at this time. The fix will be included in the next releases when they become available.",
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "wont-fix"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-5535",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-5535",
+     "namespace": "nvd:cpe",
+     "severity": "Critical",
+     "urls": [
+      "http://www.openwall.com/lists/oss-security/2024/06/27/1",
+      "http://www.openwall.com/lists/oss-security/2024/06/28/4",
+      "https://github.com/openssl/openssl/commit/4ada436a1946cbb24db5ab4ca082b69c1bc10f37",
+      "https://github.com/openssl/openssl/commit/99fb785a5f85315b95288921a321a935ea29a51e",
+      "https://github.com/openssl/openssl/commit/cf6f91f6121f4db167405db2f0de410a456f260c",
+      "https://github.com/openssl/openssl/commit/e86ac436f0bd54d4517745483e2315650fae7b2c",
+      "https://github.openssl.org/openssl/extended-releases/commit/9947251413065a05189a63c9b7a6c1d4e224c21c",
+      "https://github.openssl.org/openssl/extended-releases/commit/b78ec0824da857223486660177d3b1f255c65d87",
+      "https://security.netapp.com/advisory/ntap-20240712-0005/",
+      "https://www.openssl.org/news/secadv/20240627.txt"
+     ],
+     "description": "Issue summary: Calling the OpenSSL API function SSL_select_next_proto with an\nempty supported client protocols buffer may cause a crash or memory contents to\nbe sent to the peer.\n\nImpact summary: A buffer overread can have a range of potential consequences\nsuch as unexpected application beahviour or a crash. In particular this issue\ncould result in up to 255 bytes of arbitrary private data from memory being sent\nto the peer leading to a loss of confidentiality. However, only applications\nthat directly call the SSL_select_next_proto function with a 0 length list of\nsupported client protocols are affected by this issue. This would normally never\nbe a valid scenario and is typically not under attacker control but may occur by\naccident in the case of a configuration or programming error in the calling\napplication.\n\nThe OpenSSL API function SSL_select_next_proto is typically used by TLS\napplications that support ALPN (Application Layer Protocol Negotiation) or NPN\n(Next Protocol Negotiation). NPN is older, was never standardised and\nis deprecated in favour of ALPN. We believe that ALPN is significantly more\nwidely deployed than NPN. The SSL_select_next_proto function accepts a list of\nprotocols from the server and a list of protocols from the client and returns\nthe first protocol that appears in the server list that also appears in the\nclient list. In the case of no overlap between the two lists it returns the\nfirst item in the client list. In either case it will signal whether an overlap\nbetween the two lists was found. In the case where SSL_select_next_proto is\ncalled with a zero length client list it fails to notice this condition and\nreturns the memory immediately following the client list pointer (and reports\nthat there was no overlap in the lists).\n\nThis function is typically called from a server side application callback for\nALPN or a client side application callback for NPN. In the case of ALPN the list\nof protocols supplied by the client is guaranteed by libssl to never be zero in\nlength. The list of server protocols comes from the application and should never\nnormally be expected to be of zero length. In this case if the\nSSL_select_next_proto function has been called as expected (with the list\nsupplied by the client passed in the client/client_len parameters), then the\napplication will not be vulnerable to this issue. If the application has\naccidentally been configured with a zero length server list, and has\naccidentally passed that zero length server list in the client/client_len\nparameters, and has additionally failed to correctly handle a \"no overlap\"\nresponse (which would normally result in a handshake failure in ALPN) then it\nwill be vulnerable to this problem.\n\nIn the case of NPN, the protocol permits the client to opportunistically select\na protocol when there is no overlap. OpenSSL returns the first client protocol\nin the no overlap case in support of this. The list of client protocols comes\nfrom the application and should never normally be expected to be of zero length.\nHowever if the SSL_select_next_proto function is accidentally called with a\nclient_len of 0 then an invalid memory pointer will be returned instead. If the\napplication uses this output as the opportunistic protocol then the loss of\nconfidentiality will occur.\n\nThis issue has been assessed as Low severity because applications are most\nlikely to be vulnerable if they are using NPN instead of ALPN - but NPN is not\nwidely used. It also requires an application configuration or programming error.\nFinally, this issue would not typically be under attacker control making active\nexploitation unlikely.\n\nThe FIPS modules in 3.3, 3.2, 3.1 and 3.0 are not affected by this issue.\n\nDue to the low severity of this issue we are not issuing new releases of\nOpenSSL at this time. The fix will be included in the next releases when they\nbecome available.",
+     "cvss": [
+      {
+       "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H",
+       "metrics": {
+        "baseScore": 9.1,
+        "exploitabilityScore": 3.9,
+        "impactScore": 5.2
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "debian",
+       "version": "12"
+      },
+      "namespace": "debian:distro:debian:12",
+      "package": {
+       "name": "openssl",
+       "version": "3.0.13-1~deb12u1"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2024-5535"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "8b944be97dcdbbdb",
+    "name": "libssl3",
+    "version": "3.0.13-1~deb12u1",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/libssl3/copyright",
+      "layerID": "sha256:1b3a7b5bb685de2470bc4a8b608b62ba4e192c04380b48c76fea876678cc6bfd"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:1b3a7b5bb685de2470bc4a8b608b62ba4e192c04380b48c76fea876678cc6bfd"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "Apache-2.0",
+     "Artistic",
+     "GPL-1",
+     "GPL-1+"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libssl3:libssl3:3.0.13-1~deb12u1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/debian/libssl3@3.0.13-1~deb12u1?arch=amd64&upstream=openssl&distro=debian-12",
+    "upstreams": [
+     {
+      "name": "openssl"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2024-4741",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2024-4741",
+    "namespace": "debian:distro:debian:12",
+    "severity": "Unknown",
+    "urls": [
+     "https://security-tracker.debian.org/tracker/CVE-2024-4741"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "wont-fix"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "debian",
+       "version": "12"
+      },
+      "namespace": "debian:distro:debian:12",
+      "package": {
+       "name": "openssl",
+       "version": "3.0.13-1~deb12u1"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2024-4741"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "8b944be97dcdbbdb",
+    "name": "libssl3",
+    "version": "3.0.13-1~deb12u1",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/libssl3/copyright",
+      "layerID": "sha256:1b3a7b5bb685de2470bc4a8b608b62ba4e192c04380b48c76fea876678cc6bfd"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:1b3a7b5bb685de2470bc4a8b608b62ba4e192c04380b48c76fea876678cc6bfd"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "Apache-2.0",
+     "Artistic",
+     "GPL-1",
+     "GPL-1+"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libssl3:libssl3:3.0.13-1~deb12u1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/debian/libssl3@3.0.13-1~deb12u1?arch=amd64&upstream=openssl&distro=debian-12",
+    "upstreams": [
+     {
+      "name": "openssl"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2024-4603",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2024-4603",
+    "namespace": "debian:distro:debian:12",
+    "severity": "Unknown",
+    "urls": [
+     "https://security-tracker.debian.org/tracker/CVE-2024-4603"
+    ],
+    "description": "Issue summary: Checking excessively long DSA keys or parameters may be very slow.  Impact summary: Applications that use the functions EVP_PKEY_param_check() or EVP_PKEY_public_check() to check a DSA public key or DSA parameters may experience long delays. Where the key or parameters that are being checked have been obtained from an untrusted source this may lead to a Denial of Service.  The functions EVP_PKEY_param_check() or EVP_PKEY_public_check() perform various checks on DSA parameters. Some of those computations take a long time if the modulus (`p` parameter) is too large.  Trying to use a very large modulus is slow and OpenSSL will not allow using public keys with a modulus which is over 10,000 bits in length for signature verification. However the key and parameter check functions do not limit the modulus size when performing the checks.  An application that calls EVP_PKEY_param_check() or EVP_PKEY_public_check() and supplies a key or parameters obtained from an untrusted source could be vulnerable to a Denial of Service attack.  These functions are not called by OpenSSL itself on untrusted DSA keys so only applications that directly call these functions may be vulnerable.  Also vulnerable are the OpenSSL pkey and pkeyparam command line applications when using the `-check` option.  The OpenSSL SSL/TLS implementation is not affected by this issue.  The OpenSSL 3.0 and 3.1 FIPS providers are affected by this issue.",
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "wont-fix"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-4603",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-4603",
+     "namespace": "nvd:cpe",
+     "severity": "Unknown",
+     "urls": [
+      "http://www.openwall.com/lists/oss-security/2024/05/16/2",
+      "https://github.com/openssl/openssl/commit/3559e868e58005d15c6013a0c1fd832e51c73397",
+      "https://github.com/openssl/openssl/commit/53ea06486d296b890d565fb971b2764fcd826e7e",
+      "https://github.com/openssl/openssl/commit/9c39b3858091c152f52513c066ff2c5a47969f0d",
+      "https://github.com/openssl/openssl/commit/da343d0605c826ef197aceedc67e8e04f065f740",
+      "https://security.netapp.com/advisory/ntap-20240621-0001/",
+      "https://www.openssl.org/news/secadv/20240516.txt"
+     ],
+     "description": "Issue summary: Checking excessively long DSA keys or parameters may be very\nslow.\n\nImpact summary: Applications that use the functions EVP_PKEY_param_check()\nor EVP_PKEY_public_check() to check a DSA public key or DSA parameters may\nexperience long delays. Where the key or parameters that are being checked\nhave been obtained from an untrusted source this may lead to a Denial of\nService.\n\nThe functions EVP_PKEY_param_check() or EVP_PKEY_public_check() perform\nvarious checks on DSA parameters. Some of those computations take a long time\nif the modulus (`p` parameter) is too large.\n\nTrying to use a very large modulus is slow and OpenSSL will not allow using\npublic keys with a modulus which is over 10,000 bits in length for signature\nverification. However the key and parameter check functions do not limit\nthe modulus size when performing the checks.\n\nAn application that calls EVP_PKEY_param_check() or EVP_PKEY_public_check()\nand supplies a key or parameters obtained from an untrusted source could be\nvulnerable to a Denial of Service attack.\n\nThese functions are not called by OpenSSL itself on untrusted DSA keys so\nonly applications that directly call these functions may be vulnerable.\n\nAlso vulnerable are the OpenSSL pkey and pkeyparam command line applications\nwhen using the `-check` option.\n\nThe OpenSSL SSL/TLS implementation is not affected by this issue.\n\nThe OpenSSL 3.0 and 3.1 FIPS providers are affected by this issue.",
+     "cvss": []
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "debian",
+       "version": "12"
+      },
+      "namespace": "debian:distro:debian:12",
+      "package": {
+       "name": "openssl",
+       "version": "3.0.13-1~deb12u1"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2024-4603"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "8b944be97dcdbbdb",
+    "name": "libssl3",
+    "version": "3.0.13-1~deb12u1",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/libssl3/copyright",
+      "layerID": "sha256:1b3a7b5bb685de2470bc4a8b608b62ba4e192c04380b48c76fea876678cc6bfd"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:1b3a7b5bb685de2470bc4a8b608b62ba4e192c04380b48c76fea876678cc6bfd"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "Apache-2.0",
+     "Artistic",
+     "GPL-1",
+     "GPL-1+"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libssl3:libssl3:3.0.13-1~deb12u1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/debian/libssl3@3.0.13-1~deb12u1?arch=amd64&upstream=openssl&distro=debian-12",
+    "upstreams": [
+     {
+      "name": "openssl"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2024-2511",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2024-2511",
+    "namespace": "debian:distro:debian:12",
+    "severity": "Unknown",
+    "urls": [
+     "https://security-tracker.debian.org/tracker/CVE-2024-2511"
+    ],
+    "description": "Issue summary: Some non-default TLS server configurations can cause unbounded memory growth when processing TLSv1.3 sessions  Impact summary: An attacker may exploit certain server configurations to trigger unbounded memory growth that would lead to a Denial of Service  This problem can occur in TLSv1.3 if the non-default SSL_OP_NO_TICKET option is being used (but not if early_data support is also configured and the default anti-replay protection is in use). In this case, under certain conditions, the session cache can get into an incorrect state and it will fail to flush properly as it fills. The session cache will continue to grow in an unbounded manner. A malicious client could deliberately create the scenario for this failure to force a Denial of Service. It may also happen by accident in normal operation.  This issue only affects TLS servers supporting TLSv1.3. It does not affect TLS clients.  The FIPS modules in 3.2, 3.1 and 3.0 are not affected by this issue. OpenSSL 1.0.2 is also not affected by this issue.",
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "wont-fix"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-2511",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-2511",
+     "namespace": "nvd:cpe",
+     "severity": "Unknown",
+     "urls": [
+      "http://www.openwall.com/lists/oss-security/2024/04/08/5",
+      "https://github.com/openssl/openssl/commit/7e4d731b1c07201ad9374c1cd9ac5263bdf35bce",
+      "https://github.com/openssl/openssl/commit/b52867a9f618bb955bed2a3ce3db4d4f97ed8e5d",
+      "https://github.com/openssl/openssl/commit/e9d7083e241670332e0443da0f0d4ffb52829f08",
+      "https://github.openssl.org/openssl/extended-releases/commit/5f8d25770ae6437db119dfc951e207271a326640",
+      "https://security.netapp.com/advisory/ntap-20240503-0013/",
+      "https://www.openssl.org/news/secadv/20240408.txt"
+     ],
+     "description": "Issue summary: Some non-default TLS server configurations can cause unbounded\nmemory growth when processing TLSv1.3 sessions\n\nImpact summary: An attacker may exploit certain server configurations to trigger\nunbounded memory growth that would lead to a Denial of Service\n\nThis problem can occur in TLSv1.3 if the non-default SSL_OP_NO_TICKET option is\nbeing used (but not if early_data support is also configured and the default\nanti-replay protection is in use). In this case, under certain conditions, the\nsession cache can get into an incorrect state and it will fail to flush properly\nas it fills. The session cache will continue to grow in an unbounded manner. A\nmalicious client could deliberately create the scenario for this failure to\nforce a Denial of Service. It may also happen by accident in normal operation.\n\nThis issue only affects TLS servers supporting TLSv1.3. It does not affect TLS\nclients.\n\nThe FIPS modules in 3.2, 3.1 and 3.0 are not affected by this issue. OpenSSL\n1.0.2 is also not affected by this issue.",
+     "cvss": []
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "debian",
+       "version": "12"
+      },
+      "namespace": "debian:distro:debian:12",
+      "package": {
+       "name": "openssl",
+       "version": "3.0.13-1~deb12u1"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2024-2511"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "8b944be97dcdbbdb",
+    "name": "libssl3",
+    "version": "3.0.13-1~deb12u1",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/libssl3/copyright",
+      "layerID": "sha256:1b3a7b5bb685de2470bc4a8b608b62ba4e192c04380b48c76fea876678cc6bfd"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:1b3a7b5bb685de2470bc4a8b608b62ba4e192c04380b48c76fea876678cc6bfd"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "Apache-2.0",
+     "Artistic",
+     "GPL-1",
+     "GPL-1+"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libssl3:libssl3:3.0.13-1~deb12u1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/debian/libssl3@3.0.13-1~deb12u1?arch=amd64&upstream=openssl&distro=debian-12",
+    "upstreams": [
+     {
+      "name": "openssl"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-50495",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2023-50495",
+    "namespace": "debian:distro:debian:12",
+    "severity": "Medium",
+    "urls": [
+     "https://security-tracker.debian.org/tracker/CVE-2023-50495"
+    ],
+    "description": "NCurse v6.4-20230418 was discovered to contain a segmentation fault via the component _nc_wrap_entry().",
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "wont-fix"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-50495",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-50495",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/LU4MYMKFEZQ5VSCVLRIZGDQOUW3T44GT/",
+      "https://lists.gnu.org/archive/html/bug-ncurses/2023-04/msg00020.html",
+      "https://lists.gnu.org/archive/html/bug-ncurses/2023-04/msg00029.html",
+      "https://security.netapp.com/advisory/ntap-20240119-0008/"
+     ],
+     "description": "NCurse v6.4-20230418 was discovered to contain a segmentation fault via the component _nc_wrap_entry().",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 6.5,
+        "exploitabilityScore": 2.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "debian",
+       "version": "12"
+      },
+      "namespace": "debian:distro:debian:12",
+      "package": {
+       "name": "ncurses",
+       "version": "6.4-4"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2023-50495"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "9c8a412dc2b1cf57",
+    "name": "libtinfo6",
+    "version": "6.4-4",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/libtinfo6/copyright",
+      "layerID": "sha256:1b3a7b5bb685de2470bc4a8b608b62ba4e192c04380b48c76fea876678cc6bfd"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:1b3a7b5bb685de2470bc4a8b608b62ba4e192c04380b48c76fea876678cc6bfd"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "BSD-3-clause",
+     "MIT/X11",
+     "X11"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libtinfo6:libtinfo6:6.4-4:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/debian/libtinfo6@6.4-4?arch=amd64&upstream=ncurses&distro=debian-12",
+    "upstreams": [
+     {
+      "name": "ncurses"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-45918",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2023-45918",
+    "namespace": "debian:distro:debian:12",
+    "severity": "Unknown",
+    "urls": [
+     "https://security-tracker.debian.org/tracker/CVE-2023-45918"
+    ],
+    "description": "ncurses 6.4-20230610 has a NULL pointer dereference in tgetstr in tinfo/lib_termcap.c.",
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "wont-fix"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-45918",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-45918",
+     "namespace": "nvd:cpe",
+     "severity": "Unknown",
+     "urls": [
+      "https://lists.gnu.org/archive/html/bug-ncurses/2023-06/msg00005.html",
+      "https://security.netapp.com/advisory/ntap-20240315-0006/"
+     ],
+     "description": "ncurses 6.4-20230610 has a NULL pointer dereference in tgetstr in tinfo/lib_termcap.c.",
+     "cvss": []
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "debian",
+       "version": "12"
+      },
+      "namespace": "debian:distro:debian:12",
+      "package": {
+       "name": "ncurses",
+       "version": "6.4-4"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2023-45918"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "9c8a412dc2b1cf57",
+    "name": "libtinfo6",
+    "version": "6.4-4",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/libtinfo6/copyright",
+      "layerID": "sha256:1b3a7b5bb685de2470bc4a8b608b62ba4e192c04380b48c76fea876678cc6bfd"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:1b3a7b5bb685de2470bc4a8b608b62ba4e192c04380b48c76fea876678cc6bfd"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "BSD-3-clause",
+     "MIT/X11",
+     "X11"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libtinfo6:libtinfo6:6.4-4:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/debian/libtinfo6@6.4-4?arch=amd64&upstream=ncurses&distro=debian-12",
+    "upstreams": [
+     {
+      "name": "ncurses"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2022-0543",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-0543",
+    "namespace": "nvd:cpe",
+    "severity": "Critical",
+    "urls": [
+     "http://packetstormsecurity.com/files/166885/Redis-Lua-Sandbox-Escape.html",
+     "https://bugs.debian.org/1005787",
+     "https://lists.debian.org/debian-security-announce/2022/msg00048.html",
+     "https://security.netapp.com/advisory/ntap-20220331-0004/",
+     "https://www.debian.org/security/2022/dsa-5081",
+     "https://www.ubercomp.com/posts/2022-01-20_redis_on_debian_rce"
+    ],
+    "description": "It was discovered, that redis, a persistent key-value database, due to a packaging issue, is prone to a (Debian-specific) Lua sandbox escape, which could result in remote code execution.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "2.0",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+      "metrics": {
+       "baseScore": 10,
+       "exploitabilityScore": 10,
+       "impactScore": 10
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 10,
+       "exploitabilityScore": 3.9,
+       "impactScore": 6
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "stock-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:redis:redis:6.2.14:*:*:*:*:*:*:*"
+      ],
+      "package": {
+       "name": "redis",
+       "version": "6.2.14"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2022-0543",
+      "versionConstraint": "none (unknown)",
+      "cpes": [
+       "cpe:2.3:a:redis:redis:-:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "ad6672970ca30ebe",
+    "name": "redis",
+    "version": "6.2.14",
+    "type": "binary",
+    "locations": [
+     {
+      "path": "/opt/bitnami/redis/bin/redis-server",
+      "layerID": "sha256:1b3a7b5bb685de2470bc4a8b608b62ba4e192c04380b48c76fea876678cc6bfd"
+     }
+    ],
+    "language": "",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:redislabs:redis:6.2.14:*:*:*:*:*:*:*",
+     "cpe:2.3:a:redis:redis:6.2.14:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:generic/redis@6.2.14",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2024-24791",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-24791",
+    "namespace": "nvd:cpe",
+    "severity": "High",
+    "urls": [
+     "https://go.dev/cl/591255",
+     "https://go.dev/issue/67555",
+     "https://groups.google.com/g/golang-dev/c/t0rK-qHBqzY/m/6MMoAZkMAgAJ",
+     "https://pkg.go.dev/vuln/GO-2024-2963"
+    ],
+    "description": "The net/http HTTP/1.1 client mishandled the case where a server responds to a request with an \"Expect: 100-continue\" header with a non-informational (200 or higher) status. This mishandling could leave a client connection in an invalid state, where the next request sent on the connection will fail. An attacker sending a request to a net/http/httputil.ReverseProxy proxy can exploit this mishandling to cause a denial of service by sending \"Expect: 100-continue\" requests which elicit a non-informational response from the backend. Each such request leaves the proxy with an invalid connection, and causes one subsequent request using that connection to fail.",
+    "cvss": [
+     {
+      "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+      "type": "Secondary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:golang:go:1.21.11:-:*:*:*:*:*:*"
+      ],
+      "package": {
+       "name": "stdlib",
+       "version": "go1.21.11"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2024-24791",
+      "versionConstraint": "< 1.21.12 || >= 1.22.0-0, < 1.22.5 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:golang:go:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "80b228a65094472f",
+    "name": "stdlib",
+    "version": "go1.21.11",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/opt/bitnami/common/bin/wait-for-port",
+      "layerID": "sha256:1b3a7b5bb685de2470bc4a8b608b62ba4e192c04380b48c76fea876678cc6bfd"
+     }
+    ],
+    "language": "go",
+    "licenses": [
+     "BSD-3-Clause"
+    ],
+    "cpes": [
+     "cpe:2.3:a:golang:go:1.21.11:-:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/stdlib@1.21.11",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.21.11",
+     "architecture": ""
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2005-2541",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2005-2541",
+    "namespace": "debian:distro:debian:12",
+    "severity": "Negligible",
+    "urls": [
+     "https://security-tracker.debian.org/tracker/CVE-2005-2541"
+    ],
+    "description": "Tar 1.15.1 does not properly warn the user when extracting setuid or setgid files, which may allow local users or remote attackers to gain privileges.",
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2005-2541",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2005-2541",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "http://marc.info/?l=bugtraq&m=112327628230258&w=2",
+      "https://lists.apache.org/thread.html/rc713534b10f9daeee2e0990239fa407e2118e4aa9e88a7041177497c%40%3Cissues.guacamole.apache.org%3E"
+     ],
+     "description": "Tar 1.15.1 does not properly warn the user when extracting setuid or setgid files, which may allow local users or remote attackers to gain privileges.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+       "metrics": {
+        "baseScore": 10,
+        "exploitabilityScore": 10,
+        "impactScore": 10
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "debian",
+       "version": "12"
+      },
+      "namespace": "debian:distro:debian:12",
+      "package": {
+       "name": "tar",
+       "version": "1.34+dfsg-1.2+deb12u1"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2005-2541"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "c9c105d5534f3a49",
+    "name": "tar",
+    "version": "1.34+dfsg-1.2+deb12u1",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/tar/copyright",
+      "layerID": "sha256:1b3a7b5bb685de2470bc4a8b608b62ba4e192c04380b48c76fea876678cc6bfd"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:1b3a7b5bb685de2470bc4a8b608b62ba4e192c04380b48c76fea876678cc6bfd"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-2",
+     "GPL-2+",
+     "GPL-3",
+     "GPL-3+",
+     "LGPL-3",
+     "LGPL-3+"
+    ],
+    "cpes": [
+     "cpe:2.3:a:tar:tar:1.34+dfsg-1.2+deb12u1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/debian/tar@1.34%2Bdfsg-1.2%2Bdeb12u1?arch=amd64&distro=debian-12",
+    "upstreams": []
+   }
+  }
+ ],
+ "source": {
+  "type": "image",
+  "target": {
+   "userInput": "docker.io/rapidfort/redis:latest",
+   "imageID": "sha256:eed76f80ec9f03a32e9c7b488ee24e843e17f267634ff4d3d51854a66bcfe894",
+   "manifestDigest": "sha256:f6de23f6a002a8581077aaee763e481cde813c524a5776b369124f5cd7f54b2d",
+   "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+   "tags": [
+    "rapidfort/redis:latest"
+   ],
+   "imageSize": 23701769,
+   "layers": [
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:1b3a7b5bb685de2470bc4a8b608b62ba4e192c04380b48c76fea876678cc6bfd",
+     "size": 23701769
+    }
+   ],
+   "manifest": "eyJzY2hlbWFWZXJzaW9uIjoyLCJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmRpc3RyaWJ1dGlvbi5tYW5pZmVzdC52Mitqc29uIiwiY29uZmlnIjp7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuY29udGFpbmVyLmltYWdlLnYxK2pzb24iLCJzaXplIjo2MzU5LCJkaWdlc3QiOiJzaGEyNTY6ZWVkNzZmODBlYzlmMDNhMzJlOWM3YjQ4OGVlMjRlODQzZTE3ZjI2NzYzNGZmNGQzZDUxODU0YTY2YmNmZTg5NCJ9LCJsYXllcnMiOlt7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjoyNDc3MDA0OCwiZGlnZXN0Ijoic2hhMjU2OjFiM2E3YjViYjY4NWRlMjQ3MGJjNGE4YjYwOGI2MmJhNGUxOTJjMDQzODBiNDhjNzZmZWE4NzY2NzhjYzZiZmQifV19",
+   "config": "eyJhcmNoaXRlY3R1cmUiOiJhbWQ2NCIsImNvbmZpZyI6eyJIb3N0bmFtZSI6IiIsIkRvbWFpbm5hbWUiOiIiLCJVc2VyIjoiMTAwMSIsIkF0dGFjaFN0ZGluIjpmYWxzZSwiQXR0YWNoU3Rkb3V0IjpmYWxzZSwiQXR0YWNoU3RkZXJyIjpmYWxzZSwiRXhwb3NlZFBvcnRzIjp7IjYzNzkvdGNwIjp7fX0sIlR0eSI6ZmFsc2UsIk9wZW5TdGRpbiI6ZmFsc2UsIlN0ZGluT25jZSI6ZmFsc2UsIkVudiI6WyJQQVRIPS9vcHQvYml0bmFtaS9jb21tb24vYmluOi9vcHQvYml0bmFtaS9yZWRpcy9iaW46L3Vzci9sb2NhbC9zYmluOi91c3IvbG9jYWwvYmluOi91c3Ivc2JpbjovdXNyL2Jpbjovc2JpbjovYmluIiwiSE9NRT0vIiwiT1NfQVJDSD1hbWQ2NCIsIk9TX0ZMQVZPVVI9ZGViaWFuLTEyIiwiT1NfTkFNRT1saW51eCIsIkFQUF9WRVJTSU9OPTYuMi4xNCIsIkJJVE5BTUlfQVBQX05BTUU9cmVkaXMiXSwiQ21kIjpbIi9vcHQvYml0bmFtaS9zY3JpcHRzL3JlZGlzL3J1bi5zaCJdLCJBcmdzRXNjYXBlZCI6dHJ1ZSwiSW1hZ2UiOiJzaGEyNTY6ZTgwOWI3YTVmMzNjYmYyOTAyNjk5ZWVmZmE4ZGNjMjYyZDI0OGVhMGMyYmExOGE2NTlkNzI2NGM1MDQ2NmRmYiIsIlZvbHVtZXMiOm51bGwsIldvcmtpbmdEaXIiOiIvIiwiRW50cnlwb2ludCI6WyIvb3B0L2JpdG5hbWkvc2NyaXB0cy9yZWRpcy9lbnRyeXBvaW50LnNoIl0sIk9uQnVpbGQiOm51bGwsIkxhYmVscyI6eyJjb20udm13YXJlLmNwLmFydGlmYWN0LmZsYXZvciI6InNoYTI1NjpjNTBjOTBjZmQ5ZDEyYjQ0NWIwMTFlNmFkNTI5ZjFhZDNkYWVhNDVjMjZkMjBiMDA3MzJmYWUzY2Q3MWY2YTgzIiwib3JnLm9wZW5jb250YWluZXJzLmltYWdlLmJhc2UubmFtZSI6ImRvY2tlci5pby9iaXRuYW1pL21pbmlkZWI6Ym9va3dvcm0iLCJvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UuY3JlYXRlZCI6IjIwMjQtMDYtMjlUMTc6MzY6MzhaIiwib3JnLm9wZW5jb250YWluZXJzLmltYWdlLmRlc2NyaXB0aW9uIjoiQXBwbGljYXRpb24gcGFja2FnZWQgYnkgQnJvYWRjb20sIEluYy4iLCJvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UuZG9jdW1lbnRhdGlvbiI6Imh0dHBzOi8vZ2l0aHViLmNvbS9iaXRuYW1pL2NvbnRhaW5lcnMvdHJlZS9tYWluL2JpdG5hbWkvcmVkaXMvUkVBRE1FLm1kIiwib3JnLm9wZW5jb250YWluZXJzLmltYWdlLmxpY2Vuc2VzIjoiQXBhY2hlLTIuMCIsIm9yZy5vcGVuY29udGFpbmVycy5pbWFnZS5yZWYubmFtZSI6IjYuMi4xNC1kZWJpYW4tMTItcjIxIiwib3JnLm9wZW5jb250YWluZXJzLmltYWdlLnNvdXJjZSI6Imh0dHBzOi8vZ2l0aHViLmNvbS9iaXRuYW1pL2NvbnRhaW5lcnMvdHJlZS9tYWluL2JpdG5hbWkvcmVkaXMiLCJvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UudGl0bGUiOiJyZWRpcyIsIm9yZy5vcGVuY29udGFpbmVycy5pbWFnZS52ZW5kb3IiOiJCcm9hZGNvbSwgSW5jLiIsIm9yZy5vcGVuY29udGFpbmVycy5pbWFnZS52ZXJzaW9uIjoiNi4yLjE0Iiwib3JpZ19pbWFnZV9kaWdlc3QiOiJzaGEyNTY6NzE5YTQ3MDcwMDE2MDM2ZmEyODI2NjcyYjg2M2FmYzc5MzBkY2Q1OTgwMWJjYjMxZGZmMGFjNjA0MTdlMWVkOSIsInJmX2ltYWdlX2d1aWQuN2NlZTY2ZmEtNmI0Yi00NjRiLWEwZDktNjA2NzY5MjQzNzJkIjoiN2NlZTY2ZmEtNmI0Yi00NjRiLWEwZDktNjA2NzY5MjQzNzJkIn19LCJjb250YWluZXIiOiJiNmQ2MWUxZWI5MjE5ZjVhNWM2OGIyNDllNDVhMjFmYWZkNDgxMDUwNjJkZGJhYmVkMGFiMWM1OWQ0Y2E3MzkxIiwiY29udGFpbmVyX2NvbmZpZyI6eyJIb3N0bmFtZSI6ImI2ZDYxZTFlYjkyMSIsIkRvbWFpbm5hbWUiOiIiLCJVc2VyIjoiMTAwMSIsIkF0dGFjaFN0ZGluIjpmYWxzZSwiQXR0YWNoU3Rkb3V0IjpmYWxzZSwiQXR0YWNoU3RkZXJyIjpmYWxzZSwiRXhwb3NlZFBvcnRzIjp7IjYzNzkvdGNwIjp7fX0sIlR0eSI6ZmFsc2UsIk9wZW5TdGRpbiI6ZmFsc2UsIlN0ZGluT25jZSI6ZmFsc2UsIkVudiI6WyJQQVRIPS9vcHQvYml0bmFtaS9jb21tb24vYmluOi9vcHQvYml0bmFtaS9yZWRpcy9iaW46L3Vzci9sb2NhbC9zYmluOi91c3IvbG9jYWwvYmluOi91c3Ivc2JpbjovdXNyL2Jpbjovc2JpbjovYmluIiwiSE9NRT0vIiwiT1NfQVJDSD1hbWQ2NCIsIk9TX0ZMQVZPVVI9ZGViaWFuLTEyIiwiT1NfTkFNRT1saW51eCIsIkFQUF9WRVJTSU9OPTYuMi4xNCIsIkJJVE5BTUlfQVBQX05BTUU9cmVkaXMiXSwiQ21kIjpbIi9iaW4vc2giLCItYyIsIiMobm9wKSAiLCJMQUJFTCBvcmlnX2ltYWdlX2RpZ2VzdD1zaGEyNTY6NzE5YTQ3MDcwMDE2MDM2ZmEyODI2NjcyYjg2M2FmYzc5MzBkY2Q1OTgwMWJjYjMxZGZmMGFjNjA0MTdlMWVkOSJdLCJBcmdzRXNjYXBlZCI6dHJ1ZSwiSW1hZ2UiOiJzaGEyNTY6ZTgwOWI3YTVmMzNjYmYyOTAyNjk5ZWVmZmE4ZGNjMjYyZDI0OGVhMGMyYmExOGE2NTlkNzI2NGM1MDQ2NmRmYiIsIlZvbHVtZXMiOm51bGwsIldvcmtpbmdEaXIiOiIvIiwiRW50cnlwb2ludCI6WyIvb3B0L2JpdG5hbWkvc2NyaXB0cy9yZWRpcy9lbnRyeXBvaW50LnNoIl0sIk9uQnVpbGQiOm51bGwsIkxhYmVscyI6eyJjb20udm13YXJlLmNwLmFydGlmYWN0LmZsYXZvciI6InNoYTI1NjpjNTBjOTBjZmQ5ZDEyYjQ0NWIwMTFlNmFkNTI5ZjFhZDNkYWVhNDVjMjZkMjBiMDA3MzJmYWUzY2Q3MWY2YTgzIiwib3JnLm9wZW5jb250YWluZXJzLmltYWdlLmJhc2UubmFtZSI6ImRvY2tlci5pby9iaXRuYW1pL21pbmlkZWI6Ym9va3dvcm0iLCJvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UuY3JlYXRlZCI6IjIwMjQtMDYtMjlUMTc6MzY6MzhaIiwib3JnLm9wZW5jb250YWluZXJzLmltYWdlLmRlc2NyaXB0aW9uIjoiQXBwbGljYXRpb24gcGFja2FnZWQgYnkgQnJvYWRjb20sIEluYy4iLCJvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UuZG9jdW1lbnRhdGlvbiI6Imh0dHBzOi8vZ2l0aHViLmNvbS9iaXRuYW1pL2NvbnRhaW5lcnMvdHJlZS9tYWluL2JpdG5hbWkvcmVkaXMvUkVBRE1FLm1kIiwib3JnLm9wZW5jb250YWluZXJzLmltYWdlLmxpY2Vuc2VzIjoiQXBhY2hlLTIuMCIsIm9yZy5vcGVuY29udGFpbmVycy5pbWFnZS5yZWYubmFtZSI6IjYuMi4xNC1kZWJpYW4tMTItcjIxIiwib3JnLm9wZW5jb250YWluZXJzLmltYWdlLnNvdXJjZSI6Imh0dHBzOi8vZ2l0aHViLmNvbS9iaXRuYW1pL2NvbnRhaW5lcnMvdHJlZS9tYWluL2JpdG5hbWkvcmVkaXMiLCJvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UudGl0bGUiOiJyZWRpcyIsIm9yZy5vcGVuY29udGFpbmVycy5pbWFnZS52ZW5kb3IiOiJCcm9hZGNvbSwgSW5jLiIsIm9yZy5vcGVuY29udGFpbmVycy5pbWFnZS52ZXJzaW9uIjoiNi4yLjE0Iiwib3JpZ19pbWFnZV9kaWdlc3QiOiJzaGEyNTY6NzE5YTQ3MDcwMDE2MDM2ZmEyODI2NjcyYjg2M2FmYzc5MzBkY2Q1OTgwMWJjYjMxZGZmMGFjNjA0MTdlMWVkOSIsInJmX2ltYWdlX2d1aWQuN2NlZTY2ZmEtNmI0Yi00NjRiLWEwZDktNjA2NzY5MjQzNzJkIjoiN2NlZTY2ZmEtNmI0Yi00NjRiLWEwZDktNjA2NzY5MjQzNzJkIn19LCJjcmVhdGVkIjoiMjAyNC0wNi0yOVQyMToxNTo0OS4wOTkyNjc4NzdaIiwiZG9ja2VyX3ZlcnNpb24iOiIyNi4xLjMiLCJoaXN0b3J5IjpbeyJjcmVhdGVkIjoiMjAyNC0wNi0yOVQyMToxNTo0MS40MDkzMTY0OVoiLCJjcmVhdGVkX2J5IjoiQVJHIFJGX1JGSUQ9N2NlZTY2ZmEtNmI0Yi00NjRiLWEwZDktNjA2NzY5MjQzNzJkIiwiY29tbWVudCI6ImJ1aWxka2l0LmRvY2tlcmZpbGUudjAiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyNC0wNi0yOVQyMToxNTo0MS40MDkzMTY0OVoiLCJjcmVhdGVkX2J5IjoiQ09QWSAvIC8gIyBidWlsZGtpdCIsImNvbW1lbnQiOiJidWlsZGtpdC5kb2NrZXJmaWxlLnYwIn0seyJjcmVhdGVkIjoiMjAyNC0wNi0yOVQyMToxNTo0MS40MDkzMTY0OVoiLCJjcmVhdGVkX2J5IjoiTEFCRUwgcmZfaW1hZ2VfZ3VpZC43Y2VlNjZmYS02YjRiLTQ2NGItYTBkOS02MDY3NjkyNDM3MmQ9N2NlZTY2ZmEtNmI0Yi00NjRiLWEwZDktNjA2NzY5MjQzNzJkIiwiY29tbWVudCI6ImJ1aWxka2l0LmRvY2tlcmZpbGUudjAiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyNC0wNi0yOVQyMToxNTo0MS40MDkzMTY0OVoiLCJjcmVhdGVkX2J5IjoiTEFCRUwgY29tLnZtd2FyZS5jcC5hcnRpZmFjdC5mbGF2b3I9c2hhMjU2OmM1MGM5MGNmZDlkMTJiNDQ1YjAxMWU2YWQ1MjlmMWFkM2RhZWE0NWMyNmQyMGIwMDczMmZhZTNjZDcxZjZhODMgb3JnLm9wZW5jb250YWluZXJzLmltYWdlLmJhc2UubmFtZT1kb2NrZXIuaW8vYml0bmFtaS9taW5pZGViOmJvb2t3b3JtIG9yZy5vcGVuY29udGFpbmVycy5pbWFnZS5jcmVhdGVkPTIwMjQtMDYtMjlUMTc6MzY6MzhaIG9yZy5vcGVuY29udGFpbmVycy5pbWFnZS5kZXNjcmlwdGlvbj1BcHBsaWNhdGlvbiBwYWNrYWdlZCBieSBCcm9hZGNvbSwgSW5jLiBvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UuZG9jdW1lbnRhdGlvbj1odHRwczovL2dpdGh1Yi5jb20vYml0bmFtaS9jb250YWluZXJzL3RyZWUvbWFpbi9iaXRuYW1pL3JlZGlzL1JFQURNRS5tZCBvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UubGljZW5zZXM9QXBhY2hlLTIuMCBvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UucmVmLm5hbWU9Ni4yLjE0LWRlYmlhbi0xMi1yMjEgb3JnLm9wZW5jb250YWluZXJzLmltYWdlLnNvdXJjZT1odHRwczovL2dpdGh1Yi5jb20vYml0bmFtaS9jb250YWluZXJzL3RyZWUvbWFpbi9iaXRuYW1pL3JlZGlzIG9yZy5vcGVuY29udGFpbmVycy5pbWFnZS50aXRsZT1yZWRpcyBvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UudmVuZG9yPUJyb2FkY29tLCBJbmMuIG9yZy5vcGVuY29udGFpbmVycy5pbWFnZS52ZXJzaW9uPTYuMi4xNCIsImNvbW1lbnQiOiJidWlsZGtpdC5kb2NrZXJmaWxlLnYwIiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjQtMDYtMjlUMjE6MTU6NDEuNDA5MzE2NDlaIiwiY3JlYXRlZF9ieSI6IkVOViBQQVRIPS9vcHQvYml0bmFtaS9jb21tb24vYmluOi9vcHQvYml0bmFtaS9yZWRpcy9iaW46L3Vzci9sb2NhbC9zYmluOi91c3IvbG9jYWwvYmluOi91c3Ivc2JpbjovdXNyL2Jpbjovc2JpbjovYmluIEhPTUU9LyBPU19BUkNIPWFtZDY0IE9TX0ZMQVZPVVI9ZGViaWFuLTEyIE9TX05BTUU9bGludXggQVBQX1ZFUlNJT049Ni4yLjE0IEJJVE5BTUlfQVBQX05BTUU9cmVkaXMiLCJjb21tZW50IjoiYnVpbGRraXQuZG9ja2VyZmlsZS52MCIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDI0LTA2LTI5VDIxOjE1OjQxLjQwOTMxNjQ5WiIsImNyZWF0ZWRfYnkiOiJFWFBPU0UgbWFwWzYzNzkvdGNwOnt9XSIsImNvbW1lbnQiOiJidWlsZGtpdC5kb2NrZXJmaWxlLnYwIiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjQtMDYtMjlUMjE6MTU6NDEuNDA5MzE2NDlaIiwiY3JlYXRlZF9ieSI6IlVTRVIgMTAwMSIsImNvbW1lbnQiOiJidWlsZGtpdC5kb2NrZXJmaWxlLnYwIiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjQtMDYtMjlUMjE6MTU6NDEuNDA5MzE2NDlaIiwiY3JlYXRlZF9ieSI6IkVOVFJZUE9JTlQgW1wiL29wdC9iaXRuYW1pL3NjcmlwdHMvcmVkaXMvZW50cnlwb2ludC5zaFwiXSIsImNvbW1lbnQiOiJidWlsZGtpdC5kb2NrZXJmaWxlLnYwIiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjQtMDYtMjlUMjE6MTU6NDEuNDA5MzE2NDlaIiwiY3JlYXRlZF9ieSI6IkNNRCBbXCIvb3B0L2JpdG5hbWkvc2NyaXB0cy9yZWRpcy9ydW4uc2hcIl0iLCJjb21tZW50IjoiYnVpbGRraXQuZG9ja2VyZmlsZS52MCIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDI0LTA2LTI5VDIxOjE1OjQyLjQ0MjkzNzI1NloiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgIExBQkVMIG9yaWdfaW1hZ2VfZGlnZXN0PXNoYTI1Njo3MTlhNDcwNzAwMTYwMzZmYTI4MjY2NzJiODYzYWZjNzkzMGRjZDU5ODAxYmNiMzFkZmYwYWM2MDQxN2UxZWQ5IiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjQtMDYtMjlUMjE6MTU6NDkuMDk5MjY3ODc3WiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSAgTEFCRUwgb3JpZ19pbWFnZV9kaWdlc3Q9c2hhMjU2OjcxOWE0NzA3MDAxNjAzNmZhMjgyNjY3MmI4NjNhZmM3OTMwZGNkNTk4MDFiY2IzMWRmZjBhYzYwNDE3ZTFlZDkiLCJlbXB0eV9sYXllciI6dHJ1ZX1dLCJvcyI6ImxpbnV4Iiwicm9vdGZzIjp7InR5cGUiOiJsYXllcnMiLCJkaWZmX2lkcyI6WyJzaGEyNTY6MWIzYTdiNWJiNjg1ZGUyNDcwYmM0YThiNjA4YjYyYmE0ZTE5MmMwNDM4MGI0OGM3NmZlYTg3NjY3OGNjNmJmZCJdfX0=",
+   "repoDigests": [
+    "rapidfort/redis@sha256:a785ebdf95347438f32bc445f57998a67a85ac5de8e88eeb3f2a01b15caf7a3b"
+   ],
+   "architecture": "amd64",
+   "os": "linux",
+   "labels": {
+    "com.vmware.cp.artifact.flavor": "sha256:c50c90cfd9d12b445b011e6ad529f1ad3daea45c26d20b00732fae3cd71f6a83",
+    "org.opencontainers.image.base.name": "docker.io/bitnami/minideb:bookworm",
+    "org.opencontainers.image.created": "2024-06-29T17:36:38Z",
+    "org.opencontainers.image.description": "Application packaged by Broadcom, Inc.",
+    "org.opencontainers.image.documentation": "https://github.com/bitnami/containers/tree/main/bitnami/redis/README.md",
+    "org.opencontainers.image.licenses": "Apache-2.0",
+    "org.opencontainers.image.ref.name": "6.2.14-debian-12-r21",
+    "org.opencontainers.image.source": "https://github.com/bitnami/containers/tree/main/bitnami/redis",
+    "org.opencontainers.image.title": "redis",
+    "org.opencontainers.image.vendor": "Broadcom, Inc.",
+    "org.opencontainers.image.version": "6.2.14",
+    "orig_image_digest": "sha256:719a47070016036fa2826672b863afc7930dcd59801bcb31dff0ac60417e1ed9",
+    "rf_image_guid.7cee66fa-6b4b-464b-a0d9-60676924372d": "7cee66fa-6b4b-464b-a0d9-60676924372d"
+   }
+  }
+ },
+ "distro": {
+  "name": "debian",
+  "version": "12",
+  "idLike": []
+ },
+ "descriptor": {
+  "name": "grype",
+  "version": "0.79.3",
+  "configuration": {
+   "output": [
+    "json"
+   ],
+   "file": "",
+   "distro": "",
+   "add-cpes-if-none": false,
+   "output-template-file": "",
+   "check-for-app-update": true,
+   "only-fixed": false,
+   "only-notfixed": false,
+   "ignore-wontfix": "",
+   "platform": "",
+   "search": {
+    "scope": "squashed",
+    "unindexed-archives": false,
+    "indexed-archives": true
+   },
+   "ignore": [
+    {
+     "vulnerability": "",
+     "reason": "",
+     "namespace": "",
+     "fix-state": "",
+     "package": {
+      "name": "kernel-headers",
+      "version": "",
+      "language": "",
+      "type": "rpm",
+      "location": "",
+      "upstream-name": "kernel"
+     },
+     "vex-status": "",
+     "vex-justification": "",
+     "match-type": "exact-indirect-match"
+    },
+    {
+     "vulnerability": "",
+     "reason": "",
+     "namespace": "",
+     "fix-state": "",
+     "package": {
+      "name": "linux-headers-.*",
+      "version": "",
+      "language": "",
+      "type": "deb",
+      "location": "",
+      "upstream-name": "linux"
+     },
+     "vex-status": "",
+     "vex-justification": "",
+     "match-type": "exact-indirect-match"
+    },
+    {
+     "vulnerability": "",
+     "reason": "",
+     "namespace": "",
+     "fix-state": "",
+     "package": {
+      "name": "linux-libc-dev",
+      "version": "",
+      "language": "",
+      "type": "deb",
+      "location": "",
+      "upstream-name": "linux"
+     },
+     "vex-status": "",
+     "vex-justification": "",
+     "match-type": "exact-indirect-match"
+    }
+   ],
+   "exclude": [],
+   "db": {
+    "cache-dir": "/Users/paulgibert/Library/Caches/grype/db",
+    "update-url": "https://toolbox-data.anchore.io/grype/databases/listing.json",
+    "ca-cert": "",
+    "auto-update": true,
+    "validate-by-hash-on-start": false,
+    "validate-age": true,
+    "max-allowed-built-age": 432000000000000,
+    "update-available-timeout": 30000000000,
+    "update-download-timeout": 120000000000
+   },
+   "externalSources": {
+    "enable": false,
+    "maven": {
+     "searchUpstreamBySha1": true,
+     "baseUrl": "https://search.maven.org/solrsearch/select"
+    }
+   },
+   "match": {
+    "java": {
+     "using-cpes": false
+    },
+    "dotnet": {
+     "using-cpes": false
+    },
+    "golang": {
+     "using-cpes": false,
+     "always-use-cpe-for-stdlib": true,
+     "allow-main-module-pseudo-version-comparison": false
+    },
+    "javascript": {
+     "using-cpes": false
+    },
+    "python": {
+     "using-cpes": false
+    },
+    "ruby": {
+     "using-cpes": false
+    },
+    "rust": {
+     "using-cpes": false
+    },
+    "stock": {
+     "using-cpes": true
+    }
+   },
+   "fail-on-severity": "",
+   "registry": {
+    "insecure-skip-tls-verify": false,
+    "insecure-use-http": false,
+    "auth": null,
+    "ca-cert": ""
+   },
+   "show-suppressed": false,
+   "by-cve": false,
+   "name": "",
+   "default-image-pull-source": "",
+   "vex-documents": [],
+   "vex-add": [],
+   "match-upstream-kernel-headers": false
+  },
+  "db": {
+   "built": "2024-07-23T01:30:37Z",
+   "schemaVersion": 5,
+   "location": "/Users/paulgibert/Library/Caches/grype/db/5",
+   "checksum": "sha256:972d0f51e180d424f3fff2637a1559e06940f35eda6bd03593be2a3db8f28971",
+   "error": null
+  },
+  "timestamp": "2024-07-23T20:52:09.797434-04:00"
+ }
+}

@@ -1,0 +1,946 @@
+{
+ "matches": [
+  {
+   "vulnerability": {
+    "id": "CVE-2024-5535",
+    "dataSource": "https://www.cve.org/CVERecord?id=CVE-2024-5535",
+    "namespace": "alpine:distro:alpine:3.17",
+    "severity": "Critical",
+    "urls": [
+     "https://www.cve.org/CVERecord?id=CVE-2024-5535"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "3.0.14-r0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-5535",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-5535",
+     "namespace": "nvd:cpe",
+     "severity": "Critical",
+     "urls": [
+      "http://www.openwall.com/lists/oss-security/2024/06/27/1",
+      "http://www.openwall.com/lists/oss-security/2024/06/28/4",
+      "https://github.com/openssl/openssl/commit/4ada436a1946cbb24db5ab4ca082b69c1bc10f37",
+      "https://github.com/openssl/openssl/commit/99fb785a5f85315b95288921a321a935ea29a51e",
+      "https://github.com/openssl/openssl/commit/cf6f91f6121f4db167405db2f0de410a456f260c",
+      "https://github.com/openssl/openssl/commit/e86ac436f0bd54d4517745483e2315650fae7b2c",
+      "https://github.openssl.org/openssl/extended-releases/commit/9947251413065a05189a63c9b7a6c1d4e224c21c",
+      "https://github.openssl.org/openssl/extended-releases/commit/b78ec0824da857223486660177d3b1f255c65d87",
+      "https://security.netapp.com/advisory/ntap-20240712-0005/",
+      "https://www.openssl.org/news/secadv/20240627.txt"
+     ],
+     "description": "Issue summary: Calling the OpenSSL API function SSL_select_next_proto with an\nempty supported client protocols buffer may cause a crash or memory contents to\nbe sent to the peer.\n\nImpact summary: A buffer overread can have a range of potential consequences\nsuch as unexpected application beahviour or a crash. In particular this issue\ncould result in up to 255 bytes of arbitrary private data from memory being sent\nto the peer leading to a loss of confidentiality. However, only applications\nthat directly call the SSL_select_next_proto function with a 0 length list of\nsupported client protocols are affected by this issue. This would normally never\nbe a valid scenario and is typically not under attacker control but may occur by\naccident in the case of a configuration or programming error in the calling\napplication.\n\nThe OpenSSL API function SSL_select_next_proto is typically used by TLS\napplications that support ALPN (Application Layer Protocol Negotiation) or NPN\n(Next Protocol Negotiation). NPN is older, was never standardised and\nis deprecated in favour of ALPN. We believe that ALPN is significantly more\nwidely deployed than NPN. The SSL_select_next_proto function accepts a list of\nprotocols from the server and a list of protocols from the client and returns\nthe first protocol that appears in the server list that also appears in the\nclient list. In the case of no overlap between the two lists it returns the\nfirst item in the client list. In either case it will signal whether an overlap\nbetween the two lists was found. In the case where SSL_select_next_proto is\ncalled with a zero length client list it fails to notice this condition and\nreturns the memory immediately following the client list pointer (and reports\nthat there was no overlap in the lists).\n\nThis function is typically called from a server side application callback for\nALPN or a client side application callback for NPN. In the case of ALPN the list\nof protocols supplied by the client is guaranteed by libssl to never be zero in\nlength. The list of server protocols comes from the application and should never\nnormally be expected to be of zero length. In this case if the\nSSL_select_next_proto function has been called as expected (with the list\nsupplied by the client passed in the client/client_len parameters), then the\napplication will not be vulnerable to this issue. If the application has\naccidentally been configured with a zero length server list, and has\naccidentally passed that zero length server list in the client/client_len\nparameters, and has additionally failed to correctly handle a \"no overlap\"\nresponse (which would normally result in a handshake failure in ALPN) then it\nwill be vulnerable to this problem.\n\nIn the case of NPN, the protocol permits the client to opportunistically select\na protocol when there is no overlap. OpenSSL returns the first client protocol\nin the no overlap case in support of this. The list of client protocols comes\nfrom the application and should never normally be expected to be of zero length.\nHowever if the SSL_select_next_proto function is accidentally called with a\nclient_len of 0 then an invalid memory pointer will be returned instead. If the\napplication uses this output as the opportunistic protocol then the loss of\nconfidentiality will occur.\n\nThis issue has been assessed as Low severity because applications are most\nlikely to be vulnerable if they are using NPN instead of ALPN - but NPN is not\nwidely used. It also requires an application configuration or programming error.\nFinally, this issue would not typically be under attacker control making active\nexploitation unlikely.\n\nThe FIPS modules in 3.3, 3.2, 3.1 and 3.0 are not affected by this issue.\n\nDue to the low severity of this issue we are not issuing new releases of\nOpenSSL at this time. The fix will be included in the next releases when they\nbecome available.",
+     "cvss": [
+      {
+       "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H",
+       "metrics": {
+        "baseScore": 9.1,
+        "exploitabilityScore": 3.9,
+        "impactScore": 5.2
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "alpine",
+       "version": "3.17.8"
+      },
+      "namespace": "alpine:distro:alpine:3.17",
+      "package": {
+       "name": "openssl",
+       "version": "3.0.13-r0"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 3.0.14-r0 (apk)",
+      "vulnerabilityID": "CVE-2024-5535"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "816d092358ed9c7f",
+    "name": "libcrypto3",
+    "version": "3.0.13-r0",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:1a9e271d8017c040c9eb4c3cea1ba766faee644eff7d6e524f37a30d600cf4b6"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "Apache-2.0"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libcrypto3:libcrypto3:3.0.13-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libcrypto3:libcrypto:3.0.13-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libcrypto:libcrypto3:3.0.13-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libcrypto:libcrypto:3.0.13-r0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/libcrypto3@3.0.13-r0?arch=aarch64&upstream=openssl&distro=alpine-3.17.8",
+    "upstreams": [
+     {
+      "name": "openssl"
+     }
+    ],
+    "metadataType": "ApkMetadata",
+    "metadata": {
+     "files": [
+      {
+       "path": "/etc"
+      },
+      {
+       "path": "/etc/ssl"
+      },
+      {
+       "path": "/etc/ssl/ct_log_list.cnf"
+      },
+      {
+       "path": "/etc/ssl/ct_log_list.cnf.dist"
+      },
+      {
+       "path": "/etc/ssl/openssl.cnf"
+      },
+      {
+       "path": "/etc/ssl/openssl.cnf.dist"
+      },
+      {
+       "path": "/etc/ssl/certs"
+      },
+      {
+       "path": "/etc/ssl/misc"
+      },
+      {
+       "path": "/etc/ssl/misc/CA.pl"
+      },
+      {
+       "path": "/etc/ssl/misc/tsget"
+      },
+      {
+       "path": "/etc/ssl/misc/tsget.pl"
+      },
+      {
+       "path": "/etc/ssl/private"
+      },
+      {
+       "path": "/lib"
+      },
+      {
+       "path": "/lib/libcrypto.so.3"
+      },
+      {
+       "path": "/usr"
+      },
+      {
+       "path": "/usr/lib"
+      },
+      {
+       "path": "/usr/lib/libcrypto.so.3"
+      },
+      {
+       "path": "/usr/lib/engines-3"
+      },
+      {
+       "path": "/usr/lib/engines-3/afalg.so"
+      },
+      {
+       "path": "/usr/lib/engines-3/capi.so"
+      },
+      {
+       "path": "/usr/lib/engines-3/loader_attic.so"
+      },
+      {
+       "path": "/usr/lib/engines-3/padlock.so"
+      },
+      {
+       "path": "/usr/lib/ossl-modules"
+      },
+      {
+       "path": "/usr/lib/ossl-modules/legacy.so"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2024-4741",
+    "dataSource": "https://www.cve.org/CVERecord?id=CVE-2024-4741",
+    "namespace": "alpine:distro:alpine:3.17",
+    "severity": "Unknown",
+    "urls": [
+     "https://www.cve.org/CVERecord?id=CVE-2024-4741"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "3.0.14-r0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "alpine",
+       "version": "3.17.8"
+      },
+      "namespace": "alpine:distro:alpine:3.17",
+      "package": {
+       "name": "openssl",
+       "version": "3.0.13-r0"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 3.0.14-r0 (apk)",
+      "vulnerabilityID": "CVE-2024-4741"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "816d092358ed9c7f",
+    "name": "libcrypto3",
+    "version": "3.0.13-r0",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:1a9e271d8017c040c9eb4c3cea1ba766faee644eff7d6e524f37a30d600cf4b6"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "Apache-2.0"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libcrypto3:libcrypto3:3.0.13-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libcrypto3:libcrypto:3.0.13-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libcrypto:libcrypto3:3.0.13-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libcrypto:libcrypto:3.0.13-r0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/libcrypto3@3.0.13-r0?arch=aarch64&upstream=openssl&distro=alpine-3.17.8",
+    "upstreams": [
+     {
+      "name": "openssl"
+     }
+    ],
+    "metadataType": "ApkMetadata",
+    "metadata": {
+     "files": [
+      {
+       "path": "/etc"
+      },
+      {
+       "path": "/etc/ssl"
+      },
+      {
+       "path": "/etc/ssl/ct_log_list.cnf"
+      },
+      {
+       "path": "/etc/ssl/ct_log_list.cnf.dist"
+      },
+      {
+       "path": "/etc/ssl/openssl.cnf"
+      },
+      {
+       "path": "/etc/ssl/openssl.cnf.dist"
+      },
+      {
+       "path": "/etc/ssl/certs"
+      },
+      {
+       "path": "/etc/ssl/misc"
+      },
+      {
+       "path": "/etc/ssl/misc/CA.pl"
+      },
+      {
+       "path": "/etc/ssl/misc/tsget"
+      },
+      {
+       "path": "/etc/ssl/misc/tsget.pl"
+      },
+      {
+       "path": "/etc/ssl/private"
+      },
+      {
+       "path": "/lib"
+      },
+      {
+       "path": "/lib/libcrypto.so.3"
+      },
+      {
+       "path": "/usr"
+      },
+      {
+       "path": "/usr/lib"
+      },
+      {
+       "path": "/usr/lib/libcrypto.so.3"
+      },
+      {
+       "path": "/usr/lib/engines-3"
+      },
+      {
+       "path": "/usr/lib/engines-3/afalg.so"
+      },
+      {
+       "path": "/usr/lib/engines-3/capi.so"
+      },
+      {
+       "path": "/usr/lib/engines-3/loader_attic.so"
+      },
+      {
+       "path": "/usr/lib/engines-3/padlock.so"
+      },
+      {
+       "path": "/usr/lib/ossl-modules"
+      },
+      {
+       "path": "/usr/lib/ossl-modules/legacy.so"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2024-5535",
+    "dataSource": "https://www.cve.org/CVERecord?id=CVE-2024-5535",
+    "namespace": "alpine:distro:alpine:3.17",
+    "severity": "Critical",
+    "urls": [
+     "https://www.cve.org/CVERecord?id=CVE-2024-5535"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "3.0.14-r0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-5535",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-5535",
+     "namespace": "nvd:cpe",
+     "severity": "Critical",
+     "urls": [
+      "http://www.openwall.com/lists/oss-security/2024/06/27/1",
+      "http://www.openwall.com/lists/oss-security/2024/06/28/4",
+      "https://github.com/openssl/openssl/commit/4ada436a1946cbb24db5ab4ca082b69c1bc10f37",
+      "https://github.com/openssl/openssl/commit/99fb785a5f85315b95288921a321a935ea29a51e",
+      "https://github.com/openssl/openssl/commit/cf6f91f6121f4db167405db2f0de410a456f260c",
+      "https://github.com/openssl/openssl/commit/e86ac436f0bd54d4517745483e2315650fae7b2c",
+      "https://github.openssl.org/openssl/extended-releases/commit/9947251413065a05189a63c9b7a6c1d4e224c21c",
+      "https://github.openssl.org/openssl/extended-releases/commit/b78ec0824da857223486660177d3b1f255c65d87",
+      "https://security.netapp.com/advisory/ntap-20240712-0005/",
+      "https://www.openssl.org/news/secadv/20240627.txt"
+     ],
+     "description": "Issue summary: Calling the OpenSSL API function SSL_select_next_proto with an\nempty supported client protocols buffer may cause a crash or memory contents to\nbe sent to the peer.\n\nImpact summary: A buffer overread can have a range of potential consequences\nsuch as unexpected application beahviour or a crash. In particular this issue\ncould result in up to 255 bytes of arbitrary private data from memory being sent\nto the peer leading to a loss of confidentiality. However, only applications\nthat directly call the SSL_select_next_proto function with a 0 length list of\nsupported client protocols are affected by this issue. This would normally never\nbe a valid scenario and is typically not under attacker control but may occur by\naccident in the case of a configuration or programming error in the calling\napplication.\n\nThe OpenSSL API function SSL_select_next_proto is typically used by TLS\napplications that support ALPN (Application Layer Protocol Negotiation) or NPN\n(Next Protocol Negotiation). NPN is older, was never standardised and\nis deprecated in favour of ALPN. We believe that ALPN is significantly more\nwidely deployed than NPN. The SSL_select_next_proto function accepts a list of\nprotocols from the server and a list of protocols from the client and returns\nthe first protocol that appears in the server list that also appears in the\nclient list. In the case of no overlap between the two lists it returns the\nfirst item in the client list. In either case it will signal whether an overlap\nbetween the two lists was found. In the case where SSL_select_next_proto is\ncalled with a zero length client list it fails to notice this condition and\nreturns the memory immediately following the client list pointer (and reports\nthat there was no overlap in the lists).\n\nThis function is typically called from a server side application callback for\nALPN or a client side application callback for NPN. In the case of ALPN the list\nof protocols supplied by the client is guaranteed by libssl to never be zero in\nlength. The list of server protocols comes from the application and should never\nnormally be expected to be of zero length. In this case if the\nSSL_select_next_proto function has been called as expected (with the list\nsupplied by the client passed in the client/client_len parameters), then the\napplication will not be vulnerable to this issue. If the application has\naccidentally been configured with a zero length server list, and has\naccidentally passed that zero length server list in the client/client_len\nparameters, and has additionally failed to correctly handle a \"no overlap\"\nresponse (which would normally result in a handshake failure in ALPN) then it\nwill be vulnerable to this problem.\n\nIn the case of NPN, the protocol permits the client to opportunistically select\na protocol when there is no overlap. OpenSSL returns the first client protocol\nin the no overlap case in support of this. The list of client protocols comes\nfrom the application and should never normally be expected to be of zero length.\nHowever if the SSL_select_next_proto function is accidentally called with a\nclient_len of 0 then an invalid memory pointer will be returned instead. If the\napplication uses this output as the opportunistic protocol then the loss of\nconfidentiality will occur.\n\nThis issue has been assessed as Low severity because applications are most\nlikely to be vulnerable if they are using NPN instead of ALPN - but NPN is not\nwidely used. It also requires an application configuration or programming error.\nFinally, this issue would not typically be under attacker control making active\nexploitation unlikely.\n\nThe FIPS modules in 3.3, 3.2, 3.1 and 3.0 are not affected by this issue.\n\nDue to the low severity of this issue we are not issuing new releases of\nOpenSSL at this time. The fix will be included in the next releases when they\nbecome available.",
+     "cvss": [
+      {
+       "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H",
+       "metrics": {
+        "baseScore": 9.1,
+        "exploitabilityScore": 3.9,
+        "impactScore": 5.2
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "alpine",
+       "version": "3.17.8"
+      },
+      "namespace": "alpine:distro:alpine:3.17",
+      "package": {
+       "name": "openssl",
+       "version": "3.0.13-r0"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 3.0.14-r0 (apk)",
+      "vulnerabilityID": "CVE-2024-5535"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "670450fb88f3f6ba",
+    "name": "libssl3",
+    "version": "3.0.13-r0",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:1a9e271d8017c040c9eb4c3cea1ba766faee644eff7d6e524f37a30d600cf4b6"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "Apache-2.0"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libssl3:libssl3:3.0.13-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libssl3:libssl:3.0.13-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libssl:libssl3:3.0.13-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libssl:libssl:3.0.13-r0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/libssl3@3.0.13-r0?arch=aarch64&upstream=openssl&distro=alpine-3.17.8",
+    "upstreams": [
+     {
+      "name": "openssl"
+     }
+    ],
+    "metadataType": "ApkMetadata",
+    "metadata": {
+     "files": [
+      {
+       "path": "/lib"
+      },
+      {
+       "path": "/lib/libssl.so.3"
+      },
+      {
+       "path": "/usr"
+      },
+      {
+       "path": "/usr/lib"
+      },
+      {
+       "path": "/usr/lib/libssl.so.3"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2024-4741",
+    "dataSource": "https://www.cve.org/CVERecord?id=CVE-2024-4741",
+    "namespace": "alpine:distro:alpine:3.17",
+    "severity": "Unknown",
+    "urls": [
+     "https://www.cve.org/CVERecord?id=CVE-2024-4741"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "3.0.14-r0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "alpine",
+       "version": "3.17.8"
+      },
+      "namespace": "alpine:distro:alpine:3.17",
+      "package": {
+       "name": "openssl",
+       "version": "3.0.13-r0"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 3.0.14-r0 (apk)",
+      "vulnerabilityID": "CVE-2024-4741"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "670450fb88f3f6ba",
+    "name": "libssl3",
+    "version": "3.0.13-r0",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:1a9e271d8017c040c9eb4c3cea1ba766faee644eff7d6e524f37a30d600cf4b6"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "Apache-2.0"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libssl3:libssl3:3.0.13-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libssl3:libssl:3.0.13-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libssl:libssl3:3.0.13-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libssl:libssl:3.0.13-r0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/libssl3@3.0.13-r0?arch=aarch64&upstream=openssl&distro=alpine-3.17.8",
+    "upstreams": [
+     {
+      "name": "openssl"
+     }
+    ],
+    "metadataType": "ApkMetadata",
+    "metadata": {
+     "files": [
+      {
+       "path": "/lib"
+      },
+      {
+       "path": "/lib/libssl.so.3"
+      },
+      {
+       "path": "/usr"
+      },
+      {
+       "path": "/usr/lib"
+      },
+      {
+       "path": "/usr/lib/libssl.so.3"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-vg3r-rm7w-2xgh",
+    "dataSource": "https://github.com/advisories/GHSA-vg3r-rm7w-2xgh",
+    "namespace": "github:language:ruby",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-vg3r-rm7w-2xgh"
+    ],
+    "description": "REXML contains a denial of service vulnerability",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+      "metrics": {
+       "baseScore": 5.3,
+       "exploitabilityScore": 3.9,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "3.2.7"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-35176",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-35176",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://github.com/ruby/rexml/commit/4325835f92f3f142ebd91a3fdba4e1f1ab7f1cfb",
+      "https://github.com/ruby/rexml/security/advisories/GHSA-vg3r-rm7w-2xgh",
+      "https://www.ruby-lang.org/en/news/2024/05/16/dos-rexml-cve-2024-35176"
+     ],
+     "description": " REXML is an XML toolkit for Ruby. The REXML gem before 3.2.6 has a denial of service vulnerability when it parses an XML that has many `<`s in an attribute value. Those who need to parse untrusted XMLs may be impacted to this vulnerability. The REXML gem 3.2.7 or later include the patch to fix this vulnerability. As a workaround, don't parse untrusted XMLs.",
+     "cvss": [
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+       "metrics": {
+        "baseScore": 5.3,
+        "exploitabilityScore": 3.9,
+        "impactScore": 1.4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "ruby-gem-matcher",
+     "searchedBy": {
+      "language": "ruby",
+      "namespace": "github:language:ruby",
+      "package": {
+       "name": "rexml",
+       "version": "3.2.6"
+      }
+     },
+     "found": {
+      "versionConstraint": "<3.2.7 (unknown)",
+      "vulnerabilityID": "GHSA-vg3r-rm7w-2xgh"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "8bcb202fe2316a28",
+    "name": "rexml",
+    "version": "3.2.6",
+    "type": "gem",
+    "locations": [
+     {
+      "path": "/usr/lib/ruby/gems/3.1.0/specifications/rexml-3.2.6.gemspec",
+      "layerID": "sha256:1a9e271d8017c040c9eb4c3cea1ba766faee644eff7d6e524f37a30d600cf4b6"
+     }
+    ],
+    "language": "ruby",
+    "licenses": [
+     "BSD-2-Clause"
+    ],
+    "cpes": [
+     "cpe:2.3:a:ruby-lang:rexml:3.2.6:*:*:*:*:ruby:*:*"
+    ],
+    "purl": "pkg:gem/rexml@3.2.6",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-4xqq-m2hx-25v8",
+    "dataSource": "https://github.com/advisories/GHSA-4xqq-m2hx-25v8",
+    "namespace": "github:language:ruby",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-4xqq-m2hx-25v8"
+    ],
+    "description": "REXML denial of service vulnerability",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L",
+      "metrics": {
+       "baseScore": 4.3,
+       "exploitabilityScore": 2.8,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "3.3.2"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-39908",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-39908",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://github.com/ruby/rexml/security/advisories/GHSA-4xqq-m2hx-25v8",
+      "https://www.ruby-lang.org/en/news/2024/07/16/dos-rexml-cve-2024-39908"
+     ],
+     "description": " REXML is an XML toolkit for Ruby. The REXML gem before 3.3.1 has some DoS vulnerabilities when it parses an XML that has many specific characters such as `<`, `0` and `%>`. If you need to parse untrusted XMLs, you many be impacted to these vulnerabilities. The REXML gem 3.3.2 or later include the patches to fix these vulnerabilities. Users are advised to upgrade. Users unable to upgrade should avoid parsing untrusted XML strings.",
+     "cvss": [
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L",
+       "metrics": {
+        "baseScore": 4.3,
+        "exploitabilityScore": 2.8,
+        "impactScore": 1.4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "ruby-gem-matcher",
+     "searchedBy": {
+      "language": "ruby",
+      "namespace": "github:language:ruby",
+      "package": {
+       "name": "rexml",
+       "version": "3.2.6"
+      }
+     },
+     "found": {
+      "versionConstraint": "<3.3.2 (unknown)",
+      "vulnerabilityID": "GHSA-4xqq-m2hx-25v8"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "8bcb202fe2316a28",
+    "name": "rexml",
+    "version": "3.2.6",
+    "type": "gem",
+    "locations": [
+     {
+      "path": "/usr/lib/ruby/gems/3.1.0/specifications/rexml-3.2.6.gemspec",
+      "layerID": "sha256:1a9e271d8017c040c9eb4c3cea1ba766faee644eff7d6e524f37a30d600cf4b6"
+     }
+    ],
+    "language": "ruby",
+    "licenses": [
+     "BSD-2-Clause"
+    ],
+    "cpes": [
+     "cpe:2.3:a:ruby-lang:rexml:3.2.6:*:*:*:*:ruby:*:*"
+    ],
+    "purl": "pkg:gem/rexml@3.2.6",
+    "upstreams": []
+   }
+  }
+ ],
+ "source": {
+  "type": "image",
+  "target": {
+   "userInput": "docker.io/fluentd:latest",
+   "imageID": "sha256:5f77afda1a61231d485931674a4f31611743be7446c6edca70ebf99a0a4e7172",
+   "manifestDigest": "sha256:1cf8f447a992260dd98d3a240581d238be2ed817e9bed02e934c57f64140a250",
+   "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+   "tags": [
+    "fluentd:latest"
+   ],
+   "imageSize": 67102574,
+   "layers": [
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:b86599f307c9184fc1b87aa6b05e23163e2347c4d2aed4add0abd6a586e67574",
+     "size": 7395547
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:1a9e271d8017c040c9eb4c3cea1ba766faee644eff7d6e524f37a30d600cf4b6",
+     "size": 59701018
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:69cf5080da43f25c734536689e74a82255c3fd30035b47af8e1337fc9f85c111",
+     "size": 4702
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:8b9a7c389a33170a7159909aebb0087de0fc5e183b05a557546764dc200fbe59",
+     "size": 676
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:a1472dfd407ac2aceef3c5e320ef0ae727bfa8d9a7595a42b2c08e4df4f63ea7",
+     "size": 631
+    }
+   ],
+   "manifest": "eyJzY2hlbWFWZXJzaW9uIjoyLCJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmRpc3RyaWJ1dGlvbi5tYW5pZmVzdC52Mitqc29uIiwiY29uZmlnIjp7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuY29udGFpbmVyLmltYWdlLnYxK2pzb24iLCJzaXplIjozODMyLCJkaWdlc3QiOiJzaGEyNTY6NWY3N2FmZGExYTYxMjMxZDQ4NTkzMTY3NGE0ZjMxNjExNzQzYmU3NDQ2YzZlZGNhNzBlYmY5OWEwYTRlNzE3MiJ9LCJsYXllcnMiOlt7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjo3Njg2MTQ0LCJkaWdlc3QiOiJzaGEyNTY6Yjg2NTk5ZjMwN2M5MTg0ZmMxYjg3YWE2YjA1ZTIzMTYzZTIzNDdjNGQyYWVkNGFkZDBhYmQ2YTU4NmU2NzU3NCJ9LHsibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vdm5kLmRvY2tlci5pbWFnZS5yb290ZnMuZGlmZi50YXIuZ3ppcCIsInNpemUiOjYzMDU0MzM2LCJkaWdlc3QiOiJzaGEyNTY6MWE5ZTI3MWQ4MDE3YzA0MGM5ZWI0YzNjZWExYmE3NjZmYWVlNjQ0ZWZmN2Q2ZTUyNGYzN2EzMGQ2MDBjZjRiNiJ9LHsibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vdm5kLmRvY2tlci5pbWFnZS5yb290ZnMuZGlmZi50YXIuZ3ppcCIsInNpemUiOjEzODI0LCJkaWdlc3QiOiJzaGEyNTY6NjljZjUwODBkYTQzZjI1YzczNDUzNjY4OWU3NGE4MjI1NWMzZmQzMDAzNWI0N2FmOGUxMzM3ZmM5Zjg1YzExMSJ9LHsibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vdm5kLmRvY2tlci5pbWFnZS5yb290ZnMuZGlmZi50YXIuZ3ppcCIsInNpemUiOjM1ODQsImRpZ2VzdCI6InNoYTI1Njo4YjlhN2MzODlhMzMxNzBhNzE1OTkwOWFlYmIwMDg3ZGUwZmM1ZTE4M2IwNWE1NTc1NDY3NjRkYzIwMGZiZTU5In0seyJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmltYWdlLnJvb3Rmcy5kaWZmLnRhci5nemlwIiwic2l6ZSI6MzA3MiwiZGlnZXN0Ijoic2hhMjU2OmExNDcyZGZkNDA3YWMyYWNlZWYzYzVlMzIwZWYwYWU3MjdiZmE4ZDlhNzU5NWE0MmIyYzA4ZTRkZjRmNjNlYTcifV19",
+   "config": "eyJhcmNoaXRlY3R1cmUiOiJhcm02NCIsImNvbmZpZyI6eyJVc2VyIjoiZmx1ZW50IiwiRXhwb3NlZFBvcnRzIjp7IjI0MjI0L3RjcCI6e30sIjUxNDAvdGNwIjp7fX0sIkVudiI6WyJQQVRIPS91c3IvbG9jYWwvc2JpbjovdXNyL2xvY2FsL2JpbjovdXNyL3NiaW46L3Vzci9iaW46L3NiaW46L2JpbiIsIkZMVUVOVERfQ09ORj1mbHVlbnQuY29uZiIsIkxEX1BSRUxPQUQ9Il0sIkVudHJ5cG9pbnQiOlsidGluaSIsIi0tIiwiL2Jpbi9lbnRyeXBvaW50LnNoIl0sIkNtZCI6WyJmbHVlbnRkIl0sIkxhYmVscyI6eyJEZXNjcmlwdGlvbiI6IkZsdWVudGQgZG9ja2VyIGltYWdlIiwiVmVuZG9yIjoiRmx1ZW50IE9yZ2FuaXphdGlvbiIsIlZlcnNpb24iOiIxLjE2LjIiLCJtYWludGFpbmVyIjoiRmx1ZW50ZCBkZXZlbG9wZXJzIFx1MDAzY2ZsdWVudGRAZ29vZ2xlZ3JvdXBzLmNvbVx1MDAzZSJ9LCJBcmdzRXNjYXBlZCI6dHJ1ZX0sImNyZWF0ZWQiOiIyMDIzLTA5LTIwVDA5OjQzOjU4WiIsImhpc3RvcnkiOlt7ImNyZWF0ZWQiOiIyMDIzLTA5LTIwVDA5OjQzOjU4WiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSBBREQgZmlsZTpkZWI1YjFjM2NkNGU3YTViZTE3OTYyMGM3NjdiOWQ3YmZhYzI5ZjI1NDQ1OTZhNjViNzYwNDYwZTdhNjQ1YzUxIGluIC8gIn0seyJjcmVhdGVkIjoiMjAyMy0wOS0yMFQwOTo0Mzo1OFoiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgIENNRCBbXCIvYmluL3NoXCJdIiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjMtMDktMjBUMDk6NDM6NThaIiwiY3JlYXRlZF9ieSI6IkxBQkVMIG1haW50YWluZXI9Rmx1ZW50ZCBkZXZlbG9wZXJzIFx1MDAzY2ZsdWVudGRAZ29vZ2xlZ3JvdXBzLmNvbVx1MDAzZSIsImNvbW1lbnQiOiJidWlsZGtpdC5kb2NrZXJmaWxlLnYwIiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjMtMDktMjBUMDk6NDM6NThaIiwiY3JlYXRlZF9ieSI6IkxBQkVMIERlc2NyaXB0aW9uPUZsdWVudGQgZG9ja2VyIGltYWdlIFZlbmRvcj1GbHVlbnQgT3JnYW5pemF0aW9uIFZlcnNpb249MS4xNi4yIiwiY29tbWVudCI6ImJ1aWxka2l0LmRvY2tlcmZpbGUudjAiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyMy0wOS0yMFQwOTo0Mzo1OFoiLCJjcmVhdGVkX2J5IjoiUlVOIC9iaW4vc2ggLWMgYXBrIHVwZGF0ZSAgXHUwMDI2XHUwMDI2IGFwayBhZGQgLS1uby1jYWNoZSAgICAgICAgIGNhLWNlcnRpZmljYXRlcyAgICAgICAgIHJ1YnkgcnVieS1pcmIgcnVieS1ldGMgcnVieS13ZWJyaWNrICAgICAgICAgdGluaSAgXHUwMDI2XHUwMDI2IGFwayBhZGQgLS1uby1jYWNoZSAtLXZpcnR1YWwgLmJ1aWxkLWRlcHMgICAgICAgICBidWlsZC1iYXNlIGxpbnV4LWhlYWRlcnMgICAgICAgICBydWJ5LWRldiBnbnVwZyAgXHUwMDI2XHUwMDI2IGVjaG8gJ2dlbTogLS1uby1kb2N1bWVudCcgXHUwMDNlXHUwMDNlIC9ldGMvZ2VtcmMgIFx1MDAyNlx1MDAyNiBnZW0gaW5zdGFsbCBvaiAtdiAzLjE2LjEgIFx1MDAyNlx1MDAyNiBnZW0gaW5zdGFsbCBqc29uIC12IDIuNi4zICBcdTAwMjZcdTAwMjYgZ2VtIGluc3RhbGwgcmV4bWwgLXYgMy4yLjYgIFx1MDAyNlx1MDAyNiBnZW0gaW5zdGFsbCBhc3luYyAtdiAxLjMxLjAgIFx1MDAyNlx1MDAyNiBnZW0gaW5zdGFsbCBhc3luYy1odHRwIC12IDAuNjAuMiBcdTAwMjZcdTAwMjYgZ2VtIGluc3RhbGwgdXJpIC12IDAuMTIuMiAgXHUwMDI2XHUwMDI2IGdlbSBpbnN0YWxsIGZsdWVudGQgLXYgMS4xNi4yICBcdTAwMjZcdTAwMjYgZ2VtIGluc3RhbGwgYmlnZGVjaW1hbCAtdiAxLjQuNCAgXHUwMDI2XHUwMDI2IGFwayBkZWwgLmJ1aWxkLWRlcHMgIFx1MDAyNlx1MDAyNiBybSAtcmYgL3RtcC8qIC92YXIvdG1wLyogL3Vzci9saWIvcnVieS9nZW1zLyovY2FjaGUvKi5nZW0gL3Vzci9saWIvcnVieS9nZW1zLzMuKi9nZW1zL2ZsdWVudGQtKi90ZXN0ICMgYnVpbGRraXQiLCJjb21tZW50IjoiYnVpbGRraXQuZG9ja2VyZmlsZS52MCJ9LHsiY3JlYXRlZCI6IjIwMjMtMDktMjBUMDk6NDM6NThaIiwiY3JlYXRlZF9ieSI6IlJVTiAvYmluL3NoIC1jIGFkZGdyb3VwIC1TIGZsdWVudCBcdTAwMjZcdTAwMjYgYWRkdXNlciAtUyAtRyBmbHVlbnQgZmx1ZW50ICAgICBcdTAwMjZcdTAwMjYgbWtkaXIgLXAgL2ZsdWVudGQvbG9nICAgICBcdTAwMjZcdTAwMjYgbWtkaXIgLXAgL2ZsdWVudGQvZXRjIC9mbHVlbnRkL3BsdWdpbnMgICAgIFx1MDAyNlx1MDAyNiBjaG93biAtUiBmbHVlbnQgL2ZsdWVudGQgXHUwMDI2XHUwMDI2IGNoZ3JwIC1SIGZsdWVudCAvZmx1ZW50ZCAjIGJ1aWxka2l0IiwiY29tbWVudCI6ImJ1aWxka2l0LmRvY2tlcmZpbGUudjAifSx7ImNyZWF0ZWQiOiIyMDIzLTA5LTIwVDA5OjQzOjU4WiIsImNyZWF0ZWRfYnkiOiJDT1BZIGZsdWVudC5jb25mIC9mbHVlbnRkL2V0Yy8gIyBidWlsZGtpdCIsImNvbW1lbnQiOiJidWlsZGtpdC5kb2NrZXJmaWxlLnYwIn0seyJjcmVhdGVkIjoiMjAyMy0wOS0yMFQwOTo0Mzo1OFoiLCJjcmVhdGVkX2J5IjoiQ09QWSBlbnRyeXBvaW50LnNoIC9iaW4vICMgYnVpbGRraXQiLCJjb21tZW50IjoiYnVpbGRraXQuZG9ja2VyZmlsZS52MCJ9LHsiY3JlYXRlZCI6IjIwMjMtMDktMjBUMDk6NDM6NThaIiwiY3JlYXRlZF9ieSI6IkVOViBGTFVFTlREX0NPTkY9Zmx1ZW50LmNvbmYiLCJjb21tZW50IjoiYnVpbGRraXQuZG9ja2VyZmlsZS52MCIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDIzLTA5LTIwVDA5OjQzOjU4WiIsImNyZWF0ZWRfYnkiOiJFTlYgTERfUFJFTE9BRD0iLCJjb21tZW50IjoiYnVpbGRraXQuZG9ja2VyZmlsZS52MCIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDIzLTA5LTIwVDA5OjQzOjU4WiIsImNyZWF0ZWRfYnkiOiJFWFBPU0UgbWFwWzI0MjI0L3RjcDp7fSA1MTQwL3RjcDp7fV0iLCJjb21tZW50IjoiYnVpbGRraXQuZG9ja2VyZmlsZS52MCIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDIzLTA5LTIwVDA5OjQzOjU4WiIsImNyZWF0ZWRfYnkiOiJVU0VSIGZsdWVudCIsImNvbW1lbnQiOiJidWlsZGtpdC5kb2NrZXJmaWxlLnYwIiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjMtMDktMjBUMDk6NDM6NThaIiwiY3JlYXRlZF9ieSI6IkVOVFJZUE9JTlQgW1widGluaVwiIFwiLS1cIiBcIi9iaW4vZW50cnlwb2ludC5zaFwiXSIsImNvbW1lbnQiOiJidWlsZGtpdC5kb2NrZXJmaWxlLnYwIiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjMtMDktMjBUMDk6NDM6NThaIiwiY3JlYXRlZF9ieSI6IkNNRCBbXCJmbHVlbnRkXCJdIiwiY29tbWVudCI6ImJ1aWxka2l0LmRvY2tlcmZpbGUudjAiLCJlbXB0eV9sYXllciI6dHJ1ZX1dLCJvcyI6ImxpbnV4Iiwicm9vdGZzIjp7InR5cGUiOiJsYXllcnMiLCJkaWZmX2lkcyI6WyJzaGEyNTY6Yjg2NTk5ZjMwN2M5MTg0ZmMxYjg3YWE2YjA1ZTIzMTYzZTIzNDdjNGQyYWVkNGFkZDBhYmQ2YTU4NmU2NzU3NCIsInNoYTI1NjoxYTllMjcxZDgwMTdjMDQwYzllYjRjM2NlYTFiYTc2NmZhZWU2NDRlZmY3ZDZlNTI0ZjM3YTMwZDYwMGNmNGI2Iiwic2hhMjU2OjY5Y2Y1MDgwZGE0M2YyNWM3MzQ1MzY2ODllNzRhODIyNTVjM2ZkMzAwMzViNDdhZjhlMTMzN2ZjOWY4NWMxMTEiLCJzaGEyNTY6OGI5YTdjMzg5YTMzMTcwYTcxNTk5MDlhZWJiMDA4N2RlMGZjNWUxODNiMDVhNTU3NTQ2NzY0ZGMyMDBmYmU1OSIsInNoYTI1NjphMTQ3MmRmZDQwN2FjMmFjZWVmM2M1ZTMyMGVmMGFlNzI3YmZhOGQ5YTc1OTVhNDJiMmMwOGU0ZGY0ZjYzZWE3Il19fQ==",
+   "repoDigests": [
+    "fluentd@sha256:7c34bec0385e5425d517093476930b01dd9cd598d6d920b8478cda3f452959e0"
+   ],
+   "architecture": "arm64",
+   "os": "linux",
+   "labels": {
+    "Description": "Fluentd docker image",
+    "Vendor": "Fluent Organization",
+    "Version": "1.16.2",
+    "maintainer": "Fluentd developers <fluentd@googlegroups.com>"
+   }
+  }
+ },
+ "distro": {
+  "name": "alpine",
+  "version": "3.17.8",
+  "idLike": []
+ },
+ "descriptor": {
+  "name": "grype",
+  "version": "0.79.3",
+  "configuration": {
+   "output": [
+    "json"
+   ],
+   "file": "",
+   "distro": "",
+   "add-cpes-if-none": false,
+   "output-template-file": "",
+   "check-for-app-update": true,
+   "only-fixed": false,
+   "only-notfixed": false,
+   "ignore-wontfix": "",
+   "platform": "",
+   "search": {
+    "scope": "squashed",
+    "unindexed-archives": false,
+    "indexed-archives": true
+   },
+   "ignore": [
+    {
+     "vulnerability": "",
+     "reason": "",
+     "namespace": "",
+     "fix-state": "",
+     "package": {
+      "name": "kernel-headers",
+      "version": "",
+      "language": "",
+      "type": "rpm",
+      "location": "",
+      "upstream-name": "kernel"
+     },
+     "vex-status": "",
+     "vex-justification": "",
+     "match-type": "exact-indirect-match"
+    },
+    {
+     "vulnerability": "",
+     "reason": "",
+     "namespace": "",
+     "fix-state": "",
+     "package": {
+      "name": "linux-headers-.*",
+      "version": "",
+      "language": "",
+      "type": "deb",
+      "location": "",
+      "upstream-name": "linux"
+     },
+     "vex-status": "",
+     "vex-justification": "",
+     "match-type": "exact-indirect-match"
+    },
+    {
+     "vulnerability": "",
+     "reason": "",
+     "namespace": "",
+     "fix-state": "",
+     "package": {
+      "name": "linux-libc-dev",
+      "version": "",
+      "language": "",
+      "type": "deb",
+      "location": "",
+      "upstream-name": "linux"
+     },
+     "vex-status": "",
+     "vex-justification": "",
+     "match-type": "exact-indirect-match"
+    }
+   ],
+   "exclude": [],
+   "db": {
+    "cache-dir": "/Users/paulgibert/Library/Caches/grype/db",
+    "update-url": "https://toolbox-data.anchore.io/grype/databases/listing.json",
+    "ca-cert": "",
+    "auto-update": true,
+    "validate-by-hash-on-start": false,
+    "validate-age": true,
+    "max-allowed-built-age": 432000000000000,
+    "update-available-timeout": 30000000000,
+    "update-download-timeout": 120000000000
+   },
+   "externalSources": {
+    "enable": false,
+    "maven": {
+     "searchUpstreamBySha1": true,
+     "baseUrl": "https://search.maven.org/solrsearch/select"
+    }
+   },
+   "match": {
+    "java": {
+     "using-cpes": false
+    },
+    "dotnet": {
+     "using-cpes": false
+    },
+    "golang": {
+     "using-cpes": false,
+     "always-use-cpe-for-stdlib": true,
+     "allow-main-module-pseudo-version-comparison": false
+    },
+    "javascript": {
+     "using-cpes": false
+    },
+    "python": {
+     "using-cpes": false
+    },
+    "ruby": {
+     "using-cpes": false
+    },
+    "rust": {
+     "using-cpes": false
+    },
+    "stock": {
+     "using-cpes": true
+    }
+   },
+   "fail-on-severity": "",
+   "registry": {
+    "insecure-skip-tls-verify": false,
+    "insecure-use-http": false,
+    "auth": null,
+    "ca-cert": ""
+   },
+   "show-suppressed": false,
+   "by-cve": false,
+   "name": "",
+   "default-image-pull-source": "",
+   "vex-documents": [],
+   "vex-add": [],
+   "match-upstream-kernel-headers": false
+  },
+  "db": {
+   "built": "2024-07-23T01:30:37Z",
+   "schemaVersion": 5,
+   "location": "/Users/paulgibert/Library/Caches/grype/db/5",
+   "checksum": "sha256:972d0f51e180d424f3fff2637a1559e06940f35eda6bd03593be2a3db8f28971",
+   "error": null
+  },
+  "timestamp": "2024-07-23T21:11:37.994626-04:00"
+ }
+}

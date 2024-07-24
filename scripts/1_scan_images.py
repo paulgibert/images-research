@@ -71,7 +71,7 @@ def process_image(vendor: str, image_type: str,
 
     @param vendor: The image vendor. Ex chainguard.
     @param image_type: The type of image. Ex nginx.
-    @param image_fullname: The fullname of th image.
+    @param image_fullname: The fullname of the image.
                            Ex cgr.dev/chainguard/nginx:latest
     @param scanners: A List of scanners to apply to each image.
     """
@@ -86,7 +86,8 @@ def process_image(vendor: str, image_type: str,
         sc.scan_and_save(vendor=vendor,
                          image_type=image_type,
                          image_fullname=image_fullname)
-        _rm_image(image_fullname)
+        if utils.check_docker_image_exists(image_fullname):
+            _rm_image(image_fullname)
 
 
 def parse_args() -> str:
